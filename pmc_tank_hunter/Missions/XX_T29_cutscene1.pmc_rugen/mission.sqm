@@ -1,0 +1,103 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=5390851;
+	class Intel
+	{
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"pmc_rugen"
+	};
+	randomSeed=14783491;
+	class Intel
+	{
+		briefingName="XX T29 cutscene1";
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={21868.371,13.073833,5062.021};
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="titleCut ["""",""black out"",0.0001];this = [this] execVM ""PMC\PMC_movie.sqf"";  ";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={21879.875,13.352766,5075.4961};
+			a=0;
+			b=0;
+			type="END1";
+			age="UNKNOWN";
+			expCond="endcut";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=14202883;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=13855747;
+	class Intel
+	{
+	};
+};

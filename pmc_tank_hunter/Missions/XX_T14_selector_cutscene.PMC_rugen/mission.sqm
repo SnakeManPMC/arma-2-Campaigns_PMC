@@ -1,0 +1,117 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=5852675;
+	class Intel
+	{
+		briefingName="XX T14 selector cutscene";
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"pmc_rugen"
+	};
+	randomSeed=15682051;
+	class Intel
+	{
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14539.926,6.543087,14053.775};
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="titleCut ["""",""black out"",0.0001];this = [this] execVM ""PMC\PMC_movie.sqf"";";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=2;
+		class Item0
+		{
+			position[]={14561.909,6.0237732,14082.169};
+			a=0;
+			b=0;
+			type="END1";
+			age="UNKNOWN";
+			text="END1";
+			expCond="PMC_level1";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={14574.29,6.573483,14073.915};
+			a=0;
+			b=0;
+			type="END2";
+			age="UNKNOWN";
+			text="END2";
+			expCond="PMC_level2";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=11157507;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=12672003;
+	class Intel
+	{
+	};
+};

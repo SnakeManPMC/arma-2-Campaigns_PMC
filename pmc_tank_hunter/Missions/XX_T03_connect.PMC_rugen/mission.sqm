@@ -1,0 +1,1000 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"CABuildings",
+		"camisc3",
+		"caweapons_ammoboxes",
+		"pmc_rugen",
+		"camisc_e"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"CABuildings",
+		"camisc3",
+		"caweapons_ammoboxes",
+		"camisc_e",
+		"pmc_rugen"
+	};
+	randomSeed=17411;
+	class Intel
+	{
+		briefingName="XX T03 connect";
+		month=9;
+		day=29;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=7;
+		class Item0
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={22704.908,9.5849781,6118.9263};
+					azimut=59.152599;
+					id=0;
+					side="GUER";
+					vehicle="GUE_Soldier_CO";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="assault1=group this; removeAllWeapons this; assault1 setBehaviour ""safe""; titleCut["""",""black out"",0.0001]; this = [] execVM ""PMC\PMC_movie.sqf"";";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={18694.84,16.623577,7679.3989};
+					id=4;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.2;
+					text="west_start";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={24039.67,15.290546,1541.1038};
+					id=5;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.2;
+					text="east_start";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={24005.486,6.2318482,1512.0642};
+					id=6;
+					side="EAST";
+					vehicle="RU_Soldier";
+					leader=1;
+					skill=0.2;
+					init="rusinf1=group this;";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={18740.35,15.685221,7681.8853};
+					id=7;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.466667;
+					init="usinf1=group this;";
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={18549.09,13.941293,8048.9106};
+					id=8;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="west_helostart";
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23546.68,9.1858368,818.52374};
+					id=9;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.2;
+					text="east_helostart";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=13;
+		class Item0
+		{
+			position[]={22710.961,9.5073748,6121.8857};
+			azimut=245;
+			id=1;
+			side="EMPTY";
+			vehicle="ACamp";
+			skill=0.60000002;
+			text="HomeBase";
+		};
+		class Item1
+		{
+			position[]={22714.961,9.6432838,6114.7983};
+			id=2;
+			side="EMPTY";
+			vehicle="USBasicAmmunitionBox";
+			skill=0.60000002;
+			text="RockBox";
+			init="this setdir random 360; clearMagazineCargo this; clearWeaponCargo this;";
+		};
+		class Item2
+		{
+			position[]={22700.84,9.4059248,6122.583};
+			id=3;
+			side="EMPTY";
+			vehicle="Land_Fire";
+			skill=0.60000002;
+			text="cmpFire";
+		};
+		class Item3
+		{
+			position[]={22371.516,11.643764,441.31958};
+			id=10;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			skill=0.2;
+			text="pole1";
+		};
+		class Item4
+		{
+			position[]={24263.449,12.84256,2448.6636};
+			id=11;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			skill=0.2;
+			text="pole8";
+		};
+		class Item5
+		{
+			position[]={19845.664,10.845397,932.76929};
+			id=12;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			skill=0.2;
+			text="pole3";
+		};
+		class Item6
+		{
+			position[]={21892.801,7.1036429,3737.5327};
+			id=13;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			skill=0.2;
+			text="pole4";
+		};
+		class Item7
+		{
+			position[]={19870.125,20.30275,2674.6555};
+			id=14;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			skill=0.2;
+			text="pole5";
+		};
+		class Item8
+		{
+			position[]={21868.836,10.92842,5671.4321};
+			id=15;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			skill=0.2;
+			text="pole6";
+		};
+		class Item9
+		{
+			position[]={18977.836,13.904531,6727.8594};
+			id=16;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			skill=0.2;
+			text="pole7";
+		};
+		class Item10
+		{
+			position[]={21865.684,12.779801,7557.4951};
+			id=17;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			skill=0.2;
+			text="pole9";
+		};
+		class Item11
+		{
+			position[]={20395.189,14.795871,8900.1973};
+			id=18;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			skill=0.2;
+			text="pole10";
+		};
+		class Item12
+		{
+			position[]={23049.92,94.037216,5100.6187};
+			id=19;
+			side="EMPTY";
+			vehicle="FlagPole_EP1";
+			skill=0.2;
+			text="pole2";
+		};
+	};
+	class Markers
+	{
+		items=13;
+		class Item0
+		{
+			position[]={22710.852,9.4267702,6121.811};
+			name="start";
+			text="Hideout";
+			type="mil_start";
+			colorName="ColorGreen";
+		};
+		class Item1
+		{
+			position[]={17245.244,1.883653,4275.9395};
+			name="NewHideOut";
+			text="New Hideout!";
+			type="Empty";
+			colorName="ColorBlue";
+		};
+		class Item2
+		{
+			position[]={22373.949,11.656013,442.04883};
+			name="pmc1";
+			markerType="ELLIPSE";
+			type="mil_flag";
+			a=20;
+			b=20;
+		};
+		class Item3
+		{
+			position[]={24265.883,12.791956,2449.3928};
+			name="pmc8";
+			markerType="ELLIPSE";
+			type="mil_flag";
+			a=20;
+			b=20;
+		};
+		class Item4
+		{
+			position[]={19848.098,10.834652,933.49854};
+			name="pmc3";
+			markerType="ELLIPSE";
+			type="mil_flag";
+			a=20;
+			b=20;
+		};
+		class Item5
+		{
+			position[]={21895.234,7.0852509,3738.262};
+			name="pmc4";
+			markerType="ELLIPSE";
+			type="mil_flag";
+			a=20;
+			b=20;
+		};
+		class Item6
+		{
+			position[]={19872.559,20.210539,2675.3848};
+			name="pmc5";
+			markerType="ELLIPSE";
+			type="mil_flag";
+			a=20;
+			b=20;
+		};
+		class Item7
+		{
+			position[]={21871.27,10.881349,5672.1616};
+			name="pmc6";
+			markerType="ELLIPSE";
+			type="mil_flag";
+			a=20;
+			b=20;
+		};
+		class Item8
+		{
+			position[]={18980.27,13.88482,6728.5889};
+			name="pmc7";
+			markerType="ELLIPSE";
+			type="mil_flag";
+			a=20;
+			b=20;
+		};
+		class Item9
+		{
+			position[]={21868.117,12.847258,7558.2246};
+			name="pmc9";
+			markerType="ELLIPSE";
+			type="mil_flag";
+			a=20;
+			b=20;
+		};
+		class Item10
+		{
+			position[]={20397.623,14.86356,8900.9258};
+			name="pmc10";
+			markerType="ELLIPSE";
+			type="mil_flag";
+			a=20;
+			b=20;
+		};
+		class Item11
+		{
+			position[]={23052.354,93.972183,5101.3477};
+			name="pmc2";
+			markerType="ELLIPSE";
+			type="mil_flag";
+			a=20;
+			b=20;
+		};
+		class Item12
+		{
+			position[]={17246.127,1.883653,4228.5801};
+			name="target1";
+			text="Destroy";
+			type="Empty";
+		};
+	};
+	class Sensors
+	{
+		items=41;
+		class Item0
+		{
+			position[]={23324.221,1.680325,6685.8022};
+			a=0;
+			b=0;
+			activationBy="JULIET";
+			repeating=1;
+			age="UNKNOWN";
+			text="null";
+			expActiv="if (PMC_debug) then { PMC_debug = false; 10 setRadioMsg ""Debug on""; } else { PMC_debug = true; 10 setRadioMsg ""Debug off""; };";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={22706.711,9.6301622,6116.5083};
+			a=100;
+			b=100;
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="PMC_VehList";
+			name="PMC_VehList";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={23325.07,1.680325,6653.0425};
+			a=0;
+			b=0;
+			activationBy="INDIA";
+			repeating=1;
+			age="UNKNOWN";
+			text="null";
+			expActiv="hint ""Click on map for new hideout location. It will be moved there later. You can select the radio command repeatedly.""; onMapSingleClick ""[_pos] execVM 'PMC\PMC_newhideout.sqf'; onMapSingleClick ''; true;"";";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={13634.12,47.69899,12857.811};
+			a=20000;
+			b=20000;
+			activationBy="EAST";
+			age="UNKNOWN";
+			text="aieast";
+			expActiv="aieast = thislist;";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={13717.88,51.20208,12775.801};
+			a=20000;
+			b=20000;
+			activationBy="WEST";
+			age="UNKNOWN";
+			text="aiwest";
+			expActiv="aiwest = thislist;";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={22371.43,11.61182,439.70239};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 1 East";
+			expCond="west countSide thislist == 0 && east countSide thislist > 0";
+			expActiv="East_ControList set [0,1]; pole1 setFlagTexture ""\ca\data\flag_rus_co.paa""; ""pmc1"" setMarkerColor ""ColorRed"";";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={22372.672,11.583439,438.32544};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 1 West";
+			expCond="east countSide thislist == 0 && west countSide thislist > 0";
+			expActiv="West_ControList set [0,1]; pole1 setFlagTexture ""\ca\data\flag_usa_co.paa""; ""pmc1"" setMarkerColor ""ColorGreen"";";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={24263.363,12.825727,2447.0464};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 8 East";
+			expCond="west countSide thislist == 0 && east countSide thislist > 0";
+			expActiv="East_ControList set [7,1]; pole8 setFlagTexture ""\ca\data\flag_rus_co.paa""; ""pmc8"" setMarkerColor ""ColorRed"";";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={24264.605,12.779431,2445.6694};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 8 West";
+			expCond="east countSide thislist == 0 && west countSide thislist > 0";
+			expActiv="West_ControList set [7,1]; pole8 setFlagTexture ""\ca\data\flag_usa_co.paa""; ""pmc8"" setMarkerColor ""ColorGreen"";";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={19845.578,10.821427,931.1521};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 3 East";
+			expCond="west countSide thislist == 0 && east countSide thislist > 0";
+			expActiv="East_ControList set [2,1]; pole3 setFlagTexture ""\ca\data\flag_rus_co.paa""; ""pmc3"" setMarkerColor ""ColorRed"";";
+			class Effects
+			{
+			};
+		};
+		class Item10
+		{
+			position[]={19846.82,10.78918,929.77515};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 3 West";
+			expCond="east countSide thislist == 0 && west countSide thislist > 0";
+			expActiv="West_ControList set [2,1]; pole3 setFlagTexture ""\ca\data\flag_usa_co.paa""; ""pmc3"" setMarkerColor ""ColorGreen"";";
+			class Effects
+			{
+			};
+		};
+		class Item11
+		{
+			position[]={21892.715,7.1157508,3735.9155};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 4 East";
+			expCond="west countSide thislist == 0 && east countSide thislist > 0";
+			expActiv="East_ControList set [3,1]; pole4 setFlagTexture ""\ca\data\flag_rus_co.paa""; ""pmc4"" setMarkerColor ""ColorRed"";";
+			class Effects
+			{
+			};
+		};
+		class Item12
+		{
+			position[]={21893.957,7.118958,3734.5386};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 4 West";
+			expCond="east countSide thislist == 0 && west countSide thislist > 0";
+			expActiv="West_ControList set [3,1]; pole4 setFlagTexture ""\ca\data\flag_usa_co.paa""; ""pmc4"" setMarkerColor ""ColorGreen"";";
+			class Effects
+			{
+			};
+		};
+		class Item13
+		{
+			position[]={19870.039,20.301708,2673.0383};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 5 East";
+			expCond="west countSide thislist == 0 && east countSide thislist > 0";
+			expActiv="East_ControList set [4,1]; pole5 setFlagTexture ""\ca\data\flag_rus_co.paa""; ""pmc5"" setMarkerColor ""ColorRed"";";
+			class Effects
+			{
+			};
+		};
+		class Item14
+		{
+			position[]={19871.281,20.249918,2671.6614};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 5 West";
+			expCond="east countSide thislist == 0 && west countSide thislist > 0";
+			expActiv="West_ControList set [4,1]; pole5 setFlagTexture ""\ca\data\flag_usa_co.paa""; ""pmc5"" setMarkerColor ""ColorGreen"";";
+			class Effects
+			{
+			};
+		};
+		class Item15
+		{
+			position[]={21868.75,10.980212,5669.8149};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 6 East";
+			expCond="west countSide thislist == 0 && east countSide thislist > 0";
+			expActiv="East_ControList set [5,1]; pole6 setFlagTexture ""\ca\data\flag_rus_co.paa""; ""pmc6"" setMarkerColor ""ColorRed"";";
+			class Effects
+			{
+			};
+		};
+		class Item16
+		{
+			position[]={21869.992,11.011289,5668.438};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 6 West";
+			expCond="east countSide thislist == 0 && west countSide thislist > 0";
+			expActiv="West_ControList set [5,1]; pole6 setFlagTexture ""\ca\data\flag_usa_co.paa""; ""pmc6"" setMarkerColor ""ColorGreen"";";
+			class Effects
+			{
+			};
+		};
+		class Item17
+		{
+			position[]={18977.75,13.905228,6726.2422};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 7 East";
+			expCond="west countSide thislist == 0 && east countSide thislist > 0";
+			expActiv="East_ControList set [6,1]; pole7 setFlagTexture ""\ca\data\flag_rus_co.paa""; ""pmc7"" setMarkerColor ""ColorRed"";";
+			class Effects
+			{
+			};
+		};
+		class Item18
+		{
+			position[]={18978.992,13.895166,6724.8652};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 7 West";
+			expCond="east countSide thislist == 0 && west countSide thislist > 0";
+			expActiv="West_ControList set [6,1]; pole7 setFlagTexture ""\ca\data\flag_usa_co.paa""; ""pmc7"" setMarkerColor ""ColorGreen"";";
+			class Effects
+			{
+			};
+		};
+		class Item19
+		{
+			position[]={21865.598,12.768826,7555.8779};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 9 East";
+			expCond="west countSide thislist == 0 && east countSide thislist > 0";
+			expActiv="East_ControList set [8,1]; pole9 setFlagTexture ""\ca\data\flag_rus_co.paa""; ""pmc9"" setMarkerColor ""ColorRed"";";
+			class Effects
+			{
+			};
+		};
+		class Item20
+		{
+			position[]={21866.84,12.793811,7554.501};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 9 West";
+			expCond="east countSide thislist == 0 && west countSide thislist > 0";
+			expActiv="West_ControList set [8,1]; pole9 setFlagTexture ""\ca\data\flag_usa_co.paa""; ""pmc9"" setMarkerColor ""ColorGreen"";";
+			class Effects
+			{
+			};
+		};
+		class Item21
+		{
+			position[]={20395.104,14.765164,8898.5801};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 10 East";
+			expCond="west countSide thislist == 0 && east countSide thislist > 0";
+			expActiv="East_ControList set [9,1]; pole10 setFlagTexture ""\ca\data\flag_rus_co.paa""; ""pmc10"" setMarkerColor ""ColorRed"";";
+			class Effects
+			{
+			};
+		};
+		class Item22
+		{
+			position[]={20396.346,14.773554,8897.2031};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 10 West";
+			expCond="east countSide thislist == 0 && west countSide thislist > 0";
+			expActiv="West_ControList set [9,1]; pole10 setFlagTexture ""\ca\data\flag_usa_co.paa""; ""pmc10"" setMarkerColor ""ColorGreen"";";
+			class Effects
+			{
+			};
+		};
+		class Item23
+		{
+			position[]={23049.834,94.03112,5099.0015};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 2 East";
+			expCond="west countSide thislist == 0 && east countSide thislist > 0";
+			expActiv="East_ControList set [1,1]; pole2 setFlagTexture ""\ca\data\flag_rus_co.paa""; ""pmc2"" setMarkerColor ""ColorRed"";";
+			class Effects
+			{
+			};
+		};
+		class Item24
+		{
+			position[]={23051.076,94.009209,5097.6245};
+			activationBy="ANY";
+			repeating=1;
+			age="UNKNOWN";
+			text="pole 2 West";
+			expCond="east countSide thislist == 0 && west countSide thislist > 0";
+			expActiv="West_ControList set [1,1]; pole2 setFlagTexture ""\ca\data\flag_usa_co.paa""; ""pmc2"" setMarkerColor ""ColorGreen"";";
+			class Effects
+			{
+			};
+		};
+		class Item25
+		{
+			position[]={23099.471,1.680325,6596.3965};
+			a=0;
+			b=0;
+			age="UNKNOWN";
+			text="HomeBase found by East";
+			expCond="{_x knowsabout HomeBase > 0} count aieast > 0";
+			expActiv="this = [] execVM ""PMC\PMC_homebasefound.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item26
+		{
+			position[]={23077.24,1.535394,6618.5112};
+			a=0;
+			b=0;
+			repeating=1;
+			age="UNKNOWN";
+			text="switch end radios";
+			expCond="vehicle player in (list PMC_VehList)";
+			expActiv="this = [] execVM ""radio-on.sqf"";";
+			expDesactiv="this = [] execVM ""radio-off.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item27
+		{
+			position[]={23077.305,1.680325,6539.5874};
+			a=0;
+			b=0;
+			activationBy="ALPHA";
+			age="UNKNOWN";
+			text="null";
+			expActiv="this = [] execVM ""PMC\PMC_movie-end.sqf""; pmc_end1 = true;";
+			class Effects
+			{
+			};
+		};
+		class Item28
+		{
+			position[]={23089.434,1.680325,6524.7852};
+			a=0;
+			b=0;
+			activationBy="BRAVO";
+			age="UNKNOWN";
+			text="null";
+			expActiv="this = [] execVM ""PMC\PMC_movie-end.sqf""; pmc_end2 = true;";
+			class Effects
+			{
+			};
+		};
+		class Item29
+		{
+			position[]={23101.129,1.680325,6512.873};
+			a=0;
+			b=0;
+			activationBy="CHARLIE";
+			age="UNKNOWN";
+			text="null";
+			expActiv="this = [] execVM ""PMC\PMC_movie-end.sqf""; pmc_end3 = true;";
+			class Effects
+			{
+			};
+		};
+		class Item30
+		{
+			position[]={23112.387,1.680325,6502.5483};
+			a=0;
+			b=0;
+			activationBy="DELTA";
+			age="UNKNOWN";
+			text="null";
+			expActiv="this = [] execVM ""PMC\PMC_movie-end.sqf""; pmc_end4 = true;";
+			class Effects
+			{
+			};
+		};
+		class Item31
+		{
+			position[]={23124.586,1.680325,6492.2275};
+			a=0;
+			b=0;
+			activationBy="ECHO";
+			age="UNKNOWN";
+			text="null";
+			expActiv="this = [] execVM ""PMC\PMC_movie-end.sqf""; pmc_end5 = true;";
+			class Effects
+			{
+			};
+		};
+		class Item32
+		{
+			position[]={23135.844,1.680325,6480.9683};
+			a=0;
+			b=0;
+			activationBy="FOXTROT";
+			age="UNKNOWN";
+			text="null";
+			expActiv="this = [] execVM ""PMC\PMC_movie-end.sqf""; pmc_end6 = true;";
+			class Effects
+			{
+			};
+		};
+		class Item33
+		{
+			position[]={23147.102,1.680325,6470.647};
+			a=0;
+			b=0;
+			activationBy="GOLF";
+			type="LOOSE";
+			age="UNKNOWN";
+			text="null";
+			expActiv="this = [] execVM ""PMC\PMC_movie-end.sqf""; pmc_end7 = true;";
+			class Effects
+			{
+			};
+		};
+		class Item34
+		{
+			position[]={23086.813,-2.97,6547.2109};
+			a=0;
+			b=0;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			text="END1";
+			expCond="pmc_end1 && endcut";
+			class Effects
+			{
+			};
+		};
+		class Item35
+		{
+			position[]={23098.592,0.42611033,6531.729};
+			a=0;
+			b=0;
+			interruptable=1;
+			type="END2";
+			age="UNKNOWN";
+			text="END2";
+			expCond="pmc_end2 && endcut";
+			class Effects
+			{
+			};
+		};
+		class Item36
+		{
+			position[]={23108.689,0.46718979,6521.8018};
+			a=0;
+			b=0;
+			interruptable=1;
+			type="END3";
+			age="UNKNOWN";
+			text="END3";
+			expCond="pmc_end3 && endcut";
+			class Effects
+			{
+			};
+		};
+		class Item37
+		{
+			position[]={23120.133,0.35048863,6510.5254};
+			a=0;
+			b=0;
+			interruptable=1;
+			type="END4";
+			age="UNKNOWN";
+			text="END4";
+			expCond="pmc_end4 && endcut";
+			class Effects
+			{
+			};
+		};
+		class Item38
+		{
+			position[]={23131.912,0.59358513,6500.5996};
+			a=0;
+			b=0;
+			interruptable=1;
+			type="END5";
+			age="UNKNOWN";
+			text="END5";
+			expCond="pmc_end5 && endcut";
+			class Effects
+			{
+			};
+		};
+		class Item39
+		{
+			position[]={23144.197,0.40599483,6489.8286};
+			a=0;
+			b=0;
+			interruptable=1;
+			type="END6";
+			age="UNKNOWN";
+			text="END6";
+			expCond="pmc_end6 && endcut";
+			class Effects
+			{
+			};
+		};
+		class Item40
+		{
+			position[]={23156.65,0.4554368,6479.0591};
+			a=0;
+			b=0;
+			interruptable=1;
+			type="LOOSE";
+			age="UNKNOWN";
+			text="END7 Lose";
+			expCond="pmc_end7 && endcut";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=4213251;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=7206915;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=15032323;
+	class Intel
+	{
+	};
+};

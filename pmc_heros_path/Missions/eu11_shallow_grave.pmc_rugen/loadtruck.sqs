@@ -1,0 +1,23 @@
+;
+; loads up a JAM3 truck full with basic goodies
+;
+_trk = _this select 0;
+
+clearMagazineCargo _trk;
+clearWeaponCargo _trk;
+
+_trk addMagazineCargo ["30Rnd_556x45_Stanag", 36];
+_trk addMagazineCargo ["30Rnd_556x45_Stanag", 36];
+_trk addMagazineCargo ["1Rnd_HE_M203", 10];
+_trk addMagazineCargo ["1Rnd_HE_M203", 12];
+_trk addMagazineCargo ["100Rnd_762x51_M240", 12];
+_trk addMagazineCargo ["M136", 10];
+_trk addMagazineCargo ["20Rnd_762x51_DMR", 18];
+
+_trk addWeaponCargo ["M16A2",2];
+_trk addWeaponCargo ["M16A2GL",2];
+_trk addWeaponCargo ["M249",2];
+_trk addWeaponCargo ["M136",2];
+_trk addWeaponCargo ["M40A3",2];
+
+exit

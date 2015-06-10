@@ -1,0 +1,191 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=3734531;
+	class Intel
+	{
+		briefingName="Opening Cutscene";
+		day=18;
+		hour=15;
+		minute=0;
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"CAWheeled",
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"CAWheeled",
+		"pmc_rugen"
+	};
+	randomSeed=2169859;
+	class Intel
+	{
+		day=18;
+		hour=15;
+		minute=0;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={5141.3828,15.974999,20627.898};
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="assault1=group this; {removeAllWeapons _x} foreach units assault1;";
+				};
+				class Item1
+				{
+					position[]={5139.4341,15.974999,20624.537};
+					id=1;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					rank="CORPORAL";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={5142.9316,15.974999,20624.537};
+					id=2;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					rank="CORPORAL";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={5145.7295,15.974999,20624.711};
+					id=3;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4933.2529,10.730697,20441.904};
+					id=4;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="titleCut["""",""black out"",0.0001]; this exec ""movie.sqs"";";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5900.125,18.142187,20757.564};
+					id=6;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="tero1";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={5138.3408,15.974999,20637.9};
+			azimut=85;
+			id=5;
+			side="EMPTY";
+			vehicle="HMMWV";
+			leader=1;
+			skill=0.60000002;
+			text="hummer";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={4946.7661,11.438329,20454.773};
+			a=0;
+			b=0;
+			type="END1";
+			age="UNKNOWN";
+			text="END";
+			expCond="endcut";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=11343363;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"pmc_rugen"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rugen"
+	};
+	randomSeed=14729731;
+	class Intel
+	{
+	};
+};
