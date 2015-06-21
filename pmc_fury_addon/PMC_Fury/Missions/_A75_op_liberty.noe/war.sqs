@@ -1,0 +1,174 @@
+
+if (!local Server) then { exit; };
+
+eastguys=count aieast;
+MaxUnits=50;
+MaxEast=20;
+_LoopDelay=30;
+
+; how many we need to kill?
+EastKills=50;
+
+; limit the time spend on this debugging of mission...
+if (pmcdb==1) then { MaxUnits=10;MaxEast=10;EastKills=1;_LoopDelay=7; }
+
+_StartInfPosits = [EastInfStart1,EastInfStart2,EastInfStart3];
+_StartArmorPosits = [EastStart1,EastStart2];
+
+;
+; big ass looper to wage the war without lag hell
+;
+
+#Loopah
+~_LoopDelay;
+
+if (pmcdb==1) then { player sidechat format["east: %1, west: %2, all: %3, east kills: %4",count aieast,count aiwest,count aieast+count aiwest,eastguys - count aieast]; };
+
+; if east kills more than 50
+if (eastguys - count aieast > EastKills) then { eastdead1=true; publicvariable "eastdead1"; goto "TheEnd"; };
+
+if ((count aieast + count aiwest) > MaxUnits) then { goto "Loopah"; };
+if ((count aieast) < MaxEast) then { goto "CreateEast"; };
+
+
+
+
+
+
+
+
+#CreateEast
+
+;
+; create Russian soldier squad
+;
+e2=objnull;
+_EASTtempgrp = [];
+
+_ran = random(1);
+"OfficerE" createunit [getpos EastInfStart1, rusinf1, "e2 = this", _ran, "SERGEANT"];
+[e2] join grpnull;
+_EASTtempgrp = group e2;
+e2 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+"SoldierEMG" createunit [getpos EastInfStart1, rusinf1, "e1 = this", 1, "CORPORAL"];
+[e1] join grpnull;
+[e1] join _EASTtempgrp;
+e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+_ran = random(1);
+"SoldierEG" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "CORPORAL"];
+[e1] join grpnull;
+[e1] join _EASTtempgrp;
+e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+_ran = random(1);
+"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "CORPORAL"];
+[e1] join grpnull;
+[e1] join _EASTtempgrp;
+e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+_ran = random(1);
+"SoldierELAW" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"];
+[e1] join grpnull;
+[e1] join _EASTtempgrp;
+e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+"SoldierEMG" createunit [getpos EastInfStart1, rusinf1, "e1 = this", 1, "PRIVATE"];
+[e1] join grpnull;
+[e1] join _EASTtempgrp;
+e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+_ran = random(1);
+"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"];
+[e1] join grpnull;
+[e1] join _EASTtempgrp;
+e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+_ran = random(1);
+"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"];
+[e1] join grpnull;
+[e1] join _EASTtempgrp;
+e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+_ran = random(1);
+"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"];
+[e1] join grpnull;
+[e1] join _EASTtempgrp;
+e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+_EASTtempgrp setbehaviour "aware";
+_EASTtempgrp setcombatmode "red";
+_EASTtempgrp setspeedmode "full";
+_EASTtempgrp setformation "wedge";
+
+leader _EASTtempgrp move getpos helo;
+
+[_EASTtempgrp,[],[],[],[],1,1] exec "ai.sqs";
+eastguys=eastguys+9;
+
+
+;
+; lets skip if old BMP2 is alive.
+;
+if (alive _bmp2) then { goto "Skipper"; };
+
+;
+; bmp2
+;
+e1=objnull;
+e2=objnull;
+e3=objnull;
+_bmp2grp=objnull;
+_bmp2=objnull;
+
+_ran = random(1);
+"SoldierECrew" createunit [getpos EastStart1, rusinf1, "e1 = this", _ran, "SERGEANT"];
+[e1] join grpnull;
+_bmp2grp = group e1;
+e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+_ran = random(1);
+"SoldierECrew" createunit [getpos EastStart1, rusinf1, "e2 = this", _ran, "CORPORAL"];
+[e2] join grpnull;
+[e2] join _bmp2grp;
+e2 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+_ran = random(1);
+"SoldierECrew" createunit [getpos EastStart1, rusinf1, "e3 = this", _ran, "PRIVATE"];
+[e3] join grpnull;
+[e3] join _bmp2grp;
+e3 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+_bmp2 = "BMP2" createvehicle getpos EastStart1;
+_bmp2 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+
+e1 moveincommander _bmp2;
+e2 moveingunner _bmp2;
+e3 moveindriver _bmp2;
+
+_bmp2grp setbehaviour "aware";
+_bmp2grp setcombatmode "red";
+_bmp2grp setspeedmode "full";
+
+leader _bmp2grp move getpos helo;
+
+; skip point
+#Skipper
+
+publicvariable "eastguys";
+
+if (pmcdb==1) then { player sidechat format["Created 12 EAST guys! total of: %1",count aieast]; };
+
+goto "Loopah";
+
+
+
+#TheEnd
+if (pmcdb==1) then { player sidechat "yes yes yes! war.sqs ended!"; hint "war.sqs ended!"; };
+
+PAPABEAR sideradio "Rsarready";
+
+1 setradiomsg "Call SAR package";
+
+exit;

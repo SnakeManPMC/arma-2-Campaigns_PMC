@@ -1,0 +1,112 @@
+;
+; ##################################################################################
+; crazy unit creator starts here
+; ##################################################################################
+;
+
+;
+; how many times we loop the russian attacks
+;
+_warloop=0;
+
+
+[WestM1A1Squad, getpos WestStart, groupAlpha, groupBravo] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_leader = NewSquad select 0
+
+group _leader move getpos tgt_area
+group _leader setbehaviour "safe";
+group _leader setcombatmode "red";
+
+~2
+
+[WestMechInfSquad, getpos WestStart, groupAlpha, groupBravo] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_leader = NewSquad select 0
+
+group _leader move getpos tgt_area
+group _leader setbehaviour "aware";
+group _leader setcombatmode "red";
+
+~2
+
+
+
+;
+; start of the looping
+;
+#CreatorStart
+
+_warloop=_warloop+1;
+
+;hint format ["Okay WAR looper %1 as activated!",_warloop]
+
+[EastInfSquad, getpos EastInfStart, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_leader = NewSquad select 0
+
+group _leader move getpos tgt_area
+group _leader setbehaviour "aware";
+group _leader setcombatmode "red";
+{_x allowfleeing 0} foreach units _leader;
+
+~2
+
+[EastInfSquad, getpos EastInfStart, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_leader = NewSquad select 0
+
+group _leader move getpos tgt_area
+group _leader setbehaviour "aware";
+group _leader setcombatmode "red";
+{_x allowfleeing 0} foreach units _leader;
+
+~2
+
+
+[EastBMPSquad, getpos EastStart, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_leader = NewSquad select 0
+
+group _leader move getpos tgt_area
+group _leader setbehaviour "safe";
+group _leader setcombatmode "red";
+{_x allowfleeing 0} foreach units _leader;
+
+~2
+
+
+
+;hint "ok war.sqs loop done, units created. hooyah soldier!";
+#idle
+
+;hint format ["idle for 120 secs because...\nEast: %1\nWest: %2",(east countside eastarray),(west countside westarray)];
+
+;
+; waiting for war to wage...
+;
+~120
+
+; this was AND before, lets reduce the load of units on the map...
+?((east countside eastarray) > 20): goto "idle"
+?(_warloop < 10): goto "CreatorStart"
+
+;
+; for the mission objectives complete stuff
+;
+readyforend=true;
+
+; some notification that we're in the end
+;hint "CONGRATULATIONS mission end! now just clean up the area and you're done!"
+
+exit

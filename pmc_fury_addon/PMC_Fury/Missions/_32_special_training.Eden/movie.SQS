@@ -1,0 +1,120 @@
+;
+; set the ops guy halting
+;
+moveman=false;
+guy assignascargo helo;
+
+;flagshot
+_camera = "camera" camCreate [5070.19,10287.59,5.04]
+_camera camSetTarget [-30811.69,-77128.66,32747.25]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["","BLACK IN",3];
+~3
+
+
+;_camera camSetPos []
+;_camera camSetTarget [97959.59,45942.30,596.59]
+;_camera camSetFOV 0.700
+;_camera camCommit 0
+;@camCommitted _camera
+~2
+
+;humshot
+_camera camSetTarget [15371.55,107843.30,-19150.21]
+_camera camSetPos [5061.94,10241.03,3.75]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;move 1
+_camera camSetTarget [-76740.23,67522.72,-5131.82]
+_camera camSetPos [5088.65,10273.33,2.40]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+;move 1 end
+_camera camSetTarget [-76740.23,67522.72,-5131.63]
+_camera camSetPos [5096.05,10283.90,1.82]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~.5
+
+;dudes shot
+_camera camSetTarget [-47066.98,-69558.91,30592.86]
+_camera camSetPos [5014.61,10143.64,0.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+
+moveman=true;
+helo flyinheight 0;
+
+;backshot to helo
+_camera camSetTarget [4865.98,111742.49,23.02]
+_camera camSetPos [4866.66,11739.92,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;helo hum move 1
+_camera camSetTarget [-57323.99,89689.52,-7670.19]
+_camera camSetPos [4886.80,11775.31,2.64]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+;helo hum move 1
+_camera camSetTarget [-81855.02,-37384.26,-7669.77]
+_camera camSetPos [4886.80,11775.31,2.64]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+~2
+
+;usa army
+_camera camSetTarget [-34897.68,100860.05,22100.18]
+_camera camSetPos [4870.80,11803.88,0.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+;move shot
+_camera camSetTarget [-89346.11,-20161.61,10090.85]
+_camera camSetPos [4870.80,11803.88,0.58]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+?(guy in helo): helo flyinheight 25;
+
+;soldier shot
+_camera camSetTarget guy
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+~3
+
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

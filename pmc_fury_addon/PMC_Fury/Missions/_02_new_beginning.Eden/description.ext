@@ -1,0 +1,32 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="New Beginning";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Early morning attack to enemy airbase";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rrdead
+	{
+		name = "Rrdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rrdead;
+	};
+	class RprepareLZ
+	{
+		name = "RprepareLZ";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_RprepareLZ;
+	};
+	class Rehelodead
+	{
+		name = "Rehelodead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rehelodead;
+	};
+};

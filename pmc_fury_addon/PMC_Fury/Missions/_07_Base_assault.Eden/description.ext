@@ -1,0 +1,32 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Base Assault";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Time to take nearby enemy base";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rbaseclear
+	{
+		name = "Rbaseclear";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbaseclear;
+	};
+	class Rcoming
+	{
+		name = "Rcoming";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcoming;
+	};
+	class Rastation
+	{
+		name = "Rastation";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rastation;
+	};
+};

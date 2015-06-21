@@ -1,0 +1,150 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+;
+; disable user input and radio
+;
+disableuserinput disable;
+enableradio disable;
+
+[sol2,sol3,sol4,sol5,sol6,sol7,sol8,sol9] join grpnull;
+
+; first shot of ammo box
+_camera camSetTarget boxer
+_camera camSetRelPos [0,15,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track1",0]
+titlecut ["","BLACK IN",2];
+
+dude setcaptive true;
+dude setunitpos "DOWN";
+
+; take leader position
+_lpos=getpos leader assault1;
+
+; move leade away from there
+leader assault1 setpos getpos away;
+
+; move replacement guy
+dude setpos _lpos;
+dude disableai "move";
+
+;
+; move spez natz guys into the scene
+naz1 setpos getpos pos_w;
+naz2 setpos getpos pos_n;
+naz3 setpos getpos pos_e;
+naz4 setpos getpos pos_ww;
+~1
+
+; naz 1 shot
+_camera camSetTarget naz1
+_camera camSetRelPos [0,-4,.5]
+_camera camSetTarget dude
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; naz 1 shot
+_camera camSetTarget naz2
+_camera camSetRelPos [0,-4,1]
+_camera camSetTarget dude
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; naz 3 shot
+_camera camSetTarget naz3
+_camera camSetRelPos [0,-4,1]
+_camera camSetTarget dude
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; naz 1 shot
+_camera camSetTarget naz1
+_camera camSetRelPos [0,-4,.5]
+_camera camSetTarget dude
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+naz1 setunitpos "up";
+naz2 setunitpos "up";
+naz3 setunitpos "up";
+naz4 setunitpos "up";
+
+;
+; take weapons away from "you"
+;
+removeallweapons dude;
+
+dude domove getpos boxer;
+
+sol2 setdammage 1;
+sol3 setdammage 1;
+sol4 setdammage 1;
+sol5 setdammage 1;
+sol6 setdammage 1;
+sol7 setdammage 1;
+sol8 setdammage 1;
+sol9 setdammage 1;
+
+_x=getpos dude select 0;
+_y=getpos dude select 1;
+
+naz1 domove [_x+5,_y];
+naz2 domove [_x,_y+5];
+naz3 domove [_x+5,_y+5];
+naz4 domove [_x+10,_y];
+~3
+
+naz1 dowatch dude;
+naz2 dowatch dude;
+naz3 dowatch dude;
+naz4 dowatch dude;
+
+; surrender shot
+_camera camSetTarget dude
+_camera camSetRelPos [0,-5,1]
+_camera camSetTarget dude
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~7
+
+dude switchmove "FXStandSurDown";
+~10
+
+; wider shot
+_camera camSetTarget dude
+_camera camSetRelPos [10,-20,5]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~2
+
+titlecut ["","BLACK OUT",5];
+5 fademusic 0;
+~5
+
+player cameraEffect ["terminate","back"]
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

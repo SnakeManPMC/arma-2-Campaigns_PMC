@@ -1,0 +1,52 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Entre Deux";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Seizing Entre Deux...";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rbposition
+	{
+		name = "Rbposition";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbposition;
+	};
+	class Rchoppercall
+	{
+		name = "Rchoppercall";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rchoppercall;
+	};
+	class Rchoppercome
+	{
+		name = "Rchoppercome";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rchoppercome;
+	};
+	class Rbravocall
+	{
+		name = "Rbravocall";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbravocall;
+	};
+	class Rbcome
+	{
+		name = "Rbcome";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbcome;
+	};
+	class Ralldead
+	{
+		name = "Ralldead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Ralldead;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

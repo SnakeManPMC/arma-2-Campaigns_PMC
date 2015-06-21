@@ -1,0 +1,64 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Ambush at Durras";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Kill the convoy!";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rback2camp
+	{
+		name = "Rback2camp";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rback2camp;
+	};
+	class Rextract
+	{
+		name = "Rextract";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rextract;
+	};
+	class Ratpos1
+	{
+		name = "Ratpos1";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Ratpos1;
+	};
+	class Ratpos2
+	{
+		name = "Ratpos2";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Ratpos2;
+	};
+	class Rconvoydead
+	{
+		name = "Rconvoydead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rconvoydead;
+	};
+	class Rhqreply1
+	{
+		name = "Rhqreply1";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhqreply1;
+	};
+	class Rhqreply2
+	{
+		name = "Rhqreply2";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhqreply2;
+	};
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

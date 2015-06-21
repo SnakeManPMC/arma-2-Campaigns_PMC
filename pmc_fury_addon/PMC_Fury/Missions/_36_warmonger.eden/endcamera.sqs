@@ -1,0 +1,93 @@
+
+"1" objstatus "DONE";
+
+PAPABEAR sideradio "Rcomplete";
+~25
+
+disableuserinput disable
+enableradio disable
+
+; camera basic initialization
+;=== 1:20:20
+_camera = "camera" camCreate [6859.02,4763.60,72.82]
+_camera camSetTarget [100833.06,1562.66,-33892.04]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+titleText ["W A R M O N G E R","PLAIN DOWN",3]
+~15
+
+;=== 1:22:18
+_camera camSetTarget [91240.15,-44572.00,-22208.89]
+_camera camSetPos [7230.25,4854.01,20.17]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~15
+
+;=== 1:22:49
+_camera camSetTarget [-78906.83,-12768.38,-47392.94]
+_camera camSetPos [7286.25,4796.58,47.91]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~15
+
+;=== 1:23:52
+_camera camSetTarget [75673.25,36715.29,-65440.62]
+_camera camSetPos [7118.73,5177.51,60.99]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~15
+
+;=== 1:24:21
+_camera camSetTarget [100875.38,-16096.55,-28673.39]
+_camera camSetPos [7513.66,5197.50,70.87]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~15
+
+;=== 1:24:34
+_camera camSetTarget [425.02,-93854.45,-12546.83]
+_camera camSetPos [7522.75,5038.73,51.26]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~15
+
+;=== 1:25:02
+_camera camSetTarget [-56207.45,-54436.89,-48980.10]
+_camera camSetPos [7486.17,4917.35,122.81]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~15
+
+;=== 1:25:40
+_camera camSetTarget [-60006.94,-16735.22,-70484.76]
+_camera camSetPos [7308.09,4811.99,134.85]
+_camera camSetFOV 0.886
+_camera camCommit 0
+@camCommitted _camera
+
+titleText ["Such carnage...","PLAIN DOWN",2]
+~20
+
+
+titlecut ["","BLACK OUT",3];
+~5
+
+disableuserinput enable
+enableradio enable
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

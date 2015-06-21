@@ -1,0 +1,93 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+
+; start behind
+_camera camSetTarget [85837.23,-60422.97,13347.27]
+_camera camSetPos [9570.97,2911.41,0.93]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+playmusic ["track9",0]
+
+titlecut ["","BLACK IN",5];
+~10
+
+; flag shot
+_camera camSetTarget [-37580.20,91087.04,3739.71]
+_camera camSetPos [9562.47,2966.34,6.88]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+; zoom down to soldiers
+_camera camSetTarget [-27802.68,91630.83,27469.18]
+_camera camSetPos [9562.16,2965.33,0.60]
+_camera camSetFOV 0.700
+_camera camCommit 6
+@camCommitted _camera
+~2
+
+
+; helo sideshot
+_camera camSetTarget helo
+_camera camSetRelPos [30,0,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; helo sideshot 2
+_camera camSetTarget helo
+_camera camSetRelPos [30,-30,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; helo sideshot 2
+_camera camSetTarget helo
+_camera camSetRelPos [0,30,15]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; start behind
+_camera camSetTarget helo
+_camera camSetPos [9570.97,2911.41,0.93]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+#loop
+~1
+?(leader recon in helo): goto "loop"
+
+; leader recon
+_camera camSetTarget leader recon
+_camera camSetRelPos [10,40,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~10
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

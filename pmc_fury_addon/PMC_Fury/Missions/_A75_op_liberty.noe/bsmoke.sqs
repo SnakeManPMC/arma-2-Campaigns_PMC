@@ -1,0 +1,41 @@
+;By Babalon
+;// Make sure things quiet down for a few seconds vefore starting
+~4;
+
+;// How many seconds should the smoke run
+_Duration = 900;
+
+;// Calculate how many loops
+_numLoops = _Duration / 0.15;
+
+;// Initialize the loop counter
+_loopCounter = 1
+
+#loop
+?isNull _this : exit;
+
+;// Get the obj pos and break it out int XYZ coordinates
+	_objPos = getpos _this;
+	_objPosX = _objPos select 0;
+	_objPosY = _objPos select 1;
+	_objPosZ = _objPos select 2;
+
+;// Loop delay
+	~0.15;
+
+;// This smoke script has three layers
+;// Part 1: Embers
+	drop ["\ca\data\cl_fire" , "" , "Billboard" , 120 , 9 , [_objPosX,_objPosY,(_objPosZ + 1.5)] , [1.5,1.5,0] , 1 , 0.185 , 0.155 , 0 , [0.05,0.25] ,[[0.3,0.6,0,1],[0.5,0.5,0,1],[0.75,0.75,0,1],[0.75,1,0,1]] , [0] , 0.5 , 0.5 , "" , "" , ""];
+;// Part 2: Smoke
+	drop ["\ca\data\cl_basic" , "" , "Billboard" , 120 , 25 , [_objPosX,_objPosY,(_objPosZ + 1.5)] , [1.5,1.5,0] , 1 , 0.185 , 0.155 , 0 , [3.5,40] ,[[0.1,0.1,0.1,0.2],[0.05,0.05,0.05,0.3],[0,0,0,0.3],[0,0,0,0.2]] , [0] , 0.2 , 0.2 , "" , "" , ""];
+;// Part 3: Fire
+	drop ["\ca\data\cl_fire" , "" , "Billboard" , 120 , 1.5 , [_objPosX,_objPosY,(_objPosZ + 1)] , [1.5,1.5,0] , 1 , 0.185 , 0.155 , 0 , [2,4] ,[[0.62,0.72,0.81,0.1],[0.62,0.72,0.81,0.1]] , [0] , 0.2 , 0.2 , "" , "" , ""];
+;// The loop is incrimented.
+		_loopCounter = _loopCounter + 1;
+;// If the script has run as long as it should, it stops
+		?(_loopCounter >= _numLoops) : goto "end";
+;// If the loop has not run long enough, then repeat until it has
+goto "loop";
+
+#end
+exit;

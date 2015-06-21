@@ -1,0 +1,46 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Night in Tyrone";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Nightfall... we are at Tyrone...";
+
+class CfgSounds
+{
+	sounds[] = { };
+	
+	class Rokayboys
+	{
+		name = "Rokayboys";
+		sound[] = {"", db+0, 1.0};
+		titles[] = {0, $STRM_Rokayboys};
+	};
+};
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rokayboys
+	{
+		name = "Rokayboys";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rokayboys;
+	};
+	class Rcomplete
+	{
+		name = "Rcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcomplete;
+	};
+	class Rengage
+	{
+		name = "Rengage";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rengage;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

@@ -1,0 +1,146 @@
+;
+; explode mine under the lead vehicle and make sure hes dead
+;
+"heat105" camcreate getpos leadhum;
+
+leaddriver setdammage 1;
+tdriver1 setdammage 1;
+
+;
+; set damage to the convoy cars
+;
+truck1 setdammage .8
+truck2 setdammage .5
+trailhum setdammage .3
+
+leadhum setfuel 0;
+truck1 setfuel 0;
+truck2 setfuel 0;
+trailhum setfuel 0;
+
+unassignvehicle tdriver2;
+unassignvehicle traildriver;
+
+tdriver2 setdammage .9
+traildriver setdammage .7
+
+tdriver2 domove getpos leadhum
+traildriver domove getpos leadhum
+
+;
+; get prisoners out of the trucks
+;
+{unassignvehicle _x} foreach units prisoners1;
+{unassignvehicle _x} foreach units prisoners2;
+
+;
+; behaviour & combatmode for prisoners escaping
+;
+prisoners1 setbehaviour "aware";
+prisoners2 setbehaviour "aware";
+
+prisoners1 setspeedmode "limited";
+prisoners2 setspeedmode "limited";
+
+~2
+
+
+;
+; passangers out of the vehicles and behaviour
+;
+{unassignvehicle _x} foreach units passangers2;
+passangers2 setcombatmode "red";
+passangers2 setbehaviour "aware";
+
+leader passangers2 domove getpos leadhum
+
+;
+; kill passangers in truck1 and take away weapons (for prisoners)
+;
+{_x setdammage 1} foreach units passangers1;
+{removeallweapons _x} foreach units passangers1;
+
+;
+; give m16 + ammo two of the prisoners 
+; and turn them away from captive
+;
+[pris1_5,pris1_6,pris1_7,pris1_7,pris1_8] join grpnull;
+[pris1_5,pris1_6,pris1_7,pris1_7,pris1_8] join escapees;
+
+pris1_5 addMagazine "cwr2_30Rnd_556x45_NATO";
+pris1_5 addweapon "M16";
+;pris1_5 setcaptive false;
+;pris1_5 setbehaviour "combat";
+;pris1_5 setcombatmode "red";
+
+pris1_6 addMagazine "cwr2_30Rnd_556x45_NATO";
+pris1_6 addweapon "M16";
+;pris1_6 setcaptive false;
+;pris1_6 setbehaviour "combat";
+;pris1_6 setcombatmode "red";
+
+pris1_7 addMagazine "cwr2_30Rnd_556x45_NATO";
+pris1_7 addweapon "M16";
+;pris1_7 setcaptive false;
+;pris1_7 setbehaviour "combat";
+;pris1_7 setcombatmode "red";
+
+pris1_8 addMagazine "cwr2_30Rnd_556x45_NATO";
+pris1_8 addweapon "M16";
+;pris1_8 setcaptive false;
+;pris1_8 setbehaviour "combat";
+;pris1_8 setcombatmode "red";
+
+;
+; not a prisoner, combat mode
+;
+{_x setcaptive false} foreach units escapees;
+escapees setbehaviour "aware";
+escapees setcombatmode "red";
+
+;
+; move prisoner groups into the fuck outta there
+;
+
+[pris1_2] join grpnull;
+[pris1_3] join grpnull;
+[pris1_4] join grpnull;
+[pris2_2] join grpnull;
+[pris2_3] join grpnull;
+[pris2_4] join grpnull;
+[pris2_5] join grpnull;
+[pris2_6] join grpnull;
+[pris2_7] join grpnull;
+[pris2_8] join grpnull;
+
+pris1_1 domove getpos pr1;
+pris1_2 domove getpos pr2;
+pris1_3 domove getpos pr3;
+pris1_4 domove getpos pr4;
+
+pris2_1 domove getpos pr5;
+pris2_2 domove getpos pr6;
+pris2_3 domove getpos pr7;
+pris2_4 domove getpos pr8;
+pris2_5 domove getpos pr9;
+pris2_6 domove getpos pr10;
+pris2_7 domove getpos pr1;
+pris2_8 domove getpos pr2;
+
+~4
+
+;
+; player calls for help
+;
+player sideradio "Rescape";
+
+~20
+
+PAPABEAR sideradio "Rhqnosupport";
+
+;
+; escape is in progress
+;
+escape=true;
+
+exit

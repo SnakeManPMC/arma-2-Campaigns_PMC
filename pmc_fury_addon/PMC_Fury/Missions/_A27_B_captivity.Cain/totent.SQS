@@ -1,0 +1,29 @@
+
+leader nazis1 globalchat "Follow me and get on the tent near the Commander, or we will shoot you right here. MOVE IT PIG!";
+
+nazis1 move getpos nzz;
+
+#Looper
+~1
+
+?(aP distance leader nazis1 >50): goto "KillHim"
+?(aP distance leader offis > 10): goto "Looper"
+
+leader offis globalchat "So here we have genuine amerikan squad leader. well done comrades.";
+~10
+
+leader offis globalchat "All right dirty amerikan. maybe there is some war plans you want to share...";
+~10
+
+"1" objstatus "DONE";
+mcomplete=true;
+
+exit
+
+
+#KillHim
+leader nazis1 globalchat "Everybody shoot the amerikan!";
+~2
+aP setcaptive false;
+
+exit

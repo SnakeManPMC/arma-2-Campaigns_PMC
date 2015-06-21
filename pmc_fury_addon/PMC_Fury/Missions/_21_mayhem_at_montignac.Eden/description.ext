@@ -1,0 +1,52 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Mayhem at Montignac";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Attack for Montignac";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Ra10ready
+	{
+		name = "Ra10ready";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Ra10ready;
+	};
+	class Ra10attack
+	{
+		name = "Ra10attack";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Ra10attack;
+	};
+	class Rcalla10s
+	{
+		name = "Rcalla10s";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcalla10s;
+	};
+	class Rbravogo
+	{
+		name = "Rbravogo";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbravogo;
+	};
+	class Rbravoroger
+	{
+		name = "Rbravoroger";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbravoroger;
+	};
+	class Rhqreply1
+	{
+		name = "Rhqreply1";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhqreply1;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

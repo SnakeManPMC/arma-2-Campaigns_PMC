@@ -1,0 +1,79 @@
+;
+; get people out
+;
+helo1 land "land";
+
+#landing
+~.5
+
+_z = getpos vehicle helo1 select 2;
+
+;
+; loop until helo height is 2 meters.
+;
+?(_z > 2): goto "landing"
+
+helo1 flyinheight 0;
+
+;
+; wait until whole squad is out
+;
+_A = 0;
+ejc="EJECT";
+
+{unassignvehicle _x} foreach units sops1;
+
+#WAITING
+_listunits = units sops1;
+_B = count _listunits
+~.2
+_listunits select _A action [ejc,helo1];
+_A=_A+1
+?(_B > _A): goto "WAITING"
+
+sops1 setbehaviour "AWARE";
+sops1 setcombatmode "YELLOW";
+sops1 setspeedmode "FULL";
+
+leader sops1 move getpos camp;
+
+#RunLoop
+~1
+?(leader sops1 distance camp > 5): goto "RunLoop";
+
+;
+; remove prisoners from prisoner status
+;
+Guarding=false;
+{_x setCaptive false} foreach units pows1;
+aP setCaptive false;
+
+leader sops1 sidechat "UNITED STATES SPECIAL FORCES. I'M HERE TO GET YOU OUT SIR. LETS GET INTO THE CHOPPER DOUBLE TIME!";
+
+[aP] join sops1;
+[leader pows1] join sops1;
+[leader pows1] join sops1;
+
+{_x assignascargo helo1} foreach units sops1;
+{[_x] ordergetin true} foreach units sops1;
+
+
+;
+; wait until whole squad is on board.
+;
+_A = 0;
+
+#WAITING2
+_listunits = units sops1;
+_B = count _listunits
+~.2
+?(_listunits select _A in helo1): _A=_A+1
+?(_B > _A): goto "WAITING2"
+
+helo1 flyinheight 50;
+helo1 sideradio "Rh1dustoff";
+
+~40
+?(aP in helo1): helo1 sideradio "Rannounce";
+
+exit

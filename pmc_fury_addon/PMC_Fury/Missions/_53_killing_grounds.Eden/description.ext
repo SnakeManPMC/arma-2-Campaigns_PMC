@@ -1,0 +1,58 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Killing Grounds";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Time to kick Ivan again";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+
+	class Rbackup
+	{
+		name = "Rbackup";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbackup;
+	};
+
+	class Ronway
+	{
+		name = "Ronway";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Ronway;
+	};
+
+	class Rgunships
+	{
+		name = "Rgunships";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rgunships;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+	class Rcopyclear
+	{
+		name = "Rcopyclear";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcopyclear;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

@@ -1,0 +1,92 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+;=== 16:57:21
+_camera camSetTarget [-85523.30,-30099.34,-10326.11]
+_camera camSetPos [6081.97,8620.54,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+playmusic ["track16",0]
+
+titlecut ["","BLACK IN",2];
+~5
+
+;=== 16:57:26
+_camera camSetTarget [-68352.03,-44444.59,-40406.48]
+_camera camSetPos [6078.07,8626.70,11.09]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 16:57:38
+_camera camSetTarget [92930.97,57972.96,1577.86]
+_camera camSetPos [5989.63,8585.74,0.82]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 16:57:51
+_camera camSetTarget [-66201.97,75043.38,-19414.49]
+_camera camSetPos [5959.98,8630.78,6.94]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+;=== 16:57:55
+_camera camSetTarget [-60231.06,-63724.91,-19413.69]
+_camera camSetPos [5961.97,8638.69,6.94]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 16:58:01
+_camera camSetTarget [-10897.04,-87586.98,-21229.32]
+_camera camSetPos [5957.48,8640.15,6.94]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~5
+
+;=== 16:59:52
+_camera camSetTarget [-35912.37,99305.73,2439.18]
+_camera camSetPos [5990.12,8537.72,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== 17:00:00
+_camera camSetTarget [-13039.15,106423.76,8031.94]
+_camera camSetPos [5966.63,8565.34,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== 17:00:10
+_camera camSetTarget [-81332.54,57175.43,-3284.56]
+_camera camSetPos [5997.12,8576.13,3.28]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+titlecut ["","BLACK OUT",3];
+4 fademusic 0;
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

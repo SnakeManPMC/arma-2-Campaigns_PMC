@@ -1,0 +1,22 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Night Watch 2";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Guard Durras";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rcomplete
+	{
+		name = "Rcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcomplete;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

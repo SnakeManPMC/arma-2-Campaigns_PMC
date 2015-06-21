@@ -1,0 +1,57 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+; truck shot
+_camera camSetTarget truck
+_camera camSetRelPos [-40,50,15]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track5",0]
+
+titlecut ["","BLACK IN",5];
+~5
+
+; truck shot
+_camera camSetTarget truck
+_camera camSetRelPos [30,100,10]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+_fish=0;
+
+#loop
+_fish=_fish+1;
+.01
+_camera camSetTarget truck
+_camera camSetRelPos [3,10,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+?(_fish < 1000): goto "loop"
+
+; truck shot
+_camera camSetTarget truck
+_camera camSetRelPos [-30,100,15]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

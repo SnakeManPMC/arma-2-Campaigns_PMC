@@ -1,0 +1,94 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+;=== 15:33:21
+_camera camSetTarget [-80011.93,53829.42,-12973.70]
+_camera camSetPos [5321.28,3348.89,1.78]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track1",0]
+
+titlecut ["","BLACK IN",2];
+~5
+
+;=== 15:33:25
+_camera camSetTarget [45028.45,94197.02,-12973.32]
+_camera camSetPos [5321.28,3348.89,1.78]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 15:33:34
+_camera camSetTarget [-93230.71,-7100.85,-12976.86]
+_camera camSetPos [5361.22,3374.66,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 15:33:38
+_camera camSetTarget [-93230.71,-7100.85,-12977.27]
+_camera camSetPos [5350.98,3383.35,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== 15:33:41
+_camera camSetTarget [-93230.71,-7100.85,-12976.80]
+_camera camSetPos [5345.16,3389.98,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== 15:33:44
+_camera camSetTarget [-93230.71,-7100.85,-12977.13]
+_camera camSetPos [5340.52,3393.20,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== 15:33:48
+_camera camSetTarget [75070.54,-67083.55,-12980.33]
+_camera camSetPos [5329.91,3387.20,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== 15:33:50
+_camera camSetTarget [75070.54,-67083.55,-12980.08]
+_camera camSetPos [5327.30,3381.92,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== 15:33:55
+_camera camSetTarget [75070.54,-67083.55,-12980.55]
+_camera camSetPos [5322.19,3374.19,1.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+titlecut ["","BLACK OUT",3];
+4 fademusic 0;
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

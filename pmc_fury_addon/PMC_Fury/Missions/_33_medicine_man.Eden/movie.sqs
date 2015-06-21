@@ -1,0 +1,111 @@
+;turn 1
+_camera = "camera" camCreate [8797.73,1159.47,5.42]
+_camera camSetTarget [-2957.42,96518.10,27894.02]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["","BLACK OUT",.001]
+playMusic ["track3", 0]
+~1
+
+titleText ["Somewhere deep in southern Everon...","PLAIN",4]
+~5
+
+titlecut ["","BLACK IN",3]
+~3
+
+titleText ["","PLAIN",3]
+~2
+
+;turn 1
+_camera camSetTarget [-75375.63,47487.59,27893.78]
+_camera camSetPos [8797.73,1159.47,5.42]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+;turn 2
+_camera camSetTarget [-59945.20,-71096.62,-7141.13]
+_camera camSetPos [8797.73,1159.47,5.42]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+;turn 3
+_camera camSetTarget [9846.28,-96074.80,-23160.91]
+_camera camSetPos [8797.73,1159.47,5.42]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~1
+
+;move 1
+_camera camSetTarget [9569.43,-96128.63,-23173.25]
+_camera camSetPos [8793.18,1106.37,4.68]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+;move 2
+_camera camSetTarget [29296.23,-93961.91,-23177.24]
+_camera camSetPos [8803.40,1065.06,5.49]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+;move 3
+_camera camSetTarget [38332.07,-67186.09,-66720.95]
+_camera camSetPos [8806.23,1051.97,8.54]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~2
+
+; black op 1
+_camera camSetTarget bo1
+_camera camSetRelPos [-2,-2,.5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; black op 2
+_camera camSetTarget bo2
+_camera camSetRelPos [1,1,.5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; black op 3
+_camera camSetTarget bo3
+_camera camSetRelPos [3,3,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+; black op 3
+_camera camSetFOV 0.1
+_camera camCommit 4
+
+~2
+bo3 setMimic "Angry"
+~2
+
+
+4 fadeMusic 0
+
+titlecut ["","BLACK OUT",4];
+~4
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

@@ -1,0 +1,298 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+; horizont shot
+_camera camSetTarget [-79164.32,-49387.11,7435.18]
+_camera camSetPos [3081.72,7008.60,5.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+playmusic ["track1",0]
+
+
+titlecut ["","BLACK IN",5];
+~5
+
+
+
+;=== 12:19:16
+_camera camSetTarget [-93303.81,-19031.35,-5546.68]
+_camera camSetPos [3084.52,7015.55,1.39]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+
+
+titleText ["NATO guys are chilling in the beach...","PLAIN DOWN",2]
+~5
+
+
+;=== 12:23:03
+_camera camSetTarget [12092.80,-92463.86,-2768.18]
+_camera camSetPos [3078.50,7090.42,3.04]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+~1
+
+;=== 12:23:43
+_camera camSetTarget [12092.80,-92463.86,-2768.18]
+_camera camSetPos [3079.53,7091.25,1.09]
+_camera camSetFOV 0.700
+_camera camCommit 2
+@camCommitted _camera
+
+~2
+
+; start of move right shot (behind)
+_camera camSetTarget [43423.99,97261.39,-15504.13]
+_camera camSetPos [3078.07,7085.58,1.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+
+;=== 12:25:25
+_camera camSetTarget [9136.76,105687.82,-15503.80]
+_camera camSetPos [3090.22,7082.98,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 15
+@camCommitted _camera
+
+~1
+
+
+; start of lift me up and look officer in the road
+_camera camSetTarget [88351.33,58361.07,-9947.90]
+_camera camSetPos [3076.61,7085.70,0.89]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~2
+
+transport setfuel 1;
+
+;=== 12:26:30
+_camera camSetTarget [84352.67,-50349.06,-9948.58]
+_camera camSetPos [3082.59,7061.47,7.28]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+~1
+
+; target transport jeep
+_camera camSetTarget transport
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+~5
+
+; hmm something ;)
+_camera camSetTarget sol4
+_camera camSetRelPos [5,5,2]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+
+@offidone
+
+; target offi
+_camera camSetTarget offi
+_camera camSetRelPos [0,-1,1.7]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+titleText ["OK SOLDIERS. YOUR VACATION IS OVER, YOU'RE RETASKED TO MALDEN.\nYOU ARE TO REPORT BACK TO BASE IMMEDIATELY.","PLAIN DOWN",2]
+~5
+
+; hmm something ;)
+_camera camSetTarget sol4
+_camera camSetRelPos [10,5,2]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~2
+
+
+sol1 assignasdriver jeeper;
+[sol1] ordergetin true;
+sol2 assignascargo jeeper;
+sol3 assignascargo jeeper;
+sol4 assignascargo jeeper;
+[sol2,sol3,sol4] ordergetin true;
+~2
+
+offi assignascargo transport
+[offi] ordergetin true;
+
+~10
+
+; target sol1
+_camera camSetTarget sol1
+_camera camSetRelPos [0,5,.5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~5
+
+; target jeeper
+_camera camSetTarget jeeper
+_camera camSetRelPos [0,15,2]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; target jeeper
+_camera camSetTarget jeeper
+_camera camSetRelPos [0,3,1]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+
+@sol1 in jeeper
+@sol2 in jeeper
+@sol3 in jeeper
+@sol4 in jeeper
+
+
+; sol1 drives to drive1 gamelogic
+sol1 move getpos drive1;
+
+~7
+
+
+titlecut ["","BLACK OUT",2];
+~2
+
+; set jeeps position near airbase, sol1 drives to the gate
+jeeper setpos getpos drive2;
+sol1 move getpos home;
+
+titleText ["NEAR THE NATO AIRBASE IN EVERON.","PLAIN DOWN",2]
+~2
+
+; target jeeper
+_camera camSetTarget jeeper
+_camera camSetRelPos [0,5,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+titlecut ["","BLACK IN",5];
+~10
+
+; target jeeper
+_camera camSetTarget jeeper
+_camera camSetRelPos [0,5,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~5
+
+; target jeeper
+_camera camSetTarget jeeper
+_camera camSetRelPos [0,5,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~5
+
+; location home logic
+_camera camSetTarget home
+_camera camSetRelPos [5,15,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+; target jeeper
+_camera camSetTarget jeeper
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+@unitready sol1;
+
+unassignvehicle sol1;
+unassignvehicle sol2;
+unassignvehicle sol3;
+unassignvehicle sol4;
+
+sol1 assignascargo helo;
+sol2 assignascargo helo;
+sol3 assignascargo helo;
+sol4 assignascargo helo;
+
+; target sol1
+_camera camSetTarget sol1
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~5
+
+; target helo
+_camera camSetTarget helo
+_camera camSetRelPos [15,15,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; target sol1
+_camera camSetTarget sol1
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+
+@sol1 in helo;
+@sol2 in helo;
+@sol3 in helo;
+@sol4 in helo;
+
+helo setfuel 1;
+~5
+
+; target helo
+_camera camSetTarget helo
+_camera camSetRelPos [10,10,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~10
+
+4 fademusic 0;
+~5
+
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

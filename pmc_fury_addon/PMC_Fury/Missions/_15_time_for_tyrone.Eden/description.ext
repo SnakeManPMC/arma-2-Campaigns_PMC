@@ -1,0 +1,40 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Time for Tyrone";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Time to seize city of Tyrone";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rlattack
+	{
+		name = "Rlattack";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rlattack;
+	};
+	class RradioL
+	{
+		name = "RradioL";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_RradioL;
+	};
+	class Rlclear
+	{
+		name = "Rlclear";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rlclear;
+	};
+	class Rreport
+	{
+		name = "Rreport";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rreport;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

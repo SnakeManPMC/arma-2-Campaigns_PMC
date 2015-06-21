@@ -1,0 +1,51 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Vernon Vampires";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Time to assault";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rvampire
+	{
+		name = "Rvampire";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rvampire;
+	};
+
+	class Rcityclear
+	{
+		name = "Rcityclear";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcityclear;
+	};
+
+	class Rbravoinpos
+	{
+		name = "Rbravoinpos";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbravoinpos;
+	};
+
+	class Rsniperpos
+	{
+		name = "Rsniperpos";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rsniperpos;
+	};
+
+	class Rarmorinpos
+	{
+		name = "Rarmorinpos";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rarmorinpos;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

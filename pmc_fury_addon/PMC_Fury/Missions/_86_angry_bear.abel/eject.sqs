@@ -1,0 +1,21 @@
+;
+; eject the two russian squads out if hind
+;
+
+{unassignvehicle _x} foreach units rusinf9;
+
+;
+; eject squad rusinf9
+;
+_A = 0;
+#WAITING
+_listunits = units rusinf9;
+_B = count _listunits
+~.2
+_listunits select _A action ["eject",rhelo2];
+_A=_A+1;
+?(_B > _A): goto "WAITING"
+
+rhelo2 flyinheight 25;
+
+exit

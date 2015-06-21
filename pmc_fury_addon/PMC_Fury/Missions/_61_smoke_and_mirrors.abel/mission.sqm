@@ -1,0 +1,323 @@
+version=11;
+class Mission
+{
+	randomSeed=9978883;
+	class Intel
+	{
+		briefingName="Smoke and Mirrors";
+		briefingDescription="Smoke and Mirrors";
+		month=8;
+		day=6;
+		hour=6;
+		minute=15;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2971.920166,3.579479,7144.454102};
+					id=0;
+					side="WEST";
+					vehicle="SoldierWSaboteurDay";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.600000;
+					init="demol=group this;";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2975.561523,0.980343,7153.773926};
+					azimut=300.000000;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="BoatW";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.600000;
+					fuel=0.000000;
+					text="boats";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2536.342041,-34.412769,7337.026855};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3050.812012,229.229996,6819.941895};
+					azimut=300.000000;
+					special="NONE";
+					id=3;
+					side="EAST";
+					vehicle="cwr2_SoldierE";
+					leader=1;
+					skill=0.403044;
+					init="guards1=group this;";
+				};
+				class Item1
+				{
+					position[]={3052.485840,229.229996,6815.924316};
+					azimut=300.000000;
+					special="NONE";
+					id=4;
+					side="EAST";
+					vehicle="cwr2_SoldierE";
+					skill=0.403044;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3048.133545,229.229996,6820.945801};
+					type="GUARD";
+					combatMode="YELLOW";
+					formation="WEDGE";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3223.835693,228.160187,6733.751465};
+					azimut=300.000000;
+					special="NONE";
+					id=5;
+					side="EAST";
+					vehicle="cwr2_SoldierE";
+					leader=1;
+					skill=0.403044;
+					init="guards1=group this;";
+				};
+				class Item1
+				{
+					position[]={3225.509521,228.165833,6729.733887};
+					azimut=300.000000;
+					special="NONE";
+					id=6;
+					side="EAST";
+					vehicle="cwr2_SoldierE";
+					skill=0.403044;
+				};
+			};
+			class Waypoints
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3221.157227,227.892212,6734.755371};
+					placement=50.000000;
+					combatMode="YELLOW";
+					formation="WEDGE";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={3023.686523,229.229996,6844.370117};
+					placement=50.000000;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={3052.441406,232.139923,6646.116211};
+					placement=50.000000;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={3221.453125,227.937866,6734.979980};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3093.089844,229.229996,6828.568848};
+			azimut=300.000000;
+			id=1;
+			side="EMPTY";
+			vehicle="UralRefuel";
+			lock="LOCKED";
+			skill=0.600000;
+			text="ufuel";
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={3098.535400,229.229996,6824.263184};
+			name="target";
+			text="Destroy Fuel Truck";
+			type="Flag";
+		};
+		class Item1
+		{
+			position[]={2967.869873,2.176272,7148.759766};
+			name="start";
+			text="Start";
+			type="Start";
+		};
+	};
+	class Sensors
+	{
+		items=2;
+		class Item0
+		{
+			position[]={2262.860596,-91.786095,7338.945801};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="ufuel dead & player in boats";
+			expCond="!alive ufuel AND leader demol in boats";
+			expActiv="mcomplete=true; ""1"" objstatus ""DONE""; boats setfuel 1;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={2306.992920,-87.160187,7314.488281};
+			a=0.000000;
+			b=0.000000;
+			timeoutMid=35.000000;
+			timeoutMax=45.000000;
+			type="END1";
+			age="UNKNOWN";
+			text="END";
+			expCond="mcomplete";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=8623107;
+	class Intel
+	{
+		month=8;
+		day=6;
+		hour=6;
+		minute=15;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3004.292236,229.229996,6849.753906};
+					id=0;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					init="this exec ""movie.sqs"";";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3027.695068,229.229431,6850.004395};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			text="endcut";
+			expCond="endcut";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class OutroWin
+{
+	randomSeed=13068803;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=7668227;
+	class Intel
+	{
+	};
+};

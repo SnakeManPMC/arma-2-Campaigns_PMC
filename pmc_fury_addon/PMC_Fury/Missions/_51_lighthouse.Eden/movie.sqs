@@ -1,0 +1,82 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+
+; inside start shot
+_camera camSetTarget [91947.64,-55212.75,-3705.43]
+_camera camSetPos [9374.16,1057.41,15.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+playmusic ["track13",0]
+
+titlecut ["","BLACK IN",5];
+~4
+
+
+; turn camera
+_camera camSetTarget [-45501.20,-82449.52,-3705.65]
+_camera camSetPos [9374.16,1057.41,15.53]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+
+; move forward through the window
+_camera camSetTarget [-45385.52,-82528.35,-3705.67]
+_camera camSetPos [9371.19,1052.73,15.45]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+~1
+
+
+; another start shot top of the world mum!
+_camera camSetTarget [-67340.95,-51054.73,-37177.64]
+_camera camSetPos [9379.01,1056.91,25.88]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+; move along the castle edge
+_camera camSetTarget [-67340.95,-51054.73,-37178.06]
+_camera camSetPos [9374.29,1063.86,25.66]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+
+; behind the leader
+_camera camSetTarget leader search1
+_camera camSetRelPos [0,-10,5]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~5
+
+; behind the leader
+_camera camSetTarget leader search1
+_camera camSetRelPos [30,0,15]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~5
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

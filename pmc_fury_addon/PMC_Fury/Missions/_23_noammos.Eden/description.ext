@@ -1,0 +1,22 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="No Ammos";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Wipe out enemy Ammo Depot";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rcityempty
+	{
+		name = "Rcityempty";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcityempty;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

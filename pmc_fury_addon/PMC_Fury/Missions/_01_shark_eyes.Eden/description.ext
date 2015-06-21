@@ -1,0 +1,47 @@
+// Title that appears on screen in briefing
+onLoadIntro="Shark Eyes";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Recon enemy airbase";
+
+// Show GPS system on the map
+ShowGPS=1;
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rmcomplete1
+	{
+		name = "Rmcomplete1";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete1;
+	};
+	class Rhqreply1
+	{
+		name = "Rhqreply1";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhqreply1;
+	};
+	class Rmcomplete2
+	{
+		name = "Rmcomplete2";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete2;
+	};
+	class Rhqreply2
+	{
+		name = "Rhqreply2";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhqreply2;
+	};
+	class Rswim
+	{
+		name = "Rswim";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rswim;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

@@ -1,0 +1,147 @@
+;
+; ##################################################################################
+; crazy unit creator starts here
+; ##################################################################################
+;
+
+if (!local Server) then { exit };
+
+
+; how many times we loop the russian attacks
+_warloop=0;
+
+; rate in seconds which the loop ... loops ;)
+_LoopRate=30;
+
+; war duration
+_WarDuration=5;
+
+; debug on 1, off 0
+pmcdb=0;
+
+; if less than this enemies and then we create more
+_EnemyCount=10;
+
+;
+; move our AH-64 Apache gunship
+;
+helo1 setbehaviour "COMBAT";
+helo1 setcombatmode "RED";
+helo1 setspeedmode "NORMAL";
+helo1 move getpos AirSupport1;
+
+helo2 setbehaviour "COMBAT";
+helo2 setcombatmode "RED";
+helo2 setspeedmode "NORMAL";
+helo2 move [(getpos AirSupport2 select 0)+500,(getpos AirSupport2 select 1)-500,(getpos AirSupport2 select 2)];
+
+
+
+;
+; start of the looping
+;
+#CreatorStart
+
+_warloop=_warloop+1;
+
+if (pmcdb == 1) then { hint format ["Okay WAR looper %1 as activated!",_warloop]; };
+
+[EastInfSquad, getpos EastInfStart, groupDelta, groupCharlie] exec "createsquad.sqs";
+~.01;
+@!CreateSquadRunning;
+
+_leader = NewSquad select 0;
+
+group _leader move getpos tgt_area;
+group _leader setbehaviour "aware";
+group _leader setcombatmode "red";
+group _leader setformation "line";
+{_x allowfleeing 0} foreach units _leader;
+
+
+[EastInfSquad, getpos EastInfStart2, groupDelta, groupCharlie] exec "createsquad.sqs";
+~.01;
+@!CreateSquadRunning;
+
+_leader = NewSquad select 0;
+
+group _leader move getpos tgt_area;
+group _leader setbehaviour "aware";
+group _leader setcombatmode "red";
+group _leader setformation "line";
+{_x allowfleeing 0} foreach units _leader;
+
+
+[EastBMPSquad, getpos EastStart2, groupDelta, groupCharlie] exec "createsquad.sqs";
+~.01;
+@!CreateSquadRunning;
+
+_leader = NewSquad select 0;
+
+group _leader move getpos tgt_area;
+group _leader setbehaviour "safe";
+group _leader setcombatmode "red";
+group _leader setformation "column";
+{_x allowfleeing 0} foreach units _leader;
+
+
+[EastT72Squad, getpos EastStart, groupDelta, groupCharlie] exec "createsquad.sqs";
+~.01;
+@!CreateSquadRunning;
+
+_leader = NewSquad select 0;
+
+group _leader move getpos tgt_area;
+group _leader setbehaviour "safe";
+group _leader setcombatmode "red";
+group _leader setformation "column";
+{_x allowfleeing 0} foreach units _leader;
+
+
+if (pmcdb ==1) then { hint "ok war.sqs loop done, units created. hooyah soldier!"; };
+
+;
+; THE BIG IDLE
+;
+#idle
+
+{_x domove getpos tgt_area} foreach eastarray;
+
+if (pmcdb ==1) then { hint format ["warloop %1/%2 idle for %3sec because...\nEast: %4\nWest: %5\nALL: %6",_warloop,_WarDuration,_LoopRate,(count eastarray),(count westarray),(count eastarray + count westarray)]; };
+
+;
+; waiting for war to wage...
+;
+~_LoopRate;
+
+; this was AND before, lets reduce the load of units on the map...
+if ((count eastarray) > _EnemyCount) then {goto "idle"};
+if (_warloop < _WarDuration) then {goto "CreatorStart"};
+
+
+;
+; ending big fight against T80's ;)
+;
+[EastT80Squad, getpos EastStart, groupDelta, groupCharlie] exec "createsquad.sqs";
+~.01;
+@!CreateSquadRunning;
+
+_leader = NewSquad select 0;
+
+group _leader move getpos tgt_area;
+group _leader setbehaviour "safe";
+group _leader setcombatmode "red";
+group _leader setformation "column";
+{_x allowfleeing 0} foreach units _leader;
+
+~60;
+
+;
+; for the mission objectives complete stuff
+;
+readyforend=true;
+
+; some notification that we're in the end
+;hint "CONGRATULATIONS mission end! now just clean up the area and you're done!"
+
+exit;

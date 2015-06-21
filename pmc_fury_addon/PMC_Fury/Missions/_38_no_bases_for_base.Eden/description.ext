@@ -1,0 +1,52 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="No bases for Base";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Enemy fortified base clearup";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Ralpha
+	{
+		name = "Ralpha";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Ralpha;
+	};
+	class Rbravo
+	{
+		name = "Rbravo";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbravo;
+	};
+	class Rcharlie
+	{
+		name = "Rcharlie";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcharlie;
+	};
+	class Rallgo
+	{
+		name = "Rallgo";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rallgo;
+	};
+	class Rbaseclear
+	{
+		name = "Rbaseclear";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbaseclear;
+	};
+	class Rrogerbase
+	{
+		name = "Rrogerbase";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rrogerbase;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

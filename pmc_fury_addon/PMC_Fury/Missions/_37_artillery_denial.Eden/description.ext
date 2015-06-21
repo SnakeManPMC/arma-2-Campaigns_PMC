@@ -1,0 +1,40 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Artillery cleanup";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="No Artillery for you";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rposit
+	{
+		name = "Rposit";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rposit;
+	};
+	class Rcommence
+	{
+		name = "Rcommence";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcommence;
+	};
+	class Rrogercommence
+	{
+		name = "Rrogercommence";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rrogercommence;
+	};
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

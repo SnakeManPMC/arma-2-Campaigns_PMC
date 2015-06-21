@@ -1,0 +1,63 @@
+; camera basic initialization
+
+natoguy setcaptive true;
+rusguy setcaptive true;
+natoguy setbehaviour "safe";
+rusguy setbehaviour "safe";
+
+_camera = "camera" camCreate [9556.85,1607.46,5.84]
+_camera camSetTarget [-81984.46,-32458.01,-21395.47]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playMusic ["track8", 0] 
+
+
+titleText ["Russians invited NATO commanders for negotiation table.","PLAIN DOWN",2]
+~5
+
+_camera camSetTarget [-58514.31,74426.63,-7990.32]
+_camera camSetPos [9548.33,1603.24,1.88]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+natoguy playmove "EffectStandTalk";
+
+titleText ["Negotiations are taking place in undisclosed location\nin south Everon...","PLAIN DOWN",2]
+~5
+
+; move camera
+_camera camSetTarget [107211.16,16621.35,-15315.00]
+_camera camSetPos [9541.60,1605.72,1.70]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+rusguy playmove "EffectStandTalk";
+
+titleText ["Russians are asking for cease fire...","PLAIN DOWN",2]
+~2
+
+; move camera 2
+_camera camSetTarget [73513.15,-73707.38,-15314.94]
+_camera camSetPos [9542.65,1608.63,1.80]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+titleText ["Negotiations continue overnight...","PLAIN DOWN",2]
+~7
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

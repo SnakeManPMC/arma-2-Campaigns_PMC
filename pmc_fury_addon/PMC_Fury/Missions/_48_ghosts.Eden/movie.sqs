@@ -1,0 +1,75 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+playmusic ["track8",0]
+
+titlecut ["","BLACK OUT",.00001];
+~2
+
+; start satellite
+_camera camSetTarget [9988.55,2732.87,-99674.57]
+_camera camSetPos [9375.58,1043.19,434.93]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+titletext ["NASA KEYHOLE 11 SPY SATELLITE AT ORBIT 135000KM ABOVE EVERON.","PLAIN",1];
+~7
+
+titletext ["LINKING THE LIVE FEED...","PLAIN",1];
+~3
+
+ur setfuel 1;
+
+titlecut ["LINKING THE LIVE FEED...","BLACK IN",10];
+~11
+
+
+; zoom down
+_camera camSetTarget [11051.37,3275.18,-99335.46]
+_camera camSetPos [9375.58,1043.19,434.93]
+_camera camSetFOV 0.028
+_camera camCommit 15
+@camCommitted _camera
+
+; turn camera
+_camera camSetTarget [9021.51,4501.71,-99482.34]
+_camera camSetPos [9375.58,1043.19,434.93]
+_camera camSetFOV 0.028
+_camera camCommit 10
+@camCommitted _camera
+
+; look the yard
+_camera camSetTarget [6123.62,5567.78,-99287.97]
+_camera camSetPos [9375.58,1043.19,434.93]
+_camera camSetFOV 0.028
+_camera camCommit 10
+@camCommitted _camera
+~3
+
+; zoom out wide view
+_camera camSetTarget [6454.34,5788.04,-99295.91]
+_camera camSetPos [9375.58,1043.19,434.93]
+_camera camSetFOV 1.081
+_camera camCommit 10
+@camCommitted _camera
+~5
+
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

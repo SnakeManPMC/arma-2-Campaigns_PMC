@@ -1,0 +1,30 @@
+; Rapple.sqs by XCess
+; Trying to make a rapple script that won't kill units like the ones I've tried do.
+
+_man = _this select 0
+_helo = _this select 1
+
+_grp = group _man
+
+_aunits = units _grp
+I = 0
+J = count _aunits
+
+; stop helo
+@(speed _helo < 15)
+_helo sidechat "get ready";
+@(speed _helo < 4)
+_helo sidechat "ropes out!";
+@(speed _helo < 2)
+_helo sidechat "go go go !";
+
+#Start
+unAssignVehicle (_aunits select I)
+[(_aunits select I),_helo] exec"oneRapple.sqs"
+
+I = I + 1
+~1
+?J>I : goto"Start"
+
+exit
+ 

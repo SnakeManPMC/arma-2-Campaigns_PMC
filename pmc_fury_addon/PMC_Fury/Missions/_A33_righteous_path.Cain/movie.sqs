@@ -1,0 +1,74 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+;=== 16:28:38
+_camera camSetTarget [45134.20,100043.79,-5715.81]
+_camera camSetPos [7431.63,7622.15,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track9",0]
+
+titlecut ["","BLACK IN",2];
+~5
+
+;=== 16:28:46
+_camera camSetTarget [-9457.22,103137.70,-23932.95]
+_camera camSetPos [7457.75,7617.17,8.91]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 16:28:56
+_camera camSetTarget [-84657.29,32270.76,-29698.70]
+_camera camSetPos [7488.45,7652.53,15.82]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 16:29:03
+_camera camSetTarget [-50991.45,-67661.44,-29708.79]
+_camera camSetPos [7480.02,7687.03,13.65]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 16:29:12
+_camera camSetTarget [22565.88,-87128.56,-27549.10]
+_camera camSetPos [7446.59,7701.86,11.44]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 16:29:18
+_camera camSetTarget [64492.67,-72290.03,-18306.61]
+_camera camSetPos [7419.86,7675.83,6.05]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 16:29:27
+_camera camSetTarget [-43828.13,-77644.98,10215.96]
+_camera camSetPos [7435.09,7646.91,3.28]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 16:29:33
+_camera camSetTarget [-44873.60,-77007.83,10216.39]
+_camera camSetPos [7435.09,7646.91,3.28]
+_camera camSetFOV 0.010
+_camera camCommit 5
+@camCommitted _camera
+~3
+
+titlecut ["","BLACK OUT",3];
+4 fademusic 0;
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

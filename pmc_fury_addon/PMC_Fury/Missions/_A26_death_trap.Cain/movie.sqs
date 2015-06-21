@@ -1,0 +1,50 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+;=== 15:53:40
+_camera camSetTarget [103362.92,-20819.34,-2839.32]
+_camera camSetPos [7689.69,8106.56,1.80]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track1",0]
+
+titlecut ["","BLACK IN",2];
+~2
+
+;=== 15:53:43
+_camera camSetTarget [103362.92,-20819.34,-2839.76]
+_camera camSetPos [7689.69,8106.56,11.68]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+;=== 15:53:49
+_camera camSetTarget [102255.89,-8236.52,-27866.49]
+_camera camSetPos [7728.54,8097.06,11.57]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+;=== 15:54:03
+_camera camSetTarget [31228.94,-84896.85,-27877.92]
+_camera camSetPos [7764.21,8131.95,9.63]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~3
+
+titlecut ["","BLACK OUT",3];
+4 fademusic 0;
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

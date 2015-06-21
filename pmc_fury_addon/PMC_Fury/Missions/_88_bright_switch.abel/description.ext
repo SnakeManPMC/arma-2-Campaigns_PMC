@@ -1,0 +1,30 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Bright Switch";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Russian Counter Attack";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rherecome
+	{
+		name = "Rherecome";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rherecome;
+	};
+
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

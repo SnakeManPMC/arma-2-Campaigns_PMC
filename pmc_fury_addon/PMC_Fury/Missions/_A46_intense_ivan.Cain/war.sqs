@@ -1,0 +1,260 @@
+;
+; ##################################################################################
+; crazy unit creator starts here
+; ##################################################################################
+;
+
+pmcdb=0;
+if (pmcdb==1) then { hint "war.sqs active, creating first the helos and west stuff..."; };
+
+;
+; how many times we loop the russian attacks
+;
+_warloop=0;
+
+;us vehicles made
+_usvcl=0;
+
+;helos made
+_helis=0;
+
+;
+; russian hind helicopter
+;
+[EastMi24Squad, getpos RusHeloBase, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_RUSHELO = NewSquad select 0
+
+group _RUSHELO move getpos RusLine
+group _RUSHELO setbehaviour "combat";
+group _RUSHELO setcombatmode "red";
+group _RUSHELO setspeedmode "normal";
+
+~2
+
+;
+; NATO apache helicopter
+;
+[WestAH64Squad, getpos NATOHeloBase, groupAlpha, groupBravo] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_NATOHELO = NewSquad select 0
+
+group _NATOHELO move getpos NATOLine
+group _NATOHELO setbehaviour "combat";
+group _NATOHELO setcombatmode "red";
+group _NATOHELO setspeedmode "normal";
+
+~2
+
+
+[WestM1A1Squad, getpos WestStart, groupAlpha, groupBravo] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_USTanks = NewSquad select 0
+
+group _USTanks move getpos NATOLine
+group _USTanks setbehaviour "safe";
+group _USTanks setcombatmode "red";
+
+~2
+
+[WestMechInfSquad, getpos WestStart, groupAlpha, groupBravo] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_USMech = NewSquad select 0
+
+group _USMech move getpos NATOLine
+group _USMech setbehaviour "aware";
+group _USMech setcombatmode "red";
+
+~2
+
+
+
+;
+; start of the looping
+;
+#CreatorStart
+
+_warloop=_warloop+1;
+
+if (pmcdb==1) then { hint format ["Okay WAR looper %1 as activated!",_warloop]; };
+
+[EastInfSquad, getpos EastInfStart, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_RusInf1 = NewSquad select 0
+
+group _RusInf1 move getpos NATOBase
+group _RusInf1 setbehaviour "aware";
+group _RusInf1 setcombatmode "red";
+{_x allowfleeing 0} foreach units _RusInf1;
+
+~2
+
+[EastInfSquad, getpos EastInfStart, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_RusInf2 = NewSquad select 0
+
+group _RusInf2 move getpos NATOBase
+group _RusInf2 setbehaviour "aware";
+group _RusInf2 setcombatmode "red";
+{_x allowfleeing 0} foreach units _RusInf2;
+
+~2
+
+
+[EastBMPSquad, getpos EastStart, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_BMPs = NewSquad select 0
+
+group _BMPs1 move getpos RusLine
+group _BMPs1 setbehaviour "safe";
+group _BMPs1 setcombatmode "red";
+{_x allowfleeing 0} foreach units _BMPs1;
+
+~2
+
+[EastT72Squad, getpos EastStart, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_T72s = NewSquad select 0
+
+group _T72s move getpos RusLine
+group _T72s setbehaviour "safe";
+group _T72s setcombatmode "red";
+{_x allowfleeing 0} foreach units _T72s;
+
+~2
+
+
+[EastT80Squad, getpos EastStart, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_T80s = NewSquad select 0
+
+group _T80s move getpos RusLine
+group _T80s setbehaviour "safe";
+group _T80s setcombatmode "red";
+{_x allowfleeing 0} foreach units _T80s;
+
+~2
+
+
+if (pmcdb==1) then { hint "ok war.sqs loop done, units created. hooyah soldier!"; };
+#idle
+
+if (pmcdb==1) then { hint format ["idle for 120 secs because...\nEast: %1\nWest: %2",(east countside eastarray),(west countside westarray)]; };
+
+;
+; waiting for war to wage...
+;
+~120
+;~10
+
+if (pmcdb==1) then { hint format ["East: %1\nWest: %2\nUSTanks: %3, USMech: %4\nRusInf1: %5, RusInf2: %6\nBMPs: %7, T72s: %8, T80s: %9\nRHELO: %10, USHELO: %11\nHelis: %12, USvcl: %13, _wl: %14",(count eastarray),(count westarray),(count units _USTanks),(count units _USMech),(count units _RusInf1),(count units _RusInf2),(count units _BMPs),(count units _T72s),(count units _T80s),(count units _RUSHELO),(count units _NATOHELO),_helis,_usvcl,_warloop]; };
+
+
+; this was AND before, lets reduce the load of units on the map...
+#LoopCheck
+?((count units _RUSHELO == 0) AND (count units _NATOHELO == 0)): goto "DoHelicopters"
+?((count units _USTanks == 0) AND (count units _USMech == 0)): goto "DoWestTanksMechs"
+?((east countside eastarray) > 20): goto "idle"
+?(_warloop < 5): goto "CreatorStart"
+
+;
+; for the mission objectives complete stuff
+;
+; some additional delay is needed I think
+~240
+readyforend=true;
+
+; some notification that we're in the end
+;hint "CONGRATULATIONS mission end! now just clean up the area and you're done!"
+
+exit
+
+
+;
+; russian hind helicopter
+;
+#DoHelicopters
+;helos made
+_helis=_helis+1;
+;hint "Doing AH-64 Apache to the west side and Hind Mi-24 to the East side.";
+[EastMi24Squad, getpos RusHeloBase, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_RUSHELO = NewSquad select 0
+
+group _RUSHELO move getpos RusLine
+group _RUSHELO setbehaviour "combat";
+group _RUSHELO setcombatmode "red";
+group _RUSHELO setspeedmode "normal";
+
+~2
+
+;
+; NATO apache helicopter
+;
+[WestAH64Squad, getpos NATOHeloBase, groupAlpha, groupBravo] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_NATOHELO = NewSquad select 0
+
+group _NATOHELO move getpos NATOLine
+group _NATOHELO setbehaviour "combat";
+group _NATOHELO setcombatmode "red";
+group _NATOHELO setspeedmode "normal";
+
+~2
+goto "LoopCheck";
+
+
+
+;
+; do some additional west units
+;
+#DoWestTanksMechs
+;us vehicles made
+_usvcl=_usvcl+1;
+;hint "Abrams and M113 squads to be done.";
+[WestM1A1Squad, getpos WestStart, groupAlpha, groupBravo] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_USTanks = NewSquad select 0
+
+group _USTanks move getpos NATOLine
+group _USTanks setbehaviour "safe";
+group _USTanks setcombatmode "red";
+
+~2
+
+[WestMechInfSquad, getpos WestStart, groupAlpha, groupBravo] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
+
+_USMech = NewSquad select 0
+
+group _USMech move getpos NATOLine
+group _USMech setbehaviour "aware";
+group _USMech setcombatmode "red";
+
+~2
+goto "LoopCheck";

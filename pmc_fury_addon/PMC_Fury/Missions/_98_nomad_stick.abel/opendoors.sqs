@@ -1,0 +1,27 @@
+;
+; move the platoons from island into the town
+;
+
+_aunits = units rusinf1
+_i = 0
+_j = count _aunits
+
+#Here
+(_aunits select _i) setpos getpos pos1;
+_i=_i+1
+~1
+?_j>_i:goto "Here"
+
+
+_aunits = units rusinf2
+_i = 0
+_j = count _aunits
+
+#Here2
+(_aunits select _i) setpos getpos pos2;
+_i=_i+1
+~1
+?_j>_i:goto "Here2"
+
+
+exit

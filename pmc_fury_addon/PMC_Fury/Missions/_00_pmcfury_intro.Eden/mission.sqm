@@ -1,0 +1,84 @@
+version=11;
+class Mission
+{
+	randomSeed=9602051;
+	class Intel
+	{
+		briefingName="Opening cutscene";
+		startWeather=0.000000;
+		forecastWeather=0.000000;
+		month=8;
+		day=15;
+		hour=2;
+	};
+};
+class Intro
+{
+	randomSeed=2460675;
+	class Intel
+	{
+		startWeather=0.000000;
+		forecastWeather=0.000000;
+		month=8;
+		day=15;
+		hour=2;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4800.398438,24.660000,11796.124023};
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="SoldierWSaboteurPipe";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.200000;
+					text="aP";
+					init="[] exec ""intro.sqs""";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={4813.287598,24.660000,11809.332031};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			text="END";
+			expCond="endcut";
+			class Effects
+			{
+				titleEffect="PLAIN DOWN";
+			};
+		};
+	};
+};
+class OutroWin
+{
+	randomSeed=80387;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=14898691;
+	class Intel
+	{
+	};
+};

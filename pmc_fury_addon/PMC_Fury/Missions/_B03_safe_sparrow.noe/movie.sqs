@@ -1,0 +1,106 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+;ohh
+_camera camSetTarget ohh
+_camera camSetRelPos [100,0,0]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["rtrack6",0]
+
+titlecut ["","BLACK IN",2];
+~5
+
+#loop
+~.001
+_camera camSetRelPos [-20,-50,0]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+?(aa3 knowsabout ohh == 0): goto "loop";
+~5
+
+;shooter 3
+_camera camSetTarget aa3
+_camera camSetRelPos [-2,-4,0]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+; look ohh
+_camera camSetTarget ohh
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+
+; helo shot down
+_camera camSetTarget ohh
+_camera camSetRelPos [20,20,10]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+ohh sidechat "MAYDAY MAYDAY WE ARE GOING DOWN! MAYDAY MAYDAY!";
+~3
+
+playmusic ["rtrack7",0]
+
+; leader assault1
+_camera camSetTarget leader assault1
+_camera camSetRelPos [10,-10,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+{_x assignascargo helo1} foreach units assault1;
+{[_x] ordergetin true} foreach units assault1;
+
+@(leader assault1 in helo1);
+
+
+;right apache
+_camera camSetTarget [-28731.57,102419.48,-22195.06]
+_camera camSetPos [9230.08,12611.70,5.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+helo3 setfuel 1;
+~5
+
+; left apache
+_camera camSetTarget [-76307.31,-29212.79,-31152.83]
+_camera camSetPos [8998.70,12634.48,8.72]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+helo2 setfuel 1;
+~5
+
+;blackhawk
+_camera camSetTarget [22335.15,111659.33,-3702.86]
+_camera camSetPos [9097.12,12609.27,3.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+helo1 setfuel 1;
+~5
+
+titlecut ["","BLACK OUT",3];
+4 fademusic 0;
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

@@ -1,0 +1,46 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Operation Muse";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Muses of the Le Moule";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class R1complete
+	{
+		name = "R1complete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_R1complete;
+	};
+	class Rhqreply1
+	{
+		name = "Rhqreply1";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhqreply1;
+	};
+	class R1compreply
+	{
+		name = "R1compreply";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_R1compreply;
+	};
+	class Rneworders
+	{
+		name = "Rneworders";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rneworders;
+	};
+	class Rgoodjob
+	{
+		name = "Rgoodjob";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rgoodjob;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

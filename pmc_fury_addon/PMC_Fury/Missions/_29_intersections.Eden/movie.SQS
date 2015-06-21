@@ -1,0 +1,111 @@
+;=== 21:49:02
+_camera = "camera" camCreate [5109.82,4005.88,3.78]
+_camera camSetTarget [103863.98,15321.95,-10908.74]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["","BLACK IN",3];
+~3
+~5
+
+;=== 8:06:58
+_camera camSetTarget [92846.92,50852.39,-10915.96]
+_camera camSetPos [5194.61,4011.78,19.91]
+_camera camSetFOV 0.700
+_camera camCommit 15
+@camCommitted _camera
+
+~5
+
+;=== 8:07:22
+_camera camSetTarget [-77808.73,-47418.40,-20580.79]
+_camera camSetPos [5373.11,4110.74,2.77]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~13
+
+a10sarego=true;
+
+; a10 taxiing
+_camera camSetTarget [-35235.07,100162.33,-20958.76]
+_camera camSetPos [4845.92,10981.17,12.29]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~7
+
+; last taxi
+_camera camSetTarget [41286.32,101939.32,-19731.88]
+_camera camSetPos [4758.81,10968.82,12.29]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~7
+
+; takeoff
+_camera camSetTarget [29566.50,103252.77,-29617.82]
+_camera camSetPos [4760.04,11027.74,12.29]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~6
+
+;
+; for the men boarding blackhawks
+;
+gomen=true;
+~1
+
+
+;=== 8:22:25
+_camera camSetTarget [73989.81,83590.29,-7951.29]
+_camera camSetPos [4868.97,11766.09,2.06]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~13
+
+;=== 8:22:44
+_camera camSetTarget [104489.33,8227.73,-7956.55]
+_camera camSetPos [4872.24,11838.24,2.06]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~10
+
+gunship setfuel 1;
+~2
+
+helo1 setfuel 1;
+~1
+helo2 setfuel 1;
+
+;=== 8:34:03
+_camera camSetTarget [71625.98,85553.30,-9871.94]
+_camera camSetPos [4860.06,11767.74,6.85]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~12
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

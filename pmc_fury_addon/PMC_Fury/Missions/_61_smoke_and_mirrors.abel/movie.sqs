@@ -1,0 +1,68 @@
+; camera basic initialization
+_camera = "camera" camCreate [2487.51,7396.51,10.67]
+_camera camSetTarget [95670.66,-29070.14,2738.26]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track1",0]
+
+
+titlecut ["","BLACK IN",2];
+~2
+
+;move shot
+_camera camSetTarget [95670.66,-29070.14,2738.26]
+_camera camSetPos [2566.81,7319.90,10.69]
+_camera camSetFOV 0.700
+_camera camCommit 15
+@camCommitted _camera
+~1
+
+
+;beach shot
+_camera camSetTarget [-69646.22,-56274.16,-26831.36]
+_camera camSetPos [2704.43,7315.11,23.44]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+;move right
+_camera camSetTarget [83113.89,-51947.23,-4686.84]
+_camera camSetPos [2704.43,7315.11,23.44]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+~1
+
+
+; look canyon
+_camera camSetTarget [88721.48,-43789.27,2505.80]
+_camera camSetPos [2801.18,7257.65,4.91]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+;move in to the huah
+_camera camSetTarget [88721.48,-43789.27,2505.52]
+_camera camSetPos [2942.27,7173.82,4.63]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~1
+
+4 fademusic 0;
+~5
+
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

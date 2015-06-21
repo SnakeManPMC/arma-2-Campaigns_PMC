@@ -1,0 +1,19 @@
+
+_Position = _this select 0;
+_AR = leader assault1;
+
+;NOT USED [_Position, "GUNSHIP 2 PATROL AT AREA ", ". OVER.", ["SideChat", _AR]] exec "gridcoordinates_pipe.sqs";
+~3;
+
+if (!unitready helo2) then { leader gunships2 sidechat "SORRY BUSY. OVER."; exit; };
+
+AirSupport2 setpos _Position;
+"AirSupport2" setmarkerpos _Position;
+
+leader gunships2 sidechat "ROGER. OVER.";
+
+helo2 move getpos AirSupport2;
+
+onMapSingleClick "false";
+
+exit;

@@ -1,0 +1,51 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Distant Haven";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Clear out Cancon!";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rhill
+	{
+		name = "Rhill";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhill;
+	};
+
+	class Rbuildings
+	{
+		name = "Rbuildings";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbuildings;
+	};
+
+	class Rcancon
+	{
+		name = "Rcancon";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcancon;
+	};
+
+	class Rgoodluck
+	{
+		name = "Rgoodluck";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rgoodluck;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

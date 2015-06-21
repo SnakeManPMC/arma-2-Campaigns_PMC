@@ -1,0 +1,178 @@
+; camera basic initialization
+
+natoguy setbehaviour "careless";
+;natoguy switchmove "FXStandSurUniv";
+
+ex1 setbehaviour "aware";
+ex2 setbehaviour "aware";
+ex3 setbehaviour "aware";
+ex4 setbehaviour "aware";
+
+_camera = "camera" camCreate [9718.34,1599.86,9.81]
+_camera camSetTarget [60522.22,-72543.19,-43817.21]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track5",0]
+
+titlecut ["","BLACK IN",5];
+~3
+titleText ["Russian understanding of diplomatic negotiations...","PLAIN DOWN",3]
+~5
+
+
+; move to camera front view
+_camera camSetTarget [90544.54,40872.14,-43819.86]
+_camera camSetPos [9713.87,1573.22,10.07]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+~3
+
+; zoom to left most executioner
+_camera camSetTarget [33935.93,98576.28,-2526.17]
+_camera camSetPos [9726.49,1584.20,0.78]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; move to right most executioner
+_camera camSetTarget [33935.93,98576.28,-2525.92]
+_camera camSetPos [9732.86,1582.43,0.80]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~1
+
+
+; natoguy overlook
+_camera camSetTarget [23218.64,99570.54,-14651.70]
+_camera camSetPos [9728.40,1573.93,1.70]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; natoguy face zoom
+_camera camSetTarget [23218.64,99570.54,-14651.75]
+_camera camSetPos [9728.87,1576.68,1.70]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~4
+
+
+; execution cam
+_camera camSetTarget [68889.98,-76931.38,-18241.64]
+_camera camSetPos [9721.95,1591.72,2.88]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+
+ex1 setunitpos "UP";
+ex2 setunitpos "UP";
+ex3 setunitpos "UP";
+ex4 setunitpos "UP";
+;
+; execution
+;
+ex1 dotarget natoguy;
+ex2 dotarget natoguy;
+ex3 dotarget natoguy;
+ex4 dotarget natoguy;
+~2
+
+1 fademusic 0
+~1
+
+setacctime .1
+
+; blood cam
+_camera camSetTarget [53707.07,84578.56,-34282.87]
+_camera camSetPos [9727.50,1575.65,1.74]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+natoguy setcaptive false;
+~1
+
+
+ex1 setbehaviour "careless";
+ex2 setbehaviour "careless";
+ex3 setbehaviour "careless";
+ex4 setbehaviour "careless";
+
+_camera camSetTarget natoguy
+_camera camSetRelPos [1,0,1]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
+
+setacctime 1
+
+0 fademusic 1
+playmusic ["track6",0]
+
+titleText ["This changes everything...","PLAIN DOWN",2]
+~5
+titleText ["","PLAIN DOWN",2]
+
+
+; still shot from troops starting to move
+_camera camSetTarget [-22065.66,92763.10,-26288.00]
+_camera camSetPos [9498.56,1599.07,8.35]
+_camera camSetFOV 0.479
+_camera camCommit 0
+@camCommitted _camera
+
+;
+; moveon commands troops to move
+;
+moveon=true;
+~15
+
+; still shot from near road
+_camera camSetTarget [-30428.51,92762.15,-11081.24]
+_camera camSetPos [9439.20,1729.08,4.38]
+_camera camSetFOV 0.479
+_camera camCommit 0
+@camCommitted _camera
+~10
+
+;=== 8:03:22
+_camera camSetTarget [-36354.88,90483.15,-6385.91]
+_camera camSetPos [9372.84,1783.07,3.02]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~10
+
+;=== 8:03:58
+_camera camSetTarget [100848.42,-31093.51,-22293.88]
+_camera camSetPos [9171.04,2007.11,4.84]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titleText ["Russians are on the move.","PLAIN DOWN",2]
+~20
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~5
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

@@ -1,0 +1,44 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Steel Warrior";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Russian attack!";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rustanks1casu
+	{
+		name = "Rustanks1casu";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rustanks1casu;
+	};
+
+	class Rustanks2casu
+	{
+		name = "Rustanks2casu";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rustanks2casu;
+	};
+
+	class Rbravocasu
+	{
+		name = "Rbravocasu";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbravocasu;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

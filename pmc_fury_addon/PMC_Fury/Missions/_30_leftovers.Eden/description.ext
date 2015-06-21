@@ -1,0 +1,50 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro=$STRD_Rmissname;
+
+// Title that appears on screen at beginning of mission
+onLoadMission=$STRL_Rload;
+
+class CfgRadio
+{
+	sounds[] = {};
+
+	class Rwoods1
+	{
+		name = "Rwoods1";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rwoods1;
+	};
+
+	class Rwoods2
+	{
+		name = "Rwoods2";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rwoods2;
+	};
+
+	class Rwoods3
+	{
+		name = "Rwoods3";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rwoods3;
+	};
+
+	class Ralpha
+	{
+		name = "Ralpha";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Ralpha;
+	};
+
+	class Rcomplete
+	{
+		name = "Rcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

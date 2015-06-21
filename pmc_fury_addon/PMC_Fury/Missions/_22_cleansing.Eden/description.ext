@@ -1,0 +1,22 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Cleansing";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Another area clearup";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rcityempty
+	{
+		name = "Rcityempty";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcityempty;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

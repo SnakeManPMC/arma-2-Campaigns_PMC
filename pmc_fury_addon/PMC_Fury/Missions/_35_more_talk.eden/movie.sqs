@@ -1,0 +1,110 @@
+; start
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+
+playMusic ["track4", 0]
+
+; still
+_camera camSetTarget [-92864.75,11029.64,-7450.47]
+_camera camSetPos [6702.48,5615.88,22.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+;=== 11:26:32
+_camera camSetTarget [-7239.26,104350.73,-7450.69]
+_camera camSetPos [6702.48,5615.88,22.45]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+
+;=== 11:26:38
+_camera camSetTarget [63131.30,80004.43,-35703.55]
+_camera camSetPos [6702.48,5615.88,22.45]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~2
+
+; inf3 leader
+_camera camSetTarget leader inf3
+_camera camSetRelPos [0,3,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; hummer
+_camera camSetTarget hummer
+_camera camSetRelPos [7,7,1.7]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+; tanks1 leader
+_camera camSetTarget leader danks1
+_camera camSetRelPos [0,0,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; mech1 leader
+_camera camSetTarget leader mech1
+_camera camSetRelPos [10,10,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; tanks2 leader
+_camera camSetTarget leader danks2
+_camera camSetRelPos [0,0,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; inf1 leader
+_camera camSetTarget leader inf1
+_camera camSetRelPos [2,2,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; flag
+_camera camSetTarget usa
+_camera camSetRelPos [30,0,20]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; defense dudes
+_camera camSetTarget leader defense
+_camera camSetRelPos [0,10,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+
+3 fadeMusic 0
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

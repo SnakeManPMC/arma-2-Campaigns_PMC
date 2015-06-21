@@ -1,0 +1,26 @@
+cap dowatch ruskie;
+
+cap sideradio "Rweapons";
+~2
+
+removeallweapons cap;
+
+[cap] join grpnull;
+[cap] join ruskie;
+
+cap setunitpos "UP";
+
+cap assignascargo ruskie;
+[cap] ordergetin true;
+
+
+#here
+~1
+
+?!(cap in ruskie): goto "here";
+
+me sideradio "Rcapescorted";
+
+"1" objstatus "DONE";
+
+exit

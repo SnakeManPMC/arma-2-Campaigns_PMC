@@ -1,0 +1,70 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+;=== 13:52:38
+_camera camSetTarget [51734.11,94360.57,-4072.59]
+_camera camSetPos [7380.49,4828.38,1.35]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track15",0]
+
+titlecut ["","BLACK IN",2];
+~3
+
+; order our POW into the helo
+aP assignascargo helo;
+[aP] ordergetin true;
+~2
+
+;=== 13:52:41
+_camera camSetTarget [107128.21,10628.93,-4072.53]
+_camera camSetPos [7380.49,4828.38,1.35]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+@aP in helo
+
+; order nazis in the helo
+{_x assignasCargo helo} foreach units guards1;
+{[_x] ordergetin true} foreach units guards1;
+
+_camera camSetTarget leader guards1;
+_camera camCommit 2
+@camCommitted _camera
+~5
+
+
+;=== 13:52:58
+_camera camSetTarget [-57028.17,69891.49,-40104.98]
+_camera camSetPos [7421.63,4810.40,9.48]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== 13:53:07
+_camera camSetTarget [33942.77,-89392.34,-20381.79]
+_camera camSetPos [7401.41,4837.61,2.73]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+titlecut ["","BLACK OUT",3];
+4 fademusic 0;
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

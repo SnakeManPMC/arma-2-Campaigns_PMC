@@ -1,0 +1,182 @@
+; ##############################################################################
+;
+; Special Air Rescue script. To make SAR team appear, disembark and move into
+; the downed blackhawk. activated by user radio 0-0-1 command.
+;
+; ##############################################################################
+
+
+;
+; just to make sure kill the aa soldiers hehe
+;
+?(alive aasol1): aasol1 setdammage 1;
+?(alive aasol2): aasol2 setdammage 1;
+?(alive aasol3): aasol3 setdammage 1;
+
+;
+; players radio call to HQ
+;
+;STRM_Rsecureforsar,"ALPHA BLACK TO PAPA BEAR. THE AREA IS SECURE ENOUGH FOR SAR
+;PACKAGE. OVER.",alpha
+leader assault1 sideradio "Rsecureforsar";
+~10;
+
+;STRM_Rsarsure,"PAPA BEAR TO ALPHA. ARE YOU SURE. YOU NEED TO BE SURE. CONFIRM OVER.",hq
+PAPABEAR sideradio "Rsarsure";
+~7;
+
+;STRM_Rsarcopysure,"ALPHA BLACK CONFIRMS. THE AREA IS SECURE FOR SAR PACKAGE.
+;SEND THEM IN. OVER.",alpha
+leader assault1 sideradio "Rsarcopysure";
+~20;
+
+;
+; hq replies SAR package on way
+;
+;STRM_Rsaronway,"PAPA BEAR TO ALPHA. COPY. SAR PACKAGE CALLSIGN CHARLIE BLACK IS
+;ON THEIR WAY. HOLD TIGHT. OVER.",hq
+PAPABEAR sideradio "Rsaronway";
+
+;
+; move sar1 chopper into the downed helo.
+;
+sar1 move getpos helo;
+@unitready sar1;
+
+if ({alive _x} foreach units sar2 == 0) then { goto "SAR_Team_Failed"; };
+
+sar1 land "land";
+
+;
+; wait until the helo is 1.5meters off the ground
+;
+#sarloop
+~.5;
+_hx=getpos vehicle sar1 select 2;
+
+?(_hx > 1.5): goto "sarloop";
+
+if ({alive _x} foreach units sar2 == 0) then { goto "SAR_Team_Failed"; };
+
+;
+; set the helo for zero altitude
+;
+sar1 flyinheight 0;
+
+_act="eject";
+
+{unassignvehicle _x} foreach units sar2;
+
+;
+; get ALL the assault team members out of the helo
+;
+_listunits = units sar2;
+
+_A = 0;
+_B = count _listunits;
+#KEEPSENDING
+
+(_listunits select _A) action [_act,sar1];
+_A=_A+1;
+~.2;
+?_B >_A:goto "KEEPSENDING";
+
+if ({alive _x} foreach units sar2 == 0) then { goto "SAR_Team_Failed"; };
+
+;
+; get the spec ops off the helo
+;
+unassignvehicle seal1;
+seal1 action [_act,sar1];
+
+;
+; move sar bird back to west base
+;
+sar1 flyinheight 80;
+sar1 move getpos sar_pos;
+
+if ({alive _x} foreach units sar2 == 0) then { goto "SAR_Team_Failed"; };
+
+;
+; run the demolition script for the demo guy
+;
+[] exec "demol.sqs";
+
+;
+; move sar squad into the crash site
+;
+sar2 setbehaviour "aware";
+sar2 setcombatmode "yellow";
+leader sar2 move getpos helo;
+
+;STRM_Rdontshoot,"ALPHA BLACK THIS IS CHARLIE BLACK. WE ARE APPROACHING THE
+;CRASH SITE. DO NOT FIRE UPON US. OVER.",charlie
+leader sar2 sideradio "Rdontshoot";
+
+;hint "okay into the SAR loop... should read next: SAR FORCES AT THE CRASH SITE. OVER."
+
+;
+; timer if the sar guys fuck up
+;
+_tmr=0;
+
+;
+; loop until sar squad is on the crash site
+;
+#SarAction
+~2;
+_tmr=_tmr+1;
+?(leader sar2 distance helo > 20 && _tmr < 600): goto "SarAction";
+;?(count units sar2 == 0): goto "SAR_Team_Failed";
+if ({alive _x} foreach units sar2 == 0) then { goto "SAR_Team_Failed"; };
+
+;
+; radio in
+;
+;STRM_Rsaronlocation,"CHARLIE BLACK IS ON THE CRASH SITE. OVER.",charlie
+leader sar2 sideradio "Rsaronlocation";
+"4" objstatus "DONE";
+
+;
+; you secured the site until SAR arrived, good job.
+;
+if (pmcdb==1) then { player sidechat "sarloop finished, wait 30sec for sar is finished."; };
+~30;
+
+if ({alive _x} foreach units sar2 == 0) then { goto "SAR_Team_Failed"; };
+
+;
+; sar squad is done its business
+;
+;STRM_Rsardone,"CHARLIE BLACK TO PAPA BEAR. WE ARE DONE HERE. OVER.",charlie
+leader sar2 sideradio "Rsardone";
+~15;
+
+
+#SAR_Team_Failed
+;
+; mission end starts
+;
+;STRM_Rextractioncoming,"PAPA BEAR TO ALL FORCES. EXTRACTION CHINOOK IS ON THEIR WAY.
+;GET TO THE TARGET AREA AND PREPARE FOR EXTRACTION. ALPHA GO GET THE CIVILIANS. OVER.",hq
+PAPABEAR sideradio "Rextractioncoming";
+leader sar2 move getpos tgt_area;
+
+"5" objstatus "ACTIVE";
+
+;
+; chinook is send on its say
+;
+helo3 setfuel 1;
+
+; if civvies are dead, lets just end this
+if ({alive _x} foreach units civis1 == 0) then { exit; };
+
+#AlphaOnCivis
+~1;
+?(leader assault1 distance leader civis1 > 25): goto "AlphaOnCivis";
+
+leader assault1 globalchat "okay ladies and gentlemen, if you please would move along with me into the helicopter landing zone near the church please. Thank You.";
+leader civis1 move getpos tgt_area;
+
+exit;

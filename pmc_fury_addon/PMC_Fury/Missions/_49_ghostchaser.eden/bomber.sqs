@@ -1,0 +1,47 @@
+_x=getpos vehicle mopo select 0;
+_y=getpos vehicle mopo select 1;
+
+;STRM_Rhelloa10,"ALPHA BLACK TO BRAVO BLACK. COME IN BRAVO. OVER.",alpha
+player sideradio "Rhelloa10";
+~15
+
+;STRM_Rrogeralpha,"ALPHA THIS IS BRAVO. READING 5 BY 5. DO WE HAVE A GIG. OVER.";
+killer sideradio "Rrogeralpha";
+~15
+
+;STRM_Rbravostat,"THATS A ROG. FEEDING YOU THE COORDINATES NOW. CONFIRM. OVER";
+player sideradio "Rbravostat";
+~15
+
+;STRM_Rkilleronway,"ROGER ALPHA BLACK. COORDINTES RECEIVED, WEAPONS ARE HOT. ENGAGING. ETA 2 MINUTES. OVER.",bravo
+killer sideradio "Rkilleronway";
+~30
+
+small=killer distance mopo;
+killer domove [_x,_y];
+bombed=false;
+_c=1;
+
+#Here
+~0.3
+value=killer knowsabout mopo
+range=killer distance mopo
+plr=player distance mopo
+?(small > killer distance mopo): small=killer distance mopo;
+;hint format ["distance: %1\nvalue: %2\nplr dist: %3\nsmall: %4",range,value,plr,small];
+
+?(bombed): _c=_c+1;
+?(bombed AND _c>20): exit
+
+_x=getpos vehicle killer select 0;
+_y=getpos vehicle killer select 1;
+_z=getpos vehicle killer select 2;
+
+?(killer distance mopo <250 AND !bombed): killer sideradio "Rbombsaway";
+?(killer distance mopo <250): bombed=true;
+?(killer distance mopo <200): "laserguidedbomb" createvehicle [_x-3,_y,_z-2];
+?(killer distance mopo <200): "laserguidedbomb" createvehicle [_x+3,_y,_z-2];
+
+goto "Here"
+
+exit

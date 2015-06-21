@@ -1,0 +1,7 @@
+
+hint format ["East: %1\nWest: %2\nUSTanks: %3, USMech: %4\nRusInf1: %5, RusInf2: %6\nBMPs: %7, T72s: %8\nRHELO: %9, USHELO: %10",(count eastarray),(count westarray),(count units _USTanks),(count units _USMech),(count units _RusInf1),(count units _RusInf2),(count units _BMPs),(count units _T72s),(count units _RUSHELO),(count units _NATOHELO)];
+exit
+
+
+;shell = "Shell120"; radius = 60; 
+;{MyShell = shell camcreate [((getpos boom) select 0) + (((_x mod 1)*radius)*sin _x), ((getpos boom) select 1) + (((_x mod 1)*radius)*cos _x), 72.5]} foreach [random 360, random 360, random 360, random 360]

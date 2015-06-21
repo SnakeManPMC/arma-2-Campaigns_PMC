@@ -1,0 +1,94 @@
+;
+; local variables for [group,helo] exec "script.sqs"
+;
+_team = _this select 0;
+_helo = _this select 1;
+
+_h1 = hostage;
+_h2 = hostage2;
+
+;
+; get people out
+;
+_helo land "get in";
+
+#landing
+~.2
+
+_z = getpos vehicle _helo select 2;
+
+;
+; loop until helo height is 2 meters.
+;
+?(_z > 2): goto "landing"
+
+_helo flyinheight 0;
+
+_team setbehaviour "combat";
+_team setcombatmode "red";
+_team setspeedmode "normal";
+
+;
+; wait until whole squad is out
+;
+_A = 0;
+ejc="EJECT";
+
+{unassignvehicle _x} foreach units _team;
+
+#WAITING
+_listunits = units _team;
+_B = count _listunits
+~.2
+_listunits select _A action [ejc,_helo];
+_A=_A+1
+?(_B > _A): goto "WAITING"
+
+;
+; move rescue team to hostages
+;
+leader _team move getpos _h1;
+
+#GoingHostage
+~.5
+
+?(leader _team distance _h1 > 5): goto "GoingHostage";
+
+;
+; call radio into the black hawk...
+;
+leader _team sideradio "Rfreeatlast";
+
+;
+; if hostages alive (better be hehe) join them to rescue squad
+;
+?(alive _h1): [_h2] join _team;
+?(alive _h2): [_h2] join _team;
+
+_team setbehaviour "aware";
+_team setcombatmode "yellow";
+_team setspeedmode "full";
+
+;
+; order rescue squad to board black hawk
+;
+{_x assignascargo helo;[_x] ordergetin true} foreach units _team;
+
+;
+; wait until whole squad is on board.
+;
+_A = 0;
+
+#TAKEOFFER
+_listunits = units _team;
+_B = count _listunits
+~.2
+?(_listunits select _A in _helo): _A=_A+1
+?(_B > _A): goto "TAKEOFFER"
+
+_helo flyinheight 25;
+leader _team sideradio "Rdustoff";
+
+comingout=true;
+
+exit

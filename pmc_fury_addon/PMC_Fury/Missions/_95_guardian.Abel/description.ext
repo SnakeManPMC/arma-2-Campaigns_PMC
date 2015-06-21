@@ -1,0 +1,44 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Guardian";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Bodyguard duty";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rontheground
+	{
+		name = "Rontheground";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rontheground;
+	};
+
+	class Rgetdown
+	{
+		name = "Rgetdown";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rgetdown;
+	};
+
+	class Routta
+	{
+		name = "Routta";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Routta;
+	};
+
+	class Rmessed
+	{
+		name = "Rmessed";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmessed;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

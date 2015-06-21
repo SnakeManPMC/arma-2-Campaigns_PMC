@@ -1,0 +1,1 @@
+dir /b /s *.sqs >>_sqs_list.txt

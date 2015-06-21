@@ -1,0 +1,37 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Taste of Freedom";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Free Saint Pierre!";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rassault
+	{
+		name = "Rassault";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rassault;
+	};
+
+	class Rbackups
+	{
+		name = "Rbackups";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbackups;
+	};
+
+	class Rcomplete
+	{
+		name = "Rcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

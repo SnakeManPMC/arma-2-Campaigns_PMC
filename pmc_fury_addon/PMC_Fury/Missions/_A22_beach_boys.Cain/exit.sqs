@@ -1,0 +1,20 @@
+;
+; C1 is the bmp name
+;
+aa = C1 saveStatus "02C1";
+
+GLB_02_C1X = ((getpos C1) select 0); saveVar "GLB_02_C1X";
+GLB_02_C1Y = ((getpos C1) select 1); saveVar "GLB_02_C1Y";
+GLB_02_C1D = getdir C1; saveVar "GLB_02_C1D";
+
+aa = C2 saveStatus "02C2";
+
+GLB_02_C2X = ((getpos C2) select 0); saveVar "GLB_02_C2X";
+GLB_02_C2Y = ((getpos C2) select 1); saveVar "GLB_02_C2Y";
+GLB_02_C2D = getdir C2; saveVar "GLB_02_C2D";
+
+exit
+
+; C1 is the vehicle name
+; 02C1 is the status variable name.
+; aa is something I have no clue about ;)

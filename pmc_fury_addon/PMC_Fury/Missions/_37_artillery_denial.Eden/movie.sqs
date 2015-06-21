@@ -1,0 +1,62 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+; start helo shot
+_camera camSetTarget [95479.94,50061.12,-17796.53]
+_camera camSetPos [4837.39,11772.37,10.02]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track8",0]
+
+titlecut ["","BLACK IN",5];
+~3
+
+; back helo shot
+_camera camSetTarget [-79477.98,65228.05,5192.62]
+_camera camSetPos [4878.86,11775.00,2.42]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+; move shot
+_camera camSetTarget [-94965.13,14073.83,5192.92]
+_camera camSetPos [4875.09,11780.28,0.05]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+; before lift shot
+_camera camSetTarget [-95103.74,13880.16,25.20]
+_camera camSetPos [4867.76,11780.47,0.05]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+; inside shot
+_camera camSetTarget [-94965.13,14073.83,5192.90]
+_camera camSetPos [4867.63,11780.46,1.80]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~3
+
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~5
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

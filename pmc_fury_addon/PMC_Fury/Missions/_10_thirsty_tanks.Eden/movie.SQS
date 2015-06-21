@@ -1,0 +1,87 @@
+;=== 21:49:02
+_camera = "camera" camCreate [5200.81,10463.05,3.43]
+_camera camSetTarget [-46090.74,-75317.58,-3496.52]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["","BLACK IN",3];
+~3
+
+~25
+
+;=== 3:57:26
+_camera camSetTarget [97240.23,-15064.59,-29497.39]
+_camera camSetPos [5159.01,10407.61,5.23]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~2
+
+#loopah
+~.2
+
+?!(ls in trk): goto "loopah"
+
+
+;=== 3:57:46
+_camera camSetTarget [-48249.29,94764.34,-3918.41]
+_camera camSetPos [5207.82,10344.37,4.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~5
+gotank=true;
+
+~2
+
+;=== 4:11:22
+_camera camSetTarget [-65867.80,81961.30,31.37]
+_camera camSetPos [4939.03,11346.90,2.30]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~10
+
+;=== 4:11:38
+_camera camSetTarget [-712.89,105291.88,-33601.16]
+_camera camSetPos [4947.08,11288.07,6.06]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~7
+
+;=== 4:11:52
+_camera camSetTarget [33460.56,-82459.90,-20261.67]
+_camera camSetPos [4971.84,11223.13,3.91]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~7
+
+;=== 4:12:12
+_camera camSetTarget [-71302.90,73757.15,-16006.00]
+_camera camSetPos [5003.38,11147.61,1.87]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~7
+
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

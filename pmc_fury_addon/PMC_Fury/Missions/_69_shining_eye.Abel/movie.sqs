@@ -1,0 +1,74 @@
+; camera basic initialization
+_camera = "camera" camCreate [3794.39,3038.04,2.00]
+_camera camSetTarget [3794.39,103038.04,24.72]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track1",0]
+
+
+titlecut ["","BLACK IN",2];
+~10
+
+; shot near tower
+_camera camSetTarget [59959.52,80456.89,-29239.51]
+_camera camSetPos [3783.30,3083.44,24.88]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+;=== 13:24:13
+_camera camSetTarget [29029.96,95312.56,-29239.47]
+_camera camSetPos [3767.90,3094.39,25.31]
+_camera camSetFOV 0.700
+_camera camCommit 8
+@camCommitted _camera
+~.5
+
+; truck shot
+_camera camSetTarget [1445.95,103184.84,18.53]
+_camera camSetPos [3744.82,3207.36,2.21]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~.5
+
+; move to right
+_camera camSetTarget [-34918.29,95429.00,18.18]
+_camera camSetPos [3752.36,3208.72,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~.5
+
+; wide shot
+_camera camSetTarget [18973.67,-93526.44,-19592.46]
+_camera camSetPos [3760.56,3341.95,17.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+;=== 13:26:44
+_camera camSetTarget [101667.58,8730.36,-19592.61]
+_camera camSetPos [3760.56,3341.95,17.38]
+_camera camSetFOV 0.700
+_camera camCommit 8
+@camCommitted _camera
+~3
+
+4 fademusic 0;
+~5
+
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

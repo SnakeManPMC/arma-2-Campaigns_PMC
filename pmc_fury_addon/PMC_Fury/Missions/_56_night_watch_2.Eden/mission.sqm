@@ -1,0 +1,1532 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"Bradley"
+	};
+	randomSeed=5722627;
+	class Intel
+	{
+		briefingName="Night Watch 2";
+		startWeather=0.000000;
+		forecastWeather=0.000000;
+		month=9;
+		day=21;
+		hour=11;
+		minute=50;
+	};
+	class Groups
+	{
+		items=9;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={8811.541016,89.763031,2770.472168};
+					id=30;
+					side="WEST";
+					vehicle="OfficerW";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.466667;
+					markers[]={};
+					init="assault=group this;";
+				};
+				class Item1
+				{
+					position[]={8804.893555,89.419983,2767.206299};
+					id=31;
+					side="WEST";
+					vehicle="SoldierWMG";
+					rank="CORPORAL";
+					skill=1.000000;
+					markers[]={};
+				};
+				class Item2
+				{
+					position[]={8806.893555,89.455978,2767.206299};
+					id=32;
+					side="WEST";
+					vehicle="SoldierWG";
+					rank="CORPORAL";
+					skill=0.333333;
+					markers[]={};
+				};
+				class Item3
+				{
+					position[]={8808.893555,89.491982,2767.206299};
+					id=33;
+					side="WEST";
+					vehicle="SoldierWG";
+					rank="CORPORAL";
+					skill=0.333333;
+					markers[]={};
+				};
+				class Item4
+				{
+					position[]={8810.893555,89.527977,2767.206299};
+					id=34;
+					side="WEST";
+					vehicle="SoldierWLAW";
+					rank="CORPORAL";
+					skill=0.333333;
+					markers[]={};
+				};
+				class Item5
+				{
+					position[]={8812.893555,89.563988,2767.206299};
+					id=35;
+					side="WEST";
+					vehicle="SoldierWMG";
+					skill=1.000000;
+					markers[]={};
+				};
+				class Item6
+				{
+					position[]={8814.893555,89.599983,2767.206299};
+					id=36;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					skill=0.200000;
+					markers[]={};
+				};
+				class Item7
+				{
+					position[]={8818.870117,89.683830,2767.385742};
+					id=37;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					skill=0.200000;
+					markers[]={};
+				};
+				class Item8
+				{
+					position[]={8816.893555,89.635971,2767.206299};
+					id=38;
+					side="WEST";
+					vehicle="SoldierWMedic";
+					skill=0.200000;
+					markers[]={};
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8809.878906,90.134384,2776.338867};
+					azimut=345.000000;
+					id=39;
+					side="WEST";
+					vehicle="Truck5t";
+					leader=1;
+					skill=0.200000;
+					text="truck";
+					markers[]={};
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7554.996582,117.809998,4724.415527};
+					combatMode="BLUE";
+					formation="COLUMN";
+					speed="FULL";
+					combat="SAFE";
+					synchronizations[]={};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8840.555664,87.169495,2707.026611};
+					azimut=150.000000;
+					special="NONE";
+					id=40;
+					side="WEST";
+					vehicle="SoldierWG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.611817;
+					text="grenados";
+					markers[]={};
+					init="removeallweapons this; this addMagazine ""cwr2_30Rnd_556x45_NATO""; this addMagazine ""cwr2_30Rnd_556x45_NATO""; this addMagazine ""cwr2_30Rnd_556x45_NATO""; this addMagazine ""FlareWhite_M203""; this addMagazine ""FlareWhite_M203""; this addMagazine ""FlareWhite_M203""; this addweapon ""cwr2_M16A2_GL"";";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={8814.677734,87.798340,2717.715332};
+					azimut=95.000000;
+					special="NONE";
+					id=42;
+					side="WEST";
+					vehicle="SoldierWLAW";
+					leader=1;
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""safe"";";
+				};
+				class Item1
+				{
+					position[]={8817.625000,87.726715,2719.851563};
+					azimut=195.000000;
+					special="NONE";
+					id=43;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					skill=0.611817;
+					markers[]={};
+					init="this disableai ""move"";";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8909.940430,95.276039,2665.873047};
+					azimut=170.000000;
+					special="NONE";
+					id=54;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					leader=1;
+					lock="LOCKED";
+					rank="CORPORAL";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+				class Item1
+				{
+					position[]={8898.241211,93.105408,2664.890137};
+					azimut=170.000000;
+					special="NONE";
+					id=55;
+					side="WEST";
+					vehicle="SoldierWG";
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+				class Item2
+				{
+					position[]={8914.728516,96.213196,2666.974609};
+					azimut=170.000000;
+					special="NONE";
+					id=53;
+					side="WEST";
+					vehicle="SoldierWMG";
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+				class Item3
+				{
+					position[]={8925.743164,98.381523,2668.243164};
+					azimut=170.000000;
+					special="NONE";
+					id=56;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8828.038086,88.756081,2751.409424};
+					azimut=170.000000;
+					special="NONE";
+					id=57;
+					side="WEST";
+					vehicle="SoldierWMedic";
+					leader=1;
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""safe""";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={8811.022461,87.144730,2647.166504};
+					azimut=170.000000;
+					special="NONE";
+					id=60;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					leader=1;
+					lock="LOCKED";
+					rank="CORPORAL";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+				class Item1
+				{
+					position[]={8799.323242,87.251968,2646.183594};
+					azimut=170.000000;
+					special="NONE";
+					id=61;
+					side="WEST";
+					vehicle="SoldierWLAW";
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+				class Item2
+				{
+					position[]={8815.810547,87.087250,2648.268066};
+					azimut=170.000000;
+					special="NONE";
+					id=59;
+					side="WEST";
+					vehicle="SoldierWG";
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+				class Item3
+				{
+					position[]={8826.825195,86.907204,2649.536621};
+					azimut=170.000000;
+					special="NONE";
+					id=62;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+				class Item4
+				{
+					position[]={8827.933594,86.519478,2639.886475};
+					azimut=160.000000;
+					special="NONE";
+					id=77;
+					side="WEST";
+					vehicle="M2StaticMG";
+					skill=1.000000;
+					markers[]={};
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={8856.375977,87.404945,2656.542725};
+					azimut=170.000000;
+					special="NONE";
+					id=64;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					leader=1;
+					lock="LOCKED";
+					rank="CORPORAL";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+				class Item1
+				{
+					position[]={8840.031250,86.679390,2652.077148};
+					azimut=170.000000;
+					special="NONE";
+					id=65;
+					side="WEST";
+					vehicle="SoldierWMG";
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+				class Item2
+				{
+					position[]={8864.647461,88.605858,2660.548828};
+					azimut=170.000000;
+					special="NONE";
+					id=63;
+					side="WEST";
+					vehicle="SoldierWAT";
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+				class Item3
+				{
+					position[]={8881.758789,91.049660,2664.718994};
+					azimut=170.000000;
+					special="NONE";
+					id=66;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""down""; this disableai ""move""";
+				};
+				class Item4
+				{
+					position[]={8847.049805,86.811623,2679.791016};
+					azimut=135.000000;
+					special="NONE";
+					id=78;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""up""; this disableai ""move""";
+				};
+				class Item5
+				{
+					position[]={8844.116211,86.871078,2678.596436};
+					azimut=175.000000;
+					special="NONE";
+					id=79;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					lock="LOCKED";
+					skill=0.611817;
+					markers[]={};
+					init="this setbehaviour ""aware""; this setunitpos ""up""; this disableai ""move""";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={8855.323242,88.367317,2718.566650};
+					azimut=170.000000;
+					id=67;
+					side="WEST";
+					vehicle="OfficerW";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.466667;
+					markers[]={};
+					init="assault2=group this; this setbehaviour ""safe"";";
+				};
+				class Item1
+				{
+					position[]={8857.172852,88.802361,2723.578613};
+					azimut=169.999985;
+					id=68;
+					side="WEST";
+					vehicle="SoldierWMG";
+					rank="CORPORAL";
+					skill=0.333333;
+					markers[]={};
+				};
+				class Item2
+				{
+					position[]={8855.203125,88.550186,2723.231445};
+					azimut=169.999985;
+					id=69;
+					side="WEST";
+					vehicle="SoldierWG";
+					rank="CORPORAL";
+					skill=0.333333;
+					markers[]={};
+				};
+				class Item3
+				{
+					position[]={8853.233398,88.297928,2722.884033};
+					azimut=169.999985;
+					id=70;
+					side="WEST";
+					vehicle="SoldierWG";
+					rank="CORPORAL";
+					skill=0.333333;
+					markers[]={};
+				};
+				class Item4
+				{
+					position[]={8851.263672,88.045670,2722.536865};
+					azimut=169.999985;
+					id=71;
+					side="WEST";
+					vehicle="SoldierWLAW";
+					rank="CORPORAL";
+					skill=0.333333;
+					markers[]={};
+				};
+				class Item5
+				{
+					position[]={8849.293945,87.865883,2722.189453};
+					azimut=169.999985;
+					id=72;
+					side="WEST";
+					vehicle="SoldierWMG";
+					skill=0.200000;
+					markers[]={};
+				};
+				class Item6
+				{
+					position[]={8847.324219,87.815758,2721.842285};
+					azimut=169.999985;
+					id=73;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					skill=0.200000;
+					markers[]={};
+				};
+				class Item7
+				{
+					position[]={8845.354492,87.765610,2721.494873};
+					azimut=169.999985;
+					id=74;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					skill=0.200000;
+					markers[]={};
+				};
+				class Item8
+				{
+					position[]={8845.354492,87.765610,2721.494873};
+					azimut=169.999985;
+					id=75;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					skill=0.200000;
+					markers[]={};
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=43;
+		class Item0
+		{
+			position[]={8801.563477,86.953239,2641.624512};
+			azimut=85.000000;
+			id=0;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item1
+		{
+			position[]={8804.315430,86.985710,2641.900146};
+			azimut=85.000000;
+			id=1;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item2
+		{
+			position[]={8807.066406,87.018105,2642.174561};
+			azimut=85.000000;
+			id=2;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item3
+		{
+			position[]={8809.818359,86.991371,2642.450195};
+			azimut=85.000000;
+			id=3;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item4
+		{
+			position[]={8815.007813,86.963936,2644.566162};
+			azimut=85.000000;
+			id=4;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item5
+		{
+			position[]={8817.759766,86.917389,2644.841797};
+			azimut=85.000000;
+			id=5;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item6
+		{
+			position[]={8820.564453,86.869911,2645.121582};
+			azimut=85.000000;
+			id=6;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item7
+		{
+			position[]={8823.316406,86.823364,2645.397217};
+			azimut=85.000000;
+			id=7;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item8
+		{
+			position[]={8829.068359,86.809219,2648.172852};
+			azimut=85.000000;
+			id=8;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item9
+		{
+			position[]={8831.820313,86.762672,2648.448486};
+			azimut=85.000000;
+			id=9;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item10
+		{
+			position[]={8834.625000,86.715202,2648.728271};
+			azimut=85.000000;
+			id=10;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item11
+		{
+			position[]={8837.376953,86.668648,2649.003906};
+			azimut=85.000000;
+			id=11;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item12
+		{
+			position[]={8844.326172,86.472557,2647.621826};
+			azimut=170.000000;
+			id=12;
+			side="EMPTY";
+			vehicle="Wire";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item13
+		{
+			position[]={8851.814453,86.632584,2649.214844};
+			azimut=170.000000;
+			id=13;
+			side="EMPTY";
+			vehicle="Wire";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item14
+		{
+			position[]={8868.004883,89.022827,2655.049072};
+			azimut=150.000000;
+			id=14;
+			side="EMPTY";
+			vehicle="Wire";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item15
+		{
+			position[]={8875.375977,90.091484,2658.452393};
+			azimut=155.000000;
+			id=15;
+			side="EMPTY";
+			vehicle="Wire";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item16
+		{
+			position[]={8859.940430,87.858086,2651.763916};
+			azimut=155.000000;
+			id=16;
+			side="EMPTY";
+			vehicle="Wire";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item17
+		{
+			position[]={8882.911133,91.168266,2660.361572};
+			azimut=85.000000;
+			id=17;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item18
+		{
+			position[]={8885.663086,91.557365,2660.637207};
+			azimut=85.000000;
+			id=18;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item19
+		{
+			position[]={8888.414063,91.946350,2660.911621};
+			azimut=85.000000;
+			id=19;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item20
+		{
+			position[]={8891.166016,92.288849,2661.187256};
+			azimut=85.000000;
+			id=20;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item21
+		{
+			position[]={8900.229492,93.394737,2661.689453};
+			azimut=85.000000;
+			id=21;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item22
+		{
+			position[]={8902.981445,93.936890,2661.965088};
+			azimut=85.000000;
+			id=22;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item23
+		{
+			position[]={8905.786133,94.489426,2662.244873};
+			azimut=85.000000;
+			id=23;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item24
+		{
+			position[]={8908.538086,95.031578,2662.520508};
+			azimut=85.000000;
+			id=24;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item25
+		{
+			position[]={8916.608398,96.613594,2664.128174};
+			azimut=85.000000;
+			id=25;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item26
+		{
+			position[]={8919.360352,97.155746,2664.403809};
+			azimut=85.000000;
+			id=26;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item27
+		{
+			position[]={8922.165039,97.708282,2664.683594};
+			azimut=85.000000;
+			id=27;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item28
+		{
+			position[]={8924.916992,98.250435,2664.959229};
+			azimut=85.000000;
+			id=28;
+			side="EMPTY";
+			vehicle="FenceWood";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item29
+		{
+			position[]={8829.181641,86.497078,2639.977295};
+			azimut=155.000000;
+			id=29;
+			side="EMPTY";
+			vehicle="Fortress1";
+			leader=1;
+			skill=0.600000;
+			markers[]={};
+		};
+		class Item30
+		{
+			position[]={8851.262695,87.009407,2689.104492};
+			azimut=150.000000;
+			special="NONE";
+			id=41;
+			side="EMPTY";
+			vehicle="FlagCarrier";
+			leader=1;
+			skill=0.611817;
+			markers[]={};
+			init="this setFlagTexture ""\cwr2\General\cwr2_flags\data\usa_vlajka.pac"";";
+		};
+		class Item31
+		{
+			position[]={8816.807617,87.746574,2718.056396};
+			azimut=255.000000;
+			special="NONE";
+			id=44;
+			side="EMPTY";
+			vehicle="Fire";
+			leader=1;
+			skill=0.611817;
+			text="fire1";
+			markers[]={};
+		};
+		class Item32
+		{
+			position[]={8792.641602,89.077278,2761.353516};
+			azimut=170.000000;
+			special="NONE";
+			id=45;
+			side="EMPTY";
+			vehicle="M1Abrams";
+			lock="LOCKED";
+			skill=0.611817;
+			markers[]={};
+		};
+		class Item33
+		{
+			position[]={8892.756836,92.247124,2703.562256};
+			azimut=155.000000;
+			special="NONE";
+			id=46;
+			side="EMPTY";
+			vehicle="M1Abrams";
+			lock="LOCKED";
+			skill=0.611817;
+			markers[]={};
+		};
+		class Item34
+		{
+			position[]={8802.308594,87.546425,2658.460938};
+			azimut=170.000000;
+			special="NONE";
+			id=47;
+			side="EMPTY";
+			vehicle="M1Abrams";
+			lock="LOCKED";
+			skill=0.611817;
+			markers[]={};
+		};
+		class Item35
+		{
+			position[]={8848.975586,86.694321,2672.669434};
+			azimut=155.000000;
+			special="NONE";
+			id=48;
+			side="EMPTY";
+			vehicle="M1Abrams";
+			lock="LOCKED";
+			skill=0.611817;
+			markers[]={};
+		};
+		class Item36
+		{
+			position[]={8826.109375,87.771423,2729.821777};
+			azimut=155.000000;
+			special="NONE";
+			id=49;
+			side="EMPTY";
+			vehicle="M113";
+			lock="LOCKED";
+			skill=0.611817;
+			markers[]={};
+		};
+		class Item37
+		{
+			position[]={8809.409180,87.926353,2715.197754};
+			azimut=170.000000;
+			special="NONE";
+			id=50;
+			side="EMPTY";
+			vehicle="ReammoBoxWest";
+			lock="LOCKED";
+			skill=0.611817;
+			markers[]={};
+		};
+		class Item38
+		{
+			position[]={8839.992188,87.402718,2715.197754};
+			azimut=170.000000;
+			special="NONE";
+			id=51;
+			side="EMPTY";
+			vehicle="HeavyReammoBoxWest";
+			lock="LOCKED";
+			skill=0.611817;
+			markers[]={};
+		};
+		class Item39
+		{
+			position[]={8843.589844,87.095764,2703.479004};
+			azimut=170.000000;
+			special="NONE";
+			id=52;
+			side="EMPTY";
+			vehicle="JeepMG";
+			lock="LOCKED";
+			skill=0.611817;
+			markers[]={};
+		};
+		class Item40
+		{
+			position[]={8831.826172,88.637238,2747.857666};
+			azimut=335.000000;
+			special="NONE";
+			id=58;
+			side="EMPTY";
+			vehicle="MASH";
+			lock="LOCKED";
+			skill=0.611817;
+			markers[]={};
+		};
+		class Item41
+		{
+			position[]={8844.370117,88.139137,2730.744141};
+			azimut=60.000000;
+			id=76;
+			side="EMPTY";
+			vehicle="Camp";
+			leader=1;
+			skill=0.466667;
+			markers[]={};
+		};
+		class Item42
+		{
+			position[]={8874.268555,90.942245,2728.611816};
+			azimut=155.000000;
+			special="NONE";
+			id=80;
+			side="EMPTY";
+			vehicle="Bradley";
+			lock="LOCKED";
+			skill=0.611817;
+			markers[]={};
+		};
+	};
+	class Markers
+	{
+		items=4;
+		class Item0
+		{
+			position[]={8839.493164,87.155167,2695.944336};
+			name="guard";
+			text="Guard";
+			type="Flag1";
+			colorName="ColorBlue";
+		};
+		class Item1
+		{
+			position[]={9143.488281,62.894627,2202.644287};
+			name="red";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorRedAlpha";
+			a=300.000000;
+			b=500.000000;
+			angle=325.000000;
+		};
+		class Item2
+		{
+			position[]={8955.060547,76.354141,2475.154297};
+			name="noentry";
+			text="Do not enter";
+			type="Warning";
+			colorName="ColorRed";
+		};
+		class Item3
+		{
+			position[]={8811.323242,89.827553,2771.472900};
+			name="start";
+			text="Start";
+			type="Start";
+		};
+	};
+	class Sensors
+	{
+		items=16;
+		class Item0
+		{
+			position[]={8738.680664,130.014999,3224.302490};
+			a=0.000000;
+			b=0.000000;
+			timeoutMid=3.000000;
+			timeoutMax=3.000000;
+			age="UNKNOWN";
+			text="start script";
+			expCond="true";
+			expActiv="[] exec ""night.sqs"";";
+			class Effects
+			{
+			};
+			synchronizations[]={};
+		};
+		class Item1
+		{
+			position[]={9072.614258,155.466202,2732.254639};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="hedgesparrow";
+			name="day3";
+			expCond="day";
+			class Effects
+			{
+				soundDet="HedgeSparrow";
+			};
+			synchronizations[]={};
+		};
+		class Item2
+		{
+			position[]={8573.677734,122.072968,2691.509277};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="skylark";
+			name="day5";
+			expCond="day";
+			class Effects
+			{
+				soundDet="Skylark";
+			};
+			synchronizations[]={};
+		};
+		class Item3
+		{
+			position[]={8842.665039,86.759186,2375.168701};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="forestlark";
+			name="day9";
+			expCond="day";
+			class Effects
+			{
+				soundDet="ForestLark";
+			};
+			synchronizations[]={};
+		};
+		class Item4
+		{
+			position[]={8803.170898,94.681183,2821.305176};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="nightingale";
+			name="day1";
+			expCond="day";
+			class Effects
+			{
+				soundDet="Nightingale";
+			};
+			synchronizations[]={};
+		};
+		class Item5
+		{
+			position[]={8713.430664,94.448883,2648.986084};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="jay";
+			name="day8";
+			expCond="day";
+			class Effects
+			{
+				soundDet="Jay";
+			};
+			synchronizations[]={};
+		};
+		class Item6
+		{
+			position[]={8822.508789,87.285622,2670.114258};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="owl";
+			name="night2";
+			expCond="night";
+			class Effects
+			{
+				soundDet="OwlSfx";
+			};
+			synchronizations[]={};
+		};
+		class Item7
+		{
+			position[]={8924.444336,142.567078,2934.777100};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="owl2";
+			name="night3";
+			expCond="night";
+			class Effects
+			{
+				soundDet="Owl";
+			};
+			synchronizations[]={};
+		};
+		class Item8
+		{
+			position[]={9099.958984,243.331085,3099.806152};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="wolf";
+			name="night4";
+			expCond="night";
+			class Effects
+			{
+				soundDet="WolfSfx";
+			};
+			synchronizations[]={};
+		};
+		class Item9
+		{
+			position[]={8691.525391,119.308792,2520.522217};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="wolf";
+			name="night1";
+			expCond="night";
+			class Effects
+			{
+				soundDet="WolfSfx";
+			};
+			synchronizations[]={};
+		};
+		class Item10
+		{
+			position[]={8763.531250,98.101646,2857.543213};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="cricket1";
+			name="day2";
+			expCond="day";
+			class Effects
+			{
+				soundDet="Cricket1Sfx";
+			};
+			synchronizations[]={};
+		};
+		class Item11
+		{
+			position[]={8877.443359,87.343254,2606.462891};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="cricket2";
+			name="day6";
+			expCond="day";
+			class Effects
+			{
+				soundDet="Cricket2Sfx";
+			};
+			synchronizations[]={};
+		};
+		class Item12
+		{
+			position[]={8899.178711,92.708466,2744.642578};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="cricket3";
+			name="day4";
+			expCond="day";
+			class Effects
+			{
+				soundDet="Cricket3Sfx";
+			};
+			synchronizations[]={};
+		};
+		class Item13
+		{
+			position[]={8756.232422,89.843666,2598.424561};
+			a=0.000000;
+			b=0.000000;
+			age="UNKNOWN";
+			text="cricket4";
+			name="day7";
+			expCond="day";
+			class Effects
+			{
+				soundDet="CricketSfx";
+			};
+			synchronizations[]={};
+		};
+		class Item14
+		{
+			position[]={8797.345703,143.198227,3210.526367};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			text="END";
+			expCond="mcomplete";
+			class Effects
+			{
+			};
+			synchronizations[]={};
+		};
+		class Item15
+		{
+			position[]={8903.399414,86.451286,2575.240234};
+			a=2000.000000;
+			angle=340.000000;
+			activationBy="WEST";
+			type="LOOSE";
+			age="UNKNOWN";
+			text="loose";
+			expActiv="""1"" objstatus ""FAILED"";";
+			class Effects
+			{
+			};
+			synchronizations[]={};
+		};
+	};
+};
+class Intro
+{
+	addOns[]={};
+	randomSeed=5212675;
+	class Intel
+	{
+		startWeather=0.000000;
+		forecastWeather=0.000000;
+		month=9;
+		day=21;
+		hour=11;
+		minute=50;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={7976.636719,177.653488,4237.103516};
+					id=0;
+					side="WEST";
+					vehicle="OfficerW";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.466667;
+					markers[]={};
+					init="assault=group this; {_x moveincargo truck} foreach units assault;";
+				};
+				class Item1
+				{
+					position[]={7969.989258,177.321075,4233.837891};
+					id=1;
+					side="WEST";
+					vehicle="SoldierWMG";
+					rank="CORPORAL";
+					skill=1.000000;
+					markers[]={};
+				};
+				class Item2
+				{
+					position[]={7971.989258,177.477707,4233.837891};
+					id=2;
+					side="WEST";
+					vehicle="SoldierWG";
+					rank="CORPORAL";
+					skill=0.333333;
+					markers[]={};
+				};
+				class Item3
+				{
+					position[]={7973.989258,177.634277,4233.837891};
+					id=3;
+					side="WEST";
+					vehicle="SoldierWG";
+					rank="CORPORAL";
+					skill=0.333333;
+					markers[]={};
+				};
+				class Item4
+				{
+					position[]={7975.989258,177.790848,4233.837891};
+					id=4;
+					side="WEST";
+					vehicle="SoldierWLAW";
+					rank="CORPORAL";
+					skill=0.333333;
+					markers[]={};
+				};
+				class Item5
+				{
+					position[]={7977.989258,177.947479,4233.837891};
+					id=5;
+					side="WEST";
+					vehicle="SoldierWMG";
+					skill=1.000000;
+					markers[]={};
+				};
+				class Item6
+				{
+					position[]={7979.989258,178.104065,4233.837891};
+					id=6;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					skill=0.200000;
+					markers[]={};
+				};
+				class Item7
+				{
+					position[]={7983.965820,178.405090,4234.017090};
+					id=7;
+					side="WEST";
+					vehicle="cwr2_SoldierW";
+					player="PLAYER COMMANDER";
+					skill=0.200000;
+					markers[]={};
+					init="this exec ""movie.sqs""";
+				};
+				class Item8
+				{
+					position[]={7981.989258,178.260696,4233.837891};
+					id=8;
+					side="WEST";
+					vehicle="SoldierWMedic";
+					skill=0.200000;
+					markers[]={};
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7985.776367,178.804184,4229.550781};
+					azimut=135.000000;
+					id=9;
+					side="WEST";
+					vehicle="Truck5t";
+					leader=1;
+					skill=0.200000;
+					text="truck";
+					markers[]={};
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8818.599609,88.867676,2755.524658};
+					speed="FULL";
+					combat="SAFE";
+					synchronizations[]={};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={7976.418945,177.578796,4238.104492};
+			name="start";
+			text="Start";
+			type="Start";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={7990.653320,178.720001,4237.641113};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			text="end";
+			expCond="endcut";
+			class Effects
+			{
+			};
+			synchronizations[]={};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]={};
+	randomSeed=9611267;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]={};
+	randomSeed=9161731;
+	class Intel
+	{
+	};
+};

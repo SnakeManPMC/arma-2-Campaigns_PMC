@@ -1,0 +1,58 @@
+; oneRaple.sqs By XCess
+; Edited by Gastovski
+; This script is executed from Rapple.sqs, you don't need to call it from anywhere else
+
+_man = _this select 0
+_helo = _this select 1
+
+_behave = behaviour _man
+_man setbehaviour"CARELESS"
+
+_posx = getpos _helo select 0
+_posy = getpos _helo select 1
+_posz = getpos _helo select 2
+
+_posz = _posz - 2
+
+_man setpos[_posx, _posy, _posz]
+_man setdir 0
+
+#loop
+_posx = getpos _helo select 0
+_posy = getpos _helo select 1
+
+_posz = _posz - 0.5
+
+_man setpos [_posx, _posy, _posz]
+_man setdir 0
+
+~0.001 
+? _posz > 2 : goto"loop"
+
+
+; I probably don't need some lines but it seems to be working so i left it.
+_pos = getpos _helo
+_man moveincargo _helo
+_helo setpos [_posx,_posy,_posz]
+~0.00000000000000000000000000000000000000000001
+unassignvehicle _man
+_man action["eject",_helo]
+~0.000000000000000000000000000001
+_helo setpos _pos
+_helo flyinheight (_pos select 2)
+unassignvehicle _man
+
+
+_man Setbehaviour _behave
+?(J<=I) : (leader _man) setbehaviour"COMBAT"; goto"helomove" 
+exit
+
+#heloMove
+
+_helo flyinheight 100;
+~5
+_helo sidechat "WE ARE OUT OF HERE. GOOD LUCK BOYS. OVER.";
+~3
+helowaypoint = true
+
+exit

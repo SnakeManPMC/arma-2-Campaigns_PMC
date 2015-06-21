@@ -1,0 +1,17 @@
+_group1 = _this select 0;
+_helo1 = _this select 1;
+
+_A = 0;
+ejc="EJECT";
+
+{unassignvehicle _x} foreach units _group1;
+
+#WAITING
+_listunits = units _group1;
+_B = count _listunits
+~.2
+_listunits select _A action [ejc,_helo1];
+_A=_A+1
+?(_B > _A): goto "WAITING"
+
+exit

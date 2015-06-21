@@ -1,0 +1,89 @@
+;=== 21:49:02
+_camera = "camera" camCreate [4200.26,5262.74,0.94]
+_camera camSetTarget [-55532.21,84361.73,13320.22]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["","BLACK IN",3];
+~3
+
+_camera camSetTarget helo
+_camera camsetrelpos [20,200,110]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~8
+
+_camera camSetTarget helo
+_camera camsetrelpos [20,200,110]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~8
+
+_camera camSetTarget helo
+_camera camsetrelpos [5,200,110]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~8
+
+_camera camSetTarget ss1
+_camera camsetrelpos [20,10,2]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+bitch=false;
+
+#looper
+~0.01
+?(ss1 ammo "9K32Launcher" == 0): bitch=true;
+?(ss2 ammo "9K32Launcher" == 0): bitch=true;
+?(ss3 ammo "9K32Launcher" == 0): bitch=true;
+
+?!(bitch): goto "looper"
+
+setacctime .3
+
+_camera camSetTarget ss1
+_camera camsetrelpos [-2,-4,0]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+_camera camSetTarget helo
+_camera camCommit 2
+@camCommitted _camera
+
+~4
+
+setacctime 1
+
+_camera camSetTarget helo
+_camera camsetrelpos [-40,300,0]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~25
+
+
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

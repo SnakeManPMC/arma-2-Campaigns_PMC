@@ -1,0 +1,73 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+; behind trees
+_camera camSetTarget [32407.69,102214.79,287.99]
+_camera camSetPos [5466.35,5912.52,3.15]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+playmusic ["track3",0]
+
+titlecut ["","BLACK IN",5];
+~5
+
+; zoom out
+_camera camSetTarget [5313.94,102170.98,-26946.96]
+_camera camSetPos [5517.87,5905.61,49.92]
+_camera camSetFOV 0.700
+_camera camCommit 15
+@camCommitted _camera
+~2
+
+; ambulance zoom
+_camera camSetTarget ambu
+_camera camSetRelPos [20,10,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; sniper 1 
+_camera camSetTarget snipa1
+_camera camSetRelPos [0,-3,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; sniper 2
+_camera camSetTarget snipa2
+_camera camSetRelPos [0,-3,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; truck
+_camera camSetTarget truck
+_camera camSetRelPos [0,-20,10]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

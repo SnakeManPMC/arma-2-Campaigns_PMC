@@ -1,0 +1,51 @@
+;=== 21:49:02
+_camera = "camera" camCreate [3934.93,8277.09,21.93]
+_camera camSetTarget [-56134.71,80455.06,-34331.43]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["","BLACK IN",3];
+~3
+
+~15
+
+;=== 3:14:51
+_camera camSetTarget [20987.43,102451.41,-28988.84]
+_camera camSetPos [4008.55,8279.56,15.57]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~15
+
+;=== 3:15:10
+_camera camSetTarget [-26581.91,99485.60,-27186.18]
+_camera camSetPos [3906.88,8220.72,15.47]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~15
+
+;=== 3:15:53
+_camera camSetTarget [95855.69,-24896.17,-20813.89]
+_camera camSetPos [3848.19,8278.00,11.60]
+_camera camSetFOV 0.767
+_camera camCommit 0
+@camCommitted _camera
+
+~15
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

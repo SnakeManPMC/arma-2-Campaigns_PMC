@@ -1,0 +1,25 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Meaux Stronghold";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Hold the city.";
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+	class Rcomplete
+	{
+		name = "Rcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcomplete;
+	};
+};

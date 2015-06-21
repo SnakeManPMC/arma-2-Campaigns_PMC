@@ -1,0 +1,27 @@
+ahelo land "get out";
+
+ahelo sidechat "I'm dropping you off now. You are a great gunner!";
+~5
+
+player sidechat "Heh thanks, it was ... fun."
+
+#loop
+~.2
+_z=getpos vehicle ahelo select 2;
+
+?(_z > 2): goto "loop"
+
+player action ["eject",ahelo];
+~10
+
+player sideradio "Rgunscomplete";
+~25
+
+PAPABEAR sideradio "Rmcomplete";
+~15
+
+;
+; fucking A
+;
+mcomplete=true;
+

@@ -1,0 +1,77 @@
+;=== 21:49:02
+_camera = "camera" camCreate [5074.60,10523.96,26.91]
+_camera camSetTarget [90206.12,-30676.64,-32427.57]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["","BLACK IN",3];
+~3
+
+;=== dudes running
+_camera camSetTarget [90769.50,50539.55,-32427.70]
+_camera camSetPos [5074.60,10523.96,26.91]
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+~2
+
+;=== woods
+_camera camSetTarget [9231.82,109489.44,-13676.30]
+_camera camSetPos [5074.60,10523.96,26.91]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~5
+
+;=== woods change angle
+_camera camSetTarget [-41527.68,87154.48,-44200.34]
+_camera camSetPos [5141.56,10592.07,45.58]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== transition
+_camera camSetTarget [70459.55,80565.97,-28860.94]
+_camera camSetPos [5141.56,10592.07,45.58]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+;=== larger forest
+_camera camSetTarget [101908.56,-5322.30,-19493.84]
+_camera camSetPos [5141.56,10592.07,45.58]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~5
+
+;=== angle change
+_camera camSetTarget [43.12,108384.73,-19519.25]
+_camera camSetPos [5201.75,10458.73,45.11]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+;=== something
+_camera camSetTarget [92262.21,55587.29,-19519.73]
+_camera camSetPos [5201.75,10458.73,45.11]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~5
+
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

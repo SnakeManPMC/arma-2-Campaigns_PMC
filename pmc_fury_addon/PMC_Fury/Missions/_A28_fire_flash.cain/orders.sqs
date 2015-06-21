@@ -1,0 +1,112 @@
+;
+; new orders for brand new Alpha Black
+;
+col dowatch aP;
+maj dowatch aP;
+
+~2
+
+aP sidechat "Alpha Black reporting back to duty, sir.";
+~10
+
+col sidechat "Very good, nice to have you back. I assume you are ready for new orders?";
+~10
+
+aP sidechat "Yes sir. very much so. sir.";
+~15
+
+col sidechat "Is your squad all set up and ready to go?";
+~7
+
+aP sidechat "We are still missing a medic, but other than that we are ready to go. sir.";
+~10
+
+col sidechat "Ok. Major, get this man everything he requires.";
+~10
+
+maj sidechat "Yes sir.";
+~5
+
+maj sidechat "One medic, anything else?";
+~7
+
+aP sidechat "One medic is fine, of and one of my guys needs LAW rocket. sir.";
+~7
+
+maj sidechat "You can have him get one from the ammo box there.";
+~7
+
+aP sidechat "Four, get LAW from the box";
+~4
+
+lawsol sidechat "Roger.";
+lawsol domove getpos boxer;
+~5
+
+maj sidechat "Sergeant!";
+~1
+
+sarg domove getpos tabl;
+~6
+
+removeallweapons lawsol;
+lawsol addMagazine "cwr2_30Rnd_556x45_NATO";
+lawsol addMagazine "cwr2_30Rnd_556x45_NATO";
+lawsol addMagazine "cwr2_30Rnd_556x45_NATO";
+lawsol addmagazine "cwr2_LawRocket";
+lawsol addmagazine "cwr2_LawRocket";
+lawsol addweapon "LAWLauncher";
+~1
+
+sarg sidechat "Yes sir?";
+~5
+
+maj sidechat "Get one of your medics here asap.";
+~3
+
+sarg sidechat "Roger that sir.";
+~2
+
+sarg domove getpos newsol8;
+
+#loop
+~1
+?(sarg distance newsol8 > 5): goto "loop";
+
+newsol8 domove getpos tabl;
+
+#loop2
+~1
+?(newsol8 distance ap > 5): goto "loop2";
+
+maj sidechat "medic, you are to join up with Alpha Black here.";
+~7
+
+newsol8 sidechat "Sir yes sir!";
+~5
+
+[sol8] join grpnull;
+[newsol8] join assault1;
+
+~10
+
+aP sidechat "Thank you sir.";
+~10
+
+col sidechat "No problem, if there is anything else you need, just come to see me. ok?";
+~7
+
+aP sidechat "Yes sir. Thank you sir.";
+~10
+
+col sidechat "Okay here is your new orders. Good luck.";
+~10
+
+"2" objstatus "Active";
+"insert" setmarkertype "Flag";
+"target1" setmarkertype "Marker";
+hint "New orders received. Briefing updated, the map view!";
+
+New_Orders=true;
+
+exit

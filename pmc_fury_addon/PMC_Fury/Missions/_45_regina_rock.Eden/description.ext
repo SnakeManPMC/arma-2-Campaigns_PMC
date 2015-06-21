@@ -1,0 +1,46 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Regina Rock";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Wipe them out";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rcomplete
+	{
+		name = "Rcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcomplete;
+	};
+	class Rposit2
+	{
+		name = "Rposit2";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rposit2;
+	};
+	class Rposit3
+	{
+		name = "Rposit3";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rposit3;
+	};
+	class Rcasualty2
+	{
+		name = "Rcasualty2";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcasualty2;
+	};
+	class Rcasualty3
+	{
+		name = "Rcasualty3";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcasualty3;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

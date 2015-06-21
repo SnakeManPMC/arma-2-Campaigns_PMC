@@ -1,0 +1,244 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+; starting flag shot
+_camera camSetTarget [3678.52,112147.98,-6821.20]
+_camera camSetPos [5055.57,12391.88,5.86]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+playmusic ["7thLifeless",0]
+
+off1 playmove "EffectStandTalk";
+ppilot1 playmove "EffectStandTalk";
+
+titlecut ["","BLACK IN",5];
+~5
+
+ppilot2 playmove "EffectStandTalk";
+off3 playmove "EffectStandTalk";
+
+titleText ["WAR IS OVER! - NATO VICTORY","PLAIN DOWN",2]
+~5
+
+off2 playmove "EffectStandTalk";
+ppilot3 playmove "EffectStandTalk";
+
+
+; officers talking shot
+_camera camSetTarget [97684.23,47972.25,-8504.18]
+_camera camSetPos [4877.69,11720.20,1.43]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+ppilot4 playmove "EffectStandTalk";
+
+; tankor1 shot
+_camera camSetTarget tankor1
+_camera camSetRelPos [7,5,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; pilot1 shot
+_camera camSetTarget ppilot1
+_camera camSetRelPos [2,0,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; pilot3 shot
+_camera camSetTarget ppilot3
+_camera camSetRelPos [0,3,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; pilot2 shot
+_camera camSetTarget ppilot4
+_camera camSetFOV 0.700
+_camera camCommit 4
+@camCommitted _camera
+~1
+
+; pilot2 back wide view shot
+_camera camSetTarget ppilot2
+_camera camSetRelPos [0,-20,15]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+
+med1 playmove "EffectStandTalk";
+
+; hospital start shot
+_camera camSetTarget [-82690.01,58251.09,450.82]
+_camera camSetPos [3909.48,8247.59,3.30]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+med2 playmove "EffectStandTalk";
+~1
+med3 playmove "EffectStandTalk";
+
+; move camera
+_camera camSetTarget [-33638.35,-83405.13,-13504.55]
+_camera camSetPos [3893.31,8282.78,3.12]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~3
+
+
+; base start shot
+_camera camSetTarget [-84279.15,-31713.10,-15439.26]
+_camera camSetPos [7746.14,4158.74,3.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+; base lift move shot
+_camera camSetTarget [-84481.51,-24540.79,-25704.60]
+_camera camSetPos [7730.90,4185.35,20.13]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+~1
+
+; through base start
+_camera camSetTarget [10208.16,-95564.42,6429.99]
+_camera camSetPos [7516.93,4202.08,1.07]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+; move through base
+_camera camSetTarget [10208.16,-95564.42,6429.97]
+_camera camSetPos [7519.27,4115.12,1.04]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~1
+
+; sa start shot
+_camera camSetTarget [-44044.37,84003.30,18048.21]
+_camera camSetPos [9451.73,1451.25,22.90]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+; sa move shot
+_camera camSetTarget [63800.27,76317.02,-37898.18]
+_camera camSetPos [9451.73,1451.25,22.90]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+; sa move shot 2
+_camera camSetTarget [102153.72,34425.75,-17793.95]
+_camera camSetPos [9451.73,1451.25,22.90]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~1
+
+; sa still 1
+_camera camSetTarget [90841.54,-55289.36,-13652.89]
+_camera camSetPos [9709.21,1550.78,1.70]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; sa still 2
+_camera camSetTarget [-89609.55,13962.28,-2674.25]
+_camera camSetPos [9587.58,1600.20,6.88]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; gunship shot
+_camera camSetTarget gunship1
+_camera camSetRelPos [1,40,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+_count=0
+#bhloop
+~.001
+_count=_count+1
+_camera camSetTarget bh
+_camera camSetRelPos [10,-10,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+?(_count < 600): goto "bhloop"
+
+
+titlecut ["","BLACK OUT",3];
+~4
+
+; move camera
+_camera camSetTarget me
+_camera camSetRelPos [1,0,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titleText ["OPERATION FLASHPOINT CAMPAIGN\nPMC FURY","PLAIN",2]
+~10
+
+titleText ["T H E  E N D","PLAIN",3]
+~10
+
+titleText ["Credits","PLAIN",1]
+~10
+
+titleText ["Mission design:\nSnake Man","PLAIN",2]
+~10
+
+titleText ["Scripting:\nSnake Man\nand\nFishion (artillery)\nBackoff & DeaDMeaT Productions (create unit)\nThanks guys","PLAIN",2]
+~10
+
+titleText ["Cutscenes (yuck):\nSnake Man","PLAIN",2]
+~10
+
+titleText ["Beta testing:\nSnake Man\nRobot\nMozart","PLAIN",2]
+~10
+
+titleText ["Thank you for playing Operation Flashpoint\nPMC Fury Campaign!","PLAIN",2]
+~15
+
+titleText ["Greetings to BIS and whole OFP community","PLAIN",2]
+~10
+
+titleText ["","PLAIN",4]
+~1
+
+4 fademusic 0;
+~5
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

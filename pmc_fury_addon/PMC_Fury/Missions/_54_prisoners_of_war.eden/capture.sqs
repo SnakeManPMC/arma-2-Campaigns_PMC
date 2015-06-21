@@ -1,0 +1,218 @@
+pris1_1 setspeedmode "limited";
+pris1_2 setspeedmode "limited";
+pris1_3 setspeedmode "limited";
+pris1_4 setspeedmode "limited";
+pris2_1 setspeedmode "limited";
+pris2_2 setspeedmode "limited";
+pris2_3 setspeedmode "limited";
+pris2_4 setspeedmode "limited";
+pris2_5 setspeedmode "limited";
+pris2_6 setspeedmode "limited";
+pris2_7 setspeedmode "limited";
+pris2_8 setspeedmode "limited";
+
+pris1_1 setbehaviour "safe";
+pris1_2 setbehaviour "safe";
+pris1_3 setbehaviour "safe";
+pris1_4 setbehaviour "safe";
+pris2_1 setbehaviour "safe";
+pris2_2 setbehaviour "safe";
+pris2_3 setbehaviour "safe";
+pris2_4 setbehaviour "safe";
+pris2_5 setbehaviour "safe";
+pris2_6 setbehaviour "safe";
+pris2_7 setbehaviour "safe";
+pris2_8 setbehaviour "safe";
+
+~7
+
+;
+; enemy uprising has repelled
+;
+player sideradio "Rrepelled";
+~20
+
+;
+; hq reply with capturing orders
+;
+PAPABEAR sideradio "Rcaptureem";
+
+cpris11=false;
+cpris12=false;
+cpris13=false;
+cpris14=false;
+
+cpris21=false;
+cpris22=false;
+cpris23=false;
+cpris24=false;
+cpris25=false;
+cpris26=false;
+cpris27=false;
+cpris28=false;
+
+_doh=0;
+
+;
+; loop for capturing the prisoners
+;
+#loop
+~0.5
+_doh=_doh+1;
+;hint format ["capture %1 times loop.\ncpris11: %2\ncpris12: %3\ncpris13: %4\ncpris14: %5\ncpris21: %6\ncpris22: %7\ncpris23: %8\ncpris24: %9\ncpris25: %10\ncpris26: %11\ncpris27: %12\ncpris28: %13",_doh,cpris11,cpris12,cpris13,cpris14,cpris21,cpris22,cpris23,cpris24,cpris25,cpris26,cpris27,cpris28];
+
+?(player distance pris1_1 <3 AND !cpris11): goto "pris1_1"
+?(player distance pris1_2 <3 AND !cpris12): goto "pris1_2"
+?(player distance pris1_3 <3 AND !cpris13): goto "pris1_3"
+?(player distance pris1_4 <3 AND !cpris14): goto "pris1_4"
+?(player distance pris2_1 <3 AND !cpris21): goto "pris2_1"
+?(player distance pris2_2 <3 AND !cpris22): goto "pris2_2"
+?(player distance pris2_3 <3 AND !cpris23): goto "pris2_3"
+?(player distance pris2_4 <3 AND !cpris24): goto "pris2_4"
+?(player distance pris2_5 <3 AND !cpris25): goto "pris2_5"
+?(player distance pris2_6 <3 AND !cpris26): goto "pris2_6"
+?(player distance pris2_7 <3 AND !cpris27): goto "pris2_7"
+?(player distance pris2_8 <3 AND !cpris28): goto "pris2_8"
+
+?!(cpris11 AND cpris12 AND cpris13 AND cpris14 AND cpris21 AND cpris22 AND cpris23 AND cpris24 AND cpris25 AND cpris26 AND cpris27 AND cpris28 OR _doh > 600): goto "loop"
+
+player sideradio "Rsupport"
+~15
+
+PAPABEAR sideradio "Rblackhawkok"
+~10
+
+player sideradio "Rhellyeah"
+~10
+
+PAPABEAR sideradio "Rokwilldo"
+
+sendinthehelo=true;
+exit
+
+;
+; individual captures
+;
+#pris1_1
+;hintc "prisoner 1 1 is captured!"
+cpris11=true
+player globalchat "FREEZE YOUR MOTHERFUCKING ASS OR I'LL SHOOT YOU TO DEATH!"
+~1
+pris1_1 setunitpos "UP";
+pris1_1 disableai "move";
+pris1_1 switchmove "FXStandSurUniv";
+goto "loop"
+
+
+#pris1_2
+;hintc "prisoner 1 2 is captured!"
+cpris12=true
+player globalchat "DO YOU WANT TO FUCKING DIE COMMIE?! STOP RIGHT NOW!"
+~1
+pris1_2 setunitpos "UP";
+pris1_2 disableai "move";
+pris1_2 switchmove "FXStandSurUniv";
+goto "loop"
+
+
+#pris1_3
+;hintc "prisoner 1 3 is captured!"
+cpris13=true
+player globalchat "GET YOU BITCHASS HANDS UP OR I'LL PUT THREE 5.56MM NATO'S IN YOUR ASS!"
+~1
+pris1_3 setunitpos "UP";
+pris1_3 disableai "move";
+pris1_3 switchmove "FXStandSurUniv";
+goto "loop"
+
+
+#pris1_4
+;hintc "prisoner 1 4 is captured!"
+cpris14=true
+player globalchat "STOP YOU FUCKING COMMIE BRICK!"
+~1
+pris1_4 setunitpos "UP";
+pris1_4 disableai "move";
+pris1_4 switchmove "FXStandSurUniv";
+goto "loop"
+
+
+#pris2_1
+;hintc "prisoner 2 1 is captured!"
+cpris21=true
+player globalchat "SURRENDER OR DIE. ITS YOUR CHOICE COMMIE!"
+~1
+pris2_1 setunitpos "UP";
+pris2_1 disableai "move";
+pris2_1 switchmove "FXStandSurUniv";
+goto "loop"
+
+#pris2_2
+;hintc "prisoner 2 2 is captured!"
+cpris22=true
+player globalchat "HANDS UP OR I'LL SHOOT YOU!"
+~1
+pris2_2 setunitpos "UP";
+pris2_2 disableai "move";
+pris2_2 switchmove "FXStandSurUniv";
+goto "loop"
+
+#pris2_3
+;hintc "prisoner 2 3 is captured!"
+cpris23=true
+player globalchat "STOP RIGHT THERE OR I'LL EMPTY THIS CLIP ON YOUR FUCKING COMMIE ASS!"
+~1
+pris2_3 setunitpos "UP";
+pris2_3 disableai "move";
+pris2_3 switchmove "FXStandSurUniv";
+goto "loop"
+
+#pris2_4
+;hintc "prisoner 2 4 is captured!"
+cpris24=true
+player globalchat "SURRENDER OR DIE!"
+~1
+pris2_4 setunitpos "UP";
+pris2_4 disableai "move";
+pris2_4 switchmove "FXStandSurUniv";
+goto "loop"
+
+#pris2_5
+;hintc "prisoner 2 5 is captured!"
+cpris25=true
+player globalchat "FUCKING COMMIE, HANDS UP NOW OR I'LL WASTE YOU RIGHT HERE AND NOW!"
+~1
+pris2_5 setunitpos "UP";
+pris2_5 disableai "move";
+pris2_5 switchmove "FXStandSurUniv";
+goto "loop"
+
+#pris2_6
+;hintc "prisoner 2 6 is captured!"
+cpris26=true
+player globalchat "GET THOSE MOTHERFUCKING HANDS OF YOURS UP. NOW!"
+~1
+pris2_6 setunitpos "UP";
+pris2_6 disableai "move";
+pris2_6 switchmove "FXStandSurUniv";
+goto "loop"
+
+#pris2_7
+;hintc "prisoner 2 7 is captured!"
+cpris27=true
+player globalchat "HEY PUNK DO YOU WANT TO FUCKING DIE HERE!? STOP IMMEDIATELY!"
+~1
+pris2_7 setunitpos "UP";
+pris2_7 disableai "move";
+pris2_7 switchmove "FXStandSurUniv";
+goto "loop"
+
+#pris2_8
+;hintc "prisoner 2 8 is captured!"
+cpris28=true
+player globalchat "HEY FUCK FACE. STOP AND PUT YOUR HANDS UP AND I MIGHT NOT SHOOT YOU IN THE HEAD. OKAY IVAN?!?"
+~1
+pris2_8 setunitpos "UP";
+pris2_8 disableai "move";
+pris2_8 switchmove "FXStandSurUniv";
+goto "loop"

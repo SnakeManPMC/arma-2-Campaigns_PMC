@@ -1,0 +1,177 @@
+
+if (!local Server) then { exit; };
+
+savegame;
+~2
+
+eastguys=0;
+MaxUnits=50;
+MaxEast=30;
+_LoopDelay=60;
+
+; how many we need to kill?
+EastKills=20;
+
+; debug crap
+if (pmcdb==1) then { MaxEast=10; MaxUnits=10; EastKills=5; _LoopDelay=10; };
+
+; for the CAS request thing
+ALoop=0;
+
+_StartInfPosits = [EastInfStart1,EastInfStart2,EastInfStart3];
+_StartArmorPosits = [EastStart1,EastStart2];
+
+
+;
+; lets go and do some east units!
+;
+goto "CreateEast";
+
+
+
+
+;
+; big ass looper to wage the war without lag hell
+;
+
+#Loopah
+ALoop=ALoop+1;
+~_LoopDelay
+
+if (ALoop==4) then { goto "RequestCAS"; };
+
+if (pmcdb==1) then { player sidechat format["east: %1, west: %2, all: %3, east kills: %4",count aieast,count aiwest,count aieast+count aiwest,eastguys - count aieast]; };
+
+; if east kills more than 50
+if (eastguys - count aieast > EastKills) then { eastdead1=true; publicvariable "eastdead1"; goto "TheEnd"; };
+
+if ((count aieast + count aiwest) > MaxUnits) then { goto "Loopah"; };
+if ((count aieast) < MaxEast) then { goto "CreateEast"; };
+
+
+
+
+
+
+
+
+#CreateEast
+
+;
+; create Russian soldier squad
+;
+e2=objnull;
+_EASTtempgrp = [];
+
+_ran = random(1);
+"OfficerE" createunit [getpos EastInfStart1, rusinf1, "e2 = this", _ran, "SERGEANT"]
+[e2] join grpnull
+_EASTtempgrp = group e2;
+
+"SoldierEMG" createunit [getpos EastInfStart1, _EASTtempgrp, "", 1, "CORPORAL"]
+_ran = random(1);
+"SoldierEG" createunit [getpos EastInfStart1, _EASTtempgrp, "", _ran, "CORPORAL"]
+_ran = random(1);
+"cwr2_SoldierE" createunit [getpos EastInfStart1, _EASTtempgrp, "", _ran, "CORPORAL"]
+_ran = random(1);
+"SoldierELAW" createunit [getpos EastInfStart1, _EASTtempgrp, "", _ran, "PRIVATE"]
+"SoldierEMG" createunit [getpos EastInfStart1, _EASTtempgrp, "", 1, "PRIVATE"]
+_ran = random(1);
+"cwr2_SoldierE" createunit [getpos EastInfStart1, _EASTtempgrp, "", _ran, "PRIVATE"]
+_ran = random(1);
+"cwr2_SoldierE" createunit [getpos EastInfStart1, _EASTtempgrp, "", _ran, "PRIVATE"]
+_ran = random(1);
+"cwr2_SoldierE" createunit [getpos EastInfStart1, _EASTtempgrp, "", _ran, "PRIVATE"]
+
+{_x addEventHandler ["killed",{handle = _this execVM "killed.sqf"}]} foreach units _EASTtempgrp
+
+_EASTtempgrp setbehaviour "aware";
+_EASTtempgrp setcombatmode "red";
+_EASTtempgrp setspeedmode "full";
+_EASTtempgrp setformation "wedge";
+
+leader _EASTtempgrp move getpos tgt_area;
+
+[_EASTtempgrp,[],[],[],[],1,1] exec "ai.sqs"
+eastguys=eastguys+9;
+
+
+;
+; lets skip if old BMP2 is alive.
+;
+if (alive _bmp2) then { goto "Skipper"; };
+
+;
+; bmp2
+;
+e1=objnull;
+e2=objnull;
+e3=objnull;
+_bmp2grp=objnull;
+_bmp2=objnull;
+
+"SoldierECrew" createunit [getpos EastStart1, rusinf1, "e1 = this", 1, "SERGEANT"];
+[e1] join grpnull;
+_bmp2grp = group e1;
+
+"SoldierECrew" createunit [getpos EastStart1, _bmp2grp, "e2 = this", 1, "CORPORAL"];
+"SoldierECrew" createunit [getpos EastStart1, _bmp2grp, "e3 = this", 1, "PRIVATE"];
+
+{_x addEventHandler ["killed",{handle = _this execVM "killed.sqf"}]} foreach units _bmp2grp
+
+_bmp2 = "BMP2" createvehicle getpos EastStart1;
+_bmp2 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}]
+
+e1 moveincommander _bmp2;
+e2 moveingunner _bmp2;
+e3 moveindriver _bmp2;
+
+_bmp2grp setbehaviour "aware";
+_bmp2grp setcombatmode "red";
+_bmp2grp setspeedmode "limited";
+
+leader _bmp2grp move getpos tgt_area;
+
+; skip point
+#Skipper
+
+publicvariable "eastguys";
+
+if (pmcdb==1) then { player sidechat format["Created 12 EAST guys + BMP2! total of: %1",count aieast]; };
+
+goto "Loopah";
+
+
+;
+; finally we end the script
+;
+#TheEnd
+if (pmcdb==1) then { player sidechat "yes yes yes! war.sqs ended!"; hint "war.sqs ended!"; };
+
+;
+; hq sends air support
+;
+PAPABEAR sideradio "Rhqcas2";
+cas1 setfuel 1;
+cas2 setfuel 2;
+
+~120
+
+;hint "OKAY WE ARE NOW READY TO END IF NO ENEMIES ARE LEFT IN THE 200m AREA!";
+
+readytoend=true;
+
+exit
+
+
+
+;
+; player requests CAS after a short time fighting
+;
+#RequestCAS
+leader assault1 sideradio "Rrequestcas";
+~20 + random 5
+
+PAPABEAR sideradio "Rhqcas1";
+
+goto "Loopah";

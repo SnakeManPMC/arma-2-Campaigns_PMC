@@ -1,0 +1,36 @@
+helo setfuel 0;
+
+;=== 21:49:02
+_camera = "camera" camCreate [4856.64,11774.70,5.64]
+_camera camSetTarget [63668.74,88764.15,-24747.04]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["","BLACK IN",3];
+~3
+
+helo setfuel 1;
+
+~23
+
+_camera camSetTarget helo
+_camera camsetrelpos [5,10,0]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~10
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

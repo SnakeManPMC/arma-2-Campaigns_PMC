@@ -1,0 +1,51 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Good morning Everon";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Morning ambush in the beach";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+
+	class Rbravoinpos
+	{
+		name = "Rbravoinpos";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbravoinpos;
+	};
+
+	class Rwastem
+	{
+		name = "Rwastem";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rwastem;
+	};
+
+	class Rcharlieready
+	{
+		name = "Rcharlieready";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcharlieready;
+	};
+
+	class Rmoving
+	{
+		name = "Rmoving";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmoving;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

@@ -1,0 +1,94 @@
+;
+; black hawk down script
+;
+_a = leader assault1;
+_hq = PAPABEAR;
+_h = helo;
+_p = ppilot1;
+_g = pgunner1;
+
+;
+; try to make the fly idiots stay with the helo
+;
+[] exec "moveflyboys.sqs";
+
+; alpha calls black hawk down after 10 seconds of hit
+;STRM_Rbhd,"ALPHA TO PAPA BEAR. BLACK HAWK DOWN. I REPEAT WE HAVE A BLACK HAWK DOWN. OVER.",alpha
+~5;
+_a sideRadio "Rbhd";
+~7;
+
+;STRM_Rgotocsite,"PAPA BEAR TO ALPHA BLACK. COPY. GET INTO THE CRASH SITE AS FAST AS YOU CAN. 
+;REPORT BACK WHEN YOU ARE THERE. OVER.",hq
+_hq sideradio "Rgotocsite";
+"2" objstatus "ACTIVE";
+~7;
+
+;STRM_Rcsitecopy,"ALPHA COPIES. PROCEEDING INTO THE CRASH SITE. STAND BY. OVER.",alpha
+_a sideradio "Rcsitecopy";
+~3;
+
+#CsiteLoop
+~1;
+hint format["Black Hawk emergency beacon distance: %1",(_a distance _h)];
+?(_a distance _h > 30): goto "CsiteLoop";
+
+;STRM_Ratcsite,"ALPHA TO PAPA BEAR. WE ARE AT THE BLACK HAWK CRASH SITE. OVER.",alpha
+~2;
+_a sideradio "Ratcsite";
+"2" objstatus "DONE";
+~7;
+
+;STRM_Rfindcrew,"PAPA BEAR TO ALPHA. YOU MUST LOCATE THE HELO CREW. OVER.",hq
+_hq sideradio "Rfindcrew";
+"3" objstatus "ACTIVE";
+~5;
+
+
+;
+; variables for pilot and gunner distances and founds
+;
+_pilf = false;
+_gunf = false;
+
+#FindLoop
+if (pmcdb==1) then { player sidechat format ["you are to look the pilot and gunner... distance _pilot: %1, _gunner: %2",(_a distance _p),(_a distance _g)]; };
+~3;
+if (_a knowsabout _p > .5) then { _pilf=true; };
+if (_a knowsabout _g > .5) then { _gunf=true; };
+;?(_a distance _p < 10): _pilf=true;
+;?(_a distance _g < 10): _gunf=true;
+?!(_pilf AND _gunf): goto "FindLoop";
+
+;STRM_Rfoundthem,"ALPHA TO PAPA BEAR. WE HAVE LOCATED THE CREW. BOTH OF THEM ARE ALIVE 
+;BUT WOUNDED. OVER.",alpha
+_a sideradio "Rfoundthem";
+~10;
+
+;STRM_Rsecurecsite,"GOOD WORK ALPHA. GET THEM TO YOUR SQUAD AND SECURE THE CRASH SITE 
+;UNTIL WE GET SAR PACKAGE TO YOU. I'LL BE IN TOUCH. PAPA BEAR OUT.",hq
+_hq sideradio "Rsecurecsite";
+"3" objstatus "DONE"; "4" objstatus "ACTIVE";
+~5;
+joinage=true;
+~3;
+?(alive _p): _p setbehaviour "aware"; _p setcombatmode "yellow"; [_p] join assault1;
+?(alive _g): _g setbehaviour "aware"; _g setcombatmode "yellow"; [_g] join assault1;
+~3;
+
+;STRM_Rsecuring,"ALPHA TO PAPA BEAR. ROGER THAT WE WILL SECURE THE CRASH SITE. ALPHA OUT.",alpha
+_a sideradio "Rsecuring";
+~3;
+
+;
+; goahead for russians
+;
+FoundThem=true;
+if (pmcdb==1) then { hint "yeah baby, now the russians are coming! war.sqs executed."; };
+
+;
+; exec the create scripts
+;
+[] exec "war.sqs";
+
+exit;

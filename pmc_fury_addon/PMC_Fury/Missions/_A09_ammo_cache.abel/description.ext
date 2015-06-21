@@ -1,0 +1,37 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Ammo Cache";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Destroy the Ammo!";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rdestroyed
+	{
+		name = "Rdestroyed";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rdestroyed;
+	};
+
+	class Rextract
+	{
+		name = "Rextract";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rextract;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

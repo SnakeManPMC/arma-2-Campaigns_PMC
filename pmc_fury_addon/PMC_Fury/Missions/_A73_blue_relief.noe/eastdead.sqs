@@ -1,0 +1,17 @@
+;
+; east dead and joining the civis
+;
+leader assault1 sideRadio "Reastdead";
+~15
+
+PAPABEAR sideRadio "Rmcomplete";
+~15
+
+leader assault1 sideradio "Rcivis";
+~5
+
+{[_x] join assault1} foreach units civs1;
+
+1 setRadioMsg "Call - Extract";
+
+exit

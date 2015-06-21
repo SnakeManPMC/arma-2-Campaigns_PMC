@@ -1,0 +1,44 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Proud Forge";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Road capturing";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rhillgone
+	{
+		name = "Rhillgone";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhillgone;
+	};
+
+	class Rreinf
+	{
+		name = "Rreinf";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rreinf;
+	};
+
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+
+	class Rwaypoint
+	{
+		name = "Rwaypoint";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rwaypoint;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

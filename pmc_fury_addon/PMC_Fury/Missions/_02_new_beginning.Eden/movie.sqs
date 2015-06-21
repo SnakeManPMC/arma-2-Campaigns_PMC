@@ -1,0 +1,41 @@
+;=== over the hill shot
+_camera = "camera" camCreate [1131.73,11505.97,14.70]
+_camera camSetTarget [-96432.15,33444.29,100.80]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["","BLACK IN",3];
+~3
+
+~16
+
+;=== sunset shot
+_camera camSetTarget [94458.09,45876.43,-9867.55]
+_camera camSetPos [1037.37,11620.42,31.19]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~10
+
+_camera camSetTarget chino
+_camera camSetRelPos [-200,0,0]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+~8
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

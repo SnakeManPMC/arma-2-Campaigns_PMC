@@ -1,0 +1,17 @@
+;
+; MOVE EAST GUYS
+;
+_listunits = eastarray;
+
+_A = 0;
+_B = count _listunits
+
+#loopEAST
+leader (_listunits select _A) move getpos tgt_area;
+leader (_listunits select _A) setbehaviour "aware";
+leader (_listunits select _A) setcombatmode "yellow";
+;_listunits select _A allowfleeing 0;
+_A=_A+1;
+?(_A < _B): goto "loopEAST";
+
+exit

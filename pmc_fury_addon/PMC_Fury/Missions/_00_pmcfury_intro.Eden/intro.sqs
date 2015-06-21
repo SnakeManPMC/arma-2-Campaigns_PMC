@@ -1,0 +1,114 @@
+; camera basic initialization
+; camera looks into water where seals are inserting from.
+_camera = "camera" camCreate [5175.88,12428.59,7.94]
+_camera camSetTarget [-31198.21,-31126.84,-82331.91]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["","BLACK OUT",.1]
+playMusic ["track7", 0] 
+~1
+
+titleText ["Operation Flashpoint Campaign","PLAIN",4]
+~11.5
+
+titlecut ["","BLACK IN",1]
+titleText ["PMC Fury","PLAIN",1]
+~12
+
+
+; look up to the buildings
+_camera camSetTarget [-54687.95,-67020.03,10217.98]
+_camera camSetPos [5175.88,12428.59,8.07]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+
+titleText ["Everon. Aug 1st, 0255hrs.  Russian occupied.","PLAIN",3]
+~7
+
+; swing up and the overhead look
+_camera camSetTarget [-23922.25,-82067.72,-15180.85]
+_camera camSetPos [5116.62,12404.98,31.45]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+titleText ["NATO's war with the Russians start with quiet Recon","PLAIN",3]
+~5
+
+
+; more overhead
+_camera camSetTarget [-34026.37,-77273.03,-21114.63]
+_camera camSetPos [5043.99,12308.46,52.54]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+titleText ["NATO objective: To capture Everon from Russians","PLAIN",3]
+~3
+
+; scroll over the terrain
+_camera camSetTarget [-34748.19,-78907.56,-9563.97]
+_camera camSetPos [5149.94,12284.91,19.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 6:34:54
+_camera camSetTarget [-91083.28,37722.98,-9563.69]
+_camera camSetPos [5149.94,12284.91,19.38]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+titleText ["How will our young men and women perform","PLAIN",3]
+
+;=== 6:34:56
+_camera camSetTarget [-54211.61,92185.70,-9563.52]
+_camera camSetPos [5149.94,12284.91,19.38]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+;=== 6:35:01
+_camera camSetTarget [2486.77,110289.02,-19668.94]
+_camera camSetPos [5149.94,12284.91,19.38]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+titleText ["In the upcoming war","PLAIN",3]
+
+; last before ocean
+_camera camSetTarget [16505.83,106674.69,-31181.59]
+_camera camSetPos [5148.24,12349.62,9.08]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+; da ocean
+_camera camSetTarget [20693.85,99154.91,-47270.95]
+_camera camSetPos [5158.17,12417.74,8.05]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+
+titleText ["You'll find out...","PLAIN",3]
+~8
+
+2 fademusic 0
+~2
+
+titlecut ["","BLACK OUT",1];
+~1
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

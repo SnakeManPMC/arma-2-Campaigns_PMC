@@ -1,0 +1,34 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="First Command";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Own troops to command";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rstart
+	{
+		name = "Rstart";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rstart;
+	};
+	class Rphilippe
+	{
+		name = "Rphilippe";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rphilippe;
+	};
+	class Rbase
+	{
+		name = "Rbase";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbase;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

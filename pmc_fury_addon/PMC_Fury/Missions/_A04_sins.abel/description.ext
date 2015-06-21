@@ -1,0 +1,44 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Sins";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Saint Louis attack";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Reastdead1
+	{
+		name = "Reastdead1";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead1;
+	};
+
+	class Reastdead2
+	{
+		name = "Reastdead2";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead2;
+	};
+
+	class Rgogogo
+	{
+		name = "Rgogogo";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rgogogo;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

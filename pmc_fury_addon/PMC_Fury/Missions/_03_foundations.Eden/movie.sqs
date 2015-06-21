@@ -1,0 +1,46 @@
+;=== looking at forest
+_camera = "camera" camCreate [4937.59,12136.23,24.84]
+_camera camSetTarget [67036.70,-64967.65,-14052.11]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== view left to houses
+_camera camSetTarget [65775.55,90239.07,-14051.74]
+_camera camSetPos [4937.59,12136.23,24.84]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+[] exec "moveship.sqs";
+
+
+;=== view beach the ship
+_camera camSetTarget [-32513.72,103780.70,-14052.13]
+_camera camSetPos [4937.59,12136.23,24.84]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~10
+
+;=== apache shot
+_camera camSetTarget [13129.29,109436.59,-21646.10]
+_camera camSetPos [4759.63,12180.21,44.33]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+~14
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

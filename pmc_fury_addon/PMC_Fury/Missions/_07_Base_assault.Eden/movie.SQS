@@ -1,0 +1,106 @@
+;=== 21:32:00
+_camera = "camera" camCreate [4928.11,12002.15,11.40]
+_camera camSetTarget [-72918.63,-48340.73,-17248.64]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+titlecut ["","BLACK IN",3];
+~3
+
+~7
+
+;=== truck
+_camera camSetTarget [-4651.72,-86060.09,-17262.51]
+_camera camSetPos [4833.81,11976.38,4.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== turn
+_camera camSetTarget [93253.16,-31418.81,-17262.56]
+_camera camSetPos [4833.81,11976.38,4.53]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+~5
+
+;=== 21:32:40
+_camera camSetTarget [7748.71,-86475.88,-17262.80]
+_camera camSetPos [4841.99,11968.81,8.53]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== 21:32:52
+_camera camSetTarget [7748.71,-86475.88,-17262.33]
+_camera camSetPos [4847.26,11791.28,8.53]
+_camera camSetFOV 0.700
+_camera camCommit 15
+@camCommitted _camera
+
+~5
+
+
+;=== near tree
+_camera camSetTarget [-68292.86,-44726.11,-40633.65]
+_camera camSetPos [4537.40,10437.72,10.28]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+;=== turn
+_camera camSetTarget [-28065.38,-74910.70,-40633.89]
+_camera camSetPos [4537.40,10437.72,10.28]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+~5
+
+;=== behind the guys
+_camera camSetTarget [30328.95,106860.50,-5455.50]
+_camera camSetPos [4534.07,10399.46,2.47]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~7
+
+;=== 21:39:31
+_camera camSetTarget [65933.70,89189.23,-5448.35]
+_camera camSetPos [4565.70,10425.75,44.18]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+;=== ready to zoom
+_camera camSetTarget [102035.73,32089.31,-5448.71]
+_camera camSetPos [4565.70,10425.75,44.18]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~5
+;=== zoom
+_camera camSetTarget [102888.80,28392.04,-3072.73]
+_camera camSetPos [4565.70,10425.75,44.18]
+_camera camSetFOV 0.110
+_camera camCommit 15
+@camCommitted _camera
+
+~3
+
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

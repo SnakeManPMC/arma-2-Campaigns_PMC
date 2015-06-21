@@ -1,0 +1,55 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+; start
+_camera camSetTarget [35977.25,-92882.95,114.69]
+_camera camSetPos [8548.59,3281.84,1.15]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+playmusic ["track7",0]
+
+titlecut ["","BLACK IN",5];
+~10
+
+; look left
+_camera camSetTarget [107539.98,-10885.21,114.75]
+_camera camSetPos [8548.59,3281.84,1.15]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+; more left
+_camera camSetTarget [5683.49,103240.80,114.46]
+_camera camSetPos [8548.59,3281.84,1.15]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+
+; zoom soldier
+_camera camSetTarget [2258.99,102968.62,4908.20]
+_camera camSetPos [8548.59,3281.84,1.15]
+_camera camSetFOV 0.031
+_camera camCommit 10
+@camCommitted _camera
+~3
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

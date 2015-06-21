@@ -1,0 +1,44 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Sheeps and Wolfs";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Major battle against Russian AA site";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+
+	class Raadead
+	{
+		name = "Raadead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Raadead;
+	};
+
+	class Rbravomove
+	{
+		name = "Rbravomove";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbravomove;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

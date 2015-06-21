@@ -1,0 +1,84 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+;=== 23:34:35
+_camera camSetTarget [108054.13,-13267.80,103.04]
+_camera camSetPos [9835.48,5527.29,1.50]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["rtrack8",0]
+
+titlecut ["","BLACK IN",2];
+~5
+
+;=== 23:34:55
+_camera camSetTarget [33015.71,-84822.35,-35932.96]
+_camera camSetPos [9845.91,5534.99,3.70]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 23:35:01
+_camera camSetTarget [-66016.87,-48774.86,-35937.04]
+_camera camSetPos [9831.00,5523.76,3.67]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 23:35:08
+_camera camSetTarget [-11744.34,99156.74,-27543.95]
+_camera camSetPos [9825.53,5506.98,4.09]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 23:35:19
+_camera camSetTarget [98991.75,28134.58,-39070.08]
+_camera camSetPos [9811.12,5512.85,8.47]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;sc1 fires
+_camera camSetTarget [34309.56,-87448.57,27568.20]
+_camera camSetPos [9841.33,5540.22,0.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+sc1 action ["SCUD Launch"];
+~5
+sc1 action ["SCUD Start"];
+~5
+
+;sc2 fires
+_camera camSetTarget [-83270.68,-18485.04,27570.84]
+_camera camSetPos [9837.68,5520.92,0.74]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+sc2 action ["SCUD Launch"];
+~5
+sc2 action ["SCUD Start"];
+~5
+
+titlecut ["","BLACK OUT",3];
+4 fademusic 0;
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

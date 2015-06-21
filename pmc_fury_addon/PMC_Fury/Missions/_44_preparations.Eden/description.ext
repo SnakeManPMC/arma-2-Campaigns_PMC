@@ -1,0 +1,37 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Preparations";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Clearing out the area";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rclear
+	{
+		name = "Rclear";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rclear;
+	};
+
+	class Renterwoods
+	{
+		name = "Renterwoods";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Renterwoods;
+	};
+
+	class Rwoodsclear
+	{
+		name = "Rwoodsclear";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rwoodsclear;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

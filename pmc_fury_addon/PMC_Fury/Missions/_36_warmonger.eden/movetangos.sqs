@@ -1,0 +1,21 @@
+#starter
+~60
+
+_listunits = eastarray;
+
+_A = 0;
+_B = count _listunits
+
+#loop
+leader (_listunits select _A) move getpos attackpos;
+leader (_listunits select _A) setbehaviour "aware";
+leader (_listunits select _A) setcombatmode "yellow";
+_listunits select _A allowfleeing 0;
+_A=_A+1;
+?(_A < _B): goto "loop";
+
+;hint format["movetangos ended\n_listunits: %1",_B];
+
+goto "starter"
+
+exit

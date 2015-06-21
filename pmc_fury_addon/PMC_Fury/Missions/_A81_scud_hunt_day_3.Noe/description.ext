@@ -1,0 +1,48 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro=$STRD_Rmissname;
+
+// Title that appears on screen at beginning of mission
+onLoadMission=$STRL_Rload;
+
+class CfgRadio
+{
+	sounds[] = {};
+
+	class Rcallext
+	{
+		name = "Rcallext";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcallext;
+	};
+
+	class Rextract
+	{
+		name = "Rextract";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rextract;
+	};
+
+	class Rscuds
+	{
+		name = "Rscuds";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rscuds;
+	};
+
+	class Rhqscuds
+	{
+		name = "Rhqscuds";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhqscuds;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};

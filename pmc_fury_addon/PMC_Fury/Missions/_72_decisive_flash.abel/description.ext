@@ -1,0 +1,64 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Decisive Flash";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Attack coastline and Intersection";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rmoving
+	{
+		name = "Rmoving";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmoving;
+	};
+
+	class Rcleared
+	{
+		name = "Rcleared";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcleared;
+	};
+
+	class Rintclear
+	{
+		name = "Rintclear";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rintclear;
+	};
+
+	class Rwaypoint
+	{
+		name = "Rwaypoint";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rwaypoint;
+	};
+
+	class Rcalltanks
+	{
+		name = "Rcalltanks";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcalltanks;
+	};
+
+	class Rhqreply1
+	{
+		name = "Rhqreply1";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhqreply1;
+	};
+
+	class Rhqreply2
+	{
+		name = "Rhqreply2";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhqreply2;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

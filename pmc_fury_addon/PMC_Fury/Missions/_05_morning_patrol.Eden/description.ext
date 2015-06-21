@@ -1,0 +1,38 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Morning Patrol";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Patrol the Airbase surroundings";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rcontact
+	{
+		name = "Rcontact";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcontact;
+	};
+	class Reastdead1
+	{
+		name = "Reastdead1";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead1;
+	};
+	class Reastdead2
+	{
+		name = "Reastdead2";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead2;
+	};
+	class Rcomplete
+	{
+		name = "Rcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcomplete;
+	};
+};

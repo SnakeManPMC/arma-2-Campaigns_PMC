@@ -1,0 +1,44 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Mountain Warrior";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="High up on those mountains";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+
+	class Rinthehill
+	{
+		name = "Rinthehill";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rinthehill;
+	};
+
+	class Rsendingbackup
+	{
+		name = "Rsendingbackup";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rsendingbackup;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

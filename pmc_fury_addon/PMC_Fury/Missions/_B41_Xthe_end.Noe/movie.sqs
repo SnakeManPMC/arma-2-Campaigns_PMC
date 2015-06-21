@@ -1,0 +1,172 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+;=== 5:04:10
+_camera camSetTarget [-58778.34,84403.11,-10579.22]
+_camera camSetPos [1655.29,5439.62,4.45]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["7thlifeless",0]
+
+titlecut ["","BLACK IN",2];
+~5
+
+;=== 4:50:44
+_camera camSetTarget [-9334.40,104688.97,-5150.73]
+_camera camSetPos [1639.47,5427.85,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 4:51:00
+_camera camSetTarget [-94221.61,-18096.23,-15959.27]
+_camera camSetPos [1648.88,5426.10,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~10
+
+;=== 4:51:15
+_camera camSetTarget [-49172.82,-79205.28,-15960.56]
+_camera camSetPos [1660.37,5413.86,2.00]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~10
+
+;=== 4:51:30
+_camera camSetTarget [-59169.26,84528.09,-6145.73]
+_camera camSetPos [1660.83,5397.85,2.33]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~10
+
+;=== 5:06:53
+_camera camSetTarget [3165.62,105267.11,-3701.47]
+_camera camSetPos [1648.06,5348.19,3.27]
+_camera camSetFOV 0.435
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 4:51:46
+_camera camSetTarget [66269.07,-70796.93,3654.36]
+_camera camSetPos [1639.69,5425.64,1.28]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 4:51:46
+_camera camSetTarget leader officers1
+_camera camSetRelPos [0,2,1.5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 4:51:46
+_camera camSetTarget leader assault1
+_camera camSetRelPos [0,10,3]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+;=== 4:51:46
+_camera camSetTarget leader assault1
+_camera camSetRelPos [0,2,1.5]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~2
+
+;=== 5:11:43
+_camera camSetTarget [-86631.25,-41084.80,6462.14]
+_camera camSetPos [1662.82,5419.38,1.88]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~1
+
+; everybody stares each other
+{_x dowatch leader assault1} foreach units officers1;
+~.5
+{_x dowatch leader officers1} foreach units assault1;
+~2
+
+leader assault1 playmove "effectstandsalute";
+col1 playmove "effectstandsalute";
+~.2
+maj1 playmove "effectstandsalute";
+~.3
+cap1 playmove "effectstandsalute";
+~4
+
+leader assault1 playmove "effectstand";
+col1 playmove "effectstand";
+~.2
+maj1 playmove "effectstand";
+~.3
+cap1 playmove "effectstand";
+~10
+
+titlecut ["","BLACK OUT",5];
+~7
+
+titletext["THE END","plain",2];
+~10
+
+;---
+titleText ["OPERATION FLASHPOINT CAMPAIGN\nPMC FURY","PLAIN",2]
+~10
+
+;titleText ["T H E  E N D","PLAIN",3]
+;~10
+
+titleText ["Credits","PLAIN",1]
+~10
+
+titleText ["Mission design:\nSnake Man","PLAIN",2]
+~10
+
+titleText ["Scripting:\nSnake Man\nand\nFishion (artillery)\nBackoff & DeaDMeaT Productions (create unit)\nSkumball (airstrike)\nImproved AI script v1.1 By Bremmer\nThanks guys","PLAIN",2]
+~10
+
+titleText ["Cutscenes (yuck):\nSnake Man","PLAIN",2]
+~10
+
+titleText ["Beta testing:\nSnake Man\nRobot\nMozart\nMadFred\nand great OFP forum readers","PLAIN",2]
+~10
+
+titleText ["Thank you for playing Operation Flashpoint\nPMC Fury Campaign!","PLAIN",2]
+~15
+
+titleText ["Greetings to BIS and whole OFP community","PLAIN",2]
+~10
+
+titleText ["http://flashpoint.nekromantix.com","PLAIN",2]
+~10
+
+titleText ["","PLAIN",4]
+~1
+
+4 fademusic 0;
+~5
+
+; destroy camera - if we use mission cutscene
+_camera cameraEffect ["terminate","back"]
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

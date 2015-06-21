@@ -1,0 +1,31 @@
+;
+; try to make the fly idiots stay with the helo
+;
+
+ppilot1 setdammage .7;
+pgunner1 setdammage .7;
+
+{_x setunitpos "DOWN"} foreach units flyboys;
+flyboys setbehaviour "aware";
+flyboys setcombatmode "yellow";
+flyboys setspeedmode "limited";
+
+;
+; set their idiot waypoints to the downed helo
+;
+[flyboys, 0] setWPPos getpos helo;
+[flyboys, 1] setWPPos getpos helo;
+[flyboys, 2] setWPPos getpos helo;
+[flyboys, 3] setWPPos getpos helo;
+
+; lock the suckas up :)
+flyboys lockWP true;
+
+; loop
+#KeepUsAtHelo
+~10;
+?(joinage || (!alive pplilot1 && !alive pgunner1)): exit;
+?(leader flyboys distance helo > 20): leader flyboys move getpos helo;
+goto "KeepUsAtHelo";
+
+exit;

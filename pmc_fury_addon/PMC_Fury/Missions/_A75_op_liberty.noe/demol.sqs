@@ -1,0 +1,44 @@
+
+;
+; move demolition seal into the downed blackhawk
+;
+seal1 setbehaviour "aware";
+seal1 setcombatmode "yellow";
+seal1 move getpos helo;
+~3;
+
+if (!alive seal1) then { exit; };
+@unitready seal1;
+
+;
+; place satchel charge
+;
+seal1 fire ["pipebombmuzzle", "pipebombmuzzle", "pipebomb"];
+~2;
+
+seal1 fire ["pipebombmuzzle", "pipebombmuzzle", "pipebomb"];
+~2;
+
+seal1 fire ["pipebombmuzzle", "pipebombmuzzle", "pipebomb"];
+~2;
+
+;STRM_Rcharges,"THIS IS CHARLIE BLACK SEVEN. CHARGES ARE SET. BLACK HAWK IS 
+;RIGGED TO BLOW. OVER.",charlie7
+seal1 sideradio "Rcharges";
+
+;
+; join the seal into SAR2 group
+;
+[seal1] join sar2;
+
+;
+; until seal1 distance to helo is over 250 meters
+;
+@(seal1 distance helo > 290);
+
+;
+; detonate satchel charges
+;
+seal1 action ["touchoff", seal1];
+
+exit;

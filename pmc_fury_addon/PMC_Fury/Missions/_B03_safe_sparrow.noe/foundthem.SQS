@@ -1,0 +1,27 @@
+;
+; alpha has found the crew
+;
+?(alive ppilot OR alive pgunner): goto "Alive";
+
+;
+; they are dead
+;
+leader assault1 sideRadio "Rfoundthem2";
+
+goto "DoneFindingThem";
+
+
+;
+; they are alive, or one of them at least
+;
+#Alive
+leader assault1 sideRadio "Rfoundthem1";
+
+?(alive ppilot): [ppilot] join assault1;
+?(alive pgunner): [pgunner] join assault1;
+
+#DoneFindingThem
+1 setRadioMsg "Call - Extract";
+"1" objstatus "DONE";
+
+exit

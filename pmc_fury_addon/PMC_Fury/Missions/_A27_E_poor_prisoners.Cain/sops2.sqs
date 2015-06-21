@@ -1,0 +1,65 @@
+;
+; get people out
+;
+helo2 land "land";
+
+#landing
+~.5
+
+_z = getpos vehicle helo2 select 2;
+
+;
+; loop until helo height is 2 meters.
+;
+?(_z > 2): goto "landing"
+
+helo2 flyinheight 0;
+
+;
+; wait until whole squad is out
+;
+_A = 0;
+ejc="EJECT";
+
+{unassignvehicle _x} foreach units sops2;
+
+#WAITING
+_listunits = units sops2;
+_B = count _listunits
+~.2
+_listunits select _A action [ejc,helo2];
+_A=_A+1
+?(_B > _A): goto "WAITING"
+
+sops2 setbehaviour "AWARE";
+sops2 setcombatmode "YELLOW";
+sops2 setspeedmode "FULL";
+
+leader sops2 move getpos camp;
+
+#RunLoop2
+~1
+?(leader sops2 distance camp > 3): goto "RunLoop2";
+
+~5
+
+{_x assignascargo helo2} foreach units sops2;
+{[_x] ordergetin true} foreach units sops2;
+
+
+;
+; wait until whole squad is on board.
+;
+_A = 0;
+
+#WAITING2
+_listunits = units sops2;
+_B = count _listunits
+~.2
+?(_listunits select _A in helo2): _A=_A+1
+?(_B > _A): goto "WAITING2"
+
+helo2 flyinheight 50;
+helo2 sideradio "Rh2dustoff";
+
+exit

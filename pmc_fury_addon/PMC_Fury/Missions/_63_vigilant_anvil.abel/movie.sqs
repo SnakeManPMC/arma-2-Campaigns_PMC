@@ -1,0 +1,49 @@
+; camera basic initialization
+_camera = "camera" camCreate [5551.47,1562.16,5.36]
+_camera camSetTarget [-56328.92,79878.30,6120.85]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+playmusic ["track1",0]
+
+
+titlecut ["","BLACK IN",5];
+~10
+
+; lift up
+_camera camSetTarget [-70355.56,66608.00,2626.08]
+_camera camSetPos [5567.54,1577.94,23.66]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+
+; next to first ship
+_camera camSetTarget [-23265.73,97281.39,-3908.07]
+_camera camSetPos [5501.29,1589.18,23.94]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+;=== 11:39:04
+_camera camSetTarget [-23265.73,97281.39,-3908.21]
+_camera camSetPos [5439.72,1759.04,23.80]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~1
+
+4 fademusic 0;
+~5
+
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

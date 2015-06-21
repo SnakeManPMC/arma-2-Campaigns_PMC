@@ -1,0 +1,81 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+; helo
+_camera camSetTarget helo
+_camera camSetRelPos [30,40,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track16",0]
+
+titlecut ["","BLACK IN",5];
+~10
+
+; start ammobox
+_camera camSetTarget [-10417.45,-94987.70,2041.12]
+_camera camSetPos [9566.98,2978.27,0.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+
+; helo
+_camera camSetTarget helo
+_camera camSetRelPos [-30,0,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; behind helo
+_camera camSetTarget [-48978.45,83314.91,-9985.41]
+_camera camSetPos [9587.51,2905.64,5.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; start ammobox
+_camera camSetTarget [-10417.45,-94987.70,2041.12]
+_camera camSetPos [9566.98,2978.27,0.56]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; helo
+_camera camSetTarget helo
+_camera camSetRelPos [-30,0,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; behind helo
+_camera camSetTarget [-48978.45,83314.91,-9985.41]
+_camera camSetPos [9587.51,2905.64,5.22]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

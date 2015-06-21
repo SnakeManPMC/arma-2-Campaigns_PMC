@@ -1,0 +1,52 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Positions";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Repel enemy attack";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rartycall
+	{
+		name = "Rartycall";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rartycall;
+	};
+	class Rartycoming
+	{
+		name = "Rartycoming";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rartycoming;
+	};
+	class Rartyconfirm
+	{
+		name = "Rartyconfirm";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rartyconfirm;
+	};
+	class Rartyonway
+	{
+		name = "Rartyonway";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rartyonway;
+	};
+	class Rdefeated
+	{
+		name = "Rdefeated";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rdefeated;
+	};
+	class Rcomplete
+	{
+		name = "Rcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rcomplete;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

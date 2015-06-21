@@ -1,0 +1,37 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Dead Stop";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Ambush Russian counter attack";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+
+	class Ralldead
+	{
+		name = "Ralldead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Ralldead;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

@@ -1,0 +1,37 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Dark Jewel";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Repel the Russians!";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rgetready
+	{
+		name = "Rgetready";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rgetready;
+	};
+
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

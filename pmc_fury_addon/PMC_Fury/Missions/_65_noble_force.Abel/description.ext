@@ -1,0 +1,44 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Noble Force";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Attacking enemy AA site";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Raasiteclear
+	{
+		name = "Raasiteclear";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Raasiteclear;
+	};
+
+	class Rreinfdead
+	{
+		name = "Rreinfdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rreinfdead;
+	};
+
+	class Rhqaareply
+	{
+		name = "Rhqaareply";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhqaareply;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

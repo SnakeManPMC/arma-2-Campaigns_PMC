@@ -1,0 +1,62 @@
+;
+; meet your new squad
+;
+
+{_x dowatch aP} foreach units newbies;
+
+sol2 sidechat "Good morning sir. We have been notified of your arrival. sir.";
+~15
+
+aP sidechat "Ok at ease men.";
+~5
+
+aP sidechat "Hows everybody doing here?"
+~10
+
+sol2 sidechat "Were fine sir. ready to go into battle! sir.";
+~15
+
+aP sidechat "Just take it slow soldier. You will get your chance, believe me, you will get your chance...";
+~10
+
+sol2 sidechat "Great to hear sir. Do you want us to shoot some? sir.";
+~20
+
+aP sidechat "Negative. Lets save the ammo for the commies, there are plenty of them waiting in Kolgujev.";
+~10
+
+sol6 sidechat "Holy smokes sir, are we going to KOLGUJEV? sir.";
+~15
+
+aP sidechat "Thats right son... you're going to War.";
+~20
+
+sol2 sidechat "We are ready to go sir. Just tell us what to do. sir.";
+~5
+
+hint "Use radio to proceed when you are ready.";
+
+1 setradiomsg "Ready to proceed..."
+@Meet_Is_Done;
+
+aP sidechat "Ok you...";
+~5
+
+sol4 sidechat "me, sir?";
+~10
+
+aP sidechat "Yes you, we must get LAW launcher for you. otherwise you newbies look OK to me.";
+~10
+
+sol4 sidechat "Sir yes sir.";
+~15
+
+aP sidechat "Ok, gear up and lets go. there is Black Hawk waiting for us.";
+~10
+
+
+{[_x] join assault1} foreach units newbies;
+
+"1" objstatus "DONE";
+
+exit

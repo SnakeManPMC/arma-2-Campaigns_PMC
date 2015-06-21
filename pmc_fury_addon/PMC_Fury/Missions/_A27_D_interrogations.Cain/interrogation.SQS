@@ -1,0 +1,105 @@
+offi setunitpos "UP";
+
+upp="UP";
+
+{_x setunitpos upp} foreach units guards1;
+
+leader guards1 globalchat "Sir here is the prisoners.";
+~5
+[dude] join grpnull;
+~5
+
+offi globalchat "So we meet again. Hows the stay in our lovely facility for you amerikan boys?";
+~10
+
+dude globalchat "We were just fine where you took us prisoners, how about sending us back!";
+~7
+
+offi globalchat "no no, that would not suit our plans.";
+~5
+
+aP globalchat "And what plans are those excatly?";
+~10
+
+offi globalchat "Well to extract some information from you, of course.";
+~7
+
+offi globalchat "Have you considered your position, would you like to tell me NATO plans in Kolgujev.";
+~5
+
+aP globalchat "No.";
+~15
+
+offi globalchat "I see...";
+~10
+
+offi globalchat "You, come here.";
+
+offi domove getpos KillSite;
+
+dude domove getpos KillSite;
+
+@dude distance KillSite <2;
+
+offi domove getpos WatchSite;
+
+offi dowatch aP;
+
+~5
+
+offi globalchat "Soldier. Take your aim to the amerikan evil!";
+~2
+
+Killer domove getpos Executioner;
+
+@unitready Killer;
+
+Killer dowatch dude;
+~10
+
+offi globalchat "Now... you will tell me the NATO plans, yes?";
+~7
+
+aP globalchat "Hey, hey! what are you up to???"
+~10
+
+offi globalchat "YOU WILL TELL US THE NATO PLANS IMMEDIATELY OR HE WILL DIE!";
+~20
+
+offi globalchat "Private! If this amerikan pig wont speak in 10 secons. kill the other!";
+~5
+
+aP globalchat "No wait you cannot do this! STOP!";
+~10
+
+offi globalchat "You wish to tell me the plans, yes?";
+~5
+
+aP globalchat "No."
+~10
+
+offi globalchat "As you wish... private!";
+~3
+
+Killer dofire dude;
+Killer dofire dude;
+Killer dofire dude;
+Killer dofire dude;
+Killer dofire dude;
+Killer dofire dude;
+
+~20
+
+offi globalchat "Your time will come, later...";
+~5
+
+offi globalchat "Take him away!";
+offi domove getpos leader guards1;
+~7
+
+leader guards1 globalchat "Ok amerikan pig. lets go, follow me!";
+
+Guarding=true;
+BackToCamp=true;
+
+exit

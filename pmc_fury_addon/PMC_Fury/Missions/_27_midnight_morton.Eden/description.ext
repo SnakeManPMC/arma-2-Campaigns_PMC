@@ -1,0 +1,34 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Midning Morton";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Night time raid";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rgreatjob
+	{
+		name = "Rgreatjob";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rgreatjob;
+	};
+	class Rlz
+	{
+		name = "Rlz";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rlz;
+	};
+	class Rbastards
+	{
+		name = "Rbastards";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbastards;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

@@ -1,0 +1,100 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+;=== 13:38:55
+_camera camSetTarget [7908.08,105672.98,18.73]
+_camera camSetPos [7906.38,5666.31,2.05]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track1",0]
+
+titlecut ["","BLACK IN",2];
+~5
+
+;=== 13:38:59
+_camera camSetTarget [-62704.16,76476.98,19.11]
+_camera camSetPos [7906.38,5666.31,2.05]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 13:39:02
+_camera camSetTarget [-92093.23,5947.64,18.64]
+_camera camSetPos [7906.38,5666.31,2.05]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 13:39:06
+_camera camSetTarget [-68818.67,-58468.45,19.11]
+_camera camSetPos [7906.38,5666.31,2.05]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 13:39:12
+_camera camSetTarget [-67677.41,-57514.48,-17161.76]
+_camera camSetPos [7908.88,5680.85,7.43]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 13:39:21
+_camera camSetTarget [-82822.16,-36390.70,1580.45]
+_camera camSetPos [7901.02,5643.63,8.25]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 13:39:26
+_camera camSetTarget [-80223.29,-40877.51,-8604.83]
+_camera camSetPos [7886.97,5621.06,8.10]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;=== 13:39:44
+_camera camSetTarget [-66787.36,-60893.83,-1119.89]
+_camera camSetPos [7891.37,5602.74,3.81]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+;=== 13:39:57
+_camera camSetTarget [-57111.07,-70174.95,-6188.27]
+_camera camSetPos [7821.05,5623.04,3.01]
+_camera camSetFOV 0.700
+_camera camCommit 8
+@camCommitted _camera
+;=== 13:40:04
+_camera camSetTarget [71883.46,-50434.66,-52403.45]
+_camera camSetPos [7796.88,5621.22,12.26]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~3
+
+
+titlecut ["","BLACK OUT",3];
+4 fademusic 0;
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

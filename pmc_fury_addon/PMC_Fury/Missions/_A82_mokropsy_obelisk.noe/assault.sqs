@@ -1,0 +1,23 @@
+;
+; enemy assault coming
+;
+helo sideradio "Ralarm";
+~10
+
+PAPABEAR sideradio "Rrtb";
+
+helo domove getpos usa;
+~10
+
+PAPABEAR sideradio "Ralphaorder";
+"1" objstatus "FAILED";
+"2" objstatus "ACTIVE";
+~10
+
+leader assault1 sideradio "Ralphacopy";
+
+@(helo distance usa < 100)
+
+helo land "land";
+
+exit

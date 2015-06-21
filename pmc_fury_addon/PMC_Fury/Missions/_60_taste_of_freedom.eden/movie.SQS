@@ -1,0 +1,77 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+; assault1 leader
+_camera camSetTarget leader assault1
+_camera camSetRelPos [0,-20,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track9",0]
+
+titlecut ["","BLACK IN",5];
+~10
+
+; assault2 leader
+_camera camSetTarget leader assault2
+_camera camSetRelPos [0,2,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+
+; assault3 leader
+_camera camSetTarget leader assault3
+_camera camSetRelPos [0,2,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+
+; assault3 leader
+_camera camSetRelPos [10,20,10]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+~2
+
+; gunship 1
+_camera camSetTarget gunship1
+_camera camSetRelPos [-30,50,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+gunship2 setfuel 1;
+~1
+gunship1 setfuel 1;
+
+~10
+
+; gunship 2
+_camera camSetTarget gunship2
+_camera camSetRelPos [0,50,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~7
+
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

@@ -1,0 +1,121 @@
+version=11;
+class Mission
+{
+	randomSeed=4359171;
+	class Intel
+	{
+		briefingName="Negotiations (cutscene)";
+		startWeather=0.000000;
+		forecastWeather=0.000000;
+		month=8;
+		day=30;
+		hour=15;
+		minute=0;
+	};
+};
+class Intro
+{
+	randomSeed=15798275;
+	class Intel
+	{
+		startWeather=0.000000;
+		forecastWeather=0.000000;
+		month=8;
+		day=30;
+		hour=15;
+		minute=0;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9577.211914,24.094597,1585.189819};
+					azimut=195.000000;
+					id=0;
+					side="WEST";
+					vehicle="SoldierWCrew";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.200000;
+					init="this exec ""movie.sqs"";";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9544.505859,26.056343,1605.689209};
+					azimut=85.000000;
+					id=1;
+					side="WEST";
+					vehicle="OfficerW";
+					leader=1;
+					skill=0.200000;
+					text="natoguy";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9546.696289,26.056343,1605.939575};
+					azimut=265.000000;
+					id=2;
+					side="EAST";
+					vehicle="OfficerE";
+					leader=1;
+					skill=0.200000;
+					text="rusguy";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={9592.377930,21.091566,1607.427002};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			text="cutscene end";
+			expCond="endcut";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class OutroWin
+{
+	randomSeed=12802563;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=3080707;
+	class Intel
+	{
+	};
+};

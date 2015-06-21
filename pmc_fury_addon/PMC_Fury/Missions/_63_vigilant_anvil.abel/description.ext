@@ -1,0 +1,30 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Vigilant Anvil";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Russian counter attack!";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Rincoming
+	{
+		name = "Rincoming";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rincoming;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

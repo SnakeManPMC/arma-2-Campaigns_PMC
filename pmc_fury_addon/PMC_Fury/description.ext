@@ -1,0 +1,2821 @@
+class MissionDefault 
+{ 
+lives = -1; 
+
+lost = ; 
+end1 = ; 
+end2 = ; 
+end3 = ; 
+end4 = ; 
+end5 = ; 
+end6 = ; 
+}; 
+
+
+
+class Campaign
+{
+	name = "PMC Fury";
+	firstBattle = Prologue;
+	
+
+	class Prologue
+	{
+		name = "PROLOGUE";
+		
+		cutscene = _00_pmcfury_intro.Eden;
+
+		firstMission = _01_shark_eyes;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+		lost = ;
+
+		class _01_shark_eyes: MissionDefault
+		{
+			end1 = _02_new_beginning;
+			end2 = _02_new_beginning;
+			end3 = _02_new_beginning;
+			end4 = _02_new_beginning;
+			end5 = _02_new_beginning;
+			end6 = _02_new_beginning;
+			lost = _01_shark_eyes;
+			template = _01_shark_eyes.Eden;
+		};
+		class _02_new_beginning: MissionDefault
+		{
+			end1 = _03_foundations;
+			end2 = _03_foundations;
+			end3 = _03_foundations;
+			end4 = _03_foundations;
+			end5 = _03_foundations;
+			end6 = _03_foundations;
+			lost = _02_new_beginning;
+			template = _02_new_beginning.Eden;
+		};
+		class _03_foundations: MissionDefault
+		{
+			end1 = _04_night_watch;
+			end2 = _04_night_watch;
+			end3 = _04_night_watch;
+			end4 = _04_night_watch;
+			end5 = _04_night_watch;
+			end6 = _04_night_watch;
+			lost = _03_foundations;
+			template = _03_foundations.Eden;
+		};
+		class _04_night_watch: MissionDefault
+		{
+			end1 = _05_morning_patrol;
+			end2 = _05_morning_patrol;
+			end3 = _05_morning_patrol;
+			end4 = _05_morning_patrol;
+			end5 = _05_morning_patrol;
+			end6 = _05_morning_patrol;
+			lost = _04_night_watch;
+			template = _04_night_watch.Eden;
+		};
+		class _05_morning_patrol: MissionDefault
+		{
+			end1 = _06_airborne;
+			end2 = _06_airborne;
+			end3 = _06_airborne;
+			end4 = _06_airborne;
+			end5 = _06_airborne;
+			end6 = _06_airborne;
+			lost = _05_morning_patrol;
+			template = _05_morning_patrol.Eden;
+		};
+		class _06_airborne: MissionDefault
+		{
+			end1 = _07_base_assault;
+			end2 = _07_base_assault;
+			end3 = _07_base_assault;
+			end4 = _07_base_assault;
+			end5 = _07_base_assault;
+			end6 = _07_base_assault;
+			lost = _06_airborne;
+			template = _06_airborne.Eden;
+		};
+		class _07_base_assault: MissionDefault
+		{
+			end1 = _08_woods_cleanup;
+			end2 = _08_woods_cleanup;
+			end3 = _08_woods_cleanup;
+			end4 = _08_woods_cleanup;
+			end5 = _08_woods_cleanup;
+			end6 = _08_woods_cleanup;
+			lost = _07_base_assault;
+			template = _07_base_assault.Eden;
+		};
+		class _08_woods_cleanup: MissionDefault
+		{
+			end1 = _09_gas_station_raid;
+			end2 = _09_gas_station_raid;
+			end3 = _09_gas_station_raid;
+			end4 = _09_gas_station_raid;
+			end5 = _09_gas_station_raid;
+			end6 = _09_gas_station_raid;
+			lost = _08_woods_cleanup;
+			template = _08_woods_cleanup.Eden;
+		};
+		class _09_gas_station_raid: MissionDefault
+		{
+			end1 = _10_thirsty_tanks;
+			end2 = _10_thirsty_tanks;
+			end3 = _10_thirsty_tanks;
+			end4 = _10_thirsty_tanks;
+			end5 = _10_thirsty_tanks;
+			end6 = _10_thirsty_tanks;
+			lost = _09_gas_station_raid;
+			template = _09_gas_station_raid.Eden;
+		};
+		class _10_thirsty_tanks: MissionDefault
+		{
+			end1 = _11_hol_meaux;
+			end2 = _11_hol_meaux;
+			end3 = _11_hol_meaux;
+			end4 = _11_hol_meaux;
+			end5 = _11_hol_meaux;
+			end6 = _11_hol_meaux;
+			lost = _10_thirsty_tanks;
+			template = _10_thirsty_tanks.Eden;
+		};
+		class _11_hol_meaux: MissionDefault
+		{
+			end1 = _12_meaux_stronghold;
+			end2 = _12_meaux_stronghold;
+			end3 = _12_meaux_stronghold;
+			end4 = _12_meaux_stronghold;
+			end5 = _12_meaux_stronghold;
+			end6 = _12_meaux_stronghold;
+			lost = _11_hol_meaux;
+			template = _11_hol_meaux.Eden;
+		};
+		class _12_meaux_stronghold: MissionDefault
+		{
+			end1 = _13_after_meaux;
+			end2 = _13_after_meaux;
+			end3 = _13_after_meaux;
+			end4 = _13_after_meaux;
+			end5 = _13_after_meaux;
+			end6 = _13_after_meaux;
+			lost = _12_meaux_stronghold;
+			template = _12_meaux_stronghold.Eden;
+		};
+		class _13_after_meaux: MissionDefault
+		{
+			end1 = _14_first_command;
+			end2 = _14_first_command;
+			end3 = _14_first_command;
+			end4 = _14_first_command;
+			end5 = _14_first_command;
+			end6 = _14_first_command;
+			lost = _13_after_meaux;
+			template = _13_after_meaux.Eden;
+		};
+		class _14_first_command: MissionDefault
+		{
+			end1 = _15_time_for_tyrone;
+			end2 = _15_time_for_tyrone;
+			end3 = _15_time_for_tyrone;
+			end4 = _15_time_for_tyrone;
+			end5 = _15_time_for_tyrone;
+			end6 = _15_time_for_tyrone;
+			lost = _14_first_command;
+			template = _14_first_command.Eden;
+		};
+		class _15_time_for_tyrone: MissionDefault
+		{
+			end1 = _16_night_in_tyrone;
+			end2 = _16_night_in_tyrone;
+			end3 = _16_night_in_tyrone;
+			end4 = _16_night_in_tyrone;
+			end5 = _16_night_in_tyrone;
+			end6 = _16_night_in_tyrone;
+			lost = _15_time_for_tyrone;
+			template = _15_time_for_tyrone.Eden;
+		};
+		class _16_night_in_tyrone: MissionDefault
+		{
+			end1 = _17_hospital_madness;
+			end2 = _17_hospital_madness;
+			end3 = _17_hospital_madness;
+			end4 = _17_hospital_madness;
+			end5 = _17_hospital_madness;
+			end6 = _17_hospital_madness;
+			lost = _16_night_in_tyrone;
+			template = _16_night_in_tyrone.Eden;
+		};
+		class _17_hospital_madness: MissionDefault
+		{
+			end1 = _18_going_for_gravette;
+			end2 = _18_going_for_gravette;
+			end3 = _18_going_for_gravette;
+			end4 = _18_going_for_gravette;
+			end5 = _18_going_for_gravette;
+			end6 = _18_going_for_gravette;
+			lost = _17_hospital_madness;
+			template = _17_hospital_madness.Eden;
+		};
+		class _18_going_for_gravette: MissionDefault
+		{
+			end1 = _19_road_block;
+			end2 = _19_road_block;
+			end3 = _19_road_block;
+			end4 = _19_road_block;
+			end5 = _19_road_block;
+			end6 = _19_road_block;
+			lost = _18_going_for_gravette;
+			template = _18_going_for_gravette.Eden;
+		};
+		class _19_road_block: MissionDefault
+		{
+			end1 = _20_entre_deux;
+			end2 = _20_entre_deux;
+			end3 = _20_entre_deux;
+			end4 = _20_entre_deux;
+			end5 = _20_entre_deux;
+			end6 = _20_entre_deux;
+			lost = _19_road_block;
+			template = _19_road_block.Eden;
+		};
+		class _20_entre_deux: MissionDefault
+		{
+			end1 = _21_mayhem_at_montignac;
+			end2 = _21_mayhem_at_montignac;
+			end3 = _21_mayhem_at_montignac;
+			end4 = _21_mayhem_at_montignac;
+			end5 = _21_mayhem_at_montignac;
+			end6 = _21_mayhem_at_montignac;
+			lost = _20_entre_deux;
+			template = _20_entre_deux.Eden;
+		};
+		class _21_mayhem_at_montignac: MissionDefault
+		{
+			end1 = _22_cleansing;
+			end2 = _22_cleansing;
+			end3 = _22_cleansing;
+			end4 = _22_cleansing;
+			end5 = _22_cleansing;
+			end6 = _22_cleansing;
+			lost = _21_mayhem_at_montignac;
+			template = _21_mayhem_at_montignac.Eden;
+		};
+		class _22_cleansing: MissionDefault
+		{
+			end1 = _23_noammos;
+			end2 = _23_noammos;
+			end3 = _23_noammos;
+			end4 = _23_noammos;
+			end5 = _23_noammos;
+			end6 = _23_noammos;
+			lost = _22_cleansing;
+			template = _22_cleansing.Eden;
+		};
+		class _23_noammos: MissionDefault
+		{
+			end1 = _24_blackhawk_down;
+			end2 = _24_blackhawk_down;
+			end3 = _24_blackhawk_down;
+			end4 = _24_blackhawk_down;
+			end5 = _24_blackhawk_down;
+			end6 = _24_blackhawk_down;
+			lost = _23_noammos;
+			template = _23_noammos.Eden;
+		};
+		class _24_blackhawk_down: MissionDefault
+		{
+			end1 = _25_leisure_lemante;
+			end2 = _25_leisure_lemante;
+			end3 = _25_leisure_lemante;
+			end4 = _25_leisure_lemante;
+			end5 = _25_leisure_lemante;
+			end6 = _25_leisure_lemante;
+			lost = _24_blackhawk_down;
+			template = _24_blackhawk_down.Eden;
+		};
+		class _25_leisure_lemante: MissionDefault
+		{
+			end1 = _26_operation_muse;
+			end2 = _26_operation_muse;
+			end3 = _26_operation_muse;
+			end4 = _26_operation_muse;
+			end5 = _26_operation_muse;
+			end6 = _26_operation_muse;
+			lost = _25_leisure_lemante;
+			template = _25_leisure_lemante.Eden;
+		};
+		class _26_operation_muse: MissionDefault
+		{
+			end1 = _27_midnight_morton;
+			end2 = _27_midnight_morton;
+			end3 = _27_midnight_morton;
+			end4 = _27_midnight_morton;
+			end5 = _27_midnight_morton;
+			end6 = _27_midnight_morton;
+			lost = _26_operation_muse;
+			template = _26_operation_muse.Eden;
+		};
+		class _27_midnight_morton: MissionDefault
+		{
+			end1 = _28_threesome;
+			end2 = _28_threesome;
+			end3 = _28_threesome;
+			end4 = _28_threesome;
+			end5 = _28_threesome;
+			end6 = _28_threesome;
+			lost = _27_midnight_morton;
+			template = _27_midnight_morton.Eden;
+		};
+		class _28_threesome: MissionDefault
+		{
+			end1 = _29_intersections;
+			end2 = _29_intersections;
+			end3 = _29_intersections;
+			end4 = _29_intersections;
+			end5 = _29_intersections;
+			end6 = _29_intersections;
+			lost = _28_threesome;
+			template = _28_threesome.Eden;
+		};
+		class _29_intersections: MissionDefault
+		{
+			end1 = _30_leftovers;
+			end2 = _30_leftovers;
+			end3 = _30_leftovers;
+			end4 = _30_leftovers;
+			end5 = _30_leftovers;
+			end6 = _30_leftovers;
+			lost = _29_intersections;
+			template = _29_intersections.Eden;
+		};
+		class _30_leftovers: MissionDefault
+		{
+			end1 = _30_Xnegotiationscutscene;
+			end2 = _30_Xnegotiationscutscene;
+			end3 = _30_Xnegotiationscutscene;
+			end4 = _30_Xnegotiationscutscene;
+			end5 = _30_Xnegotiationscutscene;
+			end6 = _30_Xnegotiationscutscene;
+			lost = _30_leftovers;
+			template = _30_leftovers.Eden;
+		};
+		class _30_Xnegotiationscutscene: MissionDefault
+		{
+			end1 = _31_positions;
+			end2 = _31_positions;
+			end3 = _31_positions;
+			end4 = _31_positions;
+			end5 = _31_positions;
+			end6 = _31_positions;
+			lost = _31_positions;
+			template = _30_Xnegotiationscutscene.Eden;
+		};
+		class _31_positions: MissionDefault
+		{
+			end1 = _31_Xendofpartone;
+			end2 = _31_Xendofpartone;
+			end3 = _31_Xendofpartone;
+			end4 = _31_Xendofpartone;
+			end5 = _31_Xendofpartone;
+			end6 = _31_Xendofpartone;
+			lost = _31_positions;
+			template = _31_positions.Eden;
+		};
+		class _31_Xendofpartone: MissionDefault
+		{
+			end1 = _32_special_training;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _32_special_training;
+			template = _31_Xendofpartone.Eden;
+		};
+		class _32_special_training: MissionDefault
+		{
+			end1 = _33_medicine_man;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _32_special_training;
+			template = _32_special_training.Eden;
+		};
+		class _33_medicine_man: MissionDefault
+		{
+			end1 = _34_hostage_rescue;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _33_medicine_man;
+			template = _33_medicine_man.Eden;
+		};
+		class _34_hostage_rescue: MissionDefault
+		{
+			end1 = _35_more_talk;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _34_hostage_rescue;
+			template = _34_hostage_rescue.Eden;
+		};
+		class _35_more_talk: MissionDefault
+		{
+			end1 = _35_Xinsanity;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _35_more_talk;
+			template = _35_more_talk.Eden;
+		};
+		class _35_Xinsanity: MissionDefault
+		{
+			end1 = _36_warmonger;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _36_warmonger;
+			template = _35_Xinsanity.Eden;
+		};
+		class _36_warmonger: MissionDefault
+		{
+			end1 = _37_artillery_denial;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _36_warmonger;
+			template = _36_warmonger.Eden;
+		};
+		class _37_artillery_denial: MissionDefault
+		{
+			end1 = _38_no_bases_for_base;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _37_artillery_denial;
+			template = _37_artillery_denial.Eden;
+		};
+		class _38_no_bases_for_base: MissionDefault
+		{
+			end1 = _39_roads_and_hills;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _38_no_bases_for_base;
+			template = _38_no_bases_for_base.Eden;
+		};
+		class _39_roads_and_hills: MissionDefault
+		{
+			end1 = _40_high_speed;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _39_roads_and_hills;
+			template = _39_roads_and_hills.Eden;
+		};
+		class _40_high_speed: MissionDefault
+		{
+			end1 = _41_spike;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _40_high_speed;
+			template = _40_high_speed.Eden;
+		};
+		class _41_spike: MissionDefault
+		{
+			end1 = _42_ambush_at_durras;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _41_spike;
+			template = _41_spike.Eden;
+		};
+		class _42_ambush_at_durras: MissionDefault
+		{
+			end1 = _43_recon;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _42_ambush_at_durras;
+			template = _42_ambush_at_durras.Eden;
+		};
+		class _43_recon: MissionDefault
+		{
+			end1 = _44_preparations;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _43_recon;
+			template = _43_recon.Eden;
+		};
+		class _44_preparations: MissionDefault
+		{
+			end1 = _45_regina_rock;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _44_preparations;
+			template = _44_preparations.Eden;
+		};
+		class _45_regina_rock: MissionDefault
+		{
+			end1 = _46_sweet_sweep;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _45_regina_rock;
+			template = _45_regina_rock.Eden;
+		};
+		class _46_sweet_sweep: MissionDefault
+		{
+			end1 = _47_durras_dawn;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _46_sweet_sweep;
+			template = _46_sweet_sweep.Eden;
+		};
+		class _47_durras_dawn: MissionDefault
+		{
+			end1 = _48_ghosts;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _47_durras_dawn;
+			template = _47_durras_dawn.Eden;
+		};
+		class _48_ghosts: MissionDefault
+		{
+			end1 = _49_ghostchaser;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _48_ghosts;
+			template = _48_ghosts.Eden;
+		};
+		class _49_ghostchaser: MissionDefault
+		{
+			end1 = _50_kingofmycastle;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _49_ghostchaser;
+			template = _49_ghostchaser.Eden;
+		};
+		class _50_kingofmycastle: MissionDefault
+		{
+			end1 = _51_lighthouse;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _50_kingofmycastle;
+			template = _50_kingofmycastle.Eden;
+		};
+		class _51_lighthouse: MissionDefault
+		{
+			end1 = _52_goodmorningeveron;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _51_lighthouse;
+			template = _51_lighthouse.Eden;
+		};
+		class _52_goodmorningeveron: MissionDefault
+		{
+			end1 = _53_killing_grounds;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _52_goodmorningeveron;
+			template = _52_goodmorningeveron.Eden;
+		};
+		class _53_killing_grounds: MissionDefault
+		{
+			end1 = _54_prisoners_of_war;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _53_killing_grounds;
+			template = _53_killing_grounds.Eden;
+		};
+		class _54_prisoners_of_war: MissionDefault
+		{
+			end1 = _55_hostage_hero;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _54_prisoners_of_war;
+			template = _54_prisoners_of_war.Eden;
+		};
+		class _55_hostage_hero: MissionDefault
+		{
+			end1 = _56_night_watch_2;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _55_hostage_hero;
+			template = _55_hostage_hero.Eden;
+		};
+		class _56_night_watch_2: MissionDefault
+		{
+			end1 = _57_babysitter;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _56_night_watch_2;
+			template = _56_night_watch_2.Eden;
+		};
+		class _57_babysitter: MissionDefault
+		{
+			end1 = _58_vernon_vampires;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _57_babysitter;
+			template = _57_babysitter.Eden;
+		};
+		class _58_vernon_vampires: MissionDefault
+		{
+			end1 = _59_open_arms;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _58_vernon_vampires;
+			template = _58_vernon_vampires.Eden;
+		};
+                class _59_open_arms: MissionDefault
+                {
+                        end1 = _60_taste_of_freedom;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _59_open_arms;
+                        template = _59_open_arms.Eden;
+                };
+                class _60_taste_of_freedom: MissionDefault
+                {
+                        end1 = _60_Xthe_end;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _60_taste_of_freedom;
+                        template = _60_taste_of_freedom.eden;
+                };
+		class _60_Xthe_end: MissionDefault
+		{
+			end1 = _61_Xinthebeach;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _61_Xinthebeach;
+			template = _60_Xthe_end.Eden;
+		};
+		class _61_Xinthebeach: MissionDefault
+		{
+			end1 = _61_smoke_and_mirrors;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = _61_smoke_and_mirrors;
+			template = _61_Xinthebeach.eden;
+		};
+                class _61_smoke_and_mirrors: MissionDefault
+                {
+                        end1 = _62_maritime_thunder;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _61_smoke_and_mirrors;
+                        template = _61_smoke_and_mirrors.abel;
+                };
+                class _62_maritime_thunder: MissionDefault
+                {
+                        end1 = _63_vigilant_anvil;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _62_maritime_thunder;
+                        template = _62_maritime_thunder.Abel;
+                };
+                class _63_vigilant_anvil: MissionDefault
+                {
+                        end1 = _64_distant_haven;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _63_vigilant_anvil;
+                        template = _63_vigilant_anvil.abel;
+                };
+                class _64_distant_haven: MissionDefault
+                {
+                        end1 = _65_noble_force;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _64_distant_haven;
+                        template = _64_distant_haven.Abel;
+                };
+                class _65_noble_force: MissionDefault
+                {
+                        end1 = _66_fiery_sword;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _65_noble_force;
+                        template = _65_noble_force.Abel;
+                };
+                class _66_fiery_sword: MissionDefault
+                {
+                        end1 = _67_steel_warrior;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _66_fiery_sword;
+                        template = _66_fiery_sword.Abel;
+                };
+                class _67_steel_warrior: MissionDefault
+                {
+                        end1 = _68_silver_sabre;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _67_steel_warrior;
+                        template = _67_steel_warrior.Abel;
+                };
+                class _68_silver_sabre: MissionDefault
+                {
+                        end1 = _69_shining_eye;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _68_silver_sabre;
+                        template = _68_silver_sabre.Abel;
+                };
+                class _69_shining_eye: MissionDefault
+                {
+                        end1 = _70_shepherd;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _69_shining_eye;
+                        template = _69_shining_eye.Abel;
+                };
+                class _70_shepherd: MissionDefault
+                {
+                        end1 = _71_determined_fox;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _70_shepherd;
+                        template = _70_shepherd.Abel;
+                };
+                class _71_determined_fox: MissionDefault
+                {
+                        end1 = _72_decisive_flash;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _71_determined_fox;
+                        template = _71_determined_fox.abel;
+                };
+                class _72_decisive_flash: MissionDefault
+                {
+                        end1 = _73_proud_forge;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _72_decisive_flash;
+                        template = _72_decisive_flash.abel;
+                };
+                class _73_proud_forge: MissionDefault
+                {
+                        end1 = _74_rolling_promise;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _73_proud_forge;
+                        template = _73_proud_forge.Abel;
+                };
+                class _74_rolling_promise: MissionDefault
+                {
+                        end1 = _75_sharp_star;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _74_rolling_promise;
+                        template = _74_rolling_promise.Abel;
+                };
+                class _75_sharp_star: MissionDefault
+                {
+                        end1 = _76_ghost_bat;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _75_sharp_star;
+                        template = _75_sharp_star.abel;
+                };
+                class _76_ghost_bat: MissionDefault
+                {
+                        end1 = _77_eternal_phoenix;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _76_ghost_bat;
+                        template = _76_ghost_bat.abel;
+                };
+                class _77_eternal_phoenix: MissionDefault
+                {
+                        end1 = _78_garden_response;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _77_eternal_phoenix;
+                        template = _77_eternal_phoenix.abel;
+                };
+                class _78_garden_response: MissionDefault
+                {
+                        end1 = _79_cosmopolitan_warrior;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _78_garden_response;
+                        template = _78_garden_response.abel;
+                };
+                class _79_cosmopolitan_warrior: MissionDefault
+                {
+                        end1 = _80_silver_obelisk;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _79_cosmopolitan_warrior;
+                        template = _79_cosmopolitan_warrior.abel;
+                };
+                class _80_silver_obelisk: MissionDefault
+                {
+                        end1 = _81_beach_party;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _80_silver_obelisk;
+                        template = _80_silver_obelisk.abel;
+                };
+                class _81_beach_party: MissionDefault
+                {
+                        end1 = _82_golden_canyon;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _81_beach_party;
+                        template = _81_beach_party.abel;
+                };
+                class _82_golden_canyon: MissionDefault
+                {
+                        end1 = _83_red_harvest;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _82_golden_canyon;
+                        template = _82_golden_canyon.Abel;
+                };
+                class _83_red_harvest: MissionDefault
+                {
+                        end1 = _84_intense_zone;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _83_red_harvest;
+                        template = _83_red_harvest.Abel;
+                };
+                class _84_intense_zone: MissionDefault
+                {
+                        end1 = _85_sheeps_and_wolfs;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _84_intense_zone;
+                        template = _84_intense_zone.Abel;
+                };
+                class _85_sheeps_and_wolfs: MissionDefault
+                {
+                        end1 = _86_angry_bear;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _85_sheeps_and_wolfs;
+                        template = _85_sheeps_and_wolfs.Abel;
+                };
+                class _86_angry_bear: MissionDefault
+                {
+                        end1 = _87_houdan_haven;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _86_angry_bear;
+                        template = _86_angry_bear.abel;
+                };
+                class _87_houdan_haven: MissionDefault
+                {
+                        end1 = _88_bright_switch;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _87_houdan_haven;
+                        template = _87_houdan_haven.Abel;
+                };
+                class _88_bright_switch: MissionDefault
+                {
+                        end1 = _89_mountain_warrior;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _88_bright_switch;
+                        template = _88_bright_switch.abel;
+                };
+                class _89_mountain_warrior: MissionDefault
+                {
+                        end1 = _90_black_phoenix;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _89_mountain_warrior;
+                        template = _89_mountain_warrior.Abel;
+                };
+                class _90_black_phoenix: MissionDefault
+                {
+                        end1 = _91_big_spoon;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _90_black_phoenix;
+                        template = _90_black_phoenix.Abel;
+                };
+                class _91_big_spoon: MissionDefault
+                {
+                        end1 = _92_quick_horizon;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _91_big_spoon;
+                        template = _91_big_spoon.Abel;
+                };
+                class _92_quick_horizon: MissionDefault
+                {
+                        end1 = _93_urgent_angel;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _92_quick_horizon;
+                        template = _92_quick_horizon.abel;
+                };
+                class _93_urgent_angel: MissionDefault
+                {
+                        end1 = _94_beach_sweep;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _93_urgent_angel;
+                        template = _93_urgent_angel.Abel;
+                };
+                class _94_beach_sweep: MissionDefault
+                {
+                        end1 = _95_guardian;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _94_beach_sweep;
+                        template = _94_beach_sweep.Abel;
+                };
+                class _95_guardian: MissionDefault
+                {
+                        end1 = _96_garden_clover;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _95_guardian;
+                        template = _95_guardian.Abel;
+                };
+                class _96_garden_clover: MissionDefault
+                {
+                        end1 = _97_safe_hat;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _96_garden_clover;
+                        template = _96_garden_clover.abel;
+                };
+                class _97_safe_hat: MissionDefault
+                {
+                        end1 = _98_nomad_stick;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _97_safe_hat;
+                        template = _97_safe_hat.abel;
+                };
+                class _98_nomad_stick: MissionDefault
+                {
+                        end1 = _99_dark_jewel;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _98_nomad_stick;
+                        template = _98_nomad_stick.abel;
+                };
+                class _99_dark_jewel: MissionDefault
+                {
+                        end1 = _A00_dead_stop;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _99_dark_jewel;
+                        template = _99_dark_jewel.abel;
+                };
+                class _A00_dead_stop: MissionDefault
+                {
+                        end1 = _A01_shiny_beaches;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A00_dead_stop;
+                        template = _A00_dead_stop.Abel;
+                };
+                class _A01_shiny_beaches: MissionDefault
+                {
+                        end1 = _A02_decisive_eagle;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A01_shiny_beaches;
+                        template = _A01_shiny_beaches.abel;
+                };
+                class _A02_decisive_eagle: MissionDefault
+                {
+                        end1 = _A03_silent_walker;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A02_decisive_eagle;
+                        template = _A02_decisive_eagle.abel;
+                };
+                class _A03_silent_walker: MissionDefault
+                {
+                        end1 = _A04_sins;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A03_silent_walker;
+                        template = _A03_silent_walker.abel;
+                };
+                class _A04_sins: MissionDefault
+                {
+                        end1 = _A05_fallen_bear;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A04_sins;
+                        template = _A04_sins.abel;
+                };
+                class _A05_fallen_bear: MissionDefault
+                {
+                        end1 = _A06_fuel_fumes;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A05_fallen_bear;
+                        template = _A05_fallen_bear.abel;
+                };
+                class _A06_fuel_fumes: MissionDefault
+                {
+                        end1 = _A07_night_light;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A06_fuel_fumes;
+                        template = _A06_fuel_fumes.abel;
+                };
+                class _A07_night_light: MissionDefault
+                {
+                        end1 = _A08_rapid_hope;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A07_night_light;
+                        template = _A07_night_light.abel;
+                };
+                class _A08_rapid_hope: MissionDefault
+                {
+                        end1 = _A09_ammo_cache;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A08_rapid_hope;
+                        template = _A08_rapid_hope.abel;
+                };
+                class _A09_ammo_cache: MissionDefault
+                {
+                        end1 = _A10_desert_justice;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A09_ammo_cache;
+                        template = _A09_ammo_cache.abel;
+                };
+                class _A10_desert_justice: MissionDefault
+                {
+                        end1 = _A11_mountain_relief;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A10_desert_justice;
+                        template = _A10_desert_justice.abel;
+                };
+                class _A11_mountain_relief: MissionDefault
+                {
+                        end1 = _A12_dark_rabbit;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A11_mountain_relief;
+                        template = _A11_mountain_relief.abel;
+                };
+                class _A12_dark_rabbit: MissionDefault
+                {
+                        end1 = _A13_ivans_wrath;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A12_dark_rabbit;
+                        template = _A12_dark_rabbit.Cain;
+                };
+                class _A13_ivans_wrath: MissionDefault
+                {
+                        end1 = _A14_essential_elements;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A13_ivans_wrath;
+                        template = _A13_ivans_wrath.cain;
+                };
+                class _A14_essential_elements: MissionDefault
+                {
+                        end1 = _A15_whisper_hill;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A14_essential_elements;
+                        template = _A14_essential_elements.Cain;
+                };
+                class _A15_whisper_hill: MissionDefault
+                {
+                        end1 = _A16_red_afternoon;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A15_whisper_hill;
+                        template = _A15_whisper_hill.Cain;
+                };
+                class _A16_red_afternoon: MissionDefault
+                {
+                        end1 = _A17_armor_wall;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A16_red_afternoon;
+                        template = _A16_red_afternoon.cain;
+                };
+                class _A17_armor_wall: MissionDefault
+                {
+                        end1 = _A18_boat_house;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A17_armor_wall;
+                        template = _A17_armor_wall.cain;
+                };
+                class _A18_boat_house: MissionDefault
+                {
+                        end1 = _A19_airspace_denial;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A18_boat_house;
+                        template = _A18_boat_house.cain;
+                };
+                class _A19_airspace_denial: MissionDefault
+                {
+                        end1 = _A20_long_sword;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A19_airspace_denial;
+                        template = _A19_airspace_denial.Cain;
+                };
+                class _A20_long_sword: MissionDefault
+                {
+                        end1 = _A21_hounds;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A20_long_sword;
+                        template = _A20_long_sword.Cain;
+                };
+                class _A21_hounds: MissionDefault
+                {
+                        end1 = _A22_beach_boys;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A21_hounds;
+                        template = _A21_hounds.Cain;
+                };
+                class _A22_beach_boys: MissionDefault
+                {
+                        end1 = _A23_laser_stick;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A22_beach_boys;
+                        template = _A22_beach_boys.Cain;
+                };
+                class _A23_laser_stick: MissionDefault
+                {
+                        end1 = _A24_little_prince;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A23_laser_stick;
+                        template = _A23_laser_stick.Cain;
+                };
+                class _A24_little_prince: MissionDefault
+                {
+                        end1 = _A25_infinite_wind;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A24_little_prince;
+                        template = _A24_little_prince.Cain;
+                };
+                class _A25_infinite_wind: MissionDefault
+                {
+                        end1 = _A26_death_trap;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A25_infinite_wind;
+                        template = _A25_infinite_wind.Cain;
+                };
+                class _A26_death_trap: MissionDefault
+                {
+                        end1 = _A27_A_ammo_denial;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A26_death_trap;
+                        template = _A26_death_trap.Cain;
+                };
+                class _A27_A_ammo_denial: MissionDefault
+                {
+                        end1 = _A27_B_captivity;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A27_A_ammo_denial;
+                        template = _A27_A_ammo_denial.Cain;
+                };
+                class _A27_B_captivity: MissionDefault
+                {
+                        end1 = _A27_C_prison_camp;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A27_B_captivity;
+                        template = _A27_B_captivity.Cain;
+                };
+                class _A27_C_prison_camp: MissionDefault
+                {
+                        end1 = _A27_D_interrogations;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A27_C_prison_camp;
+                        template = _A27_C_prison_camp.Cain;
+                };
+                class _A27_D_interrogations: MissionDefault
+                {
+                        end1 = _A27_E_poor_prisoners;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A27_D_interrogations;
+                        template = _A27_D_interrogations.Cain;
+                };
+                class _A27_E_poor_prisoners: MissionDefault
+                {
+                        end1 = _A27_F_saddle_up;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A27_E_poor_prisoners;
+                        template = _A27_E_poor_prisoners.Cain;
+                };
+                class _A27_F_saddle_up: MissionDefault
+                {
+                        end1 = _A27_G_newbies;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A27_F_saddle_up;
+                        template = _A27_F_saddle_up.cain;
+                };
+                class _A27_G_newbies: MissionDefault
+                {
+                        end1 = _A28_fire_flash;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A27_G_newbies;
+                        template = _A27_G_newbies.abel;
+                };
+                class _A28_fire_flash: MissionDefault
+                {
+                        end1 = _A29_maritime_light;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A28_fire_flash;
+                        template = _A28_fire_flash.cain;
+                };
+                class _A29_maritime_light: MissionDefault
+                {
+                        end1 = _A30_copper_harbor;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A29_maritime_light;
+                        template = _A29_maritime_light.Cain;
+                };
+                class _A30_copper_harbor: MissionDefault
+                {
+                        end1 = _A31_agile_puma;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A30_copper_harbor;
+                        template = _A30_copper_harbor.cain;
+                };
+                class _A31_agile_puma: MissionDefault
+                {
+                        end1 = _A32_rolling_blaze;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A31_agile_puma;
+                        template = _A31_agile_puma.cain;
+                };
+                class _A32_rolling_blaze: MissionDefault
+                {
+                        end1 = _A33_righteous_path;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A32_rolling_blaze;
+                        template = _A32_rolling_blaze.Cain;
+                };
+                class _A33_righteous_path: MissionDefault
+                {
+                        end1 = _A34_silent_obelisk;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A33_righteous_path;
+                        template = _A33_righteous_path.Cain;
+                };
+                class _A34_silent_obelisk: MissionDefault
+                {
+                        end1 = _A35_downhill;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A34_silent_obelisk;
+                        template = _A34_silent_obelisk.Cain;
+                };
+                class _A35_downhill: MissionDefault
+                {
+                        end1 = _A36_determined_tree;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A35_downhill;
+                        template = _A35_downhill.cain;
+                };
+                class _A36_determined_tree: MissionDefault
+                {
+                        end1 = _A37_infinite_response;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A36_determined_tree;
+                        template = _A36_determined_tree.cain;
+                };
+                class _A37_infinite_response: MissionDefault
+                {
+                        end1 = _A38_eternal_star;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A37_infinite_response;
+                        template = _A37_infinite_response.cain;
+                };
+                class _A38_eternal_star: MissionDefault
+                {
+                        end1 = _A39_proud_eagle;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A38_eternal_star;
+                        template = _A38_eternal_star.cain;
+                };
+                class _A39_proud_eagle: MissionDefault
+                {
+                        end1 = _A40_tall_coyote;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A39_proud_eagle;
+                        template = _A39_proud_eagle.Cain;
+                };
+                class _A40_tall_coyote: MissionDefault
+                {
+                        end1 = _A41_rainman;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A40_tall_coyote;
+                        template = _A40_tall_coyote.Cain;
+                };
+                class _A41_rainman: MissionDefault
+                {
+                        end1 = _A42_grey_thunder;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A41_rainman;
+                        template = _A41_rainman.Cain;
+                };
+                class _A42_grey_thunder: MissionDefault
+                {
+                        end1 = _A43_dark_star;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A42_grey_thunder;
+                        template = _A42_grey_thunder.Cain;
+                };
+                class _A43_dark_star: MissionDefault
+                {
+                        end1 = _A44_passage;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A43_dark_star;
+                        template = _A43_dark_star.Cain;
+                };
+                class _A44_passage: MissionDefault
+                {
+                        end1 = _A45_quick_dancer;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A44_passage;
+                        template = _A44_passage.Cain;
+                };
+                class _A45_quick_dancer: MissionDefault
+                {
+                        end1 = _A46_intense_ivan;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A45_quick_dancer;
+                        template = _A45_quick_dancer.Cain;
+                };
+                class _A46_intense_ivan: MissionDefault
+                {
+                        end1 = _A47_noble_warrior;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A46_intense_ivan;
+                        template = _A46_intense_ivan.Cain;
+                };
+                class _A47_noble_warrior: MissionDefault
+                {
+                        end1 = _A48_rainy_hope;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A47_noble_warrior;
+                        template = _A47_noble_warrior.Cain;
+                };
+                class _A48_rainy_hope: MissionDefault
+                {
+                        end1 = _A49_ninjas_gold;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A48_rainy_hope;
+                        template = _A48_rainy_hope.Cain;
+                };
+                class _A49_ninjas_gold: MissionDefault
+                {
+                        end1 = _A50_red_rock;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A49_ninjas_gold;
+                        template = _A49_ninjas_gold.Cain;
+                };
+                class _A50_red_rock: MissionDefault
+                {
+                        end1 = _A51_safe_nighthawk;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A50_red_rock;
+                        template = _A50_red_rock.Cain;
+                };
+                class _A51_safe_nighthawk: MissionDefault
+                {
+                        end1 = _A52_bright_horizon;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A51_safe_nighthawk;
+                        template = _A51_safe_nighthawk.Cain;
+                };
+                class _A52_bright_horizon: MissionDefault
+                {
+                        end1 = _A53_steel_convoy;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A52_bright_horizon;
+                        template = _A52_bright_horizon.Cain;
+                };
+                class _A53_steel_convoy: MissionDefault
+                {
+                        end1 = _A54_ghost_hope;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A53_steel_convoy;
+                        template = _A53_steel_convoy.Cain;
+                };
+                class _A54_ghost_hope: MissionDefault
+                {
+                        end1 = _A55_enduring_haven;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A54_ghost_hope;
+                        template = _A54_ghost_hope.cain;
+                };
+                class _A55_enduring_haven: MissionDefault
+                {
+                        end1 = _A56_sharp_sweep;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A55_enduring_haven;
+                        template = _A55_enduring_haven.Cain;
+                };
+                class _A56_sharp_sweep: MissionDefault
+                {
+                        end1 = _A57_bronze_breakfast;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A56_sharp_sweep;
+                        template = _A56_sharp_sweep.Cain;
+                };
+                class _A57_bronze_breakfast: MissionDefault
+                {
+                        end1 = _A58_big_sweep;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A57_bronze_breakfast;
+                        template = _A57_bronze_breakfast.Cain;
+                };
+                class _A58_big_sweep: MissionDefault
+                {
+                        end1 = _A59_proud_bat;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A58_big_sweep;
+                        template = _A58_big_sweep.cain;
+                };
+                class _A59_proud_bat: MissionDefault
+                {
+                        end1 = _A60_urgent_fox;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A59_proud_bat;
+                        template = _A59_proud_bat.Cain;
+                };
+                class _A60_urgent_fox: MissionDefault
+                {
+                        end1 = _A61_blue_sword;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A60_urgent_fox;
+                        template = _A60_urgent_fox.cain;
+                };
+                class _A61_blue_sword: MissionDefault
+                {
+                        end1 = _A62_clear_sabre;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A61_blue_sword;
+                        template = _A61_blue_sword.cain;
+                };
+                class _A62_clear_sabre: MissionDefault
+                {
+                        end1 = _A63_red_sniper;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A62_clear_sabre;
+                        template = _A62_clear_sabre.cain;
+                };
+                class _A63_red_sniper: MissionDefault
+                {
+                        end1 = _A64_fire_fortress;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A63_red_sniper;
+                        template = _A63_red_sniper.cain;
+                };
+                class _A64_fire_fortress: MissionDefault
+                {
+                        end1 = _A65_distant_promise;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A64_fire_fortress;
+                        template = _A64_fire_fortress.cain;
+                };
+                class _A65_distant_promise: MissionDefault
+                {
+                        end1 = _A66_weasels;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A65_distant_promise;
+                        template = _A65_distant_promise.Cain;
+                };
+                class _A66_weasels: MissionDefault
+                {
+                        end1 = _A67_fast_escape;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A66_weasels;
+                        template = _A66_weasels.Cain;
+                };
+                class _A67_fast_escape: MissionDefault
+                {
+                        end1 = _A68_coast_shield;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A67_fast_escape;
+                        template = _A67_fast_escape.Cain;
+                };
+                class _A68_coast_shield: MissionDefault
+                {
+                        end1 = _A69_nogova_airstrip;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A68_coast_shield;
+                        template = _A68_coast_shield.Cain;
+                };
+                class _A69_nogova_airstrip: MissionDefault
+                {
+                        end1 = _A70_pink_air;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A69_nogova_airstrip;
+                        template = _A69_nogova_airstrip.noe;
+                };
+                class _A70_pink_air: MissionDefault
+                {
+                        end1 = _A71_night_play;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A70_pink_air;
+                        template = _A70_pink_air.Noe;
+                };
+                class _A71_night_play: MissionDefault
+                {
+                        end1 = _A72_anatolis_eyes;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A71_night_play;
+                        template = _A71_night_play.noe;
+                };
+                class _A72_anatolis_eyes: MissionDefault
+                {
+                        end1 = _A73_blue_relief;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A72_anatolis_eyes;
+                        template = _A72_anatolis_eyes.noe;
+                };
+                class _A73_blue_relief: MissionDefault
+                {
+                        end1 = _A74_kvilda_cleanup;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A73_blue_relief;
+                        template = _A73_blue_relief.noe;
+                };
+                class _A74_kvilda_cleanup: MissionDefault
+                {
+                        end1 = _A75_op_liberty;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A74_kvilda_cleanup;
+                        template = _A74_kvilda_cleanup.noe;
+                };
+                class _A75_op_liberty: MissionDefault
+                {
+                        end1 = _A76_green_forge;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A75_op_liberty;
+                        template = _A75_op_liberty.noe;
+                };
+                class _A76_green_forge: MissionDefault
+                {
+                        end1 = _A77_safari_heat;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A76_green_forge;
+                        template = _A76_green_forge.noe;
+                };
+                class _A77_safari_heat: MissionDefault
+                {
+                        end1 = _A78_safari_fox;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A77_safari_heat;
+                        template = _A77_safari_heat.noe;
+                };
+                class _A78_safari_fox: MissionDefault
+                {
+                        end1 = _A79_scud_hunt_day_1;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A78_safari_fox;
+                        template = _A78_safari_fox.noe;
+                };
+                class _A79_scud_hunt_day_1: MissionDefault
+                {
+                        end1 = _A80_scud_hunt_day_2;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A79_scud_hunt_day_1;
+                        template = _A79_scud_hunt_day_1.noe;
+                };
+                class _A80_scud_hunt_day_2: MissionDefault
+                {
+                        end1 = _A81_scud_hunt_day_3;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A80_scud_hunt_day_2;
+                        template = _A80_scud_hunt_day_2.noe;
+                };
+                class _A81_scud_hunt_day_3: MissionDefault
+                {
+                        end1 = _A82_mokropsy_obelisk;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A81_scud_hunt_day_3;
+                        template = _A81_scud_hunt_day_3.Noe;
+                };
+                class _A82_mokropsy_obelisk: MissionDefault
+                {
+                        end1 = _A83_mokropsy_strike;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A82_mokropsy_obelisk;
+                        template = _A82_mokropsy_obelisk.noe;
+                };
+                class _A83_mokropsy_strike: MissionDefault
+                {
+                        end1 = _A84_beach_broom;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A83_mokropsy_strike;
+                        template = _A83_mokropsy_strike.noe;
+                };
+                class _A84_beach_broom: MissionDefault
+                {
+                        end1 = _A85_final_invasion;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A84_beach_broom;
+                        template = _A84_beach_broom.noe;
+                };
+                class _A85_final_invasion: MissionDefault
+                {
+                        end1 = _A86_bear_trap;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A85_final_invasion;
+                        template = _A85_final_invasion.noe;
+                };
+                class _A86_bear_trap: MissionDefault
+                {
+                        end1 = _A87_rough_way;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A86_bear_trap;
+                        template = _A86_bear_trap.noe;
+                };
+                class _A87_rough_way: MissionDefault
+                {
+                        end1 = _A88_battle_of_bor;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A87_rough_way;
+                        template = _A87_rough_way.noe;
+                };
+                class _A88_battle_of_bor: MissionDefault
+                {
+                        end1 = _A89_city_eagle;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A88_battle_of_bor;
+                        template = _A88_battle_of_bor.noe;
+                };
+                class _A89_city_eagle: MissionDefault
+                {
+                        end1 = _A90_fiery_warrior;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A89_city_eagle;
+                        template = _A89_city_eagle.noe;
+                };
+                class _A90_fiery_warrior: MissionDefault
+                {
+                        end1 = _A91_determined_shield;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A90_fiery_warrior;
+                        template = _A90_fiery_warrior.noe;
+                };
+                class _A91_determined_shield: MissionDefault
+                {
+                        end1 = _A92_biting_bitov;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A91_determined_shield;
+                        template = _A91_determined_shield.noe;
+                };
+                class _A92_biting_bitov: MissionDefault
+                {
+                        end1 = _A93_black_cover;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A92_biting_bitov;
+                        template = _A92_biting_bitov.noe;
+                };
+                class _A93_black_cover: MissionDefault
+                {
+                        end1 = _A94_noble_hawk;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A93_black_cover;
+                        template = _A93_black_cover.noe;
+                };
+                class _A94_noble_hawk: MissionDefault
+                {
+                        end1 = _A95_pink_bag;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A94_noble_hawk;
+                        template = _A94_noble_hawk.noe;
+                };
+                class _A95_pink_bag: MissionDefault
+                {
+                        end1 = _A96_bear_hug;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A95_pink_bag;
+                        template = _A95_pink_bag.noe;
+                };
+                class _A96_bear_hug: MissionDefault
+                {
+                        end1 = _A97_white_wind;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A96_bear_hug;
+                        template = _A96_bear_hug.noe;
+                };
+                class _A97_white_wind: MissionDefault
+                {
+                        end1 = _A98_shining_brass;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A97_white_wind;
+                        template = _A97_white_wind.noe;
+                };
+                class _A98_shining_brass: MissionDefault
+                {
+                        end1 = _A99_vigilant_patrol;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A98_shining_brass;
+                        template = _A98_shining_brass.noe;
+                };
+                class _A99_vigilant_patrol: MissionDefault
+                {
+                        end1 = _B00_valley_breeze;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _A99_vigilant_patrol;
+                        template = _A99_vigilant_patrol.noe;
+                };
+                class _B00_valley_breeze: MissionDefault
+                {
+                        end1 = _B01_hard_rock;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B00_valley_breeze;
+                        template = _B00_valley_breeze.noe;
+                };
+                class _B01_hard_rock: MissionDefault
+                {
+                        end1 = _B02_united_eye;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B01_hard_rock;
+                        template = _B01_hard_rock.noe;
+                };
+                class _B02_united_eye: MissionDefault
+                {
+                        end1 = _B03_safe_sparrow;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B02_united_eye;
+                        template = _B02_united_eye.noe;
+                };
+                class _B03_safe_sparrow: MissionDefault
+                {
+                        end1 = _B04_amber_harvest;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B03_safe_sparrow;
+                        template = _B03_safe_sparrow.noe;
+                };
+                class _B04_amber_harvest: MissionDefault
+                {
+                        end1 = _B05_kvilda_spoon;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B04_amber_harvest;
+                        template = _B04_amber_harvest.noe;
+                };
+                class _B05_kvilda_spoon: MissionDefault
+                {
+                        end1 = _B06_scud_hunt_2_day_1;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B05_kvilda_spoon;
+                        template = _B05_kvilda_spoon.noe;
+                };
+                class _B06_scud_hunt_2_day_1: MissionDefault
+                {
+                        end1 = _B07_scud_hunt_2_day_2;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B06_scud_hunt_2_day_1;
+                        template = _B06_scud_hunt_2_day_1.noe;
+                };
+                class _B07_scud_hunt_2_day_2: MissionDefault
+                {
+                        end1 = _B08_scud_hunt_2_day_3;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B07_scud_hunt_2_day_2;
+                        template = _B07_scud_hunt_2_day_2.noe;
+                };
+                class _B08_scud_hunt_2_day_3: MissionDefault
+                {
+                        end1 = _B09_high_stakes;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B08_scud_hunt_2_day_3;
+                        template = _B08_scud_hunt_2_day_3.Noe;
+                };
+                class _B09_high_stakes: MissionDefault
+                {
+                        end1 = _B10_angel_sword;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B09_high_stakes;
+                        template = _B09_high_stakes.noe;
+                };
+                class _B10_angel_sword: MissionDefault
+                {
+                        end1 = _B11_infinite_jewel;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B10_angel_sword;
+                        template = _B10_angel_sword.noe;
+                };
+                class _B11_infinite_jewel: MissionDefault
+                {
+                        end1 = _B12_white_knight;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B11_infinite_jewel;
+                        template = _B11_infinite_jewel.noe;
+                };
+                class _B12_white_knight: MissionDefault
+                {
+                        end1 = _B13_santas_bag;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B12_white_knight;
+                        template = _B12_white_knight.noe;
+                };
+                class _B13_santas_bag: MissionDefault
+                {
+                        end1 = _B14_eagle_nest;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B13_santas_bag;
+                        template = _B13_santas_bag.noe;
+                };
+                class _B14_eagle_nest: MissionDefault
+                {
+                        end1 = _B15_ghost_guard;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B14_eagle_nest;
+                        template = _B14_eagle_nest.noe;
+                };
+                class _B15_ghost_guard: MissionDefault
+                {
+                        end1 = _B16_nogova_star;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B15_ghost_guard;
+                        template = _B15_ghost_guard.noe;
+                };
+                class _B16_nogova_star: MissionDefault
+                {
+                        end1 = _B17_big_horizon;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B16_nogova_star;
+                        template = _B16_nogova_star.noe;
+                };
+                class _B17_big_horizon: MissionDefault
+                {
+                        end1 = _B18_bear_lash;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B17_big_horizon;
+                        template = _B17_big_horizon.noe;
+                };
+                class _B18_bear_lash: MissionDefault
+                {
+                        end1 = _B19_sky_eye;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B18_bear_lash;
+                        template = _B18_bear_lash.noe;
+                };
+                class _B19_sky_eye: MissionDefault
+                {
+                        end1 = _B20_nogova_new_year;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B19_sky_eye;
+                        template = _B19_sky_eye.noe;
+                };
+                class _B20_nogova_new_year: MissionDefault
+                {
+                        end1 = _B21_northern_wind;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B20_nogova_new_year;
+                        template = _B20_nogova_new_year.noe;
+                };
+                class _B21_northern_wind: MissionDefault
+                {
+                        end1 = _B22_private_property;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B21_northern_wind;
+                        template = _B21_northern_wind.noe;
+                };
+                class _B22_private_property: MissionDefault
+                {
+                        end1 = _B23_combat_desire;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B22_private_property;
+                        template = _B22_private_property.noe;
+                };
+                class _B23_combat_desire: MissionDefault
+                {
+                        end1 = _B24_lazy_dog;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B23_combat_desire;
+                        template = _B23_combat_desire.Noe;
+                };
+                class _B24_lazy_dog: MissionDefault
+                {
+                        end1 = _B25_square_matrix;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B24_lazy_dog;
+                        template = _B24_lazy_dog.Noe;
+                };
+                class _B25_square_matrix: MissionDefault
+                {
+                        end1 = _B26_unforgiving_hawk;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B25_square_matrix;
+                        template = _B25_square_matrix.noe;
+                };
+                class _B26_unforgiving_hawk: MissionDefault
+                {
+                        end1 = _B27_silent_sparrow;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B26_unforgiving_hawk;
+                        template = _B26_unforgiving_hawk.noe;
+                };
+                class _B27_silent_sparrow: MissionDefault
+                {
+                        end1 = _B28_viper_strike;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B27_silent_sparrow;
+                        template = _B27_silent_sparrow.noe;
+                };
+                class _B28_viper_strike: MissionDefault
+                {
+                        end1 = _B29_awake_prophet;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B28_viper_strike;
+                        template = _B28_viper_strike.noe;
+                };
+                class _B29_awake_prophet: MissionDefault
+                {
+                        end1 = _B30_blood_tide;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B29_awake_prophet;
+                        template = _B29_awake_prophet.noe;
+                };
+                class _B30_blood_tide: MissionDefault
+                {
+                        end1 = _B31_party_night;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B30_blood_tide;
+                        template = _B30_blood_tide.noe;
+                };
+                class _B31_party_night: MissionDefault
+                {
+                        end1 = _B32_distant_glow;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B31_party_night;
+                        template = _B31_party_night.Noe;
+                };
+                class _B32_distant_glow: MissionDefault
+                {
+                        end1 = _B33_silver_anvil;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B32_distant_glow;
+                        template = _B32_distant_glow.Noe;
+                };
+                class _B33_silver_anvil: MissionDefault
+                {
+                        end1 = _B34_sharp_force;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B33_silver_anvil;
+                        template = _B33_silver_anvil.noe;
+                };
+                class _B34_sharp_force: MissionDefault
+                {
+                        end1 = _B35_bat_eye;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B34_sharp_force;
+                        template = _B34_sharp_force.noe;
+                };
+                class _B35_bat_eye: MissionDefault
+                {
+                        end1 = _B36_silent_python;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B35_bat_eye;
+                        template = _B35_bat_eye.noe;
+                };
+                class _B36_silent_python: MissionDefault
+                {
+                        end1 = _B37_protector;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B36_silent_python;
+                        template = _B36_silent_python.noe;
+                };
+                class _B37_protector: MissionDefault
+                {
+                        end1 = _B38_steel_uniform;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B37_protector;
+                        template = _B37_protector.noe;
+                };
+                class _B38_steel_uniform: MissionDefault
+                {
+                        end1 = _B39_cosmopolitan_order;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B38_steel_uniform;
+                        template = _B38_steel_uniform.noe;
+                };
+                class _B39_cosmopolitan_order: MissionDefault
+                {
+                        end1 = _B40_vigilant_cobra;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B39_cosmopolitan_order;
+                        template = _B39_cosmopolitan_order.noe;
+                };
+                class _B40_vigilant_cobra: MissionDefault
+                {
+                        end1 = _B41_freedom;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B40_vigilant_cobra;
+                        template = _B40_vigilant_cobra.Noe;
+                };
+                class _B41_freedom: MissionDefault
+                {
+                        end1 = _B41_Xthe_end;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = _B41_freedom;
+                        template = _B41_freedom.noe;
+                };
+                class _B41_Xthe_end: MissionDefault
+                {
+                        end1 = ;
+                        end2 = ;
+                        end3 = ;
+                        end4 = ;
+                        end5 = ;
+                        end6 = ;
+                        lost = ;
+                        template = _B41_Xthe_end.noe;
+                };
+	};	
+};

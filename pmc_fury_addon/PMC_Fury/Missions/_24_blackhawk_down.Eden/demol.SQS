@@ -1,0 +1,60 @@
+unassignvehicle demol;
+
+;
+; grab the downed helo coordinates
+;
+_dx=getpos vehicle dhelo select 0;
+_dy=getpos vehicle dhelo select 1;
+
+;
+; move to downed blackhawk
+;
+demol domove [_dx,_dy];
+;hint format ["domove komento dx: %1 ja dy: %2\nmut _x: %3 ja _y: %4",_dx,_dy,_x,_y];
+;
+; wait until demo guy is there
+;
+@unitready demol;
+;hint "ok unitready ajettu...";
+
+;
+; place satchel charge
+;
+demol fire ["pipebombmuzzle", "pipebombmuzzle", "pipebomb"];
+@unitready demol;
+demol fire ["pipebombmuzzle", "pipebombmuzzle", "pipebomb"];
+@unitready demol;
+;
+; assign him back to rescue chopper
+;
+demol assignascargo rescue;
+
+;hint "pipepombit ajettu JA assignattu cargoksi"
+;
+; order him get back onboard
+;
+[demol] ordergetin true;
+
+_dx=getpos vehicle rescue select 0;
+_dy=getpos vehicle rescue select 1;
+
+demol domove [_dx,_dy];
+@unitready demol;
+
+
+;hint "ordergetin true komento ajettu";
+;
+; wait until hes onboard
+;
+@unitready demol;
+
+;hint "demomies sisalla kopterissa... VENAA 10 SEC!";
+;
+; ten seconds to kaboom
+;
+~10
+;
+; detonate satchel charges
+;
+demol action ["touchoff", demol];
+;hint "describancy propability zero, clean detonation. have a nice day."

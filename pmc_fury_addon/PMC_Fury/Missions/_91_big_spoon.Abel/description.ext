@@ -1,0 +1,44 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Big Spoon";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Attack to Goisse";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+
+	class Rallgone
+	{
+		name = "Rallgone";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rallgone;
+	};
+
+	class Rsetupdefense
+	{
+		name = "Rsetupdefense";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rsetupdefense;
+	};
+
+	class Rmcomplete
+	{
+		name = "Rmcomplete";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rmcomplete;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

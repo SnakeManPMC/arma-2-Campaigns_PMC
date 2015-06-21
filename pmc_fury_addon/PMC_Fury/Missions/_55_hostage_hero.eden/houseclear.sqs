@@ -1,0 +1,22 @@
+;
+; casualties radio
+;
+?(!alive bop1 OR !alive bop2): player sideradio "Rhclear1";
+
+;
+; normal clear radio
+;
+?(alive bop1 AND alive bop2): player sideradio "Rhclear2";
+
+houseclear=true;
+
+snipa1 setbehaviour "aware"
+snipa2 setbehaviour "aware"
+
+snipa1 setunitpos "auto";
+snipa2 setunitpos "auto";
+
+snipa1 domove getpos lutka;
+snipa2 domove getpos lutka2;
+
+exit

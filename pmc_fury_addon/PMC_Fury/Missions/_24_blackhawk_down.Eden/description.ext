@@ -1,0 +1,40 @@
+respawn = "group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Blackhawk Down";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Friendlies are down...";
+showgps=1;
+
+class CfgRadio
+{
+	sounds[] = { };
+	
+	class Rbhdown
+	{
+		name = "Rbhdown";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rbhdown;
+	};
+	class Rhqreply
+	{
+		name = "Rhqreply";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rhqreply;
+	};
+	class Rsmoke
+	{
+		name = "Rsmoke";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rsmoke;
+	};
+	class Rdemol
+	{
+		name = "Rdemol";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rdemol;
+	};
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

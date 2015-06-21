@@ -1,0 +1,56 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+; flag start shot
+_camera camSetTarget [-10610.03,-95732.64,4805.58]
+_camera camSetPos [9118.56,2187.42,5.86]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track8",0]
+
+titlecut ["","BLACK IN",5];
+~5
+
+; se soldier shot
+_camera camSetTarget [81238.70,71300.67,-3895.51]
+_camera camSetPos [9079.68,2181.93,1.30]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; flag soldiers shot
+_camera camSetTarget [-72350.70,59912.45,-5295.21]
+_camera camSetPos [9126.67,2183.03,4.38]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; ne barracuda shot
+_camera camSetTarget [-66214.62,-63135.99,-7115.48]
+_camera camSetPos [9127.77,2224.23,1.06]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

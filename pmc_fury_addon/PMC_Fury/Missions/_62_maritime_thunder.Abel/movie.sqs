@@ -1,0 +1,52 @@
+; camera basic initialization
+_camera = "camera" camCreate [5199.80,844.87,1.81]
+_camera camSetTarget [-8174.99,99933.61,1.81]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track1",0]
+
+
+titlecut ["","BLACK IN",2];
+~10
+
+;look right
+_camera camSetTarget [100155.91,32203.10,2.21]
+_camera camSetPos [5199.80,844.87,2.21]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+
+
+; wide shot into ocean
+_camera camSetTarget [90714.13,-50598.24,-5380.90]
+_camera camSetPos [5167.48,907.07,1.89]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+;look left into beach
+_camera camSetTarget [1423.53,100715.93,-5381.82]
+_camera camSetPos [5157.49,931.19,9.20]
+_camera camSetFOV 0.700
+_camera camCommit 7
+@camCommitted _camera
+~1
+
+
+4 fademusic 0;
+~5
+
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

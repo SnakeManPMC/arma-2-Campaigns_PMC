@@ -1,0 +1,37 @@
+respawn="group";
+
+// Title that appears on screen in briefing
+onLoadIntro="Intense Zone";
+
+// Title that appears on screen at beginning of mission
+onLoadMission="Malden Mountains...";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class Reastdead
+	{
+		name = "Reastdead";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Reastdead;
+	};
+
+	class Rinposition
+	{
+		name = "Rinposition";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rinposition;
+	};
+
+	class Rsendingbackup
+	{
+		name = "Rsendingbackup";
+		sound[] = {"", db+0, 1.0};
+		title = $STRM_Rsendingbackup;
+	};
+
+};
+
+#include "\pmc\pmc_fury_addon\pmc_fury\scripts\gear.hpp"

@@ -1,0 +1,86 @@
+; still 1
+_camera = "camera" camCreate [4903.48,11516.35,4.93]
+_camera camSetTarget [4903.48,111516.35,25.03]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~6
+
+;=== 11:08:15
+_camera camSetTarget [22893.15,108602.34,-16307.15]
+_camera camSetPos [4885.47,11602.98,4.85]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+
+;=== 11:08:32
+_camera camSetTarget [-38050.47,-76819.05,-17828.16]
+_camera camSetPos [4892.38,11707.86,6.21]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+
+;=== 11:08:43
+_camera camSetTarget [38918.68,-80569.48,-17832.85]
+_camera camSetPos [4869.78,11743.03,6.21]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; truck shot
+_camera camSetTarget truu
+_camera camSetRelPos [20,20,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~7
+
+
+; helo shot
+_camera camSetTarget [-5648.48,110310.23,-13264.70]
+_camera camSetPos [4880.71,11758.21,2.55]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; gunner
+_camera camSetTarget [6638.77,107612.05,28507.29]
+_camera camSetPos [4874.86,11770.50,1.07]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+; pilot
+_camera camSetTarget [103133.48,415.56,14721.38]
+_camera camSetPos [4873.48,11773.01,1.72]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~2
+
+; helo
+_camera camSetTarget helo
+_camera camSetRelPos [20,20,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+
+
+titlecut ["","BLACK OUT",3];
+~3
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

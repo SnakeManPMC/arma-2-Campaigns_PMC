@@ -1,0 +1,123 @@
+;
+; assault command to A-10 and gunships
+;
+Assault_Is_Go=true;
+
+;
+; send black hawks on their way
+;
+helo1 setfuel 1;
+helo2 setfuel 2;
+
+;
+; first strike TANKS
+;
+_x=getpos vehicle leader rustanks1 select 0;
+_y=getpos vehicle leader rustanks1 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+~1
+
+_x=getpos vehicle leader rustanks1 select 0;
+_y=getpos vehicle leader rustanks1 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+
+~5
+
+_x=getpos vehicle leader rustanks2 select 0;
+_y=getpos vehicle leader rustanks2 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+~1
+
+_x=getpos vehicle leader rustanks2 select 0;
+_y=getpos vehicle leader rustanks2 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+
+;
+; first strike INFANTRY
+;
+~5
+_x=getpos vehicle leader rusinf1 select 0;
+_y=getpos vehicle leader rusinf1 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+~1
+
+_x=getpos vehicle leader rusinf1 select 0;
+_y=getpos vehicle leader rusinf1 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+
+;
+; first strike HOUSE
+;
+~5
+_x=getpos vehicle TargetHouse select 0;
+_y=getpos vehicle TargetHouse select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+~1
+
+_x=getpos vehicle TargetHouse select 0;
+_y=getpos vehicle TargetHouse select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+;
+; second strike TANKS
+;
+~10
+_x=getpos vehicle leader rustanks1 select 0;
+_y=getpos vehicle leader rustanks1 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+~1
+
+_x=getpos vehicle leader rustanks1 select 0;
+_y=getpos vehicle leader rustanks1 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+
+~5
+
+_x=getpos vehicle leader rustanks2 select 0;
+_y=getpos vehicle leader rustanks2 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+~1
+
+_x=getpos vehicle leader rustanks2 select 0;
+_y=getpos vehicle leader rustanks2 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+;
+; second strike INFANTRY
+;
+~10
+_x=getpos vehicle leader rusinf1 select 0;
+_y=getpos vehicle leader rusinf1 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+~1
+
+_x=getpos vehicle leader rusinf1 select 0;
+_y=getpos vehicle leader rusinf1 select 1;
+
+"laserguidedbomb" camcreate [_x,_y,280];
+
+exit

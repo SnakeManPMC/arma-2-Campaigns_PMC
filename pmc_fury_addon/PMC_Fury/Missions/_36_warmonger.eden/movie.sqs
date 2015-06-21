@@ -1,0 +1,248 @@
+; camera basic initialization
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
+
+; start
+_camera camSetTarget [35442.66,99817.19,11105.79]
+_camera camSetPos [6894.26,4618.05,0.34]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+playmusic ["track6",0]
+
+titlecut ["","BLACK IN",5];
+~3
+
+; move slowly towards roadblock
+_camera camSetTarget [35442.66,99817.19,11106.09]
+_camera camSetPos [6902.82,4646.62,0.63]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~1
+
+titleText ["NATO battle positions","PLAIN DOWN",3]
+~5
+
+; start 2
+_camera camSetTarget [95435.16,-40985.99,-7968.85]
+_camera camSetPos [6857.56,4723.84,10.24]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+; move slowely
+_camera camSetTarget [95435.16,-40985.99,-7969.30]
+_camera camSetPos [6900.76,4701.55,6.29]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+~1
+
+
+; start mines
+_camera camSetTarget [-92275.15,3914.15,-11414.35]
+_camera camSetPos [7055.83,4848.17,0.76]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+; move slowly
+_camera camSetTarget [-80958.57,4020.56,-47387.83]
+_camera camSetPos [7044.51,4848.07,2.61]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+; move 2
+_camera camSetTarget [-84216.95,17000.31,-38949.68]
+_camera camSetPos [7025.58,4850.94,1.32]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+
+; move 3
+_camera camSetTarget [-63442.84,-54399.33,-38956.64]
+_camera camSetPos [7011.58,4840.91,1.16]
+_camera camSetFOV 0.700
+_camera camCommit 5
+@camCommitted _camera
+~1
+
+
+; upper start
+_camera camSetTarget [-62396.62,-65109.97,-16141.57]
+_camera camSetPos [7087.23,4946.59,6.27]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+; upper move
+_camera camSetTarget [-62396.62,-65109.97,-16141.49]
+_camera camSetPos [6996.70,4855.30,24.35]
+_camera camSetFOV 0.700
+_camera camCommit 10
+@camCommitted _camera
+
+; battle lines start
+_camera camSetTarget [-26093.89,-81335.70,-38315.91]
+_camera camSetPos [6977.92,4860.73,28.74]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+; battle lines move
+_camera camSetTarget [-28453.69,-82703.07,-33135.61]
+_camera camSetPos [6916.98,4694.92,21.02]
+_camera camSetFOV 0.700
+_camera camCommit 15
+@camCommitted _camera
+~1
+
+; good massiveh
+playmusic ["track9",0]
+
+aten setfuel 1
+
+; aten shot
+_camera camSetTarget aten
+_camera camSetRelPos [20,30,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+helo2 setfuel 1
+~1
+helo1 setfuel 1
+
+~5
+
+; helo 1 shot
+_camera camSetTarget helo1
+_camera camSetRelPos [10,10,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+; helo 2 shot
+_camera camSetTarget helo2
+_camera camSetRelPos [30,10,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+_count=0
+#helo1loop1
+~.001
+_count=_count+1
+_camera camSetTarget helo1
+_camera camSetRelPos [10,10,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+?(_count < 200): goto "helo1loop1"
+
+
+; helo 2 shot
+_camera camSetTarget helo2
+_camera camSetRelPos [-30,10,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~5
+
+_count=0
+#helo2loop1
+~.001
+_count=_count+1
+_camera camSetTarget helo2
+_camera camSetRelPos [-5,10,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+?(_count < 200): goto "helo2loop1"
+
+; helo 2 shot
+_camera camSetTarget helo2
+_camera camSetRelPos [30,10,5]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+
+; aten2 shot
+_camera camSetTarget aten2
+_camera camSetRelPos [100,100,0]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; aten2 shot
+_camera camSetTarget aten2
+_camera camSetRelPos [-100,100,0]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; aten2 shot
+_camera camSetTarget aten2
+_camera camSetRelPos [50,100,0]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+_count=0
+#atenloop
+~.001
+_count=_count+1
+_camera camSetTarget aten2
+_camera camSetRelPos [5,3,2]
+_camera camSetFOV 0.700
+_camera camCommit 0
+?(_count < 200): goto "atenloop"
+
+
+; assault2
+_camera camSetTarget leader assault2
+_camera camSetRelPos [10,10,4]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~3
+
+; m1a1s tanks
+_camera camSetTarget leader m1a1s
+_camera camSetRelPos [0,4,0]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+
+; hillmech shot
+_camera camSetTarget leader hillmech
+_camera camSetRelPos [0,3,1]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+~4
+
+
+3 fademusic 0;
+
+titlecut ["","BLACK OUT",3];
+~5
+
+; Destroy the camera
+camDestroy _camera
+
+; end the intro
+endcut=true
+
+; Exit this script
+exit

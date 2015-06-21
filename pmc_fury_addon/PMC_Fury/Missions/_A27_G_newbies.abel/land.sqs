@@ -1,0 +1,43 @@
+;
+; get people out
+;
+helo land "land";
+
+#landing
+~.5
+
+_z = getpos vehicle helo select 2;
+
+;
+; loop until helo height is 2 meters.
+;
+?(_z > 2): goto "landing"
+
+helo flyinheight 0;
+~5
+
+helo setfuel 0;
+
+player action ["eject",helo];
+
+
+;
+; wait until whole squad is on board.
+;
+_A = 0;
+
+#WAITING2
+_listunits = units assault1;
+_B = count _listunits
+~1
+?(_listunits select _A in helo): _A=_A+1
+?(_B > _A): goto "WAITING2"
+
+helo sideradio "Rkolgujev";
+
+helo flyinheight 50;
+helo setfuel 1;
+
+"2" objstatus "DONE";
+
+exit

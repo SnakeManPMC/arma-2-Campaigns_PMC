@@ -1,0 +1,14 @@
+_x=getpos vehicle bots select 0;
+_y=getpos vehicle bots select 1;
+_z=getpos vehicle bots select 2;
+
+_num=0;
+
+#here
+~0.01
+_num=_num+1;
+_y=_y-.1;
+
+bots setpos [_x,_y,_z];
+
+?(_num < 2500): goto "here";
