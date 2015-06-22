@@ -14,7 +14,7 @@ Another day, another AA Site, Hooyah!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from base. Helicopter
 will <marker name = 'insert'>insert</marker> them south of 
@@ -26,7 +26,7 @@ to call helicopter.
 
 
 
-Silver Obelisk
+<br/>Silver Obelisk<br/><br/>
 
 GEN SITREP<br/>
 After our forces captured the small island on east, we can now have very good
@@ -75,7 +75,7 @@ the Blackhawk arrives and you're done with this one.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Return to base"];
-_objective1 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-_objective0 = player createSimpleTask ["Neutralize AA Site"];
-_objective0 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];
+objective2 = player createSimpleTask ["Return to base"];
+objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective1 = player createSimpleTask ["Neutralize AA Site"];
+objective1 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];

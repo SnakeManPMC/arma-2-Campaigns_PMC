@@ -14,14 +14,14 @@ Damn, counter attack!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> at Houdan. Repel the 
 Russian counter <marker name = 'attack'>attack</marker> and defend Houdan at all costs!
 
 
 
-Bright Switch
+<br/>Bright Switch<br/><br/>
 
 GEN SITREP<br/>
 Russians are mounting a heavy counter attack to Houdan. We must repel it before we 
@@ -59,5 +59,5 @@ also <marker name = 'ammo'>ammo</marker> boxes so use them how you see fit.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Repel counter attack."];
-_objective0 setSimpleTaskDescription ["Repel counter attack.", "Repel counter attack.", "Repel counter attack."];
+objective1 = player createSimpleTask ["Repel counter attack."];
+objective1 setSimpleTaskDescription ["Repel counter attack.", "Repel counter attack.", "Repel counter attack."];

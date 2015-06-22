@@ -19,7 +19,7 @@ territory.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 The teams start at the <marker name = 'start'>Airbase</marker> you'll get inserted into 
 the <marker name = 'lz1'>LZ #1</marker>. Swept the <marker name = 'clear1'>area</marker> for 
@@ -30,7 +30,7 @@ Lamentin <marker name = 'attack'>here</marker>.
 
 
 
-Lamentin
+<br/>Lamentin<br/><br/>
 
 NATO Headquarters is very pleased with the superb performance of the rescue operation
 yesterday. We are very happy to get our guys back home. We are moving along the coastline
@@ -68,7 +68,7 @@ objective is to attack and secure the <marker name = 'attack'>Lamentin</marker>.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Secure Lamentin"];
-_objective1 setSimpleTaskDescription ["Secure Lamentin", "Secure Lamentin", "Secure Lamentin"];
-_objective0 = player createSimpleTask ["Clear area"];
-_objective0 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];
+objective2 = player createSimpleTask ["Secure Lamentin"];
+objective2 setSimpleTaskDescription ["Secure Lamentin", "Secure Lamentin", "Secure Lamentin"];
+objective1 = player createSimpleTask ["Clear area"];
+objective1 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];

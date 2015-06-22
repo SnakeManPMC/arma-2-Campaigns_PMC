@@ -16,7 +16,7 @@ Beach preparation, Malden Invasion begins here.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha and Charlie <marker name = 'start'>start</marker> from the beach. Proceed
 and clear the <marker name = 'target'>beach</marker> and keep it clear until
@@ -27,7 +27,7 @@ Good luck.
 
 
 
-Maritime Thunder
+<br/>Maritime Thunder<br/><br/>
 
 GEN SITREP<br/>
 Our diversion worked. Lot of enemy armor and presonell are being moved into the
@@ -74,7 +74,7 @@ aircrafts.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Secure it until Vulcans arrive"];
-_objective1 setSimpleTaskDescription ["Secure it until Vulcans arrive", "Secure it until Vulcans arrive", "Secure it until Vulcans arrive"];
-_objective0 = player createSimpleTask ["Clear the beach"];
-_objective0 setSimpleTaskDescription ["Clear the beach", "Clear the beach", "Clear the beach"];
+objective2 = player createSimpleTask ["Secure it until Vulcans arrive"];
+objective2 setSimpleTaskDescription ["Secure it until Vulcans arrive", "Secure it until Vulcans arrive", "Secure it until Vulcans arrive"];
+objective1 = player createSimpleTask ["Clear the beach"];
+objective1 setSimpleTaskDescription ["Clear the beach", "Clear the beach", "Clear the beach"];

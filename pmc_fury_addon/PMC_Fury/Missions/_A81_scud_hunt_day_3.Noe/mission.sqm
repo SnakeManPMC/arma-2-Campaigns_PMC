@@ -2226,7 +2226,7 @@ class Mission
 			activationBy="ALPHA";
 			age="UNKNOWN";
 			text="null";
-			expActiv="leader assault1 sideRadio ""Rcallext""; helo setfuel 1; ""2"" objStatus ""DONE"";";
+			expActiv="leader assault1 sideRadio ""Rcallext""; helo setfuel 1; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -2271,7 +2271,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq scud reply";
 			expCond="PMCscuds1";
-			expActiv="PAPABEAR sideRadio ""Rhqscuds""; ""1"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideRadio ""Rhqscuds""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

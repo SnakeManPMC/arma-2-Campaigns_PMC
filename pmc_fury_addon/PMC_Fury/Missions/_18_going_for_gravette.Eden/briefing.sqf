@@ -18,14 +18,14 @@ Okay so we are jumping right into the Gravette, quite fast come to think of it.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Capture city of <marker name = 'gravette'>Gravette</marker>
 
 
 
 
-The Gravette
+<br/>The Gravette<br/><br/>
 
 Gravette is the only populated area between the hospital and Montignac. Our near goals are
 to take Gravette and the woods leading to the road coming from Montignac.
@@ -50,5 +50,5 @@ the Russian forces are taken by surprise with the hospital attack.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Seize Gravette"];
-_objective0 setSimpleTaskDescription ["Seize Gravette", "Seize Gravette", "Seize Gravette"];
+objective1 = player createSimpleTask ["Seize Gravette"];
+objective1 setSimpleTaskDescription ["Seize Gravette", "Seize Gravette", "Seize Gravette"];

@@ -18,7 +18,7 @@ Russians, lets hit the road!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from ruins, assault
 and capture enemy <marker name = 'target1'>base</marker> in the west
@@ -26,7 +26,7 @@ coast.
 
 
 
-Urgent Fox
+<br/>Urgent Fox<br/><br/>
 
 GEN SITREP<br/>
 Today we initiate operation to capture enemys only base in the west coast of 
@@ -70,5 +70,5 @@ tanks. Do not get yourself killed over there.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture base"];
-_objective0 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
+objective1 = player createSimpleTask ["Capture base"];
+objective1 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];

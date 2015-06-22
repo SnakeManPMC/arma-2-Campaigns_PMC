@@ -17,14 +17,14 @@ over. Dunno what they want us to do after that. At least there are tanks coming 
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Your team is securing the Gas Station <marker name = 'start'>here</marker>,
 wait for reinforcements. They will give new orders to your team. 
 
 
 
-Refueling tanks
+<br/>Refueling tanks<br/><br/>
 
 We are in the preparations for assault on city of Meaux. We still need to get last 
 remaining forces together.
@@ -51,7 +51,7 @@ relieve you. They will give you further orders, be prepared to follow them out.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Assault and Capture Meaux Intel"];
-_objective1 setSimpleTaskDescription ["Assault and Capture Meaux Intel", "Assault and Capture Meaux Intel", "Assault and Capture Meaux Intel"];
-_objective0 = player createSimpleTask ["Follow orders"];
-_objective0 setSimpleTaskDescription ["Follow orders", "Follow orders", "Follow orders"];
+objective2 = player createSimpleTask ["Assault and Capture Meaux Intel"];
+objective2 setSimpleTaskDescription ["Assault and Capture Meaux Intel", "Assault and Capture Meaux Intel", "Assault and Capture Meaux Intel"];
+objective1 = player createSimpleTask ["Follow orders"];
+objective1 setSimpleTaskDescription ["Follow orders", "Follow orders", "Follow orders"];

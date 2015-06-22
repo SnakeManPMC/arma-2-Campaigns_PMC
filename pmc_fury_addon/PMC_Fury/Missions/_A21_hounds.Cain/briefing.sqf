@@ -14,7 +14,7 @@ Two intersections or road blocks that we must seize. Should be pretty easy.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from base, capture
 the <marker name = 'target1'>road block #1</marker> in north and
@@ -22,7 +22,7 @@ also <marker name = 'target2'>road block #1</marker> in the south.
 
 
 
-Hounds
+<br/>Hounds<br/><br/>
 
 GEN SITREP<br/>
 Vulcans have arrived to Kolgujev. The Russians have little surprise waiting
@@ -67,7 +67,7 @@ of ones day. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture road block #2"];
-_objective1 setSimpleTaskDescription ["Capture road block #2", "Capture road block #2", "Capture road block #2"];
-_objective0 = player createSimpleTask ["Capture road block #1"];
-_objective0 setSimpleTaskDescription ["Capture road block #1", "Capture road block #1", "Capture road block #1"];
+objective2 = player createSimpleTask ["Capture road block #2"];
+objective2 setSimpleTaskDescription ["Capture road block #2", "Capture road block #2", "Capture road block #2"];
+objective1 = player createSimpleTask ["Capture road block #1"];
+objective1 setSimpleTaskDescription ["Capture road block #1", "Capture road block #1", "Capture road block #1"];

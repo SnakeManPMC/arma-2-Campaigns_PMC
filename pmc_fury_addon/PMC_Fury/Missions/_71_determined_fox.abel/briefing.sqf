@@ -14,14 +14,14 @@ Gotta be careful with this one, the darkness and woods make me crazy...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Cancon, proceeds to the
 woods and <marker name = 'target'>search and destroy</marker> all Russians.
 
 
 
-Determined Fox
+<br/>Determined Fox<br/><br/>
 
 GEN SITREP<br/>
 We are setting up for another advancement which will take place in tomorrow 
@@ -64,5 +64,5 @@ thats located there.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Search and Destroy infantry"];
-_objective0 setSimpleTaskDescription ["Search and Destroy infantry", "Search and Destroy infantry", "Search and Destroy infantry"];
+objective1 = player createSimpleTask ["Search and Destroy infantry"];
+objective1 setSimpleTaskDescription ["Search and Destroy infantry", "Search and Destroy infantry", "Search and Destroy infantry"];

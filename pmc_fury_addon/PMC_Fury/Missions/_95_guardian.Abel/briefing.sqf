@@ -16,7 +16,7 @@ things... I just blow russians away... hmm.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 You are bodyguard for our Colonel and <marker name = 'start'>start</marker> from base.
 Travel with him to the <marker name = 'insert'>chapoi</marker> where he gives 
@@ -26,7 +26,7 @@ Stay sharp.
 
 
 
-Guardian
+<br/>Guardian<br/><br/>
 
 GEN SITREP<br/>
 Our Colonel is handeling some Malden public relations and hes making a speech in
@@ -68,5 +68,5 @@ See ya later.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Keep Colonel safe."];
-_objective0 setSimpleTaskDescription ["Keep Colonel safe.", "Keep Colonel safe.", "Keep Colonel safe."];
+objective1 = player createSimpleTask ["Keep Colonel safe."];
+objective1 setSimpleTaskDescription ["Keep Colonel safe.", "Keep Colonel safe.", "Keep Colonel safe."];

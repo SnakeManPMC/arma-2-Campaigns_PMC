@@ -25,7 +25,7 @@ Welcome back.
 
 
 
-Fire Flash
+<br/>Fire Flash<br/><br/>
 
 GEN SITREP<br/>
 We like to welcome back ALPHA BLACK ONE. He was one of the prisoners of war who
@@ -120,7 +120,7 @@ Back to War Situation
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Read new orders "];
-_objective1 setSimpleTaskDescription ["Read new orders ", "Read new orders ", "Read new orders "];
-_objective0 = player createSimpleTask ["Get new orders from Colonel"];
-_objective0 setSimpleTaskDescription ["Get new orders from Colonel", "Get new orders from Colonel", "Get new orders from Colonel"];
+objective2 = player createSimpleTask ["Read new orders "];
+objective2 setSimpleTaskDescription ["Read new orders ", "Read new orders ", "Read new orders "];
+objective1 = player createSimpleTask ["Get new orders from Colonel"];
+objective1 setSimpleTaskDescription ["Get new orders from Colonel", "Get new orders from Colonel", "Get new orders from Colonel"];

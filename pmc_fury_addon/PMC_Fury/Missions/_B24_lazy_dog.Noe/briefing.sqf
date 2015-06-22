@@ -15,7 +15,7 @@ nice Nogovian landscape.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, sweep 
 the <marker name = 'target1'>area</marker> around forest road and 
@@ -23,7 +23,7 @@ reach <marker name = 'bravo1'>Bravo's</marker> position.
 
 
 
-Lazy Dog
+<br/>Lazy Dog<br/><br/>
 
 GEN SITREP<br/>
 The area between NATO positions must be swept from any remainin Russians
@@ -62,5 +62,5 @@ as many Russians you can. Have fun.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Sweep area and reach Bravo"];
-_objective0 setSimpleTaskDescription ["Sweep area and reach Bravo", "Sweep area and reach Bravo", "Sweep area and reach Bravo"];
+objective1 = player createSimpleTask ["Sweep area and reach Bravo"];
+objective1 setSimpleTaskDescription ["Sweep area and reach Bravo", "Sweep area and reach Bravo", "Sweep area and reach Bravo"];

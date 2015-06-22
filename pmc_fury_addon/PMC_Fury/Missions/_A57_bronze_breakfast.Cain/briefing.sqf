@@ -14,7 +14,7 @@ Push along the road, advancement as you will... and I do.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, assault through
 the enemy <marker name = 'target1'>positions</marker> and seize 
@@ -22,7 +22,7 @@ the <marker name = 'target2'>intersection</marker> which they are holding.
 
 
 
-Bronze Breakfast
+<br/>Bronze Breakfast<br/><br/>
 
 GEN SITREP<br/>
 This morning we start to push towards west on the paved road near the highest
@@ -63,7 +63,7 @@ distances on some places. Be careful, don't let the enemy flank you. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Seize intersection"];
-_objective1 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];
-_objective0 = player createSimpleTask ["Clear positions"];
-_objective0 setSimpleTaskDescription ["Clear positions", "Clear positions", "Clear positions"];
+objective2 = player createSimpleTask ["Seize intersection"];
+objective2 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];
+objective1 = player createSimpleTask ["Clear positions"];
+objective1 setSimpleTaskDescription ["Clear positions", "Clear positions", "Clear positions"];

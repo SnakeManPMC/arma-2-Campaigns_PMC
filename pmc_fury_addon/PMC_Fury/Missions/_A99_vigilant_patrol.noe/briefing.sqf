@@ -14,14 +14,14 @@ Some mopping up to do today.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Loukov, proceed
 into the <marker name = 'target1'>hilltop</marker> and clear it. 
 
 
 
-Vigilant Patrol
+<br/>Vigilant Patrol<br/><br/>
 
 GEN SITREP<br/>
 Tomorrow we are launching operation against the valley where lot of enemy armor 
@@ -59,7 +59,7 @@ the less. You'll do just fine, tomorrow is a big day so take it easy.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Arrive to Blata"];
-_objective1 setSimpleTaskDescription ["Arrive to Blata", "Arrive to Blata", "Arrive to Blata"];
-_objective0 = player createSimpleTask ["Clear hilltop"];
-_objective0 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];
+objective2 = player createSimpleTask ["Arrive to Blata"];
+objective2 setSimpleTaskDescription ["Arrive to Blata", "Arrive to Blata", "Arrive to Blata"];
+objective1 = player createSimpleTask ["Clear hilltop"];
+objective1 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];

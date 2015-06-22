@@ -18,7 +18,7 @@ require us to abort the mission this time.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Assault <marker name = 'castle'>Castle</marker> and capture it. Your backup is 
 <marker name = 'echoins'>Echo</marker> who will <marker name = 'ambush'>ambush</marker> and cut any
@@ -34,7 +34,7 @@ Good luck!
 
 
 
-King of my Castle
+<br/>King of my Castle<br/><br/>
 
 Our next objective is to capture enemys Commnd and Control site at the hilltop castle. 
 If we manage to take this, it will be severe blow to the Russian communications and 
@@ -93,5 +93,5 @@ backup number two. Be careful out there, this is going to be another dangerous o
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture castle"];
-_objective0 setSimpleTaskDescription ["Capture castle", "Capture castle", "Capture castle"];
+objective1 = player createSimpleTask ["Capture castle"];
+objective1 setSimpleTaskDescription ["Capture castle", "Capture castle", "Capture castle"];

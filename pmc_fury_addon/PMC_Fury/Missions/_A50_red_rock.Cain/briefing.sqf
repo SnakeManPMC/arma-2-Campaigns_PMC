@@ -16,7 +16,7 @@ do to a infantry squad in open area... oh no, I do not even want to imagine that
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from intersection, assault forward
 until you reach the <marker name = 'target1'>objective</marker> point.
@@ -25,7 +25,7 @@ Good luck.
 
 
 
-Red Rock
+<br/>Red Rock<br/><br/>
 
 GEN SITREP<br/>
 We are not ready to take the base in the south, but we must take some ground
@@ -68,5 +68,5 @@ if there is one.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Reach assault point"];
-_objective0 setSimpleTaskDescription ["Reach assault point", "Reach assault point", "Reach assault point"];
+objective1 = player createSimpleTask ["Reach assault point"];
+objective1 setSimpleTaskDescription ["Reach assault point", "Reach assault point", "Reach assault point"];

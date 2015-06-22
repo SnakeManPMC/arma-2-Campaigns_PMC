@@ -16,14 +16,14 @@ killed.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, attack 
 the <marker name = 'target1'>city</marker> and capture it.
 
 
 
-Maritime Light
+<br/>Maritime Light<br/><br/>
 
 GEN SITREP<br/>
 Nearest large enemy city is on the beach, only accessible through the beach road
@@ -66,7 +66,7 @@ do its work first. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Repel counter attacks"];
-_objective1 setSimpleTaskDescription ["Repel counter attacks", "Repel counter attacks", "Repel counter attacks"];
-_objective0 = player createSimpleTask ["Capture the city"];
-_objective0 setSimpleTaskDescription ["Capture the city", "Capture the city", "Capture the city"];
+objective2 = player createSimpleTask ["Repel counter attacks"];
+objective2 setSimpleTaskDescription ["Repel counter attacks", "Repel counter attacks", "Repel counter attacks"];
+objective1 = player createSimpleTask ["Capture the city"];
+objective1 setSimpleTaskDescription ["Capture the city", "Capture the city", "Capture the city"];

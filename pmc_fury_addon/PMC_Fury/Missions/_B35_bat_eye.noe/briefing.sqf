@@ -15,7 +15,7 @@ enemy armored vehicles they can take shots at us from great distance...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Neveklov. Assault
 and capture:<br/>
@@ -27,7 +27,7 @@ Good luck.
 
 
 
-Bat Eye
+<br/>Bat Eye<br/><br/>
 
 GEN SITREP<br/>
 Russians seem to go on totally defensive now in the front lines, they do not
@@ -71,9 +71,9 @@ beginning, you'll be hurting lateron in the open area fights. Make good decision
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Capture Frymburk"];
-_objective2 setSimpleTaskDescription ["Capture Frymburk", "Capture Frymburk", "Capture Frymburk"];
-_objective1 = player createSimpleTask ["Capture Slapy"];
-_objective1 setSimpleTaskDescription ["Capture Slapy", "Capture Slapy", "Capture Slapy"];
-_objective0 = player createSimpleTask ["Capture Kost"];
-_objective0 setSimpleTaskDescription ["Capture Kost", "Capture Kost", "Capture Kost"];
+objective3 = player createSimpleTask ["Capture Frymburk"];
+objective3 setSimpleTaskDescription ["Capture Frymburk", "Capture Frymburk", "Capture Frymburk"];
+objective2 = player createSimpleTask ["Capture Slapy"];
+objective2 setSimpleTaskDescription ["Capture Slapy", "Capture Slapy", "Capture Slapy"];
+objective1 = player createSimpleTask ["Capture Kost"];
+objective1 setSimpleTaskDescription ["Capture Kost", "Capture Kost", "Capture Kost"];

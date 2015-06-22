@@ -15,7 +15,7 @@ nowadays... goddamn, what a bastards.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 We have hostage situation.<br/><br/>
 
@@ -36,7 +36,7 @@ Good luck, all of you.
 
 
 
-POW's as hostages
+<br/>POW's as hostages<br/><br/>
 
 Now your special rescue training comes in use. In the negotiations the Russians made it 
 clear that they will only release few POW's if the NATO forces withdraw from the front.
@@ -84,5 +84,5 @@ camp.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Rescue hostages"];
-_objective0 setSimpleTaskDescription ["Rescue hostages", "Rescue hostages", "Rescue hostages"];
+objective1 = player createSimpleTask ["Rescue hostages"];
+objective1 setSimpleTaskDescription ["Rescue hostages", "Rescue hostages", "Rescue hostages"];

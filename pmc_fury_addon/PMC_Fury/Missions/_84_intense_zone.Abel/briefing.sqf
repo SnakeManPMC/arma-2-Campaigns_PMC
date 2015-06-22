@@ -14,14 +14,14 @@ It takes some time to climb that mountain I tell you...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road and proceeds to 
 capture <marker name = 'target1'>mountain</marker> top. 
 
 
 
-Intense Zone
+<br/>Intense Zone<br/><br/>
 
 GEN SITREP<br/>
 The central mountains of Malden are hideouts for russian infantry and also
@@ -63,7 +63,7 @@ infantry is taken out bravo will join you, wait for them. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Secure it until backup arrives."];
-_objective1 setSimpleTaskDescription ["Secure it until backup arrives.", "Secure it until backup arrives.", "Secure it until backup arrives."];
-_objective0 = player createSimpleTask ["Capture mountain"];
-_objective0 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];
+objective2 = player createSimpleTask ["Secure it until backup arrives."];
+objective2 setSimpleTaskDescription ["Secure it until backup arrives.", "Secure it until backup arrives.", "Secure it until backup arrives."];
+objective1 = player createSimpleTask ["Capture mountain"];
+objective1 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];

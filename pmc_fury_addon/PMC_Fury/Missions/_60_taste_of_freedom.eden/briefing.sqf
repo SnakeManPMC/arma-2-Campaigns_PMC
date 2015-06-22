@@ -24,7 +24,7 @@ Ok, lets go.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha <marker name = 'start'>starts</marker> from Vernon, assaults
 <marker name = 'target'>Sait Pierre</marker> and captures it.
@@ -33,7 +33,7 @@ Alpha <marker name = 'start'>starts</marker> from Vernon, assaults
 
 
 
-Taste of Freedom
+<br/>Taste of Freedom<br/><br/>
 
 We are in verge of pushing the Russians into ocean, the last stand, Saint Pierre. There are
 no other enemy forces in this island, we have cleaned it out completely, these are the 
@@ -84,5 +84,5 @@ Hooyah Soldier!
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Saint Pierre"];
-_objective0 setSimpleTaskDescription ["Capture Saint Pierre", "Capture Saint Pierre", "Capture Saint Pierre"];
+objective1 = player createSimpleTask ["Capture Saint Pierre"];
+objective1 setSimpleTaskDescription ["Capture Saint Pierre", "Capture Saint Pierre", "Capture Saint Pierre"];

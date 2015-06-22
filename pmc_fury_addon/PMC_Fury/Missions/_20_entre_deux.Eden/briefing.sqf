@@ -20,7 +20,7 @@ in place?
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 You begin onboard <marker name = 'start'>UH60</marker> which will insert your 
 team <marker name = 'insertion'>here</marker> where you proceed to 
@@ -30,7 +30,7 @@ Apache gunship support is sent with radio (0-0-1) command.
 
 
 
-Op Entre Deux
+<br/>Op Entre Deux<br/><br/>
 
 Our mission today is to neutralize enemy forces in Entre Deux and take control of that
 city. This is the next eastern city from Montignac where our forces are preparing to
@@ -65,5 +65,5 @@ their <marker name = 'bravo2'>attack</marker> from the west side of the city.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Entre Deux"];
-_objective0 setSimpleTaskDescription ["Capture Entre Deux", "Capture Entre Deux", "Capture Entre Deux"];
+objective1 = player createSimpleTask ["Capture Entre Deux"];
+objective1 setSimpleTaskDescription ["Capture Entre Deux", "Capture Entre Deux", "Capture Entre Deux"];

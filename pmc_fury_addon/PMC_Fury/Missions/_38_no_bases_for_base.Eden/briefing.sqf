@@ -22,7 +22,7 @@ for these sneaky sniper bastards! they are providing us so much cool intel.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Bravo, and Delta team will start <marker name = 'start'>here</marker> in the 
 village of Levie.
@@ -44,7 +44,7 @@ the woods.
 
 
 
-Neutralizing enemy base
+<br/>Neutralizing enemy base<br/><br/>
 
 War continues and we move on. Russians are just sitting as their last attack
 was repelled, there is no indications of new attacks being prepared at this time.
@@ -98,7 +98,7 @@ advancing at this time.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Mop up the rest"];
-_objective1 setSimpleTaskDescription ["Mop up the rest", "Mop up the rest", "Mop up the rest"];
-_objective0 = player createSimpleTask ["Neutralize enemy base"];
-_objective0 setSimpleTaskDescription ["Neutralize enemy base", "Neutralize enemy base", "Neutralize enemy base"];
+objective2 = player createSimpleTask ["Mop up the rest"];
+objective2 setSimpleTaskDescription ["Mop up the rest", "Mop up the rest", "Mop up the rest"];
+objective1 = player createSimpleTask ["Neutralize enemy base"];
+objective1 setSimpleTaskDescription ["Neutralize enemy base", "Neutralize enemy base", "Neutralize enemy base"];

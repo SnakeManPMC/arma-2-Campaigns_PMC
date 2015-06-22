@@ -14,7 +14,7 @@ Hooyah time to kick the russians into the sea! Yeeaah!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from ruins. Assault the
 Russian <marker name = 'target1'>stronghold</marker> and neutralize them all.
@@ -23,7 +23,7 @@ Good luck.
 
 
 
-Weasels
+<br/>Weasels<br/><br/>
 
 GEN SITREP<br/>
 Weather is clear. Our objectives are clear. Ladies and Gentlemen, today NATO will
@@ -70,5 +70,5 @@ will get immediate ling of sight for you at once. Thats lot of fire...
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Neutralize all Russians"];
-_objective0 setSimpleTaskDescription ["Neutralize all Russians", "Neutralize all Russians", "Neutralize all Russians"];
+objective1 = player createSimpleTask ["Neutralize all Russians"];
+objective1 setSimpleTaskDescription ["Neutralize all Russians", "Neutralize all Russians", "Neutralize all Russians"];

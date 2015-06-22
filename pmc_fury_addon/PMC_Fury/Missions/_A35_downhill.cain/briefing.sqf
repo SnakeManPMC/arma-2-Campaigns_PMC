@@ -15,7 +15,7 @@ I never turned down a nice jog.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from the 
 base, <marker name = 'target1'>sweep</marker> the mountain downhill up to 
@@ -23,7 +23,7 @@ the friendly positions in <marker name = 'alpha'>beach</marker> road.
 
 
 
-Downhill
+<br/>Downhill<br/><br/>
 
 GEN SITREP<br/>
 Russians tried to retake the base in the early evening last night, they failed
@@ -70,5 +70,5 @@ that if you slip and fall, you are a dead soldier. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Sweep the mountain"];
-_objective0 setSimpleTaskDescription ["Sweep the mountain", "Sweep the mountain", "Sweep the mountain"];
+objective1 = player createSimpleTask ["Sweep the mountain"];
+objective1 setSimpleTaskDescription ["Sweep the mountain", "Sweep the mountain", "Sweep the mountain"];

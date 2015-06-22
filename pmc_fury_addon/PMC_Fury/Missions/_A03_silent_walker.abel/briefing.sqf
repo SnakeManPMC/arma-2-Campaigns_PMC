@@ -15,7 +15,7 @@ Time to go.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Larche, mission
 objectives are:<br/>
@@ -27,7 +27,7 @@ Good luck.
 
 
 
-Silent Walker
+<br/>Silent Walker<br/><br/>
 
 GEN SITREP<br/>
 Larche defenses are setting up, but no time to sit around. We move forward deeper 
@@ -71,9 +71,9 @@ directly into enemy lap.
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Capture and prep LZ"];
-_objective2 setSimpleTaskDescription ["Capture and prep LZ", "Capture and prep LZ", "Capture and prep LZ"];
-_objective1 = player createSimpleTask ["Clear mountain"];
-_objective1 setSimpleTaskDescription ["Clear mountain", "Clear mountain", "Clear mountain"];
-_objective0 = player createSimpleTask ["Clear intersection"];
-_objective0 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];
+objective3 = player createSimpleTask ["Capture and prep LZ"];
+objective3 setSimpleTaskDescription ["Capture and prep LZ", "Capture and prep LZ", "Capture and prep LZ"];
+objective2 = player createSimpleTask ["Clear mountain"];
+objective2 setSimpleTaskDescription ["Clear mountain", "Clear mountain", "Clear mountain"];
+objective1 = player createSimpleTask ["Clear intersection"];
+objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];

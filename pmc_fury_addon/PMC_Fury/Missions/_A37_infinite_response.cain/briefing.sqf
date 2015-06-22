@@ -16,7 +16,7 @@ my notes!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from the intersection. Assault
 and capture the enemy <marker name = 'target1'>base</marker> in the mountain ridge.
@@ -25,7 +25,7 @@ Good luck.
 
 
 
-Infinite Response
+<br/>Infinite Response<br/><br/>
 
 GEN SITREP<br/>
 The feared weather front is just one day away from the Kolgujev coast now, we will
@@ -63,5 +63,5 @@ TACTICAL<br/>
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture enemy base"];
-_objective0 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
+objective1 = player createSimpleTask ["Capture enemy base"];
+objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];

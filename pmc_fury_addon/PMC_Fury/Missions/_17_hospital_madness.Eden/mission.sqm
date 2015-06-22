@@ -1191,7 +1191,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="1st watch dead";
-			expActiv="leader myteam sideradio ""Rcalltanks""; tankcall=true; ""1"" objstatus ""DONE"";";
+			expActiv="leader myteam sideradio ""Rcalltanks""; tankcall=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1238,7 +1238,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="russians dead";
-			expActiv="PAPABEAR sideradio ""Rsecured""; mcomplete=true; ""2"" objstatus ""DONE"";";
+			expActiv="PAPABEAR sideradio ""Rsecured""; mcomplete=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

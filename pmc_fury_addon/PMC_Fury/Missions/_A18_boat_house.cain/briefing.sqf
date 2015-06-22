@@ -15,7 +15,7 @@ work after that. Time to put this boat house, dock, whatever, out of business.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, assault
 and capture <marker name = 'target1'>boat house</marker> the enemy is
@@ -23,7 +23,7 @@ using to resupply.
 
 
 
-Boat House
+<br/>Boat House<br/><br/>
 
 GEN SITREP<br/>
 We are moving armor and personel to the tank base in the process to speed up
@@ -62,5 +62,5 @@ Stay alert, as usual.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture boat house"];
-_objective0 setSimpleTaskDescription ["Capture boat house", "Capture boat house", "Capture boat house"];
+objective1 = player createSimpleTask ["Capture boat house"];
+objective1 setSimpleTaskDescription ["Capture boat house", "Capture boat house", "Capture boat house"];

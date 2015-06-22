@@ -2528,7 +2528,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="baseclear radio";
-			expActiv="leader assault1 sideradio ""Rbaseclear""; base=true; ""1"" objstatus ""DONE"";";
+			expActiv="leader assault1 sideradio ""Rbaseclear""; base=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -2545,7 +2545,7 @@ class Mission
 			age="UNKNOWN";
 			text="end";
 			expCond="base AND clocker OR base AND (count units reinf1 <3) AND (count units reinf2 <3)";
-			expActiv="""2"" objstatus ""DONE"";";
+			expActiv="objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

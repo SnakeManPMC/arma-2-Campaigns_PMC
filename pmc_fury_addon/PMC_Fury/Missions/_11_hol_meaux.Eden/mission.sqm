@@ -874,7 +874,7 @@ class Mission
 			age="UNKNOWN";
 			text="east dead";
 			expCond="!alive tankster and count units assault1 <1 and count units assault2 <1";
-			expActiv="leader recon1 sideradio ""Reastdead""; eastdead=true; ""1"" objstatus ""DONE"";";
+			expActiv="leader recon1 sideradio ""Reastdead""; eastdead=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

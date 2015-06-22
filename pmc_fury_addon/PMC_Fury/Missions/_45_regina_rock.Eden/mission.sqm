@@ -1691,7 +1691,7 @@ class Mission
 			age="UNKNOWN";
 			text="ending";
 			expCond="westhere AND eastgone";
-			expActiv="PAPABEAR sideradio ""Rcomplete""; ""1"" objstatus ""DONE""; mcomplete=true;";
+			expActiv="PAPABEAR sideradio ""Rcomplete""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};

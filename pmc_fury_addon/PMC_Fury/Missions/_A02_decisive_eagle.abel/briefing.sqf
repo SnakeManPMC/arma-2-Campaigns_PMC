@@ -13,7 +13,7 @@ Larche must fall!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from mountain, assault
 and capture <marker name = 'target1'>Larche</marker> city.
@@ -22,7 +22,7 @@ Good luck!
 
 
 
-Decisive Eagle
+<br/>Decisive Eagle<br/><br/>
 
 GEN SITREP<br/>
 Today we assault city of Larche. Its one of those biggest cities in this island and 
@@ -64,5 +64,5 @@ so well dug in there that they will not give up easily.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Larche"];
-_objective0 setSimpleTaskDescription ["Capture Larche", "Capture Larche", "Capture Larche"];
+objective1 = player createSimpleTask ["Capture Larche"];
+objective1 setSimpleTaskDescription ["Capture Larche", "Capture Larche", "Capture Larche"];

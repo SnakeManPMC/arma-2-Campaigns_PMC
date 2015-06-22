@@ -116,7 +116,7 @@ day9 setpos day9pos
 
 ;hint "waiting for MISSION COMPLETE!"
 ~60
-"1" objstatus "DONE";
+objective1 setTaskState "SUCCEEDED"; [ objNull, objNull, objective1, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
 mcomplete=true;
 
 exit

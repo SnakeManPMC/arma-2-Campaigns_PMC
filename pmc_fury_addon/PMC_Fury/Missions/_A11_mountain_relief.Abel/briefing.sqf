@@ -14,7 +14,7 @@ Those spetz natz guys gives me the creeps.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airbase, sweep 
 the <marker name = 'target1'>mountains #1</marker> 
@@ -22,7 +22,7 @@ and <marker name = 'target2'>mountain #2</marker> for any hiding russians.
 
 
 
-Mountain Relief
+<br/>Mountain Relief<br/><br/>
 
 GEN SITREP<br/>
 Victory, finally Malden is freed from Russian forces. NATO command will congratulate
@@ -64,9 +64,9 @@ to spray bullets in your direction when detected. Stay sharp!
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Return to base"];
-_objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-_objective1 = player createSimpleTask ["Clear mountain #2"];
-_objective1 setSimpleTaskDescription ["Clear mountain #2", "Clear mountain #2", "Clear mountain #2"];
-_objective0 = player createSimpleTask ["Clear mountains #1"];
-_objective0 setSimpleTaskDescription ["Clear mountains #1", "Clear mountains #1", "Clear mountains #1"];
+objective3 = player createSimpleTask ["Return to base"];
+objective3 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective2 = player createSimpleTask ["Clear mountain #2"];
+objective2 setSimpleTaskDescription ["Clear mountain #2", "Clear mountain #2", "Clear mountain #2"];
+objective1 = player createSimpleTask ["Clear mountains #1"];
+objective1 setSimpleTaskDescription ["Clear mountains #1", "Clear mountains #1", "Clear mountains #1"];

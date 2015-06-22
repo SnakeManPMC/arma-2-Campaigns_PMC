@@ -18,7 +18,7 @@ thats me. I'm going to do this one with smile on my face. PAYBACK IS A BITCH!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Find Spez Natz <marker name = 'camp'>camp</marker> and guide air strike to destroy it. You are 
 to remain undetected until air strike. Then return to the <marker name = 'start'>start</marker>
@@ -35,7 +35,7 @@ Good luck!
 
 
 
-Ghostschaser
+<br/>Ghostschaser<br/><br/>
 
 Our offensive was put on hold by the sudden Russian Special Forces attack to the airbase
 and city of Morton. They caused some heavy casualties and we are now running with limited
@@ -90,7 +90,7 @@ lines returning home. So, you will be back home safely, thats an order!
 
 
 
-Identification
+<a name="identify">Identification
 
 To identify an enemy target, you must first find it of course. Then use the binoculars
 and right mouse button to identify a target. Be adviced that in most cases it requires 
@@ -119,9 +119,9 @@ Back to war situation
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Return to start"];
-_objective2 setSimpleTaskDescription ["Return to start", "Return to start", "Return to start"];
-_objective1 = player createSimpleTask ["Direct air strike"];
-_objective1 setSimpleTaskDescription ["Direct air strike", "Direct air strike", "Direct air strike"];
-_objective0 = player createSimpleTask ["Find the Spez Natz camp"];
-_objective0 setSimpleTaskDescription ["Find the Spez Natz camp", "Find the Spez Natz camp", "Find the Spez Natz camp"];
+objective3 = player createSimpleTask ["Return to start"];
+objective3 setSimpleTaskDescription ["Return to start", "Return to start", "Return to start"];
+objective2 = player createSimpleTask ["Direct air strike"];
+objective2 setSimpleTaskDescription ["Direct air strike", "Direct air strike", "Direct air strike"];
+objective1 = player createSimpleTask ["Find the Spez Natz camp"];
+objective1 setSimpleTaskDescription ["Find the Spez Natz camp", "Find the Spez Natz camp", "Find the Spez Natz camp"];

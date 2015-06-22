@@ -999,7 +999,7 @@ class Mission
 			timeoutMax=5.000000;
 			age="UNKNOWN";
 			text="aaclear";
-			expActiv="leader assault1 sideradio ""Raaclear""; ""1"" objstatus ""DONE""; aaclear=true; helo1 setFuel 1; helo2 setFuel 1;";
+			expActiv="leader assault1 sideradio ""Raaclear""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; aaclear=true; helo1 setFuel 1; helo2 setFuel 1;";
 			class Effects
 			{
 			};

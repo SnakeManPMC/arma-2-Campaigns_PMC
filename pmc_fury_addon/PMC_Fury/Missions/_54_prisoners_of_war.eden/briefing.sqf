@@ -14,7 +14,7 @@ Hellowa fighting in the southern Everon... and I am still alive... Yeaah!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Your team starts <marker name = 'start'>base</marker> where helo will pick you up
 and <marker name = 'drop'>ferry</marker> to the Morton where 
@@ -23,7 +23,7 @@ you <marker name = 'meet'>meet</marker> Officer for further orders.
 
 
 
-Prisoners of War
+<br/>Prisoners of War<br/><br/>
 
 We did good job on the southern tip of the island, now the Russians only have two
 stronghold in the island left which are Saint Pierre and Vernon. We continue to build
@@ -58,7 +58,7 @@ How much tactical help you need to board a Black Hawk? now get moving!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Meet Commanding Officer"];
-_objective1 setSimpleTaskDescription ["Meet Commanding Officer", "Meet Commanding Officer", "Meet Commanding Officer"];
-_objective0 = player createSimpleTask ["Board Black Hawk"];
-_objective0 setSimpleTaskDescription ["Board Black Hawk", "Board Black Hawk", "Board Black Hawk"];
+objective2 = player createSimpleTask ["Meet Commanding Officer"];
+objective2 setSimpleTaskDescription ["Meet Commanding Officer", "Meet Commanding Officer", "Meet Commanding Officer"];
+objective1 = player createSimpleTask ["Board Black Hawk"];
+objective1 setSimpleTaskDescription ["Board Black Hawk", "Board Black Hawk", "Board Black Hawk"];

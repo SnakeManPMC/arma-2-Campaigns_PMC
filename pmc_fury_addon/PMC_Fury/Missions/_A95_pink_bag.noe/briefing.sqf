@@ -14,7 +14,7 @@ Velka Ves, will be the next target.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Lany, 
 capture <marker name = 'target1'>Mala Ves</marker> buildings, 
@@ -22,7 +22,7 @@ and <marker name = 'target2'>Velka Ves</marker> town.
 
 
 
-Pink Bag
+<br/>Pink Bag<br/><br/>
 
 GEN SITREP<br/>
 This morning the operation Pink Bag is started to capture two enemy positions,
@@ -65,7 +65,7 @@ blew them away. Other than that... good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture Velka Ves"];
-_objective1 setSimpleTaskDescription ["Capture Velka Ves", "Capture Velka Ves", "Capture Velka Ves"];
-_objective0 = player createSimpleTask ["Capture Mala Ves"];
-_objective0 setSimpleTaskDescription ["Capture Mala Ves", "Capture Mala Ves", "Capture Mala Ves"];
+objective2 = player createSimpleTask ["Capture Velka Ves"];
+objective2 setSimpleTaskDescription ["Capture Velka Ves", "Capture Velka Ves", "Capture Velka Ves"];
+objective1 = player createSimpleTask ["Capture Mala Ves"];
+objective1 setSimpleTaskDescription ["Capture Mala Ves", "Capture Mala Ves", "Capture Mala Ves"];

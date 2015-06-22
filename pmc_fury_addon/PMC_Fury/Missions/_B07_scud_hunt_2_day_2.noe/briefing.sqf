@@ -27,7 +27,7 @@ to myself over and over again.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from forest, hunt
 the <marker name = 'target1'>Scuds</marker> and 
@@ -35,7 +35,7 @@ reach <marker name = 'camp'>campign</marker> point.
 
 
 
-Scud Hunt 2, Day 2
+<br/>Scud Hunt 2, Day 2<br/><br/>
 
 GEN SITREP<br/>
 none
@@ -69,7 +69,7 @@ none
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Reach campign point"];
-_objective1 setSimpleTaskDescription ["Reach campign point", "Reach campign point", "Reach campign point"];
-_objective0 = player createSimpleTask ["Hunt Scuds"];
-_objective0 setSimpleTaskDescription ["Hunt Scuds", "Hunt Scuds", "Hunt Scuds"];
+objective2 = player createSimpleTask ["Reach campign point"];
+objective2 setSimpleTaskDescription ["Reach campign point", "Reach campign point", "Reach campign point"];
+objective1 = player createSimpleTask ["Hunt Scuds"];
+objective1 setSimpleTaskDescription ["Hunt Scuds", "Hunt Scuds", "Hunt Scuds"];

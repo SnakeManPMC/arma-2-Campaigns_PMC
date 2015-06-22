@@ -16,7 +16,7 @@ Babysitting time, time to move some POW's... heh man this IS boring.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Transfer Russian POW's from the remote holding facility
 <br/><br/>
@@ -24,7 +24,7 @@ Transfer Russian POW's from the remote holding facility
 
 
 
-Babysitter
+<br/>Babysitter<br/><br/>
 
 While we prepare our assault to the front, we need to move some POW's from the island into
 more secure holding facility.
@@ -63,5 +63,5 @@ the overall security of NATO and the Russians safety.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Transfer POW's."];
-_objective0 setSimpleTaskDescription ["Transfer POW's.", "Transfer POW's.", "Transfer POW's."];
+objective1 = player createSimpleTask ["Transfer POW's."];
+objective1 setSimpleTaskDescription ["Transfer POW's.", "Transfer POW's.", "Transfer POW's."];

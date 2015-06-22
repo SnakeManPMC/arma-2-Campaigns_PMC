@@ -621,7 +621,7 @@ class Mission
 			age="UNKNOWN";
 			text="athome";
 			expCond="athome AND alive bop1 AND alive bop2 AND alive bop3";
-			expActiv="""2"" objStatus ""DONE""; mcomplete=true;";
+			expActiv="objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};
@@ -634,7 +634,7 @@ class Mission
 			age="UNKNOWN";
 			text="athome";
 			expCond="athome AND (!alive bop1 OR !alive bop2 OR !alive bop3)";
-			expActiv="""2"" objStatus ""FAILED""; mcomplete=true;";
+			expActiv="objective2 setTaskState ""FAILED""; [ objNull, objNull, objective2, ""FAILED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};

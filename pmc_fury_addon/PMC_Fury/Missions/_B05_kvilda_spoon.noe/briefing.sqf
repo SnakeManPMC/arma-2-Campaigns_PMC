@@ -14,7 +14,7 @@ Kvilda takedown, here we go.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from mountain. Assault and 
 capture <marker name = 'target2'>Kvilda</marker> town and clear 
@@ -22,7 +22,7 @@ the <marker name = 'target1'>area</marker> NE of it.
 
 
 
-Kvilda Spoon
+<br/>Kvilda Spoon<br/><br/>
 
 GEN SITREP<br/>
 Today we are striking against the Russian forces in Kvilda at north east 
@@ -66,7 +66,7 @@ this one, just let the gunship unleash the hellfire upon the vehicles first.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture Kvilda"];
-_objective1 setSimpleTaskDescription ["Capture Kvilda", "Capture Kvilda", "Capture Kvilda"];
-_objective0 = player createSimpleTask ["Clear area"];
-_objective0 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];
+objective2 = player createSimpleTask ["Capture Kvilda"];
+objective2 setSimpleTaskDescription ["Capture Kvilda", "Capture Kvilda", "Capture Kvilda"];
+objective1 = player createSimpleTask ["Clear area"];
+objective1 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];

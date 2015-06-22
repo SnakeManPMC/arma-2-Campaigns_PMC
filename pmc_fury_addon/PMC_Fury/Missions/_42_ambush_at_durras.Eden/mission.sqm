@@ -602,7 +602,7 @@ class Mission
 					position[]={4849.645020,24.660000,11806.589844};
 					type="GETOUT";
 					expCond="true && PMC_pickup";
-					expActiv="{unassignvehicle _x} foreach units support1; {unassignvehicle _x} foreach units support2; PAPABEAR sideRadio ""Rmcomplete""; ""2"" objstatus ""DONE""; mcomplete=true;";
+					expActiv="{unassignvehicle _x} foreach units support1; {unassignvehicle _x} foreach units support2; PAPABEAR sideRadio ""Rmcomplete""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 					class Effects
 					{
 					};
@@ -991,7 +991,7 @@ class Mission
 			age="UNKNOWN";
 			text="not alive convoy";
 			expCond="!alive tnk1 && !alive tnk2 && !alive trk1 && !alive trk2";
-			expActiv="leader ambusher sideradio ""Rconvoydead""; ""1"" objstatus ""DONE""; convoydead=true; 1 setRadioMsg ""Return to Camp"";";
+			expActiv="leader ambusher sideradio ""Rconvoydead""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; convoydead=true; 1 setRadioMsg ""Return to Camp"";";
 			class Effects
 			{
 			};

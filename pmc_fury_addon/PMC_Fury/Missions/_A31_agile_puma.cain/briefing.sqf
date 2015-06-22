@@ -14,7 +14,7 @@ Now we see how fit this team is. Its no picknick to climb that mountain.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from city. Climb the mountain
 and <marker name = 'target1'>sweep</marker> all enemy infantry.
@@ -23,7 +23,7 @@ Good climbing.
 
 
 
-Agile Puma
+<br/>Agile Puma<br/><br/>
 
 GEN SITREP<br/>
 The mountains south from our last objective are still enemy territory and active
@@ -65,5 +65,5 @@ there is still the commies targetting you. Use caution. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Sweep the mountain"];
-_objective0 setSimpleTaskDescription ["Sweep the mountain", "Sweep the mountain", "Sweep the mountain"];
+objective1 = player createSimpleTask ["Sweep the mountain"];
+objective1 setSimpleTaskDescription ["Sweep the mountain", "Sweep the mountain", "Sweep the mountain"];

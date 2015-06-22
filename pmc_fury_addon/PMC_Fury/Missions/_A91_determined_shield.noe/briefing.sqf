@@ -14,7 +14,7 @@ We got Lany - we defend Lany. This is how the roles change. Weird stuff.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Lany, your task is
 to defend it at all costs against Russian 
@@ -22,7 +22,7 @@ counter <marker name = 'attack1'>attack</marker> coming from NW.
 
 
 
-Determined Shield
+<br/>Determined Shield<br/><br/>
 
 GEN SITREP<br/>
 Russians apparently are launching counter attack against Lany or maybe even
@@ -59,5 +59,5 @@ some of the objectives back. Well I also believe that you will stop them, right?
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend Lany"];
-_objective0 setSimpleTaskDescription ["Defend Lany", "Defend Lany", "Defend Lany"];
+objective1 = player createSimpleTask ["Defend Lany"];
+objective1 setSimpleTaskDescription ["Defend Lany", "Defend Lany", "Defend Lany"];

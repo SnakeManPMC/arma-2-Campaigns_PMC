@@ -16,14 +16,14 @@ easy, just need to watch my flanks, lot of open areas in north and south.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from intersection, attack
 and capture the <marker name = 'target1'>ruins</marker> enemy is holding.
 
 
 
-Proud Eagle
+<br/>Proud Eagle<br/><br/>
 
 GEN SITREP<br/>
 Weather starts to get worse, it will be lateron tonight when it starts to pour rain 
@@ -66,5 +66,5 @@ Light vehicles and infantry only, this is a piece of cake for you. Have fun.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture ruins"];
-_objective0 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];
+objective1 = player createSimpleTask ["Capture ruins"];
+objective1 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];

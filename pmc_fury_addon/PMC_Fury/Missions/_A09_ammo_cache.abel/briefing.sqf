@@ -14,14 +14,14 @@ Destroying wooden boxes... ok, all part of the war huh?
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airbase. Search
 the enemy <marker name = 'target1'>ammo cache</marker> in the woods.
 
 
 
-Ammo Cache
+<br/>Ammo Cache<br/><br/>
 
 GEN SITREP<br/>
 Our war is progressing good and we are preparing to attack the desert in the
@@ -62,7 +62,7 @@ satchel charges with you, so use them to destroy the ammo cache.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Return to base"];
-_objective1 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-_objective0 = player createSimpleTask ["Search and destroy ammo cache"];
-_objective0 setSimpleTaskDescription ["Search and destroy ammo cache", "Search and destroy ammo cache", "Search and destroy ammo cache"];
+objective2 = player createSimpleTask ["Return to base"];
+objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective1 = player createSimpleTask ["Search and destroy ammo cache"];
+objective1 setSimpleTaskDescription ["Search and destroy ammo cache", "Search and destroy ammo cache", "Search and destroy ammo cache"];

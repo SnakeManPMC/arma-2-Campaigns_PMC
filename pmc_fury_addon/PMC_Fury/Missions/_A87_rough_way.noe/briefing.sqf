@@ -14,14 +14,14 @@ This should be piece of cake, small town with light defenses. No biggie.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from beach, assault and
 capture <marker name = 'target1'>Okrouhlo</marker> town.
 
 
 
-Rough Way
+<br/>Rough Way<br/><br/>
 
 GEN SITREP<br/>
 Okrouhlo town is our todays objective which is located north east from the invasion
@@ -61,5 +61,5 @@ There aren't that many enemies in the Okrouhlo, but they sure are expecting you.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Okrouhlo"];
-_objective0 setSimpleTaskDescription ["Capture Okrouhlo", "Capture Okrouhlo", "Capture Okrouhlo"];
+objective1 = player createSimpleTask ["Capture Okrouhlo"];
+objective1 setSimpleTaskDescription ["Capture Okrouhlo", "Capture Okrouhlo", "Capture Okrouhlo"];

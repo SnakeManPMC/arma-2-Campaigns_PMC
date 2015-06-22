@@ -15,14 +15,14 @@ might be there waiting for us.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airstrip, destroy
 the <marker name = 'target1'>radar site</marker> in the hill.
 
 
 
-Anatolis Eyes
+<br/>Anatolis Eyes<br/><br/>
 
 GEN SITREP<br/>
 There is no enemy anti air units present in the northern Nogova so we are pretty
@@ -71,7 +71,7 @@ Good luck and be careful!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Return to base"];
-_objective1 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-_objective0 = player createSimpleTask ["Destroy radar site"];
-_objective0 setSimpleTaskDescription ["Destroy radar site", "Destroy radar site", "Destroy radar site"];
+objective2 = player createSimpleTask ["Return to base"];
+objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective1 = player createSimpleTask ["Destroy radar site"];
+objective1 setSimpleTaskDescription ["Destroy radar site", "Destroy radar site", "Destroy radar site"];

@@ -358,7 +358,7 @@ class Mission
 				class Item2
 				{
 					position[]={5060.839844,22.618048,9609.924805};
-					expActiv="leader recon1 sideradio ""Rwoodsclear""; ""1"" objstatus ""DONE"";";
+					expActiv="leader recon1 sideradio ""Rwoodsclear""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 					class Effects
 					{
 					};
@@ -1390,7 +1390,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply";
 			expCond="eastdead";
-			expActiv="PAPABEAR sideradio ""Rcomplete""; mcomplete=true; ""2"" objstatus ""DONE"";";
+			expActiv="PAPABEAR sideradio ""Rcomplete""; mcomplete=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

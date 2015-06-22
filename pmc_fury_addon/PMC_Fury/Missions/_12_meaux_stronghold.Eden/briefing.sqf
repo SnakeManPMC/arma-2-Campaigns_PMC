@@ -18,7 +18,7 @@ forces inplace to repel the attack. Damn, this is getting serious again.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Your team is holding Meaux <marker name = 'start'>here</marker>, repel enemy attack.
 <br/><br/>
@@ -28,7 +28,7 @@ Good luck.
 
 
 
-Fight for Meaux
+<br/>Fight for Meaux<br/><br/>
 
 Continuing fight for the Meaux city, the Russians definitely want to have it, but we 
 intend to stop them.
@@ -56,5 +56,5 @@ attack.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Repel the Counterattack"];
-_objective0 setSimpleTaskDescription ["Repel the Counterattack", "Repel the Counterattack", "Repel the Counterattack"];
+objective1 = player createSimpleTask ["Repel the Counterattack"];
+objective1 setSimpleTaskDescription ["Repel the Counterattack", "Repel the Counterattack", "Repel the Counterattack"];

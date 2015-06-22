@@ -16,14 +16,14 @@ wall we must climb. I must focus...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, proceed and
 capture <marker name = 'target1'>base</marker> in the mountain.
 
 
 
-Little Prince
+<br/>Little Prince<br/><br/>
 
 GEN SITREP<br/>
 Today we launch assault against the first of the enemy bases high up in the
@@ -65,5 +65,5 @@ safest place one could imagine. Keep the base secure until backups arrive by hel
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture the base"];
-_objective0 setSimpleTaskDescription ["Capture the base", "Capture the base", "Capture the base"];
+objective1 = player createSimpleTask ["Capture the base"];
+objective1 setSimpleTaskDescription ["Capture the base", "Capture the base", "Capture the base"];

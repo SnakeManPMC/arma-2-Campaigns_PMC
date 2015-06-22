@@ -14,14 +14,14 @@ Its getting dark fast and Russian attack is under way, oh geesh.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from St. Sedlo, defend it
 against Russian counter <marker name = 'attack'>attack</marker> coming from north.
 
 
 
-Bear Trap
+<br/>Bear Trap<br/><br/>
 
 GEN SITREP<br/>
 NATO has now basic defensive positions on the south east tip of Nogova, more troops
@@ -65,5 +65,5 @@ so you should not run out of ammo either. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend St. Sedlo"];
-_objective0 setSimpleTaskDescription ["Defend St. Sedlo", "Defend St. Sedlo", "Defend St. Sedlo"];
+objective1 = player createSimpleTask ["Defend St. Sedlo"];
+objective1 setSimpleTaskDescription ["Defend St. Sedlo", "Defend St. Sedlo", "Defend St. Sedlo"];

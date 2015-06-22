@@ -14,7 +14,7 @@ Attack to Chapoi!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Charlie team <marker name = 'start'>start</marker> from Cancon where they proceed
 to <marker name = 'target'>Chapoi</marker> and capture it.
@@ -24,7 +24,7 @@ Good luck!
 
 
 
-Rolling Promise
+<br/>Rolling Promise<br/><br/>
 
 GEN SITREP<br/>
 Our time to attack city of Chapoi has arrived. Now we launch combined armor and 
@@ -61,5 +61,5 @@ Be careful on this one, there is going to be heavy resistance. Keep low, take th
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Chapoi"];
-_objective0 setSimpleTaskDescription ["Capture Chapoi", "Capture Chapoi", "Capture Chapoi"];
+objective1 = player createSimpleTask ["Capture Chapoi"];
+objective1 setSimpleTaskDescription ["Capture Chapoi", "Capture Chapoi", "Capture Chapoi"];

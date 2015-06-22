@@ -16,14 +16,14 @@ Time to make a NATO stop sign on this intersection!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from La Riviere with objective 
 to capture the <marker name = 'target'>intersection</marker> just North of the town.
 
 
 
-Shepherd
+<br/>Shepherd<br/><br/>
 
 GEN SITREP<br/>
 The enemy movement is heavy on the road just north of La Riviere, they are moving
@@ -66,5 +66,5 @@ get your squad killed over there!
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Seize road intersection"];
-_objective0 setSimpleTaskDescription ["Seize road intersection", "Seize road intersection", "Seize road intersection"];
+objective1 = player createSimpleTask ["Seize road intersection"];
+objective1 setSimpleTaskDescription ["Seize road intersection", "Seize road intersection", "Seize road intersection"];

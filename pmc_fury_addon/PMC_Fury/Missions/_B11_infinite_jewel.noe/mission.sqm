@@ -2157,7 +2157,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply 2";
 			expCond="eastdead2";
-			expActiv="PAPABEAR sideRadio ""Rhqreply2""; ""2"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideRadio ""Rhqreply2""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -2204,7 +2204,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply 1";
 			expCond="eastdead1";
-			expActiv="PAPABEAR sideRadio ""Rhqreply1""; ""1"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideRadio ""Rhqreply1""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -2217,7 +2217,7 @@ class Mission
 			activationBy="ALPHA";
 			age="UNKNOWN";
 			text="null";
-			expActiv="leader assault1 sideRadio ""Rreinfdead""; ""3"" objStatus ""DONE""; mcomplete=true;";
+			expActiv="leader assault1 sideRadio ""Rreinfdead""; objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};

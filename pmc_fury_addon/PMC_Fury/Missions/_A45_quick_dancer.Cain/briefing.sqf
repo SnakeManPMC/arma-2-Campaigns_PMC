@@ -14,14 +14,14 @@ Path clearance for Abrams tanks, then infantry mop up after the tanks. Yeah, let
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from ruins, assault
 the enemy <marker name = 'target1'>base</marker> north of your position.
 
 
 
-Quick Dancer
+<br/>Quick Dancer<br/><br/>
 
 GEN SITREP<br/>
 Today we are moving against the enemy base just north of our positions in the ruins.
@@ -66,5 +66,5 @@ will come when you order them. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture enemy base"];
-_objective0 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
+objective1 = player createSimpleTask ["Capture enemy base"];
+objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];

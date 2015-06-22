@@ -14,14 +14,14 @@ Holy smokes
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha starts at Durras and <marker name = 'target'>target</marker> is Vernon
 
 
 
 
-Vernon Vampires
+<br/>Vernon Vampires<br/><br/>
 
 We are moving forward with this war, time to attack and capture village of Vernon. The 
 Russians have been kept low profile in defensive positions so far and we like to keep it 
@@ -72,5 +72,5 @@ the gunships as people do live in Vernon.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Vernon"];
-_objective0 setSimpleTaskDescription ["Capture Vernon", "Capture Vernon", "Capture Vernon"];
+objective1 = player createSimpleTask ["Capture Vernon"];
+objective1 setSimpleTaskDescription ["Capture Vernon", "Capture Vernon", "Capture Vernon"];

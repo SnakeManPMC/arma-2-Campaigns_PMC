@@ -15,14 +15,14 @@ like any expensive part of Nogova real estate is it?
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Frymburk. Proceed to
 capture the <marker name = 'target1'>ruins</marker> and wait for backup.
 
 
 
-Silent Python
+<br/>Silent Python<br/><br/>
 
 GEN SITREP<br/>
 We had great success in the yesterdays operation, now we are in striking distance
@@ -63,7 +63,7 @@ be ready for them anyway and stay alert out there.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Wait for Bravo"];
-_objective1 setSimpleTaskDescription ["Wait for Bravo", "Wait for Bravo", "Wait for Bravo"];
-_objective0 = player createSimpleTask ["Capture ruins"];
-_objective0 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];
+objective2 = player createSimpleTask ["Wait for Bravo"];
+objective2 setSimpleTaskDescription ["Wait for Bravo", "Wait for Bravo", "Wait for Bravo"];
+objective1 = player createSimpleTask ["Capture ruins"];
+objective1 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];

@@ -16,14 +16,14 @@ Counter attack from North and West, got it.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha and Bravo are tasked to <marker name = 'start'>Defend</marker> town of
 La Riviere.
 
 
 
-Shining Eye
+<br/>Shining Eye<br/><br/>
 
 GEN SITREP<br/>
 Our successful operation to capture La Riviere has stirred up the Russians good, 
@@ -66,5 +66,5 @@ anyways and keep AA launcher handy.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend La Riviere"];
-_objective0 setSimpleTaskDescription ["Defend La Riviere", "Defend La Riviere", "Defend La Riviere"];
+objective1 = player createSimpleTask ["Defend La Riviere"];
+objective1 setSimpleTaskDescription ["Defend La Riviere", "Defend La Riviere", "Defend La Riviere"];

@@ -16,7 +16,7 @@ My God... Russians are attacking with full speed...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'alpha'>start</marker> from the field, 
 and <marker name = 'bravo'>Bravo</marker> starts SW from Cancon. Defend the positions
@@ -27,7 +27,7 @@ Good luck soldiers!
 
 
 
-Steel Warrior
+<br/>Steel Warrior<br/><br/>
 
 GEN SITREP<br/>
 Russian attack is on its way. Infantry, Armor and Air assets are bearing upon us
@@ -65,5 +65,5 @@ Also watch for the enemy choppers and hope that Vulcans can knock them out of th
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend positions"];
-_objective0 setSimpleTaskDescription ["Defend positions", "Defend positions", "Defend positions"];
+objective1 = player createSimpleTask ["Defend positions"];
+objective1 setSimpleTaskDescription ["Defend positions", "Defend positions", "Defend positions"];

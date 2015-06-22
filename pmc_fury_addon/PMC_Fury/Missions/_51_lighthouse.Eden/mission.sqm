@@ -1299,7 +1299,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply goodwork";
 			expCond="mcomplete";
-			expActiv="PAPABEAR sideradio ""Rgoodwork""; ""1"" objstatus ""DONE""; endcut=true;";
+			expActiv="PAPABEAR sideradio ""Rgoodwork""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; endcut=true;";
 			class Effects
 			{
 			};

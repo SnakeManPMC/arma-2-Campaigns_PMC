@@ -16,7 +16,7 @@ Some sneaking around to place satchel charges!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from the cliff. Proceed to 
 the <marker name = 'target'>Fuel Truck</marker> place some satchels under it
@@ -25,7 +25,7 @@ and detonate when you're far away. Return to the boat for extraction.
 
 
 
-Smoke and Mirrors
+<br/>Smoke and Mirrors<br/><br/>
 
 GEN SITREP<br/>
 We are preparing for Malden Invasion. This operation begins with fooling the Russians 
@@ -65,5 +65,5 @@ Be careful with the guards over there, try to avoid engaging them if possible.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Destroy Fuel Truck"];
-_objective0 setSimpleTaskDescription ["Destroy Fuel Truck", "Destroy Fuel Truck", "Destroy Fuel Truck"];
+objective1 = player createSimpleTask ["Destroy Fuel Truck"];
+objective1 setSimpleTaskDescription ["Destroy Fuel Truck", "Destroy Fuel Truck", "Destroy Fuel Truck"];

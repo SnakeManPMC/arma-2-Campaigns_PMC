@@ -15,14 +15,14 @@ to sweep as there are such harsh terrain around it. Caution, caution...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from intersection, proceed
 into NATO <marker name = 'target1'>base</marker> along the road.
 
 
 
-Rainy Hope
+<br/>Rainy Hope<br/><br/>
 
 GEN SITREP<br/>
 We had good results on the northern coastal road today, it has now been captured 
@@ -62,5 +62,5 @@ leave any russians lurking in there. Use caution, good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Sweep road to the base"];
-_objective0 setSimpleTaskDescription ["Sweep road to the base", "Sweep road to the base", "Sweep road to the base"];
+objective1 = player createSimpleTask ["Sweep road to the base"];
+objective1 setSimpleTaskDescription ["Sweep road to the base", "Sweep road to the base", "Sweep road to the base"];

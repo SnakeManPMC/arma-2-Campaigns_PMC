@@ -17,14 +17,14 @@ which is safe, but rather difficult. Man I wish there would be few sniper teams 
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Attack <marker name = 'montignac'>Montignac</marker> and capture it. Use radio commands
 (0-0-1) for airstrike and (0-0-2) bravo squad attack command.
 
 
 
-Montignac
+<br/>Montignac<br/><br/>
 
 The largest city in the central Everon, Montignac is coming under NATO attack today.
 This is considered a major achievement in our campaign, as this city poses the majority
@@ -59,5 +59,5 @@ out there, its going to be one hell of a battle.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Montignac"];
-_objective0 setSimpleTaskDescription ["Capture Montignac", "Capture Montignac", "Capture Montignac"];
+objective1 = player createSimpleTask ["Capture Montignac"];
+objective1 setSimpleTaskDescription ["Capture Montignac", "Capture Montignac", "Capture Montignac"];

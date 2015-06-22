@@ -2122,7 +2122,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply 1";
 			expCond="eastdead1";
-			expActiv="PAPABEAR sideradio ""Rhqreply1""; ""1"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideradio ""Rhqreply1""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -2137,7 +2137,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply 2";
 			expCond="eastdead2";
-			expActiv="PAPABEAR sideradio ""Rhqreply2""; ""2"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideradio ""Rhqreply2""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -2152,7 +2152,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply 3";
 			expCond="eastdead3";
-			expActiv="PAPABEAR sideradio ""Rhqreply3""; ""3"" objStatus ""DONE""; helo setfuel 1;";
+			expActiv="PAPABEAR sideradio ""Rhqreply3""; objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; helo setfuel 1;";
 			class Effects
 			{
 			};
@@ -2167,7 +2167,7 @@ class Mission
 			age="UNKNOWN";
 			text="bravo arrived";
 			expCond="bravohere";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; ""4"" objStatus ""DONE""; mcomplete=true;";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; objective4 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective4, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};

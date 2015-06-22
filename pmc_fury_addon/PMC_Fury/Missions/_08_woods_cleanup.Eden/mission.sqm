@@ -111,7 +111,7 @@ class Mission
 				class Item3
 				{
 					position[]={5081.650879,26.032560,10734.649414};
-					expActiv="leader party sideradio ""Rclear1""; woods1=true; ""1"" objstatus ""DONE"";";
+					expActiv="leader party sideradio ""Rclear1""; woods1=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 					synchronizations[]={};
 					class Effects
 					{
@@ -131,7 +131,7 @@ class Mission
 				class Item5
 				{
 					position[]={5387.912109,36.969997,10557.477539};
-					expActiv="leader party sideradio ""Rclear2""; woods2=true; ""2"" objstatus ""DONE"";";
+					expActiv="leader party sideradio ""Rclear2""; woods2=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 					synchronizations[]={};
 					class Effects
 					{
@@ -816,7 +816,7 @@ class Mission
 			age="UNKNOWN";
 			text="end";
 			expCond="mcomplete";
-			expActiv="""3"" objstatus ""DONE"";";
+			expActiv="objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1016,7 +1016,7 @@ class Intro
 				class Item3
 				{
 					position[]={5081.650879,26.032560,10734.649414};
-					expActiv="leader party sideradio ""Rclear1""; woods1=true; ""1"" objstatus ""DONE"";";
+					expActiv="leader party sideradio ""Rclear1""; woods1=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 					synchronizations[]={};
 					class Effects
 					{
@@ -1036,7 +1036,7 @@ class Intro
 				class Item5
 				{
 					position[]={5387.912109,36.969997,10557.477539};
-					expActiv="leader party sideradio ""Rclear2""; woods2=true; ""2"" objstatus ""DONE"";";
+					expActiv="leader party sideradio ""Rclear2""; woods2=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 					synchronizations[]={};
 					class Effects
 					{

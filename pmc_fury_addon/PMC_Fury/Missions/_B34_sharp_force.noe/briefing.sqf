@@ -15,7 +15,7 @@ daily shipments of Vodka!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road. Clear out
 the <marker name = 'target1'>houses</marker> in the field, then assault
@@ -25,7 +25,7 @@ Good luck.
 
 
 
-Sharp Force
+<br/>Sharp Force<br/><br/>
 
 GEN SITREP<br/>
 NATO is doing great progress recently and we hope it will continue on today.
@@ -69,7 +69,7 @@ Vidlakov before charging in.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture Vidlakov"];
-_objective1 setSimpleTaskDescription ["Capture Vidlakov", "Capture Vidlakov", "Capture Vidlakov"];
-_objective0 = player createSimpleTask ["Clear out farmhouses"];
-_objective0 setSimpleTaskDescription ["Clear out farmhouses", "Clear out farmhouses", "Clear out farmhouses"];
+objective2 = player createSimpleTask ["Capture Vidlakov"];
+objective2 setSimpleTaskDescription ["Capture Vidlakov", "Capture Vidlakov", "Capture Vidlakov"];
+objective1 = player createSimpleTask ["Clear out farmhouses"];
+objective1 setSimpleTaskDescription ["Clear out farmhouses", "Clear out farmhouses", "Clear out farmhouses"];

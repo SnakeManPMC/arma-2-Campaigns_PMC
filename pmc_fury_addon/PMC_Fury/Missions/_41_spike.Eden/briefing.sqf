@@ -24,7 +24,7 @@ recon of the area, I might even find some sneaky dug in ruskies around the place
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Today we conduct a coordinated attack.
 <br/><br/>
@@ -47,7 +47,7 @@ There is AH-1 Cobra helicopter gunship support available.
 
 
 
-Spike
+<br/>Spike<br/><br/>
 
 We continue wiping out the Russian positions on Everon.
 <br/><br/>
@@ -90,5 +90,5 @@ when all enemies are ran out of their positions in the region around the interse
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Seize the area"];
-_objective0 setSimpleTaskDescription ["Seize the area", "Seize the area", "Seize the area"];
+objective1 = player createSimpleTask ["Seize the area"];
+objective1 setSimpleTaskDescription ["Seize the area", "Seize the area", "Seize the area"];

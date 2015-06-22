@@ -23,7 +23,7 @@ Time to go, time to go hunting.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from forest, hunt down
 the <marker name = 'target1'>scud</marker> launchers. When done proceed into
@@ -31,7 +31,7 @@ the <marker name = 'extract'>extraction LZ</marker> for helo extract.
 
 
 
-Scud Hunt Day 3
+<br/>Scud Hunt Day 3<br/><br/>
 
 GEN SITREP<br/>
 none
@@ -66,7 +66,7 @@ none
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Get to extraction LZ"];
-_objective1 setSimpleTaskDescription ["Get to extraction LZ", "Get to extraction LZ", "Get to extraction LZ"];
-_objective0 = player createSimpleTask ["Search and Destroy scuds"];
-_objective0 setSimpleTaskDescription ["Search and Destroy scuds", "Search and Destroy scuds", "Search and Destroy scuds"];
+objective2 = player createSimpleTask ["Get to extraction LZ"];
+objective2 setSimpleTaskDescription ["Get to extraction LZ", "Get to extraction LZ", "Get to extraction LZ"];
+objective1 = player createSimpleTask ["Search and Destroy scuds"];
+objective1 setSimpleTaskDescription ["Search and Destroy scuds", "Search and Destroy scuds", "Search and Destroy scuds"];

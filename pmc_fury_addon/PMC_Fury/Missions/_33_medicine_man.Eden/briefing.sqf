@@ -18,7 +18,7 @@ Wonder if this war comes to a end... or do we have still some fighting to do.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Tonights operation is calling for med-evac extraction of spec ops. You are conducting
 this totally covert mission with one medic. Remain undetected at all times. You are not 
@@ -33,7 +33,7 @@ Helicopter <marker name = 'lz'>Landing Zone</marker> is safe.
 
 
 
-Cease Fire in order
+<br/>Cease Fire in order<br/><br/>
 
 The cease fire limits our ability to attack the Russians. We cannot conduct any offensive 
 operations until the leaders decide how to proceed with this War. At this time we have no 
@@ -77,7 +77,7 @@ safe to operate (intel note: report is 15 mins old).
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Extract Spec Ops team"];
-_objective1 setSimpleTaskDescription ["Extract Spec Ops team", "Extract Spec Ops team", "Extract Spec Ops team"];
-_objective0 = player createSimpleTask ["Get medical team to Spec Ops"];
-_objective0 setSimpleTaskDescription ["Get medical team to Spec Ops", "Get medical team to Spec Ops", "Get medical team to Spec Ops"];
+objective2 = player createSimpleTask ["Extract Spec Ops team"];
+objective2 setSimpleTaskDescription ["Extract Spec Ops team", "Extract Spec Ops team", "Extract Spec Ops team"];
+objective1 = player createSimpleTask ["Get medical team to Spec Ops"];
+objective1 setSimpleTaskDescription ["Get medical team to Spec Ops", "Get medical team to Spec Ops", "Get medical team to Spec Ops"];

@@ -14,7 +14,7 @@ That Valley is huge... its a long stretch of enemy territory to clear out.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha, Echo and Delta teams <marker name = 'start'>start</marker> from Blata. 
 Assault and capture all enemy positions including:<br/>
@@ -27,7 +27,7 @@ Good luck everyone.
 
 
 
-Valley Breeze
+<br/>Valley Breeze<br/><br/>
 
 GEN SITREP<br/>
 The last major enemy armored vehicles concentration on eastern Nogova lies ahead. 
@@ -75,11 +75,11 @@ This is a big one. Use your judgement when calling the air and ground assaults. 
 
 "]];
 // tasks need to be in reversed order
-_objective3 = player createSimpleTask ["Capture Valley"];
-_objective3 setSimpleTaskDescription ["Capture Valley", "Capture Valley", "Capture Valley"];
-_objective2 = player createSimpleTask ["Clear Buildings"];
-_objective2 setSimpleTaskDescription ["Clear Buildings", "Clear Buildings", "Clear Buildings"];
-_objective1 = player createSimpleTask ["Capture Village"];
-_objective1 setSimpleTaskDescription ["Capture Village", "Capture Village", "Capture Village"];
-_objective0 = player createSimpleTask ["Capture Ruins"];
-_objective0 setSimpleTaskDescription ["Capture Ruins", "Capture Ruins", "Capture Ruins"];
+objective4 = player createSimpleTask ["Capture Valley"];
+objective4 setSimpleTaskDescription ["Capture Valley", "Capture Valley", "Capture Valley"];
+objective3 = player createSimpleTask ["Clear Buildings"];
+objective3 setSimpleTaskDescription ["Clear Buildings", "Clear Buildings", "Clear Buildings"];
+objective2 = player createSimpleTask ["Capture Village"];
+objective2 setSimpleTaskDescription ["Capture Village", "Capture Village", "Capture Village"];
+objective1 = player createSimpleTask ["Capture Ruins"];
+objective1 setSimpleTaskDescription ["Capture Ruins", "Capture Ruins", "Capture Ruins"];

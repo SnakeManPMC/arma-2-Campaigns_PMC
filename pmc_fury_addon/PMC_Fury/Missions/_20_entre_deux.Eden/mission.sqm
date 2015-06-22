@@ -1307,7 +1307,7 @@ class Mission
 			age="UNKNOWN";
 			text="ruskies killed";
 			expCond="this && count units reinf1 == 0";
-			expActiv="leader myteam sideradio ""Ralldead""; mcomplete=true; ""1"" objstatus ""DONE"";";
+			expActiv="leader myteam sideradio ""Ralldead""; mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

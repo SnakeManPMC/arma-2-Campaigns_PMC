@@ -16,7 +16,7 @@ artillery pieces I discovered are bothering the leadership.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha, Bravo and sniper teams <marker name = 'start'>start</marker> from airbase. They will be 
 inserted <marker name = 'lz'>here</marker><br/><br/>
@@ -32,7 +32,7 @@ Russian forces in the camp or nearby. Use radio (0-0-1) to commence the attack.
 
 
 
-Artillery Denial
+<br/>Artillery Denial<br/><br/>
 
 After successfully repelling the massive Russian attack we are trying to regroup
 our people for ongoing operations to push the enemy off this island. The recent events
@@ -71,5 +71,5 @@ You as Alpha leader decide the best position to your team.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Seize the Artillery site"];
-_objective0 setSimpleTaskDescription ["Seize the Artillery site", "Seize the Artillery site", "Seize the Artillery site"];
+objective1 = player createSimpleTask ["Seize the Artillery site"];
+objective1 setSimpleTaskDescription ["Seize the Artillery site", "Seize the Artillery site", "Seize the Artillery site"];

@@ -2214,7 +2214,7 @@ class Mission
 			age="UNKNOWN";
 			text="eastdead1";
 			expCond="this AND w_here1";
-			expActiv="leader assault1 sideRadio ""Reastdead1""; ""1"" objStatus ""DONE"";";
+			expActiv="leader assault1 sideRadio ""Reastdead1""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -2229,7 +2229,7 @@ class Mission
 			age="UNKNOWN";
 			text="eastdead2";
 			expCond="this AND w_here2";
-			expActiv="leader assault1 sideRadio ""Reastdead2""; ""2"" objStatus ""DONE"";";
+			expActiv="leader assault1 sideRadio ""Reastdead2""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -2244,7 +2244,7 @@ class Mission
 			age="UNKNOWN";
 			text="arudy captured";
 			expCond="this AND w_here3";
-			expActiv="leader assault1 sideRadio ""Reastdead3""; ""3"" objStatus ""DONE""; eastdead3=true;";
+			expActiv="leader assault1 sideRadio ""Reastdead3""; objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; eastdead3=true;";
 			class Effects
 			{
 			};

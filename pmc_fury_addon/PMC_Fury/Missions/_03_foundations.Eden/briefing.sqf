@@ -31,14 +31,14 @@ Good to see these reinforcements arriving, now I feel safer.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Reinforcements are arriving to the newly captured Russian airbase
  <marker name = 'start'>here</marker>. Enjoy the show.
 
 
 
-Foundations
+<br/>Foundations<br/><br/>
 
 We have just successfully captured the Everon airbase in the early morning attack. 
 There is limited troops on the ground at the moment and we hurry up for reinforcements
@@ -65,5 +65,5 @@ guys are on the ground we can start to build the base.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Reinforcements"];
-_objective0 setSimpleTaskDescription ["Reinforcements", "Reinforcements", "Reinforcements"];
+objective1 = player createSimpleTask ["Reinforcements"];
+objective1 setSimpleTaskDescription ["Reinforcements", "Reinforcements", "Reinforcements"];

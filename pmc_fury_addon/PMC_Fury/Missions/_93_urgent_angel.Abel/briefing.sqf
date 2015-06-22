@@ -14,7 +14,7 @@ Dourdan is our objective. And nice objective it is.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Bravo team <marker name = 'start'>start</marker> from Arudy. Objective is to
 capture <marker name = 'target1'>Dourdan</marker> from Russians.
@@ -23,7 +23,7 @@ Good luck.
 
 
 
-Urgent Angel
+<br/>Urgent Angel<br/><br/>
 
 GEN SITREP<br/>
 Pushing forward towards north, next goal is to seize the town of Dourdan just south
@@ -61,5 +61,5 @@ the good old ruskie infantry.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Dourdan"];
-_objective0 setSimpleTaskDescription ["Capture Dourdan", "Capture Dourdan", "Capture Dourdan"];
+objective1 = player createSimpleTask ["Capture Dourdan"];
+objective1 setSimpleTaskDescription ["Capture Dourdan", "Capture Dourdan", "Capture Dourdan"];

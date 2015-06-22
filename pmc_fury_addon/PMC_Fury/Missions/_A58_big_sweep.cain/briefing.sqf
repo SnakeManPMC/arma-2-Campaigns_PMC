@@ -14,7 +14,7 @@ Ah this time we are descenting, not climbing. Much much better.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from intersection, descent
 through the mountain terrain and <marker name = 'target1'>sweep</marker> all
@@ -22,7 +22,7 @@ enemies you encounter until you reach <marker name = 'bravo'>Bravo</marker> squa
 
 
 
-Big Sweep
+<br/>Big Sweep<br/><br/>
 
 GEN SITREP<br/>
 Next large objective is to capture the largest mountain top in Kolgujev, we are
@@ -62,5 +62,5 @@ even though no vehicles are present. The Russians are still giving us good fight
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Sweep area and meet Bravo"];
-_objective0 setSimpleTaskDescription ["Sweep area and meet Bravo", "Sweep area and meet Bravo", "Sweep area and meet Bravo"];
+objective1 = player createSimpleTask ["Sweep area and meet Bravo"];
+objective1 setSimpleTaskDescription ["Sweep area and meet Bravo", "Sweep area and meet Bravo", "Sweep area and meet Bravo"];

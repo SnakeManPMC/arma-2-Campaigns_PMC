@@ -15,7 +15,7 @@ my steps sharp out there in the edge of the coastal mountain range.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from houses. Assault the
 <marker name = 'target1'>mountains</marker> north from your position and the coast
@@ -25,7 +25,7 @@ Good luck.
 
 
 
-Nogova Star
+<br/>Nogova Star<br/><br/>
 
 GEN SITREP<br/>
 The northern area of our positions is still under Russian control and today we
@@ -67,9 +67,9 @@ patrolling there too.
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Clear west coast"];
-_objective2 setSimpleTaskDescription ["Clear west coast", "Clear west coast", "Clear west coast"];
-_objective1 = player createSimpleTask ["Clear east coast"];
-_objective1 setSimpleTaskDescription ["Clear east coast", "Clear east coast", "Clear east coast"];
-_objective0 = player createSimpleTask ["Clear mountain"];
-_objective0 setSimpleTaskDescription ["Clear mountain", "Clear mountain", "Clear mountain"];
+objective3 = player createSimpleTask ["Clear west coast"];
+objective3 setSimpleTaskDescription ["Clear west coast", "Clear west coast", "Clear west coast"];
+objective2 = player createSimpleTask ["Clear east coast"];
+objective2 setSimpleTaskDescription ["Clear east coast", "Clear east coast", "Clear east coast"];
+objective1 = player createSimpleTask ["Clear mountain"];
+objective1 setSimpleTaskDescription ["Clear mountain", "Clear mountain", "Clear mountain"];

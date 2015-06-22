@@ -14,7 +14,7 @@ Road capturing is boring I tell ya. I feel like traffic cop here.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from woods, proceeds into 
 the <marker name = 'hill'>Hill</marker> and then to
@@ -22,7 +22,7 @@ the <marker name = 'target'>Road</marker> capturing it.
 
 
 
-Proud Forge
+<br/>Proud Forge<br/><br/>
 
 GEN SITREP<br/>
 Our final preparation before the attack to Chapoi. Were off to capture the
@@ -63,7 +63,7 @@ capture the <marker name = 'target'>Road</marker> north of the hill.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture road"];
-_objective1 setSimpleTaskDescription ["Capture road", "Capture road", "Capture road"];
-_objective0 = player createSimpleTask ["Clear the hill"];
-_objective0 setSimpleTaskDescription ["Clear the hill", "Clear the hill", "Clear the hill"];
+objective2 = player createSimpleTask ["Capture road"];
+objective2 setSimpleTaskDescription ["Capture road", "Capture road", "Capture road"];
+objective1 = player createSimpleTask ["Clear the hill"];
+objective1 setSimpleTaskDescription ["Clear the hill", "Clear the hill", "Clear the hill"];

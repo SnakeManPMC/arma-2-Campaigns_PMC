@@ -35,7 +35,7 @@ _b sidechat "We are outta here. I hope we meet again, either side of the front l
 _a sidechat "See you old friend... and watch you back.";
 ~5
 
-"1" objstatus "DONE";
+objective1 setTaskState "SUCCEEDED"; [ objNull, objNull, objective1, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
 
 GivenPOW=true;
 1 setRadioMsg "Call - Extraction"

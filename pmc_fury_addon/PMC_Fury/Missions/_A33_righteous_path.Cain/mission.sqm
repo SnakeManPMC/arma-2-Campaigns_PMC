@@ -1817,7 +1817,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply";
 			expCond="eastdead";
-			expActiv="PAPABEAR sideRadio ""Rbackup""; helo setFuel 1; ""1"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideRadio ""Rbackup""; helo setFuel 1; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1833,7 +1833,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq complete";
 			expCond="count units rusinf5 == 0 AND count units rusinf6 == 0";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; mcomplete=true; ""2"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; mcomplete=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

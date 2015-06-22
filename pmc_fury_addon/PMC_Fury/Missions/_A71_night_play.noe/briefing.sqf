@@ -15,14 +15,14 @@ for good old Alpha squad.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airstrip, defend it through 
 the night.
 
 
 
-Night Play
+<br/>Night Play<br/><br/>
 
 GEN SITREP<br/>
 Vulcans have arrived into the airstrip to provide anti air shield over the facility,
@@ -70,5 +70,5 @@ present but who knows what might slip through.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend airstrip"];
-_objective0 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];
+objective1 = player createSimpleTask ["Defend airstrip"];
+objective1 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];

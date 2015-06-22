@@ -979,7 +979,7 @@ class Mission
 			age="UNKNOWN";
 			text="mcomplete";
 			expCond="!alive rhelo1 AND !alive rhelo2 AND count units rusinf1 == 0 AND count units rusinf2 == 0";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; mcomplete=true; ""1"" objstatus ""DONE"";";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

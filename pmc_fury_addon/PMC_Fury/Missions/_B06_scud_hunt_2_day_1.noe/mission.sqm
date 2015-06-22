@@ -2648,7 +2648,7 @@ class Mission
 			type="END1";
 			age="UNKNOWN";
 			text="west present";
-			expActiv="[] exec ""exit.sqs""; ""2"" objStatus ""DONE"";";
+			expActiv="[] exec ""exit.sqs""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -2661,7 +2661,7 @@ class Mission
 			age="UNKNOWN";
 			text="scuds dead";
 			expCond="!alive scud1 AND !alive scud2";
-			expActiv="""1"" objStatus ""DONE"";";
+			expActiv="objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

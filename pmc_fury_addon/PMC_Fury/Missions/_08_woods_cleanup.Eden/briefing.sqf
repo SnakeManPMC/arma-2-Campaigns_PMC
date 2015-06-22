@@ -16,7 +16,7 @@ Goddamn if there are some Speznatz troops making ambush in the woods...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 We have wood clearing for you.
 <br/><br/>
@@ -29,7 +29,7 @@ Good luck and be careful out there.
 
 
 
-Noises from Woods
+<br/>Noises from Woods<br/><br/>
 
 Our forces captured the enemy base near the airbase, we have now pretty security in the
 south part of this island.
@@ -63,9 +63,9 @@ to <marker name = 'start'>base</marker> for debriefing.
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Return to base"];
-_objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-_objective1 = player createSimpleTask ["Clear woods #2"];
-_objective1 setSimpleTaskDescription ["Clear woods #2", "Clear woods #2", "Clear woods #2"];
-_objective0 = player createSimpleTask ["Clear woods #1"];
-_objective0 setSimpleTaskDescription ["Clear woods #1", "Clear woods #1", "Clear woods #1"];
+objective3 = player createSimpleTask ["Return to base"];
+objective3 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective2 = player createSimpleTask ["Clear woods #2"];
+objective2 setSimpleTaskDescription ["Clear woods #2", "Clear woods #2", "Clear woods #2"];
+objective1 = player createSimpleTask ["Clear woods #1"];
+objective1 setSimpleTaskDescription ["Clear woods #1", "Clear woods #1", "Clear woods #1"];

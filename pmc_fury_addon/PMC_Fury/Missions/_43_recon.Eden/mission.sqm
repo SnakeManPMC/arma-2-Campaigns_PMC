@@ -2357,7 +2357,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="damagethebird";
-			expActiv="[] exec ""emergency.sqs""; dmghelo=true; ""1"" objstatus ""DONE"";";
+			expActiv="[] exec ""emergency.sqs""; dmghelo=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

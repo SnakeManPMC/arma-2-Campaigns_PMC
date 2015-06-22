@@ -849,7 +849,7 @@ class Mission
 			age="UNKNOWN";
 			text="rdead";
 			expCond="this and russiansarrived";
-			expActiv="leader myteam sideradio ""Rdead""; mcomplete=true; ""1"" objstatus ""DONE"";";
+			expActiv="leader myteam sideradio ""Rdead""; mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

@@ -19,7 +19,7 @@ launch attacks into the enemy territory.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha squads starting location is <marker name = 'start'>here</marker> in the intersection.
 <br/><br/>
@@ -32,7 +32,7 @@ Second objective is to take the <marker name = 'hill'>hill</marker>
 
 
 
-Road Block
+<br/>Road Block<br/><br/>
 
 Russians took heavy loss in the battle of the base, they lost two platoons of tanks, two 
 squads of men, some guards and few bmps, also their reinforcements where wiped out.
@@ -41,8 +41,8 @@ squads of men, some guards and few bmps, also their reinforcements where wiped o
   at this time, we have incapacitated their offensive capability. They are just 
   reinforcing their positions over the front lines, trying to hold us back as 
   much as possible. The road that comes into this base, goes through very narrow 
-  bottleneck type woods and the enemy has fortified a road 
-  block there. We are launching assault to take that road block down, you'll 
+  bottleneck type woods and the enemy has fortified a <marker name = 'road'>road 
+  block</marker> there. We are launching assault to take that road block down, you'll 
   lead this assault with the normal squad of men. The road block is probably mined, 
   so we send out engineer team to clear it out after you have successfully eliminated 
   all enemy resistance there. When the road block is seized, wait for the engineer 
@@ -68,7 +68,7 @@ You are free to engage any enemies you find on that hill.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Take the hill"];
-_objective1 setSimpleTaskDescription ["Take the hill", "Take the hill", "Take the hill"];
-_objective0 = player createSimpleTask ["Seize road block"];
-_objective0 setSimpleTaskDescription ["Seize road block", "Seize road block", "Seize road block"];
+objective2 = player createSimpleTask ["Take the hill"];
+objective2 setSimpleTaskDescription ["Take the hill", "Take the hill", "Take the hill"];
+objective1 = player createSimpleTask ["Seize road block"];
+objective1 setSimpleTaskDescription ["Seize road block", "Seize road block", "Seize road block"];

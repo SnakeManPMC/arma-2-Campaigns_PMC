@@ -14,14 +14,14 @@ All right, lets give the Russians a warm NATO welcome.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Davle. Protect the
 area and the bridge at all costs.
 
 
 
-Party Night
+<br/>Party Night<br/><br/>
 
 GEN SITREP<br/>
 Russians have launched counter attack to the bridge. Our forces will defend it at all
@@ -62,5 +62,5 @@ try to bring down as many enemy helos as possible.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend bridge"];
-_objective0 setSimpleTaskDescription ["Defend bridge", "Defend bridge", "Defend bridge"];
+objective1 = player createSimpleTask ["Defend bridge"];
+objective1 setSimpleTaskDescription ["Defend bridge", "Defend bridge", "Defend bridge"];

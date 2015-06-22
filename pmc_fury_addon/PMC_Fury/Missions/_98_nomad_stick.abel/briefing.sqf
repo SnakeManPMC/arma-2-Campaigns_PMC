@@ -14,7 +14,7 @@ Our assault to La Trinite
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha, Bravo and Foxtrot teams <marker name = 'start'>start</marker> from Dourdan
 and assault <marker name = 'target1'>La Trinite</marker> capturing it.
@@ -23,7 +23,7 @@ Good luck everyone.
 
 
 
-Nomad Stick
+<br/>Nomad Stick<br/><br/>
 
 GEN SITREP<br/>
 The day of our assault to La Trinite is here. Today we execute combined arms attack
@@ -67,5 +67,5 @@ are knocked out before you order Bravo and Foxtrot to attack.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture La Trinite"];
-_objective0 setSimpleTaskDescription ["Capture La Trinite", "Capture La Trinite", "Capture La Trinite"];
+objective1 = player createSimpleTask ["Capture La Trinite"];
+objective1 setSimpleTaskDescription ["Capture La Trinite", "Capture La Trinite", "Capture La Trinite"];

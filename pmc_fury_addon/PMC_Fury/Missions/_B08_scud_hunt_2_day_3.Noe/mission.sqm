@@ -178,7 +178,7 @@ class Mission
 					position[]={9117.166992,14.985000,12622.804688};
 					type="GETOUT";
 					combat="SAFE";
-					expActiv="PAPABEAR sideradio ""Rmcomplete""; ""3"" objStatus ""DONE""; mcomplete=true;";
+					expActiv="PAPABEAR sideradio ""Rmcomplete""; objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 					class Effects
 					{
 					};
@@ -2954,7 +2954,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="for extract";
-			expActiv="""1"" objstatus ""DONE""; 1 setRadioMsg ""Call - Extract""; hint ""Ready to call extraction"";";
+			expActiv="objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; 1 setRadioMsg ""Call - Extract""; hint ""Ready to call extraction"";";
 			class Effects
 			{
 			};
@@ -2995,7 +2995,7 @@ class Mission
 			age="UNKNOWN";
 			text="scud dead";
 			expCond="!alive scud1";
-			expActiv="""1"" objstatus ""DONE"";";
+			expActiv="objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

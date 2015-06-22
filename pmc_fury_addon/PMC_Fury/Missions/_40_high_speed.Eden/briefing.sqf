@@ -26,7 +26,7 @@ So speed and range is essential.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team will take four machine gun jeeps from the <marker name = 'start'>chapel</marker> in 
 the hilltop.
@@ -40,7 +40,7 @@ There is helicopter gunship support too.
 
 
 
-Sweep
+<br/>Sweep<br/><br/>
 
 We continue wiping out the Russian positions on Everon.
 <br/><br/>
@@ -72,5 +72,5 @@ forces hiding or moving about.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Sweep the area"];
-_objective0 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];
+objective1 = player createSimpleTask ["Sweep the area"];
+objective1 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];

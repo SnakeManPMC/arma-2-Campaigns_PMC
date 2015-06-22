@@ -14,14 +14,14 @@ Man do I hate these nights. I cannot see like 1 meter ahead of me. yuck!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road block. Guard it through 
 the night.
 
 
 
-Laser Stick
+<br/>Laser Stick<br/><br/>
 
 GEN SITREP<br/>
 Tomorrow we start another operation to advance our front lines, the objective
@@ -56,5 +56,5 @@ Graveyard shift for you tonight. Don't fell asleep.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Guard the road block."];
-_objective0 setSimpleTaskDescription ["Guard the road block.", "Guard the road block.", "Guard the road block."];
+objective1 = player createSimpleTask ["Guard the road block."];
+objective1 setSimpleTaskDescription ["Guard the road block.", "Guard the road block.", "Guard the road block."];

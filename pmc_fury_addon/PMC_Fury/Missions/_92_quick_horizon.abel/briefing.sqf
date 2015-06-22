@@ -14,7 +14,7 @@ Arudy attack, whoah
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Goisse and proceeds
 through intersections <marker name = 'target1'>road #1</marker> 
@@ -23,7 +23,7 @@ to <marker name = 'target3'>Arudy</marker> which is to be captured.
 
 
 
-Quick Horizon
+<br/>Quick Horizon<br/><br/>
 
 GEN SITREP<br/>
 Arudy area still contains considerable enemy positions which must be taken out. Todays
@@ -67,9 +67,9 @@ Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Capture Arudy"];
-_objective2 setSimpleTaskDescription ["Capture Arudy", "Capture Arudy", "Capture Arudy"];
-_objective1 = player createSimpleTask ["Clear our intersection #2"];
-_objective1 setSimpleTaskDescription ["Clear our intersection #2", "Clear our intersection #2", "Clear our intersection #2"];
-_objective0 = player createSimpleTask ["Clear our intersection #1"];
-_objective0 setSimpleTaskDescription ["Clear our intersection #1", "Clear our intersection #1", "Clear our intersection #1"];
+objective3 = player createSimpleTask ["Capture Arudy"];
+objective3 setSimpleTaskDescription ["Capture Arudy", "Capture Arudy", "Capture Arudy"];
+objective2 = player createSimpleTask ["Clear our intersection #2"];
+objective2 setSimpleTaskDescription ["Clear our intersection #2", "Clear our intersection #2", "Clear our intersection #2"];
+objective1 = player createSimpleTask ["Clear our intersection #1"];
+objective1 setSimpleTaskDescription ["Clear our intersection #1", "Clear our intersection #1", "Clear our intersection #1"];

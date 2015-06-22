@@ -14,7 +14,7 @@ Ivan got pissed, they rarely launch counter attacks anymore.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from intersection, defend
 it against Russian counter <marker name = 'attack1'>attack</marker> coming from
@@ -24,7 +24,7 @@ Good luck.
 
 
 
-Bear Lash
+<br/>Bear Lash<br/><br/>
 
 GEN SITREP<br/>
 Russian counter attack on way, we must defend the intersection. Do not fall back.
@@ -61,5 +61,5 @@ and keep your men alive. Stay healthy.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend intersection."];
-_objective0 setSimpleTaskDescription ["Defend intersection.", "Defend intersection.", "Defend intersection."];
+objective1 = player createSimpleTask ["Defend intersection."];
+objective1 setSimpleTaskDescription ["Defend intersection.", "Defend intersection.", "Defend intersection."];

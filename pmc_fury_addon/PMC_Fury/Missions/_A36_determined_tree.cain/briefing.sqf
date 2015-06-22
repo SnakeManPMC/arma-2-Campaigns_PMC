@@ -14,7 +14,7 @@ I feel like traffic cop with these intersections.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from base, seize the
 enemy <marker name = 'target1'>intersection</marker> checkpoint south west
@@ -22,7 +22,7 @@ of your base.
 
 
 
-Determined Tree
+<br/>Determined Tree<br/><br/>
 
 GEN SITREP<br/>
 Our weather team has now confirmed that the storm front is indeed now moving towards
@@ -66,5 +66,5 @@ so move carefully, try to take them out from distance.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Seize intersection"];
-_objective0 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];
+objective1 = player createSimpleTask ["Seize intersection"];
+objective1 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];

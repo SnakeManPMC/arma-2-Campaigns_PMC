@@ -14,7 +14,7 @@ I hope everything goes by the numbers today, that terrain is pretty deceptive.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Blata, assault 
 the <marker name = 'target1'>intersection</marker> clearing out all
@@ -22,7 +22,7 @@ Russian defenses, then capture <marker name = 'target2'>Loukov</marker> town.
 
 
 
-Shining Brass
+<br/>Shining Brass<br/><br/>
 
 GEN SITREP<br/>
 Eastern Nogova has two main roads, today we are going after the one on the east coast.
@@ -63,7 +63,7 @@ peeps have been reported some helicopter activity.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture Loukov"];
-_objective1 setSimpleTaskDescription ["Capture Loukov", "Capture Loukov", "Capture Loukov"];
-_objective0 = player createSimpleTask ["Clear intersection"];
-_objective0 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];
+objective2 = player createSimpleTask ["Capture Loukov"];
+objective2 setSimpleTaskDescription ["Capture Loukov", "Capture Loukov", "Capture Loukov"];
+objective1 = player createSimpleTask ["Clear intersection"];
+objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];

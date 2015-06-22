@@ -1234,7 +1234,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="east not present";
-			expActiv="""1"" objstatus ""DONE""; leader assault1 sideradio ""Rbeachclear""; beachclear=true;";
+			expActiv="objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; leader assault1 sideradio ""Rbeachclear""; beachclear=true;";
 			class Effects
 			{
 			};
@@ -1265,7 +1265,7 @@ class Mission
 			age="UNKNOWN";
 			text="mcomplete";
 			expCond="vulcansok AND count units backup1 < 2 AND count units backup2 < 2";
-			expActiv="PAPABEAR sideradio ""Rmcomplete""; mcomplete=true; ""2"" objstatus ""DONE"";";
+			expActiv="PAPABEAR sideradio ""Rmcomplete""; mcomplete=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

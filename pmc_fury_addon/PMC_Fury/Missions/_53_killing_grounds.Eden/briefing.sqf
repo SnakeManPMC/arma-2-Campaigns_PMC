@@ -17,7 +17,7 @@ We are pushing very hard now. I must keep my focus, if not for me... for my men.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Clear out enemy positions in this sector, major areas are:<br/>
 <marker name = 'clear1'>Clear area #1</marker><br/>
@@ -31,7 +31,7 @@ Good luck commander.
 
 
 
-Killing Grounds
+<br/>Killing Grounds<br/><br/>
 
 Our reinforcements to the airbase have been arrived finally, now we have good use of 
 aircrafts again and our assaults continue. We did advance to the south side of Saint Pierre
@@ -94,7 +94,7 @@ Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Call backup forces"];
-_objective1 setSimpleTaskDescription ["Call backup forces", "Call backup forces", "Call backup forces"];
-_objective0 = player createSimpleTask ["Clear areas"];
-_objective0 setSimpleTaskDescription ["Clear areas", "Clear areas", "Clear areas"];
+objective2 = player createSimpleTask ["Call backup forces"];
+objective2 setSimpleTaskDescription ["Call backup forces", "Call backup forces", "Call backup forces"];
+objective1 = player createSimpleTask ["Clear areas"];
+objective1 setSimpleTaskDescription ["Clear areas", "Clear areas", "Clear areas"];

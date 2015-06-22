@@ -14,13 +14,13 @@ Nightly stay at the base.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from base
 
 
 
-Silent Obelisk
+<br/>Silent Obelisk<br/><br/>
 
 GEN SITREP<br/>
 We must assume that the enemy is poking our defenses at night, so our troops
@@ -57,5 +57,5 @@ and ears listening. You might get some company tonight.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Guard the base"];
-_objective0 setSimpleTaskDescription ["Guard the base", "Guard the base", "Guard the base"];
+objective1 = player createSimpleTask ["Guard the base"];
+objective1 setSimpleTaskDescription ["Guard the base", "Guard the base", "Guard the base"];

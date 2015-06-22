@@ -14,7 +14,7 @@ We must stop the Russians
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from newly invaded land
 at the buildings. Repel the <marker name = 'attack'>counter attack</marker> Russians are
@@ -24,7 +24,7 @@ May God be with all of us.
 
 
 
-Ivans Wrath
+<br/>Ivans Wrath<br/><br/>
 
 GEN SITREP<br/>
 Now we got Russians attention... and anger. They have launched counter attack
@@ -63,5 +63,5 @@ Pissed of ruskies huh. Just keep it cool, take good aim when shooting.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Hold the Russians back"];
-_objective0 setSimpleTaskDescription ["Hold the Russians back", "Hold the Russians back", "Hold the Russians back"];
+objective1 = player createSimpleTask ["Hold the Russians back"];
+objective1 setSimpleTaskDescription ["Hold the Russians back", "Hold the Russians back", "Hold the Russians back"];

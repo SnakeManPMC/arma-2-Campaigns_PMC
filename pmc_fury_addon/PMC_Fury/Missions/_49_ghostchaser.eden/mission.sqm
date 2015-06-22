@@ -2274,7 +2274,7 @@ class Mission
 			age="UNKNOWN";
 			text="home coming";
 			expCond="bombed AND player distance usa <100";
-			expActiv="mcomplete=true; player sideradio ""Rcomplete""; ""3"" objStatus ""DONE"";";
+			expActiv="mcomplete=true; player sideradio ""Rcomplete""; objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -2304,7 +2304,7 @@ class Mission
 			age="UNKNOWN";
 			text="directhit radio!";
 			expCond="!alive leader nazteam1 && !alive leader nazteam2";
-			expActiv="player sideradio ""Rdirecthit""; ""2"" objstatus ""DONE"";";
+			expActiv="player sideradio ""Rdirecthit""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

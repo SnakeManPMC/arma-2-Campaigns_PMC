@@ -14,7 +14,7 @@ Time to come down, time to come down at the Russians like a maddog.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from top of the world. Assault
 and capture <marker name = 'target1'>Trosky</marker> and 
@@ -22,7 +22,7 @@ castle <marker name = 'target2'>ruins</marker> in the mountain.
 
 
 
-Angel Sword
+<br/>Angel Sword<br/><br/>
 
 GEN SITREP<br/>
 Very well performed operation by our infantry captured the highest point in
@@ -63,7 +63,7 @@ soften up the target first. Have fun.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture castle ruins"];
-_objective1 setSimpleTaskDescription ["Capture castle ruins", "Capture castle ruins", "Capture castle ruins"];
-_objective0 = player createSimpleTask ["Capture Trosky"];
-_objective0 setSimpleTaskDescription ["Capture Trosky", "Capture Trosky", "Capture Trosky"];
+objective2 = player createSimpleTask ["Capture castle ruins"];
+objective2 setSimpleTaskDescription ["Capture castle ruins", "Capture castle ruins", "Capture castle ruins"];
+objective1 = player createSimpleTask ["Capture Trosky"];
+objective1 setSimpleTaskDescription ["Capture Trosky", "Capture Trosky", "Capture Trosky"];

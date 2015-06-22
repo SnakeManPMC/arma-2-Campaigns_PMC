@@ -17,7 +17,7 @@ Hooyah!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Vidlakov with
 Charlie Abrams platoon. <marker name = 'bravo1'>Bravo</marker> squad starts
@@ -28,7 +28,7 @@ Good luck everyone.
 
 
 
-Freedom
+<br/>Freedom<br/><br/>
 
 GEN SITREP<br/>
 Men and Women of the United States armed services, today we are gathering
@@ -93,5 +93,5 @@ before proceeding.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture airbase"];
-_objective0 setSimpleTaskDescription ["Capture airbase", "Capture airbase", "Capture airbase"];
+objective1 = player createSimpleTask ["Capture airbase"];
+objective1 setSimpleTaskDescription ["Capture airbase", "Capture airbase", "Capture airbase"];

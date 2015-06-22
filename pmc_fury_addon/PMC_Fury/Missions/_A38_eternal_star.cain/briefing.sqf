@@ -16,14 +16,14 @@ those NAVY F/A-18's might be helpful with the laser guided ordnance again.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from base and defend it against possible
 Russian <marker name = 'attack'>attack</marker> from S, SW.
 
 
 
-Eternal Star
+<br/>Eternal Star<br/><br/>
 
 GEN SITREP<br/>
 The weather front thats approaching Kolgujev is much worse than the weather team 
@@ -76,5 +76,5 @@ otherwise busy.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend the base"];
-_objective0 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];
+objective1 = player createSimpleTask ["Defend the base"];
+objective1 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];

@@ -135,7 +135,7 @@ if ({alive _x} foreach units sar2 == 0) then { goto "SAR_Team_Failed"; };
 ;
 ;STRM_Rsaronlocation,"CHARLIE BLACK IS ON THE CRASH SITE. OVER.",charlie
 leader sar2 sideradio "Rsaronlocation";
-"4" objstatus "DONE";
+objective4 setTaskState "SUCCEEDED"; [ objNull, objNull, objective4, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
 
 ;
 ; you secured the site until SAR arrived, good job.

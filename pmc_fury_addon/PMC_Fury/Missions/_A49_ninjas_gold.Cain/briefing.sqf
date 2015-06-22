@@ -22,7 +22,7 @@ then he gives me the go. Its all pretty automatic for me, just sit back and enjo
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from base, board helo,
 get <marker name = 'insert'>fast roped</marker> behind enemy lines.
@@ -31,7 +31,7 @@ Keep quiet out there.
 
 
 
-Ninjas Gold
+<br/>Ninjas Gold<br/><br/>
 
 GEN SITREP<br/>
 Our plans on attacking the southern most city ruins are in progress. The Russians
@@ -79,7 +79,7 @@ you any tips on this one. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Return to base"];
-_objective1 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-_objective0 = player createSimpleTask ["Meet spec ops"];
-_objective0 setSimpleTaskDescription ["Meet spec ops", "Meet spec ops", "Meet spec ops"];
+objective2 = player createSimpleTask ["Return to base"];
+objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective1 = player createSimpleTask ["Meet spec ops"];
+objective1 setSimpleTaskDescription ["Meet spec ops", "Meet spec ops", "Meet spec ops"];

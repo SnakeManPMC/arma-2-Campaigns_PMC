@@ -1043,7 +1043,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply";
 			expCond="sweepdone";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; ""1"" objStatus ""DONE""; helo setfuel 1;";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; helo setfuel 1;";
 			class Effects
 			{
 			};

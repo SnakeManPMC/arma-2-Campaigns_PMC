@@ -1365,7 +1365,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="mcomplete1 range";
-			expActiv="mcomplete1=true; seal1 sideradio ""Rmcomplete1""; ""1"" objstatus ""DONE"";";
+			expActiv="mcomplete1=true; seal1 sideradio ""Rmcomplete1""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1377,7 +1377,7 @@ class Mission
 			age="UNKNOWN";
 			text="extraction";
 			expCond="this and mcomplete1 and mcomplete2";
-			expActiv="seal1 sideradio ""Rswim""; ex=true; ""3"" objstatus ""DONE"";";
+			expActiv="seal1 sideradio ""Rswim""; ex=true; objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1390,7 +1390,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="mcomplete2 range";
-			expActiv="mcomplete2=true; seal1 sideradio ""Rmcomplete2""; ""2"" objstatus ""DONE"";";
+			expActiv="mcomplete2=true; seal1 sideradio ""Rmcomplete2""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

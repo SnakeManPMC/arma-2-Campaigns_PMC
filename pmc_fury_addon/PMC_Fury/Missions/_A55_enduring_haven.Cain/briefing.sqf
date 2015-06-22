@@ -14,7 +14,7 @@ Damned Russians, I knew they would launch a counter attack again.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from ruins #1, defend
 the area at all costs.
@@ -23,7 +23,7 @@ Good luck.
 
 
 
-Enduring Haven
+<br/>Enduring Haven<br/><br/>
 
 GEN SITREP<br/>
 Russians launched counter attack, we had expected something like this but not
@@ -64,5 +64,5 @@ undefended when going to pickup more ammo from the truck at fuel depot. Good luc
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend the objective"];
-_objective0 setSimpleTaskDescription ["Defend the objective", "Defend the objective", "Defend the objective"];
+objective1 = player createSimpleTask ["Defend the objective"];
+objective1 setSimpleTaskDescription ["Defend the objective", "Defend the objective", "Defend the objective"];

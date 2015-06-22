@@ -16,7 +16,7 @@ to remember in the retirement days... the morning in Nogova. Hmm.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from beach, quick attack
 the eastern island <marker name = 'target1'>barracks</marker> and then 
@@ -26,7 +26,7 @@ Good luck.
 
 
 
-Nogova Airstrip
+<br/>Nogova Airstrip<br/><br/>
 
 GEN SITREP<br/>
 NATO will commence today the first operation in the island of Nogova, it is 
@@ -74,7 +74,7 @@ the first NATO (non spec op) infantry man in Nogova soil!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture airstrip"];
-_objective1 setSimpleTaskDescription ["Capture airstrip", "Capture airstrip", "Capture airstrip"];
-_objective0 = player createSimpleTask ["Capture barracks"];
-_objective0 setSimpleTaskDescription ["Capture barracks", "Capture barracks", "Capture barracks"];
+objective2 = player createSimpleTask ["Capture airstrip"];
+objective2 setSimpleTaskDescription ["Capture airstrip", "Capture airstrip", "Capture airstrip"];
+objective1 = player createSimpleTask ["Capture barracks"];
+objective1 setSimpleTaskDescription ["Capture barracks", "Capture barracks", "Capture barracks"];

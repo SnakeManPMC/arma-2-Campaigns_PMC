@@ -14,7 +14,7 @@ Oh my God.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Fight like hell and defend the <marker name = 'start'>start</marker> positions, do not let
 any Russians pass our front lines!
@@ -22,7 +22,7 @@ any Russians pass our front lines!
 
 
 
-WARMONGER
+<br/>WARMONGER<br/><br/>
 
 Those scumsucking Russians! They have executed our negotiator cold blood. Sons of 
 bitches! Now the gloves comes off, we are at full scale war and we will NOT stop until
@@ -60,5 +60,5 @@ as this is defend and not attack mission. Good luck, seems like you're need it..
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Repel the Russian attack"];
-_objective0 setSimpleTaskDescription ["Repel the Russian attack", "Repel the Russian attack", "Repel the Russian attack"];
+objective1 = player createSimpleTask ["Repel the Russian attack"];
+objective1 setSimpleTaskDescription ["Repel the Russian attack", "Repel the Russian attack", "Repel the Russian attack"];

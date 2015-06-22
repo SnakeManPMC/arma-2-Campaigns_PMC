@@ -14,7 +14,7 @@ My and Bravo squad are descenting down this piece mountain, should be ok job.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, clear out
 all enemies from the <marker name = 'target1'>terrain 1</marker> and 
@@ -23,7 +23,7 @@ meet <marker name = 'charlie'>Charlie</marker> squad in ruins.
 
 
 
-Clear Sabre
+<br/>Clear Sabre<br/><br/>
 
 GEN SITREP<br/>
 Good news, today the weather starts to clear up. It will take some days before we are
@@ -61,5 +61,5 @@ from the mountain with only infantry against you.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Clear area and reach Charlie"];
-_objective0 setSimpleTaskDescription ["Clear area and reach Charlie", "Clear area and reach Charlie", "Clear area and reach Charlie"];
+objective1 = player createSimpleTask ["Clear area and reach Charlie"];
+objective1 setSimpleTaskDescription ["Clear area and reach Charlie", "Clear area and reach Charlie", "Clear area and reach Charlie"];

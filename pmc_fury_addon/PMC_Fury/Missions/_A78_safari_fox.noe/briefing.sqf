@@ -15,7 +15,7 @@ the enemy that gets us dead... its the normal accidents. Oh my.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airstrip, assault
 the <marker name = 'target1'>Blata</marker> village.
@@ -24,7 +24,7 @@ Good luck.
 
 
 
-Safari Fox
+<br/>Safari Fox<br/><br/>
 
 GEN SITREP<br/>
 Same situation as yesterday, some more troop movements have been observed in
@@ -65,5 +65,5 @@ work on this helo to make sure it is in mint condition.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Assault Blata and escape"];
-_objective0 setSimpleTaskDescription ["Assault Blata and escape", "Assault Blata and escape", "Assault Blata and escape"];
+objective1 = player createSimpleTask ["Assault Blata and escape"];
+objective1 setSimpleTaskDescription ["Assault Blata and escape", "Assault Blata and escape", "Assault Blata and escape"];

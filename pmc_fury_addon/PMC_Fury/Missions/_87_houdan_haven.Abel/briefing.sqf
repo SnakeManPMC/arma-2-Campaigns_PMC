@@ -14,7 +14,7 @@ Large assault to Houdan!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha and Bravo teams <marker name = 'start'>start</marker> from road. First
 take out <marker name = 'target1'>AA Site</marker> then wipe out:<br/>
@@ -26,7 +26,7 @@ Good luck soldier!
 
 
 
-Houdan Haven
+<br/>Houdan Haven<br/><br/>
 
 GEN SITREP<br/>
 Enemy is still putting up a good fight in Malden, but we are going to push them
@@ -83,11 +83,11 @@ see on the red dots area, do NOT move north side of them today.
 
 "]];
 // tasks need to be in reversed order
-_objective3 = player createSimpleTask ["Capture Houdan"];
-_objective3 setSimpleTaskDescription ["Capture Houdan", "Capture Houdan", "Capture Houdan"];
-_objective2 = player createSimpleTask ["Clear field"];
-_objective2 setSimpleTaskDescription ["Clear field", "Clear field", "Clear field"];
-_objective1 = player createSimpleTask ["Clear narrow road"];
-_objective1 setSimpleTaskDescription ["Clear narrow road", "Clear narrow road", "Clear narrow road"];
-_objective0 = player createSimpleTask ["Neutralize AA Site"];
-_objective0 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];
+objective4 = player createSimpleTask ["Capture Houdan"];
+objective4 setSimpleTaskDescription ["Capture Houdan", "Capture Houdan", "Capture Houdan"];
+objective3 = player createSimpleTask ["Clear field"];
+objective3 setSimpleTaskDescription ["Clear field", "Clear field", "Clear field"];
+objective2 = player createSimpleTask ["Clear narrow road"];
+objective2 setSimpleTaskDescription ["Clear narrow road", "Clear narrow road", "Clear narrow road"];
+objective1 = player createSimpleTask ["Neutralize AA Site"];
+objective1 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];

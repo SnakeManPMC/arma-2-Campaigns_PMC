@@ -14,7 +14,7 @@ Russians heading this way. Bring 'em on baby!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from base, defend it.
 <br/><br/>
@@ -22,7 +22,7 @@ Good luck.
 
 
 
-Infinite Wind
+<br/>Infinite Wind<br/><br/>
 
 GEN SITREP<br/>
 Before we can set the base fully operational we must defend the Russian
@@ -59,5 +59,5 @@ come to view. The distances are pretty close so its going to be tough fight.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend the base"];
-_objective0 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];
+objective1 = player createSimpleTask ["Defend the base"];
+objective1 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];

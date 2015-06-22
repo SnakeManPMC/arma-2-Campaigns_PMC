@@ -234,7 +234,7 @@ class Mission
 			age="UNKNOWN";
 			text="ufuel dead & player in boats";
 			expCond="!alive ufuel AND leader demol in boats";
-			expActiv="mcomplete=true; ""1"" objstatus ""DONE""; boats setfuel 1;";
+			expActiv="mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; boats setfuel 1;";
 			class Effects
 			{
 			};

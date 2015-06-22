@@ -1702,7 +1702,7 @@ class Mission
 			age="UNKNOWN";
 			text="eastdead";
 			expCond="this and (count units reinf1 <4)";
-			expActiv="PAPABEAR sideradio ""Rcomplete""; mcomplete=true; ""1"" objstatus ""DONE"";";
+			expActiv="PAPABEAR sideradio ""Rcomplete""; mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

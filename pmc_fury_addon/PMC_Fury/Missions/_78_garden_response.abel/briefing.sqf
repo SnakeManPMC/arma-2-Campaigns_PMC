@@ -14,7 +14,7 @@ darn those ruskies!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha and Bravo <marker name = 'start'>start</marker> from intersection, 
 the <marker name = 'attack'>russian attack</marker> comes from north. Orders
@@ -25,7 +25,7 @@ Godspeed son.
 
 
 
-Garden Respose
+<br/>Garden Respose<br/><br/>
 
 GEN SITREP<br/>
 Our attack to the small island is on hold, Russians are launching a counter attack
@@ -64,5 +64,5 @@ small sandbags, use them as you please. Keep your head down, make every shot cou
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend intersection"];
-_objective0 setSimpleTaskDescription ["Defend intersection", "Defend intersection", "Defend intersection"];
+objective1 = player createSimpleTask ["Defend intersection"];
+objective1 setSimpleTaskDescription ["Defend intersection", "Defend intersection", "Defend intersection"];

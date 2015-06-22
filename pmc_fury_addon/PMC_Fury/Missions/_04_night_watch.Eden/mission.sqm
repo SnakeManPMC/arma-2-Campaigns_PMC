@@ -1235,7 +1235,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply 2 END";
 			expCond="count units spetznazs == 0";
-			expActiv="PAPABEAR sideradio ""Rhqreply2""; mcomplete=true; ""1"" objstatus ""DONE"";";
+			expActiv="PAPABEAR sideradio ""Rhqreply2""; mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

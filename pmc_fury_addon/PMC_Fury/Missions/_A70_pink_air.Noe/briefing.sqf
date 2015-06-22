@@ -14,14 +14,14 @@ Okay gotta stay sharp, russian air assault heading to our way. whoa.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airstrip. Defend it
 against any Russian counter attacks.
 
 
 
-Pink Air
+<br/>Pink Air<br/><br/>
 
 GEN SITREP<br/>
 NATO has foothold right in the north east edge of Nogova island now. The airstrip
@@ -60,5 +60,5 @@ they might come useful.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend airstrip"];
-_objective0 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];
+objective1 = player createSimpleTask ["Defend airstrip"];
+objective1 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];

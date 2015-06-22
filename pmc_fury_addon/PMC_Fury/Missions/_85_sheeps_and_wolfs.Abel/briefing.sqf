@@ -14,7 +14,7 @@ Another AA site in the hills.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from intersection, targets
 are <marker name = 'target1'>ridge</marker> line and the 
@@ -22,7 +22,7 @@ enemy <marker name = 'target2'>AA Site</marker> in the hill top.
 
 
 
-Sheeps and Wolfs
+<br/>Sheeps and Wolfs<br/><br/>
 
 GEN SITREP<br/>
 Proceeding further towards central Malden, we must attack the hill tops that
@@ -64,7 +64,7 @@ going to be heavily defended.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Neutralize AA Site"];
-_objective1 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];
-_objective0 = player createSimpleTask ["Clear ridge line"];
-_objective0 setSimpleTaskDescription ["Clear ridge line", "Clear ridge line", "Clear ridge line"];
+objective2 = player createSimpleTask ["Neutralize AA Site"];
+objective2 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];
+objective1 = player createSimpleTask ["Clear ridge line"];
+objective1 setSimpleTaskDescription ["Clear ridge line", "Clear ridge line", "Clear ridge line"];

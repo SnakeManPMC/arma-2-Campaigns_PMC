@@ -15,7 +15,7 @@ Bravo's position, ok sounds easy.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, assault and
 capture the <marker name = 'target1'>intersection</marker> from where 
@@ -24,7 +24,7 @@ into <marker name = 'bravo1'>Bravo</marker> squad's position.
 
 
 
-Awake Prophet
+<br/>Awake Prophet<br/><br/>
 
 GEN SITREP<br/>
 The plan for the bridge is almost complete, we believe its completed tomorrow and
@@ -65,7 +65,7 @@ Don't wonder off too much into the forests along the sweep area. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Sweep the area"];
-_objective1 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];
-_objective0 = player createSimpleTask ["Capture intersection"];
-_objective0 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];
+objective2 = player createSimpleTask ["Sweep the area"];
+objective2 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];
+objective1 = player createSimpleTask ["Capture intersection"];
+objective1 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];

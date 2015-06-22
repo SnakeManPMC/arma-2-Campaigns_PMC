@@ -18,7 +18,7 @@ Ambushing enemy convoy in early hours, what can be move fun in the morning.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Enemy convoy is <marker name = 'convoy'>starting</marker> from Saint Pierre and heading
 to the <marker name = 'convoydest'>lighthouse</marker> in the beach. Kill the convoy.
@@ -29,7 +29,7 @@ Have fun.
 
 
 
-Good morning Everon
+<br/>Good morning Everon<br/><br/>
 
 We have gathered intelligence on the Saint Pierre now and it seems that they have put 
 extremely heavy defences there. We are still sorting out all the intel and have clearer
@@ -80,5 +80,5 @@ in there. Do the job with decisive and accurate blow to the convoy. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Kill the convoy"];
-_objective0 setSimpleTaskDescription ["Kill the convoy", "Kill the convoy", "Kill the convoy"];
+objective1 = player createSimpleTask ["Kill the convoy"];
+objective1 setSimpleTaskDescription ["Kill the convoy", "Kill the convoy", "Kill the convoy"];

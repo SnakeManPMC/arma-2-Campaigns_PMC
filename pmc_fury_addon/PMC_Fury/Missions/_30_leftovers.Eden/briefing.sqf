@@ -17,7 +17,7 @@ So what today... Oh boy do I hate these wood cleanups... sigh
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Clear out the :<br/>
 <marker name = 'woods1'>Woods #1</marker><br/> 
@@ -26,7 +26,7 @@ Clear out the :<br/>
 
 
 
-Leftover troops
+<br/>Leftover troops<br/><br/>
 
 Our task is to clear up the central NATO occupied area that there aren't any 
 leftover Russian infantry hiding in there. We have some communications from the Russians
@@ -64,9 +64,9 @@ out there, good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Clear woods #3"];
-_objective2 setSimpleTaskDescription ["Clear woods #3", "Clear woods #3", "Clear woods #3"];
-_objective1 = player createSimpleTask ["Clear woods #2"];
-_objective1 setSimpleTaskDescription ["Clear woods #2", "Clear woods #2", "Clear woods #2"];
-_objective0 = player createSimpleTask ["Clear woods #1"];
-_objective0 setSimpleTaskDescription ["Clear woods #1", "Clear woods #1", "Clear woods #1"];
+objective3 = player createSimpleTask ["Clear woods #3"];
+objective3 setSimpleTaskDescription ["Clear woods #3", "Clear woods #3", "Clear woods #3"];
+objective2 = player createSimpleTask ["Clear woods #2"];
+objective2 setSimpleTaskDescription ["Clear woods #2", "Clear woods #2", "Clear woods #2"];
+objective1 = player createSimpleTask ["Clear woods #1"];
+objective1 setSimpleTaskDescription ["Clear woods #1", "Clear woods #1", "Clear woods #1"];

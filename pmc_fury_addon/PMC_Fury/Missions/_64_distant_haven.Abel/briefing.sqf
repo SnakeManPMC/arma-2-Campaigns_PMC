@@ -16,7 +16,7 @@ Attacking Cancon in dusk.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from the invaded beach. Proceed
 and capture the following positions:<br/><marker name = 'hill'>Hill</marker><br/>
@@ -28,7 +28,7 @@ Good luck!
 
 
 
-Distant Haven
+<br/>Distant Haven<br/><br/>
 
 GEN SITREP<br/>
 Seems like we really caught Russians off guard by our smoke and mirrors operation 
@@ -72,9 +72,9 @@ Night Vision Goggles just in case you need them.
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Capture Cancon"];
-_objective2 setSimpleTaskDescription ["Capture Cancon", "Capture Cancon", "Capture Cancon"];
-_objective1 = player createSimpleTask ["Clear Buildings"];
-_objective1 setSimpleTaskDescription ["Clear Buildings", "Clear Buildings", "Clear Buildings"];
-_objective0 = player createSimpleTask ["Clear hill"];
-_objective0 setSimpleTaskDescription ["Clear hill", "Clear hill", "Clear hill"];
+objective3 = player createSimpleTask ["Capture Cancon"];
+objective3 setSimpleTaskDescription ["Capture Cancon", "Capture Cancon", "Capture Cancon"];
+objective2 = player createSimpleTask ["Clear Buildings"];
+objective2 setSimpleTaskDescription ["Clear Buildings", "Clear Buildings", "Clear Buildings"];
+objective1 = player createSimpleTask ["Clear hill"];
+objective1 setSimpleTaskDescription ["Clear hill", "Clear hill", "Clear hill"];

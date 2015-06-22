@@ -2738,7 +2738,7 @@ class Mission
 			timeoutMax=20.000000;
 			age="UNKNOWN";
 			text="east-dead objective 1";
-			expActiv="""1"" objstatus ""DONE""; helo setfuel 1; leader me sideradio ""R1complete""; dcamp=true;";
+			expActiv="objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; helo setfuel 1; leader me sideradio ""R1complete""; dcamp=true;";
 			class Effects
 			{
 			};
@@ -2754,7 +2754,7 @@ class Mission
 			age="UNKNOWN";
 			text="uammo ufuel killed";
 			expCond="(!alive uammo) AND (!alive ufuel) AND dcamp AND (leader me distance uammo <200)";
-			expActiv="""2"" objstatus ""DONE""; PAPABEAR sideradio ""Rgoodjob""; mcomplete=true;";
+			expActiv="objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; PAPABEAR sideradio ""Rgoodjob""; mcomplete=true;";
 			class Effects
 			{
 			};

@@ -18,7 +18,7 @@ seem to be too difficult to handle, yet I gotta be careful, as always.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha starts from <marker name = 'start'>here</marker> and conducts a sweep operation
 around the nearby area marked by dots. Do not across over the dotted area.
@@ -27,7 +27,7 @@ around the nearby area marked by dots. Do not across over the dotted area.
 
 
 
-Sweet Sweep
+<br/>Sweet Sweep<br/><br/>
 
 When Regina was fallen into NATO hands, some Russians went hiding in the nearby 
 area.
@@ -63,5 +63,5 @@ there. The area of sweep is marked by dots, do not across the line.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Sweep the area"];
-_objective0 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];
+objective1 = player createSimpleTask ["Sweep the area"];
+objective1 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];

@@ -14,14 +14,14 @@ Russian bastards!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Lipany. Get into
 office, use radio (0-0-1) to initate assault, eliminate all Russians.
 
 
 
-Protector
+<br/>Protector<br/><br/>
 
 GEN SITREP<br/>
 We have hostage situation. Some leftover Russians had regrouped in the eastern
@@ -75,5 +75,5 @@ of that office building, take care with your aim! Good luck and be cool out ther
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Eliminate hostage takers"];
-_objective0 setSimpleTaskDescription ["Eliminate hostage takers", "Eliminate hostage takers", "Eliminate hostage takers"];
+objective1 = player createSimpleTask ["Eliminate hostage takers"];
+objective1 setSimpleTaskDescription ["Eliminate hostage takers", "Eliminate hostage takers", "Eliminate hostage takers"];

@@ -1119,7 +1119,7 @@ class Mission
 			timeoutMax=10.000000;
 			age="UNKNOWN";
 			text="east dead";
-			expActiv="leader ambush1 sideradio ""Reastdead""; muh=""AUTO""; {_x setunitpos muh} foreach units ambush2; ambush2 setbehaviour ""safe""; ambush3 setbehaviour ""safe""; ambush2 move getpos transu1; ambush3 move getpos transu1; mcomplete=true; ""1"" objstatus ""DONE"";";
+			expActiv="leader ambush1 sideradio ""Reastdead""; muh=""AUTO""; {_x setunitpos muh} foreach units ambush2; ambush2 setbehaviour ""safe""; ambush3 setbehaviour ""safe""; ambush2 move getpos transu1; ambush3 move getpos transu1; mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

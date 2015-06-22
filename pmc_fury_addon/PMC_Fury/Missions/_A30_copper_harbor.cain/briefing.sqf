@@ -16,14 +16,14 @@ my notes!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from city. Defend it against
 any possible Russian attack.
 
 
 
-Copper Harbor
+<br/>Copper Harbor<br/><br/>
 
 GEN SITREP<br/>
 Our operation agains the coastal city was success, we are now in control of that
@@ -66,5 +66,5 @@ can do bad things from up there. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend city"];
-_objective0 setSimpleTaskDescription ["Defend city", "Defend city", "Defend city"];
+objective1 = player createSimpleTask ["Defend city"];
+objective1 setSimpleTaskDescription ["Defend city", "Defend city", "Defend city"];

@@ -17,7 +17,7 @@ Another night watch for me. these really takes a bite. but hey someone's gotta d
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha starts at <marker name = 'start'>Vernon</marker> guarding it for possible 
 Russian counterattack.
@@ -25,7 +25,7 @@ Russian counterattack.
 
 
 
-Open Arms
+<br/>Open Arms<br/><br/>
 
 Tonight we are assmbling the forces for full scale attack to the last stronghold of the
 enemy, Saint Pierre. We have additional infantry and special forces coming in from other
@@ -68,5 +68,5 @@ finally cleared the mines north of Vernon.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Guard Vernon"];
-_objective0 setSimpleTaskDescription ["Guard Vernon", "Guard Vernon", "Guard Vernon"];
+objective1 = player createSimpleTask ["Guard Vernon"];
+objective1 setSimpleTaskDescription ["Guard Vernon", "Guard Vernon", "Guard Vernon"];

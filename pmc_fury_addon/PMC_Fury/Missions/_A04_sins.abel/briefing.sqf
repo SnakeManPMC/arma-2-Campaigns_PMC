@@ -14,14 +14,14 @@ Assault to Saint Louis, enemies are going to RUN!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, proceed and capture
 the <marker name = 'target1'>Fuel Station</marker> and <marker name = 'target2'>Saint Louis</marker> city.
 
 
 
-Sins
+<br/>Sins<br/><br/>
 
 GEN SITREP<br/>
 We are closing in on the enemy airbase and they are taking it safely. They have 
@@ -62,7 +62,7 @@ few vehicles.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture Saint Louis"];
-_objective1 setSimpleTaskDescription ["Capture Saint Louis", "Capture Saint Louis", "Capture Saint Louis"];
-_objective0 = player createSimpleTask ["Capture fuel station"];
-_objective0 setSimpleTaskDescription ["Capture fuel station", "Capture fuel station", "Capture fuel station"];
+objective2 = player createSimpleTask ["Capture Saint Louis"];
+objective2 setSimpleTaskDescription ["Capture Saint Louis", "Capture Saint Louis", "Capture Saint Louis"];
+objective1 = player createSimpleTask ["Capture fuel station"];
+objective1 setSimpleTaskDescription ["Capture fuel station", "Capture fuel station", "Capture fuel station"];

@@ -14,7 +14,7 @@ Ghost bat in this south west corner of Malden...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from La Riviere, proceeds
 into the <marker name = 'target2'>south west</marker> area of Malden 
@@ -25,7 +25,7 @@ Good luck!
 
 
 
-Ghost Bat
+<br/>Ghost Bat<br/><br/>
 
 GEN SITREP<br/>
 The south west corner of this map is coming under our attack today. If we capture 
@@ -67,5 +67,5 @@ Be careful when you enter deep into enemy territory, keep your men alive!
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Clear out SW of Malden"];
-_objective0 setSimpleTaskDescription ["Clear out SW of Malden", "Clear out SW of Malden", "Clear out SW of Malden"];
+objective1 = player createSimpleTask ["Clear out SW of Malden"];
+objective1 setSimpleTaskDescription ["Clear out SW of Malden", "Clear out SW of Malden", "Clear out SW of Malden"];

@@ -14,7 +14,7 @@ First advance in Kolgujev, okay. lets go!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from NATO hq. Attack
 and capture <marker name = 'target1'>house</marker> and the
@@ -22,7 +22,7 @@ small <marker name = 'target2'>base</marker> in the beach.
 
 
 
-Essential Elements
+<br/>Essential Elements<br/><br/>
 
 GEN SITREP<br/>
 Today we start to push down to the south west of Kolgujev. Our forces are
@@ -59,7 +59,7 @@ cap in their strenghts so we have rather easy advance. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture base"];
-_objective1 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
-_objective0 = player createSimpleTask ["Capture buildings"];
-_objective0 setSimpleTaskDescription ["Capture buildings", "Capture buildings", "Capture buildings"];
+objective2 = player createSimpleTask ["Capture base"];
+objective2 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
+objective1 = player createSimpleTask ["Capture buildings"];
+objective1 setSimpleTaskDescription ["Capture buildings", "Capture buildings", "Capture buildings"];

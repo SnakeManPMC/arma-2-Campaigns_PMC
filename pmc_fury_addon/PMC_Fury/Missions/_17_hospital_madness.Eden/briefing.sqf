@@ -23,14 +23,14 @@ office 8-16hrs. Ok time to go to work, time to bag some Russians, Hooayh!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Capture the <marker name = 'hospital'>hospital</marker>, you parachute from helo and 
 disembark <marker name = 'eject'>position</marker> is right after the forrest edge.
 
 
 
-Fast Raid
+<br/>Fast Raid<br/><br/>
 
 The hospital in central part of the island is under enemy control and we are going to 
 change that. If we capture this strategic location we can much faster heal our wounded
@@ -74,7 +74,7 @@ leave the building unguarded however.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Cut off enemy reinforcements"];
-_objective1 setSimpleTaskDescription ["Cut off enemy reinforcements", "Cut off enemy reinforcements", "Cut off enemy reinforcements"];
-_objective0 = player createSimpleTask ["Capture the hospital"];
-_objective0 setSimpleTaskDescription ["Capture the hospital", "Capture the hospital", "Capture the hospital"];
+objective2 = player createSimpleTask ["Cut off enemy reinforcements"];
+objective2 setSimpleTaskDescription ["Cut off enemy reinforcements", "Cut off enemy reinforcements", "Cut off enemy reinforcements"];
+objective1 = player createSimpleTask ["Capture the hospital"];
+objective1 setSimpleTaskDescription ["Capture the hospital", "Capture the hospital", "Capture the hospital"];

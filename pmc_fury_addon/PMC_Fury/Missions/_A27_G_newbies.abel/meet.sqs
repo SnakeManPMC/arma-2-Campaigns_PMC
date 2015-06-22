@@ -57,6 +57,6 @@ aP sidechat "Ok, gear up and lets go. there is Black Hawk waiting for us.";
 
 {[_x] join assault1} foreach units newbies;
 
-"1" objstatus "DONE";
+objective1 setTaskState "SUCCEEDED"; [ objNull, objNull, objective1, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
 
 exit

@@ -14,7 +14,7 @@ The last remaining pipeline. yeah, shutting it down is going to be fun.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Valley, board black hawk
 which will insert you to Velka Ves. Proceed to 
@@ -22,7 +22,7 @@ the <marker name = 'target1'>road</marker> and set up a ambush there.
 
 
 
-Hard Rock
+<br/>Hard Rock<br/><br/>
 
 GEN SITREP<br/>
 Our forces performed very well yesterday assaulting the enemy infested valley
@@ -70,7 +70,7 @@ This is going to be ambush time... only if you encounter any enemy forces in tha
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Ambush possible enemies"];
-_objective1 setSimpleTaskDescription ["Ambush possible enemies", "Ambush possible enemies", "Ambush possible enemies"];
-_objective0 = player createSimpleTask ["Clear road"];
-_objective0 setSimpleTaskDescription ["Clear road", "Clear road", "Clear road"];
+objective2 = player createSimpleTask ["Ambush possible enemies"];
+objective2 setSimpleTaskDescription ["Ambush possible enemies", "Ambush possible enemies", "Ambush possible enemies"];
+objective1 = player createSimpleTask ["Clear road"];
+objective1 setSimpleTaskDescription ["Clear road", "Clear road", "Clear road"];

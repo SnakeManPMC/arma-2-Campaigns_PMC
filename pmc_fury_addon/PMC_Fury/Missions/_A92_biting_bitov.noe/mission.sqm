@@ -1294,7 +1294,7 @@ class Mission
 			timeoutMax=5.000000;
 			age="UNKNOWN";
 			text="eastdead1";
-			expActiv="leader assault1 sideRadio ""Reastdead1""; ""1"" objStatus ""DONE"";";
+			expActiv="leader assault1 sideRadio ""Reastdead1""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1325,7 +1325,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply ed2";
 			expCond="eastdead2";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; ""2"" objStatus ""DONE""; mcomplete=true;";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};

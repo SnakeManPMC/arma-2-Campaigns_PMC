@@ -18,7 +18,7 @@ low lifes... its so sad, people are so dumb.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from intersection, clear
 out <marker name = 'target1'>hill top</marker> and 
@@ -26,7 +26,7 @@ then <marker name = 'target2'>capture</marker> buildings.
 
 
 
-Garden Clover
+<br/>Garden Clover<br/><br/>
 
 GEN SITREP<br/>
 Seems like not all the people in this island will appreciate what we are doing.
@@ -75,7 +75,7 @@ and you'll do fine. Keep your LAW guys alive as there are some BMP's runnign aro
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture buildings"];
-_objective1 setSimpleTaskDescription ["Capture buildings", "Capture buildings", "Capture buildings"];
-_objective0 = player createSimpleTask ["Clear hill top"];
-_objective0 setSimpleTaskDescription ["Clear hill top", "Clear hill top", "Clear hill top"];
+objective2 = player createSimpleTask ["Capture buildings"];
+objective2 setSimpleTaskDescription ["Capture buildings", "Capture buildings", "Capture buildings"];
+objective1 = player createSimpleTask ["Clear hill top"];
+objective1 setSimpleTaskDescription ["Clear hill top", "Clear hill top", "Clear hill top"];

@@ -14,14 +14,14 @@ We are taking this island from the Russians!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from the beach and proceeds to
 clear <marker name = 'target1'>Base</marker> and <marker name = 'target2'>camp</marker>
 
 
 
-Cosmopolitan Warrior
+<br/>Cosmopolitan Warrior<br/><br/>
 
 GEN SITREP<br/>
 Now its time to take this small island with good base grounds. Once we have set up this 
@@ -66,7 +66,7 @@ the second objective.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture camp"];
-_objective1 setSimpleTaskDescription ["Capture camp", "Capture camp", "Capture camp"];
-_objective0 = player createSimpleTask ["Capture base"];
-_objective0 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
+objective2 = player createSimpleTask ["Capture camp"];
+objective2 setSimpleTaskDescription ["Capture camp", "Capture camp", "Capture camp"];
+objective1 = player createSimpleTask ["Capture base"];
+objective1 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];

@@ -14,14 +14,14 @@ Time for Beach!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Dourdan and proceeds 
 to <marker name = 'target1'>sweep</marker> the beach.
 
 
 
-Beach Sweep
+<br/>Beach Sweep<br/><br/>
 
 GEN SITREP<br/>
 La Trinite has extremely heavy defenses supported by anti aircraft weapons, we are not
@@ -59,5 +59,5 @@ boxes to cover your squad. Vulcans are not yet arrived into Dourdan area.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Sweep the beach"];
-_objective0 setSimpleTaskDescription ["Sweep the beach", "Sweep the beach", "Sweep the beach"];
+objective1 = player createSimpleTask ["Sweep the beach"];
+objective1 setSimpleTaskDescription ["Sweep the beach", "Sweep the beach", "Sweep the beach"];

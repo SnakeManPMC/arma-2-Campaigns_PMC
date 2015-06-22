@@ -19,14 +19,14 @@ nice change for a while.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Get onboard the UH-60 Blackhawk and recon the area from air.
 <marker name = 'start'>here</marker>.
 
 
 
-Flyboys
+<br/>Flyboys<br/><br/>
 
 There was very low resistance on Saint Phillippe and the Hospital, our patrol
 cleared them out nicely.
@@ -53,5 +53,5 @@ We are still building up our forces and you have some free time...
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Recon flight"];
-_objective0 setSimpleTaskDescription ["Recon flight", "Recon flight", "Recon flight"];
+objective1 = player createSimpleTask ["Recon flight"];
+objective1 setSimpleTaskDescription ["Recon flight", "Recon flight", "Recon flight"];

@@ -14,14 +14,14 @@ Heavily defended intersection in enemy territory. Sounds cool.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from the road. Assault
 enemy held <marker name = 'target1'>intersection</marker> and capture it.
 
 
 
-Big Horizon
+<br/>Big Horizon<br/><br/>
 
 GEN SITREP<br/>
 Moving forward to the west in northern Nogova, next objective is the enemy
@@ -62,5 +62,5 @@ there. Lets hope the birds stay away.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture intersection"];
-_objective0 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];
+objective1 = player createSimpleTask ["Capture intersection"];
+objective1 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];

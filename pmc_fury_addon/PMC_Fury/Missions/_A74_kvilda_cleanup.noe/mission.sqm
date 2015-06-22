@@ -164,7 +164,7 @@ class Mission
 				{
 					position[]={9109.203125,14.985000,12622.464844};
 					type="GETOUT";
-					expActiv="PAPABEAR sideRadio ""Rwelcome""; ""2"" objStatus ""DONE""; mcomplete=true;";
+					expActiv="PAPABEAR sideRadio ""Rwelcome""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 					class Effects
 					{
 					};
@@ -1134,7 +1134,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply 1";
 			expCond="eastdead";
-			expActiv="PAPABEAR sideRadio ""Rcopyalpha""; ""1"" objStatus ""DONE""; 1 setRadioMsg ""Call - Extract"";";
+			expActiv="PAPABEAR sideRadio ""Rcopyalpha""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; 1 setRadioMsg ""Call - Extract"";";
 			class Effects
 			{
 			};

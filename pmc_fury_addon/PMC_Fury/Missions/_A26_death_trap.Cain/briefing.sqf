@@ -14,14 +14,14 @@ That base is one death trap I tell you. Luckily its that for the Russians!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha, Bravo and Charlie teams <marker name = 'start'>start</marker> from base. 
 Attack and capture the <marker name = 'target1'>enemy base</marker> in the woods.
 
 
 
-Death Trap
+<br/>Death Trap<br/><br/>
 
 GEN SITREP<br/>
 The closest enemy base to front lines and NATO positions is the small one in
@@ -64,5 +64,5 @@ advantage. Also be careful with the attack call.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture enemy base"];
-_objective0 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
+objective1 = player createSimpleTask ["Capture enemy base"];
+objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];

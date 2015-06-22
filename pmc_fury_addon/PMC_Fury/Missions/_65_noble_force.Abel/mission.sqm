@@ -592,7 +592,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="aa site clear";
-			expActiv="leader assault1 sideradio ""Raasiteclear""; ""1"" objstatus ""DONE""; aaclear=true;";
+			expActiv="leader assault1 sideradio ""Raasiteclear""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; aaclear=true;";
 			class Effects
 			{
 			};
@@ -622,7 +622,7 @@ class Mission
 			age="UNKNOWN";
 			text="east dead";
 			expCond="aaclear AND count units reinf1 == 0";
-			expActiv="leader assault1 sideradio ""Rreinfdead""; reinfdead=true; ""2"" objstatus ""DONE"";";
+			expActiv="leader assault1 sideradio ""Rreinfdead""; reinfdead=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

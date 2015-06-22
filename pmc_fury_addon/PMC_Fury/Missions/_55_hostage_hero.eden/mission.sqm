@@ -1260,7 +1260,7 @@ class Mission
 			age="UNKNOWN";
 			text="did it";
 			expCond="didit AND alive civ1 AND alive civ2";
-			expActiv="player sideradio ""Rdidit""; mcomplete=true; ""2"" objstatus ""DONE"";";
+			expActiv="player sideradio ""Rdidit""; mcomplete=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1292,7 +1292,7 @@ class Mission
 			age="UNKNOWN";
 			text="did NOT do it";
 			expCond="didit AND !alive civ1 OR !alive civ2";
-			expActiv="player sideradio ""Rdidnot""; mfailed=true; ""2"" objstatus ""FAILED"";";
+			expActiv="player sideradio ""Rdidnot""; mfailed=true; objective2 setTaskState ""FAILED""; [ objNull, objNull, objective2, ""FAILED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1338,7 +1338,7 @@ class Mission
 			age="UNKNOWN";
 			text="situation";
 			expCond="bop1ready AND bop2ready AND bop3ready";
-			expActiv="situation=true; player sideradio ""Rswatready""; ""1"" objstatus ""DONE"";";
+			expActiv="situation=true; player sideradio ""Rswatready""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

@@ -167,7 +167,7 @@ class Mission
 				class Item4
 				{
 					position[]={8066.680176,32.174999,9902.161133};
-					expActiv="mcomplete=true; ""2"" objStatus ""DONE"";";
+					expActiv="mcomplete=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 					class Effects
 					{
 					};
@@ -314,7 +314,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply";
 			expCond="destroyed";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; ""1"" objStatus ""DONE""; 1 setRadioMsg ""Call - Extract"";";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; 1 setRadioMsg ""Call - Extract"";";
 			class Effects
 			{
 			};

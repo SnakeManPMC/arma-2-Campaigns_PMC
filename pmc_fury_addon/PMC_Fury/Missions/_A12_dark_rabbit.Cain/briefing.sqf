@@ -14,7 +14,7 @@ New day - New island!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from the beach, proceed and
 capture <marker name = 'target1'>buildings</marker> and <marker name = 'target2'>docks</marker>
@@ -23,7 +23,7 @@ Good luck!
 
 
 
-Dark Rabbit
+<br/>Dark Rabbit<br/><br/>
 
 GEN SITREP<br/>
 Today we commence the assault into Kolgujev. This operation begins with new hope
@@ -64,7 +64,7 @@ target area. Move quickly and eliminate them all before they realize whats going
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture docks"];
-_objective1 setSimpleTaskDescription ["Capture docks", "Capture docks", "Capture docks"];
-_objective0 = player createSimpleTask ["Capture buildings"];
-_objective0 setSimpleTaskDescription ["Capture buildings", "Capture buildings", "Capture buildings"];
+objective2 = player createSimpleTask ["Capture docks"];
+objective2 setSimpleTaskDescription ["Capture docks", "Capture docks", "Capture docks"];
+objective1 = player createSimpleTask ["Capture buildings"];
+objective1 setSimpleTaskDescription ["Capture buildings", "Capture buildings", "Capture buildings"];

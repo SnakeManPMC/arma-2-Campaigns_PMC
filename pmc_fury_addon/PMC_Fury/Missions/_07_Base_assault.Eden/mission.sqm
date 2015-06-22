@@ -715,7 +715,7 @@ class Mission
 				{
 					position[]={4541.753906,13.094999,10409.840820};
 					type="LOAD";
-					expActiv="{_x assignascargo transport} foreach units assault2; [as1,as2,as3,as4,as5] join assault1; as1 setbehaviour ""COMBAT""; as2 setbehaviour ""COMBAT""; as3 setbehaviour ""COMBAT""; as4 setbehaviour ""COMBAT""; as5 setbehaviour ""COMBAT""; ""1"" objstatus ""DONE"";";
+					expActiv="{_x assignascargo transport} foreach units assault2; [as1,as2,as3,as4,as5] join assault1; as1 setbehaviour ""COMBAT""; as2 setbehaviour ""COMBAT""; as3 setbehaviour ""COMBAT""; as4 setbehaviour ""COMBAT""; as5 setbehaviour ""COMBAT""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 					synchronizations[]={2};
 					class Effects
 					{
@@ -1429,7 +1429,7 @@ class Mission
 			age="UNKNOWN";
 			text="end";
 			expCond="AH1";
-			expActiv="""2"" objstatus ""DONE"";";
+			expActiv="objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

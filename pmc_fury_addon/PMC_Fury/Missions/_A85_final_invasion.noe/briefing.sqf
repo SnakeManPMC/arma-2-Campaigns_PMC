@@ -14,7 +14,7 @@ NATO heavy armor has rolled into the Nogova mainland soil. Yeah baby yeah!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from beach. Proceed and
 capture <marker name = 'target1'>St. Sedlo</marker> and 
@@ -24,7 +24,7 @@ Welcome to Nogova, finally.
 
 
 
-Final Invasion
+<br/>Final Invasion<br/><br/>
 
 GEN SITREP<br/>
 NATO invasion of Nogova has begun. Really this is the invasion, yes we have been
@@ -67,7 +67,7 @@ but we don't expect much resistance from the lighthouse. Be careful.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture lighthouse"];
-_objective1 setSimpleTaskDescription ["Capture lighthouse", "Capture lighthouse", "Capture lighthouse"];
-_objective0 = player createSimpleTask ["Capture St. Sedlo"];
-_objective0 setSimpleTaskDescription ["Capture St. Sedlo", "Capture St. Sedlo", "Capture St. Sedlo"];
+objective2 = player createSimpleTask ["Capture lighthouse"];
+objective2 setSimpleTaskDescription ["Capture lighthouse", "Capture lighthouse", "Capture lighthouse"];
+objective1 = player createSimpleTask ["Capture St. Sedlo"];
+objective1 setSimpleTaskDescription ["Capture St. Sedlo", "Capture St. Sedlo", "Capture St. Sedlo"];

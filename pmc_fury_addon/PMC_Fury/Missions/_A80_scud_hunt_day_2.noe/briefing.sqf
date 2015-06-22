@@ -24,7 +24,7 @@ the pesky Scud launchers.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from forest. Hunt 
 down <marker name = 'target1'>scuds</marker> and 
@@ -32,7 +32,7 @@ reach <marker name = 'camp'>campign</marker> point.
 
 
 
-Scud Hunt Day 2
+<br/>Scud Hunt Day 2<br/><br/>
 
 GEN SITREP<br/>
 none
@@ -65,7 +65,7 @@ none
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Reach campign point"];
-_objective1 setSimpleTaskDescription ["Reach campign point", "Reach campign point", "Reach campign point"];
-_objective0 = player createSimpleTask ["Search and destroy scuds"];
-_objective0 setSimpleTaskDescription ["Search and destroy scuds", "Search and destroy scuds", "Search and destroy scuds"];
+objective2 = player createSimpleTask ["Reach campign point"];
+objective2 setSimpleTaskDescription ["Reach campign point", "Reach campign point", "Reach campign point"];
+objective1 = player createSimpleTask ["Search and destroy scuds"];
+objective1 setSimpleTaskDescription ["Search and destroy scuds", "Search and destroy scuds", "Search and destroy scuds"];

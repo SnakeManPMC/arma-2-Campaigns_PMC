@@ -14,14 +14,14 @@ Lets get those hiding Russians!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from La Trinite, clear out
 any Russians at <marker name = 'target1'>area</marker> between city and beaches.
 
 
 
-Shiny Beaches
+<br/>Shiny Beaches<br/><br/>
 
 GEN SITREP<br/>
 Today we must clear out some of the area near La Trinite, east specificly. After
@@ -60,5 +60,5 @@ Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Clear area"];
-_objective0 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];
+objective1 = player createSimpleTask ["Clear area"];
+objective1 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];

@@ -1599,7 +1599,7 @@ class Mission
 			age="UNKNOWN";
 			text="throw smoke";
 			expCond="leader survivors distance rescue <600";
-			expActiv="leader survivors sideradio ""Rsmoke""; leader survivors fire [""throw"",""smokeshellgreen"",""smokeshellgreen""]; {_x assignascargo rescue} foreach units survivors; [sol1, sol2, sol3, sol4, pil1, pil2] ordergetin true; ""1"" objstatus ""DONE"";";
+			expActiv="leader survivors sideradio ""Rsmoke""; leader survivors fire [""throw"",""smokeshellgreen"",""smokeshellgreen""]; {_x assignascargo rescue} foreach units survivors; [sol1, sol2, sol3, sol4, pil1, pil2] ordergetin true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1613,7 +1613,7 @@ class Mission
 			age="UNKNOWN";
 			text="drop of cargo";
 			expCond="doctor distance leader survivors <100";
-			expActiv="leader survivors exec ""healme.sqs""; ""2"" objstatus ""DONE"";";
+			expActiv="leader survivors exec ""healme.sqs""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1654,7 +1654,7 @@ class Mission
 			age="UNKNOWN";
 			text="drop off base";
 			expCond="flagy distance sol1 <100 OR flagy distance sol2 <100 OR flagy distance sol3 <100 OR flagy distance sol4 <100 OR flagy distance pil1 <100 or flagy distance pil2 <100";
-			expActiv="{unassignvehicle _x} foreach units survivors; ""3"" objstatus ""DONE""; mcomplete=true;";
+			expActiv="{unassignvehicle _x} foreach units survivors; objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};
@@ -1698,7 +1698,7 @@ class Mission
 			age="UNKNOWN";
 			text="ultimate death check";
 			expCond="leader survivor distance rescue <50 AND !alive sol1 AND !alive sol2 AND !alive sol3 AND !alive sol4 AND !alive pil1 AND !alive pil2";
-			expActiv="""1"" objstatus ""DONE""; ""2"" objstatus ""FAILED""; ""3"" objstatus ""FAILED""; leader rescue sidechat ""EVERYBODY IS DEAD. RETURNING TO BASE. OVER.""; dead=true;";
+			expActiv="objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; objective2 setTaskState ""FAILED""; [ objNull, objNull, objective2, ""FAILED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; objective3 setTaskState ""FAILED""; [ objNull, objNull, objective3, ""FAILED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; leader rescue sidechat ""EVERYBODY IS DEAD. RETURNING TO BASE. OVER.""; dead=true;";
 			class Effects
 			{
 			};

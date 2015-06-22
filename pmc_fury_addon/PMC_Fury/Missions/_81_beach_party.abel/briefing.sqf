@@ -14,7 +14,7 @@ Attack to the beaches
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from the field, proceeds
 and clears the <marker name = 'target1'>intersection</marker> and
@@ -22,7 +22,7 @@ also <marker name = 'target2'>beaches</marker>
 
 
 
-Beach Party
+<br/>Beach Party<br/><br/>
 
 GEN SITREP<br/>
 We push towards north along the eastern beach line. the strategic locations are the
@@ -67,7 +67,7 @@ need any AA equipment. Be careful out there!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture beaches"];
-_objective1 setSimpleTaskDescription ["Capture beaches", "Capture beaches", "Capture beaches"];
-_objective0 = player createSimpleTask ["Clear out intersection"];
-_objective0 setSimpleTaskDescription ["Clear out intersection", "Clear out intersection", "Clear out intersection"];
+objective2 = player createSimpleTask ["Capture beaches"];
+objective2 setSimpleTaskDescription ["Capture beaches", "Capture beaches", "Capture beaches"];
+objective1 = player createSimpleTask ["Clear out intersection"];
+objective1 setSimpleTaskDescription ["Clear out intersection", "Clear out intersection", "Clear out intersection"];

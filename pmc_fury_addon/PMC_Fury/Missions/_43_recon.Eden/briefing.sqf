@@ -16,7 +16,7 @@ behind.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Aerial Reconnaisance
 <br/><br/>
@@ -30,7 +30,7 @@ gathering intel for <marker name = 'regina'>Regina</marker> city, finally ending
 
 
 
-Aerial Recon
+<br/>Aerial Recon<br/><br/>
 
 Our plans move forward to attack Regina in the next available moment.
 <br/><br/>
@@ -65,5 +65,5 @@ in the recon area. What you learn here will help us defeat the enemy in Regina a
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Recon Regina"];
-_objective0 setSimpleTaskDescription ["Recon Regina", "Recon Regina", "Recon Regina"];
+objective1 = player createSimpleTask ["Recon Regina"];
+objective1 setSimpleTaskDescription ["Recon Regina", "Recon Regina", "Recon Regina"];

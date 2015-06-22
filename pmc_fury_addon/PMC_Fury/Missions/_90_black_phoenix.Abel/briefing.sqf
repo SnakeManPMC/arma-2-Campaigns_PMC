@@ -14,7 +14,7 @@ These darn scuds! They are nasty things which must be taken out.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from base, hunt down
 and destroy two enemy <marker name = 'target1'>scud</marker> launchers.
@@ -22,7 +22,7 @@ Meet with <marker name = 'charlie1'>Charlie</marker> squad to end mission.
 
 
 
-Black Phoenix
+<br/>Black Phoenix<br/><br/>
 
 GEN SITREP<br/>
 Enemy has launched few Scuds to NATO targets, we must now hunt them down and
@@ -63,7 +63,7 @@ of stuff to blow up when you find the Scuds. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Meet Charlie squad"];
-_objective1 setSimpleTaskDescription ["Meet Charlie squad", "Meet Charlie squad", "Meet Charlie squad"];
-_objective0 = player createSimpleTask ["Destroy Scuds"];
-_objective0 setSimpleTaskDescription ["Destroy Scuds", "Destroy Scuds", "Destroy Scuds"];
+objective2 = player createSimpleTask ["Meet Charlie squad"];
+objective2 setSimpleTaskDescription ["Meet Charlie squad", "Meet Charlie squad", "Meet Charlie squad"];
+objective1 = player createSimpleTask ["Destroy Scuds"];
+objective1 setSimpleTaskDescription ["Destroy Scuds", "Destroy Scuds", "Destroy Scuds"];

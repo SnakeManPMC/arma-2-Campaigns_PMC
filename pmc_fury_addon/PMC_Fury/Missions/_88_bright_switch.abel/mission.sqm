@@ -1394,7 +1394,7 @@ class Mission
 			age="UNKNOWN";
 			text="eastdead";
 			expCond="(east countside eastarray) < 6";
-			expActiv="leader assault1 sideradio ""Reastdead""; ""1"" objstatus ""DONE""; mcomplete=true;";
+			expActiv="leader assault1 sideradio ""Reastdead""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};

@@ -15,7 +15,7 @@ to make me sweat...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road. Sweep the area
 towards north east into the <marker name = 'target1'>intersection</marker> which
@@ -23,7 +23,7 @@ you will clear from any enemy forces.
 
 
 
-Dark Star
+<br/>Dark Star<br/><br/>
 
 GEN SITREP<br/>
 Very successful Grey Thunder operation was completeled yesterday, our forces 
@@ -67,5 +67,5 @@ the objective. Be careful in the terrain, watch out for the woods. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Clear intersection"];
-_objective0 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];
+objective1 = player createSimpleTask ["Clear intersection"];
+objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];

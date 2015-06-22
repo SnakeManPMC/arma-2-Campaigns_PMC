@@ -20,7 +20,7 @@ PAPABEAR sideradio "Rhqfoundconfirm";
 ;STRM_Rexplain,"WE ARE LOOKING APPROXIMATELY TWO SQUADS OF SPEZ NATZ OPERATIVES, TWO VEHICLES AND SOME TENTS. LOOKS LIKE THE REAL DEAL. OVER.",alpha
 player sideradio "Rexplain";
 "camp" setmarkerpos getpos mopo;
-"1" objstatus "DONE";
+objective1 setTaskState "SUCCEEDED"; [ objNull, objNull, objective1, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
 ~10
 
 ;STRM_Rhqwait,"STAND BY. OVER.",hq

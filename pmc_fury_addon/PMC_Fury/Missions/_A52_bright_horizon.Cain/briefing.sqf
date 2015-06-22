@@ -14,14 +14,14 @@ Night time duty, defending the captured base.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from base, defend it
 through the night.
 
 
 
-Bright Horizon
+<br/>Bright Horizon<br/><br/>
 
 GEN SITREP<br/>
 The new base just captured might cause some reaction from the Russian side,
@@ -65,5 +65,5 @@ decide to join the party.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend the base"];
-_objective0 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];
+objective1 = player createSimpleTask ["Defend the base"];
+objective1 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];

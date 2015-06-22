@@ -15,7 +15,7 @@ is the real thing, the big time.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha and Charlie teams <marker name = 'start'>start</marker> from the road. 
 Attack and capture the enemy <marker name = 'target1'>base</marker> in the beach.
@@ -24,7 +24,7 @@ Good luck.
 
 
 
-Grey Thunder
+<br/>Grey Thunder<br/><br/>
 
 GEN SITREP<br/>
 Full effect of the thunderstorm has hit the Kolgujev, it pouring rains. Weather
@@ -71,7 +71,7 @@ Keep it together people, this is important one.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Seize the intersection"];
-_objective1 setSimpleTaskDescription ["Seize the intersection", "Seize the intersection", "Seize the intersection"];
-_objective0 = player createSimpleTask ["Capture enemy base"];
-_objective0 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
+objective2 = player createSimpleTask ["Seize the intersection"];
+objective2 setSimpleTaskDescription ["Seize the intersection", "Seize the intersection", "Seize the intersection"];
+objective1 = player createSimpleTask ["Capture enemy base"];
+objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];

@@ -14,14 +14,14 @@ Okay another long run for those mountains. Why don't we just nuke the damn rock!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> west from Houdan. Attack the
 high <marker name = 'target1'>mountain</marker> and capture it.
 
 
 
-Mountain Warrior
+<br/>Mountain Warrior<br/><br/>
 
 GEN SITREP<br/>
 Russians had enough of fighting over Houdan, they aren't sending anymore troops.
@@ -65,7 +65,7 @@ this mountain too. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Secure until backups arrive"];
-_objective1 setSimpleTaskDescription ["Secure until backups arrive", "Secure until backups arrive", "Secure until backups arrive"];
-_objective0 = player createSimpleTask ["Capture mountain"];
-_objective0 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];
+objective2 = player createSimpleTask ["Secure until backups arrive"];
+objective2 setSimpleTaskDescription ["Secure until backups arrive", "Secure until backups arrive", "Secure until backups arrive"];
+objective1 = player createSimpleTask ["Capture mountain"];
+objective1 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];

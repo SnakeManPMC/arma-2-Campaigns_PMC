@@ -16,7 +16,7 @@ my notes!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from ruins, take out
 the <marker name = 'target1'>AA Site</marker> and the 
@@ -24,7 +24,7 @@ large <marker name = 'target2'>tank base</marker> which enemy is using.
 
 
 
-Armor Wall
+<br/>Armor Wall<br/><br/>
 
 GEN SITREP<br/>
 First large enemy armored base lays ahead in the battlefield. Its first place
@@ -68,7 +68,7 @@ the tank base until AH-64 Apache has soften it up first! Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture tank base"];
-_objective1 setSimpleTaskDescription ["Capture tank base", "Capture tank base", "Capture tank base"];
-_objective0 = player createSimpleTask ["Neutralize AA Site"];
-_objective0 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];
+objective2 = player createSimpleTask ["Capture tank base"];
+objective2 setSimpleTaskDescription ["Capture tank base", "Capture tank base", "Capture tank base"];
+objective1 = player createSimpleTask ["Neutralize AA Site"];
+objective1 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];

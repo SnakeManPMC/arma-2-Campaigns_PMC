@@ -15,7 +15,7 @@ in this island. Always good stuff.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, seize 
 the enemy <marker name = 'target1'>intersection</marker> and then
@@ -23,7 +23,7 @@ meet <marker name = 'bravo'>Bravo</marker> squad.
 
 
 
-Blue Sword
+<br/>Blue Sword<br/><br/>
 
 GEN SITREP<br/>
 Our assault to the front lines and enemy base was successful in all parts.
@@ -72,7 +72,7 @@ battle. Stay alert.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Meet Bravo squad"];
-_objective1 setSimpleTaskDescription ["Meet Bravo squad", "Meet Bravo squad", "Meet Bravo squad"];
-_objective0 = player createSimpleTask ["Seize intersection"];
-_objective0 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];
+objective2 = player createSimpleTask ["Meet Bravo squad"];
+objective2 setSimpleTaskDescription ["Meet Bravo squad", "Meet Bravo squad", "Meet Bravo squad"];
+objective1 = player createSimpleTask ["Seize intersection"];
+objective1 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];

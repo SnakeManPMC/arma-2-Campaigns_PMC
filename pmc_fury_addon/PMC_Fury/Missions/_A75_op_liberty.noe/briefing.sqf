@@ -14,14 +14,14 @@ Another batch of civilians to free. Seems like no biggie.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airstrip. Clear out
 the <marker name = 'target1'>buildings</marker> and evacuate civilians.
 
 
 
-Op Liberty
+<br/>Op Liberty<br/><br/>
 
 GEN SITREP<br/>
 There are some civilians that have requested evacuation and we are going
@@ -68,13 +68,13 @@ the Ivan might send to that area when you start to make noise. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective4 = player createSimpleTask ["Board chinook and return home"];
-_objective4 setSimpleTaskDescription ["Board chinook and return home", "Board chinook and return home", "Board chinook and return home"];
-_objective3 = player createSimpleTask ["Secure Crash Site until the"];
-_objective3 setSimpleTaskDescription ["Secure Crash Site until the", "Secure Crash Site until the", "Secure Crash Site until the"];
-_objective2 = player createSimpleTask ["Locate pilots"];
-_objective2 setSimpleTaskDescription ["Locate pilots", "Locate pilots", "Locate pilots"];
-_objective1 = player createSimpleTask ["Locate Downed Blackhawk"];
-_objective1 setSimpleTaskDescription ["Locate Downed Blackhawk", "Locate Downed Blackhawk", "Locate Downed Blackhawk"];
-_objective0 = player createSimpleTask ["Clear houses, meet civilians"];
-_objective0 setSimpleTaskDescription ["Clear houses, meet civilians", "Clear houses, meet civilians", "Clear houses, meet civilians"];
+objective5 = player createSimpleTask ["Board chinook and return home"];
+objective5 setSimpleTaskDescription ["Board chinook and return home", "Board chinook and return home", "Board chinook and return home"];
+objective4 = player createSimpleTask ["Secure Crash Site until the"];
+objective4 setSimpleTaskDescription ["Secure Crash Site until the", "Secure Crash Site until the", "Secure Crash Site until the"];
+objective3 = player createSimpleTask ["Locate pilots"];
+objective3 setSimpleTaskDescription ["Locate pilots", "Locate pilots", "Locate pilots"];
+objective2 = player createSimpleTask ["Locate Downed Blackhawk"];
+objective2 setSimpleTaskDescription ["Locate Downed Blackhawk", "Locate Downed Blackhawk", "Locate Downed Blackhawk"];
+objective1 = player createSimpleTask ["Clear houses, meet civilians"];
+objective1 setSimpleTaskDescription ["Clear houses, meet civilians", "Clear houses, meet civilians", "Clear houses, meet civilians"];

@@ -15,7 +15,7 @@ one wrong shot and BOOM it goes...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from field. Assault 
 targets:<br/> 
@@ -28,7 +28,7 @@ Good luck!
 
 
 
-Golden Canyon
+<br/>Golden Canyon<br/><br/>
 
 GEN SITREP<br/>
 Today we move against the heavily defended La Passagne fuel depot and
@@ -85,11 +85,11 @@ plan what you need with this one. Good luck, you're gonna need it.
 
 "]];
 // tasks need to be in reversed order
-_objective3 = player createSimpleTask ["Capture Vigny"];
-_objective3 setSimpleTaskDescription ["Capture Vigny", "Capture Vigny", "Capture Vigny"];
-_objective2 = player createSimpleTask ["Capture La Passagne"];
-_objective2 setSimpleTaskDescription ["Capture La Passagne", "Capture La Passagne", "Capture La Passagne"];
-_objective1 = player createSimpleTask ["Capture hilltop"];
-_objective1 setSimpleTaskDescription ["Capture hilltop", "Capture hilltop", "Capture hilltop"];
-_objective0 = player createSimpleTask ["Secure hilltop until for AA"];
-_objective0 setSimpleTaskDescription ["Secure hilltop until for AA", "Secure hilltop until for AA", "Secure hilltop until for AA"];
+objective4 = player createSimpleTask ["Capture Vigny"];
+objective4 setSimpleTaskDescription ["Capture Vigny", "Capture Vigny", "Capture Vigny"];
+objective3 = player createSimpleTask ["Capture La Passagne"];
+objective3 setSimpleTaskDescription ["Capture La Passagne", "Capture La Passagne", "Capture La Passagne"];
+objective2 = player createSimpleTask ["Capture hilltop"];
+objective2 setSimpleTaskDescription ["Capture hilltop", "Capture hilltop", "Capture hilltop"];
+objective1 = player createSimpleTask ["Secure hilltop until for AA"];
+objective1 setSimpleTaskDescription ["Secure hilltop until for AA", "Secure hilltop until for AA", "Secure hilltop until for AA"];

@@ -3277,7 +3277,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq aa reply";
 			expCond="aadead";
-			expActiv="PAPABEAR sideRadio ""Raacopy""; ""1"" objStatus ""DONE""; helo1 setfuel 1; helo2 setfuel 1;";
+			expActiv="PAPABEAR sideRadio ""Raacopy""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; helo1 setfuel 1; helo2 setfuel 1;";
 			class Effects
 			{
 			};
@@ -3293,7 +3293,7 @@ class Mission
 			timeoutMax=5.000000;
 			age="UNKNOWN";
 			text="east cleared out";
-			expActiv="leader assault1 sideRadio ""Reastdead1""; ""2"" objstatus ""DONE""; Tanks_Go=true;";
+			expActiv="leader assault1 sideRadio ""Reastdead1""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; Tanks_Go=true;";
 			class Effects
 			{
 			};
@@ -3309,7 +3309,7 @@ class Mission
 			timeoutMax=5.000000;
 			age="UNKNOWN";
 			text="field cleared";
-			expActiv="leader assault1 sideRadio ""Reastdead2""; ""3"" objStatus ""DONE"";";
+			expActiv="leader assault1 sideRadio ""Reastdead2""; objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -3327,7 +3327,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="houdan clear";
-			expActiv="leader assault1 sideRadio ""Reastdead3""; ""4"" objStatus ""DONE""; houdanclear=true;";
+			expActiv="leader assault1 sideRadio ""Reastdead3""; objective4 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective4, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; houdanclear=true;";
 			class Effects
 			{
 			};

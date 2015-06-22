@@ -19,7 +19,7 @@ is one damned heavily defended beach... great, just great.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from ruins, black hawk helo take
 you to the coastal <marker name = 'insert'>insertion</marker> point. From there 
@@ -27,7 +27,7 @@ push forward into the marked <marker name = 'target1'>point</marker> in the road
 
 
 
-Rainman
+<br/>Rainman<br/><br/>
 
 GEN SITREP<br/>
 The weather front has arrived to Kolgujev, we can expect this rain continue for days. 
@@ -69,5 +69,5 @@ up the positions so easily. Keep your team alive.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Assault the enemy positions"];
-_objective0 setSimpleTaskDescription ["Assault the enemy positions", "Assault the enemy positions", "Assault the enemy positions"];
+objective1 = player createSimpleTask ["Assault the enemy positions"];
+objective1 setSimpleTaskDescription ["Assault the enemy positions", "Assault the enemy positions", "Assault the enemy positions"];

@@ -15,7 +15,7 @@ by capturing the airbase, so we need to go in and check it out.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Welcome to the Everon soldier!<br/><br/>
 
@@ -27,7 +27,7 @@ Extraction <marker name = 'extraction'>here</marker>
 
 
 
-Recon
+<br/>Recon<br/><br/>
 
 Welcome to the war.<br/><br/>
 
@@ -61,9 +61,9 @@ not shoot anybody, just collect intel.
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Extract undetected"];
-_objective2 setSimpleTaskDescription ["Extract undetected", "Extract undetected", "Extract undetected"];
-_objective1 = player createSimpleTask ["Recon the airbase south"];
-_objective1 setSimpleTaskDescription ["Recon the airbase south", "Recon the airbase south", "Recon the airbase south"];
-_objective0 = player createSimpleTask ["Recon the airbase north"];
-_objective0 setSimpleTaskDescription ["Recon the airbase north", "Recon the airbase north", "Recon the airbase north"];
+objective3 = player createSimpleTask ["Extract undetected"];
+objective3 setSimpleTaskDescription ["Extract undetected", "Extract undetected", "Extract undetected"];
+objective2 = player createSimpleTask ["Recon the airbase south"];
+objective2 setSimpleTaskDescription ["Recon the airbase south", "Recon the airbase south", "Recon the airbase south"];
+objective1 = player createSimpleTask ["Recon the airbase north"];
+objective1 setSimpleTaskDescription ["Recon the airbase north", "Recon the airbase north", "Recon the airbase north"];

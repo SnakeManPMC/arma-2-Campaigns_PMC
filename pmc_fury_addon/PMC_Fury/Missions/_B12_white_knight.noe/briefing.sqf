@@ -14,7 +14,7 @@ The ruins in the hilltop should be easy, Dolina should not... we'll soon see.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road. Assault
 and capture <marker name = 'target1'>hilltop</marker> and then 
@@ -22,7 +22,7 @@ proceed to capture <marker name = 'target2'>Dolina</marker> town.
 
 
 
-White Knight
+<br/>White Knight<br/><br/>
 
 GEN SITREP<br/>
 Today we move forward towards Dolina. We will try to capture it cutting off the
@@ -63,7 +63,7 @@ Apache to kick some butt in Dolina before charging in. Ok take them down!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture Dolina"];
-_objective1 setSimpleTaskDescription ["Capture Dolina", "Capture Dolina", "Capture Dolina"];
-_objective0 = player createSimpleTask ["Capture Hilltop"];
-_objective0 setSimpleTaskDescription ["Capture Hilltop", "Capture Hilltop", "Capture Hilltop"];
+objective2 = player createSimpleTask ["Capture Dolina"];
+objective2 setSimpleTaskDescription ["Capture Dolina", "Capture Dolina", "Capture Dolina"];
+objective1 = player createSimpleTask ["Capture Hilltop"];
+objective1 setSimpleTaskDescription ["Capture Hilltop", "Capture Hilltop", "Capture Hilltop"];

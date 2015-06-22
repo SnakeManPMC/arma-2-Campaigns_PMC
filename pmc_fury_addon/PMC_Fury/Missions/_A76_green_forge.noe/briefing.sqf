@@ -16,14 +16,14 @@ join the bible society.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airstrip, assault
 the <marker name = 'target1'>Dolina</marker> village in the valley.
 
 
 
-Green Forge
+<br/>Green Forge<br/><br/>
 
 GEN SITREP<br/>
 Russians had theif fun yesterday downing one of our Black Hawks, but luckily the
@@ -73,5 +73,5 @@ Reinforcements.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Assault Dolina and escape"];
-_objective0 setSimpleTaskDescription ["Assault Dolina and escape", "Assault Dolina and escape", "Assault Dolina and escape"];
+objective1 = player createSimpleTask ["Assault Dolina and escape"];
+objective1 setSimpleTaskDescription ["Assault Dolina and escape", "Assault Dolina and escape", "Assault Dolina and escape"];

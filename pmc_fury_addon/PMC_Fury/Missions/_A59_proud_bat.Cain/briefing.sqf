@@ -14,7 +14,7 @@ That mountain is scary big. Its going to be totally insane climb.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from beach. Assault
 and <marker name = 'target1'>capture</marker> the Kolgujev mountain.
@@ -23,7 +23,7 @@ Good luck.
 
 
 
-Proud Bat
+<br/>Proud Bat<br/><br/>
 
 GEN SITREP<br/>
 Today we take the proudest piece of real estate on Kolgujev island. The 
@@ -65,7 +65,7 @@ forces up there, those boys seem to like the high mountains. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Clear rest of mountain"];
-_objective1 setSimpleTaskDescription ["Clear rest of mountain", "Clear rest of mountain", "Clear rest of mountain"];
-_objective0 = player createSimpleTask ["Capture mountain peak"];
-_objective0 setSimpleTaskDescription ["Capture mountain peak", "Capture mountain peak", "Capture mountain peak"];
+objective2 = player createSimpleTask ["Clear rest of mountain"];
+objective2 setSimpleTaskDescription ["Clear rest of mountain", "Clear rest of mountain", "Clear rest of mountain"];
+objective1 = player createSimpleTask ["Capture mountain peak"];
+objective1 setSimpleTaskDescription ["Capture mountain peak", "Capture mountain peak", "Capture mountain peak"];

@@ -15,7 +15,7 @@ the commander ordered me to patrol. Beautiful, welcome to the U.S. Army!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Good morning soldiers. We'll start this fine day by doing some patrol in the nearby
  areas to make sure there are no Russians lurking around.<br/><br/>
@@ -26,7 +26,7 @@ Saint Phillippe <marker name = 'patrol1'>here</marker> and the hospital
 
 
 
-Patrols
+<br/>Patrols<br/><br/>
 
 We start to move along due south. Now we see what we are up against in this island.
 <br/><br/>
@@ -54,7 +54,7 @@ Saint Phillippe <marker name = 'patrol1'>here</marker> and second objective is t
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Patrol the Hospital"];
-_objective1 setSimpleTaskDescription ["Patrol the Hospital", "Patrol the Hospital", "Patrol the Hospital"];
-_objective0 = player createSimpleTask ["Patrol Saint Phillippe"];
-_objective0 setSimpleTaskDescription ["Patrol Saint Phillippe", "Patrol Saint Phillippe", "Patrol Saint Phillippe"];
+objective2 = player createSimpleTask ["Patrol the Hospital"];
+objective2 setSimpleTaskDescription ["Patrol the Hospital", "Patrol the Hospital", "Patrol the Hospital"];
+objective1 = player createSimpleTask ["Patrol Saint Phillippe"];
+objective1 setSimpleTaskDescription ["Patrol Saint Phillippe", "Patrol Saint Phillippe", "Patrol Saint Phillippe"];

@@ -14,7 +14,7 @@ Oh Uh another fast roping down. Geesh!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from base, board black hawk
 which will insert you to <marker name = 'target1'>target</marker> island
@@ -24,7 +24,7 @@ Have fun.
 
 
 
-Fast Escape
+<br/>Fast Escape<br/><br/>
 
 GEN SITREP<br/>
 Its been one celebration since we freed Kolgujev from Russian control. We have been
@@ -68,5 +68,5 @@ be just a walk in the park. Have fun!
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Clear the island"];
-_objective0 setSimpleTaskDescription ["Clear the island", "Clear the island", "Clear the island"];
+objective1 = player createSimpleTask ["Clear the island"];
+objective1 setSimpleTaskDescription ["Clear the island", "Clear the island", "Clear the island"];

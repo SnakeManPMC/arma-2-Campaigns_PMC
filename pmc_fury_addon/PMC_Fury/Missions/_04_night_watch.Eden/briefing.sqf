@@ -17,7 +17,7 @@ almost too quiet out here... and dark...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 You're on the night watch on the just captured Russian Airbase
 <marker name = 'start'>here</marker>. Stay alert, we dont know if Ruskies
@@ -26,7 +26,7 @@ decide to make counterattack.
 
 
 
-Night
+<br/>Night<br/><br/>
 
 Our reinforcements have arrived to the Everon airbase. We have our HQ setup now.
 <br/><br/>
@@ -56,5 +56,5 @@ airbase who will maintain the first line of defence.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Guard the airbase"];
-_objective0 setSimpleTaskDescription ["Guard the airbase", "Guard the airbase", "Guard the airbase"];
+objective1 = player createSimpleTask ["Guard the airbase"];
+objective1 setSimpleTaskDescription ["Guard the airbase", "Guard the airbase", "Guard the airbase"];

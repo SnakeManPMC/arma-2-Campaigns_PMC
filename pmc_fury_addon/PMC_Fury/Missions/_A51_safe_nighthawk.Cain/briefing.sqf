@@ -14,7 +14,7 @@ Assault to the enemy base, okay, I'm up for it.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from the road. Assault
 and clear the <marker name = 'target1'>intersection</marker> leading to the
@@ -22,7 +22,7 @@ enemy <marker name = 'target2'>base</marker> which is your main objective.
 
 
 
-Safe Nighthawk
+<br/>Safe Nighthawk<br/><br/>
 
 GEN SITREP<br/>
 Today we will take the next enemy base in southern part of Kolgujev. There are
@@ -65,7 +65,7 @@ possible. keep your men alive and don't try anything foolish. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture base"];
-_objective1 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
-_objective0 = player createSimpleTask ["Clear intersection"];
-_objective0 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];
+objective2 = player createSimpleTask ["Capture base"];
+objective2 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
+objective1 = player createSimpleTask ["Clear intersection"];
+objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];

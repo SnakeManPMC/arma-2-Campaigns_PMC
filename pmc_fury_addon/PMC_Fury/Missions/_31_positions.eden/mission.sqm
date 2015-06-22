@@ -2371,7 +2371,7 @@ class Mission
 			timeoutMax=5.000000;
 			age="UNKNOWN";
 			text="East dead";
-			expActiv="me sideradio ""Rdefeated""; defeated=true; ""1"" objstatus ""DONE"";";
+			expActiv="me sideradio ""Rdefeated""; defeated=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

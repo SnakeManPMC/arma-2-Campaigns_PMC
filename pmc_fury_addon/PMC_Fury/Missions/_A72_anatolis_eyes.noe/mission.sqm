@@ -1226,7 +1226,7 @@ class Mission
 			age="UNKNOWN";
 			text="END";
 			expCond="mcomplete";
-			expActiv="""2"" objStatus ""DONE"";";
+			expActiv="objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1272,7 +1272,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply ed1";
 			expCond="eastdead";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; ""1"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

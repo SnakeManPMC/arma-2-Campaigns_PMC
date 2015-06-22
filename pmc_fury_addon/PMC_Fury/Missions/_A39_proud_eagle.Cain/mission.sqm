@@ -1603,7 +1603,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply";
 			expCond="eastdead";
-			expActiv="PAPABEAR sideRadio ""Rreinf""; ""1"" objStatus ""DONE""; helo setFuel 1;";
+			expActiv="PAPABEAR sideRadio ""Rreinf""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; helo setFuel 1;";
 			class Effects
 			{
 			};

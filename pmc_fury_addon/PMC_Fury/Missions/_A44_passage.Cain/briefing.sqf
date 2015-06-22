@@ -15,7 +15,7 @@ lie in there.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, approach the
 target <marker name = 'target1'>ditch</marker> and neutralize all enemies on the
@@ -23,7 +23,7 @@ way there.
 
 
 
-Passage
+<br/>Passage<br/><br/>
 
 GEN SITREP<br/>
 Now we have control over the road system to the central island, there is still one
@@ -69,5 +69,5 @@ around there. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Clear out the ditch"];
-_objective0 setSimpleTaskDescription ["Clear out the ditch", "Clear out the ditch", "Clear out the ditch"];
+objective1 = player createSimpleTask ["Clear out the ditch"];
+objective1 setSimpleTaskDescription ["Clear out the ditch", "Clear out the ditch", "Clear out the ditch"];

@@ -19,14 +19,14 @@ Nah... who knows whats its called. Its gotta go down and Alpha Black One does th
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airstrip, assault
 the <marker name = 'target1'>Mokropsy</marker> village.
 
 
 
-Mokropsy Obelisk
+<br/>Mokropsy Obelisk<br/><br/>
 
 GEN SITREP<br/>
 Our scud hunt was successful, there has been no launches against our airstrip
@@ -74,7 +74,7 @@ handling. So make it fast.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Defend airstrip"];
-_objective1 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];
-_objective0 = player createSimpleTask ["Assault Mokropsy"];
-_objective0 setSimpleTaskDescription ["Assault Mokropsy", "Assault Mokropsy", "Assault Mokropsy"];
+objective2 = player createSimpleTask ["Defend airstrip"];
+objective2 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];
+objective1 = player createSimpleTask ["Assault Mokropsy"];
+objective1 setSimpleTaskDescription ["Assault Mokropsy", "Assault Mokropsy", "Assault Mokropsy"];

@@ -14,7 +14,7 @@ Bring it on dirty you ivan, you ain't scaring me! Hooyah!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha and Bravo teams <marker name = 'start'>start</marker> from La Trinite, 
 defend it all costs.
@@ -23,7 +23,7 @@ May God be with you.
 
 
 
-Dark Jewel
+<br/>Dark Jewel<br/><br/>
 
 GEN SITREP<br/>
 Russians are launching full scale counter attack to reclaim La Trinite, which
@@ -61,5 +61,5 @@ Stay healthy...
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Repel Russian counter attack"];
-_objective0 setSimpleTaskDescription ["Repel Russian counter attack", "Repel Russian counter attack", "Repel Russian counter attack"];
+objective1 = player createSimpleTask ["Repel Russian counter attack"];
+objective1 setSimpleTaskDescription ["Repel Russian counter attack", "Repel Russian counter attack", "Repel Russian counter attack"];

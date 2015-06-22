@@ -15,7 +15,7 @@ even more sickening is walking around this island...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Fuel Depot and proceeds
 into <marker name = 'target1'>intersection</marker> seizing it, clearing the road leading 
@@ -26,7 +26,7 @@ Good luck.
 
 
 
-Angry Bear
+<br/>Angry Bear<br/><br/>
 
 GEN SITREP<br/>
 We must clear a path to our tanks into the upper areas of central malden in
@@ -72,9 +72,9 @@ tanks dont get hit by those pesky RPG's today.
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Secure until support arrive."];
-_objective2 setSimpleTaskDescription ["Secure until support arrive.", "Secure until support arrive.", "Secure until support arrive."];
-_objective1 = player createSimpleTask ["Neutralize AA site"];
-_objective1 setSimpleTaskDescription ["Neutralize AA site", "Neutralize AA site", "Neutralize AA site"];
-_objective0 = player createSimpleTask ["Seize intersection"];
-_objective0 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];
+objective3 = player createSimpleTask ["Secure until support arrive."];
+objective3 setSimpleTaskDescription ["Secure until support arrive.", "Secure until support arrive.", "Secure until support arrive."];
+objective2 = player createSimpleTask ["Neutralize AA site"];
+objective2 setSimpleTaskDescription ["Neutralize AA site", "Neutralize AA site", "Neutralize AA site"];
+objective1 = player createSimpleTask ["Seize intersection"];
+objective1 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];

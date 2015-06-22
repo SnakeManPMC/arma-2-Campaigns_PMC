@@ -632,7 +632,7 @@ class Mission
 					formation="WEDGE";
 					speed="NORMAL";
 					combat="SAFE";
-					expActiv="PAPABEAR sideradio ""Rwelcome""; mcomplete=true; ""5"" objStatus ""DONE"";";
+					expActiv="PAPABEAR sideradio ""Rwelcome""; mcomplete=true; objective5 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective5, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 					class Effects
 					{
 					};
@@ -1069,7 +1069,7 @@ class Mission
 			age="UNKNOWN";
 			text="found civis";
 			expCond="this && (leader assault1 distance leader civis1 < 20)";
-			expActiv="leader assault1 sideRadio ""Rfoundcivis""; ""1"" objStatus ""DONE""; AA_Go=true;";
+			expActiv="leader assault1 sideRadio ""Rfoundcivis""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; AA_Go=true;";
 			class Effects
 			{
 			};

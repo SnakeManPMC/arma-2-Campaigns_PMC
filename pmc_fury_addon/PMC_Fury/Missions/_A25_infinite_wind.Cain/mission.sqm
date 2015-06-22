@@ -1399,7 +1399,7 @@ class Mission
 			age="UNKNOWN";
 			text="mcomplete";
 			expCond="reinfdead";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; mcomplete=true; ""1"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

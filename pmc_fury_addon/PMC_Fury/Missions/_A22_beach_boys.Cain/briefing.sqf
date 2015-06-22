@@ -16,14 +16,14 @@ my notes!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road block. Fight off
 any <marker name = 'attack'>attacking</marker> Russians.
 
 
 
-Beach Boys
+<br/>Beach Boys<br/><br/>
 
 GEN SITREP<br/>
 Our successful capturing of the two important road blocks launched reaction 
@@ -61,5 +61,5 @@ bunch of soldiers. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend road block"];
-_objective0 setSimpleTaskDescription ["Defend road block", "Defend road block", "Defend road block"];
+objective1 = player createSimpleTask ["Defend road block"];
+objective1 setSimpleTaskDescription ["Defend road block", "Defend road block", "Defend road block"];

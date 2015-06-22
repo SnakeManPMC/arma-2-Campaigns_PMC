@@ -15,14 +15,14 @@ Russians preparing for attack then!?
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Defend your <marker name = 'start'>positions</marker>
 
 
 
 
-Positions
+<br/>Positions<br/><br/>
 
 We intend to hold these positions until we move forward with out objectives or permanent 
 cease fire has been established. By tomorrow we should have more information on the 
@@ -58,5 +58,5 @@ the NATO forces present in the sector at the moment.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Repel enemy attack"];
-_objective0 setSimpleTaskDescription ["Repel enemy attack", "Repel enemy attack", "Repel enemy attack"];
+objective1 = player createSimpleTask ["Repel enemy attack"];
+objective1 setSimpleTaskDescription ["Repel enemy attack", "Repel enemy attack", "Repel enemy attack"];

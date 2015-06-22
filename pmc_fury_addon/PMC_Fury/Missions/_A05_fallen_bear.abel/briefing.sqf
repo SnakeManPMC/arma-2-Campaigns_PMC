@@ -14,7 +14,7 @@ This is the fight. We finally launch the assault into the enemy airbase.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Saint Louis, assault
 and capture the <marker name = 'target1'>Airbase</marker> of this island.
@@ -23,7 +23,7 @@ Good luck!
 
 
 
-Fallen Bear
+<br/>Fallen Bear<br/><br/>
 
 GEN SITREP<br/>
 Our moment of victory is near. Today we will take the Malden airbase from 
@@ -75,7 +75,7 @@ all of you.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture airbase"];
-_objective1 setSimpleTaskDescription ["Capture airbase", "Capture airbase", "Capture airbase"];
-_objective0 = player createSimpleTask ["Neutralize shilka(s)"];
-_objective0 setSimpleTaskDescription ["Neutralize shilka(s)", "Neutralize shilka(s)", "Neutralize shilka(s)"];
+objective2 = player createSimpleTask ["Capture airbase"];
+objective2 setSimpleTaskDescription ["Capture airbase", "Capture airbase", "Capture airbase"];
+objective1 = player createSimpleTask ["Neutralize shilka(s)"];
+objective1 setSimpleTaskDescription ["Neutralize shilka(s)", "Neutralize shilka(s)", "Neutralize shilka(s)"];

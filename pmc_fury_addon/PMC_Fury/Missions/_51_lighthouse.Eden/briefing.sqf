@@ -18,7 +18,7 @@ Okay so we have now to clear out the southern tip of the island.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team will <marker name = 'start'>start</marker> near the castle and proceeds to clear
 out any enemy forces in the <marker name = 'sweep'>area</marker> marked with red dots.
@@ -30,7 +30,7 @@ Go get them Alpha.
 
 
 
-Lighthouse
+<br/>Lighthouse<br/><br/>
 
 Russians launched major counter attack when we captured their Comms site in the castle,
 they still have some armored units left to use small scale offensives. That move however
@@ -79,5 +79,5 @@ peeps haven't detected much of activity from the limited aerial reconnaisance.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Clear sector"];
-_objective0 setSimpleTaskDescription ["Clear sector", "Clear sector", "Clear sector"];
+objective1 = player createSimpleTask ["Clear sector"];
+objective1 setSimpleTaskDescription ["Clear sector", "Clear sector", "Clear sector"];

@@ -21,14 +21,14 @@ lines pushing the commies away from this island!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Clear out <marker name = 'clear'>area</marker> and <marker name = 'chapel'>Chapel</marker>
 
 
 
 
-Cleanups
+<br/>Cleanups<br/><br/>
 
 After we seized Montignac, we want to make sure there are no leftover Russian 
 forces hiding in the North-East from Montignac. We are building up the defensive positions
@@ -58,5 +58,5 @@ the <marker name = 'chapel'>Chapel</marker> or nearby.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Clear the designated area"];
-_objective0 setSimpleTaskDescription ["Clear the designated area", "Clear the designated area", "Clear the designated area"];
+objective1 = player createSimpleTask ["Clear the designated area"];
+objective1 setSimpleTaskDescription ["Clear the designated area", "Clear the designated area", "Clear the designated area"];

@@ -14,7 +14,7 @@ This is the big one, Petrovice. street fighting. brr.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Vidlakov. Clear the
 three locations:<br/>
@@ -26,7 +26,7 @@ And finally <marker name = 'target4'>Petrovice</marker> must be captured.
 
 
 
-Cosmopolitan Order
+<br/>Cosmopolitan Order<br/><br/>
 
 GEN SITREP<br/>
 Our big assault has come, the large capital city of Petrovice is coming 
@@ -77,11 +77,11 @@ can do some recon first. Be careful with this one, good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective3 = player createSimpleTask ["Capture Petrovice"];
-_objective3 setSimpleTaskDescription ["Capture Petrovice", "Capture Petrovice", "Capture Petrovice"];
-_objective2 = player createSimpleTask ["Clear north east houses"];
-_objective2 setSimpleTaskDescription ["Clear north east houses", "Clear north east houses", "Clear north east houses"];
-_objective1 = player createSimpleTask ["Clear south east houses"];
-_objective1 setSimpleTaskDescription ["Clear south east houses", "Clear south east houses", "Clear south east houses"];
-_objective0 = player createSimpleTask ["Clear fuel station"];
-_objective0 setSimpleTaskDescription ["Clear fuel station", "Clear fuel station", "Clear fuel station"];
+objective4 = player createSimpleTask ["Capture Petrovice"];
+objective4 setSimpleTaskDescription ["Capture Petrovice", "Capture Petrovice", "Capture Petrovice"];
+objective3 = player createSimpleTask ["Clear north east houses"];
+objective3 setSimpleTaskDescription ["Clear north east houses", "Clear north east houses", "Clear north east houses"];
+objective2 = player createSimpleTask ["Clear south east houses"];
+objective2 setSimpleTaskDescription ["Clear south east houses", "Clear south east houses", "Clear south east houses"];
+objective1 = player createSimpleTask ["Clear fuel station"];
+objective1 setSimpleTaskDescription ["Clear fuel station", "Clear fuel station", "Clear fuel station"];

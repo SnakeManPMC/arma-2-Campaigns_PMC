@@ -1955,7 +1955,7 @@ class Mission
 			age="UNKNOWN";
 			text="EAST DEAD";
 			expCond="east countside eastarray < 3 AND leader assault1 distance mk1 < 200";
-			expActiv="PAPABEAR sideradio ""Rcomplete""; ""1"" objstatus ""DONE""; mcomplete=true;";
+			expActiv="PAPABEAR sideradio ""Rcomplete""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};

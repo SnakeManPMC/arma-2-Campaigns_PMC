@@ -15,7 +15,7 @@ piece of Russian real estate to obtain.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from front line, assault
 through enemy positions and capture <marker name = 'target1'>houses</marker> in
@@ -23,7 +23,7 @@ the east coast.
 
 
 
-United Eye
+<br/>United Eye<br/><br/>
 
 GEN SITREP<br/>
 The road along the river in central Nogova is under Russian fire from the other 
@@ -64,5 +64,5 @@ area.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture houses"];
-_objective0 setSimpleTaskDescription ["Capture houses", "Capture houses", "Capture houses"];
+objective1 = player createSimpleTask ["Capture houses"];
+objective1 setSimpleTaskDescription ["Capture houses", "Capture houses", "Capture houses"];

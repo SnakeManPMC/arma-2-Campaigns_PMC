@@ -14,14 +14,14 @@ Enemy facility near the airbase, wonder what stuff they keep over there.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Petrovice, assault and
 capture <marker name = 'target1'>Facility</marker> near the airbase.
 
 
 
-Vigilant Cobra
+<br/>Vigilant Cobra<br/><br/>
 
 GEN SITREP<br/>
 The operation to take Petrovice was successful and our forces performed 
@@ -62,5 +62,5 @@ west of the facility as there lays the extremely strong last line of Russian def
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture facility"];
-_objective0 setSimpleTaskDescription ["Capture facility", "Capture facility", "Capture facility"];
+objective1 = player createSimpleTask ["Capture facility"];
+objective1 setSimpleTaskDescription ["Capture facility", "Capture facility", "Capture facility"];

@@ -539,7 +539,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="east deat";
-			expActiv="leader assault1 sideRadio ""Reastdead""; ""1"" objStatus ""DONE"";";
+			expActiv="leader assault1 sideRadio ""Reastdead""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -553,7 +553,7 @@ class Mission
 			age="UNKNOWN";
 			text="all dead";
 			expCond="count units rustanks1 == 0 AND count units rusinf1 == 0";
-			expActiv="leader assault1 sideRadio ""Ralldead""; alldead=true; ""2"" objStatus ""DONE"";";
+			expActiv="leader assault1 sideRadio ""Ralldead""; alldead=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

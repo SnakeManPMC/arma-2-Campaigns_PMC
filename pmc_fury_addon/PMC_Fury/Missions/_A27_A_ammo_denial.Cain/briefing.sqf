@@ -14,7 +14,7 @@ Another ammo blow up. Yeah I got to play with satches again, cool.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> front of the captured base.
 Proceed into east and search for enemy <marker name = 'target1'>ammo cache</marker> 
@@ -22,7 +22,7 @@ Proceed into east and search for enemy <marker name = 'target1'>ammo cache</mark
 
 
 
-Ammo Denial
+<br/>Ammo Denial<br/><br/>
 
 GEN SITREP<br/>
 Now we are in control of the northern most areas of the island, including the 
@@ -63,5 +63,5 @@ remaining enemies in the forests.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Find and destroy ammo cache"];
-_objective0 setSimpleTaskDescription ["Find and destroy ammo cache", "Find and destroy ammo cache", "Find and destroy ammo cache"];
+objective1 = player createSimpleTask ["Find and destroy ammo cache"];
+objective1 setSimpleTaskDescription ["Find and destroy ammo cache", "Find and destroy ammo cache", "Find and destroy ammo cache"];

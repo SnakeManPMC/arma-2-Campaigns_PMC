@@ -16,7 +16,7 @@ presents for Ivan this year.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Dolina. Assault
 and clear the <marker name = 'target1'>intersection</marker> and wait for
@@ -26,7 +26,7 @@ Merry X-Mas and good luck!
 
 
 
-Santas Bag
+<br/>Santas Bag<br/><br/>
 
 GEN SITREP<br/>
 Soldiers, airmen and navy personnel, we have come long way in the war against Russians. 
@@ -71,7 +71,7 @@ Moscow, HO HO HO! Your mistletov is now match for my TOW missile!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture Mokropsy"];
-_objective1 setSimpleTaskDescription ["Capture Mokropsy", "Capture Mokropsy", "Capture Mokropsy"];
-_objective0 = player createSimpleTask ["Clear intersection"];
-_objective0 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];
+objective2 = player createSimpleTask ["Capture Mokropsy"];
+objective2 setSimpleTaskDescription ["Capture Mokropsy", "Capture Mokropsy", "Capture Mokropsy"];
+objective1 = player createSimpleTask ["Clear intersection"];
+objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];

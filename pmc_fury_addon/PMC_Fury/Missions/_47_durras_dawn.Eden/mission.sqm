@@ -1549,7 +1549,7 @@ class Mission
 			age="UNKNOWN";
 			text="end";
 			expCond="westhere AND eastgone";
-			expActiv="""1"" objstatus ""DONE"";";
+			expActiv="objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

@@ -36,7 +36,7 @@ hint format["Black Hawk emergency beacon distance: %1",(_a distance _h)];
 ;STRM_Ratcsite,"ALPHA TO PAPA BEAR. WE ARE AT THE BLACK HAWK CRASH SITE. OVER.",alpha
 ~2;
 _a sideradio "Ratcsite";
-"2" objstatus "DONE";
+objective2 setTaskState "SUCCEEDED"; [ objNull, objNull, objective2, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
 ~7;
 
 ;STRM_Rfindcrew,"PAPA BEAR TO ALPHA. YOU MUST LOCATE THE HELO CREW. OVER.",hq
@@ -68,7 +68,7 @@ _a sideradio "Rfoundthem";
 ;STRM_Rsecurecsite,"GOOD WORK ALPHA. GET THEM TO YOUR SQUAD AND SECURE THE CRASH SITE 
 ;UNTIL WE GET SAR PACKAGE TO YOU. I'LL BE IN TOUCH. PAPA BEAR OUT.",hq
 _hq sideradio "Rsecurecsite";
-"3" objstatus "DONE"; "4" objstatus "ACTIVE";
+objective3 setTaskState "SUCCEEDED"; [ objNull, objNull, objective3, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf"; "4" objstatus "ACTIVE";
 ~5;
 joinage=true;
 ~3;

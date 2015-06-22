@@ -14,7 +14,7 @@ Time to escort some special forces back to base as their radio is busted.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Okrouhlo. Board helo
 which will take you to a special forces extraction point. Find them 
@@ -22,7 +22,7 @@ at this generic location and get everyone extracted.
 
 
 
-Black Cover
+<br/>Black Cover<br/><br/>
 
 GEN SITREP<br/>
 The Bitov was successful operation, but the fight was more intense than expected,
@@ -71,7 +71,7 @@ you coming a mile away. Stay put, use the radio and all should work out just fin
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Return everyone to base."];
-_objective1 setSimpleTaskDescription ["Return everyone to base.", "Return everyone to base.", "Return everyone to base."];
-_objective0 = player createSimpleTask ["Meet Special Forces."];
-_objective0 setSimpleTaskDescription ["Meet Special Forces.", "Meet Special Forces.", "Meet Special Forces."];
+objective2 = player createSimpleTask ["Return everyone to base."];
+objective2 setSimpleTaskDescription ["Return everyone to base.", "Return everyone to base.", "Return everyone to base."];
+objective1 = player createSimpleTask ["Meet Special Forces."];
+objective1 setSimpleTaskDescription ["Meet Special Forces.", "Meet Special Forces.", "Meet Special Forces."];

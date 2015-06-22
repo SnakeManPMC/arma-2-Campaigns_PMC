@@ -15,7 +15,7 @@ they send my squad and Bravo to clear up the invasion beach. Cool enough.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha and Bravo teams <marker name = 'start'>start</marker> from airstrip, 
 clear and hold the <marker name = 'target1'>beach</marker> for NATO invasion.
@@ -24,7 +24,7 @@ Good luck.
 
 
 
-Beach Broom
+<br/>Beach Broom<br/><br/>
 
 GEN SITREP<br/>
 Our invasion to Nogova is one day away, tomorrow the amphibious ships reach the 
@@ -68,5 +68,5 @@ dont piss off the HQ by roaming deeper into Nogova, just stay on the beach.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Clear and hold the beach"];
-_objective0 setSimpleTaskDescription ["Clear and hold the beach", "Clear and hold the beach", "Clear and hold the beach"];
+objective1 = player createSimpleTask ["Clear and hold the beach"];
+objective1 setSimpleTaskDescription ["Clear and hold the beach", "Clear and hold the beach", "Clear and hold the beach"];

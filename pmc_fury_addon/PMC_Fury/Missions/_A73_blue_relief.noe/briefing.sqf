@@ -14,14 +14,14 @@ Time to rescue some civilians, ok this should be interesting.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airstrip, evacuate some
 civilians from <marker name = 'target1'>trosky</marker> town.
 
 
 
-Blue Relief
+<br/>Blue Relief<br/><br/>
 
 GEN SITREP<br/>
 The enemy defenses and force compositions are indeed light in the northern Nogova,
@@ -68,5 +68,5 @@ do NOT kill any civilians! it would not look good to return with civilian kills.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Evacuate civilians"];
-_objective0 setSimpleTaskDescription ["Evacuate civilians", "Evacuate civilians", "Evacuate civilians"];
+objective1 = player createSimpleTask ["Evacuate civilians"];
+objective1 setSimpleTaskDescription ["Evacuate civilians", "Evacuate civilians", "Evacuate civilians"];

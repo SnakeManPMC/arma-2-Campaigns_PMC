@@ -15,7 +15,7 @@ when my squad has done with them! Hooyah!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, clear area
 for <marker name = 'snipas1'>snipers</marker> and commence assault to 
@@ -25,7 +25,7 @@ Good luck everyone.
 
 
 
-Fire Fortress
+<br/>Fire Fortress<br/><br/>
 
 GEN SITREP<br/>
 Today is a big day. Weather is improving a lot, weather team is not expecting
@@ -72,5 +72,5 @@ full mental and physical health lateron today! Don't let me down buddy.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture ruins"];
-_objective0 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];
+objective1 = player createSimpleTask ["Capture ruins"];
+objective1 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];

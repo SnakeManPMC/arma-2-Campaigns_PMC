@@ -17,7 +17,7 @@ some heavies around. Oh well, all in days work, time to go. Hooyah!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> near the fuel depot. Sweep
 the <marker name = 'target1'>terrain</marker> until you 
@@ -25,7 +25,7 @@ reach <marker name = 'bravo'>bravos</marker> position.
 
 
 
-Sharp Sweep
+<br/>Sharp Sweep<br/><br/>
 
 GEN SITREP<br/>
 Russians have been kept back from the newly captured fuel depot with great
@@ -72,5 +72,5 @@ down up there.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Sweep terrain and reach Bravo."];
-_objective0 setSimpleTaskDescription ["Sweep terrain and reach Bravo.", "Sweep terrain and reach Bravo.", "Sweep terrain and reach Bravo."];
+objective1 = player createSimpleTask ["Sweep terrain and reach Bravo."];
+objective1 setSimpleTaskDescription ["Sweep terrain and reach Bravo.", "Sweep terrain and reach Bravo.", "Sweep terrain and reach Bravo."];

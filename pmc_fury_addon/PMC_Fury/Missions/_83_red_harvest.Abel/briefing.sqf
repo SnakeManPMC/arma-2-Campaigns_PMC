@@ -14,14 +14,14 @@ Some remaining russians hmm.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Vigny, proceeds and
 clears <marker name = 'target'>coast</marker> line.
 
 
 
-Red Harvest
+<br/>Red Harvest<br/><br/>
 
 GEN SITREP<br/>
 Our succesful operation against La Pessagne has ran some Russians into the
@@ -59,5 +59,5 @@ guarding the airspace around this area. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Sweep out enemies"];
-_objective0 setSimpleTaskDescription ["Sweep out enemies", "Sweep out enemies", "Sweep out enemies"];
+objective1 = player createSimpleTask ["Sweep out enemies"];
+objective1 setSimpleTaskDescription ["Sweep out enemies", "Sweep out enemies", "Sweep out enemies"];

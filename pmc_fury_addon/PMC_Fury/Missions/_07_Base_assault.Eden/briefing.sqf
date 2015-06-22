@@ -25,7 +25,7 @@ much intel about the base, except that there is no armor present.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Your team starts <marker name = 'start'>here</marker> on the airbase, then 
 <marker name = 'join'>joins</marker> up with the additional troops and assault the enemy 
@@ -36,7 +36,7 @@ Good luck.
 
 
 
-Assault
+<br/>Assault<br/><br/>
 
 We have gathered first squad ready for offensive action against the Russians. Our goal 
 is to seize the nearest base due south from the airbase.
@@ -68,7 +68,7 @@ one fast and clean. Don't let any Russians escape.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture enemy base"];
-_objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
-_objective0 = player createSimpleTask ["Join squad"];
-_objective0 setSimpleTaskDescription ["Join squad", "Join squad", "Join squad"];
+objective2 = player createSimpleTask ["Capture enemy base"];
+objective2 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
+objective1 = player createSimpleTask ["Join squad"];
+objective1 setSimpleTaskDescription ["Join squad", "Join squad", "Join squad"];

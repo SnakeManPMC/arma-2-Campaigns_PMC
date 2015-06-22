@@ -37,7 +37,7 @@ Meet your new team in the training ground.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Board black hawk to Kolgujev"];
-_objective1 setSimpleTaskDescription ["Board black hawk to Kolgujev", "Board black hawk to Kolgujev", "Board black hawk to Kolgujev"];
-_objective0 = player createSimpleTask ["Meet your team"];
-_objective0 setSimpleTaskDescription ["Meet your team", "Meet your team", "Meet your team"];
+objective2 = player createSimpleTask ["Board black hawk to Kolgujev"];
+objective2 setSimpleTaskDescription ["Board black hawk to Kolgujev", "Board black hawk to Kolgujev", "Board black hawk to Kolgujev"];
+objective1 = player createSimpleTask ["Meet your team"];
+objective1 setSimpleTaskDescription ["Meet your team", "Meet your team", "Meet your team"];

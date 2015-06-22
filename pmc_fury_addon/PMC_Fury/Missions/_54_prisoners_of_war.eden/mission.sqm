@@ -163,7 +163,7 @@ class Mission
 					formation="COLUMN";
 					speed="FULL";
 					combat="SAFE";
-					expActiv="""1"" objstatus ""DONE"";";
+					expActiv="objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 					synchronizations[]={0};
 					class Effects
 					{
@@ -1865,7 +1865,7 @@ class Mission
 			age="UNKNOWN";
 			text="cmduy meet";
 			expCond="player distance cmdguy < 5";
-			expActiv="cmdguy sideradio ""Rcmdmeet""; {[_x] join cmd} foreach units assault; [player] join grpnull; player assignascargo jepp; ""2"" objstatus ""DONE"";";
+			expActiv="cmdguy sideradio ""Rcmdmeet""; {[_x] join cmd} foreach units assault; [player] join grpnull; player assignascargo jepp; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

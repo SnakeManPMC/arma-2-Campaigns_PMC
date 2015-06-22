@@ -14,7 +14,7 @@ Going to the beach. Time to put end on the water sports for Russians.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Dolina, assault and
 capture <marker name = 'target1'>Beach Resort</marker> and 
@@ -22,7 +22,7 @@ the <marker name = 'target2'>Joudov</marker> in the hill.
 
 
 
-Unforgiving Hawk
+<br/>Unforgiving Hawk<br/><br/>
 
 GEN SITREP<br/>
 The beach resort by the river is used to accomodate Russian infantrymen now,
@@ -60,7 +60,7 @@ reinforcements.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture Joudov"];
-_objective1 setSimpleTaskDescription ["Capture Joudov", "Capture Joudov", "Capture Joudov"];
-_objective0 = player createSimpleTask ["Capture beach resort"];
-_objective0 setSimpleTaskDescription ["Capture beach resort", "Capture beach resort", "Capture beach resort"];
+objective2 = player createSimpleTask ["Capture Joudov"];
+objective2 setSimpleTaskDescription ["Capture Joudov", "Capture Joudov", "Capture Joudov"];
+objective1 = player createSimpleTask ["Capture beach resort"];
+objective1 setSimpleTaskDescription ["Capture beach resort", "Capture beach resort", "Capture beach resort"];

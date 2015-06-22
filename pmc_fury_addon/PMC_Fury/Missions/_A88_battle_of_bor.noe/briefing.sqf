@@ -14,14 +14,14 @@ Small village called Bor... time to go bor.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> near St. Sedlo. Assault and
 capture <marker name = 'target1'>Bor</marker> village. Wait for Bravo squad.
 
 
 
-Battle of Bor
+<br/>Battle of Bor<br/><br/>
 
 GEN SITREP<br/>
 Preparations are under way to assault Lipony, but we want to make it with all
@@ -59,7 +59,7 @@ vehicles but you never know.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Defend Bor"];
-_objective1 setSimpleTaskDescription ["Defend Bor", "Defend Bor", "Defend Bor"];
-_objective0 = player createSimpleTask ["Capture Bor"];
-_objective0 setSimpleTaskDescription ["Capture Bor", "Capture Bor", "Capture Bor"];
+objective2 = player createSimpleTask ["Defend Bor"];
+objective2 setSimpleTaskDescription ["Defend Bor", "Defend Bor", "Defend Bor"];
+objective1 = player createSimpleTask ["Capture Bor"];
+objective1 setSimpleTaskDescription ["Capture Bor", "Capture Bor", "Capture Bor"];

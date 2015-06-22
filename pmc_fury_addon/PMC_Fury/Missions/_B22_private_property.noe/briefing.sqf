@@ -14,14 +14,14 @@ Coordinated op with Bravo, cool.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from the field. Assault
 city of <marker name = 'target1'>Modrava</marker> and capture it.
 
 
 
-Private Property
+<br/>Private Property<br/><br/>
 
 GEN SITREP<br/>
 City of Modrava is the largest city on north west Nogova, it holds key enemy
@@ -65,7 +65,7 @@ attack. Hmm choices... well I know you're taking down this with ease.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture Modrava"];
-_objective1 setSimpleTaskDescription ["Capture Modrava", "Capture Modrava", "Capture Modrava"];
-_objective0 = player createSimpleTask ["Capture Bludov"];
-_objective0 setSimpleTaskDescription ["Capture Bludov", "Capture Bludov", "Capture Bludov"];
+objective2 = player createSimpleTask ["Capture Modrava"];
+objective2 setSimpleTaskDescription ["Capture Modrava", "Capture Modrava", "Capture Modrava"];
+objective1 = player createSimpleTask ["Capture Bludov"];
+objective1 setSimpleTaskDescription ["Capture Bludov", "Capture Bludov", "Capture Bludov"];

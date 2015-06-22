@@ -1463,7 +1463,7 @@ class Mission
 			timeoutMax=5.000000;
 			age="UNKNOWN";
 			text="aa site dead";
-			expActiv="leader assault1 sideradio ""Raadead""; ""1"" objstatus ""DONE""; aadead=true;";
+			expActiv="leader assault1 sideradio ""Raadead""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; aadead=true;";
 			class Effects
 			{
 			};
@@ -1494,7 +1494,7 @@ class Mission
 			age="UNKNOWN";
 			text="welcome home";
 			expCond="aadead AND leader assault1 distance usa < 200";
-			expActiv="PAPABEAR sideradio ""Rmcomplete""; ""2"" objstatus ""DONE""; mcomplete=true;";
+			expActiv="PAPABEAR sideradio ""Rmcomplete""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};

@@ -14,7 +14,7 @@ leader specops1 move getpos leader assault1;
 
 @(_a distance _b < 30)
 
-"1" objstatus "DONE";
+objective1 setTaskState "SUCCEEDED"; [ objNull, objNull, objective1, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
 
 _b sidechat "over here!";
 ~7

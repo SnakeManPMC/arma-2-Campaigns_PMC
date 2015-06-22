@@ -16,7 +16,7 @@ real estate owned.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from forest edge. Assault
 the <marker name = 'target1'>hill top</marker> and the 
@@ -24,7 +24,7 @@ old <marker name = 'target2'>radar site</marker> mountain.
 
 
 
-Sky Eye
+<br/>Sky Eye<br/><br/>
 
 GEN SITREP<br/>
 Our objective is to sneak behind the enemy from the north, we do not want
@@ -63,7 +63,7 @@ Okay so you must keep a distance to those to towns, sneak through the north.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture mountain"];
-_objective1 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];
-_objective0 = player createSimpleTask ["Clear hilltop"];
-_objective0 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];
+objective2 = player createSimpleTask ["Capture mountain"];
+objective2 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];
+objective1 = player createSimpleTask ["Clear hilltop"];
+objective1 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];

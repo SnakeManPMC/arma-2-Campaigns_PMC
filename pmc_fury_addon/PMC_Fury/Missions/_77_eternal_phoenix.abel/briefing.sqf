@@ -14,7 +14,7 @@ Le Port must go!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha and Bravo teams <marker name = 'start'>start</marker> from intersection near
 front lines. They proceed and seize <marker name = 'target1'>intersection</marker> and
@@ -25,7 +25,7 @@ Good luck!
 
 
 
-Eternal Phoenix
+<br/>Eternal Phoenix<br/><br/>
 
 GEN SITREP<br/>
 One more push and we control south part of Malden. Today we move on the South East
@@ -72,9 +72,9 @@ not expecting it. Unknown status on enemy air operations, keep and eye on the sk
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Capture Le Port"];
-_objective2 setSimpleTaskDescription ["Capture Le Port", "Capture Le Port", "Capture Le Port"];
-_objective1 = player createSimpleTask ["Capture sea port"];
-_objective1 setSimpleTaskDescription ["Capture sea port", "Capture sea port", "Capture sea port"];
-_objective0 = player createSimpleTask ["Cut off the road"];
-_objective0 setSimpleTaskDescription ["Cut off the road", "Cut off the road", "Cut off the road"];
+objective3 = player createSimpleTask ["Capture Le Port"];
+objective3 setSimpleTaskDescription ["Capture Le Port", "Capture Le Port", "Capture Le Port"];
+objective2 = player createSimpleTask ["Capture sea port"];
+objective2 setSimpleTaskDescription ["Capture sea port", "Capture sea port", "Capture sea port"];
+objective1 = player createSimpleTask ["Cut off the road"];
+objective1 setSimpleTaskDescription ["Cut off the road", "Cut off the road", "Cut off the road"];

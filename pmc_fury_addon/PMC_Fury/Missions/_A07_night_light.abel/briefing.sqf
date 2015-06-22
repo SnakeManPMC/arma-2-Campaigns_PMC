@@ -14,14 +14,14 @@ Night time in this fuel station, now I hope russians wont start a camp fire here
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Fuel Station, defend it
 through the night.
 
 
 
-Night Light
+<br/>Night Light<br/><br/>
 
 GEN SITREP<br/>
 In the morning light we begin to push the Russians out of this island. They 
@@ -59,5 +59,5 @@ you tonight.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend fuel station"];
-_objective0 setSimpleTaskDescription ["Defend fuel station", "Defend fuel station", "Defend fuel station"];
+objective1 = player createSimpleTask ["Defend fuel station"];
+objective1 setSimpleTaskDescription ["Defend fuel station", "Defend fuel station", "Defend fuel station"];

@@ -14,14 +14,14 @@ Time to make the flyboys happy. Thats all that matters in this OP.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from east of Cancon, proceeds to 
 the <marker name = 'aasite'>AA Site</marker> and takes it out.
 
 
 
-Fiery Sword
+<br/>Fiery Sword<br/><br/>
 
 GEN SITREP<br/>
 The Russians are putting together a tough counter attack force which seems to be just
@@ -62,5 +62,5 @@ Intel is not sure about the enemy air activity so be ready for them.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Neutralize AA site"];
-_objective0 setSimpleTaskDescription ["Neutralize AA site", "Neutralize AA site", "Neutralize AA site"];
+objective1 = player createSimpleTask ["Neutralize AA site"];
+objective1 setSimpleTaskDescription ["Neutralize AA site", "Neutralize AA site", "Neutralize AA site"];

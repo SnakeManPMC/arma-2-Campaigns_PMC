@@ -14,7 +14,7 @@ Beach road clearing. fortified enemy defenses. nice.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from base, you'll 
 be <marker name = 'insert'>inserted</marker> into a road. Meet up 
@@ -23,7 +23,7 @@ enemy <marker name = 'target1'>positions</marker> in the road.
 
 
 
-Rolling Blaze
+<br/>Rolling Blaze<br/><br/>
 
 GEN SITREP<br/>
 Today we go against the eastern coastal road, our attempt is to push forward
@@ -65,5 +65,5 @@ very careful, move slowly and keep it low.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Seize road objective"];
-_objective0 setSimpleTaskDescription ["Seize road objective", "Seize road objective", "Seize road objective"];
+objective1 = player createSimpleTask ["Seize road objective"];
+objective1 setSimpleTaskDescription ["Seize road objective", "Seize road objective", "Seize road objective"];

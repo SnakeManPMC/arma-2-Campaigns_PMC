@@ -14,14 +14,14 @@ Last big mountain in North West of Nogova, soon to be NATO's mountain.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Mokra Vrata. Clear out
 the <marker name = 'target1'>mountain</marker> in north west.
 
 
 
-Northern Wind
+<br/>Northern Wind<br/><br/>
 
 GEN SITREP<br/>
 The last mountain in north west Nogova is the objective of todays operation.
@@ -58,5 +58,5 @@ The ruskies are cornered and they know that. Be careful on this one.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Clear out mountain"];
-_objective0 setSimpleTaskDescription ["Clear out mountain", "Clear out mountain", "Clear out mountain"];
+objective1 = player createSimpleTask ["Clear out mountain"];
+objective1 setSimpleTaskDescription ["Clear out mountain", "Clear out mountain", "Clear out mountain"];

@@ -14,7 +14,7 @@ Those two house objectives should be easy task, but neveklov will be a one major
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Davle. Assault
 the two farmouses <marker name = 'target1'>houses #1</marker> and 
@@ -23,7 +23,7 @@ Finally capture <marker name = 'target3'>Neveklov</marker> city.
 
 
 
-Distant Glow
+<br/>Distant Glow<br/><br/>
 
 GEN SITREP<br/>
 Russians lost massive amount of hardware and personnel in the last nights attack,
@@ -65,11 +65,11 @@ the NATO reinforcements arrive.
 
 "]];
 // tasks need to be in reversed order
-_objective3 = player createSimpleTask ["Wait for reinforcements"];
-_objective3 setSimpleTaskDescription ["Wait for reinforcements", "Wait for reinforcements", "Wait for reinforcements"];
-_objective2 = player createSimpleTask ["Capture Neveklov"];
-_objective2 setSimpleTaskDescription ["Capture Neveklov", "Capture Neveklov", "Capture Neveklov"];
-_objective1 = player createSimpleTask ["Capture farmhouse #2"];
-_objective1 setSimpleTaskDescription ["Capture farmhouse #2", "Capture farmhouse #2", "Capture farmhouse #2"];
-_objective0 = player createSimpleTask ["Capture farmhouse #1"];
-_objective0 setSimpleTaskDescription ["Capture farmhouse #1", "Capture farmhouse #1", "Capture farmhouse #1"];
+objective4 = player createSimpleTask ["Wait for reinforcements"];
+objective4 setSimpleTaskDescription ["Wait for reinforcements", "Wait for reinforcements", "Wait for reinforcements"];
+objective3 = player createSimpleTask ["Capture Neveklov"];
+objective3 setSimpleTaskDescription ["Capture Neveklov", "Capture Neveklov", "Capture Neveklov"];
+objective2 = player createSimpleTask ["Capture farmhouse #2"];
+objective2 setSimpleTaskDescription ["Capture farmhouse #2", "Capture farmhouse #2", "Capture farmhouse #2"];
+objective1 = player createSimpleTask ["Capture farmhouse #1"];
+objective1 setSimpleTaskDescription ["Capture farmhouse #1", "Capture farmhouse #1", "Capture farmhouse #1"];

@@ -328,7 +328,7 @@ class Mission
 				class Item1
 				{
 					position[]={4004.761719,371.453918,6324.748535};
-					expActiv="leader ustanks1 sideRadio ""Ronlocation""; ""1"" objstatus ""DONE""; eastdead=true;";
+					expActiv="leader ustanks1 sideRadio ""Ronlocation""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; eastdead=true;";
 					class Effects
 					{
 					};
@@ -2740,7 +2740,7 @@ class Mission
 			age="UNKNOWN";
 			text="mcomplete hq call";
 			expCond="done1 AND done2";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; mcomplete=true; ""3"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; mcomplete=true; objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

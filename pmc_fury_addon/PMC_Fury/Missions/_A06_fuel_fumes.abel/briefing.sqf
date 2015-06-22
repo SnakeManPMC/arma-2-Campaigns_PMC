@@ -14,14 +14,14 @@ One wrong bullet hit and that fuel station goes BOOM.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airbase, assault
 and capture <marker name = 'target1'>Fuel Station</marker> in north west.
 
 
 
-Fuel Fumes
+<br/>Fuel Fumes<br/><br/>
 
 GEN SITREP<br/>
 We are setting up defenses for the airbase, move vulcans to defend it, assigning
@@ -64,5 +64,5 @@ let LAW soldiers roam free.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture fuel station"];
-_objective0 setSimpleTaskDescription ["Capture fuel station", "Capture fuel station", "Capture fuel station"];
+objective1 = player createSimpleTask ["Capture fuel station"];
+objective1 setSimpleTaskDescription ["Capture fuel station", "Capture fuel station", "Capture fuel station"];

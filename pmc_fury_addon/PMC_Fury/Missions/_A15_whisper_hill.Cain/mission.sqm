@@ -213,7 +213,7 @@ class Mission
 				class Item1
 				{
 					position[]={10051.877930,173.649048,10244.208008};
-					expActiv="{_x setUnitPos ""DOWN""} foreach units snipas1; leader snipas1 sideradio ""Rsnipaready""; ""1"" objStatus ""DONE"";";
+					expActiv="{_x setUnitPos ""DOWN""} foreach units snipas1; leader snipas1 sideradio ""Rsnipaready""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 					class Effects
 					{
 					};
@@ -1583,7 +1583,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="eastdead 2";
-			expActiv="leader assault1 sideRadio ""Reastdead2""; ""2"" objStatus ""DONE""; eastdead2=true;";
+			expActiv="leader assault1 sideRadio ""Reastdead2""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; eastdead2=true;";
 			class Effects
 			{
 			};
@@ -1613,7 +1613,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="eastdead 3";
-			expActiv="leader assault1 sideRadio ""Reastdead3""; ""3"" objStatus ""DONE""; eastdead3=true;";
+			expActiv="leader assault1 sideRadio ""Reastdead3""; objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; eastdead3=true;";
 			class Effects
 			{
 			};

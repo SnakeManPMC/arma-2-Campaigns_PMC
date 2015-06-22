@@ -18,7 +18,7 @@ to pick them off before we go charging in. Gotta keep the cool!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha starts from <marker name = 'alpha'>here</marker><br/>
 Bravo starts from <marker name = 'bravo'>here</marker><br/>
@@ -32,7 +32,7 @@ of <marker name = 'regina'>Regina</marker> from Russians.
 
 
 
-Regina Rock
+<br/>Regina Rock<br/><br/>
 
 Today we move forward with our Everon cleanup. Today we capture city of Regina in 
 south-west edge of the island.
@@ -75,5 +75,5 @@ got to be really careful with these guys, make no mistakes.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Regina"];
-_objective0 setSimpleTaskDescription ["Capture Regina", "Capture Regina", "Capture Regina"];
+objective1 = player createSimpleTask ["Capture Regina"];
+objective1 setSimpleTaskDescription ["Capture Regina", "Capture Regina", "Capture Regina"];

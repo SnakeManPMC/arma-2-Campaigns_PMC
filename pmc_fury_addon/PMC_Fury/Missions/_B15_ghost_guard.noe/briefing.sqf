@@ -14,7 +14,7 @@ Up in the north west we go.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Mokropsy. Assault
 three enemy positions:<br/>
@@ -24,7 +24,7 @@ three enemy positions:<br/>
 
 
 
-Ghost Guard
+<br/>Ghost Guard<br/><br/>
 
 GEN SITREP<br/>
 Today our operation includes three enemy positions which we are going to
@@ -64,9 +64,9 @@ like that. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Clear mountain"];
-_objective2 setSimpleTaskDescription ["Clear mountain", "Clear mountain", "Clear mountain"];
-_objective1 = player createSimpleTask ["Capture houses"];
-_objective1 setSimpleTaskDescription ["Capture houses", "Capture houses", "Capture houses"];
-_objective0 = player createSimpleTask ["Capture house"];
-_objective0 setSimpleTaskDescription ["Capture house", "Capture house", "Capture house"];
+objective3 = player createSimpleTask ["Clear mountain"];
+objective3 setSimpleTaskDescription ["Clear mountain", "Clear mountain", "Clear mountain"];
+objective2 = player createSimpleTask ["Capture houses"];
+objective2 setSimpleTaskDescription ["Capture houses", "Capture houses", "Capture houses"];
+objective1 = player createSimpleTask ["Capture house"];
+objective1 setSimpleTaskDescription ["Capture house", "Capture house", "Capture house"];

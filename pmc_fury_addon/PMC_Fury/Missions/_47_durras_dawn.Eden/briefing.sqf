@@ -14,7 +14,7 @@ as there are enemies to waste, Hooayh!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha starts from <marker name = 'alpha'>here</marker> Bravo starts east from target 
 area <marker name = 'bravo'>here</marker> and Charlie starts west 
@@ -25,7 +25,7 @@ city of Durras. Clear out any enemy opposition.
 
 
 
-Sweet Sweep
+<br/>Sweet Sweep<br/><br/>
 
 Our forces keep on pushing towards the southern tip of this island.
 <br/><br/>
@@ -68,5 +68,5 @@ possible mines so no armored support guys, sorry about that.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Assault Durras"];
-_objective0 setSimpleTaskDescription ["Assault Durras", "Assault Durras", "Assault Durras"];
+objective1 = player createSimpleTask ["Assault Durras"];
+objective1 setSimpleTaskDescription ["Assault Durras", "Assault Durras", "Assault Durras"];

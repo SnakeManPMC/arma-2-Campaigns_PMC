@@ -19,14 +19,14 @@ captured, lot of enemies to be killed. Oh well, thats my specialty.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Capture <marker name = 'alpha'>Provins</marker> and <marker name = 'charlie'>Figari</marker>
 
 
 
 
-Three Targets
+<br/>Three Targets<br/><br/>
 
 Todays objectives are three cities: Provins, Figari and Chotain. Capturing these locations
 will provide us with more stable fighting grounds.
@@ -60,11 +60,11 @@ believe lot of enemies are patrolling. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective3 = player createSimpleTask ["Clear out area between"];
-_objective3 setSimpleTaskDescription ["Clear out area between", "Clear out area between", "Clear out area between"];
-_objective2 = player createSimpleTask ["Capture Chotain"];
-_objective2 setSimpleTaskDescription ["Capture Chotain", "Capture Chotain", "Capture Chotain"];
-_objective1 = player createSimpleTask ["Capture Figari"];
-_objective1 setSimpleTaskDescription ["Capture Figari", "Capture Figari", "Capture Figari"];
-_objective0 = player createSimpleTask ["Capture Provins"];
-_objective0 setSimpleTaskDescription ["Capture Provins", "Capture Provins", "Capture Provins"];
+objective4 = player createSimpleTask ["Clear out area between"];
+objective4 setSimpleTaskDescription ["Clear out area between", "Clear out area between", "Clear out area between"];
+objective3 = player createSimpleTask ["Capture Chotain"];
+objective3 setSimpleTaskDescription ["Capture Chotain", "Capture Chotain", "Capture Chotain"];
+objective2 = player createSimpleTask ["Capture Figari"];
+objective2 setSimpleTaskDescription ["Capture Figari", "Capture Figari", "Capture Figari"];
+objective1 = player createSimpleTask ["Capture Provins"];
+objective1 setSimpleTaskDescription ["Capture Provins", "Capture Provins", "Capture Provins"];

@@ -14,14 +14,14 @@ This is piece of cake. Just go kick few soldiers around, that it.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Modrava. Clear out
 the road and houses <marker name = 'target1'>area</marker> for any enemy forces.
 
 
 
-Combat Desire
+<br/>Combat Desire<br/><br/>
 
 GEN SITREP<br/>
 Our forces performed brilliantly on the Modrova operation, now we are in control
@@ -60,5 +60,5 @@ careful when you kick their butts and you'll do fine.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Clear road and houses"];
-_objective0 setSimpleTaskDescription ["Clear road and houses", "Clear road and houses", "Clear road and houses"];
+objective1 = player createSimpleTask ["Clear road and houses"];
+objective1 setSimpleTaskDescription ["Clear road and houses", "Clear road and houses", "Clear road and houses"];

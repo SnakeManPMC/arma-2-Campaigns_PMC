@@ -1242,7 +1242,7 @@ class Mission
 			timeoutMax=5.000000;
 			age="UNKNOWN";
 			text="hill dead";
-			expActiv="leader assault1 sideRadio ""Rhillgone""; hilldead=true; ""1"" objstatus ""DONE""; 1 setRadioMsg ""Call Reinforcements"";";
+			expActiv="leader assault1 sideRadio ""Rhillgone""; hilldead=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; 1 setRadioMsg ""Call Reinforcements"";";
 			class Effects
 			{
 			};
@@ -1255,7 +1255,7 @@ class Mission
 			activationBy="ALPHA";
 			age="UNKNOWN";
 			text="null";
-			expActiv="leader assault1 sideradio ""Rreinf""; cleared=true; ""1"" objstatus ""DONE"";";
+			expActiv="leader assault1 sideradio ""Rreinf""; cleared=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1297,7 +1297,7 @@ class Mission
 			age="UNKNOWN";
 			text="END";
 			expCond="mcomplete";
-			expActiv="""2"" objstatus ""DONE"";";
+			expActiv="objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

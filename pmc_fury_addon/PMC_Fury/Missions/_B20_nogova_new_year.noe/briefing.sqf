@@ -14,7 +14,7 @@ Happy New Year!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from radar site. Observe
 and stand as backup for <marker name = 'target1'>armored fight</marker> in 
@@ -25,7 +25,7 @@ Happy New Year!
 
 
 
-Nogova New Year
+<br/>Nogova New Year<br/><br/>
 
 GEN SITREP<br/>
 Happy New Year troops. Tonight we will show the Russians how we celebrate
@@ -68,7 +68,7 @@ down there. Good luck and happy New Year!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture Mokra Vrata"];
-_objective1 setSimpleTaskDescription ["Capture Mokra Vrata", "Capture Mokra Vrata", "Capture Mokra Vrata"];
-_objective0 = player createSimpleTask ["Support tanks"];
-_objective0 setSimpleTaskDescription ["Support tanks", "Support tanks", "Support tanks"];
+objective2 = player createSimpleTask ["Capture Mokra Vrata"];
+objective2 setSimpleTaskDescription ["Capture Mokra Vrata", "Capture Mokra Vrata", "Capture Mokra Vrata"];
+objective1 = player createSimpleTask ["Support tanks"];
+objective1 setSimpleTaskDescription ["Support tanks", "Support tanks", "Support tanks"];

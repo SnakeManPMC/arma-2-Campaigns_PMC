@@ -14,7 +14,7 @@ Our assault to Lipany, the city, the defenses... hmm
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from St. Sedlo, assault
 and capture <marker name = 'target3'>Lipany</marker> along with other
@@ -25,7 +25,7 @@ Good luck.
 
 
 
-City Eagle
+<br/>City Eagle<br/><br/>
 
 GEN SITREP<br/>
 Today our forces assault the city of Lipany. This city is the biggest of them all
@@ -75,9 +75,9 @@ Be careful and keep your team alive!
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Capture Lipany"];
-_objective2 setSimpleTaskDescription ["Capture Lipany", "Capture Lipany", "Capture Lipany"];
-_objective1 = player createSimpleTask ["Clear houses"];
-_objective1 setSimpleTaskDescription ["Clear houses", "Clear houses", "Clear houses"];
-_objective0 = player createSimpleTask ["Clear ruins"];
-_objective0 setSimpleTaskDescription ["Clear ruins", "Clear ruins", "Clear ruins"];
+objective3 = player createSimpleTask ["Capture Lipany"];
+objective3 setSimpleTaskDescription ["Capture Lipany", "Capture Lipany", "Capture Lipany"];
+objective2 = player createSimpleTask ["Clear houses"];
+objective2 setSimpleTaskDescription ["Clear houses", "Clear houses", "Clear houses"];
+objective1 = player createSimpleTask ["Clear ruins"];
+objective1 setSimpleTaskDescription ["Clear ruins", "Clear ruins", "Clear ruins"];

@@ -18,7 +18,7 @@ by the book, by the book...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from hill, assault
 and capture the <marker name = 'target1'>bridge</marker> from enemy.
@@ -27,7 +27,7 @@ Good luck.
 
 
 
-Blood Tide
+<br/>Blood Tide<br/><br/>
 
 GEN SITREP<br/>
 Today NATO launches operation against the Nogova bridge held by the Russians. 
@@ -73,5 +73,5 @@ collateral damage. But at least try to keep this one clean, ok?
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture bridge"];
-_objective0 setSimpleTaskDescription ["Capture bridge", "Capture bridge", "Capture bridge"];
+objective1 = player createSimpleTask ["Capture bridge"];
+objective1 setSimpleTaskDescription ["Capture bridge", "Capture bridge", "Capture bridge"];

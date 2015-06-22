@@ -14,7 +14,7 @@ Todays action is nasty ambush, I like it. I like it a lot...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from La Trinite and clears
 the <marker name = 'target1'>road</marker> and set up ambush for russian 
@@ -22,7 +22,7 @@ counter attack.
 
 
 
-Dead Stop
+<br/>Dead Stop<br/><br/>
 
 GEN SITREP<br/>
 Russians are setting up another counter attack which we must stop. They are
@@ -64,7 +64,7 @@ the leading vehicle at least. Watch you back out there.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Ambush counter attack"];
-_objective1 setSimpleTaskDescription ["Ambush counter attack", "Ambush counter attack", "Ambush counter attack"];
-_objective0 = player createSimpleTask ["Clear road"];
-_objective0 setSimpleTaskDescription ["Clear road", "Clear road", "Clear road"];
+objective2 = player createSimpleTask ["Ambush counter attack"];
+objective2 setSimpleTaskDescription ["Ambush counter attack", "Ambush counter attack", "Ambush counter attack"];
+objective1 = player createSimpleTask ["Clear road"];
+objective1 setSimpleTaskDescription ["Clear road", "Clear road", "Clear road"];

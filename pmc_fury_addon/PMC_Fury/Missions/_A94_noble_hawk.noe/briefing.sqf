@@ -14,7 +14,7 @@ Some nice countryside ahead, time to assault it!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Lany, proceed and
 clear <marker name = 'target1'>hilltop</marker> in south west. When done
@@ -22,7 +22,7 @@ arrive to <marker name = 'arrive'>Bor</marker> village.
 
 
 
-Noble Hawk
+<br/>Noble Hawk<br/><br/>
 
 GEN SITREP<br/>
 We must clear out some terrain between Bor and Lany as there is pockets of enemy 
@@ -63,7 +63,7 @@ up for small infantry fight in the hilltop. Nothing special, be careful as usual
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Arrive to Bor"];
-_objective1 setSimpleTaskDescription ["Arrive to Bor", "Arrive to Bor", "Arrive to Bor"];
-_objective0 = player createSimpleTask ["Clear hilltop"];
-_objective0 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];
+objective2 = player createSimpleTask ["Arrive to Bor"];
+objective2 setSimpleTaskDescription ["Arrive to Bor", "Arrive to Bor", "Arrive to Bor"];
+objective1 = player createSimpleTask ["Clear hilltop"];
+objective1 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];

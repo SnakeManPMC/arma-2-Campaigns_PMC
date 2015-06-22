@@ -15,14 +15,14 @@ move forward to the Lany, lets see how it goes.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Lipany. Assault
 and capture <marker name = 'target1'>Lany</marker> town.
 
 
 
-Fiery Warrior
+<br/>Fiery Warrior<br/><br/>
 
 GEN SITREP<br/>
 Our war continues on Nogova, today we will take another piece of Russian occupied
@@ -61,5 +61,5 @@ should be pretty good if all things go well.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Lany"];
-_objective0 setSimpleTaskDescription ["Capture Lany", "Capture Lany", "Capture Lany"];
+objective1 = player createSimpleTask ["Capture Lany"];
+objective1 setSimpleTaskDescription ["Capture Lany", "Capture Lany", "Capture Lany"];

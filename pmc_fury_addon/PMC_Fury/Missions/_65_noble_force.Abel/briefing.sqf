@@ -17,7 +17,7 @@ triggers until we are in striking distance...
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Cancon and proceeds to
 neutralize enemy <marker name = 'aasite'>AA Site</marker> just south east from La Riviere.
@@ -25,7 +25,7 @@ neutralize enemy <marker name = 'aasite'>AA Site</marker> just south east from L
 
 
 
-Noble Force
+<br/>Noble Force<br/><br/>
 
 GEN SITREP<br/>
 Overnight we took the first populated objective, Cancon. Next we must neutralize some 
@@ -66,7 +66,7 @@ La Riviere. We don't believe there is much they can spare, but prepare for anyth
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Defend the hill"];
-_objective1 setSimpleTaskDescription ["Defend the hill", "Defend the hill", "Defend the hill"];
-_objective0 = player createSimpleTask ["Neutralize AA Site"];
-_objective0 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];
+objective2 = player createSimpleTask ["Defend the hill"];
+objective2 setSimpleTaskDescription ["Defend the hill", "Defend the hill", "Defend the hill"];
+objective1 = player createSimpleTask ["Neutralize AA Site"];
+objective1 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];

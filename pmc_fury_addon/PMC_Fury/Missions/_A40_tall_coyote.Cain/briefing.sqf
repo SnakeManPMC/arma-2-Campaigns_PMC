@@ -15,14 +15,14 @@ and that is it... no more questions. Lets fight.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from ruins, defend them against
 all possible enemy attacks.
 
 
 
-Tall Coyote
+<br/>Tall Coyote<br/><br/>
 
 GEN SITREP<br/>
 Weather front keeps closing in, its no confirmed to be as bad as predicted. Tomorrow
@@ -63,5 +63,5 @@ blown to bits no do you? No helos so all you need to keep an eye is the ground. 
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend ruins"];
-_objective0 setSimpleTaskDescription ["Defend ruins", "Defend ruins", "Defend ruins"];
+objective1 = player createSimpleTask ["Defend ruins"];
+objective1 setSimpleTaskDescription ["Defend ruins", "Defend ruins", "Defend ruins"];

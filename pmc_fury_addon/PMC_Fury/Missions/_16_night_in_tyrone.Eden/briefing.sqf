@@ -20,13 +20,13 @@ lot of NATO 5.56's to waiting for them!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Guard the city of <marker name = 'tyrone'>tyrone</marker>.
 
 
 
-Night watch
+<br/>Night watch<br/><br/>
 
 The success we had with Tyrone was as expected from our highly trained troops. We are in 
 the planning stage to advance deeper into enemy territory, assaults start in the daylight
@@ -59,5 +59,5 @@ is still under NATO command in the morning.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Guard the Tyrone"];
-_objective0 setSimpleTaskDescription ["Guard the Tyrone", "Guard the Tyrone", "Guard the Tyrone"];
+objective1 = player createSimpleTask ["Guard the Tyrone"];
+objective1 setSimpleTaskDescription ["Guard the Tyrone", "Guard the Tyrone", "Guard the Tyrone"];

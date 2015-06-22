@@ -14,7 +14,7 @@ Blata in the open areas. okay, time to get going.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Velka Ves, assault
 and capture <marker name = 'target1'>Blata</marker> village and keep it secure.
@@ -23,7 +23,7 @@ Good luck.
 
 
 
-White Wind
+<br/>White Wind<br/><br/>
 
 GEN SITREP<br/>
 Russians effected some damage to our vehicles yesterday, luckily we are still
@@ -61,7 +61,7 @@ keep the LAW guys ready.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Keep it secure"];
-_objective1 setSimpleTaskDescription ["Keep it secure", "Keep it secure", "Keep it secure"];
-_objective0 = player createSimpleTask ["Capture Blata"];
-_objective0 setSimpleTaskDescription ["Capture Blata", "Capture Blata", "Capture Blata"];
+objective2 = player createSimpleTask ["Keep it secure"];
+objective2 setSimpleTaskDescription ["Keep it secure", "Keep it secure", "Keep it secure"];
+objective1 = player createSimpleTask ["Capture Blata"];
+objective1 setSimpleTaskDescription ["Capture Blata", "Capture Blata", "Capture Blata"];

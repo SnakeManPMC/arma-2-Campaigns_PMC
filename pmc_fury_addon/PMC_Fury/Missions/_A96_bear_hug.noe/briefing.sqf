@@ -14,7 +14,7 @@ Seems like serious counter attack on way. Damned we must stay sharp tonight.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Velka Ves. Defend
 it against Russian counter attack.
@@ -23,7 +23,7 @@ Good luck.
 
 
 
-Bear Hug
+<br/>Bear Hug<br/><br/>
 
 GEN SITREP<br/>
 Russians are sending troops against Velka Ves in counter attack purposes,
@@ -64,5 +64,5 @@ pretty much handling them alone.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend Velka Ves"];
-_objective0 setSimpleTaskDescription ["Defend Velka Ves", "Defend Velka Ves", "Defend Velka Ves"];
+objective1 = player createSimpleTask ["Defend Velka Ves"];
+objective1 setSimpleTaskDescription ["Defend Velka Ves", "Defend Velka Ves", "Defend Velka Ves"];

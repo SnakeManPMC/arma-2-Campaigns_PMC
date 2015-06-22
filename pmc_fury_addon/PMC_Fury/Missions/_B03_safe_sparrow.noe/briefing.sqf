@@ -15,7 +15,7 @@ thirsty enemy. Damn.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airstrip. Find 
 the <marker name = 'target1'>downed OH-58</marker> helo and rescue the crew. 
@@ -25,7 +25,7 @@ Good luck.
 
 
 
-Safe Sparrow
+<br/>Safe Sparrow<br/><br/>
 
 GEN SITREP<br/>
 Emergency situation has risen, one of our recon birds the OH-58 helicopter went
@@ -66,7 +66,7 @@ OK no time to chit chat, find the crew and bring them back!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Return to base"];
-_objective1 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-_objective0 = player createSimpleTask ["Find the downed helo"];
-_objective0 setSimpleTaskDescription ["Find the downed helo", "Find the downed helo", "Find the downed helo"];
+objective2 = player createSimpleTask ["Return to base"];
+objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective1 = player createSimpleTask ["Find the downed helo"];
+objective1 setSimpleTaskDescription ["Find the downed helo", "Find the downed helo", "Find the downed helo"];

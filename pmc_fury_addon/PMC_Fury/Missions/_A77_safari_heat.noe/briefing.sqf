@@ -16,14 +16,14 @@ is with us this time too.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airstrip, assault
 the <marker name = 'target1'>Blata</marker> village in the hill.
 
 
 
-Safari Heat
+<br/>Safari Heat<br/><br/>
 
 GEN SITREP<br/>
 More Russian armor have been reported to be deployed in the Nogova island, they are
@@ -68,5 +68,5 @@ soldiers ready for any vehicles like BMP's.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Assault Blata"];
-_objective0 setSimpleTaskDescription ["Assault Blata", "Assault Blata", "Assault Blata"];
+objective1 = player createSimpleTask ["Assault Blata"];
+objective1 setSimpleTaskDescription ["Assault Blata", "Assault Blata", "Assault Blata"];

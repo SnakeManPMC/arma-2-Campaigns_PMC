@@ -14,14 +14,14 @@ Fresh air from the ocean breeze... it is a nice place to fight. Not.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from east coast base, board
 helo and meet bravo. Assault towards west in the coastal road.
 
 
 
-Noble Warrior
+<br/>Noble Warrior<br/><br/>
 
 GEN SITREP<br/>
 It was extremely long night in the east coast but finally we stopped the Russian
@@ -66,5 +66,5 @@ very careful. Use the arty to soften them up before moving ahead.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Assault to objective"];
-_objective0 setSimpleTaskDescription ["Assault to objective", "Assault to objective", "Assault to objective"];
+objective1 = player createSimpleTask ["Assault to objective"];
+objective1 setSimpleTaskDescription ["Assault to objective", "Assault to objective", "Assault to objective"];

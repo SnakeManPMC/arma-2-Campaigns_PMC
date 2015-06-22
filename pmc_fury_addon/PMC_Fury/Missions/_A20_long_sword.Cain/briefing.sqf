@@ -14,7 +14,7 @@ Russians are really trying to kick our boys around with he helos.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from tank base, you must
 defend against Russian attack.
@@ -23,7 +23,7 @@ Good luck.
 
 
 
-Long Sword
+<br/>Long Sword<br/><br/>
 
 GEN SITREP<br/>
 Russians have got their air operations fully active, they are launching fighter 
@@ -63,5 +63,5 @@ hold it with just stingers. There is plenty of them in the ammo boxes, use 'em!
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Defend off the Russians."];
-_objective0 setSimpleTaskDescription ["Defend off the Russians.", "Defend off the Russians.", "Defend off the Russians."];
+objective1 = player createSimpleTask ["Defend off the Russians."];
+objective1 setSimpleTaskDescription ["Defend off the Russians.", "Defend off the Russians.", "Defend off the Russians."];

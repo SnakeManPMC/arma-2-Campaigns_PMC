@@ -1559,7 +1559,7 @@ class Mission
 			age="UNKNOWN";
 			text="END";
 			expCond="mcomplete";
-			expActiv="""2"" objStatus ""DONE"";";
+			expActiv="objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

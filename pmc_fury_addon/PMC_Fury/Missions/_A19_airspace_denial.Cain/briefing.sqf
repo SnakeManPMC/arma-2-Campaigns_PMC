@@ -14,14 +14,14 @@ Oh my, now the commies got helos again.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from beach docks, wait for
 resupply truck and shoot down enemy helos.
 
 
 
-Airspace Denial
+<br/>Airspace Denial<br/><br/>
 
 GEN SITREP<br/>
 Enemy has gotten its air forces to active status, there is indication that
@@ -59,7 +59,7 @@ Good hunting!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Get stingers "];
-_objective1 setSimpleTaskDescription ["Get stingers ", "Get stingers ", "Get stingers "];
-_objective0 = player createSimpleTask ["Shoot down enemy helos"];
-_objective0 setSimpleTaskDescription ["Shoot down enemy helos", "Shoot down enemy helos", "Shoot down enemy helos"];
+objective2 = player createSimpleTask ["Get stingers "];
+objective2 setSimpleTaskDescription ["Get stingers ", "Get stingers ", "Get stingers "];
+objective1 = player createSimpleTask ["Shoot down enemy helos"];
+objective1 setSimpleTaskDescription ["Shoot down enemy helos", "Shoot down enemy helos", "Shoot down enemy helos"];

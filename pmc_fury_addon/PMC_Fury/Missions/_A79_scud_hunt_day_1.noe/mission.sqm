@@ -1789,7 +1789,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply";
 			expCond="camping";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; ""2"" objstatus ""DONE""; mcomplete=true;";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};
@@ -1835,7 +1835,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq scud reply";
 			expCond="PMCscuds1";
-			expActiv="PAPABEAR sideRadio ""Rhqscuds""; ""1"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideRadio ""Rhqscuds""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

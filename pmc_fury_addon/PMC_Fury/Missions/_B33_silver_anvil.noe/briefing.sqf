@@ -14,7 +14,7 @@ This should be small and neat operation.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Neveklov, assault
 and capture <marker name = 'target1'>houses #1</marker> and 
@@ -22,7 +22,7 @@ also <marker name = 'target2'>houses #2</marker> in the beach.
 
 
 
-Silver Anvil
+<br/>Silver Anvil<br/><br/>
 
 GEN SITREP<br/>
 Our forces were successful taking the Neveklov, we are getting much closer now
@@ -63,7 +63,7 @@ enemy vehicles.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture house"];
-_objective1 setSimpleTaskDescription ["Capture house", "Capture house", "Capture house"];
-_objective0 = player createSimpleTask ["Capture Farmhouses"];
-_objective0 setSimpleTaskDescription ["Capture Farmhouses", "Capture Farmhouses", "Capture Farmhouses"];
+objective2 = player createSimpleTask ["Capture house"];
+objective2 setSimpleTaskDescription ["Capture house", "Capture house", "Capture house"];
+objective1 = player createSimpleTask ["Capture Farmhouses"];
+objective1 setSimpleTaskDescription ["Capture Farmhouses", "Capture Farmhouses", "Capture Farmhouses"];

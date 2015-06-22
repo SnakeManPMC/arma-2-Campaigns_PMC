@@ -14,7 +14,7 @@ Sweeping the coastline, we just must keep away from the desert.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from NATO airbase. Insertion point
 at <marker name = 'insert'>mountain</marker> top. Proceed through the 
@@ -24,7 +24,7 @@ into <marker name = 'extract'>extraction</marker> position and call helo pickup.
 
 
 
-Rapid Hope
+<br/>Rapid Hope<br/><br/>
 
 GEN SITREP<br/>
 We now use the high mobility of helicopter operations to move our personel around.
@@ -69,7 +69,7 @@ chew your infantry squad to pieces.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Return to base"];
-_objective1 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-_objective0 = player createSimpleTask ["Sweep the area"];
-_objective0 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];
+objective2 = player createSimpleTask ["Return to base"];
+objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective1 = player createSimpleTask ["Sweep the area"];
+objective1 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];

@@ -16,14 +16,14 @@ La Riviere, the beach town to be captured.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha and Bravo <marker name = 'start'>start</marker> from the hill, they proceed
 and capture <marker name = 'target'>La Riviere</marker> objective.
 
 
 
-Silver Sabre
+<br/>Silver Sabre<br/><br/>
 
 GEN SITREP<br/>
 Massive Russian attack is repelled and we move forward. La Riviere is one of the 
@@ -65,5 +65,5 @@ alive will you.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture La Riviere"];
-_objective0 setSimpleTaskDescription ["Capture La Riviere", "Capture La Riviere", "Capture La Riviere"];
+objective1 = player createSimpleTask ["Capture La Riviere"];
+objective1 setSimpleTaskDescription ["Capture La Riviere", "Capture La Riviere", "Capture La Riviere"];

@@ -14,14 +14,14 @@ Action in marie
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Chapoi, proceeds into
 village of <marker name = 'target'>Sainte Marie</marker> and captures it.
 
 
 
-Sharp Star
+<br/>Sharp Star<br/><br/>
 
 GEN SITREP<br/>
 After we successfully took Chapoi we are immediately sending squad to assault
@@ -58,5 +58,5 @@ drops to almost knife fight ranges. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Sainte Marie"];
-_objective0 setSimpleTaskDescription ["Capture Sainte Marie", "Capture Sainte Marie", "Capture Sainte Marie"];
+objective1 = player createSimpleTask ["Capture Sainte Marie"];
+objective1 setSimpleTaskDescription ["Capture Sainte Marie", "Capture Sainte Marie", "Capture Sainte Marie"];

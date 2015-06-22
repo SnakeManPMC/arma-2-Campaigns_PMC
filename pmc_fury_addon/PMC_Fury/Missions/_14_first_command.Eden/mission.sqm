@@ -1050,7 +1050,7 @@ class Mission
 			age="UNKNOWN";
 			text="joining";
 			expCond="mt1 distance myguy <20";
-			expActiv="[mt1,mt2,mt3,mt4,mt5,mt6,mt7,mt8] join myteam; ""1"" objstatus ""DONE"";";
+			expActiv="[mt1,mt2,mt3,mt4,mt5,mt6,mt7,mt8] join myteam; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1064,7 +1064,7 @@ class Mission
 			age="UNKNOWN";
 			text="show1";
 			expCond="leader myteam distance smark <50";
-			expActiv="leader myteam sideradio ""Rphilippe""; show1=true; ""2"" objstatus ""DONE"";";
+			expActiv="leader myteam sideradio ""Rphilippe""; show1=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1078,7 +1078,7 @@ class Mission
 			age="UNKNOWN";
 			text="show2";
 			expCond="myguy distance flagg <50";
-			expActiv="leader myteam sideradio ""Rbase""; show2=true; ""3"" objstatus ""DONE"";";
+			expActiv="leader myteam sideradio ""Rbase""; show2=true; objective3 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

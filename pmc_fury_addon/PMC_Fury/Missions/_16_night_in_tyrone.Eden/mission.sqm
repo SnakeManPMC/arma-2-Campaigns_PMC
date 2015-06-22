@@ -1425,7 +1425,7 @@ class Mission
 			age="UNKNOWN";
 			text="papabear complete";
 			expCond="count units truckteam <2 AND count units assault1 <5 AND count units assault2 <2;";
-			expActiv="PAPABEAR sideradio ""Rcomplete""; mcomplete=true; ""1"" objstatus ""DONE"";";
+			expActiv="PAPABEAR sideradio ""Rcomplete""; mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

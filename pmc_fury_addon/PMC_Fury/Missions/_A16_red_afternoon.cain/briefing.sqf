@@ -14,14 +14,14 @@ Russians attempt to counter attack us again.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from ruins, defend
 them against Russian counter attack.
 
 
 
-Red Afternoon
+<br/>Red Afternoon<br/><br/>
 
 GEN SITREP<br/>
 Enemy counter attack is on way towards our positions. Keep them away as
@@ -60,5 +60,5 @@ truck. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Stop Russian counter attack."];
-_objective0 setSimpleTaskDescription ["Stop Russian counter attack.", "Stop Russian counter attack.", "Stop Russian counter attack."];
+objective1 = player createSimpleTask ["Stop Russian counter attack."];
+objective1 setSimpleTaskDescription ["Stop Russian counter attack.", "Stop Russian counter attack.", "Stop Russian counter attack."];

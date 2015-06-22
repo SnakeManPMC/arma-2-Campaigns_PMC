@@ -15,7 +15,7 @@ and today we are moving like crazy into the Le Moule area.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 You start from <marker name = 'start'>here</marker><br/>
 Attack and seize <marker name = 'capture'>Le Moule</marker>
@@ -23,7 +23,7 @@ Attack and seize <marker name = 'capture'>Le Moule</marker>
 
 
 
-Operation Muse
+<br/>Operation Muse<br/><br/>
 
 The operation to capture Lamentin was a success and now we are moving along towards the 
 next objective which is Le Moule.
@@ -58,7 +58,7 @@ hold the city and wait for support truck that will be sent to rearm your troops.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Destroy support trucks Intel"];
-_objective1 setSimpleTaskDescription ["Destroy support trucks Intel", "Destroy support trucks Intel", "Destroy support trucks Intel"];
-_objective0 = player createSimpleTask ["Capture Le Moule"];
-_objective0 setSimpleTaskDescription ["Capture Le Moule", "Capture Le Moule", "Capture Le Moule"];
+objective2 = player createSimpleTask ["Destroy support trucks Intel"];
+objective2 setSimpleTaskDescription ["Destroy support trucks Intel", "Destroy support trucks Intel", "Destroy support trucks Intel"];
+objective1 = player createSimpleTask ["Capture Le Moule"];
+objective1 setSimpleTaskDescription ["Capture Le Moule", "Capture Le Moule", "Capture Le Moule"];

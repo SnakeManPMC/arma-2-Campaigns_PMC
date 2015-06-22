@@ -18,7 +18,7 @@ the rest of the stuff.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha starts from <marker name = 'start'>here</marker> in the Durras. Guard the city
 through the night.
@@ -26,7 +26,7 @@ through the night.
 
 
 
-Night Watch 2
+<br/>Night Watch 2<br/><br/>
 
 Our general plan to neutralize the last Russian forces on the island is coming together 
 nicely, we are looking tough times as the city of Saint Pierre cannot just be bombed to 
@@ -63,5 +63,5 @@ any Russians penetrate our defences (not to be expected), thorough the night.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Guard Durras"];
-_objective0 setSimpleTaskDescription ["Guard Durras", "Guard Durras", "Guard Durras"];
+objective1 = player createSimpleTask ["Guard Durras"];
+objective1 setSimpleTaskDescription ["Guard Durras", "Guard Durras", "Guard Durras"];

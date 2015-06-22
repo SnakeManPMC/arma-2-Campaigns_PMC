@@ -14,7 +14,7 @@ Beach clearing and intersection capturing, hooyah!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Cancon, proceeds and
 clears the <marker name = 'beach'>beach</marker> and 
@@ -22,7 +22,7 @@ captures <marker name = 'target'>intersection</marker> in east.
 
 
 
-Decisive Flash
+<br/>Decisive Flash<br/><br/>
 
 GEN SITREP<br/>
 We are preparing to attack Chapoi and to accomplish that we are cutting of the roads
@@ -64,7 +64,7 @@ capture it.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture intersection"];
-_objective1 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];
-_objective0 = player createSimpleTask ["Clear beach"];
-_objective0 setSimpleTaskDescription ["Clear beach", "Clear beach", "Clear beach"];
+objective2 = player createSimpleTask ["Capture intersection"];
+objective2 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];
+objective1 = player createSimpleTask ["Clear beach"];
+objective1 setSimpleTaskDescription ["Clear beach", "Clear beach", "Clear beach"];

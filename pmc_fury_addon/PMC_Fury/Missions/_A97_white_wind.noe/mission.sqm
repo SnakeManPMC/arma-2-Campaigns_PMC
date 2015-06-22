@@ -1989,7 +1989,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply ed";
 			expCond="eastdead";
-			expActiv="PAPABEAR sideradio ""Rreinfcom""; ""1"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideradio ""Rreinfcom""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -2020,7 +2020,7 @@ class Mission
 			age="UNKNOWN";
 			text="reinf dead hq";
 			expCond="reinfdead";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; ""2"" objStatus ""DONE""; mcomplete=true;";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; mcomplete=true;";
 			class Effects
 			{
 			};

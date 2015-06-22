@@ -1143,7 +1143,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply 1";
 			expCond="eastdead1";
-			expActiv="PAPABEAR sideRadio ""Rhqreply1""; ""1"" objStatus ""DONE""; bmp1 setDammage 1;";
+			expActiv="PAPABEAR sideRadio ""Rhqreply1""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; bmp1 setDammage 1;";
 			class Effects
 			{
 			};

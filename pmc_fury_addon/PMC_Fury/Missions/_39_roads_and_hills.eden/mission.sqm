@@ -500,7 +500,7 @@ class Mission
 				{
 					position[]={8072.157227,189.206985,4151.809570};
 					type="GETOUT";
-					expActiv="leader assault1 sideradio ""Raengineer""; ready4hill=true; ""1"" objstatus ""DONE""; savegame";
+					expActiv="leader assault1 sideradio ""Raengineer""; ready4hill=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; savegame";
 					synchronizations[]={};
 					class Effects
 					{
@@ -765,7 +765,7 @@ class Mission
 			timeoutMax=5.000000;
 			age="UNKNOWN";
 			text="hill clear";
-			expActiv="leader assault1 sideradio ""Rhillclear""; hill=true; ""2"" objstatus ""DONE"";";
+			expActiv="leader assault1 sideradio ""Rhillclear""; hill=true; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

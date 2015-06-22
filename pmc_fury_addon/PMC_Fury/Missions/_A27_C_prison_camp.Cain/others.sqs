@@ -32,7 +32,7 @@ leader pows1 sidechat "Umm since you're the highest ranking of us, you're in cha
 aP sidechat "Charge of WHAT?";
 ~45
 
-"1" objstatus "DONE";
+objective1 setTaskState "SUCCEEDED"; [ objNull, objNull, objective1, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
 mcomplete=true;
 
 exit

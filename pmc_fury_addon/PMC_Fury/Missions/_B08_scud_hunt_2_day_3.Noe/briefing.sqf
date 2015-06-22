@@ -17,7 +17,7 @@ we must take any precautions necessary to avoid them.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from forest, hunt down
 the <marker name = 'target1'>Scud</marker> launchers and get to 
@@ -25,7 +25,7 @@ the <marker name = 'extract'>extraction</marker> point.
 
 
 
-Scud Hunt 2, Day 3
+<br/>Scud Hunt 2, Day 3<br/><br/>
 
 GEN SITREP<br/>
 none
@@ -60,9 +60,9 @@ none
 
 "]];
 // tasks need to be in reversed order
-_objective2 = player createSimpleTask ["Return to base"];
-_objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-_objective1 = player createSimpleTask ["Get to Extraction LZ"];
-_objective1 setSimpleTaskDescription ["Get to Extraction LZ", "Get to Extraction LZ", "Get to Extraction LZ"];
-_objective0 = player createSimpleTask ["Hunt Scud launchers"];
-_objective0 setSimpleTaskDescription ["Hunt Scud launchers", "Hunt Scud launchers", "Hunt Scud launchers"];
+objective3 = player createSimpleTask ["Return to base"];
+objective3 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective2 = player createSimpleTask ["Get to Extraction LZ"];
+objective2 setSimpleTaskDescription ["Get to Extraction LZ", "Get to Extraction LZ", "Get to Extraction LZ"];
+objective1 = player createSimpleTask ["Hunt Scud launchers"];
+objective1 setSimpleTaskDescription ["Hunt Scud launchers", "Hunt Scud launchers", "Hunt Scud launchers"];

@@ -14,7 +14,7 @@ That mountain is big I tell you. But at least we can use the truck to drive ther
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road. Proceed into
 the <marker name = 'target1'>mountain 1</marker> and for 
@@ -22,7 +22,7 @@ also <marker name = 'target2'>mountain 2</marker> clear all Russians from them.
 
 
 
-Eagle Nest
+<br/>Eagle Nest<br/><br/>
 
 GEN SITREP<br/>
 Todays operation calls for neutralization of Russian infantry from the 
@@ -61,7 +61,7 @@ fights ou there.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Clear mountain #2"];
-_objective1 setSimpleTaskDescription ["Clear mountain #2", "Clear mountain #2", "Clear mountain #2"];
-_objective0 = player createSimpleTask ["Clear mountain #1"];
-_objective0 setSimpleTaskDescription ["Clear mountain #1", "Clear mountain #1", "Clear mountain #1"];
+objective2 = player createSimpleTask ["Clear mountain #2"];
+objective2 setSimpleTaskDescription ["Clear mountain #2", "Clear mountain #2", "Clear mountain #2"];
+objective1 = player createSimpleTask ["Clear mountain #1"];
+objective1 setSimpleTaskDescription ["Clear mountain #1", "Clear mountain #1", "Clear mountain #1"];

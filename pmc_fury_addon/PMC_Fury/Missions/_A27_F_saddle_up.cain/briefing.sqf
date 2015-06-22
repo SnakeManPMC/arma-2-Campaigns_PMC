@@ -45,7 +45,7 @@ player createDiaryRecord ["Diary", ["Mission", "
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Get to the <marker name = 'obj2'>docks</marker> and talk to pilots."];
-_objective1 setSimpleTaskDescription ["Get to the <marker name = 'obj2'>docks</marker> and talk to pilots.", "Get to the <marker name = 'obj2'>docks</marker> and talk to pilots.", "Get to the <marker name = 'obj2'>docks</marker> and talk to pilots."];
-_objective0 = player createSimpleTask ["Umm objective? you just woke up. Well find the Colonel."];
-_objective0 setSimpleTaskDescription ["Umm objective? you just woke up. Well find the Colonel.", "Umm objective? you just woke up. Well find the Colonel.", "Umm objective? you just woke up. Well find the Colonel."];
+objective2 = player createSimpleTask ["Get to the <marker name = 'obj2'>docks</marker> and talk to pilots."];
+objective2 setSimpleTaskDescription ["Get to the <marker name = 'obj2'>docks</marker> and talk to pilots.", "Get to the <marker name = 'obj2'>docks</marker> and talk to pilots.", "Get to the <marker name = 'obj2'>docks</marker> and talk to pilots."];
+objective1 = player createSimpleTask ["Umm objective? you just woke up. Well find the Colonel."];
+objective1 setSimpleTaskDescription ["Umm objective? you just woke up. Well find the Colonel.", "Umm objective? you just woke up. Well find the Colonel.", "Umm objective? you just woke up. Well find the Colonel."];

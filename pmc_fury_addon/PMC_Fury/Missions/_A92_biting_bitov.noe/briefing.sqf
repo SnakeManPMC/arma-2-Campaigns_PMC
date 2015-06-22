@@ -15,7 +15,7 @@ the area where we had the Black Hawk shoot down. Brr.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from Lany. Assault and
 clear the <marker name = 'target1'>church</marker> first, then proceed
@@ -23,7 +23,7 @@ to capture <marker name = 'target2'>Bitov</marker> village.
 
 
 
-Biting Bitov
+<br/>Biting Bitov<br/><br/>
 
 GEN SITREP<br/>
 Russians had some helicopters in the air yesterday, luckily they were defeated
@@ -70,7 +70,7 @@ with enemy vehicles. Let the Abrams to take out most of them. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture Bitov"];
-_objective1 setSimpleTaskDescription ["Capture Bitov", "Capture Bitov", "Capture Bitov"];
-_objective0 = player createSimpleTask ["Clear church"];
-_objective0 setSimpleTaskDescription ["Clear church", "Clear church", "Clear church"];
+objective2 = player createSimpleTask ["Capture Bitov"];
+objective2 setSimpleTaskDescription ["Capture Bitov", "Capture Bitov", "Capture Bitov"];
+objective1 = player createSimpleTask ["Clear church"];
+objective1 setSimpleTaskDescription ["Clear church", "Clear church", "Clear church"];

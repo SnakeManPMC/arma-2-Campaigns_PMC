@@ -14,7 +14,7 @@ Sniper hunt. quick and deadly.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from fuel depot and
 boards helo, search and destroy 
@@ -22,7 +22,7 @@ enemy <marker name = 'target1'>sniper</marker> team behind friendly lines.
 
 
 
-Red Sniper
+<br/>Red Sniper<br/><br/>
 
 GEN SITREP<br/>
 Weather keeps improving slowly, it should not take long now to have the rain stop
@@ -64,5 +64,5 @@ and eliminate one or two men in large area, this could be tricky... Happy huntin
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Find and kill Sniper team"];
-_objective0 setSimpleTaskDescription ["Find and kill Sniper team", "Find and kill Sniper team", "Find and kill Sniper team"];
+objective1 = player createSimpleTask ["Find and kill Sniper team"];
+objective1 setSimpleTaskDescription ["Find and kill Sniper team", "Find and kill Sniper team", "Find and kill Sniper team"];

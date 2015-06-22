@@ -14,7 +14,7 @@ This is going to big one, I'm cool. Bring it on, yeah!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road. Sweep through
 the <marker name = 'target1'>area</marker> and capture <marker name = 'target2'>woods</marker> and
@@ -24,7 +24,7 @@ Good luck.
 
 
 
-Square Matrix
+<br/>Square Matrix<br/><br/>
 
 GEN SITREP<br/>
 Todays operation is big push to the open areas in central Nogova. The enemy has strong
@@ -81,7 +81,7 @@ orders so get moving solider. Good luck!
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Capture woods"];
-_objective1 setSimpleTaskDescription ["Capture woods", "Capture woods", "Capture woods"];
-_objective0 = player createSimpleTask ["Sweep area"];
-_objective0 setSimpleTaskDescription ["Sweep area", "Sweep area", "Sweep area"];
+objective2 = player createSimpleTask ["Capture woods"];
+objective2 setSimpleTaskDescription ["Capture woods", "Capture woods", "Capture woods"];
+objective1 = player createSimpleTask ["Sweep area"];
+objective1 setSimpleTaskDescription ["Sweep area", "Sweep area", "Sweep area"];

@@ -14,7 +14,7 @@ The terrain of Kolgujev, is going to be cleaned out from any Reds.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from ruins, sweep 
 the <marker name = 'target1'>area</marker> south west of ruins, 
@@ -22,7 +22,7 @@ meet <marker name = 'bravo'>Bravo</marker> squad in the base.
 
 
 
-Distant Promise
+<br/>Distant Promise<br/><br/>
 
 GEN SITREP<br/>
 Weather keeps improving as the predictions are clear skies by tonight. We captured
@@ -65,5 +65,5 @@ base where Bravo is waiting for you to arrive. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Sweep the area, meet Bravo"];
-_objective0 setSimpleTaskDescription ["Sweep the area, meet Bravo", "Sweep the area, meet Bravo", "Sweep the area, meet Bravo"];
+objective1 = player createSimpleTask ["Sweep the area, meet Bravo"];
+objective1 setSimpleTaskDescription ["Sweep the area, meet Bravo", "Sweep the area, meet Bravo", "Sweep the area, meet Bravo"];

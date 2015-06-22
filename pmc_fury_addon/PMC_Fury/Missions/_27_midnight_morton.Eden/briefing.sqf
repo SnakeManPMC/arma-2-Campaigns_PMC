@@ -18,13 +18,13 @@ Night time flash raid to Morton, speed and surprise. Yehaa here we come!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Capture <marker name = 'morton'>Morton</marker>
 
 
 
-Morton
+<br/>Morton<br/><br/>
 
 We keep on pushing deeper into the enemy territory, next city to fall is Morton on the
 coast. 
@@ -58,5 +58,5 @@ lights to your advantage.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Capture Morton"];
-_objective0 setSimpleTaskDescription ["Capture Morton", "Capture Morton", "Capture Morton"];
+objective1 = player createSimpleTask ["Capture Morton"];
+objective1 setSimpleTaskDescription ["Capture Morton", "Capture Morton", "Capture Morton"];

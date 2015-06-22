@@ -1107,7 +1107,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply";
 			expCond="eastdead";
-			expActiv="PAPABEAR sideradio ""Rcallbravo""; 1 setRadioMsg ""Call - Extract""; ""1"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideradio ""Rcallbravo""; 1 setRadioMsg ""Call - Extract""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

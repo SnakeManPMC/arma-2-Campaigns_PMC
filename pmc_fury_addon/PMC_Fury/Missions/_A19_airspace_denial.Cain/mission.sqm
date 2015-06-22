@@ -697,7 +697,7 @@ class Mission
 			age="UNKNOWN";
 			text="east dead";
 			expCond="!alive helo1 AND !alive helo2 AND !alive helo3 AND !alive helo4";
-			expActiv="PAPABEAR sideRadio ""Reastdead""; mcomplete=true; ""1"" objStatus ""DONE"";";
+			expActiv="PAPABEAR sideRadio ""Reastdead""; mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -766,7 +766,7 @@ class Mission
 			age="UNKNOWN";
 			text="assault1 here";
 			expCond="leader assault1 distance usa < 50";
-			expActiv="""2"" objstatus ""DONE"";";
+			expActiv="objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

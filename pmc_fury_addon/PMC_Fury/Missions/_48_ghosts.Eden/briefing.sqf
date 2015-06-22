@@ -20,7 +20,7 @@ Hooayh!
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha and Bravo squads <marker name = 'start'>start</marker> from the base. Objective
 is to assault and clear the <marker name = 'target'>target</marker> castle.
@@ -32,7 +32,7 @@ Good luck!
 
 
 
-Ghosts
+<br/>Ghosts<br/><br/>
 
 Front line forces have captured the city of Durras. We have fortified positions in that
 location and there is no enemy counter attack detected. They are kept back by our forces
@@ -80,7 +80,7 @@ to assume there are more troops nearby and at least some patrols. Be careful out
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Sweep and Secure the airbase! Read Details"];
-_objective1 setSimpleTaskDescription ["Sweep and Secure the airbase! Read Details", "Sweep and Secure the airbase! Read Details", "Sweep and Secure the airbase! Read Details"];
-_objective0 = player createSimpleTask ["Assault the Castle"];
-_objective0 setSimpleTaskDescription ["Assault the Castle", "Assault the Castle", "Assault the Castle"];
+objective2 = player createSimpleTask ["Sweep and Secure the airbase! Read Details"];
+objective2 setSimpleTaskDescription ["Sweep and Secure the airbase! Read Details", "Sweep and Secure the airbase! Read Details", "Sweep and Secure the airbase! Read Details"];
+objective1 = player createSimpleTask ["Assault the Castle"];
+objective1 setSimpleTaskDescription ["Assault the Castle", "Assault the Castle", "Assault the Castle"];

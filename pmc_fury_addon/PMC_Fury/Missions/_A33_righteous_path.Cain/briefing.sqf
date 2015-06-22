@@ -14,7 +14,7 @@ The base is a tough one. We must be careful.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from road, assault 
 enemy <marker name = 'target1'>base</marker> and keep it secure.
@@ -23,7 +23,7 @@ Good luck.
 
 
 
-Righteous Path
+<br/>Righteous Path<br/><br/>
 
 GEN SITREP<br/>
 Today we move agains one of the biggest enemy bases in the high grounds, it contains
@@ -62,7 +62,7 @@ encounter heavy armor. When you got the base, stay alert for those nasty counter
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Keep it secure"];
-_objective1 setSimpleTaskDescription ["Keep it secure", "Keep it secure", "Keep it secure"];
-_objective0 = player createSimpleTask ["Capture the base"];
-_objective0 setSimpleTaskDescription ["Capture the base", "Capture the base", "Capture the base"];
+objective2 = player createSimpleTask ["Keep it secure"];
+objective2 setSimpleTaskDescription ["Keep it secure", "Keep it secure", "Keep it secure"];
+objective1 = player createSimpleTask ["Capture the base"];
+objective1 setSimpleTaskDescription ["Capture the base", "Capture the base", "Capture the base"];

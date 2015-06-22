@@ -22,7 +22,7 @@ today... thats for sure. I gotta stay sharp, keep my boys alive.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 You'll start at the <marker name = 'base'>base</marker>. Seize city of Tyrone 
 over <marker name = 'tyrone'>here</marker>. Delta squad will attack 
@@ -30,7 +30,7 @@ the <marker name = 'lhouse'>lighthouse</marker> when you use radio (0-0-1) comma
 
 
 
-Tyrone takedown
+<br/>Tyrone takedown<br/><br/>
 
 Todays operation calls for assault to city of Tyrone and also clearing out the 
 lighthouse right on the beach.
@@ -66,7 +66,7 @@ Now grab the 5t truck from other side of the base and get going.
 
 "]];
 // tasks need to be in reversed order
-_objective1 = player createSimpleTask ["Seize Tyrone"];
-_objective1 setSimpleTaskDescription ["Seize Tyrone", "Seize Tyrone", "Seize Tyrone"];
-_objective0 = player createSimpleTask ["Clear the lighthouse"];
-_objective0 setSimpleTaskDescription ["Clear the lighthouse", "Clear the lighthouse", "Clear the lighthouse"];
+objective2 = player createSimpleTask ["Seize Tyrone"];
+objective2 setSimpleTaskDescription ["Seize Tyrone", "Seize Tyrone", "Seize Tyrone"];
+objective1 = player createSimpleTask ["Clear the lighthouse"];
+objective1 setSimpleTaskDescription ["Clear the lighthouse", "Clear the lighthouse", "Clear the lighthouse"];

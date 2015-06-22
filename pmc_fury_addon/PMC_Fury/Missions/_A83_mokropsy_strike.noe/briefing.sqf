@@ -15,7 +15,7 @@ follow the mission plan today.
 
 "]];
 player createDiaryRecord ["Diary", ["Mission", "
-See War Situation for details.<br/><br/>
+
 
 Alpha team <marker name = 'start'>start</marker> from airstrip, assault
 the <marker name = 'target1'>Mokropsy</marker> village. Maybe some better 
@@ -23,7 +23,7 @@ luck today.
 
 
 
-Mokropsy Strike
+<br/>Mokropsy Strike<br/><br/>
 
 GEN SITREP<br/>
 It was intelligence failure yesterday that the enemy got so close, hopefully that
@@ -75,5 +75,5 @@ alert infantry. Good luck.
 
 "]];
 // tasks need to be in reversed order
-_objective0 = player createSimpleTask ["Assault Mokropsy"];
-_objective0 setSimpleTaskDescription ["Assault Mokropsy", "Assault Mokropsy", "Assault Mokropsy"];
+objective1 = player createSimpleTask ["Assault Mokropsy"];
+objective1 setSimpleTaskDescription ["Assault Mokropsy", "Assault Mokropsy", "Assault Mokropsy"];
