@@ -1,20 +1,22 @@
-;
-; call backup forces
-;
-leader assault1 sideradio "Rbackups";
-~5
+/*
 
-;
-; get them moving
-;
-assault_is_go=true;
+	call backup forces
+
+*/
+leader assault1 sideradio "Rbackups";
+sleep 5;
+
+/*
+
+	get them moving
+
+*/
+assault_is_go = true;
 
 leader ustanks1 sideradio "Rustmoving";
-~10
+sleep 10;
 
 leader assault2 sideradio "Rass2moving";
-~10
+sleep 10;
 
 leader ustanks2 sideradio "Rust2moving";
-
-exit
