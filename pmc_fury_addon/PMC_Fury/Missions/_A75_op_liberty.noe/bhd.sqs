@@ -21,7 +21,8 @@ _a sideRadio "Rbhd";
 ;STRM_Rgotocsite,"PAPA BEAR TO ALPHA BLACK. COPY. GET INTO THE CRASH SITE AS FAST AS YOU CAN. 
 ;REPORT BACK WHEN YOU ARE THERE. OVER.",hq
 _hq sideradio "Rgotocsite";
-"2" objstatus "ACTIVE";
+objective2 = player createSimpleTask ["Locate Downed Blackhawk"];
+objective2 setSimpleTaskDescription ["Locate Downed Blackhawk", "Locate Downed Blackhawk", "Locate Downed Blackhawk"];
 ~7
 
 ;STRM_Rcsitecopy,"ALPHA COPIES. PROCEEDING INTO THE CRASH SITE. STAND BY. OVER.",alpha
@@ -41,7 +42,8 @@ objective2 setTaskState "SUCCEEDED"; [ objNull, objNull, objective2, "SUCCEEDED"
 
 ;STRM_Rfindcrew,"PAPA BEAR TO ALPHA. YOU MUST LOCATE THE HELO CREW. OVER.",hq
 _hq sideradio "Rfindcrew";
-"3" objstatus "ACTIVE";
+objective3 = player createSimpleTask ["Locate pilots"];
+objective3 setSimpleTaskDescription ["Locate pilots", "Locate pilots", "Locate pilots"];
 ~5
 
 
@@ -68,8 +70,14 @@ _a sideradio "Rfoundthem";
 ;STRM_Rsecurecsite,"GOOD WORK ALPHA. GET THEM TO YOUR SQUAD AND SECURE THE CRASH SITE 
 ;UNTIL WE GET SAR PACKAGE TO YOU. I'LL BE IN TOUCH. PAPA BEAR OUT.",hq
 _hq sideradio "Rsecurecsite";
-objective3 setTaskState "SUCCEEDED"; [ objNull, objNull, objective3, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf"; "4" objstatus "ACTIVE";
+
+objective3 setTaskState "SUCCEEDED";
+[ objNull, objNull, objective3, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
+
+objective4 = player createSimpleTask ["Secure Crash Site until the"];
+objective4 setSimpleTaskDescription ["Secure Crash Site until the", "Secure Crash Site until the", "Secure Crash Site until the"];
 ~5
+
 joinage=true;
 ~3
 ?(alive _p): _p setbehaviour "aware"; _p setcombatmode "yellow"; [_p] join assault1;

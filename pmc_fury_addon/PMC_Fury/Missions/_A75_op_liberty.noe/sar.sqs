@@ -135,7 +135,8 @@ if ({alive _x} foreach units sar2 == 0) then { goto "SAR_Team_Failed"; };
 ;
 ;STRM_Rsaronlocation,"CHARLIE BLACK IS ON THE CRASH SITE. OVER.",charlie
 leader sar2 sideradio "Rsaronlocation";
-objective4 setTaskState "SUCCEEDED"; [ objNull, objNull, objective4, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
+objective4 setTaskState "SUCCEEDED";
+[ objNull, objNull, objective4, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
 
 ;
 ; you secured the site until SAR arrived, good job.
@@ -162,7 +163,8 @@ leader sar2 sideradio "Rsardone";
 PAPABEAR sideradio "Rextractioncoming"
 leader sar2 move getpos tgt_area;
 
-"5" objstatus "ACTIVE";
+objective5 = player createSimpleTask ["Board chinook and return home"];
+objective5 setSimpleTaskDescription ["Board chinook and return home", "Board chinook and return home", "Board chinook and return home"];
 
 ;
 ; chinook is send on its say
