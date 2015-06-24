@@ -1,0 +1,17 @@
+my1 action ["eject", helo];
+sleep .3;
+my2 action ["eject", helo];
+sleep .3;
+my3 action ["eject", helo];
+sleep .3;
+my4 action ["eject", helo];
+sleep .3;
+my5 action ["eject", helo];
+sleep .3;
+my6 action ["eject", helo];
+sleep .3;
+my7 action ["eject", helo];
+sleep .3;
+my8 action ["eject", helo];
+sleep .3;
+my9 action ["eject", helo];
