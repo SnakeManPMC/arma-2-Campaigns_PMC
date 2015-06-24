@@ -35,7 +35,7 @@ class Mission
 					skill=0.600000;
 					text="snipa1";
 					markers[]={};
-					init="this setunitpos ""down"";this setcombatmode ""blue""; this dotarget kala;";
+					init="this setunitpos ""down"";this setcombatmode ""blue""; this dotarget CommieOfficer;";
 				};
 			};
 		};
@@ -54,7 +54,7 @@ class Mission
 					vehicle="OfficerE";
 					leader=1;
 					skill=0.600000;
-					text="kala";
+					text="CommieOfficer";
 					markers[]={};
 				};
 			};
@@ -79,7 +79,7 @@ class Mission
 				class Item1
 				{
 					position[]={5544.178711,80.459999,6085.165039};
-					expActiv="kala dofire lutka2; kala dofire lutka2; kala dofire lutka; kala dofire lutka;";
+					expActiv="CommieOfficer dofire CivvieMan2; CommieOfficer dofire CivvieMan2; CommieOfficer dofire CivvieMan1; CommieOfficer dofire CivvieMan1;";
 					synchronizations[]={};
 					class Effects
 					{
@@ -290,7 +290,7 @@ class Mission
 					vehicle="Civilian";
 					leader=1;
 					skill=0.600000;
-					text="lutka";
+					text="CivvieMan1";
 					markers[]={};
 					init="this setunitpos ""up"";";
 				};
@@ -483,7 +483,7 @@ class Mission
 					skill=0.600000;
 					text="snipa2";
 					markers[]={};
-					init="this setunitpos ""down"";this setcombatmode ""blue""; this dotarget kala;";
+					init="this setunitpos ""down"";this setcombatmode ""blue""; this dotarget CommieOfficer;";
 				};
 			};
 		};
@@ -502,7 +502,7 @@ class Mission
 					vehicle="Civilian2";
 					leader=1;
 					skill=0.600000;
-					text="lutka2";
+					text="CivvieMan2";
 					markers[]={};
 					init="this setunitpos ""up"";";
 				};
@@ -1243,7 +1243,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="killcam";
-			expCond="!alive lutka OR !alive lutka2";
+			expCond="!alive CivvieMan1 OR !alive CivvieMan2";
 			expActiv="[] exec ""killcam.sqs"";";
 			class Effects
 			{
@@ -1560,7 +1560,7 @@ class Intro
 					skill=0.600000;
 					text="snipa1";
 					markers[]={};
-					init="this setunitpos ""down"";this setcombatmode ""blue""; this dotarget kala;";
+					init="this setunitpos ""down"";this setcombatmode ""blue""; this dotarget CommieOfficer;";
 				};
 			};
 		};
@@ -1581,7 +1581,7 @@ class Intro
 					skill=0.600000;
 					text="snipa2";
 					markers[]={};
-					init="this setunitpos ""down"";this setcombatmode ""blue""; this dotarget kala;";
+					init="this setunitpos ""down"";this setcombatmode ""blue""; this dotarget CommieOfficer;";
 				};
 			};
 		};
