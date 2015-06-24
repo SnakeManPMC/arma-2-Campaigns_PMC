@@ -1,16 +1,16 @@
-;
-; east dead 1 at intersection
-;
+/*
+
+	east dead 1 at intersection
+
+*/
 leader assault1 sideradio "Reastdead1";
-~15
+sleep 15;
 
 PAPABEAR sideradio "Rsendingbackup";
-~10
+sleep 10;
 
 PAPABEAR sideradio "Rustanksgo";
-Move_In_Tanks=true;
+Move_In_Tanks = true;
+sleep 15;
 
-~15
 leader ustanks1 sideradio "Rcopyone";
-
-exit
