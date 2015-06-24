@@ -379,7 +379,7 @@ class Mission
 				class Item2
 				{
 					position[]={4354.664551,59.231098,4999.281250};
-					expActiv="[] exec ""boarding.sqs"";";
+					expActiv="this = [] execVM ""boarding.sqf"";";
 					synchronizations[]={};
 					class Effects
 					{
@@ -1236,7 +1236,7 @@ class Mission
 				class Item2
 				{
 					position[]={4187.952148,40.606735,5781.107422};
-					expActiv="[] exec ""gunnerpickup.sqs"";";
+					expActiv="this = [] execVM ""gunnerpickup.sqf"";";
 					synchronizations[]={};
 					class Effects
 					{
@@ -1280,7 +1280,7 @@ class Mission
 					combatMode="YELLOW";
 					speed="FULL";
 					combat="SAFE";
-					expActiv="[] exec ""landout.sqs""";
+					expActiv="this = [] execVM ""landout.sqf""";
 					synchronizations[]={};
 					class Effects
 					{
@@ -1910,7 +1910,7 @@ class Mission
 			timeoutMax=30.000000;
 			age="UNKNOWN";
 			text="minehit";
-			expActiv="[] exec ""minehit.sqs"";";
+			expActiv="this = [] execVM ""minehit.sqf"";";
 			class Effects
 			{
 			};
@@ -1926,7 +1926,7 @@ class Mission
 			age="UNKNOWN";
 			text="uprising dead";
 			expCond="!alive pris1_5 AND !alive pris1_6 AND !alive pris1_7 AND !alive pris1_8";
-			expActiv="[] exec ""capture.sqs"";";
+			expActiv="this = [] execVM ""capture.sqf"";";
 			class Effects
 			{
 				titleEffect="PLAIN DOWN";

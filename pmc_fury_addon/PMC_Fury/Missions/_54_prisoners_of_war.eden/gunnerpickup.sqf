@@ -1,28 +1,37 @@
+/*
+
+	?
+
+*/
 player assignasgunner ahelo;
 
 ahelo sideradio "Rlandingnow";
 
 ahelo land "get in";
-@unitready ahelo;
+// uhm does this work here after land command?
+waitUntil
+{
+	sleep .3;
+	(unitready ahelo);
+};
 
 ahelo flyinheight 0;
 
-#loop
-~.5
-
-?!(player in ahelo): goto "loop"
+waitUntil
+{
+	sleep .5;
+	(player in ahelo);
+};
 
 ahelo flyinheight 40;
 
 ahelo sidechat "How much ammo do you see in there?";
-~7
+sleep 7;
 
 player sidechat "Seems like 4000 rounds minigun + 500 on the fifty."
-~10
+sleep 10;
 
 ahelo sidechat "Ok when we land, I want both of those guns empty. Shoot as much as you can into the woods. Do you understand?"
-~10
+sleep 10;
 
 player sidechat "Yes sir, lets Rock'n'Roll baby!"
-
-exit
