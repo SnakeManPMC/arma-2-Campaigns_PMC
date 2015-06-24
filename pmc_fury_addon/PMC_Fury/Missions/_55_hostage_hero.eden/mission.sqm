@@ -1230,7 +1230,7 @@ class Mission
 			activationType="NOT PRESENT";
 			age="UNKNOWN";
 			text="house clear";
-			expActiv="[] exec ""houseclear.sqs"";";
+			expActiv="this = [] execVM ""houseclear.sqf"";";
 			class Effects
 			{
 			};
@@ -1244,7 +1244,7 @@ class Mission
 			age="UNKNOWN";
 			text="killcam";
 			expCond="!alive CivvieMan1 OR !alive CivvieMan2";
-			expActiv="[] exec ""killcam.sqs"";";
+			expActiv="this = [] execVM ""killcam.sqf"";";
 			class Effects
 			{
 			};
@@ -1324,7 +1324,7 @@ class Mission
 			age="UNKNOWN";
 			text="scenario";
 			expCond="true";
-			expActiv="[] exec ""scenario.sqs"";";
+			expActiv="this = [] exec ""scenario.sqf"";";
 			class Effects
 			{
 			};

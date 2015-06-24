@@ -1,21 +1,24 @@
+/*
+
+	?
+
+*/
 PAPABEAR sideradio "Rspecopsonway";
-~15
+sleep 15;
 
 snipa1 sideradio "Rsniperrep1";
-~20
+sleep 20;
 
 snipa1 sideradio "Rargument";
-~20
+sleep 20;
 
 PAPABEAR sideradio "Rargumentcopy";
-~10
+sleep 10;
 
 snipa1 sideradio "Rtakeout";
-~15
+sleep 15;
 
 PAPABEAR sideradio "Rnegative";
-~15
+sleep 15;
 
 snipa1 sideradio "Rcopies";
-
-exit
