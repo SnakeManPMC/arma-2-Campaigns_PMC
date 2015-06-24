@@ -2001,7 +2001,7 @@ class Mission
 			activationBy="ALPHA";
 			age="UNKNOWN";
 			text="null";
-			expActiv="[] exec ""bomber.sqs"";";
+			expActiv="this = [] execVM ""bomber.sqf"";";
 			class Effects
 			{
 			};
@@ -2014,7 +2014,7 @@ class Mission
 			age="UNKNOWN";
 			text="I know about you";
 			expCond="({player knowsabout _x >2} count units nazteam1 >0) OR ({player knowsabout _x >2} count units nazteam2 >0)";
-			expActiv="[] exec ""campfound.sqs"";";
+			expActiv="this = [] execVM ""campfound.sqf"";";
 			class Effects
 			{
 			};
