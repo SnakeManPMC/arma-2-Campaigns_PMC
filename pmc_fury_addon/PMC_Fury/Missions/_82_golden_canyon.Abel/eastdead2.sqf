@@ -1,40 +1,46 @@
-;
-; east dead 2, the second hilltop
-;
-leader assault1 sideradio "Reastdead2";
-~30
+/*
 
-;
-; wtf? :)
-;
+	east dead 2, the second hilltop
+
+*/
+leader assault1 sideradio "Reastdead2";
+sleep 30;
+
+/*
+
+	what the fuck? :)
+
+*/
 leader assault1 sideradio "Rhqdoyoucopy";
-~40
+sleep 40;
 
-;
-; goddamnit!
-;
+/*
+
+	goddamnit!
+
+*/
 leader assault1 sideradio "Rhqanswerdamn";
-~15
+sleep 15;
 
-;
-; finally the KARHU answers
-;
+/*
+
+	finally the KARHU answers
+
+*/
 PAPABEAR sideradio "Ralphasorry";
-~10
+sleep 10;
 
 leader assault1 sideradio "Reastdead2";
-~25
+sleep 25;
 
 PAPABEAR sideradio "Rcopyaatwo";
-~15
+sleep 15;
 
 PAPABEAR sideradio "Rcallvulcantwo";
-AATwoHillTopCleared=true;
-~15
+AATwoHillTopCleared = true;
+sleep 15;
 
 leader aaguns2 sideradio "Raatwocopy";
-~5
+sleep 5;
 
-savegame
-
-exit
+savegame;

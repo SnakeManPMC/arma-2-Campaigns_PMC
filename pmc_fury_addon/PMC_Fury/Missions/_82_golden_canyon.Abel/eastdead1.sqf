@@ -1,18 +1,18 @@
-;
-; east dead 1, the first hilltop
-;
+/*
+
+	east dead 1, the first hilltop
+
+*/
 leader assault1 sideradio "Reastdead1";
-~15
+sleep 15;
 
 PAPABEAR sideradio "Rcopyone";
-~10
+sleep 10;
 
 PAPABEAR sideradio "Raa1call";
-~10
+sleep 10;
 
 leader aaguns1 sideradio "Raa1copy";
-~5
+sleep 5;
 
-AAHilltopOneCleared=true;
-
-exit
+AAHilltopOneCleared = true;
