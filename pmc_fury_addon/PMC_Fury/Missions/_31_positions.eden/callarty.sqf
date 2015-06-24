@@ -1,14 +1,23 @@
+/*
+
+	Call arty? :)
+
+*/
 me sideradio "Rartycall";
-~10
+sleep 10;
+
 PAPABEAR sideradio "Rartycoming";
-~10
+sleep 10;
+
 me sideradio "Rartyconfirm";
-~10
+sleep 10;
+
 PAPABEAR sideradio "Rartyonway";
-~10
+sleep 10;
+
 me exec "heavyarty.sqs";
 
-
+/*
 ; ALPHA
 ;STRM_Rartycall,"PAPABEAR THIS IS ALPHA BLACK. REQUESTING IMMEDIATE ARTILLERY SUPPORT ON THE GRID COORDINATES FOXTROT GAMMA 6 3, I REPEAT FOXTROT GAMMA 6 3. OVER.",waiting
 ;STRM_Rartyconfirm,"CONFIRMED PAPABEAR. FOXTROT GAMMA 6 3. HURRY UP WITH THE ARTY WILL YOU. OVER.",confirm call
@@ -18,3 +27,4 @@ me exec "heavyarty.sqs";
 ;STRM_Rartycoming,"ROGER ALPHA. CAN YOU CONFIRM THE COORDINATES. FOXTROT GAMMA 6 3. THATS DANGER CLOSE. OVER.",hqradio
 ;STRM_Rartyonway,"COPY THAT ALPHA. KEEP YOU HEADS DOWN. WE GOT SOME HEAVY ARTILLERY COMING YOUR WAY. GOOD LUCK. PAPABEAR OUT.",hqcoming
 ;STRM_Rcomplete,"PAPABEAR TO ALL FORCES. GOOD JOB OUT THERE. OVER.",complete
+*/
