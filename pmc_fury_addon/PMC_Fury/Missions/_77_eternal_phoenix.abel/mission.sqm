@@ -2212,7 +2212,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="east dead T1";
-			expActiv="[] exec ""eastdead1.sqs"";";
+			expActiv="this = [] execVM ""eastdead1.sqf"";";
 			class Effects
 			{
 			};
@@ -2229,7 +2229,7 @@ class Mission
 			timeoutMax=5.000000;
 			age="UNKNOWN";
 			text="eastdead t2";
-			expActiv="[] exec ""eastdead2.sqs"";";
+			expActiv="this = [] execVM ""eastdead2.sqf"";";
 			class Effects
 			{
 			};
@@ -2246,7 +2246,7 @@ class Mission
 			age="UNKNOWN";
 			text="east dead t3";
 			expCond="this && ed1 && ed2";
-			expActiv="[] exec ""eastdead3.sqs"";";
+			expActiv="this = [] execVM ""eastdead3.sqf"";";
 			class Effects
 			{
 			};
@@ -2259,7 +2259,7 @@ class Mission
 			age="UNKNOWN";
 			text="AA Threat";
 			expCond="leader assault1 knowsabout helo1 > 0 || leader assault1 knowsabout helo2 > 0 || leader assault1 knowsabout helo3 > 0";
-			expActiv="[] exec ""aathreat.sqs""";
+			expActiv="this = [] execVM ""aathreat.sqf""";
 			class Effects
 			{
 			};

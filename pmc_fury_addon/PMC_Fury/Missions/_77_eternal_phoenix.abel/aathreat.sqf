@@ -1,17 +1,17 @@
-;
-; call for AA vulcans
-;
-VulcansAreGo=true;
+/*
+
+	call for AA vulcans
+
+*/
+VulcansAreGo = true;
 
 leader assault1 sideradio "Raathreat";
-~10 + random 5
+sleep 10 + random 5;
 
 PAPABEAR sideradio "Raacover";
-~20 + random 5
+sleep 20 + random 5;
 
 leader assault1 sideradio "Raahurry";
-~10 + random 5
+sleep 10 + random 5;
 
 leader aaguns1 sideradio "Raaonway";
-
-exit
