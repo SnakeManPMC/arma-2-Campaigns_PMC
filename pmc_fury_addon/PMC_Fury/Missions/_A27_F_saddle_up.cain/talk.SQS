@@ -42,9 +42,10 @@ maj sidechat "There is Blackhawk crew on the docks, go there and hitch a ride to
 aP sidechat "Yes sir. and... thank you sir.";
 ~3
 
-"2" objstatus "Active";
-"obj2" setmarkertype "Marker";
+"obj2" setMarkerType "Marker";
+objective2 = player createSimpleTask ["Get to the docks and talk to pilots."];
+objective2 setSimpleTaskDescription ["Get to the <marker name = 'obj2'>docks</marker> and talk to pilots.", "Get to the <marker name = 'obj2'>docks</marker> and talk to pilots.", "Get to the <marker name = 'obj2'>docks</marker> and talk to pilots."];
 hint "Briefing updated, the map view!";
-talked=true;
+talked = true;
 
 exit
