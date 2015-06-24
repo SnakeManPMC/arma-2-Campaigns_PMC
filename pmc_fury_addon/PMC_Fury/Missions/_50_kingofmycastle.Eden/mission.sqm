@@ -1507,7 +1507,7 @@ class Mission
 			age="UNKNOWN";
 			text="jump2";
 			expCond="leader assault2 distance parah <150";
-			expActiv="[assault2,helo2] exec ""jump.sqs"";";
+			expActiv="this = [assault2, helo2] execVM ""jump.sqf"";";
 			class Effects
 			{
 			};
@@ -1520,7 +1520,7 @@ class Mission
 			age="UNKNOWN";
 			text="jump1";
 			expCond="leader assault1 distance parah <150";
-			expActiv="[assault1,helo1] exec ""jump.sqs"";";
+			expActiv="this = [assault1, helo1] execVM ""jump.sqf"";";
 			class Effects
 			{
 			};
