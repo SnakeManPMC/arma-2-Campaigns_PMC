@@ -653,7 +653,7 @@ class Mission
 					position[]={9052.666016,68.553223,2309.632813};
 					speed="FULL";
 					combat="SAFE";
-					expActiv="[] exec ""loadcivis.sqs"";";
+					expActiv="this = [] execVM ""loadcivis.sqf"";";
 					synchronizations[]={};
 					class Effects
 					{
@@ -964,7 +964,7 @@ class Mission
 			activationBy="CIV";
 			age="UNKNOWN";
 			text="civtrigger";
-			expActiv="[] exec ""civis.sqs"";";
+			expActiv="this = [] execVM ""civis.sqf"";";
 			class Effects
 			{
 			};
@@ -981,7 +981,7 @@ class Mission
 			timeoutMax=7.000000;
 			age="UNKNOWN";
 			text="east dead";
-			expActiv="[] exec ""sendtransport.sqs"";";
+			expActiv="this = [] execVM ""sendtransport.sqf"";";
 			class Effects
 			{
 			};

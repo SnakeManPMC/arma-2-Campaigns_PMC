@@ -1,17 +1,20 @@
+/*
+
+	?
+
+*/
 leader secure2 sideradio "Rheyalpha";
-~25
+sleep 25;
 
 leader secure1 sideradio "Rcivis";
-~15
+sleep 15;
 
 PAPABEAR sideradio "Rhqcivis";
-~15
+sleep 15;
 
 leader secure1 sideradio "Rcivisconfirm";
-~15
+sleep 15;
 
 PAPABEAR sideradio "Rhqcivisorder";
 
-gouaz=true;
-
-exit
+gouaz = true;

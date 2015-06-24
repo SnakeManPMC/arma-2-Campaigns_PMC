@@ -1,10 +1,14 @@
+/*
+
+	?
+
+*/
 leader secure1 sideradio "Reastdead";
-~15
+sleep 15;
 
 PAPABEAR sideradio "Rhqsending";
-~15
+sleep 15;
 
 leader secure1 sideradio "Rwaiting";
-gotransport=true;
 
-exit
+gotransport = true;
