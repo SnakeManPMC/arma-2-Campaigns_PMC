@@ -46,7 +46,7 @@ class Mission
 					combatMode="BLUE";
 					speed="NORMAL";
 					combat="SAFE";
-					expActiv="[] exec ""land.sqs"";";
+					expActiv="this = [] exec ""land.sqf"";";
 					synchronizations[]={};
 					class Effects
 					{
@@ -454,7 +454,7 @@ class Mission
 			age="UNKNOWN";
 			text="joining";
 			expCond="me distance hostage <3";
-			expActiv="[] exec ""join.sqs"";";
+			expActiv="this = [] exec ""join.sqf"";";
 			class Effects
 			{
 			};
@@ -1068,7 +1068,7 @@ class Intro
 			age="UNKNOWN";
 			text="joining";
 			expCond="me distance hostage <3";
-			expActiv="[] exec ""join.sqs"";";
+			expActiv="this = [] exec ""join.sqf"";";
 			class Effects
 			{
 			};
