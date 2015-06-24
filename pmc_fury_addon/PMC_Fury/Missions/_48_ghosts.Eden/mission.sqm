@@ -318,7 +318,7 @@ class Mission
 				class Item2
 				{
 					position[]={8449.154297,245.561234,2083.782471};
-					expCond="kala";
+					expCond="ProceedWithWaypoints";
 					class Effects
 					{
 					};
@@ -425,7 +425,7 @@ class Mission
 				class Item2
 				{
 					position[]={8351.201172,199.645264,2026.371582};
-					expCond="kala";
+					expCond="ProceedWithWaypoints";
 					class Effects
 					{
 					};
@@ -1336,8 +1336,8 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			text="explode";
-			expCond="player distance mk5 <200";
-			expActiv="[] exec ""explode.sqs"";";
+			expCond="player distance mk5 < 200";
+			expActiv="this = [] execVM ""explode.sqf"";";
 			class Effects
 			{
 			};

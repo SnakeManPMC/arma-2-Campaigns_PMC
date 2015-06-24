@@ -10,6 +10,5 @@ PAPABEAR sideRadio "Rrolling";
 "Charlie" setMarkerType "Arrow";
 "Alpha" setMarkerType "Arrow";
 
-//"2" objstatus "ACTIVE";
 objective2 = player createSimpleTask ["Assault and Capture Meaux"];
 objective2 setSimpleTaskDescription ["Assault and Capture Meaux", "Assault and Capture Meaux", "Assault and Capture Meaux"];
