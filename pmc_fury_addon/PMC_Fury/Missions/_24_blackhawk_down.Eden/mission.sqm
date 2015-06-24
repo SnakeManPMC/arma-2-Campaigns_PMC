@@ -1613,7 +1613,7 @@ class Mission
 			age="UNKNOWN";
 			text="drop of cargo";
 			expCond="doctor distance leader survivors <100";
-			expActiv="leader survivors exec ""healme.sqs""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
+			expActiv="leader survivors execVM ""healme.sqf""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};
@@ -1627,7 +1627,7 @@ class Mission
 			activationBy="ALPHA";
 			age="UNKNOWN";
 			text="set demos";
-			expActiv="leader rescue sideradio ""Rdemol""; demol exec ""demol.sqs"";";
+			expActiv="leader rescue sideradio ""Rdemol""; demol execVM ""demol.sqf"";";
 			class Effects
 			{
 			};
