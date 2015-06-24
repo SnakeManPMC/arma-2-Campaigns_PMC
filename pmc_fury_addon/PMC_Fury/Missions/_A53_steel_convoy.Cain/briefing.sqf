@@ -23,7 +23,7 @@ the <marker name = 'target1'>road</marker> in the south.
 
 
 
-<br/>Steel Convoy<br/><br/>
+<br/><br/>Steel Convoy<br/><br/>
 
 GEN SITREP<br/>
 Enemy is trying to push through our base defenses with heavy armor and troops,
@@ -62,5 +62,5 @@ the convoy so hard that they cannot take even one shot at you.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Destroy the convoy"];
-objective1 setSimpleTaskDescription ["Destroy the convoy", "Destroy the convoy", "Destroy the convoy"];
+objective1 = player createSimpleTask ["Destroy the convoy"];
+objective1 setSimpleTaskDescription ["Destroy the convoy", "Destroy the convoy", "Destroy the convoy"];

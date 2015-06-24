@@ -24,7 +24,7 @@ Good luck.
 
 
 
-<br/>Grey Thunder<br/><br/>
+<br/><br/>Grey Thunder<br/><br/>
 
 GEN SITREP<br/>
 Full effect of the thunderstorm has hit the Kolgujev, it pouring rains. Weather
@@ -71,7 +71,7 @@ Keep it together people, this is important one.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Seize the intersection"];
-objective2 setSimpleTaskDescription ["Seize the intersection", "Seize the intersection", "Seize the intersection"];
-objective1 = player createSimpleTask ["Capture enemy base"];
-objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
+objective2 = player createSimpleTask ["Seize the intersection"];
+objective2 setSimpleTaskDescription ["Seize the intersection", "Seize the intersection", "Seize the intersection"];
+objective1 = player createSimpleTask ["Capture enemy base"];
+objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];

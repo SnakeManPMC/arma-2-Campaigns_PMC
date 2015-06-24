@@ -32,7 +32,7 @@ move into the Saint Phillippe <marker name = 'show1'>city</marker> and then to t
 
 
 
-<br/>Congratulations Sargent!<br/><br/>
+<br/><br/>Congratulations Sargent!<br/><br/>
 
 NATO is holding Meaux, no enemy advances are happened since the battle of Meaux.
 <br/><br/>
@@ -62,9 +62,9 @@ guide, Sergeant!
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Tour the base"];
-objective3 setSimpleTaskDescription ["Tour the base", "Tour the base", "Tour the base"];
-objective2 = player createSimpleTask ["Tour Saint Phillippe"];
-objective2 setSimpleTaskDescription ["Tour Saint Phillippe", "Tour Saint Phillippe", "Tour Saint Phillippe"];
-objective1 = player createSimpleTask ["Join to your squad"];
-objective1 setSimpleTaskDescription ["Join to your squad", "Join to your squad", "Join to your squad"];
+objective3 = player createSimpleTask ["Tour the base"];
+objective3 setSimpleTaskDescription ["Tour the base", "Tour the base", "Tour the base"];
+objective2 = player createSimpleTask ["Tour Saint Phillippe"];
+objective2 setSimpleTaskDescription ["Tour Saint Phillippe", "Tour Saint Phillippe", "Tour Saint Phillippe"];
+objective1 = player createSimpleTask ["Join to your squad"];
+objective1 setSimpleTaskDescription ["Join to your squad", "Join to your squad", "Join to your squad"];

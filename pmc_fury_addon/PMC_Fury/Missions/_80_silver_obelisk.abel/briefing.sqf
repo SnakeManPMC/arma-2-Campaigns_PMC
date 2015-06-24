@@ -26,7 +26,7 @@ to call helicopter.
 
 
 
-<br/>Silver Obelisk<br/><br/>
+<br/><br/>Silver Obelisk<br/><br/>
 
 GEN SITREP<br/>
 After our forces captured the small island on east, we can now have very good
@@ -75,7 +75,7 @@ the Blackhawk arrives and you're done with this one.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Return to base"];
-objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-objective1 = player createSimpleTask ["Neutralize AA Site"];
-objective1 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];
+objective2 = player createSimpleTask ["Return to base"];
+objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective1 = player createSimpleTask ["Neutralize AA Site"];
+objective1 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];

@@ -30,7 +30,7 @@ Lamentin <marker name = 'attack'>here</marker>.
 
 
 
-<br/>Lamentin<br/><br/>
+<br/><br/>Lamentin<br/><br/>
 
 NATO Headquarters is very pleased with the superb performance of the rescue operation
 yesterday. We are very happy to get our guys back home. We are moving along the coastline
@@ -68,7 +68,7 @@ objective is to attack and secure the <marker name = 'attack'>Lamentin</marker>.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Secure Lamentin"];
-objective2 setSimpleTaskDescription ["Secure Lamentin", "Secure Lamentin", "Secure Lamentin"];
-objective1 = player createSimpleTask ["Clear area"];
-objective1 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];
+objective2 = player createSimpleTask ["Secure Lamentin"];
+objective2 setSimpleTaskDescription ["Secure Lamentin", "Secure Lamentin", "Secure Lamentin"];
+objective1 = player createSimpleTask ["Clear area"];
+objective1 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];

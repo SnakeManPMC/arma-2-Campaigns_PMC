@@ -28,7 +28,7 @@ Good luck.
 
 
 
-<br/>Fight for Meaux<br/><br/>
+<br/><br/>Fight for Meaux<br/><br/>
 
 Continuing fight for the Meaux city, the Russians definitely want to have it, but we 
 intend to stop them.
@@ -56,5 +56,5 @@ attack.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Repel the Counterattack"];
-objective1 setSimpleTaskDescription ["Repel the Counterattack", "Repel the Counterattack", "Repel the Counterattack"];
+objective1 = player createSimpleTask ["Repel the Counterattack"];
+objective1 setSimpleTaskDescription ["Repel the Counterattack", "Repel the Counterattack", "Repel the Counterattack"];

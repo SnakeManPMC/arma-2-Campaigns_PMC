@@ -36,7 +36,7 @@ Good luck.
 
 
 
-<br/>Assault<br/><br/>
+<br/><br/>Assault<br/><br/>
 
 We have gathered first squad ready for offensive action against the Russians. Our goal 
 is to seize the nearest base due south from the airbase.
@@ -68,7 +68,7 @@ one fast and clean. Don't let any Russians escape.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture enemy base"];
-objective2 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
-objective1 = player createSimpleTask ["Join squad"];
-objective1 setSimpleTaskDescription ["Join squad", "Join squad", "Join squad"];
+objective2 = player createSimpleTask ["Capture enemy base"];
+objective2 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
+objective1 = player createSimpleTask ["Join squad"];
+objective1 setSimpleTaskDescription ["Join squad", "Join squad", "Join squad"];

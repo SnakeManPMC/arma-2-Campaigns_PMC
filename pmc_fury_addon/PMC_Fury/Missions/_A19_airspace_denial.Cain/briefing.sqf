@@ -21,7 +21,7 @@ resupply truck and shoot down enemy helos.
 
 
 
-<br/>Airspace Denial<br/><br/>
+<br/><br/>Airspace Denial<br/><br/>
 
 GEN SITREP<br/>
 Enemy has gotten its air forces to active status, there is indication that
@@ -59,7 +59,7 @@ Good hunting!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Get stingers "];
-objective2 setSimpleTaskDescription ["Get stingers ", "Get stingers ", "Get stingers "];
-objective1 = player createSimpleTask ["Shoot down enemy helos"];
-objective1 setSimpleTaskDescription ["Shoot down enemy helos", "Shoot down enemy helos", "Shoot down enemy helos"];
+objective2 = player createSimpleTask ["Get stingers "];
+objective2 setSimpleTaskDescription ["Get stingers ", "Get stingers ", "Get stingers "];
+objective1 = player createSimpleTask ["Shoot down enemy helos"];
+objective1 setSimpleTaskDescription ["Shoot down enemy helos", "Shoot down enemy helos", "Shoot down enemy helos"];

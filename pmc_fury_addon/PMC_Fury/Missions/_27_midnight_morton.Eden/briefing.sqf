@@ -24,7 +24,7 @@ Capture <marker name = 'morton'>Morton</marker>
 
 
 
-<br/>Morton<br/><br/>
+<br/><br/>Morton<br/><br/>
 
 We keep on pushing deeper into the enemy territory, next city to fall is Morton on the
 coast. 
@@ -58,5 +58,5 @@ lights to your advantage.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture Morton"];
-objective1 setSimpleTaskDescription ["Capture Morton", "Capture Morton", "Capture Morton"];
+objective1 = player createSimpleTask ["Capture Morton"];
+objective1 setSimpleTaskDescription ["Capture Morton", "Capture Morton", "Capture Morton"];

@@ -21,7 +21,7 @@ and capture <marker name = 'target1'>Fuel Station</marker> in north west.
 
 
 
-<br/>Fuel Fumes<br/><br/>
+<br/><br/>Fuel Fumes<br/><br/>
 
 GEN SITREP<br/>
 We are setting up defenses for the airbase, move vulcans to defend it, assigning
@@ -64,5 +64,5 @@ let LAW soldiers roam free.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture fuel station"];
-objective1 setSimpleTaskDescription ["Capture fuel station", "Capture fuel station", "Capture fuel station"];
+objective1 = player createSimpleTask ["Capture fuel station"];
+objective1 setSimpleTaskDescription ["Capture fuel station", "Capture fuel station", "Capture fuel station"];

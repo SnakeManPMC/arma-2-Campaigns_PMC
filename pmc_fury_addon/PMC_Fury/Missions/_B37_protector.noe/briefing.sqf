@@ -21,7 +21,7 @@ office, use radio (0-0-1) to initate assault, eliminate all Russians.
 
 
 
-<br/>Protector<br/><br/>
+<br/><br/>Protector<br/><br/>
 
 GEN SITREP<br/>
 We have hostage situation. Some leftover Russians had regrouped in the eastern
@@ -75,5 +75,5 @@ of that office building, take care with your aim! Good luck and be cool out ther
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Eliminate hostage takers"];
-objective1 setSimpleTaskDescription ["Eliminate hostage takers", "Eliminate hostage takers", "Eliminate hostage takers"];
+objective1 = player createSimpleTask ["Eliminate hostage takers"];
+objective1 setSimpleTaskDescription ["Eliminate hostage takers", "Eliminate hostage takers", "Eliminate hostage takers"];

@@ -23,7 +23,7 @@ Good luck.
 
 
 
-<br/>Righteous Path<br/><br/>
+<br/><br/>Righteous Path<br/><br/>
 
 GEN SITREP<br/>
 Today we move agains one of the biggest enemy bases in the high grounds, it contains
@@ -62,7 +62,7 @@ encounter heavy armor. When you got the base, stay alert for those nasty counter
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Keep it secure"];
-objective2 setSimpleTaskDescription ["Keep it secure", "Keep it secure", "Keep it secure"];
-objective1 = player createSimpleTask ["Capture the base"];
-objective1 setSimpleTaskDescription ["Capture the base", "Capture the base", "Capture the base"];
+objective2 = player createSimpleTask ["Keep it secure"];
+objective2 setSimpleTaskDescription ["Keep it secure", "Keep it secure", "Keep it secure"];
+objective1 = player createSimpleTask ["Capture the base"];
+objective1 setSimpleTaskDescription ["Capture the base", "Capture the base", "Capture the base"];

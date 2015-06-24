@@ -23,7 +23,7 @@ to capture the <marker name = 'target'>intersection</marker> just North of the t
 
 
 
-<br/>Shepherd<br/><br/>
+<br/><br/>Shepherd<br/><br/>
 
 GEN SITREP<br/>
 The enemy movement is heavy on the road just north of La Riviere, they are moving
@@ -66,5 +66,5 @@ get your squad killed over there!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Seize road intersection"];
-objective1 setSimpleTaskDescription ["Seize road intersection", "Seize road intersection", "Seize road intersection"];
+objective1 = player createSimpleTask ["Seize road intersection"];
+objective1 setSimpleTaskDescription ["Seize road intersection", "Seize road intersection", "Seize road intersection"];

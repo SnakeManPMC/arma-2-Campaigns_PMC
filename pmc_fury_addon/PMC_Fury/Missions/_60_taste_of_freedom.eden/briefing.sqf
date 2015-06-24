@@ -33,7 +33,7 @@ Alpha <marker name = 'start'>starts</marker> from Vernon, assaults
 
 
 
-<br/>Taste of Freedom<br/><br/>
+<br/><br/>Taste of Freedom<br/><br/>
 
 We are in verge of pushing the Russians into ocean, the last stand, Saint Pierre. There are
 no other enemy forces in this island, we have cleaned it out completely, these are the 
@@ -84,5 +84,5 @@ Hooyah Soldier!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture Saint Pierre"];
-objective1 setSimpleTaskDescription ["Capture Saint Pierre", "Capture Saint Pierre", "Capture Saint Pierre"];
+objective1 = player createSimpleTask ["Capture Saint Pierre"];
+objective1 setSimpleTaskDescription ["Capture Saint Pierre", "Capture Saint Pierre", "Capture Saint Pierre"];

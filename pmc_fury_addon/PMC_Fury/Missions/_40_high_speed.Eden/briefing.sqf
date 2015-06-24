@@ -40,7 +40,7 @@ There is helicopter gunship support too.
 
 
 
-<br/>Sweep<br/><br/>
+<br/><br/>Sweep<br/><br/>
 
 We continue wiping out the Russian positions on Everon.
 <br/><br/>
@@ -72,5 +72,5 @@ forces hiding or moving about.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweep the area"];
-objective1 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];
+objective1 = player createSimpleTask ["Sweep the area"];
+objective1 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];

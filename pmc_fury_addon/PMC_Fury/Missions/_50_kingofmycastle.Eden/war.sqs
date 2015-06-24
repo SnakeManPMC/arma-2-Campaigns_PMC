@@ -83,7 +83,7 @@ _ran = random(1);
 _ran = random(1);
 "cwr2_SoldierE" createunit [getpos EastInfStart1, _EASTtempgrp, "", _ran, "PRIVATE"]
 
-{_x addEventHandler ["killed",{handle = _this execVM "killed.sqf"}]} foreach units _EASTtempgrp
+"_x addEventHandler [""killed"",{_this exec ""killed.sqs""}]" foreach units _EASTtempgrp
 
 _EASTtempgrp setbehaviour "aware";
 _EASTtempgrp setcombatmode "red";
@@ -117,10 +117,10 @@ _bmp2grp = group e1;
 "SoldierECrew" createunit [getpos EastStart1, _bmp2grp, "e2 = this", 1, "CORPORAL"];
 "SoldierECrew" createunit [getpos EastStart1, _bmp2grp, "e3 = this", 1, "PRIVATE"];
 
-{_x addEventHandler ["killed",{handle = _this execVM "killed.sqf"}]} foreach units _bmp2grp
+"_x addEventHandler [""killed"",{_this exec ""killed.sqs""}]" foreach units _bmp2grp
 
 _bmp2 = "BMP2" createvehicle getpos EastStart1;
-_bmp2 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}]
+_bmp2 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
 e1 moveincommander _bmp2;
 e2 moveingunner _bmp2;

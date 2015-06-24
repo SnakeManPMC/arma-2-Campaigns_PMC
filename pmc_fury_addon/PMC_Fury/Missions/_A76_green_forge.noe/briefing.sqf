@@ -23,7 +23,7 @@ the <marker name = 'target1'>Dolina</marker> village in the valley.
 
 
 
-<br/>Green Forge<br/><br/>
+<br/><br/>Green Forge<br/><br/>
 
 GEN SITREP<br/>
 Russians had theif fun yesterday downing one of our Black Hawks, but luckily the
@@ -73,5 +73,5 @@ Reinforcements.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Assault Dolina and escape"];
-objective1 setSimpleTaskDescription ["Assault Dolina and escape", "Assault Dolina and escape", "Assault Dolina and escape"];
+objective1 = player createSimpleTask ["Assault Dolina and escape"];
+objective1 setSimpleTaskDescription ["Assault Dolina and escape", "Assault Dolina and escape", "Assault Dolina and escape"];

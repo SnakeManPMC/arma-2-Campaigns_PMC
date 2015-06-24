@@ -23,7 +23,7 @@ using to resupply.
 
 
 
-<br/>Boat House<br/><br/>
+<br/><br/>Boat House<br/><br/>
 
 GEN SITREP<br/>
 We are moving armor and personel to the tank base in the process to speed up
@@ -62,5 +62,5 @@ Stay alert, as usual.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture boat house"];
-objective1 setSimpleTaskDescription ["Capture boat house", "Capture boat house", "Capture boat house"];
+objective1 = player createSimpleTask ["Capture boat house"];
+objective1 setSimpleTaskDescription ["Capture boat house", "Capture boat house", "Capture boat house"];

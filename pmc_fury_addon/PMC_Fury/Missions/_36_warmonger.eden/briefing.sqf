@@ -22,7 +22,7 @@ any Russians pass our front lines!
 
 
 
-<br/>WARMONGER<br/><br/>
+<br/><br/>WARMONGER<br/><br/>
 
 Those scumsucking Russians! They have executed our negotiator cold blood. Sons of 
 bitches! Now the gloves comes off, we are at full scale war and we will NOT stop until
@@ -60,5 +60,5 @@ as this is defend and not attack mission. Good luck, seems like you're need it..
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Repel the Russian attack"];
-objective1 setSimpleTaskDescription ["Repel the Russian attack", "Repel the Russian attack", "Repel the Russian attack"];
+objective1 = player createSimpleTask ["Repel the Russian attack"];
+objective1 setSimpleTaskDescription ["Repel the Russian attack", "Repel the Russian attack", "Repel the Russian attack"];

@@ -26,7 +26,7 @@ Stay sharp.
 
 
 
-<br/>Guardian<br/><br/>
+<br/><br/>Guardian<br/><br/>
 
 GEN SITREP<br/>
 Our Colonel is handeling some Malden public relations and hes making a speech in
@@ -68,5 +68,5 @@ See ya later.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Keep Colonel safe."];
-objective1 setSimpleTaskDescription ["Keep Colonel safe.", "Keep Colonel safe.", "Keep Colonel safe."];
+objective1 = player createSimpleTask ["Keep Colonel safe."];
+objective1 setSimpleTaskDescription ["Keep Colonel safe.", "Keep Colonel safe.", "Keep Colonel safe."];

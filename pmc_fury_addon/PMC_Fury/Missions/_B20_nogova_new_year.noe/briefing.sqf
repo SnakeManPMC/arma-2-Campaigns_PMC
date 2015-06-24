@@ -25,7 +25,7 @@ Happy New Year!
 
 
 
-<br/>Nogova New Year<br/><br/>
+<br/><br/>Nogova New Year<br/><br/>
 
 GEN SITREP<br/>
 Happy New Year troops. Tonight we will show the Russians how we celebrate
@@ -68,7 +68,7 @@ down there. Good luck and happy New Year!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture Mokra Vrata"];
-objective2 setSimpleTaskDescription ["Capture Mokra Vrata", "Capture Mokra Vrata", "Capture Mokra Vrata"];
-objective1 = player createSimpleTask ["Support tanks"];
-objective1 setSimpleTaskDescription ["Support tanks", "Support tanks", "Support tanks"];
+objective2 = player createSimpleTask ["Capture Mokra Vrata"];
+objective2 setSimpleTaskDescription ["Capture Mokra Vrata", "Capture Mokra Vrata", "Capture Mokra Vrata"];
+objective1 = player createSimpleTask ["Support tanks"];
+objective1 setSimpleTaskDescription ["Support tanks", "Support tanks", "Support tanks"];

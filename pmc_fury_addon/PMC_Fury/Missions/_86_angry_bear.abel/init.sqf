@@ -1,13 +1,6 @@
-[] execVM "briefing.sqf";
-PAPABEAR = [West, "HQ"];
+// auto added by PMC mission porting system 
+PAPABEAR = [West, "HQ"]; 
+[] execVM "briefing.sqf"; 
 
-{
-	_x moveincargo rhelo2;
-} forEach units rusinf9;
-
-// there is no rusinf10 ?? 9/Sep/2012 7:52
-/*
-{
-	_x moveincargo rhelo2;
-} forEach units rusinf10;
-*/
+{_x moveincargo rhelo2} foreach units rusinf9;
+{_x moveincargo rhelo2} foreach units rusinf10;

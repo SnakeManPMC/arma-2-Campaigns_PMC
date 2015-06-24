@@ -27,7 +27,7 @@ around the nearby area marked by dots. Do not across over the dotted area.
 
 
 
-<br/>Sweet Sweep<br/><br/>
+<br/><br/>Sweet Sweep<br/><br/>
 
 When Regina was fallen into NATO hands, some Russians went hiding in the nearby 
 area.
@@ -63,5 +63,5 @@ there. The area of sweep is marked by dots, do not across the line.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweep the area"];
-objective1 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];
+objective1 = player createSimpleTask ["Sweep the area"];
+objective1 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];

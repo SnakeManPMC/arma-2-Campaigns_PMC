@@ -25,7 +25,7 @@ Russian counterattack.
 
 
 
-<br/>Open Arms<br/><br/>
+<br/><br/>Open Arms<br/><br/>
 
 Tonight we are assmbling the forces for full scale attack to the last stronghold of the
 enemy, Saint Pierre. We have additional infantry and special forces coming in from other
@@ -68,5 +68,5 @@ finally cleared the mines north of Vernon.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Guard Vernon"];
-objective1 setSimpleTaskDescription ["Guard Vernon", "Guard Vernon", "Guard Vernon"];
+objective1 = player createSimpleTask ["Guard Vernon"];
+objective1 setSimpleTaskDescription ["Guard Vernon", "Guard Vernon", "Guard Vernon"];

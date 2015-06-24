@@ -21,7 +21,7 @@ against Russian counter <marker name = 'attack'>attack</marker> coming from nort
 
 
 
-<br/>Bear Trap<br/><br/>
+<br/><br/>Bear Trap<br/><br/>
 
 GEN SITREP<br/>
 NATO has now basic defensive positions on the south east tip of Nogova, more troops
@@ -65,5 +65,5 @@ so you should not run out of ammo either. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend St. Sedlo"];
-objective1 setSimpleTaskDescription ["Defend St. Sedlo", "Defend St. Sedlo", "Defend St. Sedlo"];
+objective1 = player createSimpleTask ["Defend St. Sedlo"];
+objective1 setSimpleTaskDescription ["Defend St. Sedlo", "Defend St. Sedlo", "Defend St. Sedlo"];

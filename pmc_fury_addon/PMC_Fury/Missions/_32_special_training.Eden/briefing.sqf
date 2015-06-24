@@ -41,5 +41,5 @@ Have fun!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Rescue high value personel"];
-objective1 setSimpleTaskDescription ["Rescue high value personel", "Rescue high value personel", "Rescue high value personel"];
+objective1 = player createSimpleTask ["Rescue high value personel"];
+objective1 setSimpleTaskDescription ["Rescue high value personel", "Rescue high value personel", "Rescue high value personel"];

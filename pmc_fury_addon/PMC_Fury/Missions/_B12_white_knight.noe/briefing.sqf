@@ -22,7 +22,7 @@ proceed to capture <marker name = 'target2'>Dolina</marker> town.
 
 
 
-<br/>White Knight<br/><br/>
+<br/><br/>White Knight<br/><br/>
 
 GEN SITREP<br/>
 Today we move forward towards Dolina. We will try to capture it cutting off the
@@ -63,7 +63,7 @@ Apache to kick some butt in Dolina before charging in. Ok take them down!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture Dolina"];
-objective2 setSimpleTaskDescription ["Capture Dolina", "Capture Dolina", "Capture Dolina"];
-objective1 = player createSimpleTask ["Capture Hilltop"];
-objective1 setSimpleTaskDescription ["Capture Hilltop", "Capture Hilltop", "Capture Hilltop"];
+objective2 = player createSimpleTask ["Capture Dolina"];
+objective2 setSimpleTaskDescription ["Capture Dolina", "Capture Dolina", "Capture Dolina"];
+objective1 = player createSimpleTask ["Capture Hilltop"];
+objective1 setSimpleTaskDescription ["Capture Hilltop", "Capture Hilltop", "Capture Hilltop"];

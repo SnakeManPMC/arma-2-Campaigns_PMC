@@ -30,7 +30,7 @@ Apache gunship support is sent with radio (0-0-1) command.
 
 
 
-<br/>Op Entre Deux<br/><br/>
+<br/><br/>Op Entre Deux<br/><br/>
 
 Our mission today is to neutralize enemy forces in Entre Deux and take control of that
 city. This is the next eastern city from Montignac where our forces are preparing to
@@ -65,5 +65,5 @@ their <marker name = 'bravo2'>attack</marker> from the west side of the city.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture Entre Deux"];
-objective1 setSimpleTaskDescription ["Capture Entre Deux", "Capture Entre Deux", "Capture Entre Deux"];
+objective1 = player createSimpleTask ["Capture Entre Deux"];
+objective1 setSimpleTaskDescription ["Capture Entre Deux", "Capture Entre Deux", "Capture Entre Deux"];

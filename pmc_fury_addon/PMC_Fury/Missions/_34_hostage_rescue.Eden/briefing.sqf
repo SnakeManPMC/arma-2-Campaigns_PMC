@@ -36,7 +36,7 @@ Good luck, all of you.
 
 
 
-<br/>POW's as hostages<br/><br/>
+<br/><br/>POW's as hostages<br/><br/>
 
 Now your special rescue training comes in use. In the negotiations the Russians made it 
 clear that they will only release few POW's if the NATO forces withdraw from the front.
@@ -84,5 +84,5 @@ camp.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Rescue hostages"];
-objective1 setSimpleTaskDescription ["Rescue hostages", "Rescue hostages", "Rescue hostages"];
+objective1 = player createSimpleTask ["Rescue hostages"];
+objective1 setSimpleTaskDescription ["Rescue hostages", "Rescue hostages", "Rescue hostages"];

@@ -25,7 +25,7 @@ reach <marker name = 'bravo'>bravos</marker> position.
 
 
 
-<br/>Sharp Sweep<br/><br/>
+<br/><br/>Sharp Sweep<br/><br/>
 
 GEN SITREP<br/>
 Russians have been kept back from the newly captured fuel depot with great
@@ -72,5 +72,5 @@ down up there.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweep terrain and reach Bravo."];
-objective1 setSimpleTaskDescription ["Sweep terrain and reach Bravo.", "Sweep terrain and reach Bravo.", "Sweep terrain and reach Bravo."];
+objective1 = player createSimpleTask ["Sweep terrain and reach Bravo."];
+objective1 setSimpleTaskDescription ["Sweep terrain and reach Bravo.", "Sweep terrain and reach Bravo.", "Sweep terrain and reach Bravo."];

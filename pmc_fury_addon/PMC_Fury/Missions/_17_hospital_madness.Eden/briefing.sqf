@@ -30,7 +30,7 @@ disembark <marker name = 'eject'>position</marker> is right after the forrest ed
 
 
 
-<br/>Fast Raid<br/><br/>
+<br/><br/>Fast Raid<br/><br/>
 
 The hospital in central part of the island is under enemy control and we are going to 
 change that. If we capture this strategic location we can much faster heal our wounded
@@ -74,7 +74,7 @@ leave the building unguarded however.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Cut off enemy reinforcements"];
-objective2 setSimpleTaskDescription ["Cut off enemy reinforcements", "Cut off enemy reinforcements", "Cut off enemy reinforcements"];
-objective1 = player createSimpleTask ["Capture the hospital"];
-objective1 setSimpleTaskDescription ["Capture the hospital", "Capture the hospital", "Capture the hospital"];
+objective2 = player createSimpleTask ["Cut off enemy reinforcements"];
+objective2 setSimpleTaskDescription ["Cut off enemy reinforcements", "Cut off enemy reinforcements", "Cut off enemy reinforcements"];
+objective1 = player createSimpleTask ["Capture the hospital"];
+objective1 setSimpleTaskDescription ["Capture the hospital", "Capture the hospital", "Capture the hospital"];

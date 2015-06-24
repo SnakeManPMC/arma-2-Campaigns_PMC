@@ -22,7 +22,7 @@ Clear out <marker name = 'inters'>intersection</marker> and <marker name = 'hill
 
 
 
-<br/>Intersections<br/><br/>
+<br/><br/>Intersections<br/><br/>
 
 Today we are assaulting two main locations. First there is the intersections that connect
 the roads from three directions. Secondly there are the Laruns area, we want to clear out 
@@ -55,9 +55,9 @@ M1A1 tanks and infantry who are coming from Morton.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Capture Laruns"];
-objective3 setSimpleTaskDescription ["Capture Laruns", "Capture Laruns", "Capture Laruns"];
-objective2 = player createSimpleTask ["Conquer hill"];
-objective2 setSimpleTaskDescription ["Conquer hill", "Conquer hill", "Conquer hill"];
-objective1 = player createSimpleTask ["Seize Intersections"];
-objective1 setSimpleTaskDescription ["Seize Intersections", "Seize Intersections", "Seize Intersections"];
+objective3 = player createSimpleTask ["Capture Laruns"];
+objective3 setSimpleTaskDescription ["Capture Laruns", "Capture Laruns", "Capture Laruns"];
+objective2 = player createSimpleTask ["Conquer hill"];
+objective2 setSimpleTaskDescription ["Conquer hill", "Conquer hill", "Conquer hill"];
+objective1 = player createSimpleTask ["Seize Intersections"];
+objective1 setSimpleTaskDescription ["Seize Intersections", "Seize Intersections", "Seize Intersections"];

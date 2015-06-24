@@ -23,7 +23,7 @@ Good luck.
 
 
 
-<br/>Bear Hug<br/><br/>
+<br/><br/>Bear Hug<br/><br/>
 
 GEN SITREP<br/>
 Russians are sending troops against Velka Ves in counter attack purposes,
@@ -64,5 +64,5 @@ pretty much handling them alone.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend Velka Ves"];
-objective1 setSimpleTaskDescription ["Defend Velka Ves", "Defend Velka Ves", "Defend Velka Ves"];
+objective1 = player createSimpleTask ["Defend Velka Ves"];
+objective1 setSimpleTaskDescription ["Defend Velka Ves", "Defend Velka Ves", "Defend Velka Ves"];

@@ -25,7 +25,7 @@ Good luck!
 
 
 
-<br/>Ghost Bat<br/><br/>
+<br/><br/>Ghost Bat<br/><br/>
 
 GEN SITREP<br/>
 The south west corner of this map is coming under our attack today. If we capture 
@@ -67,5 +67,5 @@ Be careful when you enter deep into enemy territory, keep your men alive!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear out SW of Malden"];
-objective1 setSimpleTaskDescription ["Clear out SW of Malden", "Clear out SW of Malden", "Clear out SW of Malden"];
+objective1 = player createSimpleTask ["Clear out SW of Malden"];
+objective1 setSimpleTaskDescription ["Clear out SW of Malden", "Clear out SW of Malden", "Clear out SW of Malden"];

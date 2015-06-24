@@ -31,7 +31,7 @@ Keep quiet out there.
 
 
 
-<br/>Ninjas Gold<br/><br/>
+<br/><br/>Ninjas Gold<br/><br/>
 
 GEN SITREP<br/>
 Our plans on attacking the southern most city ruins are in progress. The Russians
@@ -79,7 +79,7 @@ you any tips on this one. Good luck!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Return to base"];
-objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-objective1 = player createSimpleTask ["Meet spec ops"];
-objective1 setSimpleTaskDescription ["Meet spec ops", "Meet spec ops", "Meet spec ops"];
+objective2 = player createSimpleTask ["Return to base"];
+objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective1 = player createSimpleTask ["Meet spec ops"];
+objective1 setSimpleTaskDescription ["Meet spec ops", "Meet spec ops", "Meet spec ops"];

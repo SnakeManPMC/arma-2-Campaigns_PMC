@@ -26,7 +26,7 @@ Good luck.
 
 
 
-<br/>Nogova Airstrip<br/><br/>
+<br/><br/>Nogova Airstrip<br/><br/>
 
 GEN SITREP<br/>
 NATO will commence today the first operation in the island of Nogova, it is 
@@ -74,7 +74,7 @@ the first NATO (non spec op) infantry man in Nogova soil!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture airstrip"];
-objective2 setSimpleTaskDescription ["Capture airstrip", "Capture airstrip", "Capture airstrip"];
-objective1 = player createSimpleTask ["Capture barracks"];
-objective1 setSimpleTaskDescription ["Capture barracks", "Capture barracks", "Capture barracks"];
+objective2 = player createSimpleTask ["Capture airstrip"];
+objective2 setSimpleTaskDescription ["Capture airstrip", "Capture airstrip", "Capture airstrip"];
+objective1 = player createSimpleTask ["Capture barracks"];
+objective1 setSimpleTaskDescription ["Capture barracks", "Capture barracks", "Capture barracks"];

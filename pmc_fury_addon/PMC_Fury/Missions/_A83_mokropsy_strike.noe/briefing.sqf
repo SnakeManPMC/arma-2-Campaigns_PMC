@@ -23,7 +23,7 @@ luck today.
 
 
 
-<br/>Mokropsy Strike<br/><br/>
+<br/><br/>Mokropsy Strike<br/><br/>
 
 GEN SITREP<br/>
 It was intelligence failure yesterday that the enemy got so close, hopefully that
@@ -75,5 +75,5 @@ alert infantry. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Assault Mokropsy"];
-objective1 setSimpleTaskDescription ["Assault Mokropsy", "Assault Mokropsy", "Assault Mokropsy"];
+objective1 = player createSimpleTask ["Assault Mokropsy"];
+objective1 setSimpleTaskDescription ["Assault Mokropsy", "Assault Mokropsy", "Assault Mokropsy"];

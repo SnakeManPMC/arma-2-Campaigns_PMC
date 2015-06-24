@@ -21,7 +21,7 @@ and capture <marker name = 'target1'>mountain</marker> top at NE Nogova.
 
 
 
-<br/>Amber Harvest<br/><br/>
+<br/><br/>Amber Harvest<br/><br/>
 
 GEN SITREP<br/>
 Our forces performed very good yesterday in the search and rescue operation
@@ -64,5 +64,5 @@ some of your guys to approach from different direction. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture mountain"];
-objective1 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];
+objective1 = player createSimpleTask ["Capture mountain"];
+objective1 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];

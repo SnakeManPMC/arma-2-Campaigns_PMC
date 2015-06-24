@@ -23,7 +23,7 @@ La Riviere.
 
 
 
-<br/>Shining Eye<br/><br/>
+<br/><br/>Shining Eye<br/><br/>
 
 GEN SITREP<br/>
 Our successful operation to capture La Riviere has stirred up the Russians good, 
@@ -66,5 +66,5 @@ anyways and keep AA launcher handy.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend La Riviere"];
-objective1 setSimpleTaskDescription ["Defend La Riviere", "Defend La Riviere", "Defend La Riviere"];
+objective1 = player createSimpleTask ["Defend La Riviere"];
+objective1 setSimpleTaskDescription ["Defend La Riviere", "Defend La Riviere", "Defend La Riviere"];

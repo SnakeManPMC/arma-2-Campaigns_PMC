@@ -22,7 +22,7 @@ the <marker name = 'target2'>Joudov</marker> in the hill.
 
 
 
-<br/>Unforgiving Hawk<br/><br/>
+<br/><br/>Unforgiving Hawk<br/><br/>
 
 GEN SITREP<br/>
 The beach resort by the river is used to accomodate Russian infantrymen now,
@@ -60,7 +60,7 @@ reinforcements.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture Joudov"];
-objective2 setSimpleTaskDescription ["Capture Joudov", "Capture Joudov", "Capture Joudov"];
-objective1 = player createSimpleTask ["Capture beach resort"];
-objective1 setSimpleTaskDescription ["Capture beach resort", "Capture beach resort", "Capture beach resort"];
+objective2 = player createSimpleTask ["Capture Joudov"];
+objective2 setSimpleTaskDescription ["Capture Joudov", "Capture Joudov", "Capture Joudov"];
+objective1 = player createSimpleTask ["Capture beach resort"];
+objective1 setSimpleTaskDescription ["Capture beach resort", "Capture beach resort", "Capture beach resort"];

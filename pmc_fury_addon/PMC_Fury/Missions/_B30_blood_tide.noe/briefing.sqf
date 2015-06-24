@@ -27,7 +27,7 @@ Good luck.
 
 
 
-<br/>Blood Tide<br/><br/>
+<br/><br/>Blood Tide<br/><br/>
 
 GEN SITREP<br/>
 Today NATO launches operation against the Nogova bridge held by the Russians. 
@@ -73,5 +73,5 @@ collateral damage. But at least try to keep this one clean, ok?
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture bridge"];
-objective1 setSimpleTaskDescription ["Capture bridge", "Capture bridge", "Capture bridge"];
+objective1 = player createSimpleTask ["Capture bridge"];
+objective1 setSimpleTaskDescription ["Capture bridge", "Capture bridge", "Capture bridge"];

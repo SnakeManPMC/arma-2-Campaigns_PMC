@@ -22,7 +22,7 @@ the <marker name = 'target2'>Skalice</marker> just south of your position.
 
 
 
-<br/>Viper Strike<br/><br/>
+<br/><br/>Viper Strike<br/><br/>
 
 GEN SITREP<br/>
 There are to small villages closeby to our front line, these are Peseky and
@@ -61,7 +61,7 @@ Easy mission, no doubt. Never the less, stay alert and watch the nearby woods.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture Skalice"];
-objective2 setSimpleTaskDescription ["Capture Skalice", "Capture Skalice", "Capture Skalice"];
-objective1 = player createSimpleTask ["Capture Peseky"];
-objective1 setSimpleTaskDescription ["Capture Peseky", "Capture Peseky", "Capture Peseky"];
+objective2 = player createSimpleTask ["Capture Skalice"];
+objective2 setSimpleTaskDescription ["Capture Skalice", "Capture Skalice", "Capture Skalice"];
+objective1 = player createSimpleTask ["Capture Peseky"];
+objective1 setSimpleTaskDescription ["Capture Peseky", "Capture Peseky", "Capture Peseky"];

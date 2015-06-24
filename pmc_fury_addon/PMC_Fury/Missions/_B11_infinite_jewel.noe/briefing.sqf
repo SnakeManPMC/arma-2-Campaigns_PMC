@@ -24,7 +24,7 @@ the <marker name = 'target2'>AT chokepoint</marker> in the west.
 
 
 
-<br/>Infinite Jewel<br/><br/>
+<br/><br/>Infinite Jewel<br/><br/>
 
 GEN SITREP<br/>
 Now we continue to hit the Russians hard, the intersection that connects 
@@ -71,9 +71,9 @@ the gunship pound them. Use the ammo boxes as you please. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Repel enemy armor"];
-objective3 setSimpleTaskDescription ["Repel enemy armor", "Repel enemy armor", "Repel enemy armor"];
-objective2 = player createSimpleTask ["Clear AT chokepoint"];
-objective2 setSimpleTaskDescription ["Clear AT chokepoint", "Clear AT chokepoint", "Clear AT chokepoint"];
-objective1 = player createSimpleTask ["Clear intersection"];
-objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];
+objective3 = player createSimpleTask ["Repel enemy armor"];
+objective3 setSimpleTaskDescription ["Repel enemy armor", "Repel enemy armor", "Repel enemy armor"];
+objective2 = player createSimpleTask ["Clear AT chokepoint"];
+objective2 setSimpleTaskDescription ["Clear AT chokepoint", "Clear AT chokepoint", "Clear AT chokepoint"];
+objective1 = player createSimpleTask ["Clear intersection"];
+objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];

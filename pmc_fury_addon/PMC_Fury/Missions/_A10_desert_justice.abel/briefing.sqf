@@ -23,7 +23,7 @@ Good luck everyone!
 
 
 
-<br/>Desert Justice<br/><br/>
+<br/><br/>Desert Justice<br/><br/>
 
 GEN SITREP<br/>
 Soldiers, airmen, sailors and marines. Today we launch the operation
@@ -68,5 +68,5 @@ as you must run the commies into the ocean! Good luck soldiers!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Neutralize enemies in desert"];
-objective1 setSimpleTaskDescription ["Neutralize enemies in desert", "Neutralize enemies in desert", "Neutralize enemies in desert"];
+objective1 = player createSimpleTask ["Neutralize enemies in desert"];
+objective1 setSimpleTaskDescription ["Neutralize enemies in desert", "Neutralize enemies in desert", "Neutralize enemies in desert"];

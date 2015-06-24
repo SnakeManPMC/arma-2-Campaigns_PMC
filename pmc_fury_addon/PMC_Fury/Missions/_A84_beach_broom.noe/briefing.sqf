@@ -24,7 +24,7 @@ Good luck.
 
 
 
-<br/>Beach Broom<br/><br/>
+<br/><br/>Beach Broom<br/><br/>
 
 GEN SITREP<br/>
 Our invasion to Nogova is one day away, tomorrow the amphibious ships reach the 
@@ -68,5 +68,5 @@ dont piss off the HQ by roaming deeper into Nogova, just stay on the beach.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear and hold the beach"];
-objective1 setSimpleTaskDescription ["Clear and hold the beach", "Clear and hold the beach", "Clear and hold the beach"];
+objective1 = player createSimpleTask ["Clear and hold the beach"];
+objective1 setSimpleTaskDescription ["Clear and hold the beach", "Clear and hold the beach", "Clear and hold the beach"];

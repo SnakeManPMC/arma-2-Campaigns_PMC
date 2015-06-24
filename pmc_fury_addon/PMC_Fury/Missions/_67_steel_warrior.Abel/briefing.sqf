@@ -27,7 +27,7 @@ Good luck soldiers!
 
 
 
-<br/>Steel Warrior<br/><br/>
+<br/><br/>Steel Warrior<br/><br/>
 
 GEN SITREP<br/>
 Russian attack is on its way. Infantry, Armor and Air assets are bearing upon us
@@ -65,5 +65,5 @@ Also watch for the enemy choppers and hope that Vulcans can knock them out of th
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend positions"];
-objective1 setSimpleTaskDescription ["Defend positions", "Defend positions", "Defend positions"];
+objective1 = player createSimpleTask ["Defend positions"];
+objective1 setSimpleTaskDescription ["Defend positions", "Defend positions", "Defend positions"];

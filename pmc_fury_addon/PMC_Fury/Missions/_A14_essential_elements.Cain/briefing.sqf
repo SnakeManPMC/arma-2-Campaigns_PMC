@@ -22,7 +22,7 @@ small <marker name = 'target2'>base</marker> in the beach.
 
 
 
-<br/>Essential Elements<br/><br/>
+<br/><br/>Essential Elements<br/><br/>
 
 GEN SITREP<br/>
 Today we start to push down to the south west of Kolgujev. Our forces are
@@ -59,7 +59,7 @@ cap in their strenghts so we have rather easy advance. Good luck!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture base"];
-objective2 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
-objective1 = player createSimpleTask ["Capture buildings"];
-objective1 setSimpleTaskDescription ["Capture buildings", "Capture buildings", "Capture buildings"];
+objective2 = player createSimpleTask ["Capture base"];
+objective2 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
+objective1 = player createSimpleTask ["Capture buildings"];
+objective1 setSimpleTaskDescription ["Capture buildings", "Capture buildings", "Capture buildings"];

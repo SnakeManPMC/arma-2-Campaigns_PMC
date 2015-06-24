@@ -27,7 +27,7 @@ Extraction <marker name = 'extraction'>here</marker>
 
 
 
-<br/>Recon<br/><br/>
+<br/><br/>Recon<br/><br/>
 
 Welcome to the war.<br/><br/>
 
@@ -61,9 +61,9 @@ not shoot anybody, just collect intel.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Extract undetected"];
-objective3 setSimpleTaskDescription ["Extract undetected", "Extract undetected", "Extract undetected"];
-objective2 = player createSimpleTask ["Recon the airbase south"];
-objective2 setSimpleTaskDescription ["Recon the airbase south", "Recon the airbase south", "Recon the airbase south"];
-objective1 = player createSimpleTask ["Recon the airbase north"];
-objective1 setSimpleTaskDescription ["Recon the airbase north", "Recon the airbase north", "Recon the airbase north"];
+objective3 = player createSimpleTask ["Extract undetected"];
+objective3 setSimpleTaskDescription ["Extract undetected", "Extract undetected", "Extract undetected"];
+objective2 = player createSimpleTask ["Recon the airbase south"];
+objective2 setSimpleTaskDescription ["Recon the airbase south", "Recon the airbase south", "Recon the airbase south"];
+objective1 = player createSimpleTask ["Recon the airbase north"];
+objective1 setSimpleTaskDescription ["Recon the airbase north", "Recon the airbase north", "Recon the airbase north"];

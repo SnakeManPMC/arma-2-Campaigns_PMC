@@ -8,7 +8,7 @@
 ;
 ;This script will execute a bombing run wherever the player clicks on the map. The mission requires:
 ;3 Markers: "spawn", "safe" and "target", all set to 'empty'.
-;A trigger: Radius - 0, Activation: Radio Alpha set to Repeatedly, On Activation: onMapSingleClick "[_pos] exec "airstrike.sqs""; strikePilot sideChat "Give me a target"
+;A trigger: Radius - 0, Activation: Radio Alpha set to Repeatedly, On Activation: onMapSingleClick ""[_pos] exec "airstrike.sqs"""; strikePilot sideChat "Give me a target"
 ;It also needs a soldier called "strikePilot".
 ;
 ;A pilot waits at "safe". When Radio (0,0,1) is issued and the map is clicked a plane is created at "spawn" and the pilot is moved into the plane.
@@ -24,7 +24,7 @@
 1 setradiomsg "null";
 
 _pos = _this select 0
-;NOT USED [_pos, "TARGET AT GRID COORDINATES ", ". OVER.", ["SideChat", player]] exec "gridcoordinates_pipe.sqs";
+[_pos, "TARGET AT GRID COORDINATES ", ". OVER.", ["SideChat", player]] exec "gridcoordinates_pipe.sqs";
 "target" setMarkerPos _pos
 "target" setMarkerType "destroy"
 

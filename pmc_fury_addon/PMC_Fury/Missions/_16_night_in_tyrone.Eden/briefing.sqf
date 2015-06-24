@@ -26,7 +26,7 @@ Guard the city of <marker name = 'tyrone'>tyrone</marker>.
 
 
 
-<br/>Night watch<br/><br/>
+<br/><br/>Night watch<br/><br/>
 
 The success we had with Tyrone was as expected from our highly trained troops. We are in 
 the planning stage to advance deeper into enemy territory, assaults start in the daylight
@@ -59,5 +59,5 @@ is still under NATO command in the morning.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Guard the Tyrone"];
-objective1 setSimpleTaskDescription ["Guard the Tyrone", "Guard the Tyrone", "Guard the Tyrone"];
+objective1 = player createSimpleTask ["Guard the Tyrone"];
+objective1 setSimpleTaskDescription ["Guard the Tyrone", "Guard the Tyrone", "Guard the Tyrone"];

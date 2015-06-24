@@ -21,7 +21,7 @@ high <marker name = 'target1'>mountain</marker> and capture it.
 
 
 
-<br/>Mountain Warrior<br/><br/>
+<br/><br/>Mountain Warrior<br/><br/>
 
 GEN SITREP<br/>
 Russians had enough of fighting over Houdan, they aren't sending anymore troops.
@@ -65,7 +65,7 @@ this mountain too. Good luck!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Secure until backups arrive"];
-objective2 setSimpleTaskDescription ["Secure until backups arrive", "Secure until backups arrive", "Secure until backups arrive"];
-objective1 = player createSimpleTask ["Capture mountain"];
-objective1 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];
+objective2 = player createSimpleTask ["Secure until backups arrive"];
+objective2 setSimpleTaskDescription ["Secure until backups arrive", "Secure until backups arrive", "Secure until backups arrive"];
+objective1 = player createSimpleTask ["Capture mountain"];
+objective1 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];

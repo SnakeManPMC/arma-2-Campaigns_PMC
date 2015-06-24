@@ -25,7 +25,7 @@ Good luck.
 
 
 
-<br/>Red Rock<br/><br/>
+<br/><br/>Red Rock<br/><br/>
 
 GEN SITREP<br/>
 We are not ready to take the base in the south, but we must take some ground
@@ -68,5 +68,5 @@ if there is one.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Reach assault point"];
-objective1 setSimpleTaskDescription ["Reach assault point", "Reach assault point", "Reach assault point"];
+objective1 = player createSimpleTask ["Reach assault point"];
+objective1 setSimpleTaskDescription ["Reach assault point", "Reach assault point", "Reach assault point"];

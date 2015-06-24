@@ -22,7 +22,7 @@ into NATO <marker name = 'target1'>base</marker> along the road.
 
 
 
-<br/>Rainy Hope<br/><br/>
+<br/><br/>Rainy Hope<br/><br/>
 
 GEN SITREP<br/>
 We had good results on the northern coastal road today, it has now been captured 
@@ -62,5 +62,5 @@ leave any russians lurking in there. Use caution, good luck!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweep road to the base"];
-objective1 setSimpleTaskDescription ["Sweep road to the base", "Sweep road to the base", "Sweep road to the base"];
+objective1 = player createSimpleTask ["Sweep road to the base"];
+objective1 setSimpleTaskDescription ["Sweep road to the base", "Sweep road to the base", "Sweep road to the base"];

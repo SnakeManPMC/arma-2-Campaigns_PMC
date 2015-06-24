@@ -25,7 +25,7 @@ the <marker name = 'target3'>second ruins</marker> more to the south.
 
 
 
-<br/>Whisper Hill<br/><br/>
+<br/><br/>Whisper Hill<br/><br/>
 
 GEN SITREP<br/>
 So far our progress is been good. We got troops in to this island and made some
@@ -68,9 +68,9 @@ Coordinate the second objective attack carefully with Delta team.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Capture ruins #2"];
-objective3 setSimpleTaskDescription ["Capture ruins #2", "Capture ruins #2", "Capture ruins #2"];
-objective2 = player createSimpleTask ["Capture ruins #1"];
-objective2 setSimpleTaskDescription ["Capture ruins #1", "Capture ruins #1", "Capture ruins #1"];
-objective1 = player createSimpleTask ["Clear hill"];
-objective1 setSimpleTaskDescription ["Clear hill", "Clear hill", "Clear hill"];
+objective3 = player createSimpleTask ["Capture ruins #2"];
+objective3 setSimpleTaskDescription ["Capture ruins #2", "Capture ruins #2", "Capture ruins #2"];
+objective2 = player createSimpleTask ["Capture ruins #1"];
+objective2 setSimpleTaskDescription ["Capture ruins #1", "Capture ruins #1", "Capture ruins #1"];
+objective1 = player createSimpleTask ["Clear hill"];
+objective1 setSimpleTaskDescription ["Clear hill", "Clear hill", "Clear hill"];

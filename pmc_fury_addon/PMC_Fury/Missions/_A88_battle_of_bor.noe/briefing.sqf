@@ -21,7 +21,7 @@ capture <marker name = 'target1'>Bor</marker> village. Wait for Bravo squad.
 
 
 
-<br/>Battle of Bor<br/><br/>
+<br/><br/>Battle of Bor<br/><br/>
 
 GEN SITREP<br/>
 Preparations are under way to assault Lipony, but we want to make it with all
@@ -59,7 +59,7 @@ vehicles but you never know.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Defend Bor"];
-objective2 setSimpleTaskDescription ["Defend Bor", "Defend Bor", "Defend Bor"];
-objective1 = player createSimpleTask ["Capture Bor"];
-objective1 setSimpleTaskDescription ["Capture Bor", "Capture Bor", "Capture Bor"];
+objective2 = player createSimpleTask ["Defend Bor"];
+objective2 setSimpleTaskDescription ["Defend Bor", "Defend Bor", "Defend Bor"];
+objective1 = player createSimpleTask ["Capture Bor"];
+objective1 setSimpleTaskDescription ["Capture Bor", "Capture Bor", "Capture Bor"];

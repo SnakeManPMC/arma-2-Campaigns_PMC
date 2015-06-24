@@ -25,7 +25,7 @@ Good luck.
 
 
 
-<br/>City Eagle<br/><br/>
+<br/><br/>City Eagle<br/><br/>
 
 GEN SITREP<br/>
 Today our forces assault the city of Lipany. This city is the biggest of them all
@@ -75,9 +75,9 @@ Be careful and keep your team alive!
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Capture Lipany"];
-objective3 setSimpleTaskDescription ["Capture Lipany", "Capture Lipany", "Capture Lipany"];
-objective2 = player createSimpleTask ["Clear houses"];
-objective2 setSimpleTaskDescription ["Clear houses", "Clear houses", "Clear houses"];
-objective1 = player createSimpleTask ["Clear ruins"];
-objective1 setSimpleTaskDescription ["Clear ruins", "Clear ruins", "Clear ruins"];
+objective3 = player createSimpleTask ["Capture Lipany"];
+objective3 setSimpleTaskDescription ["Capture Lipany", "Capture Lipany", "Capture Lipany"];
+objective2 = player createSimpleTask ["Clear houses"];
+objective2 setSimpleTaskDescription ["Clear houses", "Clear houses", "Clear houses"];
+objective1 = player createSimpleTask ["Clear ruins"];
+objective1 setSimpleTaskDescription ["Clear ruins", "Clear ruins", "Clear ruins"];

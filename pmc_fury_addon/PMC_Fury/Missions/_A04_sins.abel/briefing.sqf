@@ -21,7 +21,7 @@ the <marker name = 'target1'>Fuel Station</marker> and <marker name = 'target2'>
 
 
 
-<br/>Sins<br/><br/>
+<br/><br/>Sins<br/><br/>
 
 GEN SITREP<br/>
 We are closing in on the enemy airbase and they are taking it safely. They have 
@@ -62,7 +62,7 @@ few vehicles.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture Saint Louis"];
-objective2 setSimpleTaskDescription ["Capture Saint Louis", "Capture Saint Louis", "Capture Saint Louis"];
-objective1 = player createSimpleTask ["Capture fuel station"];
-objective1 setSimpleTaskDescription ["Capture fuel station", "Capture fuel station", "Capture fuel station"];
+objective2 = player createSimpleTask ["Capture Saint Louis"];
+objective2 setSimpleTaskDescription ["Capture Saint Louis", "Capture Saint Louis", "Capture Saint Louis"];
+objective1 = player createSimpleTask ["Capture fuel station"];
+objective1 setSimpleTaskDescription ["Capture fuel station", "Capture fuel station", "Capture fuel station"];

@@ -26,7 +26,7 @@ the <marker name = 'target1'>Mokropsy</marker> village.
 
 
 
-<br/>Mokropsy Obelisk<br/><br/>
+<br/><br/>Mokropsy Obelisk<br/><br/>
 
 GEN SITREP<br/>
 Our scud hunt was successful, there has been no launches against our airstrip
@@ -74,7 +74,7 @@ handling. So make it fast.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Defend airstrip"];
-objective2 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];
-objective1 = player createSimpleTask ["Assault Mokropsy"];
-objective1 setSimpleTaskDescription ["Assault Mokropsy", "Assault Mokropsy", "Assault Mokropsy"];
+objective2 = player createSimpleTask ["Defend airstrip"];
+objective2 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];
+objective1 = player createSimpleTask ["Assault Mokropsy"];
+objective1 setSimpleTaskDescription ["Assault Mokropsy", "Assault Mokropsy", "Assault Mokropsy"];

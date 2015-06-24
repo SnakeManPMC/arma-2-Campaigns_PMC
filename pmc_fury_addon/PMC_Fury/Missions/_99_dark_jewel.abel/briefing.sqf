@@ -23,7 +23,7 @@ May God be with you.
 
 
 
-<br/>Dark Jewel<br/><br/>
+<br/><br/>Dark Jewel<br/><br/>
 
 GEN SITREP<br/>
 Russians are launching full scale counter attack to reclaim La Trinite, which
@@ -61,5 +61,5 @@ Stay healthy...
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Repel Russian counter attack"];
-objective1 setSimpleTaskDescription ["Repel Russian counter attack", "Repel Russian counter attack", "Repel Russian counter attack"];
+objective1 = player createSimpleTask ["Repel Russian counter attack"];
+objective1 setSimpleTaskDescription ["Repel Russian counter attack", "Repel Russian counter attack", "Repel Russian counter attack"];

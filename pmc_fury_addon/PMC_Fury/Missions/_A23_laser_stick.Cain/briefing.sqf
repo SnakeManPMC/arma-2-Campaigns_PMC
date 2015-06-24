@@ -21,7 +21,7 @@ the night.
 
 
 
-<br/>Laser Stick<br/><br/>
+<br/><br/>Laser Stick<br/><br/>
 
 GEN SITREP<br/>
 Tomorrow we start another operation to advance our front lines, the objective
@@ -56,5 +56,5 @@ Graveyard shift for you tonight. Don't fell asleep.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Guard the road block."];
-objective1 setSimpleTaskDescription ["Guard the road block.", "Guard the road block.", "Guard the road block."];
+objective1 = player createSimpleTask ["Guard the road block."];
+objective1 setSimpleTaskDescription ["Guard the road block.", "Guard the road block.", "Guard the road block."];

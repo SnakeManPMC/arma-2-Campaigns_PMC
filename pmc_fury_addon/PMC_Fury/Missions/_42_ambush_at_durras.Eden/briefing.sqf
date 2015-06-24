@@ -46,7 +46,7 @@ Get back to camp for extraction (use radio).
 
 
 
-<br/>Ambush at Durras<br/><br/>
+<br/><br/>Ambush at Durras<br/><br/>
 
 We continue to push to the south aggressively. Russians are on defensive.
 <br/><br/>
@@ -93,7 +93,7 @@ To call the Blackhawk for extraction use radio 0-0-2 call when at the camp.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Extract back home"];
-objective2 setSimpleTaskDescription ["Extract back home", "Extract back home", "Extract back home"];
-objective1 = player createSimpleTask ["Kill the convoy"];
-objective1 setSimpleTaskDescription ["Kill the convoy", "Kill the convoy", "Kill the convoy"];
+objective2 = player createSimpleTask ["Extract back home"];
+objective2 setSimpleTaskDescription ["Extract back home", "Extract back home", "Extract back home"];
+objective1 = player createSimpleTask ["Kill the convoy"];
+objective1 setSimpleTaskDescription ["Kill the convoy", "Kill the convoy", "Kill the convoy"];

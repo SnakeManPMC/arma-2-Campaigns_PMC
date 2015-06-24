@@ -22,7 +22,7 @@ and <marker name = 'target2'>Velka Ves</marker> town.
 
 
 
-<br/>Pink Bag<br/><br/>
+<br/><br/>Pink Bag<br/><br/>
 
 GEN SITREP<br/>
 This morning the operation Pink Bag is started to capture two enemy positions,
@@ -65,7 +65,7 @@ blew them away. Other than that... good luck.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture Velka Ves"];
-objective2 setSimpleTaskDescription ["Capture Velka Ves", "Capture Velka Ves", "Capture Velka Ves"];
-objective1 = player createSimpleTask ["Capture Mala Ves"];
-objective1 setSimpleTaskDescription ["Capture Mala Ves", "Capture Mala Ves", "Capture Mala Ves"];
+objective2 = player createSimpleTask ["Capture Velka Ves"];
+objective2 setSimpleTaskDescription ["Capture Velka Ves", "Capture Velka Ves", "Capture Velka Ves"];
+objective1 = player createSimpleTask ["Capture Mala Ves"];
+objective1 setSimpleTaskDescription ["Capture Mala Ves", "Capture Mala Ves", "Capture Mala Ves"];

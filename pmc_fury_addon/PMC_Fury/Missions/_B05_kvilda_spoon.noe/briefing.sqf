@@ -22,7 +22,7 @@ the <marker name = 'target1'>area</marker> NE of it.
 
 
 
-<br/>Kvilda Spoon<br/><br/>
+<br/><br/>Kvilda Spoon<br/><br/>
 
 GEN SITREP<br/>
 Today we are striking against the Russian forces in Kvilda at north east 
@@ -66,7 +66,7 @@ this one, just let the gunship unleash the hellfire upon the vehicles first.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture Kvilda"];
-objective2 setSimpleTaskDescription ["Capture Kvilda", "Capture Kvilda", "Capture Kvilda"];
-objective1 = player createSimpleTask ["Clear area"];
-objective1 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];
+objective2 = player createSimpleTask ["Capture Kvilda"];
+objective2 setSimpleTaskDescription ["Capture Kvilda", "Capture Kvilda", "Capture Kvilda"];
+objective1 = player createSimpleTask ["Clear area"];
+objective1 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];

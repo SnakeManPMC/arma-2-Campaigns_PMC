@@ -24,7 +24,7 @@ into <marker name = 'extract'>extraction</marker> position and call helo pickup.
 
 
 
-<br/>Rapid Hope<br/><br/>
+<br/><br/>Rapid Hope<br/><br/>
 
 GEN SITREP<br/>
 We now use the high mobility of helicopter operations to move our personel around.
@@ -69,7 +69,7 @@ chew your infantry squad to pieces.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Return to base"];
-objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-objective1 = player createSimpleTask ["Sweep the area"];
-objective1 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];
+objective2 = player createSimpleTask ["Return to base"];
+objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective1 = player createSimpleTask ["Sweep the area"];
+objective1 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];

@@ -32,7 +32,7 @@ Russian forces in the camp or nearby. Use radio (0-0-1) to commence the attack.
 
 
 
-<br/>Artillery Denial<br/><br/>
+<br/><br/>Artillery Denial<br/><br/>
 
 After successfully repelling the massive Russian attack we are trying to regroup
 our people for ongoing operations to push the enemy off this island. The recent events
@@ -71,5 +71,5 @@ You as Alpha leader decide the best position to your team.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Seize the Artillery site"];
-objective1 setSimpleTaskDescription ["Seize the Artillery site", "Seize the Artillery site", "Seize the Artillery site"];
+objective1 = player createSimpleTask ["Seize the Artillery site"];
+objective1 setSimpleTaskDescription ["Seize the Artillery site", "Seize the Artillery site", "Seize the Artillery site"];

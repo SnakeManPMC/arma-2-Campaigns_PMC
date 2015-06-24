@@ -23,7 +23,7 @@ Good luck.
 
 
 
-<br/>White Wind<br/><br/>
+<br/><br/>White Wind<br/><br/>
 
 GEN SITREP<br/>
 Russians effected some damage to our vehicles yesterday, luckily we are still
@@ -61,7 +61,7 @@ keep the LAW guys ready.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Keep it secure"];
-objective2 setSimpleTaskDescription ["Keep it secure", "Keep it secure", "Keep it secure"];
-objective1 = player createSimpleTask ["Capture Blata"];
-objective1 setSimpleTaskDescription ["Capture Blata", "Capture Blata", "Capture Blata"];
+objective2 = player createSimpleTask ["Keep it secure"];
+objective2 setSimpleTaskDescription ["Keep it secure", "Keep it secure", "Keep it secure"];
+objective1 = player createSimpleTask ["Capture Blata"];
+objective1 setSimpleTaskDescription ["Capture Blata", "Capture Blata", "Capture Blata"];

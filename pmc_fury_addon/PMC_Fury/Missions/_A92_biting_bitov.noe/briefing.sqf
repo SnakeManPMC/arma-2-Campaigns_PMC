@@ -23,7 +23,7 @@ to capture <marker name = 'target2'>Bitov</marker> village.
 
 
 
-<br/>Biting Bitov<br/><br/>
+<br/><br/>Biting Bitov<br/><br/>
 
 GEN SITREP<br/>
 Russians had some helicopters in the air yesterday, luckily they were defeated
@@ -70,7 +70,7 @@ with enemy vehicles. Let the Abrams to take out most of them. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture Bitov"];
-objective2 setSimpleTaskDescription ["Capture Bitov", "Capture Bitov", "Capture Bitov"];
-objective1 = player createSimpleTask ["Clear church"];
-objective1 setSimpleTaskDescription ["Clear church", "Clear church", "Clear church"];
+objective2 = player createSimpleTask ["Capture Bitov"];
+objective2 setSimpleTaskDescription ["Capture Bitov", "Capture Bitov", "Capture Bitov"];
+objective1 = player createSimpleTask ["Clear church"];
+objective1 setSimpleTaskDescription ["Clear church", "Clear church", "Clear church"];

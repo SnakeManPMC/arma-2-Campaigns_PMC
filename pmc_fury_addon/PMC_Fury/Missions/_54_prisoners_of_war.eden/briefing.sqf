@@ -23,7 +23,7 @@ you <marker name = 'meet'>meet</marker> Officer for further orders.
 
 
 
-<br/>Prisoners of War<br/><br/>
+<br/><br/>Prisoners of War<br/><br/>
 
 We did good job on the southern tip of the island, now the Russians only have two
 stronghold in the island left which are Saint Pierre and Vernon. We continue to build
@@ -58,7 +58,7 @@ How much tactical help you need to board a Black Hawk? now get moving!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Meet Commanding Officer"];
-objective2 setSimpleTaskDescription ["Meet Commanding Officer", "Meet Commanding Officer", "Meet Commanding Officer"];
-objective1 = player createSimpleTask ["Board Black Hawk"];
-objective1 setSimpleTaskDescription ["Board Black Hawk", "Board Black Hawk", "Board Black Hawk"];
+objective2 = player createSimpleTask ["Meet Commanding Officer"];
+objective2 setSimpleTaskDescription ["Meet Commanding Officer", "Meet Commanding Officer", "Meet Commanding Officer"];
+objective1 = player createSimpleTask ["Board Black Hawk"];
+objective1 setSimpleTaskDescription ["Board Black Hawk", "Board Black Hawk", "Board Black Hawk"];

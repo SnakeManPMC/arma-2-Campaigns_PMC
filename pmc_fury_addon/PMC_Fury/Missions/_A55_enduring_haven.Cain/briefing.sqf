@@ -23,7 +23,7 @@ Good luck.
 
 
 
-<br/>Enduring Haven<br/><br/>
+<br/><br/>Enduring Haven<br/><br/>
 
 GEN SITREP<br/>
 Russians launched counter attack, we had expected something like this but not
@@ -64,5 +64,5 @@ undefended when going to pickup more ammo from the truck at fuel depot. Good luc
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend the objective"];
-objective1 setSimpleTaskDescription ["Defend the objective", "Defend the objective", "Defend the objective"];
+objective1 = player createSimpleTask ["Defend the objective"];
+objective1 setSimpleTaskDescription ["Defend the objective", "Defend the objective", "Defend the objective"];

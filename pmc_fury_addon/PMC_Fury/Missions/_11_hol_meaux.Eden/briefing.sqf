@@ -31,7 +31,7 @@ Good luck
 
 
 
-<br/>Defence of Meaux<br/><br/>
+<br/><br/>Defence of Meaux<br/><br/>
 
 The Russians reinforcements are just arriving to Meaux. We have slim forces on the ground 
 at the moment as we had to move some of our forces to other tasks, but reinforcements are 
@@ -62,5 +62,5 @@ Wait there and backup BRAVO.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Hold city of Meaux"];
-objective1 setSimpleTaskDescription ["Hold city of Meaux", "Hold city of Meaux", "Hold city of Meaux"];
+objective1 = player createSimpleTask ["Hold city of Meaux"];
+objective1 setSimpleTaskDescription ["Hold city of Meaux", "Hold city of Meaux", "Hold city of Meaux"];

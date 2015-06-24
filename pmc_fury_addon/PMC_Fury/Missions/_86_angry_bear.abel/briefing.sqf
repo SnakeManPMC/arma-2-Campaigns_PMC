@@ -26,7 +26,7 @@ Good luck.
 
 
 
-<br/>Angry Bear<br/><br/>
+<br/><br/>Angry Bear<br/><br/>
 
 GEN SITREP<br/>
 We must clear a path to our tanks into the upper areas of central malden in
@@ -72,9 +72,9 @@ tanks dont get hit by those pesky RPG's today.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Secure until support arrive."];
-objective3 setSimpleTaskDescription ["Secure until support arrive.", "Secure until support arrive.", "Secure until support arrive."];
-objective2 = player createSimpleTask ["Neutralize AA site"];
-objective2 setSimpleTaskDescription ["Neutralize AA site", "Neutralize AA site", "Neutralize AA site"];
-objective1 = player createSimpleTask ["Seize intersection"];
-objective1 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];
+objective3 = player createSimpleTask ["Secure until support arrive."];
+objective3 setSimpleTaskDescription ["Secure until support arrive.", "Secure until support arrive.", "Secure until support arrive."];
+objective2 = player createSimpleTask ["Neutralize AA site"];
+objective2 setSimpleTaskDescription ["Neutralize AA site", "Neutralize AA site", "Neutralize AA site"];
+objective1 = player createSimpleTask ["Seize intersection"];
+objective1 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];

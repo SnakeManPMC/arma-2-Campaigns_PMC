@@ -23,7 +23,7 @@ Good luck.
 
 
 
-<br/>Weasels<br/><br/>
+<br/><br/>Weasels<br/><br/>
 
 GEN SITREP<br/>
 Weather is clear. Our objectives are clear. Ladies and Gentlemen, today NATO will
@@ -70,5 +70,5 @@ will get immediate ling of sight for you at once. Thats lot of fire...
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Neutralize all Russians"];
-objective1 setSimpleTaskDescription ["Neutralize all Russians", "Neutralize all Russians", "Neutralize all Russians"];
+objective1 = player createSimpleTask ["Neutralize all Russians"];
+objective1 setSimpleTaskDescription ["Neutralize all Russians", "Neutralize all Russians", "Neutralize all Russians"];

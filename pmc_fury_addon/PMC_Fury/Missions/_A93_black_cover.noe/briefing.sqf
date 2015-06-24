@@ -22,7 +22,7 @@ at this generic location and get everyone extracted.
 
 
 
-<br/>Black Cover<br/><br/>
+<br/><br/>Black Cover<br/><br/>
 
 GEN SITREP<br/>
 The Bitov was successful operation, but the fight was more intense than expected,
@@ -71,7 +71,7 @@ you coming a mile away. Stay put, use the radio and all should work out just fin
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Return everyone to base."];
-objective2 setSimpleTaskDescription ["Return everyone to base.", "Return everyone to base.", "Return everyone to base."];
-objective1 = player createSimpleTask ["Meet Special Forces."];
-objective1 setSimpleTaskDescription ["Meet Special Forces.", "Meet Special Forces.", "Meet Special Forces."];
+objective2 = player createSimpleTask ["Return everyone to base."];
+objective2 setSimpleTaskDescription ["Return everyone to base.", "Return everyone to base.", "Return everyone to base."];
+objective1 = player createSimpleTask ["Meet Special Forces."];
+objective1 setSimpleTaskDescription ["Meet Special Forces.", "Meet Special Forces.", "Meet Special Forces."];

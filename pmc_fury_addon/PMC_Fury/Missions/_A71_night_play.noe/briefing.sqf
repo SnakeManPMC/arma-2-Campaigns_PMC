@@ -22,7 +22,7 @@ the night.
 
 
 
-<br/>Night Play<br/><br/>
+<br/><br/>Night Play<br/><br/>
 
 GEN SITREP<br/>
 Vulcans have arrived into the airstrip to provide anti air shield over the facility,
@@ -70,5 +70,5 @@ present but who knows what might slip through.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend airstrip"];
-objective1 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];
+objective1 = player createSimpleTask ["Defend airstrip"];
+objective1 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];

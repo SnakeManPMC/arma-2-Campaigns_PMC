@@ -23,7 +23,7 @@ meet <marker name = 'charlie'>Charlie</marker> squad in ruins.
 
 
 
-<br/>Clear Sabre<br/><br/>
+<br/><br/>Clear Sabre<br/><br/>
 
 GEN SITREP<br/>
 Good news, today the weather starts to clear up. It will take some days before we are
@@ -61,5 +61,5 @@ from the mountain with only infantry against you.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear area and reach Charlie"];
-objective1 setSimpleTaskDescription ["Clear area and reach Charlie", "Clear area and reach Charlie", "Clear area and reach Charlie"];
+objective1 = player createSimpleTask ["Clear area and reach Charlie"];
+objective1 setSimpleTaskDescription ["Clear area and reach Charlie", "Clear area and reach Charlie", "Clear area and reach Charlie"];

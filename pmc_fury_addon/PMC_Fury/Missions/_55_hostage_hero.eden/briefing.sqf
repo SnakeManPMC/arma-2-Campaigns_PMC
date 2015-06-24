@@ -27,7 +27,7 @@ the <marker name = 'target'>target</marker> house.
 
 
 
-<br/>Hostage Hero<br/><br/>
+<br/><br/>Hostage Hero<br/><br/>
 
 The POW's who has turned themselves to hostage takers are demanding safe truck transport
 to the Russian controlled area where they promised to release the hostages. If any NATO 
@@ -83,7 +83,7 @@ All right, good luck and shoot sharp if it comes to that.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Eliminate Tangos (if ordered)"];
-objective2 setSimpleTaskDescription ["Eliminate Tangos (if ordered)", "Eliminate Tangos (if ordered)", "Eliminate Tangos (if ordered)"];
-objective1 = player createSimpleTask ["Proceed into assault point"];
-objective1 setSimpleTaskDescription ["Proceed into assault point", "Proceed into assault point", "Proceed into assault point"];
+objective2 = player createSimpleTask ["Eliminate Tangos (if ordered)"];
+objective2 setSimpleTaskDescription ["Eliminate Tangos (if ordered)", "Eliminate Tangos (if ordered)", "Eliminate Tangos (if ordered)"];
+objective1 = player createSimpleTask ["Proceed into assault point"];
+objective1 setSimpleTaskDescription ["Proceed into assault point", "Proceed into assault point", "Proceed into assault point"];

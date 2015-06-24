@@ -1,7 +1,8 @@
-[] execVM "briefing.sqf";
-PAPABEAR = [West, "HQ"];
+// auto added by PMC mission porting system 
+PAPABEAR = [West, "HQ"]; 
+[] execVM "briefing.sqf"; 
 
-// there is no ruskies group!? 9/Sep/2012 8:40
+// no ruskies present. however whole fucking init.sqs should be deleted :)
 //{_x setCaptive true} foreach units ruskies;
 //ruskies setBehaviour "careless";
 //{_x setUnitPos "UP"} foreach units ruskies;

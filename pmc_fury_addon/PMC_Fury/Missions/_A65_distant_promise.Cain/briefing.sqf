@@ -22,7 +22,7 @@ meet <marker name = 'bravo'>Bravo</marker> squad in the base.
 
 
 
-<br/>Distant Promise<br/><br/>
+<br/><br/>Distant Promise<br/><br/>
 
 GEN SITREP<br/>
 Weather keeps improving as the predictions are clear skies by tonight. We captured
@@ -65,5 +65,5 @@ base where Bravo is waiting for you to arrive. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweep the area, meet Bravo"];
-objective1 setSimpleTaskDescription ["Sweep the area, meet Bravo", "Sweep the area, meet Bravo", "Sweep the area, meet Bravo"];
+objective1 = player createSimpleTask ["Sweep the area, meet Bravo"];
+objective1 setSimpleTaskDescription ["Sweep the area, meet Bravo", "Sweep the area, meet Bravo", "Sweep the area, meet Bravo"];

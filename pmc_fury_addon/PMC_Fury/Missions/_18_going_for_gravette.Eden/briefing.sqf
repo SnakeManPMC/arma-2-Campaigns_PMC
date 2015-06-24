@@ -25,7 +25,7 @@ Capture city of <marker name = 'gravette'>Gravette</marker>
 
 
 
-<br/>The Gravette<br/><br/>
+<br/><br/>The Gravette<br/><br/>
 
 Gravette is the only populated area between the hospital and Montignac. Our near goals are
 to take Gravette and the woods leading to the road coming from Montignac.
@@ -50,5 +50,5 @@ the Russian forces are taken by surprise with the hospital attack.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Seize Gravette"];
-objective1 setSimpleTaskDescription ["Seize Gravette", "Seize Gravette", "Seize Gravette"];
+objective1 = player createSimpleTask ["Seize Gravette"];
+objective1 setSimpleTaskDescription ["Seize Gravette", "Seize Gravette", "Seize Gravette"];

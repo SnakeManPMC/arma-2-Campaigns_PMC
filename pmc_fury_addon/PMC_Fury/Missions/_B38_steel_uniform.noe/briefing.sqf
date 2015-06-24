@@ -25,7 +25,7 @@ Good luck.
 
 
 
-<br/>Steel Uniform<br/><br/>
+<br/><br/>Steel Uniform<br/><br/>
 
 GEN SITREP<br/>
 Our grattitude goes out to the professional soldiers who handled the hostage
@@ -71,9 +71,9 @@ suggest you take alternate route to give more range to fire.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Capture Mirov"];
-objective3 setSimpleTaskDescription ["Capture Mirov", "Capture Mirov", "Capture Mirov"];
-objective2 = player createSimpleTask ["Capture intersection"];
-objective2 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];
-objective1 = player createSimpleTask ["Clear fuel station"];
-objective1 setSimpleTaskDescription ["Clear fuel station", "Clear fuel station", "Clear fuel station"];
+objective3 = player createSimpleTask ["Capture Mirov"];
+objective3 setSimpleTaskDescription ["Capture Mirov", "Capture Mirov", "Capture Mirov"];
+objective2 = player createSimpleTask ["Capture intersection"];
+objective2 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];
+objective1 = player createSimpleTask ["Clear fuel station"];
+objective1 setSimpleTaskDescription ["Clear fuel station", "Clear fuel station", "Clear fuel station"];

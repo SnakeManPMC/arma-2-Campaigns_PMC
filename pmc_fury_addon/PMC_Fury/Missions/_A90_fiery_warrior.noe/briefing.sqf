@@ -22,7 +22,7 @@ and capture <marker name = 'target1'>Lany</marker> town.
 
 
 
-<br/>Fiery Warrior<br/><br/>
+<br/><br/>Fiery Warrior<br/><br/>
 
 GEN SITREP<br/>
 Our war continues on Nogova, today we will take another piece of Russian occupied
@@ -61,5 +61,5 @@ should be pretty good if all things go well.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture Lany"];
-objective1 setSimpleTaskDescription ["Capture Lany", "Capture Lany", "Capture Lany"];
+objective1 = player createSimpleTask ["Capture Lany"];
+objective1 setSimpleTaskDescription ["Capture Lany", "Capture Lany", "Capture Lany"];

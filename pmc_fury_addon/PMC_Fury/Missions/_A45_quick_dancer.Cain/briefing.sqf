@@ -21,7 +21,7 @@ the enemy <marker name = 'target1'>base</marker> north of your position.
 
 
 
-<br/>Quick Dancer<br/><br/>
+<br/><br/>Quick Dancer<br/><br/>
 
 GEN SITREP<br/>
 Today we are moving against the enemy base just north of our positions in the ruins.
@@ -66,5 +66,5 @@ will come when you order them. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture enemy base"];
-objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
+objective1 = player createSimpleTask ["Capture enemy base"];
+objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];

@@ -21,7 +21,7 @@ Attack and capture the <marker name = 'target1'>enemy base</marker> in the woods
 
 
 
-<br/>Death Trap<br/><br/>
+<br/><br/>Death Trap<br/><br/>
 
 GEN SITREP<br/>
 The closest enemy base to front lines and NATO positions is the small one in
@@ -64,5 +64,5 @@ advantage. Also be careful with the attack call.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture enemy base"];
-objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
+objective1 = player createSimpleTask ["Capture enemy base"];
+objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];

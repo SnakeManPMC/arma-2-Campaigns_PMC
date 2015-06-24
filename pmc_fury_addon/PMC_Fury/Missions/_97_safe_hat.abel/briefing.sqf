@@ -23,7 +23,7 @@ the <marker name = 'target3'>area</marker> just north of Goisse.
 
 
 
-<br/>Safe Hat<br/><br/>
+<br/><br/>Safe Hat<br/><br/>
 
 GEN SITREP<br/>
 We are preparing to assault La Trinite but in the mean time we must also keep
@@ -70,9 +70,9 @@ join your fight today. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Clear road north of Goisse"];
-objective3 setSimpleTaskDescription ["Clear road north of Goisse", "Clear road north of Goisse", "Clear road north of Goisse"];
-objective2 = player createSimpleTask ["Capture forest road"];
-objective2 setSimpleTaskDescription ["Capture forest road", "Capture forest road", "Capture forest road"];
-objective1 = player createSimpleTask ["Clear the hill top"];
-objective1 setSimpleTaskDescription ["Clear the hill top", "Clear the hill top", "Clear the hill top"];
+objective3 = player createSimpleTask ["Clear road north of Goisse"];
+objective3 setSimpleTaskDescription ["Clear road north of Goisse", "Clear road north of Goisse", "Clear road north of Goisse"];
+objective2 = player createSimpleTask ["Capture forest road"];
+objective2 setSimpleTaskDescription ["Capture forest road", "Capture forest road", "Capture forest road"];
+objective1 = player createSimpleTask ["Clear the hill top"];
+objective1 setSimpleTaskDescription ["Clear the hill top", "Clear the hill top", "Clear the hill top"];

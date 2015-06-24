@@ -23,7 +23,7 @@ Finally capture <marker name = 'target3'>Neveklov</marker> city.
 
 
 
-<br/>Distant Glow<br/><br/>
+<br/><br/>Distant Glow<br/><br/>
 
 GEN SITREP<br/>
 Russians lost massive amount of hardware and personnel in the last nights attack,
@@ -65,11 +65,11 @@ the NATO reinforcements arrive.
 
 "]];
 // tasks need to be in reversed order
-objective4 = player createSimpleTask ["Wait for reinforcements"];
-objective4 setSimpleTaskDescription ["Wait for reinforcements", "Wait for reinforcements", "Wait for reinforcements"];
-objective3 = player createSimpleTask ["Capture Neveklov"];
-objective3 setSimpleTaskDescription ["Capture Neveklov", "Capture Neveklov", "Capture Neveklov"];
-objective2 = player createSimpleTask ["Capture farmhouse #2"];
-objective2 setSimpleTaskDescription ["Capture farmhouse #2", "Capture farmhouse #2", "Capture farmhouse #2"];
-objective1 = player createSimpleTask ["Capture farmhouse #1"];
-objective1 setSimpleTaskDescription ["Capture farmhouse #1", "Capture farmhouse #1", "Capture farmhouse #1"];
+objective4 = player createSimpleTask ["Wait for reinforcements"];
+objective4 setSimpleTaskDescription ["Wait for reinforcements", "Wait for reinforcements", "Wait for reinforcements"];
+objective3 = player createSimpleTask ["Capture Neveklov"];
+objective3 setSimpleTaskDescription ["Capture Neveklov", "Capture Neveklov", "Capture Neveklov"];
+objective2 = player createSimpleTask ["Capture farmhouse #2"];
+objective2 setSimpleTaskDescription ["Capture farmhouse #2", "Capture farmhouse #2", "Capture farmhouse #2"];
+objective1 = player createSimpleTask ["Capture farmhouse #1"];
+objective1 setSimpleTaskDescription ["Capture farmhouse #1", "Capture farmhouse #1", "Capture farmhouse #1"];

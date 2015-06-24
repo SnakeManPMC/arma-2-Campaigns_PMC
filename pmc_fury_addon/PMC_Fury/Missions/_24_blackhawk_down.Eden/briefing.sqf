@@ -29,7 +29,7 @@ Rescue the crew.
 
 
 
-<br/>Rescue Operation<br/><br/>
+<br/><br/>Rescue Operation<br/><br/>
 
 One of our recon birds, a Blackhawk helicopter went down somewhere in south-west of 
 Montignac well behind enemy lines. It is essential that we rescue the crew and destroy the 
@@ -70,9 +70,9 @@ Its up to you to rescue our boys... good luck, and godspeed son!
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Return to base with survivors"];
-objective3 setSimpleTaskDescription ["Return to base with survivors", "Return to base with survivors", "Return to base with survivors"];
-objective2 = player createSimpleTask ["Take survivors to Hospital"];
-objective2 setSimpleTaskDescription ["Take survivors to Hospital", "Take survivors to Hospital", "Take survivors to Hospital"];
-objective1 = player createSimpleTask ["Search and Rescue downed Blackhawk"];
-objective1 setSimpleTaskDescription ["Search and Rescue downed Blackhawk", "Search and Rescue downed Blackhawk", "Search and Rescue downed Blackhawk"];
+objective3 = player createSimpleTask ["Return to base with survivors"];
+objective3 setSimpleTaskDescription ["Return to base with survivors", "Return to base with survivors", "Return to base with survivors"];
+objective2 = player createSimpleTask ["Take survivors to Hospital"];
+objective2 setSimpleTaskDescription ["Take survivors to Hospital", "Take survivors to Hospital", "Take survivors to Hospital"];
+objective1 = player createSimpleTask ["Search and Rescue downed Blackhawk"];
+objective1 setSimpleTaskDescription ["Search and Rescue downed Blackhawk", "Search and Rescue downed Blackhawk", "Search and Rescue downed Blackhawk"];

@@ -25,7 +25,7 @@ Godspeed son.
 
 
 
-<br/>Garden Respose<br/><br/>
+<br/><br/>Garden Respose<br/><br/>
 
 GEN SITREP<br/>
 Our attack to the small island is on hold, Russians are launching a counter attack
@@ -64,5 +64,5 @@ small sandbags, use them as you please. Keep your head down, make every shot cou
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend intersection"];
-objective1 setSimpleTaskDescription ["Defend intersection", "Defend intersection", "Defend intersection"];
+objective1 = player createSimpleTask ["Defend intersection"];
+objective1 setSimpleTaskDescription ["Defend intersection", "Defend intersection", "Defend intersection"];

@@ -23,7 +23,7 @@ way there.
 
 
 
-<br/>Passage<br/><br/>
+<br/><br/>Passage<br/><br/>
 
 GEN SITREP<br/>
 Now we have control over the road system to the central island, there is still one
@@ -69,5 +69,5 @@ around there. Good luck!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear out the ditch"];
-objective1 setSimpleTaskDescription ["Clear out the ditch", "Clear out the ditch", "Clear out the ditch"];
+objective1 = player createSimpleTask ["Clear out the ditch"];
+objective1 setSimpleTaskDescription ["Clear out the ditch", "Clear out the ditch", "Clear out the ditch"];

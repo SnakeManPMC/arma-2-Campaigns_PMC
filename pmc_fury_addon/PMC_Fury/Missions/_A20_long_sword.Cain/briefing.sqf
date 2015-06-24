@@ -23,7 +23,7 @@ Good luck.
 
 
 
-<br/>Long Sword<br/><br/>
+<br/><br/>Long Sword<br/><br/>
 
 GEN SITREP<br/>
 Russians have got their air operations fully active, they are launching fighter 
@@ -63,5 +63,5 @@ hold it with just stingers. There is plenty of them in the ammo boxes, use 'em!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend off the Russians."];
-objective1 setSimpleTaskDescription ["Defend off the Russians.", "Defend off the Russians.", "Defend off the Russians."];
+objective1 = player createSimpleTask ["Defend off the Russians."];
+objective1 setSimpleTaskDescription ["Defend off the Russians.", "Defend off the Russians.", "Defend off the Russians."];

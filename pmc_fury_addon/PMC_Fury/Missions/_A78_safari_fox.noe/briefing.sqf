@@ -24,7 +24,7 @@ Good luck.
 
 
 
-<br/>Safari Fox<br/><br/>
+<br/><br/>Safari Fox<br/><br/>
 
 GEN SITREP<br/>
 Same situation as yesterday, some more troop movements have been observed in
@@ -65,5 +65,5 @@ work on this helo to make sure it is in mint condition.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Assault Blata and escape"];
-objective1 setSimpleTaskDescription ["Assault Blata and escape", "Assault Blata and escape", "Assault Blata and escape"];
+objective1 = player createSimpleTask ["Assault Blata and escape"];
+objective1 setSimpleTaskDescription ["Assault Blata and escape", "Assault Blata and escape", "Assault Blata and escape"];

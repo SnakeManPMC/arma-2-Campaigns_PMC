@@ -34,7 +34,7 @@ There is AH-1 Cobra and AH-64 Apache helicopter support available.
 
 
 
-<br/>War Starts<br/><br/>
+<br/><br/>War Starts<br/><br/>
 
 Our War starts from this point. First move of the war is to assault the Everon's
 only airbase located in the north. When we get control over this strategic location
@@ -73,5 +73,5 @@ or making them flee from the airbase area.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture enemy airbase"];
-objective1 setSimpleTaskDescription ["Capture enemy airbase", "Capture enemy airbase", "Capture enemy airbase"];
+objective1 = player createSimpleTask ["Capture enemy airbase"];
+objective1 setSimpleTaskDescription ["Capture enemy airbase", "Capture enemy airbase", "Capture enemy airbase"];

@@ -27,7 +27,7 @@ Good luck everyone.
 
 
 
-<br/>Valley Breeze<br/><br/>
+<br/><br/>Valley Breeze<br/><br/>
 
 GEN SITREP<br/>
 The last major enemy armored vehicles concentration on eastern Nogova lies ahead. 
@@ -75,11 +75,11 @@ This is a big one. Use your judgement when calling the air and ground assaults. 
 
 "]];
 // tasks need to be in reversed order
-objective4 = player createSimpleTask ["Capture Valley"];
-objective4 setSimpleTaskDescription ["Capture Valley", "Capture Valley", "Capture Valley"];
-objective3 = player createSimpleTask ["Clear Buildings"];
-objective3 setSimpleTaskDescription ["Clear Buildings", "Clear Buildings", "Clear Buildings"];
-objective2 = player createSimpleTask ["Capture Village"];
-objective2 setSimpleTaskDescription ["Capture Village", "Capture Village", "Capture Village"];
-objective1 = player createSimpleTask ["Capture Ruins"];
-objective1 setSimpleTaskDescription ["Capture Ruins", "Capture Ruins", "Capture Ruins"];
+objective4 = player createSimpleTask ["Capture Valley"];
+objective4 setSimpleTaskDescription ["Capture Valley", "Capture Valley", "Capture Valley"];
+objective3 = player createSimpleTask ["Clear Buildings"];
+objective3 setSimpleTaskDescription ["Clear Buildings", "Clear Buildings", "Clear Buildings"];
+objective2 = player createSimpleTask ["Capture Village"];
+objective2 setSimpleTaskDescription ["Capture Village", "Capture Village", "Capture Village"];
+objective1 = player createSimpleTask ["Capture Ruins"];
+objective1 setSimpleTaskDescription ["Capture Ruins", "Capture Ruins", "Capture Ruins"];

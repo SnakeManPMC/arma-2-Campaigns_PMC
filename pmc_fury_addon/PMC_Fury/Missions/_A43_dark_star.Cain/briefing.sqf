@@ -23,7 +23,7 @@ you will clear from any enemy forces.
 
 
 
-<br/>Dark Star<br/><br/>
+<br/><br/>Dark Star<br/><br/>
 
 GEN SITREP<br/>
 Very successful Grey Thunder operation was completeled yesterday, our forces 
@@ -67,5 +67,5 @@ the objective. Be careful in the terrain, watch out for the woods. Good luck!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear intersection"];
-objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];
+objective1 = player createSimpleTask ["Clear intersection"];
+objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];

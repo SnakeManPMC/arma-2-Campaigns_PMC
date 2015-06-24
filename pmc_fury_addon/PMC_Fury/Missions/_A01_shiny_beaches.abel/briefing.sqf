@@ -21,7 +21,7 @@ any Russians at <marker name = 'target1'>area</marker> between city and beaches.
 
 
 
-<br/>Shiny Beaches<br/><br/>
+<br/><br/>Shiny Beaches<br/><br/>
 
 GEN SITREP<br/>
 Today we must clear out some of the area near La Trinite, east specificly. After
@@ -60,5 +60,5 @@ Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear area"];
-objective1 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];
+objective1 = player createSimpleTask ["Clear area"];
+objective1 setSimpleTaskDescription ["Clear area", "Clear area", "Clear area"];

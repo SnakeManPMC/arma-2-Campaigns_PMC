@@ -47,7 +47,7 @@ There is AH-1 Cobra helicopter gunship support available.
 
 
 
-<br/>Spike<br/><br/>
+<br/><br/>Spike<br/><br/>
 
 We continue wiping out the Russian positions on Everon.
 <br/><br/>
@@ -90,5 +90,5 @@ when all enemies are ran out of their positions in the region around the interse
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Seize the area"];
-objective1 setSimpleTaskDescription ["Seize the area", "Seize the area", "Seize the area"];
+objective1 = player createSimpleTask ["Seize the area"];
+objective1 setSimpleTaskDescription ["Seize the area", "Seize the area", "Seize the area"];

@@ -38,7 +38,7 @@ Reinforcements are arriving to the newly captured Russian airbase
 
 
 
-<br/>Foundations<br/><br/>
+<br/><br/>Foundations<br/><br/>
 
 We have just successfully captured the Everon airbase in the early morning attack. 
 There is limited troops on the ground at the moment and we hurry up for reinforcements
@@ -65,5 +65,5 @@ guys are on the ground we can start to build the base.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Reinforcements"];
-objective1 setSimpleTaskDescription ["Reinforcements", "Reinforcements", "Reinforcements"];
+objective1 = player createSimpleTask ["Reinforcements"];
+objective1 setSimpleTaskDescription ["Reinforcements", "Reinforcements", "Reinforcements"];

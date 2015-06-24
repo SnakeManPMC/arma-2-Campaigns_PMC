@@ -21,7 +21,7 @@ to <marker name = 'target1'>sweep</marker> the beach.
 
 
 
-<br/>Beach Sweep<br/><br/>
+<br/><br/>Beach Sweep<br/><br/>
 
 GEN SITREP<br/>
 La Trinite has extremely heavy defenses supported by anti aircraft weapons, we are not
@@ -59,5 +59,5 @@ boxes to cover your squad. Vulcans are not yet arrived into Dourdan area.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweep the beach"];
-objective1 setSimpleTaskDescription ["Sweep the beach", "Sweep the beach", "Sweep the beach"];
+objective1 = player createSimpleTask ["Sweep the beach"];
+objective1 setSimpleTaskDescription ["Sweep the beach", "Sweep the beach", "Sweep the beach"];

@@ -21,7 +21,7 @@ Russian counter <marker name = 'attack'>attack</marker> and defend Houdan at all
 
 
 
-<br/>Bright Switch<br/><br/>
+<br/><br/>Bright Switch<br/><br/>
 
 GEN SITREP<br/>
 Russians are mounting a heavy counter attack to Houdan. We must repel it before we 
@@ -59,5 +59,5 @@ also <marker name = 'ammo'>ammo</marker> boxes so use them how you see fit.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Repel counter attack."];
-objective1 setSimpleTaskDescription ["Repel counter attack.", "Repel counter attack.", "Repel counter attack."];
+objective1 = player createSimpleTask ["Repel counter attack."];
+objective1 setSimpleTaskDescription ["Repel counter attack.", "Repel counter attack.", "Repel counter attack."];

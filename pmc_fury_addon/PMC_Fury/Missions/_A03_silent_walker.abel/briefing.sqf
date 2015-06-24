@@ -27,7 +27,7 @@ Good luck.
 
 
 
-<br/>Silent Walker<br/><br/>
+<br/><br/>Silent Walker<br/><br/>
 
 GEN SITREP<br/>
 Larche defenses are setting up, but no time to sit around. We move forward deeper 
@@ -71,9 +71,9 @@ directly into enemy lap.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Capture and prep LZ"];
-objective3 setSimpleTaskDescription ["Capture and prep LZ", "Capture and prep LZ", "Capture and prep LZ"];
-objective2 = player createSimpleTask ["Clear mountain"];
-objective2 setSimpleTaskDescription ["Clear mountain", "Clear mountain", "Clear mountain"];
-objective1 = player createSimpleTask ["Clear intersection"];
-objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];
+objective3 = player createSimpleTask ["Capture and prep LZ"];
+objective3 setSimpleTaskDescription ["Capture and prep LZ", "Capture and prep LZ", "Capture and prep LZ"];
+objective2 = player createSimpleTask ["Clear mountain"];
+objective2 setSimpleTaskDescription ["Clear mountain", "Clear mountain", "Clear mountain"];
+objective1 = player createSimpleTask ["Clear intersection"];
+objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];

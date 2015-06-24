@@ -22,7 +22,7 @@ counter <marker name = 'attack1'>attack</marker> coming from NW.
 
 
 
-<br/>Determined Shield<br/><br/>
+<br/><br/>Determined Shield<br/><br/>
 
 GEN SITREP<br/>
 Russians apparently are launching counter attack against Lany or maybe even
@@ -59,5 +59,5 @@ some of the objectives back. Well I also believe that you will stop them, right?
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend Lany"];
-objective1 setSimpleTaskDescription ["Defend Lany", "Defend Lany", "Defend Lany"];
+objective1 = player createSimpleTask ["Defend Lany"];
+objective1 setSimpleTaskDescription ["Defend Lany", "Defend Lany", "Defend Lany"];

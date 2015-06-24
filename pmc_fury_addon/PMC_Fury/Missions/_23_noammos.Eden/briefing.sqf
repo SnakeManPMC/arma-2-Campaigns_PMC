@@ -27,7 +27,7 @@ Wipeout enemy <marker name = 'ammodepot'>ammo depot</marker>
 
 
 
-<br/>Ammo Depot<br/><br/>
+<br/><br/>Ammo Depot<br/><br/>
 
 We continue to buildup the Montignac defences, they are looking good already and we can
 most likely repel the enemy attacks. We move along in the eastern sector and today the 
@@ -63,5 +63,5 @@ have much better tactical situation.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Wipe out enemy ammo depot."];
-objective1 setSimpleTaskDescription ["Wipe out enemy ammo depot.", "Wipe out enemy ammo depot.", "Wipe out enemy ammo depot."];
+objective1 = player createSimpleTask ["Wipe out enemy ammo depot."];
+objective1 setSimpleTaskDescription ["Wipe out enemy ammo depot.", "Wipe out enemy ammo depot.", "Wipe out enemy ammo depot."];

@@ -24,7 +24,7 @@ Welcome to Nogova, finally.
 
 
 
-<br/>Final Invasion<br/><br/>
+<br/><br/>Final Invasion<br/><br/>
 
 GEN SITREP<br/>
 NATO invasion of Nogova has begun. Really this is the invasion, yes we have been
@@ -67,7 +67,7 @@ but we don't expect much resistance from the lighthouse. Be careful.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture lighthouse"];
-objective2 setSimpleTaskDescription ["Capture lighthouse", "Capture lighthouse", "Capture lighthouse"];
-objective1 = player createSimpleTask ["Capture St. Sedlo"];
-objective1 setSimpleTaskDescription ["Capture St. Sedlo", "Capture St. Sedlo", "Capture St. Sedlo"];
+objective2 = player createSimpleTask ["Capture lighthouse"];
+objective2 setSimpleTaskDescription ["Capture lighthouse", "Capture lighthouse", "Capture lighthouse"];
+objective1 = player createSimpleTask ["Capture St. Sedlo"];
+objective1 setSimpleTaskDescription ["Capture St. Sedlo", "Capture St. Sedlo", "Capture St. Sedlo"];

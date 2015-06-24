@@ -21,7 +21,7 @@ clear <marker name = 'target1'>Base</marker> and <marker name = 'target2'>camp</
 
 
 
-<br/>Cosmopolitan Warrior<br/><br/>
+<br/><br/>Cosmopolitan Warrior<br/><br/>
 
 GEN SITREP<br/>
 Now its time to take this small island with good base grounds. Once we have set up this 
@@ -66,7 +66,7 @@ the second objective.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture camp"];
-objective2 setSimpleTaskDescription ["Capture camp", "Capture camp", "Capture camp"];
-objective1 = player createSimpleTask ["Capture base"];
-objective1 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
+objective2 = player createSimpleTask ["Capture camp"];
+objective2 setSimpleTaskDescription ["Capture camp", "Capture camp", "Capture camp"];
+objective1 = player createSimpleTask ["Capture base"];
+objective1 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];

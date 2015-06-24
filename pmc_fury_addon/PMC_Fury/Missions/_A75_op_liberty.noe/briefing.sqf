@@ -21,7 +21,7 @@ the <marker name = 'target1'>buildings</marker> and evacuate civilians.
 
 
 
-<br/>Op Liberty<br/><br/>
+<br/><br/>Op Liberty<br/><br/>
 
 GEN SITREP<br/>
 There are some civilians that have requested evacuation and we are going
@@ -68,13 +68,13 @@ the Ivan might send to that area when you start to make noise. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective5 = player createSimpleTask ["Board chinook and return home"];
-objective5 setSimpleTaskDescription ["Board chinook and return home", "Board chinook and return home", "Board chinook and return home"];
-objective4 = player createSimpleTask ["Secure Crash Site until the"];
-objective4 setSimpleTaskDescription ["Secure Crash Site until the", "Secure Crash Site until the", "Secure Crash Site until the"];
-objective3 = player createSimpleTask ["Locate pilots"];
-objective3 setSimpleTaskDescription ["Locate pilots", "Locate pilots", "Locate pilots"];
-objective2 = player createSimpleTask ["Locate Downed Blackhawk"];
-objective2 setSimpleTaskDescription ["Locate Downed Blackhawk", "Locate Downed Blackhawk", "Locate Downed Blackhawk"];
-objective1 = player createSimpleTask ["Clear houses, meet civilians"];
-objective1 setSimpleTaskDescription ["Clear houses, meet civilians", "Clear houses, meet civilians", "Clear houses, meet civilians"];
+objective5 = player createSimpleTask ["Board chinook and return home"];
+objective5 setSimpleTaskDescription ["Board chinook and return home", "Board chinook and return home", "Board chinook and return home"];
+objective4 = player createSimpleTask ["Secure Crash Site until the"];
+objective4 setSimpleTaskDescription ["Secure Crash Site until the", "Secure Crash Site until the", "Secure Crash Site until the"];
+objective3 = player createSimpleTask ["Locate pilots"];
+objective3 setSimpleTaskDescription ["Locate pilots", "Locate pilots", "Locate pilots"];
+objective2 = player createSimpleTask ["Locate Downed Blackhawk"];
+objective2 setSimpleTaskDescription ["Locate Downed Blackhawk", "Locate Downed Blackhawk", "Locate Downed Blackhawk"];
+objective1 = player createSimpleTask ["Clear houses, meet civilians"];
+objective1 setSimpleTaskDescription ["Clear houses, meet civilians", "Clear houses, meet civilians", "Clear houses, meet civilians"];

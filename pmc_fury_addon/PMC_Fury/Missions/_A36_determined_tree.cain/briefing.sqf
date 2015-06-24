@@ -22,7 +22,7 @@ of your base.
 
 
 
-<br/>Determined Tree<br/><br/>
+<br/><br/>Determined Tree<br/><br/>
 
 GEN SITREP<br/>
 Our weather team has now confirmed that the storm front is indeed now moving towards
@@ -66,5 +66,5 @@ so move carefully, try to take them out from distance.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Seize intersection"];
-objective1 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];
+objective1 = player createSimpleTask ["Seize intersection"];
+objective1 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];

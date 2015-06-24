@@ -21,7 +21,7 @@ the <marker name = 'target1'>mountain</marker> in north west.
 
 
 
-<br/>Northern Wind<br/><br/>
+<br/><br/>Northern Wind<br/><br/>
 
 GEN SITREP<br/>
 The last mountain in north west Nogova is the objective of todays operation.
@@ -58,5 +58,5 @@ The ruskies are cornered and they know that. Be careful on this one.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear out mountain"];
-objective1 setSimpleTaskDescription ["Clear out mountain", "Clear out mountain", "Clear out mountain"];
+objective1 = player createSimpleTask ["Clear out mountain"];
+objective1 setSimpleTaskDescription ["Clear out mountain", "Clear out mountain", "Clear out mountain"];

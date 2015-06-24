@@ -29,7 +29,7 @@ Good luck and be careful out there.
 
 
 
-<br/>Noises from Woods<br/><br/>
+<br/><br/>Noises from Woods<br/><br/>
 
 Our forces captured the enemy base near the airbase, we have now pretty security in the
 south part of this island.
@@ -63,9 +63,9 @@ to <marker name = 'start'>base</marker> for debriefing.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Return to base"];
-objective3 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-objective2 = player createSimpleTask ["Clear woods #2"];
-objective2 setSimpleTaskDescription ["Clear woods #2", "Clear woods #2", "Clear woods #2"];
-objective1 = player createSimpleTask ["Clear woods #1"];
-objective1 setSimpleTaskDescription ["Clear woods #1", "Clear woods #1", "Clear woods #1"];
+objective3 = player createSimpleTask ["Return to base"];
+objective3 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective2 = player createSimpleTask ["Clear woods #2"];
+objective2 setSimpleTaskDescription ["Clear woods #2", "Clear woods #2", "Clear woods #2"];
+objective1 = player createSimpleTask ["Clear woods #1"];
+objective1 setSimpleTaskDescription ["Clear woods #1", "Clear woods #1", "Clear woods #1"];

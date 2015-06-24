@@ -35,7 +35,7 @@ Good luck!
 
 
 
-<br/>Ghostschaser<br/><br/>
+<br/><br/>Ghostschaser<br/><br/>
 
 Our offensive was put on hold by the sudden Russian Special Forces attack to the airbase
 and city of Morton. They caused some heavy casualties and we are now running with limited
@@ -85,12 +85,8 @@ Officers club safely, not in a bodybag because you tried to cap some Russians be
 lines returning home. So, you will be back home safely, thats an order!
 <br/><br/>
 
-
-
-
-
-
-<a name="identify">Identification
+Identification
+<br/><br/>
 
 To identify an enemy target, you must first find it of course. Then use the binoculars
 and right mouse button to identify a target. Be adviced that in most cases it requires 
@@ -106,22 +102,12 @@ just clicking mouse in normal view.
 Why am I explaining this to you? if you can play the campaign over here, you DONT need to
 get lectured on how to use this game ;)
 <br/><br/>
-Back to war situation
-
-
-
-
-
-
-
-
-
-
 "]];
+
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Return to start"];
-objective3 setSimpleTaskDescription ["Return to start", "Return to start", "Return to start"];
-objective2 = player createSimpleTask ["Direct air strike"];
-objective2 setSimpleTaskDescription ["Direct air strike", "Direct air strike", "Direct air strike"];
-objective1 = player createSimpleTask ["Find the Spez Natz camp"];
-objective1 setSimpleTaskDescription ["Find the Spez Natz camp", "Find the Spez Natz camp", "Find the Spez Natz camp"];
+objective3 = player createSimpleTask ["Return to start"];
+objective3 setSimpleTaskDescription ["Return to start", "Return to start", "Return to start"];
+objective2 = player createSimpleTask ["Direct air strike"];
+objective2 setSimpleTaskDescription ["Direct air strike", "Direct air strike", "Direct air strike"];
+objective1 = player createSimpleTask ["Find the Spez Natz camp"];
+objective1 setSimpleTaskDescription ["Find the Spez Natz camp", "Find the Spez Natz camp", "Find the Spez Natz camp"];

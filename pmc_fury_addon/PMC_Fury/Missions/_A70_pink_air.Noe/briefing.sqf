@@ -21,7 +21,7 @@ against any Russian counter attacks.
 
 
 
-<br/>Pink Air<br/><br/>
+<br/><br/>Pink Air<br/><br/>
 
 GEN SITREP<br/>
 NATO has foothold right in the north east edge of Nogova island now. The airstrip
@@ -60,5 +60,5 @@ they might come useful.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend airstrip"];
-objective1 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];
+objective1 = player createSimpleTask ["Defend airstrip"];
+objective1 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];

@@ -28,7 +28,7 @@ Clear out <marker name = 'clear'>area</marker> and <marker name = 'chapel'>Chape
 
 
 
-<br/>Cleanups<br/><br/>
+<br/><br/>Cleanups<br/><br/>
 
 After we seized Montignac, we want to make sure there are no leftover Russian 
 forces hiding in the North-East from Montignac. We are building up the defensive positions
@@ -58,5 +58,5 @@ the <marker name = 'chapel'>Chapel</marker> or nearby.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear the designated area"];
-objective1 setSimpleTaskDescription ["Clear the designated area", "Clear the designated area", "Clear the designated area"];
+objective1 = player createSimpleTask ["Clear the designated area"];
+objective1 setSimpleTaskDescription ["Clear the designated area", "Clear the designated area", "Clear the designated area"];

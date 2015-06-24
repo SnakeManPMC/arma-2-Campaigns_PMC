@@ -24,7 +24,7 @@ Have fun.
 
 
 
-<br/>Fast Escape<br/><br/>
+<br/><br/>Fast Escape<br/><br/>
 
 GEN SITREP<br/>
 Its been one celebration since we freed Kolgujev from Russian control. We have been
@@ -68,5 +68,5 @@ be just a walk in the park. Have fun!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear the island"];
-objective1 setSimpleTaskDescription ["Clear the island", "Clear the island", "Clear the island"];
+objective1 = player createSimpleTask ["Clear the island"];
+objective1 setSimpleTaskDescription ["Clear the island", "Clear the island", "Clear the island"];

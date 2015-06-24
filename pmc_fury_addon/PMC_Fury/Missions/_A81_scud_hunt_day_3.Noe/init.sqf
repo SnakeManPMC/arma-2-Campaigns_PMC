@@ -1,19 +1,32 @@
-[] execVM "briefing.sqf";
-PAPABEAR = [West, "HQ"];
+// auto added by PMC mission porting system 
+PAPABEAR = [West, "HQ"]; 
+[] execVM "briefing.sqf"; 
 
-// create empty bmp named C1
+/*
+;
+; create empty bmp named C1
+;
+*/
 C1 = "BMP" createvehicle [GLB_02_C1X, GLB_02_C1Y];
 
-// adjust the pos + heading to match where you left it in previous mission
-C1 setpos [GLB_02_C1X, GLB_02_C1Y];
-C1 setdir GLB_02_C1D;
+/*
+;
+; adjust the pos + heading to match where you left it in previous mission
+;
+*/
+C1 setpos [GLB_02_C1X, GLB_02_C1Y]; C1 setdir GLB_02_C1D;
 
-// make it highly broken 
+/*
+;
+; make it highly broken 
+;
+*/
 aa = C1 loadStatus "02C1";
 
-// mystical AA here, not used anywhere...
-// defined hmm just double checking something, dunno :)
-
+/*
+; mystical AA here, not used anywhere...
+; defined hmm just double checking something, dunno :)
+*/
 aa = s1 loadStatus "01s1";
 aa = s2 loadStatus "01s2";
 aa = s3 loadStatus "01s3";

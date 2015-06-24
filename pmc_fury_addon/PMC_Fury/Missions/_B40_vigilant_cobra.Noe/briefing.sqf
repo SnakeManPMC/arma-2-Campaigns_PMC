@@ -21,7 +21,7 @@ capture <marker name = 'target1'>Facility</marker> near the airbase.
 
 
 
-<br/>Vigilant Cobra<br/><br/>
+<br/><br/>Vigilant Cobra<br/><br/>
 
 GEN SITREP<br/>
 The operation to take Petrovice was successful and our forces performed 
@@ -62,5 +62,5 @@ west of the facility as there lays the extremely strong last line of Russian def
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture facility"];
-objective1 setSimpleTaskDescription ["Capture facility", "Capture facility", "Capture facility"];
+objective1 = player createSimpleTask ["Capture facility"];
+objective1 setSimpleTaskDescription ["Capture facility", "Capture facility", "Capture facility"];

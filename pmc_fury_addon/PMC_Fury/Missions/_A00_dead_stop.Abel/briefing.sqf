@@ -22,7 +22,7 @@ counter attack.
 
 
 
-<br/>Dead Stop<br/><br/>
+<br/><br/>Dead Stop<br/><br/>
 
 GEN SITREP<br/>
 Russians are setting up another counter attack which we must stop. They are
@@ -64,7 +64,7 @@ the leading vehicle at least. Watch you back out there.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Ambush counter attack"];
-objective2 setSimpleTaskDescription ["Ambush counter attack", "Ambush counter attack", "Ambush counter attack"];
-objective1 = player createSimpleTask ["Clear road"];
-objective1 setSimpleTaskDescription ["Clear road", "Clear road", "Clear road"];
+objective2 = player createSimpleTask ["Ambush counter attack"];
+objective2 setSimpleTaskDescription ["Ambush counter attack", "Ambush counter attack", "Ambush counter attack"];
+objective1 = player createSimpleTask ["Clear road"];
+objective1 setSimpleTaskDescription ["Clear road", "Clear road", "Clear road"];

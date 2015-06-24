@@ -27,7 +27,7 @@ Good luck.
 
 
 
-<br/>Bat Eye<br/><br/>
+<br/><br/>Bat Eye<br/><br/>
 
 GEN SITREP<br/>
 Russians seem to go on totally defensive now in the front lines, they do not
@@ -71,9 +71,9 @@ beginning, you'll be hurting lateron in the open area fights. Make good decision
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Capture Frymburk"];
-objective3 setSimpleTaskDescription ["Capture Frymburk", "Capture Frymburk", "Capture Frymburk"];
-objective2 = player createSimpleTask ["Capture Slapy"];
-objective2 setSimpleTaskDescription ["Capture Slapy", "Capture Slapy", "Capture Slapy"];
-objective1 = player createSimpleTask ["Capture Kost"];
-objective1 setSimpleTaskDescription ["Capture Kost", "Capture Kost", "Capture Kost"];
+objective3 = player createSimpleTask ["Capture Frymburk"];
+objective3 setSimpleTaskDescription ["Capture Frymburk", "Capture Frymburk", "Capture Frymburk"];
+objective2 = player createSimpleTask ["Capture Slapy"];
+objective2 setSimpleTaskDescription ["Capture Slapy", "Capture Slapy", "Capture Slapy"];
+objective1 = player createSimpleTask ["Capture Kost"];
+objective1 setSimpleTaskDescription ["Capture Kost", "Capture Kost", "Capture Kost"];

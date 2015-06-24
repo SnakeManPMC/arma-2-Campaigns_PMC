@@ -26,7 +26,7 @@ decide to make counterattack.
 
 
 
-<br/>Night<br/><br/>
+<br/><br/>Night<br/><br/>
 
 Our reinforcements have arrived to the Everon airbase. We have our HQ setup now.
 <br/><br/>
@@ -56,5 +56,5 @@ airbase who will maintain the first line of defence.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Guard the airbase"];
-objective1 setSimpleTaskDescription ["Guard the airbase", "Guard the airbase", "Guard the airbase"];
+objective1 = player createSimpleTask ["Guard the airbase"];
+objective1 setSimpleTaskDescription ["Guard the airbase", "Guard the airbase", "Guard the airbase"];

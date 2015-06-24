@@ -23,7 +23,7 @@ the <marker name = 'target1'>city</marker> and capture it.
 
 
 
-<br/>Maritime Light<br/><br/>
+<br/><br/>Maritime Light<br/><br/>
 
 GEN SITREP<br/>
 Nearest large enemy city is on the beach, only accessible through the beach road
@@ -66,7 +66,7 @@ do its work first. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Repel counter attacks"];
-objective2 setSimpleTaskDescription ["Repel counter attacks", "Repel counter attacks", "Repel counter attacks"];
-objective1 = player createSimpleTask ["Capture the city"];
-objective1 setSimpleTaskDescription ["Capture the city", "Capture the city", "Capture the city"];
+objective2 = player createSimpleTask ["Repel counter attacks"];
+objective2 setSimpleTaskDescription ["Repel counter attacks", "Repel counter attacks", "Repel counter attacks"];
+objective1 = player createSimpleTask ["Capture the city"];
+objective1 setSimpleTaskDescription ["Capture the city", "Capture the city", "Capture the city"];

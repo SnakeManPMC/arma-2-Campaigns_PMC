@@ -46,52 +46,52 @@ _warloop=_warloop+1;
 
 if (pmcdb == 1) then { hint format ["Okay WAR looper %1 as activated!",_warloop]; };
 
-[EastInfSquad, getpos EastInfStart, groupDelta, groupCharlie] exec "createsquad.sqs";
-~.01;
-@!CreateSquadRunning;
+[EastInfSquad, getpos EastInfStart, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
 
-_leader = NewSquad select 0;
+_leader = NewSquad select 0
 
-group _leader move getpos tgt_area;
+group _leader move getpos tgt_area
 group _leader setbehaviour "aware";
 group _leader setcombatmode "red";
 group _leader setformation "line";
 {_x allowfleeing 0} foreach units _leader;
 
 
-[EastInfSquad, getpos EastInfStart2, groupDelta, groupCharlie] exec "createsquad.sqs";
-~.01;
-@!CreateSquadRunning;
+[EastInfSquad, getpos EastInfStart2, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
 
-_leader = NewSquad select 0;
+_leader = NewSquad select 0
 
-group _leader move getpos tgt_area;
+group _leader move getpos tgt_area
 group _leader setbehaviour "aware";
 group _leader setcombatmode "red";
 group _leader setformation "line";
 {_x allowfleeing 0} foreach units _leader;
 
 
-[EastBMPSquad, getpos EastStart2, groupDelta, groupCharlie] exec "createsquad.sqs";
-~.01;
-@!CreateSquadRunning;
+[EastBMPSquad, getpos EastStart2, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
 
-_leader = NewSquad select 0;
+_leader = NewSquad select 0
 
-group _leader move getpos tgt_area;
+group _leader move getpos tgt_area
 group _leader setbehaviour "safe";
 group _leader setcombatmode "red";
 group _leader setformation "column";
 {_x allowfleeing 0} foreach units _leader;
 
 
-[EastT72Squad, getpos EastStart, groupDelta, groupCharlie] exec "createsquad.sqs";
-~.01;
-@!CreateSquadRunning;
+[EastT72Squad, getpos EastStart, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
 
-_leader = NewSquad select 0;
+_leader = NewSquad select 0
 
-group _leader move getpos tgt_area;
+group _leader move getpos tgt_area
 group _leader setbehaviour "safe";
 group _leader setcombatmode "red";
 group _leader setformation "column";
@@ -112,7 +112,7 @@ if (pmcdb ==1) then { hint format ["warloop %1/%2 idle for %3sec because...\nEas
 ;
 ; waiting for war to wage...
 ;
-~_LoopRate;
+~_LoopRate
 
 ; this was AND before, lets reduce the load of units on the map...
 if ((count eastarray) > _EnemyCount) then {goto "idle"};
@@ -122,19 +122,19 @@ if (_warloop < _WarDuration) then {goto "CreatorStart"};
 ;
 ; ending big fight against T80's ;)
 ;
-[EastT80Squad, getpos EastStart, groupDelta, groupCharlie] exec "createsquad.sqs";
-~.01;
-@!CreateSquadRunning;
+[EastT80Squad, getpos EastStart, groupDelta, groupCharlie] exec "createsquad.sqs"
+~.01
+@!CreateSquadRunning
 
-_leader = NewSquad select 0;
+_leader = NewSquad select 0
 
-group _leader move getpos tgt_area;
+group _leader move getpos tgt_area
 group _leader setbehaviour "safe";
 group _leader setcombatmode "red";
 group _leader setformation "column";
 {_x allowfleeing 0} foreach units _leader;
 
-~60;
+~60
 
 ;
 ; for the mission objectives complete stuff
@@ -144,4 +144,4 @@ readyforend=true;
 ; some notification that we're in the end
 ;hint "CONGRATULATIONS mission end! now just clean up the area and you're done!"
 
-exit;
+exit

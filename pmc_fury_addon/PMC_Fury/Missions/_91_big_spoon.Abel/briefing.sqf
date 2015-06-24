@@ -22,7 +22,7 @@ counter attacks
 
 
 
-<br/>Big Spoon<br/><br/>
+<br/><br/>Big Spoon<br/><br/>
 
 GEN SITREP<br/>
 Next objective in our war against the Russians is the town of Goisse located in 
@@ -62,7 +62,7 @@ as we are talking about the enemy front lines here. Expect anything and you'll d
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Defend Goisse"];
-objective2 setSimpleTaskDescription ["Defend Goisse", "Defend Goisse", "Defend Goisse"];
-objective1 = player createSimpleTask ["Capture Goisse"];
-objective1 setSimpleTaskDescription ["Capture Goisse", "Capture Goisse", "Capture Goisse"];
+objective2 = player createSimpleTask ["Defend Goisse"];
+objective2 setSimpleTaskDescription ["Defend Goisse", "Defend Goisse", "Defend Goisse"];
+objective1 = player createSimpleTask ["Capture Goisse"];
+objective1 setSimpleTaskDescription ["Capture Goisse", "Capture Goisse", "Capture Goisse"];

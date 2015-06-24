@@ -27,7 +27,7 @@ Good luck.
 
 
 
-<br/>Maritime Thunder<br/><br/>
+<br/><br/>Maritime Thunder<br/><br/>
 
 GEN SITREP<br/>
 Our diversion worked. Lot of enemy armor and presonell are being moved into the
@@ -74,7 +74,7 @@ aircrafts.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Secure it until Vulcans arrive"];
-objective2 setSimpleTaskDescription ["Secure it until Vulcans arrive", "Secure it until Vulcans arrive", "Secure it until Vulcans arrive"];
-objective1 = player createSimpleTask ["Clear the beach"];
-objective1 setSimpleTaskDescription ["Clear the beach", "Clear the beach", "Clear the beach"];
+objective2 = player createSimpleTask ["Secure it until Vulcans arrive"];
+objective2 setSimpleTaskDescription ["Secure it until Vulcans arrive", "Secure it until Vulcans arrive", "Secure it until Vulcans arrive"];
+objective1 = player createSimpleTask ["Clear the beach"];
+objective1 setSimpleTaskDescription ["Clear the beach", "Clear the beach", "Clear the beach"];

@@ -25,7 +25,7 @@ Your team is holding city of Meaux <marker name = 'start'>here</marker>.
 
 
 
-<br/>In the Meaux<br/><br/>
+<br/><br/>In the Meaux<br/><br/>
 
 We successfully defended Meaux for the second time now. Russians really had some serious
 forces attacking this city, they must think its important. We have not found any special
@@ -53,5 +53,5 @@ knows what might happen in the next hour. Be alert.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Hold Meaux"];
-objective1 setSimpleTaskDescription ["Hold Meaux", "Hold Meaux", "Hold Meaux"];
+objective1 = player createSimpleTask ["Hold Meaux"];
+objective1 setSimpleTaskDescription ["Hold Meaux", "Hold Meaux", "Hold Meaux"];

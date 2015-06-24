@@ -30,7 +30,7 @@ Go get them Alpha.
 
 
 
-<br/>Lighthouse<br/><br/>
+<br/><br/>Lighthouse<br/><br/>
 
 Russians launched major counter attack when we captured their Comms site in the castle,
 they still have some armored units left to use small scale offensives. That move however
@@ -79,5 +79,5 @@ peeps haven't detected much of activity from the limited aerial reconnaisance.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear sector"];
-objective1 setSimpleTaskDescription ["Clear sector", "Clear sector", "Clear sector"];
+objective1 = player createSimpleTask ["Clear sector"];
+objective1 setSimpleTaskDescription ["Clear sector", "Clear sector", "Clear sector"];

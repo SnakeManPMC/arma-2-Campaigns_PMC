@@ -21,7 +21,7 @@ city of <marker name = 'target1'>Modrava</marker> and capture it.
 
 
 
-<br/>Private Property<br/><br/>
+<br/><br/>Private Property<br/><br/>
 
 GEN SITREP<br/>
 City of Modrava is the largest city on north west Nogova, it holds key enemy
@@ -65,7 +65,7 @@ attack. Hmm choices... well I know you're taking down this with ease.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture Modrava"];
-objective2 setSimpleTaskDescription ["Capture Modrava", "Capture Modrava", "Capture Modrava"];
-objective1 = player createSimpleTask ["Capture Bludov"];
-objective1 setSimpleTaskDescription ["Capture Bludov", "Capture Bludov", "Capture Bludov"];
+objective2 = player createSimpleTask ["Capture Modrava"];
+objective2 setSimpleTaskDescription ["Capture Modrava", "Capture Modrava", "Capture Modrava"];
+objective1 = player createSimpleTask ["Capture Bludov"];
+objective1 setSimpleTaskDescription ["Capture Bludov", "Capture Bludov", "Capture Bludov"];

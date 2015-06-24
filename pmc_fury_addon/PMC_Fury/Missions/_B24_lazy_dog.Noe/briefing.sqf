@@ -23,7 +23,7 @@ reach <marker name = 'bravo1'>Bravo's</marker> position.
 
 
 
-<br/>Lazy Dog<br/><br/>
+<br/><br/>Lazy Dog<br/><br/>
 
 GEN SITREP<br/>
 The area between NATO positions must be swept from any remainin Russians
@@ -62,5 +62,5 @@ as many Russians you can. Have fun.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweep area and reach Bravo"];
-objective1 setSimpleTaskDescription ["Sweep area and reach Bravo", "Sweep area and reach Bravo", "Sweep area and reach Bravo"];
+objective1 = player createSimpleTask ["Sweep area and reach Bravo"];
+objective1 setSimpleTaskDescription ["Sweep area and reach Bravo", "Sweep area and reach Bravo", "Sweep area and reach Bravo"];

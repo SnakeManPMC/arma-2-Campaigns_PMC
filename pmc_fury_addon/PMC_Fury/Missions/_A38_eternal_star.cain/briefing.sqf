@@ -23,7 +23,7 @@ Russian <marker name = 'attack'>attack</marker> from S, SW.
 
 
 
-<br/>Eternal Star<br/><br/>
+<br/><br/>Eternal Star<br/><br/>
 
 GEN SITREP<br/>
 The weather front thats approaching Kolgujev is much worse than the weather team 
@@ -76,5 +76,5 @@ otherwise busy.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend the base"];
-objective1 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];
+objective1 = player createSimpleTask ["Defend the base"];
+objective1 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];

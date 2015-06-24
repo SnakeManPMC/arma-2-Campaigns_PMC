@@ -1,14 +1,14 @@
 _unit = _this select 0;
-~120 + random 120;
+~120 + random 120
 
 #starter
-? (vehicle _unit != _unit) : goto "veh";
+? (vehicle _unit != _unit) : goto "veh"
 
-deleteVehicle _unit;
-exit;
+deleteVehicle _unit
+exit
 
 #veh
 ; 5 minute delay if we have vehicle with the fire stuff etc.
-~600 + random 300;
-deleteVehicle (vehicle _unit);
-exit;
+~600 + random 300
+deleteVehicle (vehicle _unit)
+exit

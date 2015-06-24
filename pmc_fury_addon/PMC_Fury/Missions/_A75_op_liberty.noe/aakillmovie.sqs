@@ -2,49 +2,49 @@ _shooter = _this select 0;
 _helo = _this select 1;
 
 ; camera basic initialization
-_camera = "camera" camCreate [0,0,0];
-_camera camSetTarget [0,0,0];
-_camera cameraEffect ["internal","back"];
-_camera camSetFOV 0.700;
+_camera = "camera" camCreate [0,0,0]
+_camera camSetTarget [0,0,0]
+_camera cameraEffect ["internal","back"]
+_camera camSetFOV 0.700
 
 ; first shot
 _camera camSetTarget _shooter;
-_camera camSetRelPos [0,-3,1];
+_camera camSetRelPos [0,-3,1]
 _camera camSetTarget _helo;
-_camera camSetFOV 0.700;
-_camera camCommit 0;
-@camCommitted _camera;
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
 
-setAccTime .3;
+setAccTime .3
 
-@getdammage _helo > 0;
+@getdammage _helo > 0
 ; kill the crew so they dont bail :)
 ppilot1 setdammage 1;
 pgunner1 setdammage 1;
-~.2;
+~.2
 
 _camera camSetTarget _helo;
-_camera camSetRelPos [20,0,3];
-_camera camSetFOV 0.700;
-_camera camCommit 1;
-@camCommitted _camera;
+_camera camSetRelPos [20,0,3]
+_camera camSetFOV 0.700
+_camera camCommit 1
+@camCommitted _camera
 
-@getdammage _helo >= 1;
+@getdammage _helo >= 1
 
 ; put on some smoke from the helo
-_helo exec "bsmoke.sqs";
-~5;
+_helo exec "bsmoke.sqs"
+~5
 
 setAccTime 1;
 
 _camera camSetTarget _helo;
-_camera camSetRelPos [20,0,3];
-_camera camSetFOV 0.700;
-_camera camCommit 3;
-@camCommitted _camera;
-~2;
+_camera camSetRelPos [20,0,3]
+_camera camSetFOV 0.700
+_camera camCommit 3
+@camCommitted _camera
+~2
 
-player cameraEffect ["terminate","back"];
+player cameraEffect ["terminate","back"]
 
 ; Destroy the camera
 camDestroy _camera
@@ -54,4 +54,4 @@ camDestroy _camera
 ;
 [] exec "bhd.sqs";
 
-exit;
+exit

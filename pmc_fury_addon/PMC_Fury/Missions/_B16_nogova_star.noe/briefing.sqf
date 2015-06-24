@@ -25,7 +25,7 @@ Good luck.
 
 
 
-<br/>Nogova Star<br/><br/>
+<br/><br/>Nogova Star<br/><br/>
 
 GEN SITREP<br/>
 The northern area of our positions is still under Russian control and today we
@@ -67,9 +67,9 @@ patrolling there too.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Clear west coast"];
-objective3 setSimpleTaskDescription ["Clear west coast", "Clear west coast", "Clear west coast"];
-objective2 = player createSimpleTask ["Clear east coast"];
-objective2 setSimpleTaskDescription ["Clear east coast", "Clear east coast", "Clear east coast"];
-objective1 = player createSimpleTask ["Clear mountain"];
-objective1 setSimpleTaskDescription ["Clear mountain", "Clear mountain", "Clear mountain"];
+objective3 = player createSimpleTask ["Clear west coast"];
+objective3 setSimpleTaskDescription ["Clear west coast", "Clear west coast", "Clear west coast"];
+objective2 = player createSimpleTask ["Clear east coast"];
+objective2 setSimpleTaskDescription ["Clear east coast", "Clear east coast", "Clear east coast"];
+objective1 = player createSimpleTask ["Clear mountain"];
+objective1 setSimpleTaskDescription ["Clear mountain", "Clear mountain", "Clear mountain"];

@@ -21,7 +21,7 @@ the <marker name = 'aasite'>AA Site</marker> and takes it out.
 
 
 
-<br/>Fiery Sword<br/><br/>
+<br/><br/>Fiery Sword<br/><br/>
 
 GEN SITREP<br/>
 The Russians are putting together a tough counter attack force which seems to be just
@@ -62,5 +62,5 @@ Intel is not sure about the enemy air activity so be ready for them.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Neutralize AA site"];
-objective1 setSimpleTaskDescription ["Neutralize AA site", "Neutralize AA site", "Neutralize AA site"];
+objective1 = player createSimpleTask ["Neutralize AA site"];
+objective1 setSimpleTaskDescription ["Neutralize AA site", "Neutralize AA site", "Neutralize AA site"];

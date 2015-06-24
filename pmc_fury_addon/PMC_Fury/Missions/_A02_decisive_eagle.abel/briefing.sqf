@@ -22,7 +22,7 @@ Good luck!
 
 
 
-<br/>Decisive Eagle<br/><br/>
+<br/><br/>Decisive Eagle<br/><br/>
 
 GEN SITREP<br/>
 Today we assault city of Larche. Its one of those biggest cities in this island and 
@@ -64,5 +64,5 @@ so well dug in there that they will not give up easily.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture Larche"];
-objective1 setSimpleTaskDescription ["Capture Larche", "Capture Larche", "Capture Larche"];
+objective1 = player createSimpleTask ["Capture Larche"];
+objective1 setSimpleTaskDescription ["Capture Larche", "Capture Larche", "Capture Larche"];

@@ -25,7 +25,7 @@ Good luck and be careful!
 
 
 
-<br/>Scud Hunt Day 1<br/><br/>
+<br/><br/>Scud Hunt Day 1<br/><br/>
 
 GEN SITREP<br/>
 Our base in the airstrip was attacked by Scud missiles yesterday causing several
@@ -76,7 +76,7 @@ Good luck... and bag me some Scud missiles! Good hunting!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Reach campign location"];
-objective2 setSimpleTaskDescription ["Reach campign location", "Reach campign location", "Reach campign location"];
-objective1 = player createSimpleTask ["Search and destroy Scuds"];
-objective1 setSimpleTaskDescription ["Search and destroy Scuds", "Search and destroy Scuds", "Search and destroy Scuds"];
+objective2 = player createSimpleTask ["Reach campign location"];
+objective2 setSimpleTaskDescription ["Reach campign location", "Reach campign location", "Reach campign location"];
+objective1 = player createSimpleTask ["Search and destroy Scuds"];
+objective1 setSimpleTaskDescription ["Search and destroy Scuds", "Search and destroy Scuds", "Search and destroy Scuds"];

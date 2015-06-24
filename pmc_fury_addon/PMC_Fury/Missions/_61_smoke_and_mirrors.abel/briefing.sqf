@@ -25,7 +25,7 @@ and detonate when you're far away. Return to the boat for extraction.
 
 
 
-<br/>Smoke and Mirrors<br/><br/>
+<br/><br/>Smoke and Mirrors<br/><br/>
 
 GEN SITREP<br/>
 We are preparing for Malden Invasion. This operation begins with fooling the Russians 
@@ -65,5 +65,5 @@ Be careful with the guards over there, try to avoid engaging them if possible.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Destroy Fuel Truck"];
-objective1 setSimpleTaskDescription ["Destroy Fuel Truck", "Destroy Fuel Truck", "Destroy Fuel Truck"];
+objective1 = player createSimpleTask ["Destroy Fuel Truck"];
+objective1 setSimpleTaskDescription ["Destroy Fuel Truck", "Destroy Fuel Truck", "Destroy Fuel Truck"];

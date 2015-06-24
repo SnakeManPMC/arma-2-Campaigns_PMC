@@ -23,7 +23,7 @@ any <marker name = 'attack'>attacking</marker> Russians.
 
 
 
-<br/>Beach Boys<br/><br/>
+<br/><br/>Beach Boys<br/><br/>
 
 GEN SITREP<br/>
 Our successful capturing of the two important road blocks launched reaction 
@@ -61,5 +61,5 @@ bunch of soldiers. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend road block"];
-objective1 setSimpleTaskDescription ["Defend road block", "Defend road block", "Defend road block"];
+objective1 = player createSimpleTask ["Defend road block"];
+objective1 setSimpleTaskDescription ["Defend road block", "Defend road block", "Defend road block"];

@@ -21,7 +21,7 @@ through the night.
 
 
 
-<br/>Night Light<br/><br/>
+<br/><br/>Night Light<br/><br/>
 
 GEN SITREP<br/>
 In the morning light we begin to push the Russians out of this island. They 
@@ -59,5 +59,5 @@ you tonight.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend fuel station"];
-objective1 setSimpleTaskDescription ["Defend fuel station", "Defend fuel station", "Defend fuel station"];
+objective1 = player createSimpleTask ["Defend fuel station"];
+objective1 setSimpleTaskDescription ["Defend fuel station", "Defend fuel station", "Defend fuel station"];

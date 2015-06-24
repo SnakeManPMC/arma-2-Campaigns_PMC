@@ -22,7 +22,7 @@ the <marker name = 'target2'>intersection</marker> in the beach.
 
 
 
-<br/>Silent Sparrow<br/><br/>
+<br/><br/>Silent Sparrow<br/><br/>
 
 GEN SITREP<br/>
 Our forces are steadily getting closer to the bridge, we fear that the
@@ -63,7 +63,7 @@ out for the intersection even the intel says its lightly defended.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture intersection"];
-objective2 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];
-objective1 = player createSimpleTask ["Capture Opatov"];
-objective1 setSimpleTaskDescription ["Capture Opatov", "Capture Opatov", "Capture Opatov"];
+objective2 = player createSimpleTask ["Capture intersection"];
+objective2 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];
+objective1 = player createSimpleTask ["Capture Opatov"];
+objective1 setSimpleTaskDescription ["Capture Opatov", "Capture Opatov", "Capture Opatov"];

@@ -34,7 +34,7 @@ Sweet through the <marker name = 'area'>area</marker> to clear out any enemy for
 
 
 
-<br/>Road Block<br/><br/>
+<br/><br/>Road Block<br/><br/>
 
 Our assault to Regina is just one push away. Forces are getting ready as of now.
 <br/><br/>
@@ -81,5 +81,5 @@ city before we launch the assault. So stop at the meeting point.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweet the area"];
-objective1 setSimpleTaskDescription ["Sweet the area", "Sweet the area", "Sweet the area"];
+objective1 = player createSimpleTask ["Sweet the area"];
+objective1 setSimpleTaskDescription ["Sweet the area", "Sweet the area", "Sweet the area"];

@@ -24,7 +24,7 @@ large <marker name = 'target2'>tank base</marker> which enemy is using.
 
 
 
-<br/>Armor Wall<br/><br/>
+<br/><br/>Armor Wall<br/><br/>
 
 GEN SITREP<br/>
 First large enemy armored base lays ahead in the battlefield. Its first place
@@ -68,7 +68,7 @@ the tank base until AH-64 Apache has soften it up first! Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture tank base"];
-objective2 setSimpleTaskDescription ["Capture tank base", "Capture tank base", "Capture tank base"];
-objective1 = player createSimpleTask ["Neutralize AA Site"];
-objective1 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];
+objective2 = player createSimpleTask ["Capture tank base"];
+objective2 setSimpleTaskDescription ["Capture tank base", "Capture tank base", "Capture tank base"];
+objective1 = player createSimpleTask ["Neutralize AA Site"];
+objective1 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];

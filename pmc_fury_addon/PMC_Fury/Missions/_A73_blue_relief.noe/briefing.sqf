@@ -21,7 +21,7 @@ civilians from <marker name = 'target1'>trosky</marker> town.
 
 
 
-<br/>Blue Relief<br/><br/>
+<br/><br/>Blue Relief<br/><br/>
 
 GEN SITREP<br/>
 The enemy defenses and force compositions are indeed light in the northern Nogova,
@@ -68,5 +68,5 @@ do NOT kill any civilians! it would not look good to return with civilian kills.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Evacuate civilians"];
-objective1 setSimpleTaskDescription ["Evacuate civilians", "Evacuate civilians", "Evacuate civilians"];
+objective1 = player createSimpleTask ["Evacuate civilians"];
+objective1 setSimpleTaskDescription ["Evacuate civilians", "Evacuate civilians", "Evacuate civilians"];

@@ -1,7 +1,10 @@
-[] execVM "briefing.sqf";
-PAPABEAR = [West, "HQ"];
+// auto added by PMC mission porting system 
+PAPABEAR = [West, "HQ"]; 
+[] execVM "briefing.sqf"; 
 
-// remove handgrenades from soldiers
+/*
+	remove handgrenades from soldiers
+*/
 {
-	_x removemagazines "handgrenade";
+	_x removeMagazines "handgrenade";
 } forEach units rescue;

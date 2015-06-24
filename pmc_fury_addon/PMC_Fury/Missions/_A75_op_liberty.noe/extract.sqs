@@ -16,14 +16,14 @@ _helo sideradio "Rextract";
 _helo land "land";
 
 #landing
-~.5;
+~.5
 
 _z = getpos vehicle _helo select 2;
 
 ;
 ; loop until helo height is 2 meters.
 ;
-?(_z > 2): goto "landing";
+?(_z > 2): goto "landing"
 
 _helo flyinheight 0;
 
@@ -47,14 +47,14 @@ _A3 = 0;
 _listunits = units _team;
 _listunits2 = units _team2;
 _listunits3 = units _team3;
-_B = count _listunits;
-_B2 = count _listunits2;
-_B3 = count _listunits3;
-~.2;
-?(_listunits select _A in _helo): _A=_A+1;
-?(_listunits2 select _A2 in _helo): _A2=_A2+1;
-?(_listunits3 select _A3 in _helo): _A3=_A3+1;
-?(_B > _A && _B2 > _A2 && _B3 > _A3): goto "WAITING";
+_B = count _listunits
+_B2 = count _listunits2
+_B3 = count _listunits3
+~.2
+?(_listunits select _A in _helo): _A=_A+1
+?(_listunits2 select _A2 in _helo): _A2=_A2+1
+?(_listunits3 select _A3 in _helo): _A3=_A3+1
+?(_B > _A && _B2 > _A2 && _B3 > _A3): goto "WAITING"
 
 _helo flyinheight 80;
 _helo sideradio "Rdustoff";
@@ -63,4 +63,4 @@ _helo sideradio "Rdustoff";
 
 sar1 land "land";
 
-exit;
+exit

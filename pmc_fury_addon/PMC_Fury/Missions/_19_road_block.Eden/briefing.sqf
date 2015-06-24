@@ -25,7 +25,7 @@ Seize the <marker name = 'road'>road</marker> between woods.
 
 
 
-<br/>Road Block<br/><br/>
+<br/><br/>Road Block<br/><br/>
 
 We are preparing our troops to assault for city of Montignac. So we must clear out the 
 narrow road passage through the woods as it is very deadly ambush point and will be used 
@@ -54,7 +54,7 @@ alert for possible reinforcements.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Repel reinforcements"];
-objective2 setSimpleTaskDescription ["Repel reinforcements", "Repel reinforcements", "Repel reinforcements"];
-objective1 = player createSimpleTask ["Clear the road block"];
-objective1 setSimpleTaskDescription ["Clear the road block", "Clear the road block", "Clear the road block"];
+objective2 = player createSimpleTask ["Repel reinforcements"];
+objective2 setSimpleTaskDescription ["Repel reinforcements", "Repel reinforcements", "Repel reinforcements"];
+objective1 = player createSimpleTask ["Clear the road block"];
+objective1 setSimpleTaskDescription ["Clear the road block", "Clear the road block", "Clear the road block"];

@@ -26,7 +26,7 @@ Good luck.
 
 
 
-<br/>Scud Hunt 2, Day 1<br/><br/>
+<br/><br/>Scud Hunt 2, Day 1<br/><br/>
 
 GEN SITREP<br/>
 Seems like Russians finally got their Scuds placed into the western Nogova 
@@ -77,7 +77,7 @@ good hunting.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Reach campign point"];
-objective2 setSimpleTaskDescription ["Reach campign point", "Reach campign point", "Reach campign point"];
-objective1 = player createSimpleTask ["Hunt down Scud launchers"];
-objective1 setSimpleTaskDescription ["Hunt down Scud launchers", "Hunt down Scud launchers", "Hunt down Scud launchers"];
+objective2 = player createSimpleTask ["Reach campign point"];
+objective2 setSimpleTaskDescription ["Reach campign point", "Reach campign point", "Reach campign point"];
+objective1 = player createSimpleTask ["Hunt down Scud launchers"];
+objective1 setSimpleTaskDescription ["Hunt down Scud launchers", "Hunt down Scud launchers", "Hunt down Scud launchers"];

@@ -25,7 +25,7 @@ Good luck.
 
 
 
-<br/>Intense Ivan<br/><br/>
+<br/><br/>Intense Ivan<br/><br/>
 
 GEN SITREP<br/>
 We have emergency situation, massive russian attack is under way to our
@@ -66,5 +66,5 @@ and people in the front line and now second wave is inbound. get there QUICK!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend the base"];
-objective1 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];
+objective1 = player createSimpleTask ["Defend the base"];
+objective1 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];

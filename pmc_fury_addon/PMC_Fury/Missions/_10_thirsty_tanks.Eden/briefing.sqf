@@ -24,7 +24,7 @@ wait for reinforcements. They will give new orders to your team.
 
 
 
-<br/>Refueling tanks<br/><br/>
+<br/><br/>Refueling tanks<br/><br/>
 
 We are in the preparations for assault on city of Meaux. We still need to get last 
 remaining forces together.
@@ -51,7 +51,7 @@ relieve you. They will give you further orders, be prepared to follow them out.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Assault and Capture Meaux Intel"];
-objective2 setSimpleTaskDescription ["Assault and Capture Meaux Intel", "Assault and Capture Meaux Intel", "Assault and Capture Meaux Intel"];
-objective1 = player createSimpleTask ["Follow orders"];
-objective1 setSimpleTaskDescription ["Follow orders", "Follow orders", "Follow orders"];
+objective2 = player createSimpleTask ["Assault and Capture Meaux Intel"];
+objective2 setSimpleTaskDescription ["Assault and Capture Meaux Intel", "Assault and Capture Meaux Intel", "Assault and Capture Meaux Intel"];
+objective1 = player createSimpleTask ["Follow orders"];
+objective1 setSimpleTaskDescription ["Follow orders", "Follow orders", "Follow orders"];

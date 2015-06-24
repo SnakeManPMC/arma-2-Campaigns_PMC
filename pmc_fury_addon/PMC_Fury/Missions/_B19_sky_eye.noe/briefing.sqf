@@ -24,7 +24,7 @@ old <marker name = 'target2'>radar site</marker> mountain.
 
 
 
-<br/>Sky Eye<br/><br/>
+<br/><br/>Sky Eye<br/><br/>
 
 GEN SITREP<br/>
 Our objective is to sneak behind the enemy from the north, we do not want
@@ -63,7 +63,7 @@ Okay so you must keep a distance to those to towns, sneak through the north.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture mountain"];
-objective2 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];
-objective1 = player createSimpleTask ["Clear hilltop"];
-objective1 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];
+objective2 = player createSimpleTask ["Capture mountain"];
+objective2 setSimpleTaskDescription ["Capture mountain", "Capture mountain", "Capture mountain"];
+objective1 = player createSimpleTask ["Clear hilltop"];
+objective1 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];

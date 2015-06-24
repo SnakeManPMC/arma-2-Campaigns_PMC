@@ -22,7 +22,7 @@ capture the <marker name = 'target1'>ruins</marker> and wait for backup.
 
 
 
-<br/>Silent Python<br/><br/>
+<br/><br/>Silent Python<br/><br/>
 
 GEN SITREP<br/>
 We had great success in the yesterdays operation, now we are in striking distance
@@ -63,7 +63,7 @@ be ready for them anyway and stay alert out there.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Wait for Bravo"];
-objective2 setSimpleTaskDescription ["Wait for Bravo", "Wait for Bravo", "Wait for Bravo"];
-objective1 = player createSimpleTask ["Capture ruins"];
-objective1 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];
+objective2 = player createSimpleTask ["Wait for Bravo"];
+objective2 setSimpleTaskDescription ["Wait for Bravo", "Wait for Bravo", "Wait for Bravo"];
+objective1 = player createSimpleTask ["Capture ruins"];
+objective1 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];

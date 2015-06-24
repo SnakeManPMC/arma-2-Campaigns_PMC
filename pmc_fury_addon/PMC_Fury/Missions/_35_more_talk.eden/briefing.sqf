@@ -31,7 +31,7 @@ Escort the officer safely to the <marker name = 'join'>join</marker> position.
 
 
 
-<br/>Negotiations continue<br/><br/>
+<br/><br/>Negotiations continue<br/><br/>
 
 The war situation is the same, no changes. The Negotiations are continuing again and we
 are sending one of our best negotiators in the talks with Russians. Hopefully he can 
@@ -53,5 +53,5 @@ bring some more light into the current situation.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Get captain to talks"];
-objective1 setSimpleTaskDescription ["Get captain to talks", "Get captain to talks", "Get captain to talks"];
+objective1 = player createSimpleTask ["Get captain to talks"];
+objective1 setSimpleTaskDescription ["Get captain to talks", "Get captain to talks", "Get captain to talks"];

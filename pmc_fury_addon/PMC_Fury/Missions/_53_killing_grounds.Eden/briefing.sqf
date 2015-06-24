@@ -31,7 +31,7 @@ Good luck commander.
 
 
 
-<br/>Killing Grounds<br/><br/>
+<br/><br/>Killing Grounds<br/><br/>
 
 Our reinforcements to the airbase have been arrived finally, now we have good use of 
 aircrafts again and our assaults continue. We did advance to the south side of Saint Pierre
@@ -94,7 +94,7 @@ Good luck!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Call backup forces"];
-objective2 setSimpleTaskDescription ["Call backup forces", "Call backup forces", "Call backup forces"];
-objective1 = player createSimpleTask ["Clear areas"];
-objective1 setSimpleTaskDescription ["Clear areas", "Clear areas", "Clear areas"];
+objective2 = player createSimpleTask ["Call backup forces"];
+objective2 setSimpleTaskDescription ["Call backup forces", "Call backup forces", "Call backup forces"];
+objective1 = player createSimpleTask ["Clear areas"];
+objective1 setSimpleTaskDescription ["Clear areas", "Clear areas", "Clear areas"];

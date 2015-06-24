@@ -24,7 +24,7 @@ May God be with all of us.
 
 
 
-<br/>Ivans Wrath<br/><br/>
+<br/><br/>Ivans Wrath<br/><br/>
 
 GEN SITREP<br/>
 Now we got Russians attention... and anger. They have launched counter attack
@@ -63,5 +63,5 @@ Pissed of ruskies huh. Just keep it cool, take good aim when shooting.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Hold the Russians back"];
-objective1 setSimpleTaskDescription ["Hold the Russians back", "Hold the Russians back", "Hold the Russians back"];
+objective1 = player createSimpleTask ["Hold the Russians back"];
+objective1 setSimpleTaskDescription ["Hold the Russians back", "Hold the Russians back", "Hold the Russians back"];

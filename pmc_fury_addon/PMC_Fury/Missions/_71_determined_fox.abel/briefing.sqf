@@ -21,7 +21,7 @@ woods and <marker name = 'target'>search and destroy</marker> all Russians.
 
 
 
-<br/>Determined Fox<br/><br/>
+<br/><br/>Determined Fox<br/><br/>
 
 GEN SITREP<br/>
 We are setting up for another advancement which will take place in tomorrow 
@@ -64,5 +64,5 @@ thats located there.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Search and Destroy infantry"];
-objective1 setSimpleTaskDescription ["Search and Destroy infantry", "Search and Destroy infantry", "Search and Destroy infantry"];
+objective1 = player createSimpleTask ["Search and Destroy infantry"];
+objective1 setSimpleTaskDescription ["Search and Destroy infantry", "Search and Destroy infantry", "Search and Destroy infantry"];

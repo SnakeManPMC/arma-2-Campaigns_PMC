@@ -26,7 +26,7 @@ Capture <marker name = 'alpha'>Provins</marker> and <marker name = 'charlie'>Fig
 
 
 
-<br/>Three Targets<br/><br/>
+<br/><br/>Three Targets<br/><br/>
 
 Todays objectives are three cities: Provins, Figari and Chotain. Capturing these locations
 will provide us with more stable fighting grounds.
@@ -60,11 +60,11 @@ believe lot of enemies are patrolling. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective4 = player createSimpleTask ["Clear out area between"];
-objective4 setSimpleTaskDescription ["Clear out area between", "Clear out area between", "Clear out area between"];
-objective3 = player createSimpleTask ["Capture Chotain"];
-objective3 setSimpleTaskDescription ["Capture Chotain", "Capture Chotain", "Capture Chotain"];
-objective2 = player createSimpleTask ["Capture Figari"];
-objective2 setSimpleTaskDescription ["Capture Figari", "Capture Figari", "Capture Figari"];
-objective1 = player createSimpleTask ["Capture Provins"];
-objective1 setSimpleTaskDescription ["Capture Provins", "Capture Provins", "Capture Provins"];
+objective4 = player createSimpleTask ["Clear out area between"];
+objective4 setSimpleTaskDescription ["Clear out area between", "Clear out area between", "Clear out area between"];
+objective3 = player createSimpleTask ["Capture Chotain"];
+objective3 setSimpleTaskDescription ["Capture Chotain", "Capture Chotain", "Capture Chotain"];
+objective2 = player createSimpleTask ["Capture Figari"];
+objective2 setSimpleTaskDescription ["Capture Figari", "Capture Figari", "Capture Figari"];
+objective1 = player createSimpleTask ["Capture Provins"];
+objective1 setSimpleTaskDescription ["Capture Provins", "Capture Provins", "Capture Provins"];

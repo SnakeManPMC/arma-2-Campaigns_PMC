@@ -21,7 +21,7 @@ enemy held <marker name = 'target1'>intersection</marker> and capture it.
 
 
 
-<br/>Big Horizon<br/><br/>
+<br/><br/>Big Horizon<br/><br/>
 
 GEN SITREP<br/>
 Moving forward to the west in northern Nogova, next objective is the enemy
@@ -62,5 +62,5 @@ there. Lets hope the birds stay away.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture intersection"];
-objective1 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];
+objective1 = player createSimpleTask ["Capture intersection"];
+objective1 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];

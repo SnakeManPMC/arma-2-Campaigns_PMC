@@ -24,7 +24,7 @@ into <marker name = 'bravo1'>Bravo</marker> squad's position.
 
 
 
-<br/>Awake Prophet<br/><br/>
+<br/><br/>Awake Prophet<br/><br/>
 
 GEN SITREP<br/>
 The plan for the bridge is almost complete, we believe its completed tomorrow and
@@ -65,7 +65,7 @@ Don't wonder off too much into the forests along the sweep area. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Sweep the area"];
-objective2 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];
-objective1 = player createSimpleTask ["Capture intersection"];
-objective1 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];
+objective2 = player createSimpleTask ["Sweep the area"];
+objective2 setSimpleTaskDescription ["Sweep the area", "Sweep the area", "Sweep the area"];
+objective1 = player createSimpleTask ["Capture intersection"];
+objective1 setSimpleTaskDescription ["Capture intersection", "Capture intersection", "Capture intersection"];

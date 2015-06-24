@@ -21,7 +21,7 @@ area and the bridge at all costs.
 
 
 
-<br/>Party Night<br/><br/>
+<br/><br/>Party Night<br/><br/>
 
 GEN SITREP<br/>
 Russians have launched counter attack to the bridge. Our forces will defend it at all
@@ -62,5 +62,5 @@ try to bring down as many enemy helos as possible.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend bridge"];
-objective1 setSimpleTaskDescription ["Defend bridge", "Defend bridge", "Defend bridge"];
+objective1 = player createSimpleTask ["Defend bridge"];
+objective1 setSimpleTaskDescription ["Defend bridge", "Defend bridge", "Defend bridge"];

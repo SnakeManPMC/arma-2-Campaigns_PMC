@@ -22,7 +22,7 @@ the <marker name = 'target1'>road</marker> and set up a ambush there.
 
 
 
-<br/>Hard Rock<br/><br/>
+<br/><br/>Hard Rock<br/><br/>
 
 GEN SITREP<br/>
 Our forces performed very well yesterday assaulting the enemy infested valley
@@ -70,7 +70,7 @@ This is going to be ambush time... only if you encounter any enemy forces in tha
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Ambush possible enemies"];
-objective2 setSimpleTaskDescription ["Ambush possible enemies", "Ambush possible enemies", "Ambush possible enemies"];
-objective1 = player createSimpleTask ["Clear road"];
-objective1 setSimpleTaskDescription ["Clear road", "Clear road", "Clear road"];
+objective2 = player createSimpleTask ["Ambush possible enemies"];
+objective2 setSimpleTaskDescription ["Ambush possible enemies", "Ambush possible enemies", "Ambush possible enemies"];
+objective1 = player createSimpleTask ["Clear road"];
+objective1 setSimpleTaskDescription ["Clear road", "Clear road", "Clear road"];

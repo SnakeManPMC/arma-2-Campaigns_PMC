@@ -26,7 +26,7 @@ Merry X-Mas and good luck!
 
 
 
-<br/>Santas Bag<br/><br/>
+<br/><br/>Santas Bag<br/><br/>
 
 GEN SITREP<br/>
 Soldiers, airmen and navy personnel, we have come long way in the war against Russians. 
@@ -71,7 +71,7 @@ Moscow, HO HO HO! Your mistletov is now match for my TOW missile!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture Mokropsy"];
-objective2 setSimpleTaskDescription ["Capture Mokropsy", "Capture Mokropsy", "Capture Mokropsy"];
-objective1 = player createSimpleTask ["Clear intersection"];
-objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];
+objective2 = player createSimpleTask ["Capture Mokropsy"];
+objective2 setSimpleTaskDescription ["Capture Mokropsy", "Capture Mokropsy", "Capture Mokropsy"];
+objective1 = player createSimpleTask ["Clear intersection"];
+objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];

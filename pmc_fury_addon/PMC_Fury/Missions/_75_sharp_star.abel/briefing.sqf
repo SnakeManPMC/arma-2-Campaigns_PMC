@@ -21,7 +21,7 @@ village of <marker name = 'target'>Sainte Marie</marker> and captures it.
 
 
 
-<br/>Sharp Star<br/><br/>
+<br/><br/>Sharp Star<br/><br/>
 
 GEN SITREP<br/>
 After we successfully took Chapoi we are immediately sending squad to assault
@@ -58,5 +58,5 @@ drops to almost knife fight ranges. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture Sainte Marie"];
-objective1 setSimpleTaskDescription ["Capture Sainte Marie", "Capture Sainte Marie", "Capture Sainte Marie"];
+objective1 = player createSimpleTask ["Capture Sainte Marie"];
+objective1 setSimpleTaskDescription ["Capture Sainte Marie", "Capture Sainte Marie", "Capture Sainte Marie"];

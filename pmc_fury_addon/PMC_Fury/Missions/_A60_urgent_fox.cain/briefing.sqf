@@ -26,7 +26,7 @@ coast.
 
 
 
-<br/>Urgent Fox<br/><br/>
+<br/><br/>Urgent Fox<br/><br/>
 
 GEN SITREP<br/>
 Today we initiate operation to capture enemys only base in the west coast of 
@@ -70,5 +70,5 @@ tanks. Do not get yourself killed over there.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture base"];
-objective1 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
+objective1 = player createSimpleTask ["Capture base"];
+objective1 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];

@@ -23,7 +23,7 @@ to <marker name = 'target3'>Arudy</marker> which is to be captured.
 
 
 
-<br/>Quick Horizon<br/><br/>
+<br/><br/>Quick Horizon<br/><br/>
 
 GEN SITREP<br/>
 Arudy area still contains considerable enemy positions which must be taken out. Todays
@@ -67,9 +67,9 @@ Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Capture Arudy"];
-objective3 setSimpleTaskDescription ["Capture Arudy", "Capture Arudy", "Capture Arudy"];
-objective2 = player createSimpleTask ["Clear our intersection #2"];
-objective2 setSimpleTaskDescription ["Clear our intersection #2", "Clear our intersection #2", "Clear our intersection #2"];
-objective1 = player createSimpleTask ["Clear our intersection #1"];
-objective1 setSimpleTaskDescription ["Clear our intersection #1", "Clear our intersection #1", "Clear our intersection #1"];
+objective3 = player createSimpleTask ["Capture Arudy"];
+objective3 setSimpleTaskDescription ["Capture Arudy", "Capture Arudy", "Capture Arudy"];
+objective2 = player createSimpleTask ["Clear our intersection #2"];
+objective2 setSimpleTaskDescription ["Clear our intersection #2", "Clear our intersection #2", "Clear our intersection #2"];
+objective1 = player createSimpleTask ["Clear our intersection #1"];
+objective1 setSimpleTaskDescription ["Clear our intersection #1", "Clear our intersection #1", "Clear our intersection #1"];

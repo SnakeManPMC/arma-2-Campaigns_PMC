@@ -28,7 +28,7 @@ Good luck everyone.
 
 
 
-<br/>Freedom<br/><br/>
+<br/><br/>Freedom<br/><br/>
 
 GEN SITREP<br/>
 Men and Women of the United States armed services, today we are gathering
@@ -93,5 +93,5 @@ before proceeding.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture airbase"];
-objective1 setSimpleTaskDescription ["Capture airbase", "Capture airbase", "Capture airbase"];
+objective1 = player createSimpleTask ["Capture airbase"];
+objective1 setSimpleTaskDescription ["Capture airbase", "Capture airbase", "Capture airbase"];

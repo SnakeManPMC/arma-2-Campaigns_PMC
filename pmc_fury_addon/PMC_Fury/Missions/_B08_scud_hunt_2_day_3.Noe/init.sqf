@@ -1,5 +1,6 @@
-[] execVM "briefing.sqf";
-PAPABEAR = [West, "HQ"];
+// auto added by PMC mission porting system 
+PAPABEAR = [West, "HQ"]; 
+[] execVM "briefing.sqf"; 
 
 aa = s1 loadStatus "01s1";
 aa = s2 loadStatus "01s2";

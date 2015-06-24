@@ -32,7 +32,7 @@ Second objective is to take the <marker name = 'hill'>hill</marker>
 
 
 
-<br/>Road Block<br/><br/>
+<br/><br/>Road Block<br/><br/>
 
 Russians took heavy loss in the battle of the base, they lost two platoons of tanks, two 
 squads of men, some guards and few bmps, also their reinforcements where wiped out.
@@ -68,7 +68,7 @@ You are free to engage any enemies you find on that hill.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Take the hill"];
-objective2 setSimpleTaskDescription ["Take the hill", "Take the hill", "Take the hill"];
-objective1 = player createSimpleTask ["Seize road block"];
-objective1 setSimpleTaskDescription ["Seize road block", "Seize road block", "Seize road block"];
+objective2 = player createSimpleTask ["Take the hill"];
+objective2 setSimpleTaskDescription ["Take the hill", "Take the hill", "Take the hill"];
+objective1 = player createSimpleTask ["Seize road block"];
+objective1 setSimpleTaskDescription ["Seize road block", "Seize road block", "Seize road block"];

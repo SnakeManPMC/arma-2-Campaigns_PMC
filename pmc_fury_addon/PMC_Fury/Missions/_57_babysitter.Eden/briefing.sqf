@@ -24,7 +24,7 @@ Transfer Russian POW's from the remote holding facility
 
 
 
-<br/>Babysitter<br/><br/>
+<br/><br/>Babysitter<br/><br/>
 
 While we prepare our assault to the front, we need to move some POW's from the island into
 more secure holding facility.
@@ -63,5 +63,5 @@ the overall security of NATO and the Russians safety.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Transfer POW's."];
-objective1 setSimpleTaskDescription ["Transfer POW's.", "Transfer POW's.", "Transfer POW's."];
+objective1 = player createSimpleTask ["Transfer POW's."];
+objective1 setSimpleTaskDescription ["Transfer POW's.", "Transfer POW's.", "Transfer POW's."];

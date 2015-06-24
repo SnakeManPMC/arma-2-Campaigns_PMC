@@ -1,9 +1,5 @@
-[] execVM "briefing.sqf";
-PAPABEAR = [West, "HQ"];
+// auto added by PMC mission porting system 
+PAPABEAR = [West, "HQ"]; 
+[] execVM "briefing.sqf"; 
 
-_ax = getpos vehicle moveh select 0;
-_ay = getpos vehicle moveh select 1;
-_az = getpos vehicle moveh select 2;
-
-surp1 setpos [_ax, _ay, _az];
-surp2 setpos [_ax, _ay, _az];
+[] execVM "position_surp.sqf";

@@ -21,7 +21,7 @@ the road and houses <marker name = 'target1'>area</marker> for any enemy forces.
 
 
 
-<br/>Combat Desire<br/><br/>
+<br/><br/>Combat Desire<br/><br/>
 
 GEN SITREP<br/>
 Our forces performed brilliantly on the Modrova operation, now we are in control
@@ -60,5 +60,5 @@ careful when you kick their butts and you'll do fine.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear road and houses"];
-objective1 setSimpleTaskDescription ["Clear road and houses", "Clear road and houses", "Clear road and houses"];
+objective1 = player createSimpleTask ["Clear road and houses"];
+objective1 setSimpleTaskDescription ["Clear road and houses", "Clear road and houses", "Clear road and houses"];

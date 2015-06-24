@@ -23,9 +23,9 @@ flyboys lockWP true;
 
 ; loop
 #KeepUsAtHelo
-~10;
-?(joinage || (!alive pplilot1 && !alive pgunner1)): exit;
+~10
+?(joinage || (!alive pplilot1 && !alive pgunner1)): exit
 ?(leader flyboys distance helo > 20): leader flyboys move getpos helo;
 goto "KeepUsAtHelo";
 
-exit;
+exit

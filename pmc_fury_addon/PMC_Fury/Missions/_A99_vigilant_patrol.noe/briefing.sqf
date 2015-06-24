@@ -21,7 +21,7 @@ into the <marker name = 'target1'>hilltop</marker> and clear it.
 
 
 
-<br/>Vigilant Patrol<br/><br/>
+<br/><br/>Vigilant Patrol<br/><br/>
 
 GEN SITREP<br/>
 Tomorrow we are launching operation against the valley where lot of enemy armor 
@@ -59,7 +59,7 @@ the less. You'll do just fine, tomorrow is a big day so take it easy.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Arrive to Blata"];
-objective2 setSimpleTaskDescription ["Arrive to Blata", "Arrive to Blata", "Arrive to Blata"];
-objective1 = player createSimpleTask ["Clear hilltop"];
-objective1 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];
+objective2 = player createSimpleTask ["Arrive to Blata"];
+objective2 setSimpleTaskDescription ["Arrive to Blata", "Arrive to Blata", "Arrive to Blata"];
+objective1 = player createSimpleTask ["Clear hilltop"];
+objective1 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];

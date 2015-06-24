@@ -23,7 +23,7 @@ enemy <marker name = 'target1'>positions</marker> in the road.
 
 
 
-<br/>Rolling Blaze<br/><br/>
+<br/><br/>Rolling Blaze<br/><br/>
 
 GEN SITREP<br/>
 Today we go against the eastern coastal road, our attempt is to push forward
@@ -65,5 +65,5 @@ very careful, move slowly and keep it low.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Seize road objective"];
-objective1 setSimpleTaskDescription ["Seize road objective", "Seize road objective", "Seize road objective"];
+objective1 = player createSimpleTask ["Seize road objective"];
+objective1 setSimpleTaskDescription ["Seize road objective", "Seize road objective", "Seize road objective"];

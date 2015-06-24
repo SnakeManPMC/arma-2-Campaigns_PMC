@@ -22,7 +22,7 @@ also <marker name = 'target2'>mountain 2</marker> clear all Russians from them.
 
 
 
-<br/>Eagle Nest<br/><br/>
+<br/><br/>Eagle Nest<br/><br/>
 
 GEN SITREP<br/>
 Todays operation calls for neutralization of Russian infantry from the 
@@ -61,7 +61,7 @@ fights ou there.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Clear mountain #2"];
-objective2 setSimpleTaskDescription ["Clear mountain #2", "Clear mountain #2", "Clear mountain #2"];
-objective1 = player createSimpleTask ["Clear mountain #1"];
-objective1 setSimpleTaskDescription ["Clear mountain #1", "Clear mountain #1", "Clear mountain #1"];
+objective2 = player createSimpleTask ["Clear mountain #2"];
+objective2 setSimpleTaskDescription ["Clear mountain #2", "Clear mountain #2", "Clear mountain #2"];
+objective1 = player createSimpleTask ["Clear mountain #1"];
+objective1 setSimpleTaskDescription ["Clear mountain #1", "Clear mountain #1", "Clear mountain #1"];

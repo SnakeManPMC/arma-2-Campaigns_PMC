@@ -21,7 +21,7 @@ capture <marker name = 'target1'>Okrouhlo</marker> town.
 
 
 
-<br/>Rough Way<br/><br/>
+<br/><br/>Rough Way<br/><br/>
 
 GEN SITREP<br/>
 Okrouhlo town is our todays objective which is located north east from the invasion
@@ -61,5 +61,5 @@ There aren't that many enemies in the Okrouhlo, but they sure are expecting you.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture Okrouhlo"];
-objective1 setSimpleTaskDescription ["Capture Okrouhlo", "Capture Okrouhlo", "Capture Okrouhlo"];
+objective1 = player createSimpleTask ["Capture Okrouhlo"];
+objective1 setSimpleTaskDescription ["Capture Okrouhlo", "Capture Okrouhlo", "Capture Okrouhlo"];

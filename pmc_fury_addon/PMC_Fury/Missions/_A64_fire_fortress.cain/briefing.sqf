@@ -25,7 +25,7 @@ Good luck everyone.
 
 
 
-<br/>Fire Fortress<br/><br/>
+<br/><br/>Fire Fortress<br/><br/>
 
 GEN SITREP<br/>
 Today is a big day. Weather is improving a lot, weather team is not expecting
@@ -72,5 +72,5 @@ full mental and physical health lateron today! Don't let me down buddy.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture ruins"];
-objective1 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];
+objective1 = player createSimpleTask ["Capture ruins"];
+objective1 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];

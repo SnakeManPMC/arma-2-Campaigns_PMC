@@ -22,7 +22,7 @@ enemies you encounter until you reach <marker name = 'bravo'>Bravo</marker> squa
 
 
 
-<br/>Big Sweep<br/><br/>
+<br/><br/>Big Sweep<br/><br/>
 
 GEN SITREP<br/>
 Next large objective is to capture the largest mountain top in Kolgujev, we are
@@ -62,5 +62,5 @@ even though no vehicles are present. The Russians are still giving us good fight
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweep area and meet Bravo"];
-objective1 setSimpleTaskDescription ["Sweep area and meet Bravo", "Sweep area and meet Bravo", "Sweep area and meet Bravo"];
+objective1 = player createSimpleTask ["Sweep area and meet Bravo"];
+objective1 setSimpleTaskDescription ["Sweep area and meet Bravo", "Sweep area and meet Bravo", "Sweep area and meet Bravo"];

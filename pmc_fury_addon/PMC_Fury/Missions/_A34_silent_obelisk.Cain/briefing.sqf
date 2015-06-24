@@ -20,7 +20,7 @@ Alpha team <marker name = 'start'>start</marker> from base
 
 
 
-<br/>Silent Obelisk<br/><br/>
+<br/><br/>Silent Obelisk<br/><br/>
 
 GEN SITREP<br/>
 We must assume that the enemy is poking our defenses at night, so our troops
@@ -57,5 +57,5 @@ and ears listening. You might get some company tonight.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Guard the base"];
-objective1 setSimpleTaskDescription ["Guard the base", "Guard the base", "Guard the base"];
+objective1 = player createSimpleTask ["Guard the base"];
+objective1 setSimpleTaskDescription ["Guard the base", "Guard the base", "Guard the base"];

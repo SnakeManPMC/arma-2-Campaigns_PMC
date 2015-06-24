@@ -23,7 +23,7 @@ capture <marker name = 'target1'>base</marker> in the mountain.
 
 
 
-<br/>Little Prince<br/><br/>
+<br/><br/>Little Prince<br/><br/>
 
 GEN SITREP<br/>
 Today we launch assault against the first of the enemy bases high up in the
@@ -65,5 +65,5 @@ safest place one could imagine. Keep the base secure until backups arrive by hel
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture the base"];
-objective1 setSimpleTaskDescription ["Capture the base", "Capture the base", "Capture the base"];
+objective1 = player createSimpleTask ["Capture the base"];
+objective1 setSimpleTaskDescription ["Capture the base", "Capture the base", "Capture the base"];

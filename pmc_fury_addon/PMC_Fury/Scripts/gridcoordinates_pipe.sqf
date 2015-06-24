@@ -7,5 +7,3 @@ With comchannel you can choose the method of output:
 Example:
 [GetPos player, "My position is grid ", ". Over.", ["SideChat", player]] exec "gridcoordinates.sqs"
 */
-
-if (true) exitWith{};

@@ -29,7 +29,7 @@ Have fun.
 
 
 
-<br/>Good morning Everon<br/><br/>
+<br/><br/>Good morning Everon<br/><br/>
 
 We have gathered intelligence on the Saint Pierre now and it seems that they have put 
 extremely heavy defences there. We are still sorting out all the intel and have clearer
@@ -80,5 +80,5 @@ in there. Do the job with decisive and accurate blow to the convoy. Good luck!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Kill the convoy"];
-objective1 setSimpleTaskDescription ["Kill the convoy", "Kill the convoy", "Kill the convoy"];
+objective1 = player createSimpleTask ["Kill the convoy"];
+objective1 setSimpleTaskDescription ["Kill the convoy", "Kill the convoy", "Kill the convoy"];

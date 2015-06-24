@@ -24,7 +24,7 @@ Good luck!
 
 
 
-<br/>Rolling Promise<br/><br/>
+<br/><br/>Rolling Promise<br/><br/>
 
 GEN SITREP<br/>
 Our time to attack city of Chapoi has arrived. Now we launch combined armor and 
@@ -61,5 +61,5 @@ Be careful on this one, there is going to be heavy resistance. Keep low, take th
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture Chapoi"];
-objective1 setSimpleTaskDescription ["Capture Chapoi", "Capture Chapoi", "Capture Chapoi"];
+objective1 = player createSimpleTask ["Capture Chapoi"];
+objective1 setSimpleTaskDescription ["Capture Chapoi", "Capture Chapoi", "Capture Chapoi"];

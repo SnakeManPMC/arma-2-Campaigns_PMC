@@ -1,5 +1,5 @@
 
-if (WartyRunning) then { onMapSingleClick "false"; exit; } else { WartyRunning=true; };
+if (WartyRunning) then { onMapSingleClick ""false""; exit; } else { WartyRunning=true; };
 
 3 setradiomsg "null";
 
@@ -7,12 +7,12 @@ _Position = _this select 0;
 _coords = _this select 0;
 _radius = 150;
 _height = 0;
-_ord = "Sh_125_HE";
+_ord = "Shell125";
 _salvo = 8;
 _a = 0;
 _AR = leader assault1;
 
-;NOT USED [_Position, "WE NEED ARTILLERY SUPPORT TO GRID COORDINATES ", ". OVER.", ["SideChat", _AR]] exec "gridcoordinates_pipe.sqs";
+[_Position, "WE NEED ARTILLERY SUPPORT TO GRID COORDINATES ", ". OVER.", ["SideChat", _AR]] exec "gridcoordinates_pipe.sqs";
 
 "arty" setMarkerPos _Position;
 "arty" setmarkertype "destroy";
@@ -42,7 +42,7 @@ if (ArtyCalls==5) then { goto "EndOfArty"; } else { ArtyCalls=ArtyCalls+1; };
 PAPABEAR sidechat "ARTILLERY AVAILABLE ON YOUR CALL AGAIN. PAPA BEAR OUT.";
 
 WartyRunning=false;
-onMapSingleClick "false";
+onMapSingleClick ""false"";
 
 exit
 

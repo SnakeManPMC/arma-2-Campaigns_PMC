@@ -23,7 +23,7 @@ Good luck everyone.
 
 
 
-<br/>Nomad Stick<br/><br/>
+<br/><br/>Nomad Stick<br/><br/>
 
 GEN SITREP<br/>
 The day of our assault to La Trinite is here. Today we execute combined arms attack
@@ -67,5 +67,5 @@ are knocked out before you order Bravo and Foxtrot to attack.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture La Trinite"];
-objective1 setSimpleTaskDescription ["Capture La Trinite", "Capture La Trinite", "Capture La Trinite"];
+objective1 = player createSimpleTask ["Capture La Trinite"];
+objective1 setSimpleTaskDescription ["Capture La Trinite", "Capture La Trinite", "Capture La Trinite"];

@@ -1,6 +1,7 @@
-[] execVM "briefing.sqf";
-PAPABEAR = [West, "HQ"];
+// auto added by PMC mission porting system 
+PAPABEAR = [West, "HQ"]; 
+[] execVM "briefing.sqf"; 
 
 WartyRunning = false;
 ArtyCount = 0;
-"arty" setmarkerpos [-50, -50, 0];
+"arty" setMarkerPos [-50, -50, 0];

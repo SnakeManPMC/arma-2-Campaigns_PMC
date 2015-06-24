@@ -26,7 +26,7 @@ Get onboard the UH-60 Blackhawk and recon the area from air.
 
 
 
-<br/>Flyboys<br/><br/>
+<br/><br/>Flyboys<br/><br/>
 
 There was very low resistance on Saint Phillippe and the Hospital, our patrol
 cleared them out nicely.
@@ -53,5 +53,5 @@ We are still building up our forces and you have some free time...
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Recon flight"];
-objective1 setSimpleTaskDescription ["Recon flight", "Recon flight", "Recon flight"];
+objective1 = player createSimpleTask ["Recon flight"];
+objective1 setSimpleTaskDescription ["Recon flight", "Recon flight", "Recon flight"];

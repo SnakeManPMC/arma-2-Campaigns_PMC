@@ -22,7 +22,7 @@ Good luck.
 
 
 
-<br/>Infinite Wind<br/><br/>
+<br/><br/>Infinite Wind<br/><br/>
 
 GEN SITREP<br/>
 Before we can set the base fully operational we must defend the Russian
@@ -59,5 +59,5 @@ come to view. The distances are pretty close so its going to be tough fight.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend the base"];
-objective1 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];
+objective1 = player createSimpleTask ["Defend the base"];
+objective1 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];

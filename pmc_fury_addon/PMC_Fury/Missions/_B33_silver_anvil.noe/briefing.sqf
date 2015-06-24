@@ -22,7 +22,7 @@ also <marker name = 'target2'>houses #2</marker> in the beach.
 
 
 
-<br/>Silver Anvil<br/><br/>
+<br/><br/>Silver Anvil<br/><br/>
 
 GEN SITREP<br/>
 Our forces were successful taking the Neveklov, we are getting much closer now
@@ -63,7 +63,7 @@ enemy vehicles.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture house"];
-objective2 setSimpleTaskDescription ["Capture house", "Capture house", "Capture house"];
-objective1 = player createSimpleTask ["Capture Farmhouses"];
-objective1 setSimpleTaskDescription ["Capture Farmhouses", "Capture Farmhouses", "Capture Farmhouses"];
+objective2 = player createSimpleTask ["Capture house"];
+objective2 setSimpleTaskDescription ["Capture house", "Capture house", "Capture house"];
+objective1 = player createSimpleTask ["Capture Farmhouses"];
+objective1 setSimpleTaskDescription ["Capture Farmhouses", "Capture Farmhouses", "Capture Farmhouses"];

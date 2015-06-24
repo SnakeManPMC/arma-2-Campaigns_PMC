@@ -31,7 +31,7 @@ the <marker name = 'extract'>extraction LZ</marker> for helo extract.
 
 
 
-<br/>Scud Hunt Day 3<br/><br/>
+<br/><br/>Scud Hunt Day 3<br/><br/>
 
 GEN SITREP<br/>
 none
@@ -66,7 +66,7 @@ none
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Get to extraction LZ"];
-objective2 setSimpleTaskDescription ["Get to extraction LZ", "Get to extraction LZ", "Get to extraction LZ"];
-objective1 = player createSimpleTask ["Search and Destroy scuds"];
-objective1 setSimpleTaskDescription ["Search and Destroy scuds", "Search and Destroy scuds", "Search and Destroy scuds"];
+objective2 = player createSimpleTask ["Get to extraction LZ"];
+objective2 setSimpleTaskDescription ["Get to extraction LZ", "Get to extraction LZ", "Get to extraction LZ"];
+objective1 = player createSimpleTask ["Search and Destroy scuds"];
+objective1 setSimpleTaskDescription ["Search and Destroy scuds", "Search and Destroy scuds", "Search and Destroy scuds"];

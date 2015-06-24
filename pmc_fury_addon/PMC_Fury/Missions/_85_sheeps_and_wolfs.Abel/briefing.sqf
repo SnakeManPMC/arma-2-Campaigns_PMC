@@ -22,7 +22,7 @@ enemy <marker name = 'target2'>AA Site</marker> in the hill top.
 
 
 
-<br/>Sheeps and Wolfs<br/><br/>
+<br/><br/>Sheeps and Wolfs<br/><br/>
 
 GEN SITREP<br/>
 Proceeding further towards central Malden, we must attack the hill tops that
@@ -64,7 +64,7 @@ going to be heavily defended.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Neutralize AA Site"];
-objective2 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];
-objective1 = player createSimpleTask ["Clear ridge line"];
-objective1 setSimpleTaskDescription ["Clear ridge line", "Clear ridge line", "Clear ridge line"];
+objective2 = player createSimpleTask ["Neutralize AA Site"];
+objective2 setSimpleTaskDescription ["Neutralize AA Site", "Neutralize AA Site", "Neutralize AA Site"];
+objective1 = player createSimpleTask ["Clear ridge line"];
+objective1 setSimpleTaskDescription ["Clear ridge line", "Clear ridge line", "Clear ridge line"];

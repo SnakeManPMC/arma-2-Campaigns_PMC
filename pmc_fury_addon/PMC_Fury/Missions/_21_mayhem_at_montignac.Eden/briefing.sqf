@@ -24,7 +24,7 @@ Attack <marker name = 'montignac'>Montignac</marker> and capture it. Use radio c
 
 
 
-<br/>Montignac<br/><br/>
+<br/><br/>Montignac<br/><br/>
 
 The largest city in the central Everon, Montignac is coming under NATO attack today.
 This is considered a major achievement in our campaign, as this city poses the majority
@@ -59,5 +59,5 @@ out there, its going to be one hell of a battle.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture Montignac"];
-objective1 setSimpleTaskDescription ["Capture Montignac", "Capture Montignac", "Capture Montignac"];
+objective1 = player createSimpleTask ["Capture Montignac"];
+objective1 setSimpleTaskDescription ["Capture Montignac", "Capture Montignac", "Capture Montignac"];

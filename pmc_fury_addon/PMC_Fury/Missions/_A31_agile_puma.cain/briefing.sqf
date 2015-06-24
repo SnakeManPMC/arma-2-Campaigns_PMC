@@ -23,7 +23,7 @@ Good climbing.
 
 
 
-<br/>Agile Puma<br/><br/>
+<br/><br/>Agile Puma<br/><br/>
 
 GEN SITREP<br/>
 The mountains south from our last objective are still enemy territory and active
@@ -65,5 +65,5 @@ there is still the commies targetting you. Use caution. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweep the mountain"];
-objective1 setSimpleTaskDescription ["Sweep the mountain", "Sweep the mountain", "Sweep the mountain"];
+objective1 = player createSimpleTask ["Sweep the mountain"];
+objective1 setSimpleTaskDescription ["Sweep the mountain", "Sweep the mountain", "Sweep the mountain"];

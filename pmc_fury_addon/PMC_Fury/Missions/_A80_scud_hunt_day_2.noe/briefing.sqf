@@ -32,7 +32,7 @@ reach <marker name = 'camp'>campign</marker> point.
 
 
 
-<br/>Scud Hunt Day 2<br/><br/>
+<br/><br/>Scud Hunt Day 2<br/><br/>
 
 GEN SITREP<br/>
 none
@@ -65,7 +65,7 @@ none
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Reach campign point"];
-objective2 setSimpleTaskDescription ["Reach campign point", "Reach campign point", "Reach campign point"];
-objective1 = player createSimpleTask ["Search and destroy scuds"];
-objective1 setSimpleTaskDescription ["Search and destroy scuds", "Search and destroy scuds", "Search and destroy scuds"];
+objective2 = player createSimpleTask ["Reach campign point"];
+objective2 setSimpleTaskDescription ["Reach campign point", "Reach campign point", "Reach campign point"];
+objective1 = player createSimpleTask ["Search and destroy scuds"];
+objective1 setSimpleTaskDescription ["Search and destroy scuds", "Search and destroy scuds", "Search and destroy scuds"];

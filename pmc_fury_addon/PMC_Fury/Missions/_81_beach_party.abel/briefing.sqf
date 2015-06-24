@@ -22,7 +22,7 @@ also <marker name = 'target2'>beaches</marker>
 
 
 
-<br/>Beach Party<br/><br/>
+<br/><br/>Beach Party<br/><br/>
 
 GEN SITREP<br/>
 We push towards north along the eastern beach line. the strategic locations are the
@@ -67,7 +67,7 @@ need any AA equipment. Be careful out there!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture beaches"];
-objective2 setSimpleTaskDescription ["Capture beaches", "Capture beaches", "Capture beaches"];
-objective1 = player createSimpleTask ["Clear out intersection"];
-objective1 setSimpleTaskDescription ["Clear out intersection", "Clear out intersection", "Clear out intersection"];
+objective2 = player createSimpleTask ["Capture beaches"];
+objective2 setSimpleTaskDescription ["Capture beaches", "Capture beaches", "Capture beaches"];
+objective1 = player createSimpleTask ["Clear out intersection"];
+objective1 setSimpleTaskDescription ["Clear out intersection", "Clear out intersection", "Clear out intersection"];

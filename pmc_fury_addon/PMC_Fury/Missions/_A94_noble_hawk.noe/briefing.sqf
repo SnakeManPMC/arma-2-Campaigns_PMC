@@ -22,7 +22,7 @@ arrive to <marker name = 'arrive'>Bor</marker> village.
 
 
 
-<br/>Noble Hawk<br/><br/>
+<br/><br/>Noble Hawk<br/><br/>
 
 GEN SITREP<br/>
 We must clear out some terrain between Bor and Lany as there is pockets of enemy 
@@ -63,7 +63,7 @@ up for small infantry fight in the hilltop. Nothing special, be careful as usual
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Arrive to Bor"];
-objective2 setSimpleTaskDescription ["Arrive to Bor", "Arrive to Bor", "Arrive to Bor"];
-objective1 = player createSimpleTask ["Clear hilltop"];
-objective1 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];
+objective2 = player createSimpleTask ["Arrive to Bor"];
+objective2 setSimpleTaskDescription ["Arrive to Bor", "Arrive to Bor", "Arrive to Bor"];
+objective1 = player createSimpleTask ["Clear hilltop"];
+objective1 setSimpleTaskDescription ["Clear hilltop", "Clear hilltop", "Clear hilltop"];

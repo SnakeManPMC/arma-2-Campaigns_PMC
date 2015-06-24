@@ -21,7 +21,7 @@ helo and meet bravo. Assault towards west in the coastal road.
 
 
 
-<br/>Noble Warrior<br/><br/>
+<br/><br/>Noble Warrior<br/><br/>
 
 GEN SITREP<br/>
 It was extremely long night in the east coast but finally we stopped the Russian
@@ -66,5 +66,5 @@ very careful. Use the arty to soften them up before moving ahead.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Assault to objective"];
-objective1 setSimpleTaskDescription ["Assault to objective", "Assault to objective", "Assault to objective"];
+objective1 = player createSimpleTask ["Assault to objective"];
+objective1 setSimpleTaskDescription ["Assault to objective", "Assault to objective", "Assault to objective"];

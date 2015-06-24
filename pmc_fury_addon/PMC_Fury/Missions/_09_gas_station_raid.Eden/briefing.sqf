@@ -27,7 +27,7 @@ Good luck.
 
 
 
-<br/>Gasoline<br/><br/>
+<br/><br/>Gasoline<br/><br/>
 
 The gas station due south from the base is next strategic location in our campaign 
 against the Russians. If we capture it, we can give some high value fuel to our 
@@ -59,5 +59,5 @@ there.
 < ---THE FOLLOWING IS THE TEXT FOR THE SECOND SECTION ON THE OBJECTIVE LIST>
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Secure the Gas Station"];
-objective1 setSimpleTaskDescription ["Secure the Gas Station", "Secure the Gas Station", "Secure the Gas Station"];
+objective1 = player createSimpleTask ["Secure the Gas Station"];
+objective1 setSimpleTaskDescription ["Secure the Gas Station", "Secure the Gas Station", "Secure the Gas Station"];

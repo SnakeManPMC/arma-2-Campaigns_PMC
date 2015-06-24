@@ -25,7 +25,7 @@ the <marker name = 'extract'>extraction</marker> point.
 
 
 
-<br/>Scud Hunt 2, Day 3<br/><br/>
+<br/><br/>Scud Hunt 2, Day 3<br/><br/>
 
 GEN SITREP<br/>
 none
@@ -60,9 +60,9 @@ none
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Return to base"];
-objective3 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-objective2 = player createSimpleTask ["Get to Extraction LZ"];
-objective2 setSimpleTaskDescription ["Get to Extraction LZ", "Get to Extraction LZ", "Get to Extraction LZ"];
-objective1 = player createSimpleTask ["Hunt Scud launchers"];
-objective1 setSimpleTaskDescription ["Hunt Scud launchers", "Hunt Scud launchers", "Hunt Scud launchers"];
+objective3 = player createSimpleTask ["Return to base"];
+objective3 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective2 = player createSimpleTask ["Get to Extraction LZ"];
+objective2 setSimpleTaskDescription ["Get to Extraction LZ", "Get to Extraction LZ", "Get to Extraction LZ"];
+objective1 = player createSimpleTask ["Hunt Scud launchers"];
+objective1 setSimpleTaskDescription ["Hunt Scud launchers", "Hunt Scud launchers", "Hunt Scud launchers"];

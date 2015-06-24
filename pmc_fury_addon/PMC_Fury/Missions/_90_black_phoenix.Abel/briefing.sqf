@@ -22,7 +22,7 @@ Meet with <marker name = 'charlie1'>Charlie</marker> squad to end mission.
 
 
 
-<br/>Black Phoenix<br/><br/>
+<br/><br/>Black Phoenix<br/><br/>
 
 GEN SITREP<br/>
 Enemy has launched few Scuds to NATO targets, we must now hunt them down and
@@ -63,7 +63,7 @@ of stuff to blow up when you find the Scuds. Good luck!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Meet Charlie squad"];
-objective2 setSimpleTaskDescription ["Meet Charlie squad", "Meet Charlie squad", "Meet Charlie squad"];
-objective1 = player createSimpleTask ["Destroy Scuds"];
-objective1 setSimpleTaskDescription ["Destroy Scuds", "Destroy Scuds", "Destroy Scuds"];
+objective2 = player createSimpleTask ["Meet Charlie squad"];
+objective2 setSimpleTaskDescription ["Meet Charlie squad", "Meet Charlie squad", "Meet Charlie squad"];
+objective1 = player createSimpleTask ["Destroy Scuds"];
+objective1 setSimpleTaskDescription ["Destroy Scuds", "Destroy Scuds", "Destroy Scuds"];

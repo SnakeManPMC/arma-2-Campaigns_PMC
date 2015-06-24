@@ -23,7 +23,7 @@ Good luck!
 
 
 
-<br/>Dark Rabbit<br/><br/>
+<br/><br/>Dark Rabbit<br/><br/>
 
 GEN SITREP<br/>
 Today we commence the assault into Kolgujev. This operation begins with new hope
@@ -64,7 +64,7 @@ target area. Move quickly and eliminate them all before they realize whats going
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture docks"];
-objective2 setSimpleTaskDescription ["Capture docks", "Capture docks", "Capture docks"];
-objective1 = player createSimpleTask ["Capture buildings"];
-objective1 setSimpleTaskDescription ["Capture buildings", "Capture buildings", "Capture buildings"];
+objective2 = player createSimpleTask ["Capture docks"];
+objective2 setSimpleTaskDescription ["Capture docks", "Capture docks", "Capture docks"];
+objective1 = player createSimpleTask ["Capture buildings"];
+objective1 setSimpleTaskDescription ["Capture buildings", "Capture buildings", "Capture buildings"];

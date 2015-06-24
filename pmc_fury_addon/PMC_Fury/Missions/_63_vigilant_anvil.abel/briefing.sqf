@@ -24,7 +24,7 @@ for <marker name = 'invasion'>invasion</marker> and stay alive!
 
 
 
-<br/>Vigilant Anvil<br/><br/>
+<br/><br/>Vigilant Anvil<br/><br/>
 
 GEN SITREP<br/>
 Russians are sending their first wave of counter attack to the beachhead invaded 
@@ -63,5 +63,5 @@ Stinger missiles so you can shoot down any incoming enemy helos.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Secure the beach"];
-objective1 setSimpleTaskDescription ["Secure the beach", "Secure the beach", "Secure the beach"];
+objective1 = player createSimpleTask ["Secure the beach"];
+objective1 setSimpleTaskDescription ["Secure the beach", "Secure the beach", "Secure the beach"];

@@ -23,7 +23,7 @@ Good luck.
 
 
 
-<br/>Urgent Angel<br/><br/>
+<br/><br/>Urgent Angel<br/><br/>
 
 GEN SITREP<br/>
 Pushing forward towards north, next goal is to seize the town of Dourdan just south
@@ -61,5 +61,5 @@ the good old ruskie infantry.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture Dourdan"];
-objective1 setSimpleTaskDescription ["Capture Dourdan", "Capture Dourdan", "Capture Dourdan"];
+objective1 = player createSimpleTask ["Capture Dourdan"];
+objective1 setSimpleTaskDescription ["Capture Dourdan", "Capture Dourdan", "Capture Dourdan"];

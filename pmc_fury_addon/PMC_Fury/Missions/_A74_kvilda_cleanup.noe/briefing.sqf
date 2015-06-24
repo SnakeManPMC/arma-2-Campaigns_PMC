@@ -22,7 +22,7 @@ and clean up <marker name = 'target1'>Kvilda</marker> in the coast.
 
 
 
-<br/>Kvilda Cleanup<br/><br/>
+<br/><br/>Kvilda Cleanup<br/><br/>
 
 GEN SITREP<br/>
 There is some Nogova civilians that are requesting evacuation as they are in fear
@@ -65,7 +65,7 @@ problems clearing this place up. But as always, be cautious and quick too.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Return to base"];
-objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-objective1 = player createSimpleTask ["Clear Kvilda"];
-objective1 setSimpleTaskDescription ["Clear Kvilda", "Clear Kvilda", "Clear Kvilda"];
+objective2 = player createSimpleTask ["Return to base"];
+objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective1 = player createSimpleTask ["Clear Kvilda"];
+objective1 setSimpleTaskDescription ["Clear Kvilda", "Clear Kvilda", "Clear Kvilda"];

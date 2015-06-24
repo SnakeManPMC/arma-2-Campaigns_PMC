@@ -31,7 +31,7 @@ Good luck.
 
 
 
-<br/>High Stakes<br/><br/>
+<br/><br/>High Stakes<br/><br/>
 
 GEN SITREP<br/>
 Scuds have been stopped, no more launches against our troops. Now we can only
@@ -75,9 +75,9 @@ could take out half of your squad.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Capture mountain #3"];
-objective3 setSimpleTaskDescription ["Capture mountain #3", "Capture mountain #3", "Capture mountain #3"];
-objective2 = player createSimpleTask ["Capture mountain #2"];
-objective2 setSimpleTaskDescription ["Capture mountain #2", "Capture mountain #2", "Capture mountain #2"];
-objective1 = player createSimpleTask ["Capture mountain #1"];
-objective1 setSimpleTaskDescription ["Capture mountain #1", "Capture mountain #1", "Capture mountain #1"];
+objective3 = player createSimpleTask ["Capture mountain #3"];
+objective3 setSimpleTaskDescription ["Capture mountain #3", "Capture mountain #3", "Capture mountain #3"];
+objective2 = player createSimpleTask ["Capture mountain #2"];
+objective2 setSimpleTaskDescription ["Capture mountain #2", "Capture mountain #2", "Capture mountain #2"];
+objective1 = player createSimpleTask ["Capture mountain #1"];
+objective1 setSimpleTaskDescription ["Capture mountain #1", "Capture mountain #1", "Capture mountain #1"];

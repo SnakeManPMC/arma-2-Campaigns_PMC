@@ -22,7 +22,7 @@ Proceed into east and search for enemy <marker name = 'target1'>ammo cache</mark
 
 
 
-<br/>Ammo Denial<br/><br/>
+<br/><br/>Ammo Denial<br/><br/>
 
 GEN SITREP<br/>
 Now we are in control of the northern most areas of the island, including the 
@@ -63,5 +63,5 @@ remaining enemies in the forests.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Find and destroy ammo cache"];
-objective1 setSimpleTaskDescription ["Find and destroy ammo cache", "Find and destroy ammo cache", "Find and destroy ammo cache"];
+objective1 = player createSimpleTask ["Find and destroy ammo cache"];
+objective1 setSimpleTaskDescription ["Find and destroy ammo cache", "Find and destroy ammo cache", "Find and destroy ammo cache"];

@@ -26,7 +26,7 @@ Saint Phillippe <marker name = 'patrol1'>here</marker> and the hospital
 
 
 
-<br/>Patrols<br/><br/>
+<br/><br/>Patrols<br/><br/>
 
 We start to move along due south. Now we see what we are up against in this island.
 <br/><br/>
@@ -54,7 +54,7 @@ Saint Phillippe <marker name = 'patrol1'>here</marker> and second objective is t
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Patrol the Hospital"];
-objective2 setSimpleTaskDescription ["Patrol the Hospital", "Patrol the Hospital", "Patrol the Hospital"];
-objective1 = player createSimpleTask ["Patrol Saint Phillippe"];
-objective1 setSimpleTaskDescription ["Patrol Saint Phillippe", "Patrol Saint Phillippe", "Patrol Saint Phillippe"];
+objective2 = player createSimpleTask ["Patrol the Hospital"];
+objective2 setSimpleTaskDescription ["Patrol the Hospital", "Patrol the Hospital", "Patrol the Hospital"];
+objective1 = player createSimpleTask ["Patrol Saint Phillippe"];
+objective1 setSimpleTaskDescription ["Patrol Saint Phillippe", "Patrol Saint Phillippe", "Patrol Saint Phillippe"];

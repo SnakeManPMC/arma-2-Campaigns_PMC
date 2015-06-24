@@ -22,7 +22,7 @@ all possible enemy attacks.
 
 
 
-<br/>Tall Coyote<br/><br/>
+<br/><br/>Tall Coyote<br/><br/>
 
 GEN SITREP<br/>
 Weather front keeps closing in, its no confirmed to be as bad as predicted. Tomorrow
@@ -63,5 +63,5 @@ blown to bits no do you? No helos so all you need to keep an eye is the ground. 
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend ruins"];
-objective1 setSimpleTaskDescription ["Defend ruins", "Defend ruins", "Defend ruins"];
+objective1 = player createSimpleTask ["Defend ruins"];
+objective1 setSimpleTaskDescription ["Defend ruins", "Defend ruins", "Defend ruins"];

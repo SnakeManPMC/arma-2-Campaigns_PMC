@@ -23,7 +23,7 @@ the <marker name = 'target1'>Blata</marker> village in the hill.
 
 
 
-<br/>Safari Heat<br/><br/>
+<br/><br/>Safari Heat<br/><br/>
 
 GEN SITREP<br/>
 More Russian armor have been reported to be deployed in the Nogova island, they are
@@ -68,5 +68,5 @@ soldiers ready for any vehicles like BMP's.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Assault Blata"];
-objective1 setSimpleTaskDescription ["Assault Blata", "Assault Blata", "Assault Blata"];
+objective1 = player createSimpleTask ["Assault Blata"];
+objective1 setSimpleTaskDescription ["Assault Blata", "Assault Blata", "Assault Blata"];

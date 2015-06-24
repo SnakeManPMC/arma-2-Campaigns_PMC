@@ -22,7 +22,7 @@ enemy <marker name = 'target1'>sniper</marker> team behind friendly lines.
 
 
 
-<br/>Red Sniper<br/><br/>
+<br/><br/>Red Sniper<br/><br/>
 
 GEN SITREP<br/>
 Weather keeps improving slowly, it should not take long now to have the rain stop
@@ -64,5 +64,5 @@ and eliminate one or two men in large area, this could be tricky... Happy huntin
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Find and kill Sniper team"];
-objective1 setSimpleTaskDescription ["Find and kill Sniper team", "Find and kill Sniper team", "Find and kill Sniper team"];
+objective1 = player createSimpleTask ["Find and kill Sniper team"];
+objective1 setSimpleTaskDescription ["Find and kill Sniper team", "Find and kill Sniper team", "Find and kill Sniper team"];

@@ -22,7 +22,7 @@ the <marker name = 'target1'>radar site</marker> in the hill.
 
 
 
-<br/>Anatolis Eyes<br/><br/>
+<br/><br/>Anatolis Eyes<br/><br/>
 
 GEN SITREP<br/>
 There is no enemy anti air units present in the northern Nogova so we are pretty
@@ -71,7 +71,7 @@ Good luck and be careful!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Return to base"];
-objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
-objective1 = player createSimpleTask ["Destroy radar site"];
-objective1 setSimpleTaskDescription ["Destroy radar site", "Destroy radar site", "Destroy radar site"];
+objective2 = player createSimpleTask ["Return to base"];
+objective2 setSimpleTaskDescription ["Return to base", "Return to base", "Return to base"];
+objective1 = player createSimpleTask ["Destroy radar site"];
+objective1 setSimpleTaskDescription ["Destroy radar site", "Destroy radar site", "Destroy radar site"];

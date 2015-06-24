@@ -25,7 +25,7 @@ city of Durras. Clear out any enemy opposition.
 
 
 
-<br/>Sweet Sweep<br/><br/>
+<br/><br/>Sweet Sweep<br/><br/>
 
 Our forces keep on pushing towards the southern tip of this island.
 <br/><br/>
@@ -68,5 +68,5 @@ possible mines so no armored support guys, sorry about that.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Assault Durras"];
-objective1 setSimpleTaskDescription ["Assault Durras", "Assault Durras", "Assault Durras"];
+objective1 = player createSimpleTask ["Assault Durras"];
+objective1 setSimpleTaskDescription ["Assault Durras", "Assault Durras", "Assault Durras"];

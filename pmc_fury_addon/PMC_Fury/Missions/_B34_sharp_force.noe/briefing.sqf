@@ -25,7 +25,7 @@ Good luck.
 
 
 
-<br/>Sharp Force<br/><br/>
+<br/><br/>Sharp Force<br/><br/>
 
 GEN SITREP<br/>
 NATO is doing great progress recently and we hope it will continue on today.
@@ -69,7 +69,7 @@ Vidlakov before charging in.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture Vidlakov"];
-objective2 setSimpleTaskDescription ["Capture Vidlakov", "Capture Vidlakov", "Capture Vidlakov"];
-objective1 = player createSimpleTask ["Clear out farmhouses"];
-objective1 setSimpleTaskDescription ["Clear out farmhouses", "Clear out farmhouses", "Clear out farmhouses"];
+objective2 = player createSimpleTask ["Capture Vidlakov"];
+objective2 setSimpleTaskDescription ["Capture Vidlakov", "Capture Vidlakov", "Capture Vidlakov"];
+objective1 = player createSimpleTask ["Clear out farmhouses"];
+objective1 setSimpleTaskDescription ["Clear out farmhouses", "Clear out farmhouses", "Clear out farmhouses"];

@@ -21,7 +21,7 @@ clears <marker name = 'target'>coast</marker> line.
 
 
 
-<br/>Red Harvest<br/><br/>
+<br/><br/>Red Harvest<br/><br/>
 
 GEN SITREP<br/>
 Our succesful operation against La Pessagne has ran some Russians into the
@@ -59,5 +59,5 @@ guarding the airspace around this area. Good luck!
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweep out enemies"];
-objective1 setSimpleTaskDescription ["Sweep out enemies", "Sweep out enemies", "Sweep out enemies"];
+objective1 = player createSimpleTask ["Sweep out enemies"];
+objective1 setSimpleTaskDescription ["Sweep out enemies", "Sweep out enemies", "Sweep out enemies"];

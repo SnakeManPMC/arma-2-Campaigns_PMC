@@ -22,7 +22,7 @@ enemy <marker name = 'target2'>base</marker> which is your main objective.
 
 
 
-<br/>Safe Nighthawk<br/><br/>
+<br/><br/>Safe Nighthawk<br/><br/>
 
 GEN SITREP<br/>
 Today we will take the next enemy base in southern part of Kolgujev. There are
@@ -65,7 +65,7 @@ possible. keep your men alive and don't try anything foolish. Good luck!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture base"];
-objective2 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
-objective1 = player createSimpleTask ["Clear intersection"];
-objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];
+objective2 = player createSimpleTask ["Capture base"];
+objective2 setSimpleTaskDescription ["Capture base", "Capture base", "Capture base"];
+objective1 = player createSimpleTask ["Clear intersection"];
+objective1 setSimpleTaskDescription ["Clear intersection", "Clear intersection", "Clear intersection"];

@@ -25,7 +25,7 @@ Good luck!
 
 
 
-<br/>Eternal Phoenix<br/><br/>
+<br/><br/>Eternal Phoenix<br/><br/>
 
 GEN SITREP<br/>
 One more push and we control south part of Malden. Today we move on the South East
@@ -72,9 +72,9 @@ not expecting it. Unknown status on enemy air operations, keep and eye on the sk
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Capture Le Port"];
-objective3 setSimpleTaskDescription ["Capture Le Port", "Capture Le Port", "Capture Le Port"];
-objective2 = player createSimpleTask ["Capture sea port"];
-objective2 setSimpleTaskDescription ["Capture sea port", "Capture sea port", "Capture sea port"];
-objective1 = player createSimpleTask ["Cut off the road"];
-objective1 setSimpleTaskDescription ["Cut off the road", "Cut off the road", "Cut off the road"];
+objective3 = player createSimpleTask ["Capture Le Port"];
+objective3 setSimpleTaskDescription ["Capture Le Port", "Capture Le Port", "Capture Le Port"];
+objective2 = player createSimpleTask ["Capture sea port"];
+objective2 setSimpleTaskDescription ["Capture sea port", "Capture sea port", "Capture sea port"];
+objective1 = player createSimpleTask ["Cut off the road"];
+objective1 setSimpleTaskDescription ["Cut off the road", "Cut off the road", "Cut off the road"];

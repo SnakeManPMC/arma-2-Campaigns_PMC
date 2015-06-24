@@ -23,7 +23,7 @@ Good luck.
 
 
 
-<br/>Proud Bat<br/><br/>
+<br/><br/>Proud Bat<br/><br/>
 
 GEN SITREP<br/>
 Today we take the proudest piece of real estate on Kolgujev island. The 
@@ -65,7 +65,7 @@ forces up there, those boys seem to like the high mountains. Good luck!
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Clear rest of mountain"];
-objective2 setSimpleTaskDescription ["Clear rest of mountain", "Clear rest of mountain", "Clear rest of mountain"];
-objective1 = player createSimpleTask ["Capture mountain peak"];
-objective1 setSimpleTaskDescription ["Capture mountain peak", "Capture mountain peak", "Capture mountain peak"];
+objective2 = player createSimpleTask ["Clear rest of mountain"];
+objective2 setSimpleTaskDescription ["Clear rest of mountain", "Clear rest of mountain", "Clear rest of mountain"];
+objective1 = player createSimpleTask ["Capture mountain peak"];
+objective1 setSimpleTaskDescription ["Capture mountain peak", "Capture mountain peak", "Capture mountain peak"];

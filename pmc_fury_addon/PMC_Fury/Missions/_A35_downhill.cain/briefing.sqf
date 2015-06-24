@@ -23,7 +23,7 @@ the friendly positions in <marker name = 'alpha'>beach</marker> road.
 
 
 
-<br/>Downhill<br/><br/>
+<br/><br/>Downhill<br/><br/>
 
 GEN SITREP<br/>
 Russians tried to retake the base in the early evening last night, they failed
@@ -70,5 +70,5 @@ that if you slip and fall, you are a dead soldier. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Sweep the mountain"];
-objective1 setSimpleTaskDescription ["Sweep the mountain", "Sweep the mountain", "Sweep the mountain"];
+objective1 = player createSimpleTask ["Sweep the mountain"];
+objective1 setSimpleTaskDescription ["Sweep the mountain", "Sweep the mountain", "Sweep the mountain"];

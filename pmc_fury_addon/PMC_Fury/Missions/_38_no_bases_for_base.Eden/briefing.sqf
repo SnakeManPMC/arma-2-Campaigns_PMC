@@ -44,7 +44,7 @@ the woods.
 
 
 
-<br/>Neutralizing enemy base<br/><br/>
+<br/><br/>Neutralizing enemy base<br/><br/>
 
 War continues and we move on. Russians are just sitting as their last attack
 was repelled, there is no indications of new attacks being prepared at this time.
@@ -98,7 +98,7 @@ advancing at this time.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Mop up the rest"];
-objective2 setSimpleTaskDescription ["Mop up the rest", "Mop up the rest", "Mop up the rest"];
-objective1 = player createSimpleTask ["Neutralize enemy base"];
-objective1 setSimpleTaskDescription ["Neutralize enemy base", "Neutralize enemy base", "Neutralize enemy base"];
+objective2 = player createSimpleTask ["Mop up the rest"];
+objective2 setSimpleTaskDescription ["Mop up the rest", "Mop up the rest", "Mop up the rest"];
+objective1 = player createSimpleTask ["Neutralize enemy base"];
+objective1 setSimpleTaskDescription ["Neutralize enemy base", "Neutralize enemy base", "Neutralize enemy base"];

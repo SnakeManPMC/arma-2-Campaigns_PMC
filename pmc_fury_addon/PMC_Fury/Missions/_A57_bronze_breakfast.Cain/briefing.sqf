@@ -22,7 +22,7 @@ the <marker name = 'target2'>intersection</marker> which they are holding.
 
 
 
-<br/>Bronze Breakfast<br/><br/>
+<br/><br/>Bronze Breakfast<br/><br/>
 
 GEN SITREP<br/>
 This morning we start to push towards west on the paved road near the highest
@@ -63,7 +63,7 @@ distances on some places. Be careful, don't let the enemy flank you. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Seize intersection"];
-objective2 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];
-objective1 = player createSimpleTask ["Clear positions"];
-objective1 setSimpleTaskDescription ["Clear positions", "Clear positions", "Clear positions"];
+objective2 = player createSimpleTask ["Seize intersection"];
+objective2 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];
+objective1 = player createSimpleTask ["Clear positions"];
+objective1 setSimpleTaskDescription ["Clear positions", "Clear positions", "Clear positions"];

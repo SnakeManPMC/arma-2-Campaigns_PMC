@@ -23,7 +23,7 @@ with helo.
 
 
 
-<br/>Coast Shield<br/><br/>
+<br/><br/>Coast Shield<br/><br/>
 
 GEN SITREP<br/>
 There is still few remaining Russians popping up here and there, they must have
@@ -66,5 +66,5 @@ like the professional you are.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Clear coast"];
-objective1 setSimpleTaskDescription ["Clear coast", "Clear coast", "Clear coast"];
+objective1 = player createSimpleTask ["Clear coast"];
+objective1 setSimpleTaskDescription ["Clear coast", "Clear coast", "Clear coast"];

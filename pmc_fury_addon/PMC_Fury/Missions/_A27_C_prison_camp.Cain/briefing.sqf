@@ -28,5 +28,5 @@ player createDiaryRecord ["Diary", ["Mission", "
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Follow orders, or die."];
-objective1 setSimpleTaskDescription ["Follow orders, or die.", "Follow orders, or die.", "Follow orders, or die."];
+objective1 = player createSimpleTask ["Follow orders, or die."];
+objective1 setSimpleTaskDescription ["Follow orders, or die.", "Follow orders, or die.", "Follow orders, or die."];

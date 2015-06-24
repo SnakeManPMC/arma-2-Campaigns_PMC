@@ -27,7 +27,7 @@ push forward into the marked <marker name = 'target1'>point</marker> in the road
 
 
 
-<br/>Rainman<br/><br/>
+<br/><br/>Rainman<br/><br/>
 
 GEN SITREP<br/>
 The weather front has arrived to Kolgujev, we can expect this rain continue for days. 
@@ -69,5 +69,5 @@ up the positions so easily. Keep your team alive.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Assault the enemy positions"];
-objective1 setSimpleTaskDescription ["Assault the enemy positions", "Assault the enemy positions", "Assault the enemy positions"];
+objective1 = player createSimpleTask ["Assault the enemy positions"];
+objective1 setSimpleTaskDescription ["Assault the enemy positions", "Assault the enemy positions", "Assault the enemy positions"];

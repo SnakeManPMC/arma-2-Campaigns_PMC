@@ -23,7 +23,7 @@ any possible Russian attack.
 
 
 
-<br/>Copper Harbor<br/><br/>
+<br/><br/>Copper Harbor<br/><br/>
 
 GEN SITREP<br/>
 Our operation agains the coastal city was success, we are now in control of that
@@ -66,5 +66,5 @@ can do bad things from up there. Good luck.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend city"];
-objective1 setSimpleTaskDescription ["Defend city", "Defend city", "Defend city"];
+objective1 = player createSimpleTask ["Defend city"];
+objective1 setSimpleTaskDescription ["Defend city", "Defend city", "Defend city"];

@@ -22,7 +22,7 @@ castle <marker name = 'target2'>ruins</marker> in the mountain.
 
 
 
-<br/>Angel Sword<br/><br/>
+<br/><br/>Angel Sword<br/><br/>
 
 GEN SITREP<br/>
 Very well performed operation by our infantry captured the highest point in
@@ -63,7 +63,7 @@ soften up the target first. Have fun.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture castle ruins"];
-objective2 setSimpleTaskDescription ["Capture castle ruins", "Capture castle ruins", "Capture castle ruins"];
-objective1 = player createSimpleTask ["Capture Trosky"];
-objective1 setSimpleTaskDescription ["Capture Trosky", "Capture Trosky", "Capture Trosky"];
+objective2 = player createSimpleTask ["Capture castle ruins"];
+objective2 setSimpleTaskDescription ["Capture castle ruins", "Capture castle ruins", "Capture castle ruins"];
+objective1 = player createSimpleTask ["Capture Trosky"];
+objective1 setSimpleTaskDescription ["Capture Trosky", "Capture Trosky", "Capture Trosky"];

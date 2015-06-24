@@ -34,7 +34,7 @@ Good luck!
 
 
 
-<br/>King of my Castle<br/><br/>
+<br/><br/>King of my Castle<br/><br/>
 
 Our next objective is to capture enemys Commnd and Control site at the hilltop castle. 
 If we manage to take this, it will be severe blow to the Russian communications and 
@@ -93,5 +93,5 @@ backup number two. Be careful out there, this is going to be another dangerous o
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture castle"];
-objective1 setSimpleTaskDescription ["Capture castle", "Capture castle", "Capture castle"];
+objective1 = player createSimpleTask ["Capture castle"];
+objective1 setSimpleTaskDescription ["Capture castle", "Capture castle", "Capture castle"];

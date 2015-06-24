@@ -23,7 +23,7 @@ and capture <marker name = 'target'>La Riviere</marker> objective.
 
 
 
-<br/>Silver Sabre<br/><br/>
+<br/><br/>Silver Sabre<br/><br/>
 
 GEN SITREP<br/>
 Massive Russian attack is repelled and we move forward. La Riviere is one of the 
@@ -65,5 +65,5 @@ alive will you.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture La Riviere"];
-objective1 setSimpleTaskDescription ["Capture La Riviere", "Capture La Riviere", "Capture La Riviere"];
+objective1 = player createSimpleTask ["Capture La Riviere"];
+objective1 setSimpleTaskDescription ["Capture La Riviere", "Capture La Riviere", "Capture La Riviere"];

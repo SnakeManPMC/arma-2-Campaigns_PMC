@@ -25,7 +25,7 @@ Good luck.
 
 
 
-<br/>Infinite Response<br/><br/>
+<br/><br/>Infinite Response<br/><br/>
 
 GEN SITREP<br/>
 The feared weather front is just one day away from the Kolgujev coast now, we will
@@ -63,5 +63,5 @@ TACTICAL<br/>
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture enemy base"];
-objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];
+objective1 = player createSimpleTask ["Capture enemy base"];
+objective1 setSimpleTaskDescription ["Capture enemy base", "Capture enemy base", "Capture enemy base"];

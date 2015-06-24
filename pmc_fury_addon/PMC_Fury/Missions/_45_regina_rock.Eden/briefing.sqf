@@ -32,7 +32,7 @@ of <marker name = 'regina'>Regina</marker> from Russians.
 
 
 
-<br/>Regina Rock<br/><br/>
+<br/><br/>Regina Rock<br/><br/>
 
 Today we move forward with our Everon cleanup. Today we capture city of Regina in 
 south-west edge of the island.
@@ -75,5 +75,5 @@ got to be really careful with these guys, make no mistakes.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture Regina"];
-objective1 setSimpleTaskDescription ["Capture Regina", "Capture Regina", "Capture Regina"];
+objective1 = player createSimpleTask ["Capture Regina"];
+objective1 setSimpleTaskDescription ["Capture Regina", "Capture Regina", "Capture Regina"];

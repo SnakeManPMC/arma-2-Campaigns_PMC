@@ -23,7 +23,7 @@ the east coast.
 
 
 
-<br/>United Eye<br/><br/>
+<br/><br/>United Eye<br/><br/>
 
 GEN SITREP<br/>
 The road along the river in central Nogova is under Russian fire from the other 
@@ -64,5 +64,5 @@ area.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture houses"];
-objective1 setSimpleTaskDescription ["Capture houses", "Capture houses", "Capture houses"];
+objective1 = player createSimpleTask ["Capture houses"];
+objective1 setSimpleTaskDescription ["Capture houses", "Capture houses", "Capture houses"];

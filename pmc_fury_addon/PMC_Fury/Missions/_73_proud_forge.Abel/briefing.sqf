@@ -22,7 +22,7 @@ the <marker name = 'target'>Road</marker> capturing it.
 
 
 
-<br/>Proud Forge<br/><br/>
+<br/><br/>Proud Forge<br/><br/>
 
 GEN SITREP<br/>
 Our final preparation before the attack to Chapoi. Were off to capture the
@@ -63,7 +63,7 @@ capture the <marker name = 'target'>Road</marker> north of the hill.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Capture road"];
-objective2 setSimpleTaskDescription ["Capture road", "Capture road", "Capture road"];
-objective1 = player createSimpleTask ["Clear the hill"];
-objective1 setSimpleTaskDescription ["Clear the hill", "Clear the hill", "Clear the hill"];
+objective2 = player createSimpleTask ["Capture road"];
+objective2 setSimpleTaskDescription ["Capture road", "Capture road", "Capture road"];
+objective1 = player createSimpleTask ["Clear the hill"];
+objective1 setSimpleTaskDescription ["Clear the hill", "Clear the hill", "Clear the hill"];

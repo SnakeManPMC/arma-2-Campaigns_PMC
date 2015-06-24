@@ -23,7 +23,7 @@ and capture the <marker name = 'target1'>ruins</marker> enemy is holding.
 
 
 
-<br/>Proud Eagle<br/><br/>
+<br/><br/>Proud Eagle<br/><br/>
 
 GEN SITREP<br/>
 Weather starts to get worse, it will be lateron tonight when it starts to pour rain 
@@ -66,5 +66,5 @@ Light vehicles and infantry only, this is a piece of cake for you. Have fun.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Capture ruins"];
-objective1 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];
+objective1 = player createSimpleTask ["Capture ruins"];
+objective1 setSimpleTaskDescription ["Capture ruins", "Capture ruins", "Capture ruins"];

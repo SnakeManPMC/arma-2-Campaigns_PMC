@@ -24,7 +24,7 @@ Good luck.
 
 
 
-<br/>Bear Lash<br/><br/>
+<br/><br/>Bear Lash<br/><br/>
 
 GEN SITREP<br/>
 Russian counter attack on way, we must defend the intersection. Do not fall back.
@@ -61,5 +61,5 @@ and keep your men alive. Stay healthy.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend intersection."];
-objective1 setSimpleTaskDescription ["Defend intersection.", "Defend intersection.", "Defend intersection."];
+objective1 = player createSimpleTask ["Defend intersection."];
+objective1 setSimpleTaskDescription ["Defend intersection.", "Defend intersection.", "Defend intersection."];

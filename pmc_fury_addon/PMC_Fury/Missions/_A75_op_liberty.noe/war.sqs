@@ -20,7 +20,7 @@ _StartArmorPosits = [EastStart1,EastStart2];
 ;
 
 #Loopah
-~_LoopDelay;
+~_LoopDelay
 
 if (pmcdb==1) then { player sidechat format["east: %1, west: %2, all: %3, east kills: %4",count aieast,count aiwest,count aieast+count aiwest,eastguys - count aieast]; };
 
@@ -46,56 +46,56 @@ e2=objnull;
 _EASTtempgrp = [];
 
 _ran = random(1);
-"OfficerE" createunit [getpos EastInfStart1, rusinf1, "e2 = this", _ran, "SERGEANT"];
-[e2] join grpnull;
+"OfficerE" createunit [getpos EastInfStart1, rusinf1, "e2 = this", _ran, "SERGEANT"]
+[e2] join grpnull
 _EASTtempgrp = group e2;
-e2 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+e2 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
-"SoldierEMG" createunit [getpos EastInfStart1, rusinf1, "e1 = this", 1, "CORPORAL"];
-[e1] join grpnull;
-[e1] join _EASTtempgrp;
-e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
-
-_ran = random(1);
-"SoldierEG" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "CORPORAL"];
-[e1] join grpnull;
-[e1] join _EASTtempgrp;
-e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+"SoldierEMG" createunit [getpos EastInfStart1, rusinf1, "e1 = this", 1, "CORPORAL"]
+[e1] join grpnull
+[e1] join _EASTtempgrp
+e1 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
 _ran = random(1);
-"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "CORPORAL"];
-[e1] join grpnull;
-[e1] join _EASTtempgrp;
-e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+"SoldierEG" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "CORPORAL"]
+[e1] join grpnull
+[e1] join _EASTtempgrp
+e1 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
 _ran = random(1);
-"SoldierELAW" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"];
-[e1] join grpnull;
-[e1] join _EASTtempgrp;
-e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
-
-"SoldierEMG" createunit [getpos EastInfStart1, rusinf1, "e1 = this", 1, "PRIVATE"];
-[e1] join grpnull;
-[e1] join _EASTtempgrp;
-e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "CORPORAL"]
+[e1] join grpnull
+[e1] join _EASTtempgrp
+e1 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
 _ran = random(1);
-"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"];
-[e1] join grpnull;
-[e1] join _EASTtempgrp;
-e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+"SoldierELAW" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"]
+[e1] join grpnull
+[e1] join _EASTtempgrp
+e1 addEventHandler ["killed",{_this exec "killed.sqs"}]
+
+"SoldierEMG" createunit [getpos EastInfStart1, rusinf1, "e1 = this", 1, "PRIVATE"]
+[e1] join grpnull
+[e1] join _EASTtempgrp
+e1 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
 _ran = random(1);
-"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"];
-[e1] join grpnull;
-[e1] join _EASTtempgrp;
-e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"]
+[e1] join grpnull
+[e1] join _EASTtempgrp
+e1 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
 _ran = random(1);
-"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"];
-[e1] join grpnull;
-[e1] join _EASTtempgrp;
-e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"]
+[e1] join grpnull
+[e1] join _EASTtempgrp
+e1 addEventHandler ["killed",{_this exec "killed.sqs"}]
+
+_ran = random(1);
+"cwr2_SoldierE" createunit [getpos EastInfStart1, rusinf1, "e1 = this", _ran, "PRIVATE"]
+[e1] join grpnull
+[e1] join _EASTtempgrp
+e1 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
 _EASTtempgrp setbehaviour "aware";
 _EASTtempgrp setcombatmode "red";
@@ -104,7 +104,7 @@ _EASTtempgrp setformation "wedge";
 
 leader _EASTtempgrp move getpos helo;
 
-[_EASTtempgrp,[],[],[],[],1,1] exec "ai.sqs";
+[_EASTtempgrp,[],[],[],[],1,1] exec "ai.sqs"
 eastguys=eastguys+9;
 
 
@@ -126,22 +126,22 @@ _ran = random(1);
 "SoldierECrew" createunit [getpos EastStart1, rusinf1, "e1 = this", _ran, "SERGEANT"];
 [e1] join grpnull;
 _bmp2grp = group e1;
-e1 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+e1 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
 _ran = random(1);
 "SoldierECrew" createunit [getpos EastStart1, rusinf1, "e2 = this", _ran, "CORPORAL"];
 [e2] join grpnull;
 [e2] join _bmp2grp;
-e2 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+e2 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
 _ran = random(1);
 "SoldierECrew" createunit [getpos EastStart1, rusinf1, "e3 = this", _ran, "PRIVATE"];
 [e3] join grpnull;
 [e3] join _bmp2grp;
-e3 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+e3 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
 _bmp2 = "BMP2" createvehicle getpos EastStart1;
-_bmp2 addEventHandler ["killed",{handle = _this execVM "killed.sqf"}];
+_bmp2 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
 e1 moveincommander _bmp2;
 e2 moveingunner _bmp2;
@@ -171,4 +171,4 @@ PAPABEAR sideradio "Rsarready";
 
 1 setradiomsg "Call SAR package";
 
-exit;
+exit

@@ -21,7 +21,7 @@ through the night.
 
 
 
-<br/>Bright Horizon<br/><br/>
+<br/><br/>Bright Horizon<br/><br/>
 
 GEN SITREP<br/>
 The new base just captured might cause some reaction from the Russian side,
@@ -65,5 +65,5 @@ decide to join the party.
 
 "]];
 // tasks need to be in reversed order
-objective1 = player createSimpleTask ["Defend the base"];
-objective1 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];
+objective1 = player createSimpleTask ["Defend the base"];
+objective1 setSimpleTaskDescription ["Defend the base", "Defend the base", "Defend the base"];

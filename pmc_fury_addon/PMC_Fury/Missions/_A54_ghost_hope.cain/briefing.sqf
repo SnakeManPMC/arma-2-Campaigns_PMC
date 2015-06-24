@@ -25,7 +25,7 @@ Good luck.
 
 
 
-<br/>Ghost Hope<br/><br/>
+<br/><br/>Ghost Hope<br/><br/>
 
 GEN SITREP<br/>
 Today we launch operation against the enemy fuel depot and two ruins just south 
@@ -73,9 +73,9 @@ alone.
 
 "]];
 // tasks need to be in reversed order
-objective3 = player createSimpleTask ["Capture ruins #2"];
-objective3 setSimpleTaskDescription ["Capture ruins #2", "Capture ruins #2", "Capture ruins #2"];
-objective2 = player createSimpleTask ["Capture ruins #1"];
-objective2 setSimpleTaskDescription ["Capture ruins #1", "Capture ruins #1", "Capture ruins #1"];
-objective1 = player createSimpleTask ["Capture fuel depot"];
-objective1 setSimpleTaskDescription ["Capture fuel depot", "Capture fuel depot", "Capture fuel depot"];
+objective3 = player createSimpleTask ["Capture ruins #2"];
+objective3 setSimpleTaskDescription ["Capture ruins #2", "Capture ruins #2", "Capture ruins #2"];
+objective2 = player createSimpleTask ["Capture ruins #1"];
+objective2 setSimpleTaskDescription ["Capture ruins #1", "Capture ruins #1", "Capture ruins #1"];
+objective1 = player createSimpleTask ["Capture fuel depot"];
+objective1 setSimpleTaskDescription ["Capture fuel depot", "Capture fuel depot", "Capture fuel depot"];

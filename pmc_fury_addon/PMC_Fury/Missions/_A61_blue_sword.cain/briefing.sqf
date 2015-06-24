@@ -23,7 +23,7 @@ meet <marker name = 'bravo'>Bravo</marker> squad.
 
 
 
-<br/>Blue Sword<br/><br/>
+<br/><br/>Blue Sword<br/><br/>
 
 GEN SITREP<br/>
 Our assault to the front lines and enemy base was successful in all parts.
@@ -72,7 +72,7 @@ battle. Stay alert.
 
 "]];
 // tasks need to be in reversed order
-objective2 = player createSimpleTask ["Meet Bravo squad"];
-objective2 setSimpleTaskDescription ["Meet Bravo squad", "Meet Bravo squad", "Meet Bravo squad"];
-objective1 = player createSimpleTask ["Seize intersection"];
-objective1 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];
+objective2 = player createSimpleTask ["Meet Bravo squad"];
+objective2 setSimpleTaskDescription ["Meet Bravo squad", "Meet Bravo squad", "Meet Bravo squad"];
+objective1 = player createSimpleTask ["Seize intersection"];
+objective1 setSimpleTaskDescription ["Seize intersection", "Seize intersection", "Seize intersection"];
