@@ -669,7 +669,7 @@ class Mission
 			age="UNKNOWN";
 			text="resupply died";
 			expCond="!alive trk1 OR !alive tdriver1";
-			expActiv="""2"" objstatus ""Active""; ""obj2"" setmarkertype ""Marker""; hint ""Briefing updated, the map view!""; PAPABEAR sideRadio ""Rresdied""; ResupplyDead=true;";
+			expActiv="this = [] execVM ""objective2.sqf"";";
 			class Effects
 			{
 			};
