@@ -5,4 +5,4 @@ PAPABEAR = [West, "HQ"];
 sleep 5;
 PAPABEAR sideradio "Rlaunch";
 
-[] exec "cas.sqs"; // PMCTODO fix this shit
+[] execVM "cas.sqf";
