@@ -134,7 +134,7 @@ class Mission
 					formation="COLUMN";
 					speed="FULL";
 					combat="SAFE";
-					expActiv="[assault1,helo] exec ""pickup.sqs"";";
+					expActiv="[assault1, helo] exec ""extract.sqs"";";
 					class Effects
 					{
 					};
@@ -143,7 +143,7 @@ class Mission
 				class Item1
 				{
 					position[]={10667.640625,242.604111,9552.916016};
-					expActiv="[assault1,helo] exec ""insert.sqs""; 1 setRadioMsg ""Call - Black Ops""";
+					expActiv="[assault1, helo] exec ""insert.sqs""; 1 setRadioMsg ""Call - Black Ops""";
 					class Effects
 					{
 					};
@@ -161,7 +161,7 @@ class Mission
 				class Item3
 				{
 					position[]={10060.092773,360.286377,10525.662109};
-					expActiv="[assault1,helo] exec ""extract.sqs"";";
+					expActiv="[assault1, helo] exec ""extract.sqs"";";
 					class Effects
 					{
 					};
@@ -593,7 +593,7 @@ class Mission
 			activationBy="ALPHA";
 			age="UNKNOWN";
 			text="null";
-			expActiv="[leader assault1, bop1] exec ""meet.sqs""";
+			expActiv="this = [leader assault1, bop1] execVM ""meet.sqf""";
 			class Effects
 			{
 			};
