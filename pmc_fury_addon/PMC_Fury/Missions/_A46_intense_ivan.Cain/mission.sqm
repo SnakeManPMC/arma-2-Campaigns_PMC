@@ -1172,7 +1172,7 @@ class Mission
 			repeating=1;
 			age="UNKNOWN";
 			text="Call - Artillery";
-			expActiv="onMapSingleClick ""[_pos] exec ""arty.sqs"""";";
+			expActiv="onMapSingleClick ""this = [_pos, 'arty', 2, (group player)] execVM ""artillery.sqf"""";";
 			class Effects
 			{
 			};

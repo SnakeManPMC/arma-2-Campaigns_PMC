@@ -614,8 +614,8 @@ class Mission
 			repeating=1;
 			age="UNKNOWN";
 			text="helo1 out of ammo";
-			expCond="(helo1 ammo ""HellfireLauncherApach"" ==0) AND (helo1 ammo ""ZuniLauncher38"" ==0) AND !helo1rearming";
-			expActiv="helo1 setCombatMode ""BLUE""; helo1 setBehaviour ""CARELESS""; helo1 move getpos HeloBase; helo1 sideradio ""Rhelo1gobase""; helo1rearming=true;";
+			expCond="(helo1 ammo ""HellfireLauncherApach"" == 0) && (helo1 ammo ""ZuniLauncher38"" == 0) && !helo1rearming";
+			expActiv="helo1 setCombatMode ""BLUE""; helo1 setBehaviour ""CARELESS""; helo1 move getpos HeloBase; helo1 sideradio ""Rhelo1gobase""; helo1rearming = true;";
 			class Effects
 			{
 			};
@@ -660,7 +660,7 @@ class Mission
 			repeating=1;
 			age="UNKNOWN";
 			text="Call - Artillery";
-			expActiv="onMapSingleClick ""[_pos] exec ""arty.sqs"""";";
+			expActiv="onMapSingleClick ""this = [_pos, 'arty', 2, (group player)] execVM ""artillery.sqf"""";";
 			class Effects
 			{
 			};
@@ -673,7 +673,7 @@ class Mission
 			repeating=1;
 			age="UNKNOWN";
 			text="helo2 out of ammo";
-			expCond="(helo2 ammo ""HellfireLauncherApach"" ==0) AND (helo2 ammo ""ZuniLauncher38"" ==0) AND !helo2rearming";
+			expCond="(helo2 ammo ""HellfireLauncherApach"" == 0) && (helo2 ammo ""ZuniLauncher38"" == 0) && !helo2rearming";
 			expActiv="helo2 setCombatMode ""BLUE""; helo2 setBehaviour ""CARELESS""; helo2 move getpos HeloBase2; helo2 sideradio ""Rhelo2gobase""; helo2rearming=true;";
 			class Effects
 			{
