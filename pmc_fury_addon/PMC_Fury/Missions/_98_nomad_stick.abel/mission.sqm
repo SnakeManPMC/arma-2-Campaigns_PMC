@@ -1956,7 +1956,7 @@ class Mission
 			age="UNKNOWN";
 			text="eastdead";
 			expCond="this AND w_here1";
-			expActiv="[] exec ""eastdead1.sqs"";";
+			expActiv="this = [] execVM ""eastdead1.sqf"";";
 			class Effects
 			{
 			};
@@ -1982,7 +1982,7 @@ class Mission
 			age="UNKNOWN";
 			text="open house doors :)";
 			expCond="count units rusinf3 < 5 && count units rusinf4 < 5 && count units rusinf5 < 5";
-			expActiv="[] exec ""opendoors.sqs"";";
+			expActiv="this = [] execVM ""opendoors.sqf"";";
 			class Effects
 			{
 			};
