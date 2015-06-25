@@ -1,6 +1,8 @@
 /*
 
 	MOVE EAST GUYS
+	
+	This script was used in 36, 78 and 88 missions, now its located on Scripts\ dir.
 
 */
 private["_A", "_B", "_listunits"];

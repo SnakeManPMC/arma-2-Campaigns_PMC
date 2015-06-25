@@ -1422,7 +1422,7 @@ class Mission
 			age="UNKNOWN";
 			text="eject 1";
 			expCond="helo1 distance ejectlocat < 350";
-			expActiv="[] exec ""eject1.sqs"";";
+			expActiv="this = [rusinf7, helo1] execVM ""eject_cargo_group.sqf"";";
 			class Effects
 			{
 			};
@@ -1435,7 +1435,7 @@ class Mission
 			age="UNKNOWN";
 			text="eject 2";
 			expCond="helo2 distance ejectlocat < 350";
-			expActiv="[] exec ""eject2.sqs"";";
+			expActiv="this = [rusinf8, helo2] execVM ""eject_cargo_group.sqf""; Paratroops_Out = true;";
 			class Effects
 			{
 			};
@@ -1492,7 +1492,7 @@ class Mission
 			age="UNKNOWN";
 			text="movetangos";
 			expCond="Paratroops_Out";
-			expActiv="[] exec ""movetangos.sqs"";";
+			expActiv="this = [] execVM ""movetangos.sqf"";";
 			class Effects
 			{
 			};
