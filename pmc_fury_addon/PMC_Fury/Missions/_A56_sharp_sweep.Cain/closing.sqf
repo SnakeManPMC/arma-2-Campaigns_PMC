@@ -1,33 +1,38 @@
-_a=leader assault1;
-_b=leader assault2;
+/*
+
+	?
+
+*/
+private["_a", "_b"];
+
+_a = leader assault1;
+_b = leader assault2;
 
 _a sideradio "Ratob";
-~30
+sleep 30;
 
 _a sideradio "Ratob2";
-~15
+sleep 15;
 
 _b sideradio "Rbravocopy";
-~10
+sleep 10;
 
 _a sideradio "Rapproach";
-~25
+sleep 25;
 
 _b sideradio "Rwhatdirhuh";
-~15
+sleep 15;
 
 _a sideradio "Rnokidding";
-~20
+sleep 20;
 
 _b sideradio "Rcopysw";
-~15
+sleep 15;
 
 _a sideradio "Rsharpness";
-~10
+sleep 10;
 
 _b sideradio "Rswrepeat";
-~10
+sleep 10;
 
 _a sideradio "Rgood";
-
-exit
