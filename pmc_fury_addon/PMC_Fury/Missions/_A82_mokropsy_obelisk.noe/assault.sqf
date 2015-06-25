@@ -1,24 +1,29 @@
-;
-; enemy assault coming
-;
+/*
+
+	enemy assault coming
+
+*/
 helo sideradio "Ralarm";
-~10
+sleep 10;
 
 PAPABEAR sideradio "Rrtb";
 
 helo domove getpos usa;
-~10
+sleep 10;
 
 PAPABEAR sideradio "Ralphaorder";
-objective1 setTaskState "FAILED"; [ objNull, objNull, objective1, "FAILED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
+objective1 setTaskState "FAILED";
+[ objNull, objNull, objective1, "FAILED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
 objective2 = player createSimpleTask ["Defend airstrip"];
 objective2 setSimpleTaskDescription ["Defend airstrip", "Defend airstrip", "Defend airstrip"];
-~10
+sleep 10;
 
 leader assault1 sideradio "Ralphacopy";
 
-@(helo distance usa < 100)
+waitUntil
+{
+	sleep .3;
+	(helo distance usa < 100);
+};
 
 helo land "land";
-
-exit

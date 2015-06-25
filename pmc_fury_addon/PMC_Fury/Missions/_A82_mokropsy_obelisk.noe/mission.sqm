@@ -1682,7 +1682,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			text="west present alerm";
-			expActiv="[] exec ""assault.sqs"";";
+			expActiv="this = [] execVM ""assault.sqf"";";
 			class Effects
 			{
 			};
@@ -1698,7 +1698,7 @@ class Mission
 			age="UNKNOWN";
 			text="not in helo";
 			expCond="!(leader assault1 in helo)";
-			expActiv="[] exec ""intelrep.sqs"";";
+			expActiv="this = [] execVM ""intelrep.sqf"";";
 			class Effects
 			{
 			};

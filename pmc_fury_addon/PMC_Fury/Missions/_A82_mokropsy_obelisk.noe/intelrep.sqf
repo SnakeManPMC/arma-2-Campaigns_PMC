@@ -1,8 +1,9 @@
-;
-; intel report when assault1 is out of the helo
-;
+/*
+
+	intel report when assault1 is out of the helo
+
+*/
 leader assault1 sideRadio "Ralphaactive";
-~10
+sleep 10;
 
 PAPABEAR sideradio "Rintel";
-exit
