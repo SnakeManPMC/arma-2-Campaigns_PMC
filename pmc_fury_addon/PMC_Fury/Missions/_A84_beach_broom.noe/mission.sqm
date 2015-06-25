@@ -277,7 +277,7 @@ class Mission
 					formation="COLUMN";
 					speed="FULL";
 					combat="AWARE";
-					expActiv="[assault1,assault2,helo] exec ""insert.sqs"";";
+					expActiv="this = [assault1, helo] exec ""insert.sqs""; this = [assault2, helo] exec ""insert.sqs"";";
 					synchronizations[]={6};
 					class Effects
 					{
