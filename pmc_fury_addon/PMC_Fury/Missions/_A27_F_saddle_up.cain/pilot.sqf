@@ -1,35 +1,39 @@
-;
-; talking with colonel
-;
+/*
+
+	talking with colonel
+
+*/
 pilot1 dowatch aP;
 gunner1 dowatch aP;
 
-~1
+sleep 1;
 
 aP sidechat "Morning.";
-~5
+sleep 5;
 
 pilot1 sidechat "Good morning, sir.";
-~10
+sleep 10;
 
 aP sidechat "Can you guys give me a lift to Malden?";
-~10
+sleep 10;
 
 pilot1 sidechat "Yes sir.";
-~7
+sleep 7;
 
 aP sidechat "Ok, lets go then.";
-~5
+sleep 5;
 
 pilot1 sidechat "Yes sir. please board the black hawk on the back. sir.";
-~2
+sleep 2;
 
 pilot1 assignasdriver helo;
 gunner1 assignasgunner helo;
 
 pilot1 move getpos malden;
 
-@aP in helo;
-helo setfuel 1;
-
-exit
+waitUntil
+{
+	sleep .3;
+	(aP in helo);
+};
+helo setfuel 1; // PMCTODO ofp setfuel trick doesnt work in arma2 anymore :(

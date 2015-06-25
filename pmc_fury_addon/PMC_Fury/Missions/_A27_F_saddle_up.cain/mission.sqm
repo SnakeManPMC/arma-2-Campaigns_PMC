@@ -375,9 +375,9 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			text="exec talk.sqs";
+			text="execVM talk.sqf";
 			expCond="aP distance col < 5";
-			expActiv="[] exec ""talk.sqs"";";
+			expActiv="this = [] execVM ""talk.sqf"";";
 			class Effects
 			{
 			};
@@ -391,7 +391,7 @@ class Mission
 			type="END1";
 			age="UNKNOWN";
 			text="west detected";
-			expActiv="[] exec ""tomalden.sqs"";";
+			expActiv="this = [] execVM ""tomalden.sqf"";";
 			class Effects
 			{
 			};
@@ -402,9 +402,9 @@ class Mission
 			a=0.000000;
 			b=0.000000;
 			age="UNKNOWN";
-			text="exec talk.sqs";
+			text="execVM talk.sqf";
 			expCond="talked AND aP distance pilot1 < 5";
-			expActiv="[] exec ""pilot.sqs"";";
+			expActiv="this = [] execVM ""pilot.sqf"";";
 			class Effects
 			{
 			};

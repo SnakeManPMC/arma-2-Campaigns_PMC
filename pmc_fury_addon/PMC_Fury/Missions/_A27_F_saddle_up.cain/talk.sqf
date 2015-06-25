@@ -1,51 +1,51 @@
-;
-; talking with colonel
-;
+/*
+
+	talking with colonel
+
+*/
 col dowatch aP;
 maj dowatch aP;
 
-~1
+sleep 1;
 
 aP sidechat "Good morning, sir.";
-~10
+sleep 10;
 
 col sidechat "Good morning, what can I do for you?";
-~10
+sleep 10;
 
 aP sidechat "I want to get back to work. I'd like to have new orders. sir.";
-~15
+sleep 15;
 
 col sidechat "Are you sure son, you just got back from enemy POW camp yesterday?";
-~7
+sleep 7;
 
 aP sidechat "I'm sure. sir.";
-~10
+sleep 10;
 
 maj sidechat "Do you realize that we can give you some R&R leave if you want?";
-~10
+sleep 10;
 
 aP sidechat "Yes sir. but thanks I do not need a vacation. sir.";
-~15
+sleep 15;
 
 col sidechat "I will not task you if you are not ready and over this incident. Are you SURE?";
-~10
+sleep 10;
 
 aP sidechat "Yes sir. I am sure. sir.";
-~20
+sleep 20;
 
 col sidechat "Okay, if you think youre ready we can task you a new squad. Go to the Malden training center and grab some newbies there.";
-~10
+sleep 10;
 
 maj sidechat "There is Blackhawk crew on the docks, go there and hitch a ride to Malden.";
-~10
+sleep 10;
 
 aP sidechat "Yes sir. and... thank you sir.";
-~3
+sleep 3;
 
 "obj2" setMarkerType "Marker";
 objective2 = player createSimpleTask ["Get to the docks and talk to pilots."];
 objective2 setSimpleTaskDescription ["Get to the <marker name = 'obj2'>docks</marker> and talk to pilots.", "Get to the <marker name = 'obj2'>docks</marker> and talk to pilots.", "Get to the <marker name = 'obj2'>docks</marker> and talk to pilots."];
 hint "Briefing updated, the map view!";
 talked = true;
-
-exit
