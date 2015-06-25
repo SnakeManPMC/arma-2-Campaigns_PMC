@@ -140,7 +140,7 @@ class Mission
 					formation="COLUMN";
 					speed="FULL";
 					combat="CARELESS";
-					expActiv="[] exec ""land.sqs"";";
+					expActiv="this = [] execVM ""trigger_insert.sqf"";";
 					class Effects
 					{
 					};
@@ -158,7 +158,7 @@ class Mission
 				class Item2
 				{
 					position[]={6098.308594,162.197815,9899.768555};
-					expActiv="[] exec ""extract.sqs"";";
+					expActiv="this = [assault1, helo] exec ""extract.sqs"";";
 					class Effects
 					{
 					};
