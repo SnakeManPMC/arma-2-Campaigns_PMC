@@ -951,7 +951,7 @@ class Mission
 			age="UNKNOWN";
 			text="eject rusinf1";
 			expCond="rhelo1 distance usa < 500";
-			expActiv="[rusinf1,rhelo1] exec ""eject.sqs"";";
+			expActiv="this = [rusinf1, rhelo1] execVM ""eject_cargo_group.sqf"";";
 			class Effects
 			{
 			};
@@ -964,7 +964,7 @@ class Mission
 			age="UNKNOWN";
 			text="eject rusinf2";
 			expCond="rhelo2 distance usa < 500";
-			expActiv="[rusinf2,rhelo2] exec ""eject.sqs"";";
+			expActiv="this = [rusinf2, rhelo2] execVM ""eject_cargo_group.sqf"";";
 			class Effects
 			{
 			};
