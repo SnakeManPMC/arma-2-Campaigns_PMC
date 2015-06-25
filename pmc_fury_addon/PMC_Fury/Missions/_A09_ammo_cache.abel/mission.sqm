@@ -131,7 +131,7 @@ class Mission
 					formation="COLUMN";
 					speed="FULL";
 					combat="SAFE";
-					expActiv="[] exec ""land.sqs"";";
+					expActiv="this = [assault1, helo] exec ""insert.sqs"";";
 					class Effects
 					{
 					};
@@ -149,7 +149,7 @@ class Mission
 				class Item2
 				{
 					position[]={5074.682129,82.889885,4516.661621};
-					expActiv="[] exec ""extract.sqs"";";
+					expActiv="this = [assault1, helo] execVM ""extract.sqs"";";
 					class Effects
 					{
 					};
