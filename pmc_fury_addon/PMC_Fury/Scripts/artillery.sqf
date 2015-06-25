@@ -57,7 +57,7 @@ sleep 5 + (random 3);
 PAPABEAR sidechat "SPLASH.";
 sleep 2 + (random 2);
 
-while (_A < _salvo) do
+while {_A < _salvo} do
 {
 	_RndW = random 1;
 	sleep .01;

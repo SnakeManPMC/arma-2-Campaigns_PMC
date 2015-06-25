@@ -20,7 +20,7 @@ helo land "get in";
 
 */
 _z = getpos vehicle helo select 2;
-while (_z > 2) do
+while {_z > 2} do
 {
 	sleep .3;
 	_z = getpos vehicle helo select 2;
@@ -49,7 +49,7 @@ helo flyInHeight 0;
 */
 _A = 0;
 
-while (_B > _A) do
+while {_B > _A} do
 {
 	_listunits = units medics;
 	_B = count _listunits

@@ -29,7 +29,7 @@ killer domove [_xPos, _yPos];
 bombed = false;
 _c = 1;
 
-while (!bombed && _c < 20) do
+while {!bombed && _c < 20} do
 {
 	// value, range and plr is not even used anywhere in this script!?
 	value = killer knowsabout mopo;

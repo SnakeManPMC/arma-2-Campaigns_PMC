@@ -25,7 +25,7 @@ _z = getpos vehicle _helo select 2;
 	loop until helo height is 2 meters.
 
 */
-while (_z > 2) do
+while {_z > 2} do
 {
 	sleep .2;
 	_z = getpos vehicle _helo select 2;
@@ -49,7 +49,7 @@ _A = 0;
 } forEach units _team;
 _B = count _listunits;
 
-while (_B > _A) do
+while {_B > _A} do
 {
 	_listunits = units _team;
 	_B = count _listunits;
@@ -114,7 +114,7 @@ _team setspeedmode "FULL";
 _A = 0;
 _B = count _listunits;
 
-while (_B > _A) do
+while {_B > _A} do
 {
 	_listunits = units _team;
 	_B = count _listunits;

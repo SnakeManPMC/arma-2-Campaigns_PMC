@@ -9,7 +9,7 @@ helo land "land";
 _i = 0;
 _z = getpos vehicle helo select 2;
 
-while (_z < 2) do
+while {_z < 2} do
 {
 	sleep 1;
 	_i = _i + 1;
@@ -21,7 +21,7 @@ helo flyInHeight 0;
 
 player action ["eject", helo];
 
-while (!(hostage in helo && player in helo)) do
+while {!(hostage in helo && player in helo)} do
 {
 	sleep 1;
 	_i = _i + 1;

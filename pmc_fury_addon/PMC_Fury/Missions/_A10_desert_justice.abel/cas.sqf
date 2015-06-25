@@ -19,7 +19,7 @@ helo1rearming = false;
 helo2rearming = false;
 a10rearming = false;
 
-while ("Tank" counttype eastunits > 0 && "APC" counttype eastunits > 0) do
+while {"Tank" counttype eastunits > 0 && "APC" counttype eastunits > 0} do
 {
 	sleep 10;
 	// AH-64 Apache

@@ -11,7 +11,7 @@ _zPos = getpos vehicle bots select 2;
 
 _num = 0;
 
-while (_num < 2500)
+while {_num < 2500} do
 {
 	sleep 0.01;
 	_num = _num + 1;

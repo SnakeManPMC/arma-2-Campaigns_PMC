@@ -71,7 +71,7 @@ _doh = 0;
 	loop for capturing the prisoners
 
 */
-while ( (!cpris11 && !cpris12 && !cpris13 && !cpris14 && !cpris21 && !cpris22 && !cpris23 && !cpris24 && !cpris25 && !cpris26 && !cpris27 && !cpris28 || _doh < 600) ) do
+while { (!cpris11 && !cpris12 && !cpris13 && !cpris14 && !cpris21 && !cpris22 && !cpris23 && !cpris24 && !cpris25 && !cpris26 && !cpris27 && !cpris28 || _doh < 600) } do
 {
 	if (player distance pris1_1 <3 && !cpris11) then
 	{

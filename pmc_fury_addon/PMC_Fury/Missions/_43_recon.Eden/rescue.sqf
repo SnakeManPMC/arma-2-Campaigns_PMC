@@ -55,7 +55,7 @@ rescue_airframe flyinheight 0;
 */
 _A = 0;
 
-while (_B > _A) do
+while {_B > _A} do
 {
 	_listunits = units assault;
 	_B = count _listunits;

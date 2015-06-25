@@ -30,7 +30,7 @@ _helo flyinheight 0;
 */
 _A = 0;
 
-while (_B > _A) do
+while {_B > _A} do
 {
 	_listunits = units _team;
 	_B = count _listunits;

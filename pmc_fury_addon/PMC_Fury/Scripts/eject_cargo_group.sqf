@@ -23,7 +23,7 @@ _helo = _this select 1;
 _A = 0;
 _B = count units _grp;
 
-while (_B > _A) do
+while {_B > _A} do
 {
 	(units _grp select _A) action ["eject", _helo];
 	_A = _A + 1;

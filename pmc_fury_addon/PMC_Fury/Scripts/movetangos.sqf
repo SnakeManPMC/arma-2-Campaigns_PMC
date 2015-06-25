@@ -12,7 +12,7 @@ _listunits = eastlist;
 _A = 0;
 _B = count _listunits
 
-while (true) do
+while {true} do
 {
 	leader (_listunits select _A) move getpos usa;
 	leader (_listunits select _A) setbehaviour "aware";

@@ -3,7 +3,7 @@
 	Grenadier fires flares throughout the mission
 
 */
-while (alive grenados)
+while {alive grenados} do
 {
 	grenados fire ["cwr2_M203Muzzle_AI", "FlareWhite_M203", "FlareWhite_M203"];
 	grenados addmagazine "FlareWhite_M203";
