@@ -3,7 +3,7 @@
 	Artillery
 	
 Syntax:
-[<position>, <marker>, <radio slot>, <calling group>] execVM "artillery.sqf";
+[<position>, <marker>, <radio slot>, <calling group>, <number of calls>] execVM "artillery.sqf";
 
 Reguires:
 radio call SLOT <specified> "Call Artillery"
@@ -17,17 +17,24 @@ if (WartyRunning) exitWith
 	onMapSingleClick ""false"";
 };
 
-private["_A", "_coords", "_radius", "_height", "_ord", "_salvo", "_marker", "_slot", "_grp"];
+private["_A", "_coords", "_radius", "_height", "_ord", "_salvo", "_marker", "_slot", "_grp", "_artyCalls"];
 
 _coords = _this select 0;
 _marker = _this select 1;
 _slot = _this select 2;
 _grp = _this select 3;
+_artyCalls = _this select 4;
 _radius = 150;
 _height = 0;
-_ord = "Shell125";
+_ord = "Sh_105_HE";
 _salvo = 50;
 _A = 0;
+
+// some init magic
+if (isNil "ArtyCalls") then
+{
+	ArtyCalls = 1;
+};
 
 WartyRunning = true;
 
@@ -61,6 +68,18 @@ while (_A < _salvo) do
 
 _marker setMarkertype "empty";
 
+if (ArtyCalls == _artyCalls) exitWith
+{
+	/*
+
+		no more arty support for player.
+	
+	*/
+	PAPABEAR sidechat "THAT WAS THE LAST OF THE ARTILLERY BARRAGES. YOU HAVE TO MANAGE WITHOUT IT NOW. PAPA BEAR OUT.";
+}
+
+ArtyCalls = ArtyCalls + 1;
+
 sleep 100 + (random 20);
 
 _slot setRadioMsg "Call - Artillery";
@@ -70,13 +89,7 @@ PAPABEAR sidechat "ARTILLERY AVAILABLE AGAIN. PAPA BEAR OUT.";
 WartyRunning = false;
 onMapSingleClick ""false"";
 
-/*
-this was on B41:
-
-;
-; no more arty support for player.
-;
-#EndOfArty
-
-PAPABEAR sidechat "THATS THE LAST OF THE ARTILLERY BARRAGES. YOU HAVE TO MANAGE WITHOUT IT NOW. PAPA BEAR OUT.";
+/* PMCTODO
+hint "click map for target position.";
+and perhaps move onmapsingleclick into this script instead of radio trigger in .sqm?
 */

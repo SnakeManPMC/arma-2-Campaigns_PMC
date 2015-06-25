@@ -5241,7 +5241,7 @@ class Mission
 			repeating=1;
 			age="UNKNOWN";
 			text="Call - Artillery";
-			expActiv="onMapSingleClick ""[_pos] exec ""arty.sqs"";""; hint ""click map for target position."";";
+			expActiv="onMapSingleClick ""this = [_pos, 'arty', 3, (group player), 5] execVM ""artillery.sqf"";""; hint ""click map for target position."";";
 			class Effects
 			{
 			};
