@@ -1348,7 +1348,7 @@ class Mission
 					formation="COLUMN";
 					speed="NORMAL";
 					combat="SAFE";
-					expActiv="[] exec ""insert.sqs"";";
+					expActiv="helo sideradio ""Rinsert""; this = [assault3, helo] exec ""insert.sqs""; this = [assault4, helo] exec ""insert.sqs"";";
 					class Effects
 					{
 					};
@@ -1863,7 +1863,7 @@ class Mission
 			age="UNKNOWN";
 			text="see tanks call support";
 			expCond="leader assault1 knowsabout tnk1>0 OR leader assault1 knowsabout tnk2>0 OR leader assault1 knowsabout tnk3>0 OR leader assault1 knowsabout tnk4>0";
-			expActiv="[] exec ""cas.sqs"";";
+			expActiv="this = [] execVM ""casradio.sqf"";";
 			class Effects
 			{
 			};
