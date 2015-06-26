@@ -9,6 +9,7 @@ aa = s7 saveStatus "01s7";
 aa = s8 saveStatus "01s8";
 aa = s9 saveStatus "01s9";
 
+/* there is no such thing
 ;
 ; C1 is the bmp name
 ;
@@ -18,8 +19,7 @@ GLB_02_C1X = ((getpos C1) select 0); saveVar "GLB_02_C1X";
 GLB_02_C1Y = ((getpos C1) select 1); saveVar "GLB_02_C1Y";
 GLB_02_C1D = getdir C1; saveVar "GLB_02_C1D";
 
-exit
-
 ; C1 is the vehicle name
 ; 02C1 is the status variable name.
 ; aa is something I have no clue about ;)
+*/
