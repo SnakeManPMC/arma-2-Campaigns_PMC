@@ -57,6 +57,8 @@ sleep 2;
 skipTime 4;
 titlecut ["", "BLACK IN", 2];
 
+/*
+this shit doesnt work, replace it with the new illumination flare script
 _a = 0;
 waitUntil
 {
@@ -67,6 +69,9 @@ waitUntil
 	sleep 18;
 	(_a > 10);
 };
+*/
+// this runs until end of mission though, but no biggie, you cant see flares in daytime(?)
+[getPosASL grenados] execVM "PMC_Illumination_flares.sqf";
 
 /*
 
@@ -80,6 +85,8 @@ sleep 2;
 skipTime 4;
 titlecut ["", "BLACK IN", 2];
 
+/*
+see above
 _a = 0;
 waitUntil
 {
@@ -90,6 +97,7 @@ waitUntil
 	sleep 18;
 	(_a > 10);
 };
+*/
 
 /*
 

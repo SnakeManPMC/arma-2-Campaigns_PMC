@@ -1250,7 +1250,7 @@ class Mission
 			age="UNKNOWN";
 			text="flareman";
 			expCond="contact";
-			expActiv="grenados execVM ""flares.sqf"";";
+			expActiv="this = [getPosASL this] execVM ""PMC_Illumination_flares.sqf"";";
 			class Effects
 			{
 				soundDet="AlarmSfx";
@@ -1990,7 +1990,7 @@ class Intro
 			age="UNKNOWN";
 			text="flareman";
 			expCond="contact";
-			expActiv="grenados execVM ""flares.sqf"";";
+			expActiv="this = [getPosASL this] execVM ""PMC_Illumination_flares.sqf"";";
 			class Effects
 			{
 				soundDet="AlarmSfx";

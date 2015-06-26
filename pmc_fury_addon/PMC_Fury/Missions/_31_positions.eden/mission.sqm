@@ -2354,7 +2354,7 @@ class Mission
 			repeating=1;
 			age="UNKNOWN";
 			text="Battlefield Illumination";
-			expActiv="me execVM ""flare.sqf"";";
+			expActiv="this = [getPosASL me] execVM ""PMC_Illumination_flares.sqf"";";
 			class Effects
 			{
 			};
@@ -2641,7 +2641,7 @@ class Intro
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					init="{_x setunitpos ""down""} foreach units group this;";
+					init="{_x setunitpos ""down""} foreach units group this; this = [getPosASL this] execVM ""PMC_Illumination_flares.sqf"";";
 				};
 				class Item1
 				{
@@ -4084,7 +4084,6 @@ class Intro
 			repeating=1;
 			age="UNKNOWN";
 			text="Battlefield Illumination";
-			expActiv="me execVM ""flare.sqf"";";
 			class Effects
 			{
 			};
