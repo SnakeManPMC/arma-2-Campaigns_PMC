@@ -86,7 +86,7 @@ player createDiaryRecord
 	"Diary",
 	[
 		"Details", "Sweep the <marker name = 'sweep'>airbase area</marker> for ANY infiltrated Russian troops. Clear out all of the area leaving nobody hiding. Sweep the beach as the Spez Natz forces arrived with boat, destroy the boat. Neutralize them ALL.<br><br>Your mission is accomplished when the airbase area and beach have been cleared and secured."
-	],
+	]
 ];
 
 hint "New orders added to the map view.\n\nCheck Briefing!";

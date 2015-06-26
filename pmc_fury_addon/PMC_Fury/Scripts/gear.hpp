@@ -109,6 +109,9 @@ class weapons
 	class cwr2_Kozlice	{ count = 25; };
 	class cwr2_MM1		{ count = 25; };
 	class cwr2_steyr	{ count = 25; };
+	// equipment
+	class Binocular		{ count = 50; };
+	class NVGoggles		{ count = 50; };
 };
 
 class magazines
@@ -145,13 +148,8 @@ class magazines
 	class cwr2_KozliceShellMag	{ count = 50; };
 	class cwr2_12Rnd_HE_MM1		{ count = 50; };
 	
-	// equipment
-	// some error, are these weapons?
-	//class Binocular			{ count = 50; };
-	//class NVGoggles			{ count = 50; };
-	
 	// explosives
 	class mine			{ count = 50; };
 	class pipebomb			{ count = 50; };
-	class handgrenade		{ count = 50; };
+	class HandGrenade_West		{ count = 50; };
 };
