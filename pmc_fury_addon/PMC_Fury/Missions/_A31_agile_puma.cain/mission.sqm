@@ -912,7 +912,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					fuel=0.000000;
 					text="helo";
 					init="transphelo1=group this;";
 				};
@@ -922,6 +921,15 @@ class Mission
 				items=4;
 				class Item0
 				{
+					position[]={11470.486328,106.691330,10638.798828};
+					expCond="pmc_send_helo";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
 					position[]={6586.808105,398.650391,7117.840820};
 					expActiv="this = [assault1, helo] exec ""extract.sqs"";";
 					class Effects
@@ -929,7 +937,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={11466.396484,106.936317,10632.930664};
 					type="GETOUT";
@@ -938,7 +946,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={11447.239258,107.009995,10633.040039};
 					expActiv="mcomplete=true;";
@@ -947,7 +955,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={11426.810547,107.009995,10626.960938};
 					class Effects
@@ -1043,7 +1051,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply";
 			expCond="sweepdone";
-			expActiv="PAPABEAR sideRadio ""Rmcomplete""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; helo setfuel 1;";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; pmc_send_helo = true;";
 			class Effects
 			{
 			};

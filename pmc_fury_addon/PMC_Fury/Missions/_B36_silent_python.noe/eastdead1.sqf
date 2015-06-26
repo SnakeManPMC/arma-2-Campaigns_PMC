@@ -13,4 +13,4 @@ objective1 setTaskState "SUCCEEDED";
 SendNazis = true;
 sleep 120;
 
-helo setfuel 1; // PMCTODO ofp setfuel trick doesnt work in arma2 anymore :(
+pmc_send_helo = true;

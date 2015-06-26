@@ -988,15 +988,23 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo1";
 					init="gunship1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
+				{
+					position[]={8015.674805,32.174999,10288.710938};
+					expCond="pmc_send_helo1";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={4483.835449,146.288284,9340.126953};
 					placement=500.000000;
@@ -1010,7 +1018,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={4034.395752,133.227020,8999.078125};
 					placement=500.000000;
@@ -1019,7 +1027,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={4483.461426,146.035080,9341.493164};
 					type="CYCLE";
@@ -1510,7 +1518,7 @@ class Mission
 			activationType="EAST D";
 			age="UNKNOWN";
 			text="west detected";
-			expActiv="helo1 setfuel 1;";
+			expActiv="pmc_send_helo1 = true;";
 			class Effects
 			{
 			};

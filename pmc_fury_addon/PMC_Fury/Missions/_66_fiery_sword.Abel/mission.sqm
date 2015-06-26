@@ -414,15 +414,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					fuel=0.000000;
 					text="helo1";
 					init="helos1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
+				{
+					position[]={7990.895020,32.174999,9855.421875};
+					expCond="pmc_send_helo1";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={6256.434570,71.764656,3502.475098};
 					type="TR UNLOAD";
@@ -435,7 +443,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={6236.334961,60.446392,2804.410400};
 					type="SAD";
@@ -446,7 +454,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={6235.460938,60.434143,2805.001221};
 					type="CYCLE";
@@ -474,15 +482,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					fuel=0.000000;
 					text="helo2";
 					init="helos2=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
+				{
+					position[]={7992.265625,32.174999,10107.291992};
+					expCond="pmc_send_helo2";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={6516.213379,82.631432,3504.687012};
 					type="TR UNLOAD";
@@ -495,7 +511,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={6194.606934,60.107510,2827.624756};
 					type="SAD";
@@ -504,7 +520,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={6194.954590,60.121197,2827.318604};
 					type="CYCLE";
@@ -999,7 +1015,7 @@ class Mission
 			timeoutMax=5.000000;
 			age="UNKNOWN";
 			text="aaclear";
-			expActiv="leader assault1 sideradio ""Raaclear""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; aaclear=true; helo1 setFuel 1; helo2 setFuel 1;";
+			expActiv="leader assault1 sideradio ""Raaclear""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; aaclear=true; pmc_send_helo1 = true; pmc_send_helo2 = true;";
 			class Effects
 			{
 			};

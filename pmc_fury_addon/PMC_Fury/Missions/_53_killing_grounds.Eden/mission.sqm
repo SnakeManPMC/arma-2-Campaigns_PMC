@@ -1458,15 +1458,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="gunship1";
 					markers[]={};
 				};
 			};
 			class Waypoints
 			{
-				items=4;
+				items=5;
 				class Item0
+				{
+					position[]={4800.587891,24.660000,11206.626953};
+					expCond="pmc_send_gunship1";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={10087.202148,299.774048,2675.331055};
 					type="SAD";
@@ -1480,7 +1488,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={10739.418945,158.841492,2214.710449};
 					type="SAD";
@@ -1490,7 +1498,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={11384.602539,42.184212,1892.858887};
 					type="SAD";
@@ -1500,7 +1508,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={10089.790039,300.038330,2673.580811};
 					type="CYCLE";
@@ -1529,15 +1537,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="gunship2";
 					markers[]={};
 				};
 			};
 			class Waypoints
 			{
-				items=4;
+				items=5;
 				class Item0
+				{
+					position[]={4794.819336,24.660000,11622.032227};
+					expCond="pmc_send_gunship2";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={11321.784180,68.915245,2008.616943};
 					type="SAD";
@@ -1551,7 +1567,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={10151.450195,311.519012,2712.223877};
 					type="SAD";
@@ -1561,7 +1577,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={10775.129883,194.893646,2265.685059};
 					type="SAD";
@@ -1571,7 +1587,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={11317.618164,71.927460,2003.665894};
 					type="CYCLE";
@@ -1837,7 +1853,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					fuel=0.000000;
 					text="helo2";
 					markers[]={};
 					init="{_x moveincargo helo2} foreach units backup1; {_x moveincargo helo2} foreach units backup2;";
@@ -1845,8 +1860,17 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={4796.899902,24.660000,11762.913086};
+					expCond="pmc_send_helo2";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={11691.329102,56.058376,2134.683594};
 					type="TR UNLOAD";
@@ -1859,7 +1883,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={4805.736328,24.660000,11771.448242};
 					type="GETOUT";
@@ -3054,7 +3078,7 @@ class Mission
 			age="UNKNOWN";
 			text="Call backup";
 			expCond="this AND callme";
-			expActiv="helo2 setfuel 1; leader assault1 sideradio ""Rbackup""; backup=true;";
+			expActiv="pmc_send_helo2 = true; leader assault1 sideradio ""Rbackup""; backup=true;";
 			class Effects
 			{
 			};
@@ -3070,7 +3094,7 @@ class Mission
 			age="UNKNOWN";
 			text="gunships arrive";
 			expCond="true";
-			expActiv="PAPABEAR sideradio ""Rgunships""; gunship1 setfuel 1; gunship2 setfuel 1;";
+			expActiv="PAPABEAR sideradio ""Rgunships""; pmc_send_gunship1 = true; pmc_send_gunship2 = true;";
 			class Effects
 			{
 			};

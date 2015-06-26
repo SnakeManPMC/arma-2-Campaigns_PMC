@@ -1492,15 +1492,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					fuel=0.000000;
 					text="helo1";
 					init="helos1=group this; {_x moveincargo helo1} foreach units assault3; {_x moveincargo helo1} foreach units assault4;";
 				};
 			};
 			class Waypoints
 			{
-				items=6;
+				items=7;
 				class Item0
+				{
+					position[]={9740.940430,39.329998,3920.620605};
+					expCond="pmc_send_helo1";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={4985.846680,26.178562,1612.797852};
 					combatMode="YELLOW";
@@ -1512,7 +1520,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={1671.438843,-17.595938,5700.711914};
 					class Effects
@@ -1520,7 +1528,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={3670.459961,374.916351,6981.096191};
 					type="TR UNLOAD";
@@ -1529,7 +1537,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={1557.355835,0.245698,5788.852051};
 					class Effects
@@ -1537,7 +1545,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item4
+				class Item5
 				{
 					position[]={4817.470703,9.697329,1368.124390};
 					class Effects
@@ -1545,7 +1553,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item5
+				class Item6
 				{
 					position[]={9718.333984,39.329998,3914.776611};
 					type="GETOUT";

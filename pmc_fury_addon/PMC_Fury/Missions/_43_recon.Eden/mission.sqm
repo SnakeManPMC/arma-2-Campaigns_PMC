@@ -1439,15 +1439,23 @@ class Mission
 					vehicle="AH64";
 					leader=1;
 					skill=1.000000;
-					fuel=0.000000;
 					text="gunship";
 					init="gunships1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=6;
+				items=7;
 				class Item0
+				{
+					position[]={4870.427734,24.660000,11762.376953};
+					expCond="pmc_send_gunship";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={4871.881348,24.660000,10971.620117};
 					speed="FULL";
@@ -1457,7 +1465,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={5752.680664,213.574631,7233.833984};
 					class Effects
@@ -1465,7 +1473,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={7672.846680,15.550046,1458.033569};
 					type="SAD";
@@ -1477,7 +1485,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={7709.702148,12.032824,1458.212158};
 					type="SAD";
@@ -1487,7 +1495,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item4
+				class Item5
 				{
 					position[]={4869.402832,24.660000,11760.495117};
 					type="GETOUT";
@@ -1496,7 +1504,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item5
+				class Item6
 				{
 					position[]={4868.632324,24.660000,11724.566406};
 					class Effects

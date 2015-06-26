@@ -29,11 +29,10 @@ sleep 2;
 pilot1 assignasdriver helo;
 gunner1 assignasgunner helo;
 
-pilot1 move getpos malden;
-
 waitUntil
 {
 	sleep .3;
 	(aP in helo);
 };
-helo setfuel 1; // PMCTODO ofp setfuel trick doesnt work in arma2 anymore :(
+
+pilot1 move getPos malden;

@@ -51,14 +51,22 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.600000;
-					fuel=0.000000;
 					text="boats";
 				};
 			};
 			class Waypoints
 			{
-				items=1;
+				items=2;
 				class Item0
+				{
+					position[]={2975.561523,0.980343,7153.773926};
+					expCond="pmc_send_boats";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={2536.342041,-34.412769,7337.026855};
 					class Effects
@@ -234,7 +242,7 @@ class Mission
 			age="UNKNOWN";
 			text="ufuel dead & player in boats";
 			expCond="!alive ufuel AND leader demol in boats";
-			expActiv="mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; boats setfuel 1;";
+			expActiv="mcomplete=true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; pmc_send_boats = true;";
 			class Effects
 			{
 			};

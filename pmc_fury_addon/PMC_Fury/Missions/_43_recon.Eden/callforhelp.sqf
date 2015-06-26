@@ -16,7 +16,8 @@ sleep 25;
 send in the apache with search and destroy
 
 */
-gunship setfuel 1; //PMCTODO setfuel shit wont work anymore in arma2 :(
+pmc_send_gunship = true;
+
 //STRM_Rehqreply2,"ALPHA BLACK, WE ARE DISPATCHING APACHE TO YOUR LOCATION. STAY LOW. OVER.",papabear
 PAPABEAR sideradio "Rehqreply2";
 sleep 15;

@@ -552,15 +552,23 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo";
 					init="transp1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=6;
+				items=7;
 				class Item0
+				{
+					position[]={4874.036133,24.660000,11811.590820};
+					expCond="pmc_send_helo";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={5566.725098,2.176272,11814.454102};
 					combatMode="YELLOW";
@@ -572,7 +580,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={8023.337402,2.176272,8953.882813};
 					class Effects
@@ -580,7 +588,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={9558.291992,226.079987,2939.403076};
 					expActiv="this = [] execVM ""land.sqf"";";
@@ -589,7 +597,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={4806.374512,22.188103,10802.571289};
 					class Effects
@@ -597,7 +605,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item4
+				class Item5
 				{
 					position[]={4849.645020,24.660000,11806.589844};
 					type="GETOUT";
@@ -608,7 +616,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item5
+				class Item6
 				{
 					position[]={4866.469727,24.660000,11726.219727};
 					speed="NORMAL";
@@ -961,7 +969,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			text="null";
-			expActiv="leader ambusher sideradio ""Rextract""; extract=true; helo setfuel 1;";
+			expActiv="leader ambusher sideradio ""Rextract""; extract=true; pmc_send_helo = true;";
 			class Effects
 			{
 			};

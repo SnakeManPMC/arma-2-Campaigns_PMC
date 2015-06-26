@@ -1106,15 +1106,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					fuel=0.000000;
 					text="helo2";
 					init="helos2=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={8006.109375,32.174999,10004.768555};
+					expCond="pmc_send_helo2";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={3771.302734,18.404999,3302.468262};
 					type="SAD";
@@ -1127,7 +1135,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={3770.430176,18.404999,3302.980957};
 					type="CYCLE";
@@ -1155,15 +1163,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					fuel=0.000000;
 					text="helo3";
 					init="helos3=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={8003.602539,32.174999,10078.709961};
+					expCond="pmc_send_helo3";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={3767.383789,18.404999,3315.649902};
 					type="SAD";
@@ -1176,7 +1192,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={3769.336914,18.404999,3314.749512};
 					type="CYCLE";
@@ -1309,7 +1325,7 @@ class Mission
 			age="UNKNOWN";
 			text="dead helo2";
 			expCond="!alive helo2";
-			expActiv="helo3 setfuel 1;";
+			expActiv="pmc_send_helo3 = true;";
 			class Effects
 			{
 			};
@@ -1322,7 +1338,7 @@ class Mission
 			age="UNKNOWN";
 			text="dead helo1";
 			expCond="!alive helo1";
-			expActiv="helo2 setfuel 1;";
+			expActiv="pmc_send_helo2 = true;";
 			class Effects
 			{
 			};

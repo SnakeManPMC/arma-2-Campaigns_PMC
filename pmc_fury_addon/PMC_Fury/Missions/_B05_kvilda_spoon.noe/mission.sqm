@@ -758,15 +758,23 @@ class Mission
 					leader=1;
 					rank="CAPTAIN";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo1";
 					init="gunships1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
+				{
+					position[]={9099.507813,14.985000,12626.001953};
+					expCond="pmc_send_helo1";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={11083.289063,55.506378,11530.688477};
 					type="SAD";
@@ -779,7 +787,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={11936.955078,157.734772,11695.205078};
 					type="SAD";
@@ -788,7 +796,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={11084.791992,55.681171,11529.748047};
 					type="CYCLE";
@@ -2229,7 +2237,7 @@ class Mission
 			activationBy="ALPHA";
 			age="UNKNOWN";
 			text="Call - Gunship";
-			expActiv="leader assault1 sideradio ""Rcallgunship""; helo1 setfuel 1;";
+			expActiv="leader assault1 sideradio ""Rcallgunship""; pmc_send_helo1 = true;";
 			class Effects
 			{
 			};

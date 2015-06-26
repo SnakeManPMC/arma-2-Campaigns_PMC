@@ -1927,14 +1927,22 @@ class Intro
 					vehicle="Ural";
 					leader=1;
 					skill=0.200000;
-					fuel=0.000000;
 					text="ur";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={9367.722656,191.736450,1071.343994};
+					expCond="pmc_send_ural";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={9723.189453,40.531624,1210.112061};
 					combatMode="YELLOW";
@@ -1945,7 +1953,7 @@ class Intro
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={9719.393555,13.410000,1583.883667};
 					class Effects

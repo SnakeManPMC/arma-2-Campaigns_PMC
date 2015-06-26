@@ -261,15 +261,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					fuel=0.000000;
 					text="helo1";
 					init="helos1=group this; helo1 flyInHeight 95;";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={9719.133789,39.329998,3916.181152};
+					expCond="pmc_send_helo1";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={5614.412109,356.237396,5609.307617};
 					type="TR UNLOAD";
@@ -282,7 +290,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={9719.134766,39.329998,3927.001953};
 					type="GETOUT";
@@ -1534,7 +1542,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply and helo";
 			expCond="eastdead";
-			expActiv="PAPABEAR sideRadio ""Rsendingbackup""; helo1 setfuel 1; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
+			expActiv="PAPABEAR sideRadio ""Rsendingbackup""; pmc_send_helo1 = true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

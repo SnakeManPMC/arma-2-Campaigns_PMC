@@ -3,7 +3,7 @@
 	jump out radio message, shut down engines
 
 */
-helo setfuel 0;
+helo setfuel 0; // this is intentional, crew must bail out, this is the goal. be cool, be cool... :)
 unassignvehicle pgun;
 unassignvehicle ppilot;
 leader helo sideradio "Rjump";

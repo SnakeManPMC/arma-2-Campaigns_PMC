@@ -796,15 +796,23 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.611817;
-					fuel=0.000000;
 					text="helo";
 					init="gunships1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={2718.141846,16.559999,5589.718750};
+					expCond="pmc_send_helo";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={5310.465820,63.584999,3387.538086};
 					type="SAD";
@@ -817,7 +825,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={5310.978516,63.584999,3387.580078};
 					type="CYCLE";
@@ -928,7 +936,7 @@ class Mission
 			timeoutMax=5.000000;
 			age="UNKNOWN";
 			text="eastdead";
-			expActiv="leader assault1 sideRadio ""Reastdead""; eastdead=true; helo setFuel 1;";
+			expActiv="leader assault1 sideRadio ""Reastdead""; eastdead=true; pmc_send_helo = true;";
 			class Effects
 			{
 			};

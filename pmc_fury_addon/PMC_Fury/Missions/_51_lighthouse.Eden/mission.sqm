@@ -896,15 +896,23 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=1.000000;
-					fuel=0.000000;
 					text="gunship";
 					markers[]={};
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={7520.049316,153.989990,4132.016602};
+					expCond="pmc_send_gunship";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={10297.760742,33.030766,323.552612};
 					type="DESTROY";
@@ -917,7 +925,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={7519.219727,153.989990,4129.648438};
 					type="GETOUT";
@@ -1345,7 +1353,7 @@ class Mission
 			age="UNKNOWN";
 			text="gunship on way";
 			expCond="cas";
-			expActiv="gunship setfuel 1; gunship sideradio ""Rcasonway"";";
+			expActiv="pmc_send_gunship = true; gunship sideradio ""Rcasonway"";";
 			class Effects
 			{
 			};

@@ -24,13 +24,13 @@ grdptr1 setbehaviour "AWARE";
 grdptr2 setbehaviour "AWARE";
 warden setbehaviour "AWARE";
 
-grd1 setcombatmode "red";
-grd2 setcombatmode "red";
-grd3 setcombatmode "red";
-grd4 setcombatmode "red";
-grdptr1 setcombatmode "red";
-grdptr2 setcombatmode "red";
-warden setcombatmode "red";
+grd1 setcombatmode "RED";
+grd2 setcombatmode "RED";
+grd3 setcombatmode "RED";
+grd4 setcombatmode "RED";
+grdptr1 setcombatmode "RED";
+grdptr2 setcombatmode "RED";
+warden setcombatmode "RED";
 sleep 5;
 
 warden sideradio "Rmaggots";

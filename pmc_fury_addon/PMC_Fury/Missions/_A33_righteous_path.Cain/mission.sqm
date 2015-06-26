@@ -1082,15 +1082,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="gnhelo";
 					init="gunships1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={8597.610352,95.482773,9254.274414};
+					expCond="pmc_send_gnhelo";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={6906.715332,433.307373,6842.918945};
 					type="SAD";
@@ -1103,7 +1111,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={6906.168457,432.939545,6846.613281};
 					type="CYCLE";
@@ -1334,14 +1342,22 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={11450.832031,106.984451,10653.618164};
+					expCond="pmc_send_helo";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={6974.029785,431.662964,6871.521973};
 					combatMode="YELLOW";
@@ -1354,7 +1370,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={11460.774414,106.631882,10660.378906};
 					type="GETOUT";
@@ -1817,7 +1833,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply";
 			expCond="eastdead";
-			expActiv="PAPABEAR sideRadio ""Rbackup""; helo setFuel 1; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
+			expActiv="PAPABEAR sideRadio ""Rbackup""; pmc_send_helo = true; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";";
 			class Effects
 			{
 			};

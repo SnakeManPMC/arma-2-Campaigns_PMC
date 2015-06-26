@@ -841,15 +841,23 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.200000;
-					fuel=0.000000;
 					text="rhelo1";
 					init="rgunships1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=1;
+				items=2;
 				class Item0
+				{
+					position[]={7991.277344,32.174999,10700.450195};
+					expCond="pmc_send_rhelo1";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={7921.685059,32.174999,10097.811523};
 					type="SAD";

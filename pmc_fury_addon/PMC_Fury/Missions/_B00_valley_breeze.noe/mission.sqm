@@ -2109,15 +2109,23 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo1";
 					init="gunships1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={9834.202148,14.985000,12624.084961};
+					expCond="pmc_send_gunships";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={10316.858398,256.794006,8584.275391};
 					type="SAD";
@@ -2130,7 +2138,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={10318.160156,256.737061,8584.344727};
 					type="CYCLE";
@@ -2158,15 +2166,23 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo2";
 					init="gunships2=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={9120.260742,14.985000,12621.131836};
+					expCond="pmc_send_gunships";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={8957.894531,194.008484,7922.351074};
 					type="SAD";
@@ -2179,7 +2195,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={8959.308594,194.006317,7922.776855};
 					type="CYCLE";
@@ -2911,7 +2927,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq air reply";
 			expCond="HQairreply";
-			expActiv="PAPABEAR sideRadio ""Rhqair""; helo1 setfuel 1; helo2 setfuel 1;";
+			expActiv="PAPABEAR sideRadio ""Rhqair""; pmc_send_gunships = true;";
 			class Effects
 			{
 			};

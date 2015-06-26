@@ -727,15 +727,23 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo1";
 					init="transphelo1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=4;
+				items=5;
 				class Item0
+				{
+					position[]={11457.587891,106.743675,10662.255859};
+					expCond="pmc_send_helo1";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={2120.457764,124.563957,7366.561035};
 					combatMode="YELLOW";
@@ -748,7 +756,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={11464.561523,106.921913,10635.022461};
 					type="GETOUT";
@@ -758,7 +766,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={11354.387695,107.009995,10558.178711};
 					expActiv="PAPABEAR sideradio ""Rmcomplete""; mcomplete=true;";
@@ -767,7 +775,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={11353.478516,107.009995,10554.389648};
 					class Effects
@@ -794,15 +802,23 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo2";
 					init="transphelo2=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
+				{
+					position[]={11425.277344,106.850746,10519.335938};
+					expCond="pmc_send_helo2";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={2116.407471,132.006241,7258.682617};
 					combatMode="YELLOW";
@@ -815,7 +831,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={11418.350586,106.894386,10511.523438};
 					type="GETOUT";
@@ -825,7 +841,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={11350.747070,107.009995,10549.513672};
 					class Effects

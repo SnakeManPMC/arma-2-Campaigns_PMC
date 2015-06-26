@@ -15,7 +15,7 @@ PAPABEAR sideradio "Rsgunships";
 sleep 10;
 
 PAPABEAR sideradio "Rgoldencanyon";
-helo1 setfuel 1; // PMCTODO ofp setfuel trick doesnt work in arma2 :(
+pmc_send_helo1 = true;
 sleep 10;
 
 leader gunships1 sideradio "Rrogergolden";

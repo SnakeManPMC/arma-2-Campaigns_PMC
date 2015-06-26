@@ -105,7 +105,7 @@ _camera camCommit 15
 ; good massiveh
 playmusic ["track9",0]
 
-aten setfuel 1
+pmc_send_aten = true;
 
 ; aten shot
 _camera camSetTarget aten
@@ -114,9 +114,8 @@ _camera camSetFOV 0.700
 _camera camCommit 0
 @camCommitted _camera
 
-helo2 setfuel 1
 ~1
-helo1 setfuel 1
+pmc_send_helos = true;
 
 ~5
 

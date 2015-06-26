@@ -419,15 +419,23 @@ class Mission
 					leader=1;
 					rank="CAPTAIN";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo1";
 					init="gunships1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
+				{
+					position[]={9693.098633,39.329998,3929.426025};
+					expCond="pmc_send_helo1";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={6434.040527,128.022964,5375.537598};
 					type="SAD";
@@ -440,7 +448,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={6469.862793,134.289551,5482.289063};
 					type="SAD";
@@ -449,7 +457,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={6435.025879,127.943825,5376.523438};
 					type="CYCLE";
@@ -476,15 +484,23 @@ class Mission
 					leader=1;
 					rank="CAPTAIN";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo2";
 					init="gunships2=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=3;
+				items=4;
 				class Item0
+				{
+					position[]={9743.576172,39.329998,3963.012695};
+					expCond="pmc_send_helo2";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={7255.610352,20.694271,5263.778809};
 					type="SAD";
@@ -497,7 +513,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={7231.980469,24.765232,5340.915527};
 					type="SAD";
@@ -506,7 +522,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={7255.610352,20.711416,5264.765137};
 					type="CYCLE";
@@ -533,15 +549,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					fuel=0.000000;
 					text="helo3";
 					init="transp=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={9721.666016,39.329998,3908.224609};
+					expCond="pmc_send_helo3";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={7085.311035,71.448288,5992.314453};
 					type="TR UNLOAD";
@@ -554,7 +578,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={9721.393555,39.329998,3921.739258};
 					type="GETOUT";
@@ -3277,7 +3301,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq aa reply";
 			expCond="aadead";
-			expActiv="PAPABEAR sideRadio ""Raacopy""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; helo1 setfuel 1; helo2 setfuel 1;";
+			expActiv="PAPABEAR sideRadio ""Raacopy""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; pmc_send_helo1 = true; pmc_send_helo2 = true;";
 			class Effects
 			{
 			};
@@ -3343,7 +3367,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq houdan reply";
 			expCond="houdanclear";
-			expActiv="PAPABEAR sideRadio ""Rsendingoffi""; helo3 setfuel 1;";
+			expActiv="PAPABEAR sideRadio ""Rsendingoffi""; pmc_send_helo3 = true;";
 			class Effects
 			{
 			};

@@ -18,10 +18,10 @@ truck1 setdammage .8;
 truck2 setdammage .5;
 trailhum setdammage .3;
 
-leadhum setfuel 0;
-truck1 setfuel 0;
-truck2 setfuel 0;
-trailhum setfuel 0;
+leadhum setfuel 0; // this is intentional, vehicle must stop, not a non working OFP setFuel trick!
+truck1 setfuel 0; // this is intentional, vehicle must stop, not a non working OFP setFuel trick!
+truck2 setfuel 0; // this is intentional, vehicle must stop, not a non working OFP setFuel trick!
+trailhum setfuel 0; // this is intentional, vehicle must stop, not a non working OFP setFuel trick!
 
 unassignvehicle tdriver2;
 unassignvehicle traildriver;

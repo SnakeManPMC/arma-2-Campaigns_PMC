@@ -11,7 +11,7 @@ sleep 10;
 	russian backup helo in the air
 
 */
-rhelo1 setfuel 1; // PMCTODO ofp setfuel trick doesnt work in arma2 anymore :(
+pmc_send_rhelo1 = true;
 sleep 10;
 
 PAPABEAR sideradio "Rsndgunships";

@@ -1000,15 +1000,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo";
 					init="transphelo1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={3193.604004,266.444977,6880.452148};
+					expCond="pmc_send_helo";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={6051.502930,415.752075,6304.377441};
 					type="TR UNLOAD";
@@ -1021,7 +1029,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={6053.072754,415.934967,6206.987305};
 					type="SAD";
@@ -1603,7 +1611,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply";
 			expCond="eastdead";
-			expActiv="PAPABEAR sideRadio ""Rreinf""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; helo setFuel 1;";
+			expActiv="PAPABEAR sideRadio ""Rreinf""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; pmc_send_helo = true;";
 			class Effects
 			{
 			};

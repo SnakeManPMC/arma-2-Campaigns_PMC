@@ -16,9 +16,8 @@ objective2 setTaskState "SUCCEEDED";
 	send in the russian helo reinforcements
 
 */
-helo1 setfuel 1; // PMCTODO setfuel ofp trick doesnt work in arma2 anymore :(
-helo2 setfuel 1;
+pmc_send_helos = true;
 sleep 10;
-helo3 setfuel 1;
+pmc_send_helo3 = true;
 
 ed2 = true;

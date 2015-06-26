@@ -535,15 +535,23 @@ class Mission
 					leader=1;
 					rank="CAPTAIN";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo1";
 					init="gunships1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=5;
+				items=6;
 				class Item0
+				{
+					position[]={9717.104492,39.329998,3937.390137};
+					expCond="pmc_send_helo1";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={5066.796875,20.284565,1491.255127};
 					combatMode="GREEN";
@@ -555,7 +563,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={2401.421631,207.315536,3257.273193};
 					combatMode="RED";
@@ -567,7 +575,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={3194.199707,225.179993,6381.461914};
 					type="SAD";
@@ -578,7 +586,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={9153.611328,2.176272,3946.337158};
 					expActiv="removeAllWeapons helo1; helo1 addMagazine ""ZuniLauncher38""; helo1 addMagazine ""HellfireLauncherApach""; helo1 addMagazine ""MachineGun30""; leader gunships1 sideradio ""Rrearmed"";";
@@ -587,7 +595,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item4
+				class Item5
 				{
 					position[]={9718.140625,39.329998,3947.555664};
 					type="CYCLE";

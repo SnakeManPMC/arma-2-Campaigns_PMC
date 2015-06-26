@@ -136,15 +136,23 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1.000000;
-					fuel=0.000000;
 					text="helo";
 					init="transphelo1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=5;
+				items=6;
 				class Item0
+				{
+					position[]={9125.990234,14.985000,12623.164063};
+					expCond="pmc_send_helo";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={9040.449219,639.002075,9595.570313};
 					combatMode="BLUE";
@@ -156,7 +164,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={6019.241699,13.244055,2616.507813};
 					expActiv="[assault1,helo] exec ""extract.sqs"";";
@@ -165,7 +173,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item2
+				class Item3
 				{
 					position[]={9137.277344,14.985000,12615.911133};
 					class Effects
@@ -173,7 +181,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item4
 				{
 					position[]={9117.166992,14.985000,12622.804688};
 					type="GETOUT";
@@ -184,7 +192,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item4
+				class Item5
 				{
 					position[]={8919.046875,14.985000,12556.112305};
 					combat="SAFE";
@@ -314,15 +322,23 @@ class Mission
 					vehicle="Ural";
 					leader=1;
 					skill=0.592002;
-					fuel=0.000000;
 					text="trk";
 					init="transptrk1=group this;";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={2882.691406,17.783360,348.388428};
+					expCond="pmc_send_trk";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={5953.934570,38.555363,2823.667969};
 					type="TR UNLOAD";
@@ -335,7 +351,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={4370.200195,22.749372,3623.330322};
 					class Effects

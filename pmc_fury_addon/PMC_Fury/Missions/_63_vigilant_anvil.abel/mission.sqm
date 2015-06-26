@@ -664,7 +664,6 @@ class Mission
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.733333;
-					fuel=0.000000;
 					text="helo3";
 					init="helos2=group this;";
 				};
@@ -678,14 +677,22 @@ class Mission
 					vehicle="Mi24";
 					rank="LIEUTENANT";
 					skill=0.733333;
-					fuel=0.000000;
 					text="helo4";
 				};
 			};
 			class Waypoints
 			{
-				items=2;
+				items=3;
 				class Item0
+				{
+					position[]={8001.349609,32.174999,10411.081055};
+					expCond="pmc_send_helos";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={5079.404297,17.555365,1782.680054};
 					type="SAD";
@@ -698,7 +705,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item1
+				class Item2
 				{
 					position[]={5077.120605,17.851189,1783.340698};
 					type="CYCLE";
@@ -1426,7 +1433,7 @@ class Mission
 			age="UNKNOWN";
 			text="helos1 dead";
 			expCond="!alive helo1 AND !alive helo2";
-			expActiv="helo3 setfuel 1; helo4 setfuel 1;";
+			expActiv="pmc_send_helos = true;";
 			class Effects
 			{
 			};

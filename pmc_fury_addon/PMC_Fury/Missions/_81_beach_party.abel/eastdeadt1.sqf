@@ -12,8 +12,7 @@ sleep 15;
 	sending russian reinforcements
 
 */
-helo1 setfuel 1; //PMCTODO ofp setfuel trick doesnt work in arma2 :(
-helo2 setfuel 1;
+pmc_send_helo1 = true;
 
 PAPABEAR sideradio "Reast1reply";
 objective1 setTaskState "SUCCEEDED";
