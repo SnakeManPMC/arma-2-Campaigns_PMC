@@ -43,7 +43,7 @@ while {_B > _A} do
 
 leader assault1 sideradio "Rletsgo";
 
-_helo flyinheight 25;
+_helo flyinheight 95;
 sleep 10;
 
 helo sideradio "Rallaboard";

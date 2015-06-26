@@ -125,7 +125,7 @@ while {_B > _A} do
 	};
 };
 
-_helo flyInHeight 25;
+_helo flyInHeight 95;
 leader _team sideRadio "Rdustoff";
 
 comingout = true;

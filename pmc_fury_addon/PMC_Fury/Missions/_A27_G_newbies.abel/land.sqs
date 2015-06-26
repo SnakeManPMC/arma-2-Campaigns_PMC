@@ -16,7 +16,7 @@ _z = getpos vehicle helo select 2;
 helo flyinheight 0;
 ~5
 
-helo setfuel 0;
+//helo setfuel 0;// PMCTODO this is very odd, sefuel 0 for simple script like that?
 
 player action ["eject",helo];
 
@@ -35,9 +35,10 @@ _B = count _listunits
 
 helo sideradio "Rkolgujev";
 
-helo flyinheight 50;
-helo setfuel 1;
+helo flyinheight 95;
+//helo setfuel 1; // PMCTODO see above
 
-objective2 setTaskState "SUCCEEDED"; [ objNull, objNull, objective2, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
+objective2 setTaskState "SUCCEEDED";
+[ objNull, objNull, objective2, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
 
 exit

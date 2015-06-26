@@ -71,4 +71,4 @@ while {_B1 > _A1 || _B2 > _A2 || _B3 > _A3} do
 	sleep 1;
 };
 
-helo flyinheight 25;
+helo flyinheight 95;

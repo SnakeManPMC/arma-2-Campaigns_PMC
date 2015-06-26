@@ -66,7 +66,7 @@ while {_B > _A} do
 	sleep .5;
 };
 
-rescue_airframe flyinheight 50;
+rescue_airframe flyinheight 95;
 
 // so that gunship can stop S&D
 SAR_OP_Completed = true;

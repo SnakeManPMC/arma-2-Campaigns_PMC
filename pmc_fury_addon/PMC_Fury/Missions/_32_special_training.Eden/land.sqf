@@ -30,4 +30,4 @@ while {!(hostage in helo && player in helo)} do
 
 me sideRadio "Rdustoff";
 
-helo flyInHeight 25;
+helo flyInHeight 95;

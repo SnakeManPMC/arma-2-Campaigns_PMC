@@ -305,6 +305,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.200000;
 					text="apilot";
+					init="this flyInHeight 150;";
 				};
 			};
 			class Waypoints
@@ -381,7 +382,7 @@ class Mission
 				class Item8
 				{
 					position[]={4787.981445,23.310286,10825.415039};
-					expActiv="overfly=true; helo flyinheight 4; apilot sideradio ""Rtime4fun""";
+					expActiv="overfly = true; helo flyinheight 4; apilot sideradio ""Rtime4fun""";
 					class Effects
 					{
 					};
@@ -390,7 +391,7 @@ class Mission
 				class Item9
 				{
 					position[]={4786.480957,24.258514,12116.179688};
-					expActiv="helo flyinheight 110; apilot vehiclechat ""YEEEHAAAW! GOD I LOVE THIS SHIET!""";
+					expActiv="helo flyinheight 150; apilot vehiclechat ""YEEEHAAAW! GOD I LOVE THIS SHIET!""";
 					class Effects
 					{
 					};
@@ -408,7 +409,7 @@ class Mission
 				class Item11
 				{
 					position[]={4852.276855,24.660000,11866.041016};
-					expActiv="objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; endos=true;";
+					expActiv="objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; endos = true;";
 					class Effects
 					{
 					};
@@ -518,7 +519,7 @@ class Mission
 			vehicle="UH60MG";
 			skill=0.200000;
 			text="helo";
-			init="apilot assignasdriver helo; agunner assignasgunner helo; acargo assignascargo helo;";
+			init="this flyInHeight 150; apilot assignasdriver helo; agunner assignasgunner helo; acargo assignascargo helo;";
 		};
 		class Item9
 		{

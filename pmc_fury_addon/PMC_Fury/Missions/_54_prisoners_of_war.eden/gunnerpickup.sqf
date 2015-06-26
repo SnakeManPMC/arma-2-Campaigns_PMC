@@ -23,7 +23,7 @@ waitUntil
 	(player in ahelo);
 };
 
-ahelo flyinheight 40;
+ahelo flyinheight 95;
 
 ahelo sidechat "How much ammo do you see in there?";
 sleep 7;

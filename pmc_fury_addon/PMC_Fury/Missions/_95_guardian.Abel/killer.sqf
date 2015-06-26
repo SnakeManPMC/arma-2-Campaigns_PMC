@@ -59,4 +59,4 @@ waitUntil
 	(col in helo && player in helo);
 };
 
-helo flyinheight 50;
+helo flyinheight 95;

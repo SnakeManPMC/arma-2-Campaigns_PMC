@@ -66,4 +66,4 @@ while {_B > _A} do
 	then takeoff and continue waypoints
 
 */
-helo flyInHeight 25;
+helo flyInHeight 95;
