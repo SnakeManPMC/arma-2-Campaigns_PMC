@@ -1,3 +1,6 @@
+; disabled for now :)
+exit;
+
 ;Improved AI script v1.1
 ;By Bremmer
 ;Developed for v1.85
@@ -197,7 +200,7 @@
 	? (_unit in _know) : goto "check_spotted"
 	
 	;check if the unit knows about the enemy
-	? ("_unit knowsabout _x > 0.10" count _enemy > 0) : goto "spotted"
+	? ({_unit knowsabout _x > 0.10} count _enemy > 0) : goto "spotted"
 
 #sound_next
 	;select next group member
@@ -229,7 +232,7 @@
 
 #check_spotted
 	;remove the unit from the knows list if it no longer knows about the enemy
-	? ("_unit knowsabout _x > 0.09" count _enemy == 0) : _know = _know - (units group _unit) ; goto "sound_next"
+	? ({_unit knowsabout _x > 0.09} count _enemy == 0) : _know = _know - (units group _unit) ; goto "sound_next"
 
 	;check whether comments should be possible
 	? (count _units < 2) : goto "sound_next"
@@ -322,10 +325,10 @@
 	? (random 1 > _skill) : goto "support_cycle"
 	
 	;count lists of enemy units
-	_badguys = "_unit knowsabout _x > 0.10" count _enemy
-	_badflys = "_unit knowsabout _x > 0.10" count _flyers
-	_badtanks = "_unit knowsabout _x > 0.10" count _armour
-	_goodguys = "_unit knowsabout _x > 0.50" count _friend
+	_badguys = {_unit knowsabout _x > 0.10} count _enemy
+	_badflys = {_unit knowsabout _x > 0.10} count _flyers
+	_badtanks = {_unit knowsabout _x > 0.10} count _armour
+	_goodguys = {_unit knowsabout _x > 0.50} count _friend
 	;hint format ["badguys %1\nbadflys %2\nbadtanks %3\ngoodguys %4",_badguys,_badflys,_badtanks,_goodguys]
 
 	;do not check for support if no enemy are spotted
@@ -339,7 +342,7 @@
 
 	;select the group to provide support
 	_air = (_airs select 0)
-	? ("canfire _x" count units _air == 0) : _airs = _airs - [_air] ; goto "call_air"
+	? ({canfire _x} count units _air == 0) : _airs = _airs - [_air] ; goto "call_air"
 
 	;find most known air target
 	_j = (count _flyers) - 1
@@ -370,7 +373,7 @@
 	~4
 	_random = random 4
 	_random = _random - _random % 1
-	? (behaviour leader _air == "combat") and ("leader _air distance _x < 250" count _flyers > 0): goto "shuffle_air"
+	? (behaviour leader _air == "combat") and ({leader _air distance _x < 250} count _flyers > 0): goto "shuffle_air"
 	_sair = true
 	leader _air sidechat (_com5 select _random)
 	["general_support", _target, _air] exec "ai.sqs"
@@ -386,7 +389,7 @@
 
 #check_air
 	;check the condition of the supporting group
-	? ("canfire _x" count units _air == 0) : _airs = _airs - [_air] ; _sair = false; goto "call_air"
+	? ({canfire _x} count units _air == 0) : _airs = _airs - [_air] ; _sair = false; goto "call_air"
 	? (unitready leader _air) : _sair = false ; goto "wait"
 
 #call_armour
@@ -397,7 +400,7 @@
 
 	;select the group to provide support
 	_arm = (_arms select 0)
-	? ("canfire _x" count units _arm == 0) : _arms = _arms - [_arm] ; goto "call_armour"
+	? ({canfire _x} count units _arm == 0) : _arms = _arms - [_arm] ; goto "call_armour"
 
 	;find most known armoured target
 	_j = (count _armour) - 1
@@ -428,7 +431,7 @@
 	~4
 	_random = random 4
 	_random = _random - _random % 1
-	? (behaviour leader _arm == "combat") and ("leader _arm distance _x < 200" count _armour > 0) : goto "shuffle_armour"
+	? (behaviour leader _arm == "combat") and ({leader _arm distance _x < 200} count _armour > 0) : goto "shuffle_armour"
 	_sarmour = true
 	leader _arm sidechat (_com5 select _random)
 	["general_support", _target, _arm] exec "ai.sqs"
@@ -444,7 +447,7 @@
 
 #check_armour
 	;check the condition of the supporting group
-	? ("canfire _x" count units _arm == 0) : _arms = _arms - [_arm]; _sarmour = false; goto "call_armour"
+	? ({canfire _x} count units _arm == 0) : _arms = _arms - [_arm]; _sarmour = false; goto "call_armour"
 	? (unitready leader _arm) : _sarmour = false; goto "wait"
 
 #call_artillery
@@ -455,7 +458,7 @@
 	
 	;select the group to provide support
 	_art = (_arts select 0)
-	? ("canfire _x" count units _art == 0) : _arts = _arts - [_art]; goto "call_artillery"
+	? ({canfire _x} count units _art == 0) : _arts = _arts - [_art]; goto "call_artillery"
 	
 	;find most known target
 	_j = (count _enemy) - 1
@@ -495,7 +498,7 @@
 	~4
 	_random = random 4
 	_random = _random - _random % 1
-	? (behaviour leader _art == "combat") and ("leader _art distance _x < 150" count _enemy > 0) : goto "shuffle_artillery"
+	? (behaviour leader _art == "combat") and ({leader _art distance _x < 150} count _enemy > 0) : goto "shuffle_artillery"
 	leader _art sidechat "ROGER. ARTILLERY FIRE COMMENCING. OVER"
 	["artillery_support", _target, _accuracy] exec "ai.sqs"
 		
@@ -519,7 +522,7 @@
 	
 	;select the group to provide support
 	_gro = (_gros select 0)
-	? ("canfire _x" count units _gro == 0) : _gros = _gros - [_gro];  goto "call_ground"
+	? ({canfire _x} count units _gro == 0) : _gros = _gros - [_gro];  goto "call_ground"
 
 	;find most known target
 	_j = (count _enemy) - 1
@@ -547,7 +550,7 @@
 	_random = random 4
 	_random = _random - _random % 1
 	~4
-	? (behaviour leader _gro == "combat") and ("(leader _gro) distance _x < 150" count _enemy > 0) : goto "shuffle_ground"
+	? (behaviour leader _gro == "combat") and ({(leader _gro) distance _x < 150} count _enemy > 0) : goto "shuffle_ground"
 	_sground = true
 	leader _gro sidechat (_com5 select _random)
 	["general_support", _target, _gro] exec "ai.sqs"
@@ -563,7 +566,7 @@
 
 #check_ground
 	;check the condition of the supporting group
-	? ("canfire _x" count units _gro == 0) : _gros = _gros - [_gro]; _sground = false; goto "call_ground"
+	? ({canfire _x} count units _gro == 0) : _gros = _gros - [_gro]; _sground = false; goto "call_ground"
 	? (unitready leader _gro) : _sground = false; goto "wait"
 	goto "support_cycle"
 
@@ -625,10 +628,10 @@
 	? (random 1 > _skill) : goto "tactics_cycle"
 
 	;count lists of enemy units
-	_badguys = "_unit knowsabout _x > 0.10" count _enemy
-	_badflys = "_unit knowsabout _x > 0.10" count _flyers
-	_badtanks = "_unit knowsabout _x > 0.10" count _armour
-	_goodguys = "_unit knowsabout _x > 0.50" count _friend
+	_badguys = {_unit knowsabout _x > 0.10} count _enemy
+	_badflys = {_unit knowsabout _x > 0.10} count _flyers
+	_badtanks = {_unit knowsabout _x > 0.10} count _armour
+	_goodguys = {_unit knowsabout _x > 0.50} count _friend
 	;hint format ["badguys %1\nbadflys %2\nbadtanks %3\ngoodguys %4",_badguys,_badflys,_badtanks,_goodguys]
 
 	;do not check tactical if no enemy are spotted
@@ -834,17 +837,17 @@
 	_unit = _units select _i
 	
 	;check if the unit is a grenadier
-	? (_unit hasweapon "JAM_M16GL"): _muzzle = "JAM_M203Muzzle"; goto "fire_flare";
-	? (_unit hasweapon "JAM_M79"): _muzzle = "JAM_M79muzzle"     ; goto "fire_flare"
-	? (_unit hasweapon "JAM_AKMGL") : _muzzle = "JAM_GP25Muzzle" ; goto "fire_flare" 
-	? (_unit hasweapon "JAM_AK74GL") : _muzzle = "JAM_GP30Muzzle" ; goto "fire_flare" 
+	? (_unit hasweapon "cwr2_M16A2_GL"): _muzzle = "JAM_M203Muzzle"; goto "fire_flare";
+	? (_unit hasweapon "cwr2_MM1"): _muzzle = "JAM_M79muzzle"     ; goto "fire_flare"
+	? (_unit hasweapon "cwr2_AKM_GL") : _muzzle = "JAM_GP25Muzzle" ; goto "fire_flare" 
+	? (_unit hasweapon "cwr2_AK74_GL") : _muzzle = "JAM_GP30Muzzle" ; goto "fire_flare" 
 	;get the next unit
 	_i = _i - 1
 	? (_i >= 0) : goto "check_flare"
 
 	;check if artillery is available
 	? (_arta == 0) : exit
-	? ("canfire _x" count units _art1 == 0) : exit
+	? ({canfire _x} count units _art1 == 0) : exit
 		
 	;artillery flare messing
 	_i = 0
@@ -1071,9 +1074,9 @@
 	_cov setcombatmode "yellow"
 	_cov setformation "line"
 	_look = [(_posx select _c) - (_mvex select _c), (_posy select _c) - (_mvey select _c)]
-	"_x dowatch _look" foreach units _cov
-	"_x allowfleeing 0" foreach units _cov
-	"_x setunitpos ""down""" foreach units _cov
+	{_x dowatch _look} foreach units _cov
+	{_x allowfleeing 0} foreach units _cov
+	{_x setunitpos "down"} foreach units _cov
 
 	;chuck smoke
 	? _smoked : goto "skip_smoke"
@@ -1103,9 +1106,9 @@
 	_run move _pos
 	_run setcombatmode "green"
 	_run setformation "line"
-	"_x allowfleeing 0" foreach units _run
-	"_x dotarget objnull" foreach units _run
-	"_x setunitpos ""up""" foreach units _run
+	{_x allowfleeing 0} foreach units _run
+	{_x dotarget objnull} foreach units _run
+	{_x setunitpos "up"} foreach units _run
 
 	;code for when player is squad leader
 	? (leader _run != player) : goto "check_retreat"
@@ -1150,7 +1153,7 @@
 	~4
 	leader _group move [_x, _y]
 	leader _group setbehaviour "aware"
-	"_x setunitpos ""auto""" foreach units _group
+	{_x setunitpos "auto"} foreach units _group
 	_group setcombatmode "yellow"
 
 	;wait for the group to complete the retreat
@@ -1173,12 +1176,12 @@
 	;make remaining units retreat
 	leader _cov move [_x, _y]
 	leader _cov setbehaviour "aware"
-	"_x setunitpos ""auto""" foreach units _cov
+	{_x setunitpos "auto"} foreach units _cov
 	_cov setcombatmode "yellow"
 
 	leader _run move [_x, _y]
 	leader _run setbehaviour "aware"
-	"_x setunitpos ""auto""" foreach units _run
+	{_x setunitpos "auto"} foreach units _run
 	_run setcombatmode "yellow"
 
 	;wait for the groups to complete the retreat
@@ -1190,7 +1193,7 @@
 	units _group2 join _group
 
 	leader _group setbehaviour "aware"
-	"_x setunitpos ""auto""" foreach units _group1
+	{_x setunitpos "auto"} foreach units _group1
 	_group setcombatmode "yellow"
 
 	~(random 15) + 15
@@ -1341,9 +1344,9 @@
 	_flk3 = _units - _flk1 - _flk2
 	
 	;execute the flanking scripts
-	"[""flank_side"",_x,_ang1+90,_target,leader _x] exec ""ai.sqs""" foreach _flk1
-	"[""flank_side"",_x,_ang1-90,_target,leader _x] exec ""ai.sqs""" foreach _flk2
-	"[""flank_centre"",_x,_target] exec ""ai.sqs""" foreach _flk3
+	{['flank_side',_x,_ang1+90,_target,leader _x] exec 'ai.sqs'} foreach _flk1
+	{['flank_side',_x,_ang1-90,_target,leader _x] exec 'ai.sqs'} foreach _flk2
+	{['flank_centre',_x,_target] exec 'ai.sqs'} foreach _flk3
 
 	~ (random 90) + 90
 	goto "tactics_cycle"
@@ -1394,8 +1397,8 @@
 	? (_ang1 <= _ang2) : _dir = -90
 
 	;execute the flanking scripts
-	"[""flank_side"",_x,_ang1+_dir,_target,leader _x] exec ""ai.sqs""" foreach _flk1
-	"[""flank_centre"",_x,_target] exec ""ai.sqs""" foreach _flk2
+	{['flank_side',_x,_ang1+_dir,_target,leader _x] exec 'ai.sqs'} foreach _flk1
+	{['flank_centre',_x,_target] exec 'ai.sqs'} foreach _flk2
 	
 	~ (random 90) + 90
 	goto "tactics_cycle"

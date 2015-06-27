@@ -13,28 +13,8 @@ class Mission
 };
 class Intro
 {
-	addOns[]=
-	{
-		"JAM_Magazines",
-		"JAM_Vehicles",
-		"bradley",
-		"bmp2",
-		"su25",
-		"ah64",
-		"vulcan",
-		"bn_tracers123"
-	};
-	addOnsAuto[]=
-	{
-		"JAM_Magazines",
-		"JAM_Vehicles",
-		"bradley",
-		"bmp2",
-		"su25",
-		"ah64",
-		"vulcan",
-		"bn_tracers123"
-	};
+	addons[]={};
+	addonsAuto[]={};
 	randomSeed=11481603;
 	class Intel
 	{
@@ -57,7 +37,7 @@ class Intro
 					position[]={9967.048828,14.542669,2235.607666};
 					id=0;
 					side="WEST";
-					vehicle="JAM_WOfficerHD";
+					vehicle="cwr2_OfficerW";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -68,7 +48,7 @@ class Intro
 					position[]={9968.881836,14.716163,2231.542236};
 					id=1;
 					side="WEST";
-					vehicle="JAM_WBHDSoldier";
+					vehicle="cwr2_SoldierW";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -77,7 +57,7 @@ class Intro
 					position[]={9970.881836,14.665765,2231.542236};
 					id=2;
 					side="WEST";
-					vehicle="JAM_WBHDSoldier";
+					vehicle="cwr2_SoldierW";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -86,7 +66,7 @@ class Intro
 					position[]={9972.881836,14.615366,2231.542236};
 					id=3;
 					side="WEST";
-					vehicle="JAM_WBGLVestHDSoldier";
+					vehicle="cwr2_SoldierW_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -95,7 +75,7 @@ class Intro
 					position[]={9974.881836,14.564948,2231.542236};
 					id=4;
 					side="WEST";
-					vehicle="JAM_WBGLVestHDSoldier";
+					vehicle="cwr2_SoldierW_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -104,7 +84,7 @@ class Intro
 					position[]={9976.881836,14.563676,2231.542236};
 					id=5;
 					side="WEST";
-					vehicle="JAM_WMedicHD";
+					vehicle="cwr2_SoldierW_Medic";
 					skill=0.200000;
 				};
 				class Item6
@@ -112,7 +92,7 @@ class Intro
 					position[]={9978.881836,14.565493,2231.542236};
 					id=6;
 					side="WEST";
-					vehicle="JAM_WMedicHD";
+					vehicle="cwr2_SoldierW_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -120,7 +100,7 @@ class Intro
 					position[]={9980.881836,14.567308,2231.542236};
 					id=7;
 					side="WEST";
-					vehicle="JAM_CAVS_WBHDM72LAWALLSoldier";
+					vehicle="cwr2_SoldierW_LAT";
 					skill=0.200000;
 				};
 				class Item8
@@ -128,7 +108,7 @@ class Intro
 					position[]={9982.881836,14.509981,2231.542236};
 					id=8;
 					side="WEST";
-					vehicle="JAM_CAVS_WBHDLAWALLSoldier";
+					vehicle="cwr2_SoldierW_LAT";
 					skill=0.200000;
 				};
 				class Item9
@@ -136,7 +116,7 @@ class Intro
 					position[]={9984.881836,14.450331,2231.542236};
 					id=9;
 					side="WEST";
-					vehicle="JAM_CAVS_WBHDLAWALLSoldier";
+					vehicle="cwr2_SoldierW_LAT";
 					skill=0.200000;
 				};
 				class Item10
@@ -144,7 +124,7 @@ class Intro
 					position[]={9986.881836,14.390681,2231.542236};
 					id=10;
 					side="WEST";
-					vehicle="JAM_WBMGFSHDSoldier";
+					vehicle="cwr2_SoldierW_MG";
 					skill=0.200000;
 				};
 				class Item11
@@ -152,7 +132,7 @@ class Intro
 					position[]={9988.881836,14.346388,2231.542236};
 					id=11;
 					side="WEST";
-					vehicle="JAM_WBMGFSHDSoldier";
+					vehicle="cwr2_SoldierW_MG";
 					skill=0.200000;
 				};
 			};
@@ -168,7 +148,7 @@ class Intro
 					position[]={10966.844727,13.608987,2271.886475};
 					id=12;
 					side="WEST";
-					vehicle="JAM_WOfficerHD";
+					vehicle="cwr2_OfficerW";
 					player="PLAYER COMMANDER";
 					leader=1;
 					rank="SERGEANT";
@@ -190,9 +170,9 @@ class Intro
 					special="FLY";
 					id=16;
 					side="WEST";
-					vehicle="JAM_CobraHD";
+					vehicle="cwr2_AH1F";
 					leader=1;
-					rank="LIEUTNANT";
+					rank="LIEUTENANT";
 					skill=0.466667;
 					text="h1";
 					init="this flyInHeight 25;";
@@ -212,9 +192,9 @@ class Intro
 					special="FLY";
 					id=17;
 					side="WEST";
-					vehicle="JAM_AH64HD";
+					vehicle="cwr2_AH64C";
 					leader=1;
-					rank="LIEUTNANT";
+					rank="LIEUTENANT";
 					skill=0.466667;
 					text="h2";
 				};
@@ -233,9 +213,9 @@ class Intro
 					special="FLY";
 					id=18;
 					side="WEST";
-					vehicle="JAM_BoatWHD";
+					vehicle="cwr2_BoatW";
 					leader=1;
-					rank="LIEUTNANT";
+					rank="LIEUTENANT";
 					skill=0.466667;
 				};
 			};
@@ -265,9 +245,9 @@ class Intro
 					special="FLY";
 					id=19;
 					side="WEST";
-					vehicle="JAM_A10LGBHD";
+					vehicle="cwr2_A10LGB";
 					leader=1;
-					rank="LIEUTNANT";
+					rank="LIEUTENANT";
 					skill=0.466667;
 				};
 				class Item1
@@ -277,7 +257,7 @@ class Intro
 					special="FLY";
 					id=20;
 					side="WEST";
-					vehicle="JAM_A10LGBHD";
+					vehicle="cwr2_A10LGB";
 					rank="SERGEANT";
 					skill=0.466667;
 				};
@@ -288,7 +268,7 @@ class Intro
 					special="FLY";
 					id=21;
 					side="WEST";
-					vehicle="JAM_A10LGBHD";
+					vehicle="cwr2_A10LGB";
 					rank="CORPORAL";
 					skill=0.466667;
 				};
@@ -299,7 +279,7 @@ class Intro
 					special="FLY";
 					id=22;
 					side="WEST";
-					vehicle="JAM_A10LGBHD";
+					vehicle="cwr2_A10LGB";
 					skill=0.466667;
 				};
 			};
@@ -337,9 +317,9 @@ class Intro
 					special="FLY";
 					id=23;
 					side="WEST";
-					vehicle="JAM_UH60MGHD";
+					vehicle="cwr2_UH60MG";
 					leader=1;
-					rank="LIEUTNANT";
+					rank="LIEUTENANT";
 					skill=0.466667;
 					text="h0";
 					init="this flyInHeight 20;";
@@ -359,7 +339,7 @@ class Intro
 					special="FLY";
 					id=26;
 					side="WEST";
-					vehicle="JAM_SoldierWHDCrew";
+					vehicle="cwr2_SoldierW_Crew";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -372,7 +352,7 @@ class Intro
 					special="FLY";
 					id=27;
 					side="WEST";
-					vehicle="JAM_SoldierWHDCrew";
+					vehicle="cwr2_SoldierW_Crew";
 					rank="CORPORAL";
 					skill=0.466667;
 				};
@@ -391,7 +371,7 @@ class Intro
 					special="FLY";
 					id=30;
 					side="WEST";
-					vehicle="JAM_SoldierWHDCrew";
+					vehicle="cwr2_SoldierW_Crew";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -404,7 +384,7 @@ class Intro
 					special="FLY";
 					id=31;
 					side="WEST";
-					vehicle="JAM_SoldierWHDCrew";
+					vehicle="cwr2_SoldierW_Crew";
 					rank="CORPORAL";
 					skill=0.466667;
 				};
@@ -439,7 +419,7 @@ class Intro
 			azimut=15.713670;
 			id=13;
 			side="EMPTY";
-			vehicle="JAM_M113HD";
+			vehicle="cwr2_M113";
 			leader=1;
 			skill=0.466667;
 		};
@@ -449,7 +429,7 @@ class Intro
 			azimut=-41.252178;
 			id=14;
 			side="EMPTY";
-			vehicle="JAM_M1AbramsHD";
+			vehicle="cwr2_M1A1";
 			leader=1;
 			skill=0.466667;
 		};
@@ -459,7 +439,7 @@ class Intro
 			azimut=-28.315935;
 			id=15;
 			side="EMPTY";
-			vehicle="JAM_BradleyHD";
+			vehicle="M2A2_EP1";
 			leader=1;
 			skill=0.466667;
 		};
@@ -470,7 +450,7 @@ class Intro
 			special="FLY";
 			id=24;
 			side="EMPTY";
-			vehicle="JAM_HMMWVHD";
+			vehicle="cwr2_HMMWV";
 			leader=1;
 			skill=0.466667;
 		};
@@ -481,7 +461,7 @@ class Intro
 			special="FLY";
 			id=25;
 			side="EMPTY";
-			vehicle="JAM_Truck5tHD";
+			vehicle="cwr2_Truck5t";
 			leader=1;
 			skill=0.466667;
 		};
@@ -492,7 +472,7 @@ class Intro
 			special="FLY";
 			id=28;
 			side="EMPTY";
-			vehicle="JAM_VulcanHD";
+			vehicle="cwr2_M163";
 			leader=1;
 			skill=0.466667;
 		};
@@ -502,7 +482,7 @@ class Intro
 			special="FLY";
 			id=29;
 			side="EMPTY";
-			vehicle="JAM_M60HD";
+			vehicle="cwr2_M60A3";
 			leader=1;
 			skill=0.466667;
 		};

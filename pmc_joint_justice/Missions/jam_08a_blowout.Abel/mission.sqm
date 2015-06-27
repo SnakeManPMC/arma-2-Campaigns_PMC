@@ -1,28 +1,8 @@
 version=11;
 class Mission
 {
-	addOns[]=
-	{
-		"JAM_Magazines",
-		"JAM_Vehicles",
-		"bradley",
-		"bmp2",
-		"su25",
-		"ah64",
-		"vulcan",
-		"bn_tracers123"
-	};
-	addOnsAuto[]=
-	{
-		"JAM_Magazines",
-		"JAM_Vehicles",
-		"bradley",
-		"bmp2",
-		"su25",
-		"ah64",
-		"vulcan",
-		"bn_tracers123"
-	};
+	addons[]={};
+	addonsAuto[]={};
 	randomSeed=11864067;
 	class Intel
 	{
@@ -46,7 +26,7 @@ class Mission
 					position[]={7252.740723,166.713699,7857.172852};
 					id=1;
 					side="WEST";
-					vehicle="JAM_WOfficerHD";
+					vehicle="cwr2_OfficerW";
 					player="PLAYER COMMANDER";
 					leader=1;
 					rank="SERGEANT";
@@ -59,7 +39,7 @@ class Mission
 					position[]={7242.404785,166.552887,7852.172852};
 					id=2;
 					side="WEST";
-					vehicle="JAM_WBHDSoldier";
+					vehicle="cwr2_SoldierW";
 					rank="CORPORAL";
 					skill=0.333333;
 					text="PMC_a2";
@@ -69,7 +49,7 @@ class Mission
 					position[]={7244.404785,166.563675,7852.172852};
 					id=3;
 					side="WEST";
-					vehicle="JAM_WBHDSoldier";
+					vehicle="cwr2_SoldierW";
 					rank="CORPORAL";
 					skill=0.333333;
 					text="PMC_a3";
@@ -79,7 +59,7 @@ class Mission
 					position[]={7246.404785,166.574478,7852.172852};
 					id=4;
 					side="WEST";
-					vehicle="JAM_WBGLVestHDSoldier";
+					vehicle="cwr2_SoldierW_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 					text="PMC_a4";
@@ -89,7 +69,7 @@ class Mission
 					position[]={7248.404785,166.582153,7852.172852};
 					id=5;
 					side="WEST";
-					vehicle="JAM_WBGLVestHDSoldier";
+					vehicle="cwr2_SoldierW_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 					text="PMC_a5";
@@ -99,7 +79,7 @@ class Mission
 					position[]={7250.404785,166.588959,7852.172852};
 					id=6;
 					side="WEST";
-					vehicle="JAM_WMedicHD";
+					vehicle="cwr2_SoldierW_Medic";
 					skill=0.200000;
 					text="PMC_a6";
 				};
@@ -108,7 +88,7 @@ class Mission
 					position[]={7252.404785,166.622574,7852.172852};
 					id=7;
 					side="WEST";
-					vehicle="JAM_WMedicHD";
+					vehicle="cwr2_SoldierW_Medic";
 					skill=0.200000;
 					text="PMC_a7";
 				};
@@ -117,7 +97,7 @@ class Mission
 					position[]={7254.404785,166.656174,7852.172852};
 					id=8;
 					side="WEST";
-					vehicle="JAM_CAVS_WBHDM72LAWALLSoldier";
+					vehicle="cwr2_SoldierW_LAT";
 					skill=0.200000;
 					text="PMC_a8";
 				};
@@ -126,7 +106,7 @@ class Mission
 					position[]={7256.404785,166.689789,7852.172852};
 					id=9;
 					side="WEST";
-					vehicle="JAM_CAVS_WBHDLAWALLSoldier";
+					vehicle="cwr2_SoldierW_LAT";
 					skill=0.200000;
 					text="PMC_a9";
 				};
@@ -135,7 +115,7 @@ class Mission
 					position[]={7258.404785,166.723404,7852.172852};
 					id=10;
 					side="WEST";
-					vehicle="JAM_CAVS_WBHDLAWALLSoldier";
+					vehicle="cwr2_SoldierW_LAT";
 					skill=0.200000;
 					text="PMC_a10";
 				};
@@ -144,7 +124,7 @@ class Mission
 					position[]={7260.404785,166.756958,7852.172852};
 					id=11;
 					side="WEST";
-					vehicle="JAM_WBMGFSHDSoldier";
+					vehicle="cwr2_SoldierW_MG";
 					skill=1.000000;
 					text="PMC_a11";
 				};
@@ -153,7 +133,7 @@ class Mission
 					position[]={7262.404785,166.788925,7852.172852};
 					id=12;
 					side="WEST";
-					vehicle="JAM_WBMGFSHDSoldier";
+					vehicle="cwr2_SoldierW_MG";
 					skill=1.000000;
 					text="PMC_a12";
 				};
@@ -170,7 +150,7 @@ class Mission
 					position[]={7038.818848,77.939995,7073.037109};
 					id=21;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -181,7 +161,7 @@ class Mission
 					position[]={7041.818848,77.939995,7068.037109};
 					id=22;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -190,7 +170,7 @@ class Mission
 					position[]={7043.818848,77.939995,7068.037109};
 					id=23;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -199,7 +179,7 @@ class Mission
 					position[]={7045.818848,77.939995,7068.037109};
 					id=24;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -208,7 +188,7 @@ class Mission
 					position[]={7047.818848,77.939995,7068.037109};
 					id=25;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -217,7 +197,7 @@ class Mission
 					position[]={7049.818848,77.939995,7068.037109};
 					id=26;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 				class Item6
@@ -225,7 +205,7 @@ class Mission
 					position[]={7051.818848,77.939995,7068.037109};
 					id=27;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -233,7 +213,7 @@ class Mission
 					position[]={7053.818848,77.939995,7068.037109};
 					id=28;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					skill=0.200000;
 				};
 				class Item8
@@ -241,7 +221,7 @@ class Mission
 					position[]={7055.818848,77.939995,7068.037109};
 					id=29;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					skill=0.200000;
 				};
 			};
@@ -289,7 +269,7 @@ class Mission
 					position[]={7127.735352,71.909996,6012.154785};
 					id=30;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -300,7 +280,7 @@ class Mission
 					position[]={7130.735352,71.909996,6007.154785};
 					id=31;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -309,7 +289,7 @@ class Mission
 					position[]={7132.735352,71.909996,6007.154785};
 					id=32;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -318,7 +298,7 @@ class Mission
 					position[]={7134.735352,71.909996,6007.154785};
 					id=33;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -327,7 +307,7 @@ class Mission
 					position[]={7136.735352,71.909996,6007.154785};
 					id=34;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -336,7 +316,7 @@ class Mission
 					position[]={7138.735352,71.909996,6007.154785};
 					id=35;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 				class Item6
@@ -344,7 +324,7 @@ class Mission
 					position[]={7140.735352,71.909996,6007.154785};
 					id=36;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -352,7 +332,7 @@ class Mission
 					position[]={7142.735352,71.909996,6007.154785};
 					id=37;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					skill=0.200000;
 				};
 				class Item8
@@ -360,7 +340,7 @@ class Mission
 					position[]={7144.735352,71.909996,6007.154785};
 					id=38;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					skill=0.200000;
 				};
 			};
@@ -409,7 +389,7 @@ class Mission
 					azimut=38.929119;
 					id=39;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -421,7 +401,7 @@ class Mission
 					azimut=38.929119;
 					id=40;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -431,7 +411,7 @@ class Mission
 					azimut=38.929119;
 					id=41;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -441,7 +421,7 @@ class Mission
 					azimut=38.929119;
 					id=42;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -451,7 +431,7 @@ class Mission
 					azimut=38.929119;
 					id=43;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -461,7 +441,7 @@ class Mission
 					azimut=38.929119;
 					id=44;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item6
@@ -470,7 +450,7 @@ class Mission
 					azimut=38.929119;
 					id=45;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -479,7 +459,7 @@ class Mission
 					azimut=38.929119;
 					id=46;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item8
@@ -488,7 +468,7 @@ class Mission
 					azimut=38.929119;
 					id=47;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 			};
@@ -548,7 +528,7 @@ class Mission
 					position[]={7058.797363,78.447014,5860.346680};
 					id=48;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -559,7 +539,7 @@ class Mission
 					position[]={7061.797363,77.572105,5855.346680};
 					id=49;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -568,7 +548,7 @@ class Mission
 					position[]={7063.797363,77.146820,5855.346680};
 					id=50;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -577,7 +557,7 @@ class Mission
 					position[]={7065.797363,76.711594,5855.346680};
 					id=51;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -586,7 +566,7 @@ class Mission
 					position[]={7067.797363,76.276543,5855.346680};
 					id=52;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -595,7 +575,7 @@ class Mission
 					position[]={7069.797363,75.837852,5855.346680};
 					id=53;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item6
@@ -603,7 +583,7 @@ class Mission
 					position[]={7071.797363,75.354752,5855.346680};
 					id=54;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -611,7 +591,7 @@ class Mission
 					position[]={7073.797363,74.871658,5855.346680};
 					id=55;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item8
@@ -619,7 +599,7 @@ class Mission
 					position[]={7075.797363,74.419228,5855.346680};
 					id=56;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 			};
@@ -679,7 +659,7 @@ class Mission
 					position[]={7008.313965,87.031311,5804.119629};
 					id=57;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -690,7 +670,7 @@ class Mission
 					position[]={7011.313965,85.987503,5799.119629};
 					id=58;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -699,7 +679,7 @@ class Mission
 					position[]={7013.313965,85.532013,5799.119629};
 					id=59;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -708,7 +688,7 @@ class Mission
 					position[]={7015.313965,85.076683,5799.119629};
 					id=60;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -742,7 +722,7 @@ class Mission
 					position[]={6553.752441,169.161560,6705.543945};
 					id=61;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -753,7 +733,7 @@ class Mission
 					position[]={6556.752441,168.504822,6700.543945};
 					id=62;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -762,7 +742,7 @@ class Mission
 					position[]={6558.752441,168.110138,6700.543945};
 					id=63;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -771,7 +751,7 @@ class Mission
 					position[]={6560.752441,167.715591,6700.543945};
 					id=64;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -780,7 +760,7 @@ class Mission
 					position[]={6562.752441,167.389221,6700.543945};
 					id=65;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -789,7 +769,7 @@ class Mission
 					position[]={6564.752441,167.209702,6700.543945};
 					id=66;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item6
@@ -797,7 +777,7 @@ class Mission
 					position[]={6566.752441,167.030121,6700.543945};
 					id=67;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -805,7 +785,7 @@ class Mission
 					position[]={6568.752441,166.850601,6700.543945};
 					id=68;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item8
@@ -813,7 +793,7 @@ class Mission
 					position[]={6570.752441,166.671097,6700.543945};
 					id=69;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item9
@@ -821,7 +801,7 @@ class Mission
 					position[]={6572.752441,166.491501,6700.543945};
 					id=70;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item10
@@ -829,7 +809,7 @@ class Mission
 					position[]={6574.752441,166.298615,6700.543945};
 					id=71;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 				class Item11
@@ -837,7 +817,7 @@ class Mission
 					position[]={6576.752441,166.008408,6700.543945};
 					id=72;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 			};
@@ -870,7 +850,7 @@ class Mission
 					position[]={6914.965820,117.562126,6861.534180};
 					id=73;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -882,7 +862,7 @@ class Mission
 					position[]={6917.965820,117.126213,6856.534180};
 					id=74;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -892,7 +872,7 @@ class Mission
 					position[]={6919.965820,116.537285,6856.534180};
 					id=75;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -902,7 +882,7 @@ class Mission
 					position[]={6921.965820,115.905266,6856.534180};
 					id=76;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -912,7 +892,7 @@ class Mission
 					position[]={6923.965820,115.273476,6856.534180};
 					id=77;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -922,7 +902,7 @@ class Mission
 					position[]={6925.965820,114.658211,6856.534180};
 					id=78;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item6
@@ -931,7 +911,7 @@ class Mission
 					position[]={6927.965820,114.061127,6856.534180};
 					id=79;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -940,7 +920,7 @@ class Mission
 					position[]={6929.965820,113.463806,6856.534180};
 					id=80;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item8
@@ -949,7 +929,7 @@ class Mission
 					position[]={6931.965820,112.902573,6856.534180};
 					id=81;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item9
@@ -958,7 +938,7 @@ class Mission
 					position[]={6933.965820,112.377205,6856.534180};
 					id=82;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item10
@@ -967,7 +947,7 @@ class Mission
 					position[]={6935.965820,111.851639,6856.534180};
 					id=83;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=0.200000;
 				};
 				class Item11
@@ -976,7 +956,7 @@ class Mission
 					position[]={6937.965820,111.363876,6856.534180};
 					id=84;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 			};
@@ -1037,7 +1017,7 @@ class Mission
 					azimut=31.948259;
 					id=85;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -1050,7 +1030,7 @@ class Mission
 					azimut=31.948259;
 					id=86;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1061,7 +1041,7 @@ class Mission
 					azimut=31.948259;
 					id=87;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1072,7 +1052,7 @@ class Mission
 					azimut=31.948259;
 					id=88;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1083,7 +1063,7 @@ class Mission
 					azimut=31.948259;
 					id=89;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1094,7 +1074,7 @@ class Mission
 					azimut=31.948259;
 					id=90;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item6
@@ -1104,7 +1084,7 @@ class Mission
 					azimut=31.948259;
 					id=91;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -1114,7 +1094,7 @@ class Mission
 					azimut=31.948259;
 					id=92;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item8
@@ -1124,7 +1104,7 @@ class Mission
 					azimut=31.948259;
 					id=93;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item9
@@ -1134,7 +1114,7 @@ class Mission
 					azimut=31.948259;
 					id=94;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item10
@@ -1144,7 +1124,7 @@ class Mission
 					azimut=31.948259;
 					id=95;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=0.200000;
 				};
 				class Item11
@@ -1154,7 +1134,7 @@ class Mission
 					azimut=31.948259;
 					id=96;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 			};
@@ -1215,7 +1195,7 @@ class Mission
 					azimut=31.970486;
 					id=97;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -1228,7 +1208,7 @@ class Mission
 					azimut=31.970486;
 					id=98;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1239,7 +1219,7 @@ class Mission
 					azimut=31.970486;
 					id=99;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1250,7 +1230,7 @@ class Mission
 					azimut=31.970486;
 					id=100;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1261,7 +1241,7 @@ class Mission
 					azimut=31.970486;
 					id=101;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1272,7 +1252,7 @@ class Mission
 					azimut=31.970486;
 					id=102;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item6
@@ -1282,7 +1262,7 @@ class Mission
 					azimut=31.970486;
 					id=103;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -1292,7 +1272,7 @@ class Mission
 					azimut=31.970486;
 					id=104;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item8
@@ -1302,7 +1282,7 @@ class Mission
 					azimut=31.970486;
 					id=105;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item9
@@ -1312,7 +1292,7 @@ class Mission
 					azimut=31.970486;
 					id=106;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item10
@@ -1322,7 +1302,7 @@ class Mission
 					azimut=31.970486;
 					id=107;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=0.200000;
 				};
 				class Item11
@@ -1332,7 +1312,7 @@ class Mission
 					azimut=31.970486;
 					id=108;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 			};
@@ -1393,7 +1373,7 @@ class Mission
 					azimut=237.303940;
 					id=109;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -1406,7 +1386,7 @@ class Mission
 					azimut=237.303940;
 					id=110;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1417,7 +1397,7 @@ class Mission
 					azimut=237.303940;
 					id=111;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1428,7 +1408,7 @@ class Mission
 					azimut=237.303940;
 					id=112;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1439,7 +1419,7 @@ class Mission
 					azimut=237.303940;
 					id=113;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1450,7 +1430,7 @@ class Mission
 					azimut=237.303940;
 					id=114;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item6
@@ -1460,7 +1440,7 @@ class Mission
 					azimut=237.303940;
 					id=115;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -1470,7 +1450,7 @@ class Mission
 					azimut=237.303940;
 					id=116;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item8
@@ -1480,7 +1460,7 @@ class Mission
 					azimut=237.303940;
 					id=117;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item9
@@ -1490,7 +1470,7 @@ class Mission
 					azimut=237.303940;
 					id=118;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item10
@@ -1500,7 +1480,7 @@ class Mission
 					azimut=237.303940;
 					id=119;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=0.200000;
 				};
 				class Item11
@@ -1510,7 +1490,7 @@ class Mission
 					azimut=237.303940;
 					id=120;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 			};
@@ -1570,7 +1550,7 @@ class Mission
 					position[]={7260.986816,56.044846,6996.280273};
 					id=121;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -1581,7 +1561,7 @@ class Mission
 					position[]={7263.986816,55.582588,6991.280273};
 					id=122;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1590,7 +1570,7 @@ class Mission
 					position[]={7265.986816,55.608189,6991.280273};
 					id=123;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1599,7 +1579,7 @@ class Mission
 					position[]={7267.986816,55.633789,6991.280273};
 					id=124;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1608,7 +1588,7 @@ class Mission
 					position[]={7269.986816,55.659401,6991.280273};
 					id=125;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1617,7 +1597,7 @@ class Mission
 					position[]={7271.986816,55.674858,6991.280273};
 					id=126;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item6
@@ -1625,7 +1605,7 @@ class Mission
 					position[]={7273.986816,55.674000,6991.280273};
 					id=127;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -1633,7 +1613,7 @@ class Mission
 					position[]={7275.986816,55.678757,6991.280273};
 					id=128;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item8
@@ -1641,7 +1621,7 @@ class Mission
 					position[]={7277.986816,55.689293,6991.280273};
 					id=129;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item9
@@ -1649,7 +1629,7 @@ class Mission
 					position[]={7279.986816,55.699825,6991.280273};
 					id=130;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item10
@@ -1657,7 +1637,7 @@ class Mission
 					position[]={7281.986816,55.710358,6991.280273};
 					id=131;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 				class Item11
@@ -1665,7 +1645,7 @@ class Mission
 					position[]={7283.986816,55.724060,6991.280273};
 					id=132;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 			};
@@ -1681,7 +1661,7 @@ class Mission
 					position[]={6538.414551,178.308380,5740.086914};
 					id=133;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -1692,7 +1672,7 @@ class Mission
 					position[]={6541.414551,176.843201,5735.086914};
 					id=134;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1701,7 +1681,7 @@ class Mission
 					position[]={6543.414551,176.535461,5735.086914};
 					id=135;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1710,7 +1690,7 @@ class Mission
 					position[]={6545.414551,176.227600,5735.086914};
 					id=136;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1719,7 +1699,7 @@ class Mission
 					position[]={6547.414551,175.919846,5735.086914};
 					id=137;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1728,7 +1708,7 @@ class Mission
 					position[]={6549.414551,175.612106,5735.086914};
 					id=138;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item6
@@ -1736,7 +1716,7 @@ class Mission
 					position[]={6551.414551,175.194763,5735.086914};
 					id=139;
 					side="EAST";
-					vehicle="JAM_EMedicHD";
+					vehicle="cwr2_SoldierE_Medic";
 					skill=0.200000;
 				};
 				class Item7
@@ -1744,7 +1724,7 @@ class Mission
 					position[]={6553.414551,174.732224,5735.086914};
 					id=140;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item8
@@ -1752,7 +1732,7 @@ class Mission
 					position[]={6555.414551,174.269531,5735.086914};
 					id=141;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item9
@@ -1760,7 +1740,7 @@ class Mission
 					position[]={6557.414551,173.807007,5735.086914};
 					id=142;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPG";
+					vehicle="cwr2_SoldierE_LAT";
 					skill=0.200000;
 				};
 				class Item10
@@ -1768,7 +1748,7 @@ class Mission
 					position[]={6559.414551,173.344299,5735.086914};
 					id=143;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 				class Item11
@@ -1776,7 +1756,7 @@ class Mission
 					position[]={6561.414551,172.881775,5735.086914};
 					id=144;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					skill=1.000000;
 				};
 			};
@@ -1792,7 +1772,7 @@ class Mission
 					position[]={6634.813477,150.971390,6034.011719};
 					id=159;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -1803,7 +1783,7 @@ class Mission
 					position[]={6639.813477,151.009369,6029.011719};
 					id=160;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1812,7 +1792,7 @@ class Mission
 					position[]={6641.813477,150.833588,6029.011719};
 					id=161;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1821,7 +1801,7 @@ class Mission
 					position[]={6643.812500,150.657944,6029.011719};
 					id=162;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1830,7 +1810,7 @@ class Mission
 					position[]={6645.812500,150.482224,6029.011719};
 					id=163;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1839,7 +1819,7 @@ class Mission
 					position[]={6647.812500,150.316666,6029.011719};
 					id=164;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -1848,7 +1828,7 @@ class Mission
 					position[]={6649.812500,150.152145,6029.011719};
 					id=165;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -1857,7 +1837,7 @@ class Mission
 					position[]={6629.813477,151.527802,6029.011719};
 					id=166;
 					side="EAST";
-					vehicle="JAM_BMPHD";
+					vehicle="cwr2_BMP2";
 					skill=0.200000;
 				};
 			};
@@ -1890,7 +1870,7 @@ class Mission
 					position[]={7580.894531,29.950464,4822.414063};
 					id=167;
 					side="EAST";
-					vehicle="JAM_EBHDOfficer";
+					vehicle="cwr2_OfficerE";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -1901,7 +1881,7 @@ class Mission
 					position[]={7585.894531,29.442406,4817.414063};
 					id=168;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1910,7 +1890,7 @@ class Mission
 					position[]={7587.894531,29.224691,4817.414063};
 					id=169;
 					side="EAST";
-					vehicle="JAM_EBGLVestHDSoldier";
+					vehicle="cwr2_SoldierE_GL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1919,7 +1899,7 @@ class Mission
 					position[]={7589.894531,29.027693,4817.414063};
 					id=170;
 					side="EAST";
-					vehicle="JAM_EBHDSoldier";
+					vehicle="cwr2_SoldierE";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1928,7 +1908,7 @@ class Mission
 					position[]={7591.894531,28.830620,4817.414063};
 					id=171;
 					side="EAST";
-					vehicle="JAM_CAVS_EBSoldierHDRPGALL";
+					vehicle="cwr2_SoldierE_LAT";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1937,7 +1917,7 @@ class Mission
 					position[]={7593.894531,28.633621,4817.414063};
 					id=172;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -1946,7 +1926,7 @@ class Mission
 					position[]={7595.894531,28.444431,4817.414063};
 					id=173;
 					side="EAST";
-					vehicle="JAM_EBMGFSHD";
+					vehicle="cwr2_SoldierE_MG";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -1955,7 +1935,7 @@ class Mission
 					position[]={7575.895508,30.751114,4817.414063};
 					id=174;
 					side="EAST";
-					vehicle="JAM_BMP2HD";
+					vehicle="cwr2_BMP2";
 					skill=0.200000;
 				};
 			};
@@ -1989,7 +1969,7 @@ class Mission
 					position[]={7017.010742,94.154655,6840.673340};
 					id=175;
 					side="EAST";
-					vehicle="JAM_ESpotter";
+					vehicle="cwr2_SoldierE_SL";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -2001,7 +1981,7 @@ class Mission
 					position[]={7020.010742,93.799599,6835.673340};
 					id=176;
 					side="EAST";
-					vehicle="JAM_EBSniper";
+					vehicle="cwr2_SoldierE_Sniper";
 					rank="CORPORAL";
 					skill=1.000000;
 					init="this setpos getpos leader rsnipas1;";
@@ -2012,7 +1992,7 @@ class Mission
 					position[]={7022.010742,93.336128,6835.673340};
 					id=177;
 					side="EAST";
-					vehicle="JAM_EBSniper";
+					vehicle="cwr2_SoldierE_Sniper";
 					rank="CORPORAL";
 					skill=1.000000;
 					init="this setpos getPos leader rsnipas1;";
@@ -2049,7 +2029,7 @@ class Mission
 					position[]={6939.666992,103.017960,6209.120605};
 					id=178;
 					side="EAST";
-					vehicle="JAM_ESpotter";
+					vehicle="cwr2_SoldierE_SL";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -2061,7 +2041,7 @@ class Mission
 					position[]={6942.666992,101.964760,6204.120605};
 					id=179;
 					side="EAST";
-					vehicle="JAM_EBSniper";
+					vehicle="cwr2_SoldierE_Sniper";
 					rank="CORPORAL";
 					skill=1.000000;
 					init="this setpos getpos leader rsnipas2;";
@@ -2072,7 +2052,7 @@ class Mission
 					position[]={6944.666992,101.601891,6204.120605};
 					id=180;
 					side="EAST";
-					vehicle="JAM_EBSniper";
+					vehicle="cwr2_SoldierE_Sniper";
 					rank="CORPORAL";
 					skill=1.000000;
 					init="this setpos getPos leader rsnipas2;";
@@ -2109,7 +2089,7 @@ class Mission
 					azimut=7.247248;
 					id=195;
 					side="EAST";
-					vehicle="JAM_M2StaticMGEHD";
+					vehicle="cwr2_M2HB_High";
 					leader=1;
 					rank="SERGEANT";
 					skill=1.000000;
@@ -2128,7 +2108,7 @@ class Mission
 					azimut=31.678404;
 					id=196;
 					side="EAST";
-					vehicle="JAM_M2StaticMGEHD";
+					vehicle="cwr2_M2HB_High";
 					leader=1;
 					rank="SERGEANT";
 					skill=1.000000;
@@ -2147,7 +2127,7 @@ class Mission
 					position[]={7002.928711,107.797462,6540.956055};
 					id=197;
 					side="EAST";
-					vehicle="JAM_EBSpetznatzHD";
+					vehicle="cwr2_Spetsnaz";
 					leader=1;
 					rank="SERGEANT";
 					skill=1.000000;
@@ -2159,7 +2139,7 @@ class Mission
 					position[]={6998.905273,108.814140,6538.359375};
 					id=198;
 					side="EAST";
-					vehicle="JAM_EBSpetznatzHD";
+					vehicle="cwr2_Spetsnaz";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -2169,7 +2149,7 @@ class Mission
 					position[]={7000.905273,108.396469,6538.359375};
 					id=199;
 					side="EAST";
-					vehicle="JAM_EBSpetznatzHD";
+					vehicle="cwr2_Spetsnaz";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -2179,7 +2159,7 @@ class Mission
 					position[]={7002.905273,107.946663,6538.359375};
 					id=200;
 					side="EAST";
-					vehicle="JAM_EBSpetznatzHD";
+					vehicle="cwr2_Spetsnaz";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -2189,7 +2169,7 @@ class Mission
 					position[]={7004.905273,107.497032,6538.359375};
 					id=201;
 					side="EAST";
-					vehicle="JAM_EBSpetznatzHD";
+					vehicle="cwr2_Spetsnaz";
 					rank="CORPORAL";
 					skill=1.000000;
 				};
@@ -2199,7 +2179,7 @@ class Mission
 					position[]={7006.905273,107.047226,6538.359375};
 					id=202;
 					side="EAST";
-					vehicle="JAM_EBSpetznatzHD";
+					vehicle="cwr2_Spetsnaz";
 					skill=1.000000;
 				};
 				class Item6
@@ -2209,7 +2189,7 @@ class Mission
 					position[]={7008.715820,106.643471,6538.299316};
 					id=203;
 					side="EAST";
-					vehicle="JAM_EBSniper";
+					vehicle="cwr2_SoldierE_Sniper";
 					skill=1.000000;
 				};
 				class Item7
@@ -2219,7 +2199,7 @@ class Mission
 					position[]={7009.966797,106.362305,6538.299316};
 					id=204;
 					side="EAST";
-					vehicle="JAM_EBSniper";
+					vehicle="cwr2_SoldierE_Sniper";
 					skill=1.000000;
 				};
 			};
@@ -2253,14 +2233,14 @@ class Mission
 			side="EMPTY";
 			vehicle="FlagCarrier";
 			skill=0.200000;
-			init="this setFlagTexture ""usa_vlajka.pac"";";
+			init="this setFlagTexture ""\ca\ca_e\data\flag_us_co.paa"";";
 		};
 		class Item1
 		{
 			position[]={7242.147949,166.869492,7868.976074};
 			id=13;
 			side="EMPTY";
-			vehicle="JAM_ReammoBoxHD";
+			vehicle="cwr2_US_BasicAmmunition";
 			skill=1.000000;
 			init="this setdir random 360;";
 		};
@@ -2269,7 +2249,7 @@ class Mission
 			position[]={7242.343262,166.741074,7861.466309};
 			id=14;
 			side="EMPTY";
-			vehicle="JAM_ReammoBox2HD";
+			vehicle="cwr2_US_BasicAmmunition";
 			skill=1.000000;
 			init="this setdir random 360;";
 		};
@@ -2278,7 +2258,7 @@ class Mission
 			position[]={7245.210449,166.813858,7865.722168};
 			id=15;
 			side="EMPTY";
-			vehicle="JAM_ReammoBoxWHD";
+			vehicle="cwr2_US_BasicAmmunition";
 			skill=1.000000;
 			init="this setdir random 360;";
 		};
@@ -2287,7 +2267,7 @@ class Mission
 			position[]={7248.450684,166.872360,7869.143555};
 			id=16;
 			side="EMPTY";
-			vehicle="JAM_ReammoBoxW2HD";
+			vehicle="cwr2_US_BasicAmmunition";
 			skill=1.000000;
 			init="this setdir random 360;";
 		};
@@ -2297,7 +2277,7 @@ class Mission
 			azimut=180.006729;
 			id=17;
 			side="EMPTY";
-			vehicle="JAM_Truck5tHD";
+			vehicle="cwr2_Truck5t";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2307,7 +2287,7 @@ class Mission
 			azimut=181.014633;
 			id=18;
 			side="EMPTY";
-			vehicle="JAM_Truck5tOpenHD";
+			vehicle="cwr2_Truck5t_Open";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2317,7 +2297,7 @@ class Mission
 			azimut=-90.003670;
 			id=19;
 			side="EMPTY";
-			vehicle="JAM_HMMWVHD";
+			vehicle="cwr2_HMMWV";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2336,7 +2316,7 @@ class Mission
 			azimut=164.762711;
 			id=145;
 			side="EMPTY";
-			vehicle="JAM_BRDMHD";
+			vehicle="cwr2_BRDM2_MG";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2346,7 +2326,7 @@ class Mission
 			azimut=102.385300;
 			id=146;
 			side="EMPTY";
-			vehicle="JAM_BRDMHD";
+			vehicle="cwr2_BRDM2_MG";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2356,7 +2336,7 @@ class Mission
 			azimut=-29.270323;
 			id=147;
 			side="EMPTY";
-			vehicle="JAM_ScudHD";
+			vehicle="cwr2_SCUD";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2366,7 +2346,7 @@ class Mission
 			azimut=155.904266;
 			id=148;
 			side="EMPTY";
-			vehicle="JAM_ScudHD";
+			vehicle="cwr2_SCUD";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2376,7 +2356,7 @@ class Mission
 			azimut=186.051880;
 			id=149;
 			side="EMPTY";
-			vehicle="JAM_UAZHD";
+			vehicle="cwr2_UAZ";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2386,7 +2366,7 @@ class Mission
 			azimut=78.234650;
 			id=150;
 			side="EMPTY";
-			vehicle="JAM_UAZHD";
+			vehicle="cwr2_UAZ";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2396,7 +2376,7 @@ class Mission
 			azimut=-88.217361;
 			id=151;
 			side="EMPTY";
-			vehicle="JAM_UralReammoHD";
+			vehicle="cwr2_UralReammo";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2405,7 +2385,7 @@ class Mission
 			position[]={7045.776367,77.939995,7087.543457};
 			id=152;
 			side="EMPTY";
-			vehicle="JAM_UralRefuelHD";
+			vehicle="cwr2_UralRefuel";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2415,7 +2395,7 @@ class Mission
 			azimut=137.262299;
 			id=153;
 			side="EMPTY";
-			vehicle="JAM_UralReammoHD";
+			vehicle="cwr2_UralReammo";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2425,7 +2405,7 @@ class Mission
 			azimut=79.724213;
 			id=154;
 			side="EMPTY";
-			vehicle="JAM_UralRefuelHD";
+			vehicle="cwr2_UralRefuel";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2435,7 +2415,7 @@ class Mission
 			azimut=107.652367;
 			id=155;
 			side="EMPTY";
-			vehicle="JAM_UralHD";
+			vehicle="cwr2_Ural";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2445,7 +2425,7 @@ class Mission
 			azimut=79.883530;
 			id=156;
 			side="EMPTY";
-			vehicle="JAM_UralHD";
+			vehicle="cwr2_Ural";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2455,7 +2435,7 @@ class Mission
 			azimut=20.898809;
 			id=157;
 			side="EMPTY";
-			vehicle="JAM_UralRepairHD";
+			vehicle="cwr2_UralRepair";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2465,7 +2445,7 @@ class Mission
 			azimut=-25.287668;
 			id=158;
 			side="EMPTY";
-			vehicle="JAM_UralRepairHD";
+			vehicle="cwr2_UralRepair";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2477,14 +2457,14 @@ class Mission
 			vehicle="FlagCarrier";
 			leader=1;
 			skill=0.466667;
-			init="this setFlagTexture ""rus_vlajka.pac"";";
+			init="this setFlagTexture ""\cwr2\General\cwr2_flags\data\USSR.paa"";";
 		};
 		class Item24
 		{
 			position[]={7116.176758,71.909996,6028.429199};
 			id=182;
 			side="EMPTY";
-			vehicle="JAM_ReammoBoxEHD";
+			vehicle="cwr2_RU_BasicAmmunition";
 			leader=1;
 			skill=0.466667;
 			init="this setDir random 360;";
@@ -2494,7 +2474,7 @@ class Mission
 			position[]={7114.140137,71.909996,6031.951660};
 			id=183;
 			side="EMPTY";
-			vehicle="JAM_ReammoBoxE2HD";
+			vehicle="cwr2_RU_BasicAmmunition";
 			leader=1;
 			skill=0.466667;
 			init="this setDir random 360;";
@@ -2504,7 +2484,7 @@ class Mission
 			position[]={7112.258789,71.909996,6028.289551};
 			id=184;
 			side="EMPTY";
-			vehicle="JAM_ReammoBoxHD";
+			vehicle="cwr2_US_BasicAmmunition";
 			leader=1;
 			skill=0.466667;
 			init="this setDir random 360;";
@@ -2517,14 +2497,14 @@ class Mission
 			vehicle="FlagCarrier";
 			leader=1;
 			skill=0.466667;
-			init="this setFlagTexture ""rus_vlajka.pac"";";
+			init="this setFlagTexture ""\cwr2\General\cwr2_flags\data\USSR.paa"";";
 		};
 		class Item28
 		{
 			position[]={7051.659668,77.939995,7062.037598};
 			id=186;
 			side="EMPTY";
-			vehicle="JAM_ReammoBoxEHD";
+			vehicle="cwr2_RU_BasicAmmunition";
 			leader=1;
 			skill=0.466667;
 			init="this setDir random 360;";
@@ -2534,7 +2514,7 @@ class Mission
 			position[]={7061.844238,77.939995,7062.037598};
 			id=187;
 			side="EMPTY";
-			vehicle="JAM_ReammoBoxE2HD";
+			vehicle="cwr2_RU_BasicAmmunition";
 			leader=1;
 			skill=0.466667;
 			init="this setDir random 360;";
@@ -2544,7 +2524,7 @@ class Mission
 			position[]={7072.002930,77.939995,7062.531738};
 			id=188;
 			side="EMPTY";
-			vehicle="JAM_ReammoBoxHD";
+			vehicle="cwr2_US_BasicAmmunition";
 			leader=1;
 			skill=0.466667;
 			init="this setDir random 360;";
@@ -2585,7 +2565,7 @@ class Mission
 			azimut=-95.735313;
 			id=192;
 			side="EMPTY";
-			vehicle="CampEastC";
+			vehicle="CampEast";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2603,7 +2583,7 @@ class Mission
 			position[]={7089.141113,77.939995,7109.010254};
 			id=194;
 			side="EMPTY";
-			vehicle="CampEastC";
+			vehicle="CampEast";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2613,7 +2593,7 @@ class Mission
 			azimut=129.953537;
 			id=205;
 			side="EMPTY";
-			vehicle="JAM_ScudHD";
+			vehicle="cwr2_SCUD";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2623,7 +2603,7 @@ class Mission
 			azimut=104.200294;
 			id=206;
 			side="EMPTY";
-			vehicle="JAM_ScudHD";
+			vehicle="cwr2_SCUD";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2641,7 +2621,7 @@ class Mission
 			position[]={7090.361328,77.939995,7096.198730};
 			id=208;
 			side="EMPTY";
-			vehicle="CampEastC";
+			vehicle="CampEast";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2651,7 +2631,7 @@ class Mission
 			azimut=2.128528;
 			id=209;
 			side="EMPTY";
-			vehicle="JAM_ScudHD";
+			vehicle="cwr2_SCUD";
 			leader=1;
 			skill=0.466667;
 		};
@@ -2710,7 +2690,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply 1";
 			expCond="eastdead1";
-			expActiv="PAPABEAR sideRadio ""Rhqreply1""; ""1"" objStatus ""DONE""; ""target1"" setMarkerType ""dot""; ""target1"" setMarkerColor ""colorgreen"";";
+			expActiv="PAPABEAR sideRadio ""Rhqreply1""; objective1 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; ""target1"" setMarkerType ""dot""; ""target1"" setMarkerColor ""colorgreen"";";
 			class Effects
 			{
 			};
@@ -2741,7 +2721,7 @@ class Mission
 			age="UNKNOWN";
 			text="hq reply 2";
 			expCond="eastdead2";
-			expActiv="PAPABEAR sideRadio ""Rhqreply2""; ""2"" objStatus ""DONE""; ""target2"" setMarkerType ""dot""; ""target2"" setMarkerColor ""colorgreen"";";
+			expActiv="PAPABEAR sideRadio ""Rhqreply2""; objective2 setTaskState ""SUCCEEDED""; [ objNull, objNull, objective2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf""; ""target2"" setMarkerType ""dot""; ""target2"" setMarkerColor ""colorgreen"";";
 			class Effects
 			{
 			};

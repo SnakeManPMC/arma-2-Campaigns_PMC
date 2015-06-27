@@ -2,8 +2,8 @@ _garr=_this select 0
 _ok=true;_v=objnull
 _g=_garr select 0
 _u=units _g
-_s=call format[{CoC_AD%1safe},side _g]
-?_s:_sp=call format[{CoC_AD%1safePos},side _g];_sp=[(_sp select 0)-25+random 50,(_sp select 1)-25+random 50]
+_s=call format ["CoC_AD%1safe", side _g]
+?_s:_sp=call format ["CoC_AD%1safePos", side _g];_sp=[(_sp select 0)-25+random 50,(_sp select 1)-25+random 50]
 _units=[]
 {if(!local _x||_x==player)then{_ok=false;}else{if(getpos vehicle _x select 2>5)then{_ok=false;};};}foreach _u
 ?!_ok:goto"done"

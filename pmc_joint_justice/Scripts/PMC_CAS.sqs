@@ -1,10 +1,10 @@
 
-onMapSingleClick {};
+onMapSingleClick "";
 
 1 setradiomsg "null";
 
 _pos = _this select 0;
-_sp = "JAM_SoldierWHDPilot";
+_sp = "cwr2_SoldierW_Pilot";
 _s = getMarkerPos "spawn";
 _t = "target";
 
@@ -14,7 +14,7 @@ _t setMarkerPos _pos;
 _t setMarkerColor "ColorRed";
 _t setMarkerType "destroy";
 
-_splane = "JAM_A10lgbHD" createvehicle _s;
+_splane = "cwr2_A10LGB" createvehicle _s;
 _splane setPos [(getPos _splane select 0),(getPos _splane select 1),(getPos _splane select 2)+800];
 _splane setDir 315;
 
@@ -72,7 +72,7 @@ exit
 
 
 
-_pilot = "JAM_SoldierWHDCrew";
+_pilot = "cwr2_SoldierW_Crew";
 
 _pilot createunit [_s, usinf1, "e1 = this", 1, "SERGEANT"];
 [e1] join grpnull;
@@ -81,7 +81,7 @@ _tmpgrp = group e1;
 _pilot createunit [getPos leader _tmpgrp, _tmpgrp, "e2 = this", 1, "CORPORAL"];
 [e2] join _tmpgrp;
 
-_poo = ["JAM_CobraHD","JAM_ah64HD"];
+_poo = ["cwr2_AH1F","cwr2_AH64C"];
 _r1=0;
 _r1= random count _poo;
 _r1=_r1 - (_r1 mod 1);
@@ -102,12 +102,12 @@ e2 moveinGunner _helo;
 
 
 ;----
-"JAM_SoldierWHDCrew" createunit [getpos west_helostart, usinf1, "e1 = this", 1, "SERGEANT"];
+"cwr2_SoldierW_Crew" createunit [getpos west_helostart, usinf1, "e1 = this", 1, "SERGEANT"];
 [e1] join grpnull;
 _tmpgrp = group e1;
 e1 addEventHandler ["killed",{_this exec "killed.sqs"}]
 
-"JAM_SoldierWHDCrew" createunit [getpos west_helostart, usinf1, "e2 = this", 1, "CORPORAL"];
+"cwr2_SoldierW_Crew" createunit [getpos west_helostart, usinf1, "e2 = this", 1, "CORPORAL"];
 [e2] join grpnull;
 [e2] join _tmpgrp;
 e2 addEventHandler ["killed",{_this exec "killed.sqs"}]

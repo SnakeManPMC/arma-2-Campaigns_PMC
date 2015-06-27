@@ -6,11 +6,11 @@ _scanInterval=8
 
 CoC_ADLIB=32
 CoC_ADfunSpawn={CoC_AD\spawn.sqs}
-CoC_ADgetRank=loadfile{CoC_AD\getrank.sqf}
+CoC_ADgetRank=preprocessFileLineNumbers "CoC_AD\getrank.sqf"
 ; revisit/retry group spawn pause (after it has failed in past), set to 0 to never
 CoC_ADRevisitTime=300
 CoC_ADonSpawn={CoC_AD\onSpawnUnit.sqf}
-CoC_ADranks=[{PRIVATE},{CORPORAL},{SERGEANT},{LIEUTNANT},{CAPTAIN},{MAJOR},{COLONEL}]
+CoC_ADranks=[{PRIVATE},{CORPORAL},{SERGEANT},{LIEUTENANT},{CAPTAIN},{MAJOR},{COLONEL}]
 CoC_ADrankSkills=[0,500,1500,2500,3500,5000,7500]
 CoC_ADEastSafe=false
 CoC_ADWestSafe=false

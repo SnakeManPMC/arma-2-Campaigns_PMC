@@ -44,7 +44,7 @@ pztime setovercast pweather;
 @CoC_ADready
 ~1
 {[_x] exec "init_addTracers.sqs"} foreach aiwest+aieast;
-{_x addEventHandler [{killed}, {_this exec "killed.sqs"}]} forEach aieast;
-{_x setFuel 1;} foreach [helo1,helo2,helo3];
+{_x addEventHandler ["killed", {_this exec "killed.sqs"}]} forEach aieast;
+pmc_send_helos = true;
 
 [] exec "PMC_counterattack.sqs";

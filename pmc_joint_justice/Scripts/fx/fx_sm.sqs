@@ -32,7 +32,7 @@ _rand1 = random 0.06
 _rand2 = random 0.06
 _rand3 = random 0.06
 _rand4 = random 0.06
-drop ["cl_basic" , "" , "Billboard" , 120, 60 + (random 30) - (VTEburningCount * 3), [_objPosX,_objPosY,(_objPosZ + 0.5 + (random 2.5))] , [0,0,(random 0.25)] , 1, 1 + (random 0.15), 1, 0.25 , [4 + (random 4),175 + (random 50)] , [[0.05 + (_rand1),0 + (_rand1),0.05 + (_rand1),1],[0.05 + (_rand2),0.05 + (_rand2),0.05 + (_rand2),0.5 + (random 0.2)],[0.05 + (_rand3),0 + (_rand3),0.05 + (_rand3),0.4 + (random 0.2)],[0.05 + (_rand4),0.05 + (_rand4),0.05 + (_rand4),0]] , [0] , 2 , 1 , "" , "" , ""]
+drop ["\ca\data\cl_basic" , "" , "Billboard" , 120, 60 + (random 30) - (VTEburningCount * 3), [_objPosX,_objPosY,(_objPosZ + 0.5 + (random 2.5))] , [0,0,(random 0.25)] , 1, 1 + (random 0.15), 1, 0.25 , [4 + (random 4),175 + (random 50)] , [[0.05 + (_rand1),0 + (_rand1),0.05 + (_rand1),1],[0.05 + (_rand2),0.05 + (_rand2),0.05 + (_rand2),0.5 + (random 0.2)],[0.05 + (_rand3),0 + (_rand3),0.05 + (_rand3),0.4 + (random 0.2)],[0.05 + (_rand4),0.05 + (_rand4),0.05 + (_rand4),0]] , [0] , 2 , 1 , "" , "" , ""]
 
 ;// If the script has run as long as it should, it stops
 ?(time >= _stopTime) : goto "end"

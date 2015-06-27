@@ -64,7 +64,7 @@ _helo flyinheight 0;
 _A = 0;
 ejc="EJECT";
 
-"unassignvehicle _x" foreach units _team;
+{unassignvehicle _x} foreach units _team;
 
 _SayGoArray = ["Eng13","Eng14","Eng20","Eng21"];
 leader _team say (_SayGoArray select random (count _SayGoArray))
@@ -108,8 +108,8 @@ _z = getpos vehicle _helo select 2;
 
 _helo flyinheight 0;
 
-"_x assignascargo _helo" foreach units _team;
-"[_x] ordergetin true" foreach units _team;
+{_x assignascargo _helo} foreach units _team;
+{[_x] ordergetin true} foreach units _team;
 
 ;
 ; wait until whole squad is on board.

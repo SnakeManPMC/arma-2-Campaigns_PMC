@@ -26,13 +26,13 @@ _in={CoC_ADNew=this;}
 	removeAllWeapons CoC_ADNew
 	{CoC_ADNew addmagazine _x}foreach(_u select 9)
 	{CoC_ADNew addweapon _x}foreach(_u select 10)
-	if(_t in CoC_ADMod)then{_n=[_t,CoC_ADmod]call loadfile{CoC_AD\fgi.sqf};if(_n>-1)then{CoC_ADmod set[_n,0];deletevehicle(CoC_ADunits select _n);};};
+	if(_t in CoC_ADMod)then{_n=[_t,CoC_ADmod]call preprocessFileLineNumbers "CoC_AD\fgi.sqf";if(_n>-1)then{CoC_ADmod set[_n,0];deletevehicle(CoC_ADunits select _n);};};
 	_i=_i+1
 goto"L1"
 
 #L1D
 _i=0
-{_p=_x select 4;_m=_men select _i;if(_p=="man")then{_m setpos(_x select 5);_m setdir(_x select 6);}else{_v=(_x select 3);call format[{_m assignas%1 _v;_m movein%1 _v;_m assignas%1 _v;},_p];};_i=_i+1;}foreach _units;
+{_p=_x select 4;_m=_men select _i;if(_p=="man")then{_m setpos(_x select 5);_m setdir(_x select 6);}else{_v=(_x select 3);call format ["_m assignas%1 _v;_m movein%1 _v;_m assignas%1 _v;", _p];};_i=_i+1;}foreach _units;
 _this set[4,true]
 exit
 

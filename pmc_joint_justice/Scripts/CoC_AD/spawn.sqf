@@ -10,8 +10,8 @@ CoC_ADNew=objnull;
  	_p=_x select 4;
 	if(_p=="man")then{CoC_ADNew setpos(_x select 5);CoC_ADNew setdir(_x select 6);
 	}else{
-		_v=(_x select 3);call format[{CoC_ADNew assignas%1 _v;CoC_ADNew movein%1 _v;CoC_ADNew assignas%1 _v;},_p];
+		_v=(_x select 3);call format ["CoC_ADNew assignas%1 _v;CoC_ADNew movein%1 _v;CoC_ADNew assignas%1 _v;", _p];
 	};
-	if(_t in CoC_ADMod)then{_n=[_t,CoC_ADmod]call loadfile{CoC_AD\fgi.sqf};if(_n>-1)then{CoC_ADmod set[_n,0];deletevehicle(CoC_ADunits select _n);};};
+	if(_t in CoC_ADMod)then{_n=[_t,CoC_ADmod]call preprocessFileLineNumbers "CoC_AD\fgi.sqf";if(_n>-1)then{CoC_ADmod set[_n,0];deletevehicle(CoC_ADunits select _n);};};
 }foreach((_this select 0)select 5);
 1

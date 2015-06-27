@@ -23,7 +23,7 @@ _s_smoke_counter = 10
 ? isNull _object : goto "exit"
 
 ; drop sparks
-?_f_lifeTick > 0 : drop ["cl_fire", "", "Billboard", 1,  5, [0,0,1], [ random 1, random 1, random 3], 1, 0.005, 0.0042, 0, [random 0.25], [[1,1,1,1],[0,0,0,0]], [0,1], 0.5, 1, "", "",_object]
+?_f_lifeTick > 0 : drop ["\ca\data\cl_fire", "", "Billboard", 1,  5, [0,0,1], [ random 1, random 1, random 3], 1, 0.005, 0.0042, 0, [random 0.25], [[1,1,1,1],[0,0,0,0]], [0,1], 0.5, 1, "", "",_object]
 
 ; drop one smoke for every 10th spark
 _s_smoke_counter = _s_smoke_counter - 1
@@ -33,7 +33,7 @@ _s_smoke_counter = _s_smoke_counter - 1
 ? _s_c > 10 : _s_opacity = _lifeTick / _lifeTicks
 _s_c = _s_c + 1
 
-? !isNull _object : drop ["cl_basic", "", "Billboard", 1, 70.5, [getpos _object select 0,getpos _object select 1,(getpos _object select 2)+1.4], [(_s_velocity select 0) + random 0.3, (_s_velocity select 1) + random 0.3, (_s_velocity select 2) + random 0.3], 1, 0.004-(random 0.001), 0.004, 0.2-(random 0.04)-_s_rub, [4.06,180.06-random 40], [[0,0,0,0.0*_s_opacity], [0,0,0,0.3*_s_opacity], [0,0,0,0.4*_s_opacity], [0.6,0.6,0.6,0]], [0,1,0], 0.5, 0.05, "", "",""]
+? !isNull _object : drop ["\ca\data\cl_basic", "", "Billboard", 1, 70.5, [getpos _object select 0,getpos _object select 1,(getpos _object select 2)+1.4], [(_s_velocity select 0) + random 0.3, (_s_velocity select 1) + random 0.3, (_s_velocity select 2) + random 0.3], 1, 0.004-(random 0.001), 0.004, 0.2-(random 0.04)-_s_rub, [4.06,180.06-random 40], [[0,0,0,0.0*_s_opacity], [0,0,0,0.3*_s_opacity], [0,0,0,0.4*_s_opacity], [0.6,0.6,0.6,0]], [0,1,0], 0.5, 0.05, "", "",""]
 
 _s_smoke_counter = 10
 

@@ -44,4 +44,4 @@ pztime setovercast pweather;
 @CoC_ADready
 ~1
 {[_x] exec "init_addTracers.sqs"} foreach aiwest+aieast;
-{_x addEventHandler [{killed}, {_this exec "killed.sqs"}]} forEach aieast;
+{_x addEventHandler ["killed", {_this exec "killed.sqs"}]} forEach aieast;

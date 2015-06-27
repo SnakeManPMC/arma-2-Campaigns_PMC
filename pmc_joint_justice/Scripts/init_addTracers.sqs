@@ -1,12 +1,12 @@
 _u = _this select 0;
-PMC_MG = ["JAM_WBMGFSHDSoldier","JAM_WBMGFSSoldier","JAM_EBMGHD","JAM_EBMGFSHD","JAM_EBMGRPDFS","JAM_EBMGRPDFSHD","JAM_GBMGFSHD","JAM_GBMGRPDFSHD"];
-PMC_Snipers = ["JAM_WSniper","JAM_WSniperRem700","JAM_WSaboteurHD","JAM_WSpotterHD","JAM_EBSniper","JAM_EBSpetznatzHD","JAM_EspotterHD","JAM_Gsniper","JAM_GmosNagSniper","JAM_GspotterHD"];
+PMC_MG = ["cwr2_SoldierW_MG","cwr2_SoldierW_MG","cwr2_SoldierE_MG","cwr2_SoldierE_MG","cwr2_SoldierE_MG","cwr2_SoldierE_MG","cwr2_PartisanW_MG","cwr2_PartisanW_MG"];
+PMC_Snipers = ["cwr2_SoldierW_Sniper","cwr2_SoldierW_Sniper","cwr2_Ranger_Assault_Night","cwr2_SoldierW_SL","cwr2_SoldierE_Sniper","cwr2_Spetsnaz","cwr2_SoldierE_SL","cwr2_PartisanW_Marksman","cwr2_PartisanW_Marksman","cwr2_PartisanW_Scout"];
 ?typeOf _u in PMC_Snipers: exit
 ?typeOf _u in PMC_MG: goTo "MG";
 
-[_u, 3]call loadFile{\bn_tracer\addTracerUnit.sqf};
+[_u, 3]call preprocessFileLineNumbers "\bn_tracer\addTracerUnit.sqf";
 exit
 
 #MG
-[_u, 5]call loadFile{\bn_tracer\addTracerUnit.sqf};
+[_u, 5]call preprocessFileLineNumbers "\bn_tracer\addTracerUnit.sqf";
 exit

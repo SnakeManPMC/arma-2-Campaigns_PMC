@@ -4,14 +4,14 @@ _guerEnemy=_this select 2
 _civEnemy=_this select 3
 _scanInterval=_this select 4
 _c1={_d<_grp select 1};_c2={_grp select 1}
-if((_this select 5)!="")then{_c1=format[{_d<%1*1.2},_this select 5];_c2=format[{%1*1.2},_this select 5];}
+if((_this select 5)!="")then{_c1=format ["_d<%1*1.2", _this select 5];_c2=format ["%1*1.2", _this select 5];}
 CoC_AD_S=0
 CoC_ADMod=[]
 CoC_ADUnits=[]
 
 _sides=[]
 ?CoC_Maintrig==CoC_Maintrig:goto"l1"
-Player globalchat{ERROR: Trigger named "CoC_MainTrig" missing, CoC AI on Demand off.}
+Player globalchat "ERROR: Trigger named "CoC_MainTrig" missing, CoC AI on Demand off."
 exit
 
 #l1
@@ -26,7 +26,7 @@ CoC_ADwait=true
 ~.5
 _j=(count CoC_ADGrps)-1
 ;player sidechat format["grps %1",_j]
-?COC_ADdebug:Player globalchat{Stage 1. record group's, waypoints and sort into side arrays}
+?COC_ADdebug:Player globalchat "Stage 1. record group's, waypoints and sort into side arrays"
 CoC_AD_s1=_j+1;CoC_AD_s=1;PublicVariable"CoC_AD_s";PublicVariable"CoC_AD_s1"
 ;____ grab waypoints, groups and sort according to side
 _gt=0
@@ -41,14 +41,14 @@ _gt=0
 	_side=side _g;_sarr=format["CoC_AD%1Grps",_side]
 	?!(_side in _sides):_sides=_sides+[_side];call(_sarr+{=[];})
 	; group,dist,side,[waypoints],spawned,[members]
-	call format[{%1=%1+[[_g,_cond,_side,+_wpts,false,[]]];},_sarr]
+	call format ["%1=%1+[[_g,_cond,_side,+_wpts,false,[]]];", _sarr]
 	_j=_j-1
 	goto"l2"
 #l2d
 
 
 
-?COC_ADdebug:Player globalchat{Stage 2. do preliminary analysis on which groups to put in stasis}
+?COC_ADdebug:Player globalchat "Stage 2. do preliminary analysis on which groups to put in stasis"
 ;____ put selected groups in stasis initially (detect their proper status)
 CoC_AD_s2=0;PublicVariable"CoC_AD_s2";CoC_AD_s=2;PublicVariable"CoC_AD_s";_t=0
 _i=(count _sides)-1
@@ -89,7 +89,7 @@ _i=(count _sides)-1
 
 
 ;____ put selected groups in stasis initially (detect their proper status)
-?COC_ADdebug:Player globalchat{Stage 3. put selected groups in stasis, save all properties}
+?COC_ADdebug:Player globalchat "Stage 3. put selected groups in stasis, save all properties"
 CoC_AD_s=3;PublicVariable"CoC_AD_s";CoC_AD_s2=_t;PublicVariable"CoC_AD_s2";CoC_AD_s3=0
 _i=(count _sides)-1
 ; ___ each AD side
@@ -102,7 +102,7 @@ _i=(count _sides)-1
 		?_j<0:goto"l7d"
 		_grp=_sarr select _j
 		?COC_ADdebug:player globalchat format["Stage 3. action %1 leave on map %2",_grp select 0,_grp select 4]
-		if(_grp select 4)then{_sarr set[_j,0];}else{CoC_AD_s3=CoC_AD_s3+1;PublicVariable{CoC_AD_s3};CoC_ADwait=false;[_grp]exec"CoC_AD\inStasis.sqs";}
+		if(_grp select 4)then{_sarr set[_j,0];}else{CoC_AD_s3=CoC_AD_s3+1;publicVariable "CoC_AD_s3";CoC_ADwait=false;[_grp]exec"CoC_AD\inStasis.sqs";}
 		@CoC_ADwait
 		?count(_grp select 5)==0:_sarr set[_j,0]
 		_j=_j-1
@@ -120,7 +120,7 @@ CoC_AD_s=4;PublicVariable"CoC_AD_s";publicvariable"CoC_ADready"
 
 
 
-?COC_ADdebug:Player globalchat{Stage 4. Monitor to spawn groups in stasis back in.}
+?COC_ADdebug:Player globalchat "Stage 4. Monitor to spawn groups in stasis back in."
 _pt=0
 
 #main
