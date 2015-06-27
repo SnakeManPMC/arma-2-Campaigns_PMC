@@ -31,4 +31,4 @@ xd=1500;
 [] exec "CoC_AD\init.sqs";
 sleep 1;
 //@CoC_ADready
-[] exec "pmc_opfor_waves.sqs";
+[] execVM "pmc_opfor_waves.sqf";

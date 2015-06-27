@@ -17,7 +17,6 @@ PMC_a12 loadStatus "m3s12";
 
 { if (!alive _x) then { deletevehicle _x } } foreach [PMC_a2,PMC_a3,PMC_a4,PMC_a5,PMC_a6,PMC_a7,PMC_a8,PMC_a9,PMC_a10,PMC_a11,PMC_a12];
 
-
 PMC_wave2 = false;
 PMC_wave3 = false;
 PMC_wave4 = false;
@@ -28,4 +27,4 @@ xd = 1500;
 [] exec "CoC_AD\init.sqs";
 
 //@CoC_ADready
-[] exec "pmc_opfor_waves.sqs";
+[] execVM "pmc_opfor_waves.sqf";

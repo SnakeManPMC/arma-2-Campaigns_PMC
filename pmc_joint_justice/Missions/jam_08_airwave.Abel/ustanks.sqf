@@ -1,5 +1,3 @@
 leader assault1 sideRadio "Rtanksgo";
-~15 + random 5
+sleep 15 + (random 5);
 leader ustanks1 sideRadio "Rrogertanks";
-
-exit
