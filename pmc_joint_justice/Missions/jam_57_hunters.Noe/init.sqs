@@ -1,0 +1,32 @@
+PAPABEAR=[West,"HQ"];
+
+PMC_a1 loadStatus "m56s1";
+PMC_a2 loadStatus "m56s2";
+PMC_a3 loadStatus "m56s3";
+PMC_a4 loadStatus "m56s4";
+PMC_a5 loadStatus "m56s5";
+PMC_a6 loadStatus "m56s6";
+PMC_a7 loadStatus "m56s7";
+PMC_a8 loadStatus "m56s8";
+PMC_a9 loadStatus "m56s9";
+PMC_a10 loadStatus "m56s10";
+PMC_a11 loadStatus "m56s11";
+PMC_a12 loadStatus "m56s12";
+{ if (!alive _x) then { deletevehicle _x } } foreach [PMC_a2,PMC_a3,PMC_a4,PMC_a5,PMC_a6,PMC_a7,PMC_a8,PMC_a9,PMC_a10,PMC_a11,PMC_a12];
+
+PMC_BodyCount=0;
+xd=1500;
+~1
+[] exec "CoC_AD\init.sqs";
+
+0 setovercast random .7
+pztime = (60*20)
+pweather = random 1
+pztime setovercast pweather;
+
+~3
+
+@CoC_ADready
+~1
+{[_x] exec "init_addTracers.sqs"} foreach aiwest+aieast;
+{_x addEventHandler [{killed}, {_this exec "killed.sqs"}]} forEach aieast;

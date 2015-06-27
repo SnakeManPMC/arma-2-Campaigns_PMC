@@ -1,0 +1,15 @@
+_man=_this select 0;_v=_this select 1;_p=_this select 2
+_t=10
+~.3
+call format[{_man assignas%1 _v;},_p]
+#L1
+@!(_man in _v)||_time>_t||!alive _man
+?_time>_t||!alive _man:exit
+~.1
+unassignvehicle _man
+~.1
+call format[{_man assignas%1 _v;},_p]
+~.2
+call format[{_man movein%1 _v;},_p]
+goto"L1"
+

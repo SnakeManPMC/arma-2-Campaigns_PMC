@@ -1,0 +1,6 @@
+_error=_this select 0
+_grp=_this select 1
+~5
+?_error==0:player globalchat format["CoC AI-OD group %1: insufficient parameters for spawn condition",_grp]
+?_error==1:player globalchat format["CoC AI-OD group %1: parameter 1 type incorrect",_grp]
+?_error==2:player globalchat format["CoC AI-OD group %1: parameter 2 type incorrect or same as parameter 1",_grp]

@@ -1,0 +1,48 @@
+CoC_ADEASTGrps [
+
+	[
+		group,
+		cond string,
+		side (side),
+		[waypointXYZ,waypointXYZ,...],
+		leave on map (bool),
+		[ [
+			damage _x,
+			typeof _x,
+			_x <NULL-object>,
+			<associated vehicle>,
+			"vehpos",
+			getpos _x,
+			getdir _x,
+			captive _x,
+			rating _x,
+			magazines _x,
+			weapons _x,
+			skill _x
+		 ],[
+			0,
+			"WGL_SoldierESL",
+			<NULL-object>,
+			<NULL-object>,
+			{"man" or "gunner" or "pilot" or "commander"),
+			[4561.88,7841.18,-0.00350189],
+			319.993,
+			false,
+			5000,
+			["mag1name",...],
+			["weapon1name",...],
+			0.943241
+			]
+			
+		],
+		calculate _d (bool),
+		"combatMode"
+]
+
+
+    [[0],{[[],format[{d={%1};},(((CoC_ADEASTGrps select 0)select 5)select 0)]]call fnRemoteCall}]call fnRemotecall
+    
+    
+    
+rev 19
+CoC_AD<side>GRP arrays now accessed by direct dereferencing (call "arrname" select x), not pointer copy.  Spawn.sqf changed so that data is always encapsulated in an array even if incorrect.  Increased time between group spawns.

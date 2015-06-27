@@ -1,0 +1,49 @@
+_garr=_this select 0
+_ok=true;_v=objnull
+_g=_garr select 0
+_u=units _g
+_s=call format[{CoC_AD%1safe},side _g]
+?_s:_sp=call format[{CoC_AD%1safePos},side _g];_sp=[(_sp select 0)-25+random 50,(_sp select 1)-25+random 50]
+_units=[]
+{if(!local _x||_x==player)then{_ok=false;}else{if(getpos vehicle _x select 2>5)then{_ok=false;};};}foreach _u
+?!_ok:goto"done"
+_j=0;_cnt=count _u
+#l1
+	?_j==_cnt:goto"l1d"
+	_x=_u select _j
+	_v=vehicle _x;_p="man"
+	if(_v!=_x)then{if(driver _v==_x)then{_p="driver";}else{if(gunner _v==_x)then{_p="gunner";}else{if(commander _v==_x)then{_p="commander";}else{_p="cargo";};};};}
+ 	_units=_units+[[damage _x,typeof _x,_x,_v,_p,getpos _x,getdir _x,captive _x,rating _x,magazines _x,weapons _x,skill _x]]
+ 	_j=_j+1
+goto"l1"
+#l1d
+_j=(count _units)-1
+_k=_j
+#l2
+	?_j<0:goto"l2d"
+	_x=_units select _j;_v=_x select 3;_v setdir getdir _v;_v setvelocity[0,0,0];(_x select 2)setpos(_x select 5)
+	_t=_x select 1
+	?_j==_k:goto"nobrain"
+	?!(_t in CoC_ADMod):if _s then{_u=_t createVehicle _sp;}else{_u=_t createVehicle(_x select 5);};CoC_ADMod=CoC_ADMod+[_t];CoC_ADUnits=CoC_ADUnits+[_u]
+	
+	deletevehicle(_x select 2)
+	_j=_j-1
+goto"l2"
+#l2d
+~.1
+#done
+_garr set[5,_units]
+CoC_ADwait=true
+
+exit
+
+#nobrain
+_sol=_x select 2
+_sol disableAI"Move"
+_sol disableAI"AUTOTARGET"
+_sol disableAI"TARGET"
+_sol setSkill 0
+[_sol]allowGetIn false
+?_s:_sol setpos _sp
+_j=_j-1
+goto"l2"

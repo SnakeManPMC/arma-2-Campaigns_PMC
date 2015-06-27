@@ -1,0 +1,12 @@
+_u = _this select 0;
+PMC_MG = ["JAM_WBMGFSHDSoldier","JAM_WBMGFSSoldier","JAM_EBMGHD","JAM_EBMGFSHD","JAM_EBMGRPDFS","JAM_EBMGRPDFSHD","JAM_GBMGFSHD","JAM_GBMGRPDFSHD"];
+PMC_Snipers = ["JAM_WSniper","JAM_WSniperRem700","JAM_WSaboteurHD","JAM_WSpotterHD","JAM_EBSniper","JAM_EBSpetznatzHD","JAM_EspotterHD","JAM_Gsniper","JAM_GmosNagSniper","JAM_GspotterHD"];
+?typeOf _u in PMC_Snipers: exit
+?typeOf _u in PMC_MG: goTo "MG";
+
+[_u, 3]call loadFile{\bn_tracer\addTracerUnit.sqf};
+exit
+
+#MG
+[_u, 5]call loadFile{\bn_tracer\addTracerUnit.sqf};
+exit

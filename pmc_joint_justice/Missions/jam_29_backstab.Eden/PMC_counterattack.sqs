@@ -1,0 +1,62 @@
+
+"2" objStatus "ACTIVE";
+"attack1" setMarkerType "arrow";
+hint "Briefing updated!";
+
+; launch the AIOD attack here
+_t = time;
+; how long we wait for each wave to complete
+_wavewait = 60*15;
+
+; this is wait until the mayhem is over at the initial assault.
+#wave0
+~10
+if (count aieast < 5 || (time - _t) > _wavewait) then { PMC_wave1=true; } else { goto "wave0"; };
+
+; then we continue normally.
+#wave1
+~10
+if (count aieast < 5 || (time - _t) > _wavewait) then { PMC_wave2=true; } else { goto "wave1"; };
+
+_t = time;
+#wave2
+~10
+if (count aieast < 5 || (time - _t) > _wavewait) then { PMC_wave3=true; } else { goto "wave2"; };
+
+_t = time;
+#wave3
+~10
+if (count aieast < 5 || (time - _t) > _wavewait) then { PMC_wave4=true; } else { goto "wave3"; };
+
+_t = time;
+#wave4
+~10
+if (count aieast < 5 || (time - _t) > _wavewait) then { PMC_wave5=true; } else { goto "wave4"; };
+
+_t = time;
+#wave5
+~10
+if (count aieast < 5 || (time - _t) > _wavewait) then { PMC_wave6=true; } else { goto "wave5"; };
+
+_t = time;
+#wave6
+~10
+if (count aieast < 5 || (time - _t) > _wavewait) then { PMC_wave7=true; } else { goto "wave6"; };
+
+_t = time;
+#wave7
+~10
+if (count aieast < 5 || (time - _t) > _wavewait) then { PMC_wave8=true; } else { goto "wave7"; };
+
+; mission accomplished when 25 minutes passed
+_wavewait=60*10;
+
+#finalb
+~10
+if (count aieast < 5 || (time - _t) > _wavewait) then { goto "End"; } else { goto "finalb"; };
+
+#End
+~_wavewait
+PMC_Waves_Done=true;
+
+exit

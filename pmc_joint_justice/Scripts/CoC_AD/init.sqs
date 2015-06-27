@@ -1,0 +1,27 @@
+_eastEnemy=[west]
+_westEnemy=[east]
+_guerEnemy=[west]
+_civEnemy=[east]
+_scanInterval=8
+
+CoC_ADLIB=32
+CoC_ADfunSpawn={CoC_AD\spawn.sqs}
+CoC_ADgetRank=loadfile{CoC_AD\getrank.sqf}
+; revisit/retry group spawn pause (after it has failed in past), set to 0 to never
+CoC_ADRevisitTime=300
+CoC_ADonSpawn={CoC_AD\onSpawnUnit.sqf}
+CoC_ADranks=[{PRIVATE},{CORPORAL},{SERGEANT},{LIEUTNANT},{CAPTAIN},{MAJOR},{COLONEL}]
+CoC_ADrankSkills=[0,500,1500,2500,3500,5000,7500]
+CoC_ADEastSafe=false
+CoC_ADWestSafe=false
+CoC_ADGuerSafe=false
+CoC_ADCivSafe=false
+CoC_ADEastSafePos=[]
+CoC_ADWestSafePos=[]
+CoC_ADGuerSafePos=[]
+CoC_ADCivSafePos=[]
+?count(getmarkerpos"CoC_ADEastSafe"-[0])>0:CoC_ADEastSafe=true;CoC_ADEastSafePos=getmarkerpos"CoC_ADEastSafe"
+?count(getmarkerpos"CoC_ADWestSafe"-[0])>0:CoC_ADWestSafe=true;CoC_ADWestSafePos=getmarkerpos"CoC_ADWestSafe"
+?count(getmarkerpos"CoC_ADGuerSafe"-[0])>0:CoC_ADGuerSafe=true;CoC_ADGuerSafePos=getmarkerpos"CoC_ADGuerSafe"
+?count(getmarkerpos"CoC_ADCivSafe"-[0])>0:CoC_ADCivSafe=true;CoC_ADCIvSafePos=getmarkerpos"CoC_ADCivSafe"
+[_eastEnemy,_westEnemy,_guerEnemy,_civEnemy,_scanInterval]exec"CoC_AD\main.sqs"
