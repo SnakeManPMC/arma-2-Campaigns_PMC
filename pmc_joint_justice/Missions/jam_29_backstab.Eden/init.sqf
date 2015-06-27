@@ -29,9 +29,4 @@ PMC_BodyCount = 0;
 
 "2" objStatus "HIDDEN";
 
-sleep 3;
-
-[] exec "CoC_AD\init.sqs";
-sleep 1;
-//@CoC_ADready
 {_x addEventHandler ["killed", {_this exec "killed.sqs"}]} forEach aieast;

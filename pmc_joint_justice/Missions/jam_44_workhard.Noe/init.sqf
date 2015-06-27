@@ -27,10 +27,6 @@ PMC_wave7 = false;
 PMC_wave8 = false;
 PMC_BodyCount = 0;
 
-[] exec "CoC_AD\init.sqs";
-
 sleep 3;
 
-//@CoC_ADready
-sleep 1;
 {_x addEventHandler ["killed", {_this exec "killed.sqs"}]} forEach aieast;

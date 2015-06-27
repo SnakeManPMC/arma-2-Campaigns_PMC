@@ -29,9 +29,3 @@ PMC_BodyCount = 0;
 // hide markers, hide objective two
 {_x setMarkerType "empty"} forEach ["attack1","attack2","attack3","attack4"];
 "2" objStatus "HIDDEN";
-
-sleep 3;
-
-[] exec "CoC_AD\init.sqs";
-sleep 1;
-//@CoC_ADready

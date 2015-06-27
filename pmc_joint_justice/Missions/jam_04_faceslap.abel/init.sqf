@@ -23,8 +23,4 @@ PMC_wave4 = false;
 PMC_wave5 = false;
 PMC_BodyCount = 0;
 
-xd = 1500;
-[] exec "CoC_AD\init.sqs";
-
-//@CoC_ADready
 [] execVM "pmc_opfor_waves.sqf";

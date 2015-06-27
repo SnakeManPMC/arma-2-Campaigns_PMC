@@ -23,10 +23,6 @@ PMC_wave4 = false;
 PMC_wave5 = false;
 PMC_BodyCount = 0;
 
-sleep 3;
-[] exec "CoC_AD\init.sqs";
-sleep 2;
-//@CoC_ADready
 [] execVM "pmc_opfor_waves.sqf";
 
 {_x addEventHandler ["killed",{_this exec "killed.sqs"}] } foreach aieast;
