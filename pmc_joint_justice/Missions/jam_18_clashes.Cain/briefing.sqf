@@ -40,6 +40,7 @@ Alpha team <marker name = 'start'>start</marker> from base. Capture <marker name
 
 "]];
 // tasks need to be in reversed order
+// objective2 is HIDDEN at mission start!
 objective2 = player createSimpleTask ["Defend ruins"];
 objective2 setSimpleTaskDescription ["Defend ruins", "Defend ruins", "Defend ruins"];
 objective1 = player createSimpleTask ["Capture ruins"];
