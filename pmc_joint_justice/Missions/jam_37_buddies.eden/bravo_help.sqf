@@ -8,7 +8,10 @@ sleep 10;
 leader assault1 sideRadio "Ralphagoes";
 sleep 3;
 
-hint "Briefing updated.";
+// objective3 is hidden
+objective3 = player createSimpleTask ["Backup <marker name = 'bravo1'>Bravo</marker> on Provins"];
+objective3 setSimpleTaskDescription ["Backup <marker name = 'bravo1'>Bravo</marker> on Provins", "Backup <marker name = 'bravo1'>Bravo</marker> on Provins", "Backup <marker name = 'bravo1'>Bravo</marker> on Provins"];
+
 "bravo1" setMarkerType "Unknown";
 "target3" setMarkerType "Flag";
-"3" ObjStatus "ACTIVE";
+hint "Briefing updated.";
