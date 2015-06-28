@@ -17,7 +17,6 @@ PMC_a12 loadStatus "m37s12";
 
 { if (!alive _x) then { deletevehicle _x } } foreach [PMC_a2,PMC_a3,PMC_a4,PMC_a5,PMC_a6,PMC_a7,PMC_a8,PMC_a9,PMC_a10,PMC_a11,PMC_a12];
 
-"3" ObjStatus "HIDDEN";
 PMC_BodyCount = 0;
 
 sleep 3;

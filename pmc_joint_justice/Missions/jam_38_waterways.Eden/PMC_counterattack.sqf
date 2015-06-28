@@ -5,7 +5,9 @@ sleep 3;
 
 hint "Briefing updated.";
 "target3" setMarkerType "Flag";
-"3" objStatus "ACTIVE";
+// objective3 is hidden
+objective3 = player createSimpleTask ["Defend <marker name = 'target3'>Levie</marker>"];
+objective3 setSimpleTaskDescription ["Defend <marker name = 'target3'>Levie</marker>", "Defend <marker name = 'target3'>Levie</marker>", "Defend <marker name = 'target3'>Levie</marker>"];
 
 /*
 
