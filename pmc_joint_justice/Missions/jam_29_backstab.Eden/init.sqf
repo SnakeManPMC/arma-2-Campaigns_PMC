@@ -27,6 +27,4 @@ PMC_wave7 = false;
 PMC_wave8 = false;
 PMC_BodyCount = 0;
 
-"2" objStatus "HIDDEN";
-
 {_x addEventHandler ["killed", {_this exec "killed.sqs"}]} forEach aieast;

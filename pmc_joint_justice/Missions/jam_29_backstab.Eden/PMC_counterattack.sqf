@@ -4,7 +4,10 @@
 
 */
 
-"2" objStatus "ACTIVE";
+// objective2 is hidden
+objective2 = player createSimpleTask ["<marker name = 'attack1'>Defend</marker> Montignac"];
+objective2 setSimpleTaskDescription ["<marker name = 'attack1'>Defend</marker> Montignac", "<marker name = 'attack1'>Defend</marker> Montignac", "<marker name = 'attack1'>Defend</marker> Montignac"];
+
 "attack1" setMarkerType "arrow";
 hint "Briefing updated!";
 
