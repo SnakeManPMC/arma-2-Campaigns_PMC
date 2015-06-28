@@ -9,7 +9,9 @@
 } forEach ["attack1", "attack3"];
 "attack2" setMarkerType "Unknown";
 "attack4" setMarkerType "Marker";
-"2" objStatus "ACTIVE";
+// objective2 is HIDDEN at mission start!
+objective2 = player createSimpleTask ["Defend ruins"];
+objective2 setSimpleTaskDescription ["Defend ruins", "Defend ruins", "Defend ruins"];
 
 hint "briefing updated";
 sleep 2;

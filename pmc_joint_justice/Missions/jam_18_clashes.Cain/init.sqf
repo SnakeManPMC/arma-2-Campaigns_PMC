@@ -27,5 +27,6 @@ PMC_wave8 = false;
 PMC_BodyCount = 0;
 
 // hide markers, hide objective two
-{_x setMarkerType "empty"} forEach ["attack1","attack2","attack3","attack4"];
-"2" objStatus "HIDDEN";
+{
+	_x setMarkerType "empty";
+} forEach ["attack1", "attack2", "attack3", "attack4"];
