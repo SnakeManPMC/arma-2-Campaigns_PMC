@@ -31,4 +31,4 @@ PMC_BodyCount = 0;
 sleep 3;
 
 PAPABEAR sideRadio "Rattack";
-[] exec "PMC_counterattack.sqs";
+[] execVM "PMC_counterattack.sqf";

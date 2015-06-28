@@ -32,4 +32,4 @@ sleep 3;
 {_x addEventHandler ["killed", {_this exec "killed.sqs"}]} forEach aieast;
 sleep 3;
 
-[] exec "PMC_counterattack.sqs";
+[] execVM "PMC_counterattack.sqf";

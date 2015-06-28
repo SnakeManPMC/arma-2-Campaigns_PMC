@@ -33,4 +33,4 @@ sleep 3;
 
 pmc_send_helos = true;
 
-[] exec "PMC_counterattack.sqs";
+[] execVM "PMC_counterattack.sqf";

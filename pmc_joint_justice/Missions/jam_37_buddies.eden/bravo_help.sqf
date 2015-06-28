@@ -1,12 +1,14 @@
 
 leader assault2 sideRadio "Rneedhelp";
-~15
+sleep 15;
+
 PAPABEAR sideRadio "RsendAlpha";
-~10
+sleep 10;
+
 leader assault1 sideRadio "Ralphagoes";
-~3
+sleep 3;
+
 hint "Briefing updated.";
 "bravo1" setMarkerType "Unknown";
 "target3" setMarkerType "Flag";
 "3" ObjStatus "ACTIVE";
-exit;

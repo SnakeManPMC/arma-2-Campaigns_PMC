@@ -31,6 +31,6 @@ sleep 3;
 
 {_x addEventHandler ["killed", {_this exec "killed.sqs"}]} forEach aieast;
 
-[] exec "PMC_counterattack.sqs";
+[] execVM "PMC_counterattack.sqf";
 
 pmc_send_helos = true;

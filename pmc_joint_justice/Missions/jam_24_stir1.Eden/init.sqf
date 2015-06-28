@@ -28,3 +28,6 @@ PMC_wave8 = false;
 PMC_BodyCount = 0;
 
 {_x addEventHandler ["killed", {_this exec "killed.sqs"}]} forEach aieast;
+
+// PMCTODO this was missing, I assume it belongs here?
+[] execVM "PMC_counterattack.sqf";
